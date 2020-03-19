@@ -1,0 +1,1943 @@
+Julia Version 1.3.1
+Commit 2d5741174c (2019-12-30 21:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-6.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+ Resolving package versions...
+ Installed CompilerSupportLibraries_jll ─ v0.2.0+1
+ Installed Rmath_jll ──────────────────── v0.2.2+0
+ Installed ProgressMeter ──────────────── v1.2.0
+ Installed StatsFuns ──────────────────── v0.9.4
+ Installed FillArrays ─────────────────── v0.8.5
+ Installed MacroTools ─────────────────── v0.5.4
+ Installed StatsBase ──────────────────── v0.32.2
+ Installed DataAPI ────────────────────── v1.1.0
+ Installed ArgCheck ───────────────────── v2.0.0
+ Installed ArrayLayouts ───────────────── v0.1.5
+ Installed StaticArrays ───────────────── v0.12.1
+ Installed DataStructures ─────────────── v0.17.10
+ Installed Requires ───────────────────── v1.0.1
+ Installed SortingAlgorithms ──────────── v0.3.1
+ Installed SpecialFunctions ───────────── v0.10.0
+ Installed InplaceOps ─────────────────── v0.3.0
+ Installed Rmath ──────────────────────── v0.6.1
+ Installed Missings ───────────────────── v0.4.3
+ Installed OpenSpecFun_jll ────────────── v0.5.3+3
+ Installed OrderedCollections ─────────── v1.1.0
+ Installed Parameters ─────────────────── v0.12.0
+ Installed LazyArrays ─────────────────── v0.15.0
+ Installed AdvancedHMC ────────────────── v0.2.21
+  Updating `~/.julia/environments/v1.3/Project.toml`
+  [0bf59076] + AdvancedHMC v0.2.21
+  Updating `~/.julia/environments/v1.3/Manifest.toml`
+  [0bf59076] + AdvancedHMC v0.2.21
+  [dce04be8] + ArgCheck v2.0.0
+  [4c555306] + ArrayLayouts v0.1.5
+  [e66e0078] + CompilerSupportLibraries_jll v0.2.0+1
+  [9a962f9c] + DataAPI v1.1.0
+  [864edb3b] + DataStructures v0.17.10
+  [1a297f60] + FillArrays v0.8.5
+  [505f98c9] + InplaceOps v0.3.0
+  [5078a376] + LazyArrays v0.15.0
+  [1914dd2f] + MacroTools v0.5.4
+  [e1d29d7a] + Missings v0.4.3
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+3
+  [bac558e1] + OrderedCollections v1.1.0
+  [d96e819e] + Parameters v0.12.0
+  [92933f4c] + ProgressMeter v1.2.0
+  [ae029012] + Requires v1.0.1
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.10.0
+  [90137ffa] + StaticArrays v0.12.1
+  [2913bbd2] + StatsBase v0.32.2
+  [4c63d2b9] + StatsFuns v0.9.4
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Testing AdvancedHMC
+ Resolving package versions...
+ Installed ForwardDiff ───────────────── v0.10.9
+ Installed UnPack ────────────────────── v0.1.0
+ Installed Bijectors ─────────────────── v0.5.2
+ Installed Zygote ────────────────────── v0.4.10
+ Installed Distributions ─────────────── v0.22.5
+ Installed UnicodePlots ──────────────── v1.2.0
+ Installed DiffResults ───────────────── v1.0.2
+ Installed NaNMath ───────────────────── v0.3.3
+ Installed DiffRules ─────────────────── v1.0.1
+ Installed IterTools ─────────────────── v1.3.0
+ Installed OrdinaryDiffEq ────────────── v5.31.0
+ Installed RangeArrays ───────────────── v0.3.2
+ Installed QuadGK ────────────────────── v2.3.1
+ Installed VertexSafeGraphs ──────────── v0.1.1
+ Installed IntelOpenMP_jll ───────────── v2018.0.3+0
+ Installed Combinatorics ─────────────── v0.7.0
+ Installed OpenBLAS_jll ──────────────── v0.3.7+7
+ Installed NLSolversBase ─────────────── v7.6.1
+ Installed Turing ────────────────────── v0.9.0
+ Installed ExponentialUtilities ──────── v1.6.0
+ Installed LightGraphs ───────────────── v1.3.1
+ Installed LeftChildRightSiblingTrees ── v0.1.2
+ Installed EllipsisNotation ──────────── v0.4.0
+ Installed NNlib ─────────────────────── v0.6.6
+ Installed LoggingExtras ─────────────── v0.4.0
+ Installed FunctionWrappers ──────────── v1.1.1
+ Installed DynamicPPL ────────────────── v0.4.2
+ Installed Arpack_jll ────────────────── v3.5.0+2
+ Installed ArrayInterface ────────────── v2.5.1
+ Installed TransformVariables ────────── v0.3.8
+ Installed ProgressLogging ───────────── v0.1.2
+ Installed Arpack ────────────────────── v0.4.0
+ Installed BenchmarkTools ────────────── v0.5.0
+ Installed SimpleTraits ──────────────── v0.9.1
+ Installed Roots ─────────────────────── v0.8.4
+ Installed FFTW ──────────────────────── v1.2.0
+ Installed DistributionsAD ───────────── v0.4.6
+ Installed RecipesBase ───────────────── v0.8.0
+ Installed ChainRulesCore ────────────── v0.7.1
+ Installed MappedArrays ──────────────── v0.2.2
+ Installed RecursiveFactorization ────── v0.1.0
+ Installed Distances ─────────────────── v0.8.2
+ Installed FiniteDiff ────────────────── v2.2.1
+ Installed AxisArrays ────────────────── v0.4.2
+ Installed LogDensityProblems ────────── v0.10.3
+ Installed ReverseDiff ───────────────── v1.1.0
+ Installed Compat ────────────────────── v3.8.0
+ Installed IteratorInterfaceExtensions ─ v1.0.0
+ Installed MCMCChains ────────────────── v3.0.4
+ Installed TerminalLoggers ───────────── v0.1.1
+ Installed ArnoldiMethod ─────────────── v0.0.4
+ Installed RecursiveArrayTools ───────── v2.1.0
+ Installed GenericSVD ────────────────── v0.2.2
+ Installed ZygoteRules ───────────────── v0.2.0
+ Installed AbstractTrees ─────────────── v0.3.2
+ Installed IntervalSets ──────────────── v0.4.0
+ Installed Parsers ───────────────────── v0.3.12
+ Installed IRTools ───────────────────── v0.3.1
+ Installed AbstractFFTs ──────────────── v0.5.0
+ Installed Crayons ───────────────────── v4.0.1
+ Installed DiffEqBase ────────────────── v6.24.0
+ Installed JSON ──────────────────────── v0.21.0
+ Installed PDMats ────────────────────── v0.9.12
+ Installed Adapt ─────────────────────── v1.0.1
+ Installed Inflate ───────────────────── v0.1.1
+ Installed Formatting ────────────────── v0.4.1
+ Installed TableTraits ───────────────── v1.0.0
+ Installed Tracker ───────────────────── v0.2.6
+ Installed SparseDiffTools ───────────── v1.4.0
+ Installed LineSearches ──────────────── v7.0.1
+ Installed Reexport ──────────────────── v0.2.0
+ Installed NLsolve ───────────────────── v4.3.0
+ Installed BinaryProvider ────────────── v0.5.8
+ Installed Libtask ───────────────────── v0.3.3
+ Installed MKL_jll ───────────────────── v2019.0.117+2
+ Installed ConsoleProgressMonitor ────── v0.1.2
+ Installed FFTW_jll ──────────────────── v3.3.9+4
+ Installed MuladdMacro ───────────────── v0.2.2
+ Installed CommonSubexpressions ──────── v0.2.0
+ Installed AbstractMCMC ──────────────── v0.4.0
+ Installed AdvancedMH ────────────────── v0.4.1
+ Installed Polynomials ───────────────── v0.6.1
+ Installed DocStringExtensions ───────── v0.8.1
+ Installed IterativeSolvers ──────────── v0.8.1
+ Installed TreeViews ─────────────────── v0.3.0
+  Building NNlib ──→ `~/.julia/packages/NNlib/FAI3o/deps/build.log`
+  Building FFTW ───→ `~/.julia/packages/FFTW/qqcBj/deps/build.log`
+  Building Libtask → `~/.julia/packages/Libtask/K7OAU/deps/build.log`
+    Status `/tmp/jl_1K0Kx9/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [80f14c24] AbstractMCMC v0.4.0
+  [1520ce14] AbstractTrees v0.3.2
+  [79e6a3ab] Adapt v1.0.1
+  [0bf59076] AdvancedHMC v0.2.21
+  [5b7e9947] AdvancedMH v0.4.1
+  [dce04be8] ArgCheck v2.0.0
+  [ec485272] ArnoldiMethod v0.0.4
+  [7d9fca2a] Arpack v0.4.0
+  [68821587] Arpack_jll v3.5.0+2
+  [4fba245c] ArrayInterface v2.5.1
+  [4c555306] ArrayLayouts v0.1.5
+  [39de3d68] AxisArrays v0.4.2
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [76274a88] Bijectors v0.5.2
+  [b99e7846] BinaryProvider v0.5.8
+  [d360d2e6] ChainRulesCore v0.7.1
+  [861a8166] Combinatorics v0.7.0
+  [bbf7d656] CommonSubexpressions v0.2.0
+  [34da2185] Compat v3.8.0
+  [e66e0078] CompilerSupportLibraries_jll v0.2.0+1
+  [88cd18e8] ConsoleProgressMonitor v0.1.2
+  [a8cc5b0e] Crayons v4.0.1
+  [9a962f9c] DataAPI v1.1.0
+  [864edb3b] DataStructures v0.17.10
+  [2b5f629d] DiffEqBase v6.24.0
+  [163ba53b] DiffResults v1.0.2
+  [b552c78f] DiffRules v1.0.1
+  [b4f34e82] Distances v0.8.2
+  [31c24e10] Distributions v0.22.5
+  [ced4e74d] DistributionsAD v0.4.6
+  [ffbed154] DocStringExtensions v0.8.1
+  [366bfd00] DynamicPPL v0.4.2
+  [da5c29d0] EllipsisNotation v0.4.0
+  [d4d017d3] ExponentialUtilities v1.6.0
+  [7a1cc6ca] FFTW v1.2.0
+  [f5851436] FFTW_jll v3.3.9+4
+  [1a297f60] FillArrays v0.8.5
+  [6a86dc24] FiniteDiff v2.2.1
+  [59287772] Formatting v0.4.1
+  [f6369f11] ForwardDiff v0.10.9
+  [069b7b12] FunctionWrappers v1.1.1
+  [01680d73] GenericSVD v0.2.2
+  [7869d1d1] IRTools v0.3.1
+  [d25df0c9] Inflate v0.1.1
+  [505f98c9] InplaceOps v0.3.0
+  [1d5cc7b8] IntelOpenMP_jll v2018.0.3+0
+  [8197267c] IntervalSets v0.4.0
+  [c8e1da08] IterTools v1.3.0
+  [42fd0dbc] IterativeSolvers v0.8.1
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [682c06a0] JSON v0.21.0
+  [5078a376] LazyArrays v0.15.0
+  [1d6d02ad] LeftChildRightSiblingTrees v0.1.2
+  [6f1fad26] Libtask v0.3.3
+  [093fc24a] LightGraphs v1.3.1
+  [d3d80556] LineSearches v7.0.1
+  [6fdf6af0] LogDensityProblems v0.10.3
+  [e6f89c97] LoggingExtras v0.4.0
+  [c7f686f2] MCMCChains v3.0.4
+  [856f044c] MKL_jll v2019.0.117+2
+  [1914dd2f] MacroTools v0.5.4
+  [dbb5928d] MappedArrays v0.2.2
+  [e1d29d7a] Missings v0.4.3
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d41bc354] NLSolversBase v7.6.1
+  [2774e3e8] NLsolve v4.3.0
+  [872c559c] NNlib v0.6.6
+  [77ba4419] NaNMath v0.3.3
+  [4536629a] OpenBLAS_jll v0.3.7+7
+  [efe28fd5] OpenSpecFun_jll v0.5.3+3
+  [bac558e1] OrderedCollections v1.1.0
+  [1dea7af3] OrdinaryDiffEq v5.31.0
+  [90014a1f] PDMats v0.9.12
+  [d96e819e] Parameters v0.12.0
+  [69de0a69] Parsers v0.3.12
+  [f27b6e38] Polynomials v0.6.1
+  [33c8b6b6] ProgressLogging v0.1.2
+  [92933f4c] ProgressMeter v1.2.0
+  [1fd47b50] QuadGK v2.3.1
+  [b3c3ace0] RangeArrays v0.3.2
+  [3cdcf5f2] RecipesBase v0.8.0
+  [731186ca] RecursiveArrayTools v2.1.0
+  [f2c3362d] RecursiveFactorization v0.1.0
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.0.1
+  [37e2e3b7] ReverseDiff v1.1.0
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+0
+  [f2b01f46] Roots v0.8.4
+  [699a6c99] SimpleTraits v0.9.1
+  [a2af1166] SortingAlgorithms v0.3.1
+  [47a9eef4] SparseDiffTools v1.4.0
+  [276daf66] SpecialFunctions v0.10.0
+  [90137ffa] StaticArrays v0.12.1
+  [2913bbd2] StatsBase v0.32.2
+  [4c63d2b9] StatsFuns v0.9.4
+  [3783bdb8] TableTraits v1.0.0
+  [5d786b92] TerminalLoggers v0.1.1
+  [9f7883ad] Tracker v0.2.6
+  [84d833dd] TransformVariables v0.3.8
+  [a2a6695c] TreeViews v0.3.0
+  [fce5fe82] Turing v0.9.0
+  [3a884ed6] UnPack v0.1.0
+  [b8865327] UnicodePlots v1.2.0
+  [19fa3120] VertexSafeGraphs v0.1.1
+  [e88e6eb3] Zygote v0.4.10
+  [700de1a5] ZygoteRules v0.2.0
+  [2a0f44e3] Base64  [`@stdlib/Base64`]
+  [ade2ca70] Dates  [`@stdlib/Dates`]
+  [8bb1440f] DelimitedFiles  [`@stdlib/DelimitedFiles`]
+  [8ba89e20] Distributed  [`@stdlib/Distributed`]
+  [b77e0a4c] InteractiveUtils  [`@stdlib/InteractiveUtils`]
+  [76f85450] LibGit2  [`@stdlib/LibGit2`]
+  [8f399da3] Libdl  [`@stdlib/Libdl`]
+  [37e2e46d] LinearAlgebra  [`@stdlib/LinearAlgebra`]
+  [56ddb016] Logging  [`@stdlib/Logging`]
+  [d6f4376e] Markdown  [`@stdlib/Markdown`]
+  [a63ad114] Mmap  [`@stdlib/Mmap`]
+  [44cfe95a] Pkg  [`@stdlib/Pkg`]
+  [de0858da] Printf  [`@stdlib/Printf`]
+  [3fa0cd96] REPL  [`@stdlib/REPL`]
+  [9a3f8284] Random  [`@stdlib/Random`]
+  [ea8e919c] SHA  [`@stdlib/SHA`]
+  [9e88b42a] Serialization  [`@stdlib/Serialization`]
+  [1a1011a3] SharedArrays  [`@stdlib/SharedArrays`]
+  [6462fe0b] Sockets  [`@stdlib/Sockets`]
+  [2f01184e] SparseArrays  [`@stdlib/SparseArrays`]
+  [10745b16] Statistics  [`@stdlib/Statistics`]
+  [4607b0f0] SuiteSparse  [`@stdlib/SuiteSparse`]
+  [8dfed614] Test  [`@stdlib/Test`]
+  [cf7118a7] UUIDs  [`@stdlib/UUIDs`]
+  [4ec0a83e] Unicode  [`@stdlib/Unicode`]
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (false, false, true, true)
+└ @ AdvancedHMC ~/.julia/packages/AdvancedHMC/haUrH/src/hamiltonian.jl:44
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (false, false, true, true)
+└ @ AdvancedHMC ~/.julia/packages/AdvancedHMC/haUrH/src/hamiltonian.jl:44
+┌ Info: Performance of step() v.s. step()
+│   n_steps = 10
+│   t_step = 0.140383103
+│   t_steps = 0.007073757
+└   t_step / t_steps = 19.845621357929033
+Sampling  0%|                               |  ETA: 4:37:12[K
+  iterations:                    1
+  n_steps:                       1
+  is_accept:                     true
+  acceptance_rate:               0.007193825587420205
+  log_density:                   -11.13637304531153
+  hamiltonian_energy:            14.860586973740288
+  hamiltonian_energy_error:      0.0
+  max_hamiltonian_energy_error:  4.934532178175493
+  tree_depth:                    1
+  numerical_error:               false
+  step_size:                     1.6
+  nom_step_size:                 1.6
+  is_adapt:                      true
+  mass_matrix:                   DiagEuclideanMetric([1.0, 1.0, 1.0, 1.0, 1.0, 1 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 14%|████▍                          |  ETA: 0:00:14[K
+  iterations:                    1677
+  n_steps:                       31
+  is_accept:                     true
+  acceptance_rate:               0.9880536088159109
+  log_density:                   -11.579462474168825
+  hamiltonian_energy:            15.23768094226823
+  hamiltonian_energy_error:      -0.32763769429929823
+  max_hamiltonian_energy_error:  -0.3309898757059422
+  tree_depth:                    4
+  numerical_error:               false
+  step_size:                     0.8731243601262102
+  nom_step_size:                 0.8731243601262102
+  is_adapt:                      true
+  mass_matrix:                   DiagEuclideanMetric([0.8460290290113913, 1.0263 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 17%|█████▍                         |  ETA: 0:00:12[K
+  iterations:                    2069
+  n_steps:                       119
+  is_accept:                     true
+  acceptance_rate:               0.9756381726717758
+  log_density:                   -13.71162815883832
+  hamiltonian_energy:            15.89329610554594
+  hamiltonian_energy_error:      -0.008760266051965004
+  max_hamiltonian_energy_error:  -0.5008183153586678
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 19%|█████▉                         |  ETA: 0:00:11[K
+  iterations:                    2284
+  n_steps:                       63
+  is_accept:                     true
+  acceptance_rate:               0.9840065023270115
+  log_density:                   -11.482805265658985
+  hamiltonian_energy:            15.187162599688497
+  hamiltonian_energy_error:      -0.21816662940755016
+  max_hamiltonian_energy_error:  -0.23757313471168118
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 21%|██████▍                        |  ETA: 0:00:10[K
+  iterations:                    2479
+  n_steps:                       63
+  is_accept:                     true
+  acceptance_rate:               0.8369946063543765
+  log_density:                   -12.633089378939838
+  hamiltonian_energy:            17.713180431460483
+  hamiltonian_energy_error:      -0.017737536257119046
+  max_hamiltonian_energy_error:  0.5963342304317685
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 22%|██████▉                        |  ETA: 0:00:10[K
+  iterations:                    2678
+  n_steps:                       35
+  is_accept:                     true
+  acceptance_rate:               0.7539866392297536
+  log_density:                   -17.60274155435541
+  hamiltonian_energy:            24.007253941409996
+  hamiltonian_energy_error:      0.34233700678216294
+  max_hamiltonian_energy_error:  0.6825930869047596
+  tree_depth:                    5
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 24%|███████▎                       |  ETA: 0:00:09[K
+  iterations:                    2823
+  n_steps:                       119
+  is_accept:                     true
+  acceptance_rate:               0.8729597134384598
+  log_density:                   -11.899721199352674
+  hamiltonian_energy:            13.955918835307521
+  hamiltonian_energy_error:      0.1435837181552273
+  max_hamiltonian_energy_error:  0.3580549208754267
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 25%|███████▊                       |  ETA: 0:00:09[K
+  iterations:                    3024
+  n_steps:                       55
+  is_accept:                     true
+  acceptance_rate:               0.8676262209860206
+  log_density:                   -15.624404852153983
+  hamiltonian_energy:            23.703986453016824
+  hamiltonian_energy_error:      -0.1463320121817162
+  max_hamiltonian_energy_error:  0.6036893955831779
+  tree_depth:                    5
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 27%|████████▍                      |  ETA: 0:00:08[K
+  iterations:                    3240
+  n_steps:                       75
+  is_accept:                     true
+  acceptance_rate:               0.9446721049808053
+  log_density:                   -15.729684582364431
+  hamiltonian_energy:            17.778669237324017
+  hamiltonian_energy_error:      0.29315314540735926
+  max_hamiltonian_energy_error:  -0.3631837275295773
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 29%|████████▉                      |  ETA: 0:00:08[K
+  iterations:                    3432
+  n_steps:                       103
+  is_accept:                     true
+  acceptance_rate:               0.9948965029792385
+  log_density:                   -17.435545044843742
+  hamiltonian_energy:            21.143792612232314
+  hamiltonian_energy_error:      0.01654758815524815
+  max_hamiltonian_energy_error:  -0.6400035999967173
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 30%|█████████▍                     |  ETA: 0:00:08[K
+  iterations:                    3621
+  n_steps:                       15
+  is_accept:                     true
+  acceptance_rate:               0.909355652875001
+  log_density:                   -11.721278990299012
+  hamiltonian_energy:            13.927442622659813
+  hamiltonian_energy_error:      0.080332803405474
+  max_hamiltonian_energy_error:  0.18066004169136107
+  tree_depth:                    3
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 32%|█████████▉                     |  ETA: 0:00:07[K
+  iterations:                    3824
+  n_steps:                       35
+  is_accept:                     true
+  acceptance_rate:               0.975083578278504
+  log_density:                   -15.338193383586692
+  hamiltonian_energy:            19.80537693352759
+  hamiltonian_energy_error:      -0.06479261529135982
+  max_hamiltonian_energy_error:  -0.47670952340187256
+  tree_depth:                    5
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 33%|██████████▍                    |  ETA: 0:00:07[K
+  iterations:                    3996
+  n_steps:                       75
+  is_accept:                     true
+  acceptance_rate:               0.9806807281519335
+  log_density:                   -13.589661052863109
+  hamiltonian_energy:            17.466070166418888
+  hamiltonian_energy_error:      -0.1177779494599136
+  max_hamiltonian_energy_error:  -0.3239884941623785
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 35%|██████████▊                    |  ETA: 0:00:07[K
+  iterations:                    4174
+  n_steps:                       127
+  is_accept:                     true
+  acceptance_rate:               0.8898272975938963
+  log_density:                   -15.137071289683625
+  hamiltonian_energy:            25.877629718226167
+  hamiltonian_energy_error:      -0.5444293804625033
+  max_hamiltonian_energy_error:  -0.8139814159997059
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 36%|███████████▎                   |  ETA: 0:00:06[K
+  iterations:                    4356
+  n_steps:                       159
+  is_accept:                     true
+  acceptance_rate:               0.9861388885549682
+  log_density:                   -14.490146181297042
+  hamiltonian_energy:            20.924759183606938
+  hamiltonian_energy_error:      -0.36248548700279315
+  max_hamiltonian_energy_error:  -0.6744109846895441
+  tree_depth:                    7
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 38%|███████████▊                   |  ETA: 0:00:06[K
+  iterations:                    4555
+  n_steps:                       63
+  is_accept:                     true
+  acceptance_rate:               0.9623222017552301
+  log_density:                   -12.80154284767021
+  hamiltonian_energy:            15.874827444729181
+  hamiltonian_energy_error:      -0.09807847426456817
+  max_hamiltonian_energy_error:  -0.3746833220490764
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 40%|████████████▎                  |  ETA: 0:00:06[K
+  iterations:                    4740
+  n_steps:                       447
+  is_accept:                     true
+  acceptance_rate:               0.8532571230108468
+  log_density:                   -15.583164409521261
+  hamiltonian_energy:            19.286363364632745
+  hamiltonian_energy_error:      0.27146755927536503
+  max_hamiltonian_energy_error:  0.6885990260103974
+  tree_depth:                    8
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 41%|████████████▊                  |  ETA: 0:00:06[K
+  iterations:                    4939
+  n_steps:                       255
+  is_accept:                     true
+  acceptance_rate:               0.9875219472666643
+  log_density:                   -15.376572534833706
+  hamiltonian_energy:            18.168897780918808
+  hamiltonian_energy_error:      0.14025577002916378
+  max_hamiltonian_energy_error:  -0.2930922995211631
+  tree_depth:                    7
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 43%|█████████████▎                 |  ETA: 0:00:05[K
+  iterations:                    5148
+  n_steps:                       23
+  is_accept:                     true
+  acceptance_rate:               0.6600959388358837
+  log_density:                   -15.41259910098314
+  hamiltonian_energy:            18.723165596692485
+  hamiltonian_energy_error:      0.6241308489311663
+  max_hamiltonian_energy_error:  0.9143557467664145
+  tree_depth:                    4
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 44%|█████████████▊                 |  ETA: 0:00:05[K
+  iterations:                    5318
+  n_steps:                       3
+  is_accept:                     true
+  acceptance_rate:               0.7776867710681934
+  log_density:                   -11.202297613711012
+  hamiltonian_energy:            16.669184506052922
+  hamiltonian_energy_error:      -0.17166136316808434
+  max_hamiltonian_energy_error:  0.505203398426886
+  tree_depth:                    2
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 46%|██████████████▎                |  ETA: 0:00:05[K
+  iterations:                    5511
+  n_steps:                       63
+  is_accept:                     true
+  acceptance_rate:               0.9933721983767644
+  log_density:                   -14.349738164229077
+  hamiltonian_energy:            18.146457613717637
+  hamiltonian_energy_error:      -0.2699853868824782
+  max_hamiltonian_energy_error:  -0.7029525142108071
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 48%|██████████████▉                |  ETA: 0:00:05[K
+  iterations:                    5741
+  n_steps:                       3
+  is_accept:                     true
+  acceptance_rate:               0.8683090004748241
+  log_density:                   -15.057599472551022
+  hamiltonian_energy:            17.278153184675535
+  hamiltonian_energy_error:      0.31623040058632057
+  max_hamiltonian_energy_error:  0.31623040058632057
+  tree_depth:                    2
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 49%|███████████████▍               |  ETA: 0:00:05[K
+  iterations:                    5937
+  n_steps:                       99
+  is_accept:                     true
+  acceptance_rate:               0.973851436390957
+  log_density:                   -16.570452897975315
+  hamiltonian_energy:            23.36294389415736
+  hamiltonian_energy_error:      -0.25718858229863173
+  max_hamiltonian_energy_error:  -0.6479317398695166
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 51%|███████████████▉               |  ETA: 0:00:04[K
+  iterations:                    6147
+  n_steps:                       43
+  is_accept:                     true
+  acceptance_rate:               0.9303445605242232
+  log_density:                   -18.23985680935315
+  hamiltonian_energy:            21.463480928113828
+  hamiltonian_energy_error:      0.2888414704497464
+  max_hamiltonian_energy_error:  -0.8646926006754931
+  tree_depth:                    5
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 53%|████████████████▌              |  ETA: 0:00:04[K
+  iterations:                    6388
+  n_steps:                       79
+  is_accept:                     true
+  acceptance_rate:               0.8535280556611731
+  log_density:                   -11.546950835440374
+  hamiltonian_energy:            21.394684111218478
+  hamiltonian_energy_error:      -0.5612675935774369
+  max_hamiltonian_energy_error:  0.8936506167768314
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 55%|█████████████████              |  ETA: 0:00:04[K
+  iterations:                    6559
+  n_steps:                       63
+  is_accept:                     true
+  acceptance_rate:               0.9031631518898146
+  log_density:                   -12.621795297683075
+  hamiltonian_energy:            15.26199330046504
+  hamiltonian_energy_error:      0.12354386652648408
+  max_hamiltonian_energy_error:  0.2449345345750924
+  tree_depth:                    5
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 56%|█████████████████▍             |  ETA: 0:00:04[K
+  iterations:                    6747
+  n_steps:                       15
+  is_accept:                     true
+  acceptance_rate:               0.6366502878267577
+  log_density:                   -13.867764483796103
+  hamiltonian_energy:            20.05719117566842
+  hamiltonian_energy_error:      0.20463279347828234
+  max_hamiltonian_energy_error:  0.9925983764526691
+  tree_depth:                    3
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 58%|█████████████████▉             |  ETA: 0:00:04[K
+  iterations:                    6902
+  n_steps:                       135
+  is_accept:                     true
+  acceptance_rate:               0.7759986444268595
+  log_density:                   -14.63568276614518
+  hamiltonian_energy:            18.29276937871082
+  hamiltonian_energy_error:      0.3527238872809413
+  max_hamiltonian_energy_error:  0.6403335521530309
+  tree_depth:                    7
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 59%|██████████████████▍            |  ETA: 0:00:04[K
+  iterations:                    7101
+  n_steps:                       39
+  is_accept:                     true
+  acceptance_rate:               0.6410865208737331
+  log_density:                   -13.769950474835053
+  hamiltonian_energy:            22.28643279767624
+  hamiltonian_energy_error:      0.11526514804801735
+  max_hamiltonian_energy_error:  0.9888777133390043
+  tree_depth:                    5
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 61%|██████████████████▉            |  ETA: 0:00:03[K
+  iterations:                    7315
+  n_steps:                       55
+  is_accept:                     true
+  acceptance_rate:               0.9617671588468067
+  log_density:                   -13.709884910693848
+  hamiltonian_energy:            17.178686532009564
+  hamiltonian_energy_error:      -0.043192488767719084
+  max_hamiltonian_energy_error:  -0.35444153165856207
+  tree_depth:                    5
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 62%|███████████████████▍           |  ETA: 0:00:03[K
+  iterations:                    7493
+  n_steps:                       63
+  is_accept:                     true
+  acceptance_rate:               0.9995392656974331
+  log_density:                   -13.40614955764693
+  hamiltonian_energy:            15.632189566654228
+  hamiltonian_energy_error:      -0.053940274160927615
+  max_hamiltonian_energy_error:  -0.38290036081712486
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 64%|███████████████████▉           |  ETA: 0:00:03[K
+  iterations:                    7678
+  n_steps:                       27
+  is_accept:                     true
+  acceptance_rate:               0.712221801342779
+  log_density:                   -14.630057067561602
+  hamiltonian_energy:            25.346272399249393
+  hamiltonian_energy_error:      -0.22199783167014786
+  max_hamiltonian_energy_error:  1.1291859631123558
+  tree_depth:                    4
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 66%|████████████████████▍          |  ETA: 0:00:03[K
+  iterations:                    7897
+  n_steps:                       127
+  is_accept:                     true
+  acceptance_rate:               0.9856535200674806
+  log_density:                   -13.164156943214207
+  hamiltonian_energy:            17.76944725426603
+  hamiltonian_energy_error:      -0.14797801663333132
+  max_hamiltonian_energy_error:  -0.19483491626088423
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 67%|████████████████████▉          |  ETA: 0:00:03[K
+  iterations:                    8074
+  n_steps:                       3
+  is_accept:                     true
+  acceptance_rate:               0.893556358410695
+  log_density:                   -11.959846175913913
+  hamiltonian_energy:            18.09355587041151
+  hamiltonian_energy_error:      -0.3152196346010179
+  max_hamiltonian_energy_error:  0.34067989919637753
+  tree_depth:                    2
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 69%|█████████████████████▍         |  ETA: 0:00:03[K
+  iterations:                    8254
+  n_steps:                       47
+  is_accept:                     true
+  acceptance_rate:               0.71516676280357
+  log_density:                   -18.255052075413403
+  hamiltonian_energy:            25.02698483353403
+  hamiltonian_energy_error:      0.4861752865709086
+  max_hamiltonian_energy_error:  0.8179222171364522
+  tree_depth:                    5
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 71%|█████████████████████▉         |  ETA: 0:00:02[K
+  iterations:                    8483
+  n_steps:                       119
+  is_accept:                     true
+  acceptance_rate:               0.9608703399410815
+  log_density:                   -16.767906555585235
+  hamiltonian_energy:            22.235462046240936
+  hamiltonian_energy_error:      0.054189873951290934
+  max_hamiltonian_energy_error:  -0.48958247015183076
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 72%|██████████████████████▍        |  ETA: 0:00:02[K
+  iterations:                    8663
+  n_steps:                       71
+  is_accept:                     true
+  acceptance_rate:               0.9046941069359185
+  log_density:                   -12.2048397408825
+  hamiltonian_energy:            18.1467137793343
+  hamiltonian_energy_error:      -0.2501119445491575
+  max_hamiltonian_energy_error:  0.4714493761322309
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 74%|██████████████████████▉        |  ETA: 0:00:02[K
+  iterations:                    8852
+  n_steps:                       135
+  is_accept:                     true
+  acceptance_rate:               0.9375573834251207
+  log_density:                   -16.65714921554207
+  hamiltonian_energy:            21.769065912939325
+  hamiltonian_energy_error:      0.08771956666821978
+  max_hamiltonian_energy_error:  -0.7287275505791584
+  tree_depth:                    7
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 75%|███████████████████████▍       |  ETA: 0:00:02[K
+  iterations:                    9033
+  n_steps:                       43
+  is_accept:                     true
+  acceptance_rate:               0.748540375659399
+  log_density:                   -14.903998470505805
+  hamiltonian_energy:            20.339757608251162
+  hamiltonian_energy_error:      0.24818322086210287
+  max_hamiltonian_energy_error:  0.7409292187259275
+  tree_depth:                    5
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 77%|███████████████████████▊       |  ETA: 0:00:02[K
+  iterations:                    9185
+  n_steps:                       99
+  is_accept:                     true
+  acceptance_rate:               0.8782070331388792
+  log_density:                   -13.462845741975812
+  hamiltonian_energy:            15.412406953342009
+  hamiltonian_energy_error:      0.28200366087541084
+  max_hamiltonian_energy_error:  0.35406966825593855
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 78%|████████████████████████▎      |  ETA: 0:00:02[K
+  iterations:                    9379
+  n_steps:                       59
+  is_accept:                     true
+  acceptance_rate:               0.9047474116291647
+  log_density:                   -11.601913723879337
+  hamiltonian_energy:            16.789744387942775
+  hamiltonian_energy_error:      -0.22816106784656398
+  max_hamiltonian_energy_error:  0.3960755672094365
+  tree_depth:                    5
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 80%|████████████████████████▋      |  ETA: 0:00:02[K
+  iterations:                    9552
+  n_steps:                       127
+  is_accept:                     true
+  acceptance_rate:               0.9414052263545821
+  log_density:                   -13.462227293548793
+  hamiltonian_energy:            19.278835933480202
+  hamiltonian_energy_error:      -0.24262192059890708
+  max_hamiltonian_energy_error:  -0.631784730310855
+  tree_depth:                    7
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 81%|█████████████████████████▏     |  ETA: 0:00:02[K
+  iterations:                    9733
+  n_steps:                       107
+  is_accept:                     true
+  acceptance_rate:               0.9781602511436198
+  log_density:                   -11.749636547256118
+  hamiltonian_energy:            14.816771620636022
+  hamiltonian_energy_error:      -0.15738375472484378
+  max_hamiltonian_energy_error:  -0.3091726347835895
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 83%|█████████████████████████▋     |  ETA: 0:00:01[K
+  iterations:                    9927
+  n_steps:                       63
+  is_accept:                     true
+  acceptance_rate:               0.9260662199653142
+  log_density:                   -14.863419974150915
+  hamiltonian_energy:            20.84972926041797
+  hamiltonian_energy_error:      -0.1319274977996514
+  max_hamiltonian_energy_error:  -0.3452169681106554
+  tree_depth:                    5
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 84%|██████████████████████████▎    |  ETA: 0:00:01[K
+  iterations:                    10140
+  n_steps:                       71
+  is_accept:                     true
+  acceptance_rate:               0.8968424504089579
+  log_density:                   -11.563140512008268
+  hamiltonian_energy:            13.922750261499726
+  hamiltonian_energy_error:      0.08048346397444739
+  max_hamiltonian_energy_error:  0.29281131810016525
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 86%|██████████████████████████▋    |  ETA: 0:00:01[K
+  iterations:                    10316
+  n_steps:                       123
+  is_accept:                     true
+  acceptance_rate:               0.9222799407286647
+  log_density:                   -13.77548227636525
+  hamiltonian_energy:            16.359138910229273
+  hamiltonian_energy_error:      0.1478177599953554
+  max_hamiltonian_energy_error:  0.34914382159411517
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 87%|███████████████████████████▏   |  ETA: 0:00:01[K
+  iterations:                    10498
+  n_steps:                       171
+  is_accept:                     true
+  acceptance_rate:               0.9611666700505366
+  log_density:                   -12.751557547604573
+  hamiltonian_energy:            15.147648119114349
+  hamiltonian_energy_error:      -0.0025789248015399835
+  max_hamiltonian_energy_error:  -0.43944189224268193
+  tree_depth:                    7
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 89%|███████████████████████████▌   |  ETA: 0:00:01[K
+  iterations:                    10669
+  n_steps:                       87
+  is_accept:                     true
+  acceptance_rate:               0.9573923300495875
+  log_density:                   -16.814259380265035
+  hamiltonian_energy:            25.433006298055627
+  hamiltonian_energy_error:      -0.3484251843645687
+  max_hamiltonian_energy_error:  -0.8719418279079676
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 91%|████████████████████████████▏  |  ETA: 0:00:01[K
+  iterations:                    10878
+  n_steps:                       103
+  is_accept:                     true
+  acceptance_rate:               0.994700293861315
+  log_density:                   -15.783387489546586
+  hamiltonian_energy:            19.354171361585916
+  hamiltonian_energy_error:      -0.005094422007903887
+  max_hamiltonian_energy_error:  -0.6216171968933502
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 92%|████████████████████████████▌  |  ETA: 0:00:01[K
+  iterations:                    11043
+  n_steps:                       63
+  is_accept:                     true
+  acceptance_rate:               0.9520562152002726
+  log_density:                   -11.762479368011634
+  hamiltonian_energy:            15.299297644183188
+  hamiltonian_energy_error:      -0.07939097930111316
+  max_hamiltonian_energy_error:  0.16128915511828978
+  tree_depth:                    5
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 94%|█████████████████████████████  |  ETA: 0:00:01[K
+  iterations:                    11229
+  n_steps:                       31
+  is_accept:                     true
+  acceptance_rate:               0.9077807850451883
+  log_density:                   -12.259082628658318
+  hamiltonian_energy:            15.540032534583288
+  hamiltonian_energy_error:      -0.028145933889600627
+  max_hamiltonian_energy_error:  0.3094255978595122
+  tree_depth:                    4
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 95%|█████████████████████████████▌ |  ETA: 0:00:00[K
+  iterations:                    11425
+  n_steps:                       63
+  is_accept:                     true
+  acceptance_rate:               0.9629775489324033
+  log_density:                   -13.548857924729663
+  hamiltonian_energy:            18.960175397526427
+  hamiltonian_energy_error:      -0.2626991700644581
+  max_hamiltonian_energy_error:  -0.42190141896696076
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 97%|██████████████████████████████ |  ETA: 0:00:00[K
+  iterations:                    11591
+  n_steps:                       7
+  is_accept:                     true
+  acceptance_rate:               0.9470263338092038
+  log_density:                   -13.48676425110865
+  hamiltonian_energy:            19.70957334495216
+  hamiltonian_energy_error:      -0.35057432621465523
+  max_hamiltonian_energy_error:  -0.4510357591331271
+  tree_depth:                    2
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 98%|██████████████████████████████▎|  ETA: 0:00:00[K
+  iterations:                    11716
+  n_steps:                       7
+  is_accept:                     true
+  acceptance_rate:               0.8414143138972099
+  log_density:                   -13.689429981163594
+  hamiltonian_energy:            16.354615840284897
+  hamiltonian_energy_error:      0.2528396100288468
+  max_hamiltonian_energy_error:  0.31160621288979584
+  tree_depth:                    3
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling 99%|██████████████████████████████▊|  ETA: 0:00:00[K
+  iterations:                    11883
+  n_steps:                       95
+  is_accept:                     true
+  acceptance_rate:               0.9953048107558782
+  log_density:                   -12.526547069527089
+  hamiltonian_energy:            14.774563057629665
+  hamiltonian_energy_error:      -0.00568761067201784
+  max_hamiltonian_energy_error:  -0.1661378070641213
+  tree_depth:                    6
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[ASampling100%|███████████████████████████████| Time: 0:00:07[K
+  iterations:                    12000
+  n_steps:                       7
+  is_accept:                     true
+  acceptance_rate:               0.9766394368339745
+  log_density:                   -13.207383703024561
+  hamiltonian_energy:            17.700727186142494
+  hamiltonian_energy_error:      -0.21918114279635859
+  max_hamiltonian_energy_error:  -0.32124462316316027
+  tree_depth:                    2
+  numerical_error:               false
+  step_size:                     0.7788128877387851
+  nom_step_size:                 0.7788128877387851
+  is_adapt:                      false
+  mass_matrix:                   DiagEuclideanMetric([0.9728359948638003, 0.9277 ...])
+┌ Info: Finished 12000 sampling steps for 1 chains in 7.826440407 (s)
+│   h = Hamiltonian(metric=DiagEuclideanMetric([0.9728359948638003, 0.9277 ...]))
+│   τ = NUTS{MultinomialTS,Generalised}(integrator=Leapfrog(ϵ=0.779), max_depth=10), Δ_max=1000.0)
+│   EBFMI_est = 1.0860179308766043
+└   average_acceptance_rate = 0.8422083924839844
+┌ Info: Finished 1000 adapation steps
+│   adaptor =
+│    StanHMCAdaptor(
+│        pc=DiagPreconditioner,
+│        ssa=NesterovDualAveraging(γ=0.05, t_0=10.0, κ=0.75, δ=0.8, state.ϵ=0.6250306843958474),
+│        init_buffer=75, term_buffer=50, window_size=25,
+│        state=window(76, 950), window_splits(100, 150, 250, 450, 950)
+│    )
+│   τ.integrator = Leapfrog(ϵ=0.625)
+└   h.metric = DiagEuclideanMetric([0.37521629705404447, 0.561 ...])
+┌ Info: Finished 5000 sampling steps for 1 chains in 1.036185506 (s)
+│   h = Hamiltonian(metric=DiagEuclideanMetric([0.37521629705404447, 0.561 ...]))
+│   τ = NUTS{MultinomialTS,Generalised}(integrator=Leapfrog(ϵ=0.625), max_depth=10), Δ_max=1000.0)
+│   EBFMI_est = 0.9497682250328671
+└   average_acceptance_rate = 0.9074262074801318
+[ Info: Adaptation tests for StaticTrajectory{MultinomialTS} with TemperedLeapfrog on DiagEuclideanMetric are skipped
+[ Info: Adaptation tests for HMCDA{MultinomialTS} with TemperedLeapfrog on DiagEuclideanMetric are skipped
+[ Info: Adaptation tests for NUTS{SliceTS, Generalised} with TemperedLeapfrog on DiagEuclideanMetric are skipped
+[ Info: Adaptation tests for NUTS{MultinomialTS, Original} with TemperedLeapfrog on DiagEuclideanMetric are skipped
+[ Info: Adaptation tests for NUTS{MultinomialTS, Generalised} with TemperedLeapfrog on DiagEuclideanMetric are skipped
+[ Info: Adaptation tests for HMCDA{EndPointTS} with TemperedLeapfrog on DiagEuclideanMetric are skipped
+[ Info: Adaptation tests for NUTS{SliceTS, Original} with TemperedLeapfrog on DiagEuclideanMetric are skipped
+[ Info: Adaptation tests for StaticTrajectory{EndPointTS} with TemperedLeapfrog on DiagEuclideanMetric are skipped
+[ Info: Adaptation tests for StaticTrajectory{MultinomialTS} with TemperedLeapfrog on DenseEuclideanMetric are skipped
+[ Info: Adaptation tests for HMCDA{MultinomialTS} with TemperedLeapfrog on DenseEuclideanMetric are skipped
+[ Info: Adaptation tests for NUTS{SliceTS, Generalised} with TemperedLeapfrog on DenseEuclideanMetric are skipped
+[ Info: Adaptation tests for NUTS{MultinomialTS, Original} with TemperedLeapfrog on DenseEuclideanMetric are skipped
+[ Info: Adaptation tests for NUTS{MultinomialTS, Generalised} with TemperedLeapfrog on DenseEuclideanMetric are skipped
+[ Info: Adaptation tests for HMCDA{EndPointTS} with TemperedLeapfrog on DenseEuclideanMetric are skipped
+[ Info: Adaptation tests for NUTS{SliceTS, Original} with TemperedLeapfrog on DenseEuclideanMetric are skipped
+[ Info: Adaptation tests for StaticTrajectory{EndPointTS} with TemperedLeapfrog on DenseEuclideanMetric are skipped
+[ Info: Adaptation tests for StaticTrajectory{MultinomialTS} with TemperedLeapfrog on UnitEuclideanMetric are skipped
+[ Info: Adaptation tests for HMCDA{MultinomialTS} with TemperedLeapfrog on UnitEuclideanMetric are skipped
+[ Info: Adaptation tests for NUTS{SliceTS, Generalised} with TemperedLeapfrog on UnitEuclideanMetric are skipped
+[ Info: Adaptation tests for NUTS{MultinomialTS, Original} with TemperedLeapfrog on UnitEuclideanMetric are skipped
+[ Info: Adaptation tests for NUTS{MultinomialTS, Generalised} with TemperedLeapfrog on UnitEuclideanMetric are skipped
+[ Info: Adaptation tests for HMCDA{EndPointTS} with TemperedLeapfrog on UnitEuclideanMetric are skipped
+[ Info: Adaptation tests for NUTS{SliceTS, Original} with TemperedLeapfrog on UnitEuclideanMetric are skipped
+[ Info: Adaptation tests for StaticTrajectory{EndPointTS} with TemperedLeapfrog on UnitEuclideanMetric are skipped
+[ Info: Adaptation tests for HMCDA with NesterovDualAveraging are skipped
+
+                   Scalabiliry of multiple chains
+              ┌────────────────────────────────────────┐                 
+            4 │⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⢸⡸⠀⠀⠀⠀⠀⠀⠀⠀⠀│ matrix parallism
+              │⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠁⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀│ seperate        
+              │⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀│                 
+              │⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⡆⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠸⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀│                 
+              │⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⢣⠀⠀⢰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢇⠀⠀⠀│                 
+              │⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⠘⡄⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠘⡄⠀⠀│                 
+              │⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⢇⡸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡎⠀⠀⠸⠤⣀│                 
+   Time (s)   │⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡎⠀⠀⠀⠀⠸⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⠀⠀⠈│                 
+              │⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⠀⠀⢀⡄⠀⠀⠀⠀⢰⠒⠒⢆⠀⠀⢀⡜⠀⠀⠀⠀⠀⠀⠀│                 
+              │⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠁⠀⠀⠀⠀⠀⡜⢣⠀⠀⠀⢠⠃⠀⠀⠀⠑⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀│                 
+              │⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠤⢄⡇⠀⠀⠀⠀⠀⢰⠁⠈⡆⠀⢀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀│                 
+              │⠀⠀⠀⠀⠀⠀⠀⢠⠊⠀⠀⢀⡀⠀⠀⠀⠀⡠⠇⠀⠀⠸⡔⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀│                 
+              │⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⡜⠑⢄⢀⠔⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀│                 
+              │⠀⠀⡄⠀⠀⠀⢠⡣⠢⡀⡸⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀│                 
+            1 │⠀⠀⠈⢆⣀⣀⡜⠁⠀⠈⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀│                 
+              └────────────────────────────────────────┘                 
+              0                                       20
+                            Num of chains
+
+Test Summary: | Pass  Total
+AdvancedHMC   | 2875   2875
+   Testing AdvancedHMC tests passed 

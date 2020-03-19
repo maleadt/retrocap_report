@@ -1,0 +1,55 @@
+Julia Version 1.3.1
+Commit 2d5741174c (2019-12-30 21:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-6.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+ Resolving package versions...
+ Installed Rmath_jll ──────────────────── v0.2.2+0
+ Installed CompilerSupportLibraries_jll ─ v0.2.0+1
+ Installed RandomCorrelationMatrices ──── v1.0.0
+ Installed OrderedCollections ─────────── v1.1.0
+ Installed FillArrays ─────────────────── v0.8.5
+ Installed StatsFuns ──────────────────── v0.9.4
+ Installed QuadGK ─────────────────────── v2.3.1
+ Installed StatsBase ──────────────────── v0.32.2
+ Installed DataAPI ────────────────────── v1.1.0
+ Installed Arpack ─────────────────────── v0.4.0
+ Installed SortingAlgorithms ──────────── v0.3.1
+ Installed Arpack_jll ─────────────────── v3.5.0+2
+ Installed OpenSpecFun_jll ────────────── v0.5.3+3
+ Installed Missings ───────────────────── v0.4.3
+ Installed Rmath ──────────────────────── v0.6.1
+ Installed OpenBLAS_jll ───────────────── v0.3.7+7
+ Installed PDMats ─────────────────────── v0.9.12
+ Installed SpecialFunctions ───────────── v0.10.0
+ Installed DataStructures ─────────────── v0.17.10
+ Installed Distributions ──────────────── v0.22.5
+ERROR: Unable to automatically install 'Rmath' from '/home/pkgeval/.julia/packages/Rmath_jll/dkU4a/Artifacts.toml'
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] #ensure_artifact_installed#42(::Pkg.BinaryPlatforms.Platform, ::Bool, ::typeof(Pkg.Artifacts.ensure_artifact_installed), ::String, ::Dict{String,Any}, ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Artifacts.jl:873
+ [3] (::Pkg.Artifacts.var"#kw##ensure_artifact_installed")(::NamedTuple{(:platform, :verbose),Tuple{Pkg.BinaryPlatforms.Linux,Bool}}, ::typeof(Pkg.Artifacts.ensure_artifact_installed), ::String, ::Dict{String,Any}, ::String) at ./none:0
+ [4] #ensure_all_artifacts_installed#43(::Pkg.BinaryPlatforms.Platform, ::Nothing, ::Bool, ::Bool, ::typeof(Pkg.Artifacts.ensure_all_artifacts_installed), ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Artifacts.jl:919
+ [5] #ensure_all_artifacts_installed at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Operations.jl:0 [inlined]
+ [6] #download_artifacts#78(::Pkg.BinaryPlatforms.Linux, ::Bool, ::typeof(Pkg.Operations.download_artifacts), ::Array{String,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Operations.jl:580
+ [7] #download_artifacts at ./none:0 [inlined]
+ [8] #download_artifacts#73(::Pkg.BinaryPlatforms.Linux, ::Bool, ::typeof(Pkg.Operations.download_artifacts), ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Operations.jl:570
+ [9] (::Pkg.Operations.var"#kw##download_artifacts")(::NamedTuple{(:platform,),Tuple{Pkg.BinaryPlatforms.Linux}}, ::typeof(Pkg.Operations.download_artifacts), ::Array{Pkg.Types.PackageSpec,1}) at ./none:0
+ [10] #add#112(::Bool, ::Pkg.BinaryPlatforms.Linux, ::typeof(Pkg.Operations.add), ::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Operations.jl:1017
+ [11] #add at ./none:0 [inlined]
+ [12] #add#25(::Bool, ::Pkg.BinaryPlatforms.Linux, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Pkg.API.add), ::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:102
+ [13] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:72
+ [14] #add#24 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:69 [inlined]
+ [15] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:69 [inlined]
+ [16] #add#21 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:67 [inlined]
+ [17] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:67 [inlined]
+ [18] #add#20(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Pkg.API.add), ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:66
+ [19] add(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:66
+ [20] top-level scope at none:12

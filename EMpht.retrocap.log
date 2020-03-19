@@ -1,0 +1,286 @@
+Julia Version 1.3.1
+Commit 2d5741174c (2019-12-30 21:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-6.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+ Resolving package versions...
+ Installed NaNMath ────────────────────── v0.3.3
+ Installed Rmath_jll ──────────────────── v0.2.2+0
+ Installed EMpht ──────────────────────── v0.1.0
+ Installed DiffResults ────────────────── v1.0.2
+ Installed StatsFuns ──────────────────── v0.9.4
+ Installed DiffRules ──────────────────── v1.0.1
+ Installed StatsBase ──────────────────── v0.32.2
+ Installed DiffEqOperators ────────────── v3.5.0
+ Installed ArrayInterface ─────────────── v2.5.1
+ Installed QuadGK ─────────────────────── v2.3.1
+ Installed Combinatorics ──────────────── v1.0.0
+ Installed NLSolversBase ──────────────── v7.6.1
+ Installed ExponentialUtilities ───────── v1.6.0
+ Installed OpenBLAS_jll ───────────────── v0.3.7+7
+ Installed Roots ──────────────────────── v0.8.4
+ Installed CompilerSupportLibraries_jll ─ v0.2.0+1
+ Installed DataAPI ────────────────────── v1.1.0
+ Installed HCubature ──────────────────── v1.4.0
+ Installed Arpack_jll ─────────────────── v3.5.0+2
+ Installed Arpack ─────────────────────── v0.4.0
+ Installed FillArrays ─────────────────── v0.8.5
+ Installed FiniteDiff ─────────────────── v2.2.1
+ Installed RecipesBase ────────────────── v0.7.0
+ Installed Requires ───────────────────── v0.5.2
+ Installed OrdinaryDiffEq ─────────────── v5.6.1
+ Installed Distances ──────────────────── v0.8.2
+ Installed StaticArrays ───────────────── v0.10.3
+ Installed DiffEqDiffTools ────────────── v1.7.0
+ Installed DataStructures ─────────────── v0.17.10
+ Installed SpecialFunctions ───────────── v0.10.0
+ Installed IteratorInterfaceExtensions ── v1.0.0
+ Installed ForwardDiff ────────────────── v0.10.9
+ Installed Distributions ──────────────── v0.22.5
+ Installed Compat ─────────────────────── v2.2.0
+ Installed GenericSVD ─────────────────── v0.2.2
+ Installed RecursiveArrayTools ────────── v0.18.6
+ Installed JSON ───────────────────────── v0.21.0
+ Installed Rmath ──────────────────────── v0.6.1
+ Installed DiffEqBase ─────────────────── v5.6.4
+ Installed SortingAlgorithms ──────────── v0.3.1
+ Installed PDMats ─────────────────────── v0.9.12
+ Installed TableTraits ────────────────── v1.0.0
+ Installed Reexport ───────────────────── v0.2.0
+ Installed LineSearches ───────────────── v7.0.1
+ Installed OrderedCollections ─────────── v1.1.0
+ Installed NLsolve ────────────────────── v4.3.0
+ Installed DocStringExtensions ────────── v0.8.1
+ Installed CommonSubexpressions ───────── v0.2.0
+ Installed Parameters ─────────────────── v0.11.0
+ Installed MuladdMacro ────────────────── v0.2.2
+ Installed OpenSpecFun_jll ────────────── v0.5.3+3
+ Installed Missings ───────────────────── v0.4.3
+ Installed TreeViews ──────────────────── v0.3.0
+ Installed Polynomials ────────────────── v0.6.1
+   Cloning [69de0a69-1ddd-5017-9359-2bf0b02dc9f0] Parsers from https://github.com/JuliaData/Parsers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h Installed Parsers ────────────────────── v0.3.12
+  Updating `~/.julia/environments/v1.3/Project.toml`
+  [0ca9fa26] + EMpht v0.1.0
+  Updating `~/.julia/environments/v1.3/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+2
+  [4fba245c] + ArrayInterface v2.5.1
+  [861a8166] + Combinatorics v1.0.0
+  [bbf7d656] + CommonSubexpressions v0.2.0
+  [34da2185] + Compat v2.2.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.2.0+1
+  [9a962f9c] + DataAPI v1.1.0
+  [864edb3b] + DataStructures v0.17.10
+  [2b5f629d] + DiffEqBase v5.6.4
+  [01453d9d] + DiffEqDiffTools v1.7.0
+  [9fdde737] + DiffEqOperators v3.5.0
+  [163ba53b] + DiffResults v1.0.2
+  [b552c78f] + DiffRules v1.0.1
+  [b4f34e82] + Distances v0.8.2
+  [31c24e10] + Distributions v0.22.5
+  [ffbed154] + DocStringExtensions v0.8.1
+  [0ca9fa26] + EMpht v0.1.0
+  [d4d017d3] + ExponentialUtilities v1.6.0
+  [1a297f60] + FillArrays v0.8.5
+  [6a86dc24] + FiniteDiff v2.2.1
+  [f6369f11] + ForwardDiff v0.10.9
+  [01680d73] + GenericSVD v0.2.2
+  [19dc6840] + HCubature v1.4.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [682c06a0] + JSON v0.21.0
+  [d3d80556] + LineSearches v7.0.1
+  [e1d29d7a] + Missings v0.4.3
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d41bc354] + NLSolversBase v7.6.1
+  [2774e3e8] + NLsolve v4.3.0
+  [77ba4419] + NaNMath v0.3.3
+  [4536629a] + OpenBLAS_jll v0.3.7+7
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+3
+  [bac558e1] + OrderedCollections v1.1.0
+  [1dea7af3] + OrdinaryDiffEq v5.6.1
+  [90014a1f] + PDMats v0.9.12
+  [d96e819e] + Parameters v0.11.0
+  [69de0a69] + Parsers v0.3.12
+  [f27b6e38] + Polynomials v0.6.1
+  [1fd47b50] + QuadGK v2.3.1
+  [3cdcf5f2] + RecipesBase v0.7.0
+  [731186ca] + RecursiveArrayTools v0.18.6
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v0.5.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+0
+  [f2b01f46] + Roots v0.8.4
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.10.0
+  [90137ffa] + StaticArrays v0.10.3
+  [2913bbd2] + StatsBase v0.32.2
+  [4c63d2b9] + StatsFuns v0.9.4
+  [3783bdb8] + TableTraits v1.0.0
+  [a2a6695c] + TreeViews v0.3.0
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8bb1440f] + DelimitedFiles 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [1a1011a3] + SharedArrays 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [4607b0f0] + SuiteSparse 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Testing EMpht
+ Resolving package versions...
+    Status `/tmp/jl_U9L2R1/Manifest.toml`
+  [7d9fca2a] Arpack v0.4.0
+  [68821587] Arpack_jll v3.5.0+2
+  [4fba245c] ArrayInterface v2.5.1
+  [861a8166] Combinatorics v1.0.0
+  [bbf7d656] CommonSubexpressions v0.2.0
+  [34da2185] Compat v2.2.0
+  [e66e0078] CompilerSupportLibraries_jll v0.2.0+1
+  [9a962f9c] DataAPI v1.1.0
+  [864edb3b] DataStructures v0.17.10
+  [2b5f629d] DiffEqBase v5.6.4
+  [01453d9d] DiffEqDiffTools v1.7.0
+  [9fdde737] DiffEqOperators v3.5.0
+  [163ba53b] DiffResults v1.0.2
+  [b552c78f] DiffRules v1.0.1
+  [b4f34e82] Distances v0.8.2
+  [31c24e10] Distributions v0.22.5
+  [ffbed154] DocStringExtensions v0.8.1
+  [0ca9fa26] EMpht v0.1.0
+  [d4d017d3] ExponentialUtilities v1.6.0
+  [1a297f60] FillArrays v0.8.5
+  [6a86dc24] FiniteDiff v2.2.1
+  [f6369f11] ForwardDiff v0.10.9
+  [01680d73] GenericSVD v0.2.2
+  [19dc6840] HCubature v1.4.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [682c06a0] JSON v0.21.0
+  [d3d80556] LineSearches v7.0.1
+  [e1d29d7a] Missings v0.4.3
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d41bc354] NLSolversBase v7.6.1
+  [2774e3e8] NLsolve v4.3.0
+  [77ba4419] NaNMath v0.3.3
+  [4536629a] OpenBLAS_jll v0.3.7+7
+  [efe28fd5] OpenSpecFun_jll v0.5.3+3
+  [bac558e1] OrderedCollections v1.1.0
+  [1dea7af3] OrdinaryDiffEq v5.6.1
+  [90014a1f] PDMats v0.9.12
+  [d96e819e] Parameters v0.11.0
+  [69de0a69] Parsers v0.3.12
+  [f27b6e38] Polynomials v0.6.1
+  [1fd47b50] QuadGK v2.3.1
+  [3cdcf5f2] RecipesBase v0.7.0
+  [731186ca] RecursiveArrayTools v0.18.6
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v0.5.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+0
+  [f2b01f46] Roots v0.8.4
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.10.0
+  [90137ffa] StaticArrays v0.10.3
+  [2913bbd2] StatsBase v0.32.2
+  [4c63d2b9] StatsFuns v0.9.4
+  [3783bdb8] TableTraits v1.0.0
+  [a2a6695c] TreeViews v0.3.0
+  [2a0f44e3] Base64  [`@stdlib/Base64`]
+  [ade2ca70] Dates  [`@stdlib/Dates`]
+  [8bb1440f] DelimitedFiles  [`@stdlib/DelimitedFiles`]
+  [8ba89e20] Distributed  [`@stdlib/Distributed`]
+  [b77e0a4c] InteractiveUtils  [`@stdlib/InteractiveUtils`]
+  [76f85450] LibGit2  [`@stdlib/LibGit2`]
+  [8f399da3] Libdl  [`@stdlib/Libdl`]
+  [37e2e46d] LinearAlgebra  [`@stdlib/LinearAlgebra`]
+  [56ddb016] Logging  [`@stdlib/Logging`]
+  [d6f4376e] Markdown  [`@stdlib/Markdown`]
+  [a63ad114] Mmap  [`@stdlib/Mmap`]
+  [44cfe95a] Pkg  [`@stdlib/Pkg`]
+  [de0858da] Printf  [`@stdlib/Printf`]
+  [3fa0cd96] REPL  [`@stdlib/REPL`]
+  [9a3f8284] Random  [`@stdlib/Random`]
+  [ea8e919c] SHA  [`@stdlib/SHA`]
+  [9e88b42a] Serialization  [`@stdlib/Serialization`]
+  [1a1011a3] SharedArrays  [`@stdlib/SharedArrays`]
+  [6462fe0b] Sockets  [`@stdlib/Sockets`]
+  [2f01184e] SparseArrays  [`@stdlib/SparseArrays`]
+  [10745b16] Statistics  [`@stdlib/Statistics`]
+  [4607b0f0] SuiteSparse  [`@stdlib/SuiteSparse`]
+  [8dfed614] Test  [`@stdlib/Test`]
+  [cf7118a7] UUIDs  [`@stdlib/UUIDs`]
+  [4ec0a83e] Unicode  [`@stdlib/Unicode`]
+WARNING: Method definition vec(Number) in module FiniteDiff at /home/pkgeval/.julia/packages/FiniteDiff/IZ61j/src/jacobians.jl:128 overwritten in module DiffEqDiffTools at /home/pkgeval/.julia/packages/DiffEqDiffTools/3mm8U/src/jacobians.jl:114.
+  ** incremental compilation may be fatally broken for this module **
+
+ERROR: LoadError: UndefVarError: _vec not defined
+Stacktrace:
+ [1] include at ./boot.jl:328 [inlined]
+ [2] include_relative(::Module, ::String) at ./loading.jl:1105
+ [3] include(::Module, ::String) at ./Base.jl:31
+ [4] top-level scope at none:2
+ [5] eval at ./boot.jl:330 [inlined]
+ [6] eval(::Expr) at ./client.jl:425
+ [7] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/OrdinaryDiffEq/TUKTm/src/OrdinaryDiffEq.jl:41
+ERROR: LoadError: LoadError: Failed to precompile OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed] to /home/pkgeval/.julia/compiled/v1.3/OrdinaryDiffEq/DlSvy_vNZU9.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1283
+ [3] _require(::Base.PkgId) at ./loading.jl:1024
+ [4] require(::Base.PkgId) at ./loading.jl:922
+ [5] require(::Module, ::Symbol) at ./loading.jl:917
+ [6] include at ./boot.jl:328 [inlined]
+ [7] include_relative(::Module, ::String) at ./loading.jl:1105
+ [8] include at ./Base.jl:31 [inlined]
+ [9] include(::String) at /home/pkgeval/.julia/packages/EMpht/PmY1S/src/EMpht.jl:1
+ [10] top-level scope at /home/pkgeval/.julia/packages/EMpht/PmY1S/src/EMpht.jl:15
+ [11] include at ./boot.jl:328 [inlined]
+ [12] include_relative(::Module, ::String) at ./loading.jl:1105
+ [13] include(::Module, ::String) at ./Base.jl:31
+ [14] top-level scope at none:2
+ [15] eval at ./boot.jl:330 [inlined]
+ [16] eval(::Expr) at ./client.jl:425
+ [17] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/EMpht/PmY1S/src/ode.jl:1
+in expression starting at /home/pkgeval/.julia/packages/EMpht/PmY1S/src/EMpht.jl:15
+ERROR: LoadError: Failed to precompile EMpht [0ca9fa26-8833-11e9-3415-832a08817e5a] to /home/pkgeval/.julia/compiled/v1.3/EMpht/lpgEz_vNZU9.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1283
+ [3] _require(::Base.PkgId) at ./loading.jl:1024
+ [4] require(::Base.PkgId) at ./loading.jl:922
+ [5] require(::Module, ::Symbol) at ./loading.jl:917
+ [6] include at ./boot.jl:328 [inlined]
+ [7] include_relative(::Module, ::String) at ./loading.jl:1105
+ [8] include(::Module, ::String) at ./Base.jl:31
+ [9] include(::String) at ./client.jl:424
+ [10] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/EMpht/PmY1S/test/runtests.jl:2
+ERROR: Package EMpht errored during testing
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Types.jl:113
+ [2] #test#131(::Bool, ::Nothing, ::Cmd, ::Cmd, ::typeof(Pkg.Operations.test), ::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Operations.jl:1372

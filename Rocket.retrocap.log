@@ -1,0 +1,298 @@
+Julia Version 1.3.1
+Commit 2d5741174c (2019-12-30 21:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-6.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+ Resolving package versions...
+ Installed OrderedCollections ── v1.1.0
+ Installed Suppressor ────────── v0.1.1
+ Installed Compat ────────────── v2.2.0
+ Installed Parsers ───────────── v0.3.12
+ Installed JSON ──────────────── v0.21.0
+ Installed DocStringExtensions ─ v0.8.1
+ Installed Rocket ────────────── v1.1.2
+ Installed Documenter ────────── v0.24.6
+ Installed DataStructures ────── v0.17.10
+  Updating `~/.julia/environments/v1.3/Project.toml`
+  [df971d30] + Rocket v1.1.2
+  Updating `~/.julia/environments/v1.3/Manifest.toml`
+  [34da2185] + Compat v2.2.0
+  [864edb3b] + DataStructures v0.17.10
+  [ffbed154] + DocStringExtensions v0.8.1
+  [e30172f5] + Documenter v0.24.6
+  [682c06a0] + JSON v0.21.0
+  [bac558e1] + OrderedCollections v1.1.0
+  [69de0a69] + Parsers v0.3.12
+  [df971d30] + Rocket v1.1.2
+  [fd094767] + Suppressor v0.1.1
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8bb1440f] + DelimitedFiles 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [1a1011a3] + SharedArrays 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Testing Rocket
+    Status `/tmp/jl_NhUXs2/Manifest.toml`
+  [34da2185] Compat v2.2.0
+  [864edb3b] DataStructures v0.17.10
+  [ffbed154] DocStringExtensions v0.8.1
+  [e30172f5] Documenter v0.24.6
+  [682c06a0] JSON v0.21.0
+  [bac558e1] OrderedCollections v1.1.0
+  [69de0a69] Parsers v0.3.12
+  [df971d30] Rocket v1.1.2
+  [fd094767] Suppressor v0.1.1
+  [2a0f44e3] Base64  [`@stdlib/Base64`]
+  [ade2ca70] Dates  [`@stdlib/Dates`]
+  [8bb1440f] DelimitedFiles  [`@stdlib/DelimitedFiles`]
+  [8ba89e20] Distributed  [`@stdlib/Distributed`]
+  [b77e0a4c] InteractiveUtils  [`@stdlib/InteractiveUtils`]
+  [76f85450] LibGit2  [`@stdlib/LibGit2`]
+  [8f399da3] Libdl  [`@stdlib/Libdl`]
+  [37e2e46d] LinearAlgebra  [`@stdlib/LinearAlgebra`]
+  [56ddb016] Logging  [`@stdlib/Logging`]
+  [d6f4376e] Markdown  [`@stdlib/Markdown`]
+  [a63ad114] Mmap  [`@stdlib/Mmap`]
+  [44cfe95a] Pkg  [`@stdlib/Pkg`]
+  [de0858da] Printf  [`@stdlib/Printf`]
+  [3fa0cd96] REPL  [`@stdlib/REPL`]
+  [9a3f8284] Random  [`@stdlib/Random`]
+  [ea8e919c] SHA  [`@stdlib/SHA`]
+  [9e88b42a] Serialization  [`@stdlib/Serialization`]
+  [1a1011a3] SharedArrays  [`@stdlib/SharedArrays`]
+  [6462fe0b] Sockets  [`@stdlib/Sockets`]
+  [2f01184e] SparseArrays  [`@stdlib/SparseArrays`]
+  [10745b16] Statistics  [`@stdlib/Statistics`]
+  [8dfed614] Test  [`@stdlib/Test`]
+  [cf7118a7] UUIDs  [`@stdlib/UUIDs`]
+  [4ec0a83e] Unicode  [`@stdlib/Unicode`]
+[ Info: SetupBuildDirectory: setting up build directory.
+[ Info: Doctest: running doctests.
+[LogActor] Data: 0
+┌ Error: doctest failure in ~/.julia/packages/Rocket/5CUBQ/src/actor/sync.jl:12-30
+│ 
+│ ```jldoctest
+│ using Rocket
+│ 
+│ source = timer(1, 1) |> take(3)
+│ actor  = LoggerActor{Int}()
+│ synced = SyncActor{Int, LoggerActor{Int}}(actor)
+│ 
+│ subscrption = subscribe!(source, synced)
+│ 
+│ wait(synced)
+│ ;
+│ 
+│ # output
+│ 
+│ [LogActor] Data: 0
+│ [LogActor] Data: 1
+│ [LogActor] Data: 2
+│ [LogActor] Completed
+│ ```
+│ 
+│ Subexpression:
+│ 
+│ using Rocket
+│ 
+│ source = timer(1, 1) |> take(3)
+│ actor  = LoggerActor{Int}()
+│ synced = SyncActor{Int, LoggerActor{Int}}(actor)
+│ 
+│ subscrption = subscribe!(source, synced)
+│ 
+│ wait(synced)
+│ ;
+│ 
+│ Evaluated output:
+│ 
+│ [LogActor] Data: 1
+│ [LogActor] Data: 2
+│ [LogActor] Completed
+│ 
+│ Expected output:
+│ 
+│ [LogActor] Data: 0
+│ [LogActor] Data: 1
+│ [LogActor] Data: 2
+│ [LogActor] Completed
+│ 
+│   diff =
+│    Warning: Diff output requires color.
+│    [LogActor] Data: 0
+│    [LogActor] Data: 1
+│    [LogActor] Data: 2
+│    [LogActor] Completed
+└ @ Documenter.DocTests ~/.julia/packages/Documenter/RrEcY/src/DocTests.jl:369
+┌ Error: doctest failure in ~/.julia/packages/Rocket/5CUBQ/src/observable/merged.jl:109-133
+│ 
+│ ```jldoctest
+│ using Rocket
+│ 
+│ observable = merged((timer(100, 1), of(2.0), from("Hello"))) |> take(10)
+│ 
+│ actor = sync(logger())
+│ 
+│ subscribe!(observable, actor)
+│ 
+│ wait(actor)
+│ ;
+│ 
+│ # output
+│ [LogActor] Data: 2.0
+│ [LogActor] Data: H
+│ [LogActor] Data: e
+│ [LogActor] Data: l
+│ [LogActor] Data: l
+│ [LogActor] Data: o
+│ [LogActor] Data: 0
+│ [LogActor] Data: 1
+│ [LogActor] Data: 2
+│ [LogActor] Data: 3
+│ [LogActor] Completed
+│ ```
+│ 
+│ Subexpression:
+│ 
+│ using Rocket
+│ 
+│ observable = merged((timer(100, 1), of(2.0), from("Hello"))) |> take(10)
+│ 
+│ actor = sync(logger())
+│ 
+│ subscribe!(observable, actor)
+│ 
+│ wait(actor)
+│ ;
+│ 
+│ Evaluated output:
+│ 
+│ [LogActor] Data: 2.0
+│ [LogActor] Data: H
+│ [LogActor] Data: e
+│ [LogActor] Data: l
+│ [LogActor] Data: l
+│ [LogActor] Data: o
+│ 
+│ [LogActor] Data: 0[LogActor] Data: 1
+│ [LogActor] Data: 2
+│ [LogActor] Data: 3
+│ [LogActor] Completed
+│ 
+│ Expected output:
+│ 
+│ [LogActor] Data: 2.0
+│ [LogActor] Data: H
+│ [LogActor] Data: e
+│ [LogActor] Data: l
+│ [LogActor] Data: l
+│ [LogActor] Data: o
+│ [LogActor] Data: 0
+│ [LogActor] Data: 1
+│ [LogActor] Data: 2
+│ [LogActor] Data: 3
+│ [LogActor] Completed
+│ 
+│   diff =
+│    Warning: Diff output requires color.
+│    [LogActor] Data: 2.0
+│    [LogActor] Data: H
+│    [LogActor] Data: e
+│    [LogActor] Data: l
+│    [LogActor] Data: l
+│    [LogActor] Data: o
+│    o
+│    
+│    [LogActor] Data: 0
+│    [LogActor] 0[LogActor] Data: 1
+│    [LogActor] Data: 2
+│    [LogActor] Data: 3
+│    [LogActor] Completed
+└ @ Documenter.DocTests ~/.julia/packages/Documenter/RrEcY/src/DocTests.jl:369
+┌ Error: Doctesting failed
+│   exception =
+│    `makedocs` encountered a doctest error. Terminating build
+│    Stacktrace:
+│     [1] error(::String) at ./error.jl:33
+│     [2] runner(::Type{Documenter.Builder.Doctest}, ::Documenter.Documents.Document) at /home/pkgeval/.julia/packages/Documenter/RrEcY/src/Builder.jl:204
+│     [3] dispatch(::Type{Documenter.Builder.DocumentPipeline}, ::Documenter.Documents.Document) at /home/pkgeval/.julia/packages/Documenter/RrEcY/src/Utilities/Selectors.jl:167
+│     [4] #2 at /home/pkgeval/.julia/packages/Documenter/RrEcY/src/Documenter.jl:237 [inlined]
+│     [5] cd(::Documenter.var"#2#3"{Documenter.Documents.Document}, ::String) at ./file.jl:104
+│     [6] #makedocs#1(::Bool, ::Documenter.Writers.HTMLWriter.HTML, ::Base.Iterators.Pairs{Symbol,Any,NTuple{5,Symbol},NamedTuple{(:root, :source, :sitename, :doctest, :modules),Tuple{String,String,String,Symbol,Array{Module,1}}}}, ::typeof(Documenter.makedocs)) at /home/pkgeval/.julia/packages/Documenter/RrEcY/src/Documenter.jl:236
+│     [7] (::Documenter.var"#kw##makedocs")(::NamedTuple{(:root, :source, :sitename, :doctest, :modules),Tuple{String,String,String,Symbol,Array{Module,1}}}, ::typeof(Documenter.makedocs)) at ./none:0
+│     [8] (::Documenter.var"#all_doctests#32"{Bool,Array{Module,1}})() at /home/pkgeval/.julia/packages/Documenter/RrEcY/src/Documenter.jl:725
+│     [9] macro expansion at /home/pkgeval/.julia/packages/Documenter/RrEcY/src/Documenter.jl:741 [inlined]
+│     [10] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
+│     [11] #doctest#31(::Bool, ::String, ::typeof(Documenter.doctest), ::String, ::Array{Module,1}) at /home/pkgeval/.julia/packages/Documenter/RrEcY/src/Documenter.jl:741
+│     [12] #doctest at ./none:0 [inlined]
+│     [13] #doctest#30(::Bool, ::Nothing, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Documenter.doctest), ::Module) at /home/pkgeval/.julia/packages/Documenter/RrEcY/src/Documenter.jl:684
+│     [14] doctest(::Module) at /home/pkgeval/.julia/packages/Documenter/RrEcY/src/Documenter.jl:671
+│     [15] top-level scope at /home/pkgeval/.julia/packages/Rocket/5CUBQ/test/runtests.jl:5
+│     [16] include at ./boot.jl:328 [inlined]
+│     [17] include_relative(::Module, ::String) at ./loading.jl:1105
+│     [18] include(::Module, ::String) at ./Base.jl:31
+│     [19] include(::String) at ./client.jl:424
+│     [20] top-level scope at none:6
+│     [21] eval(::Module, ::Any) at ./boot.jl:330
+│     [22] exec_options(::Base.JLOptions) at ./client.jl:263
+│     [23] _start() at ./client.jl:460
+└ @ Documenter ~/.julia/packages/Documenter/RrEcY/src/Documenter.jl:734
+Doctests: Rocket: Test Failed at /home/pkgeval/.julia/packages/Documenter/RrEcY/src/Documenter.jl:741
+  Expression: all_doctests()
+Stacktrace:
+ [1] #doctest#31(::Bool, ::String, ::typeof(Documenter.doctest), ::String, ::Array{Module,1}) at /home/pkgeval/.julia/packages/Documenter/RrEcY/src/Documenter.jl:741
+ [2] #doctest at ./none:0 [inlined]
+ [3] #doctest#30(::Bool, ::Nothing, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Documenter.doctest), ::Module) at /home/pkgeval/.julia/packages/Documenter/RrEcY/src/Documenter.jl:684
+ [4] doctest(::Module) at /home/pkgeval/.julia/packages/Documenter/RrEcY/src/Documenter.jl:671
+ [5] top-level scope at /home/pkgeval/.julia/packages/Rocket/5CUBQ/test/runtests.jl:5
+ [6] include at ./boot.jl:328 [inlined]
+ [7] include_relative(::Module, ::String) at ./loading.jl:1105
+ [8] include(::Module, ::String) at ./Base.jl:31
+ [9] include(::String) at ./client.jl:424
+ [10] top-level scope at none:6
+ [11] eval(::Module, ::Any) at ./boot.jl:330
+ [12] exec_options(::Base.JLOptions) at ./client.jl:263
+ [13] _start() at ./client.jl:460
+Test Summary:    | Fail  Total
+Doctests: Rocket |    1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 1 failed, 0 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/Rocket/5CUBQ/test/runtests.jl:5
+ERROR: Package Rocket errored during testing
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Types.jl:113
+ [2] #test#131(::Bool, ::Nothing, ::Cmd, ::Cmd, ::typeof(Pkg.Operations.test), ::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Operations.jl:1372
+ [3] #test at ./none:0 [inlined]
+ [4] #test#62(::Bool, ::Nothing, ::Cmd, ::Cmd, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Pkg.API.test), ::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:253
+ [5] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:239
+ [6] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:233 [inlined]
+ [7] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:233 [inlined]
+ [8] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:232 [inlined]
+ [9] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:232 [inlined]
+ [10] #test#59(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Pkg.API.test), ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:231
+ [11] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:231
+ [12] top-level scope at none:13

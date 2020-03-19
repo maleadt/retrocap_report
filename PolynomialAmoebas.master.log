@@ -1,0 +1,370 @@
+Julia Version 1.3.1
+Commit 2d5741174c (2019-12-30 21:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-6.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+ Resolving package versions...
+ Installed NaNMath ────────────────────── v0.3.3
+ Installed PlotUtils ──────────────────── v0.5.8
+ Installed DiffResults ────────────────── v1.0.2
+ Installed MbedTLS ────────────────────── v1.0.1
+ Installed DiffRules ──────────────────── v1.0.1
+ Installed PolynomialAmoebas ──────────── v0.1.1
+ Installed GeometryTypes ──────────────── v0.8.1
+ Installed Polyhedra ──────────────────── v0.5.6
+ Installed CodecZlib ──────────────────── v0.6.0
+ Installed CodecBzip2 ─────────────────── v0.6.0
+ Installed RecipesBase ────────────────── v0.7.0
+ Installed CompilerSupportLibraries_jll ─ v0.2.0+1
+ Installed BenchmarkTools ─────────────── v0.5.0
+ Installed CDDLib ─────────────────────── v0.5.3
+ Installed HTTP ───────────────────────── v0.8.12
+ Installed SpecialFunctions ───────────── v0.10.0
+ Installed StaticArrays ───────────────── v0.11.1
+ Installed MutableArithmetics ─────────── v0.2.7
+ Installed DataStructures ─────────────── v0.17.10
+ Installed ColorTypes ─────────────────── v0.8.1
+ Installed FixedPointNumbers ──────────── v0.6.1
+ Installed MathOptInterface ───────────── v0.9.12
+ Installed MbedTLS_jll ────────────────── v2.16.0+1
+ Installed StaticPolynomials ──────────── v1.3.3
+ Installed Parsers ────────────────────── v0.3.12
+ Installed MultivariatePolynomials ────── v0.3.6
+ Installed JSON ───────────────────────── v0.21.0
+ Installed JSONSchema ─────────────────── v0.2.0
+ Installed ForwardDiff ────────────────── v0.10.9
+ Installed TranscodingStreams ─────────── v0.9.5
+ Installed Reexport ───────────────────── v0.2.0
+ Installed IniFile ────────────────────── v0.5.0
+ Installed BinaryProvider ─────────────── v0.5.8
+ Installed Colors ─────────────────────── v0.9.6
+ Installed OrderedCollections ─────────── v1.1.0
+ Installed DynamicPolynomials ─────────── v0.3.9
+ Installed Calculus ───────────────────── v0.5.1
+ Installed OpenSpecFun_jll ────────────── v0.5.3+3
+ Installed CommonSubexpressions ───────── v0.2.0
+ Installed JuMP ───────────────────────── v0.20.1
+ Installed Contour ────────────────────── v0.5.2
+ Installed ParameterJuMP ──────────────── v0.1.2
+  Updating `~/.julia/environments/v1.3/Project.toml`
+  [438ff524] + PolynomialAmoebas v0.1.1
+  Updating `~/.julia/environments/v1.3/Manifest.toml`
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [b99e7846] + BinaryProvider v0.5.8
+  [3391f64e] + CDDLib v0.5.3
+  [49dc2e85] + Calculus v0.5.1
+  [523fee87] + CodecBzip2 v0.6.0
+  [944b1d66] + CodecZlib v0.6.0
+  [3da002f7] + ColorTypes v0.8.1
+  [5ae59095] + Colors v0.9.6
+  [bbf7d656] + CommonSubexpressions v0.2.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.2.0+1
+  [d38c429a] + Contour v0.5.2
+  [864edb3b] + DataStructures v0.17.10
+  [163ba53b] + DiffResults v1.0.2
+  [b552c78f] + DiffRules v1.0.1
+  [7c1d4256] + DynamicPolynomials v0.3.9
+  [53c48c17] + FixedPointNumbers v0.6.1
+  [f6369f11] + ForwardDiff v0.10.9
+  [4d00f742] + GeometryTypes v0.8.1
+  [cd3eb016] + HTTP v0.8.12
+  [83e8ac13] + IniFile v0.5.0
+  [682c06a0] + JSON v0.21.0
+  [7d188eb4] + JSONSchema v0.2.0
+  [4076af6c] + JuMP v0.20.1
+  [b8f27783] + MathOptInterface v0.9.12
+  [739be429] + MbedTLS v1.0.1
+  [c8ffd9c3] + MbedTLS_jll v2.16.0+1
+  [102ac46a] + MultivariatePolynomials v0.3.6
+  [d8a4904e] + MutableArithmetics v0.2.7
+  [77ba4419] + NaNMath v0.3.3
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+3
+  [bac558e1] + OrderedCollections v1.1.0
+  [774612a8] + ParameterJuMP v0.1.2
+  [69de0a69] + Parsers v0.3.12
+  [995b91a9] + PlotUtils v0.5.8
+  [67491407] + Polyhedra v0.5.6
+  [438ff524] + PolynomialAmoebas v0.1.1
+  [3cdcf5f2] + RecipesBase v0.7.0
+  [189a3867] + Reexport v0.2.0
+  [276daf66] + SpecialFunctions v0.10.0
+  [90137ffa] + StaticArrays v0.11.1
+  [62e018b1] + StaticPolynomials v1.3.3
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8ba89e20] + Distributed 
+  [9fa8497b] + Future 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+  Building CodecZlib ─→ `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+  Building CodecBzip2 → `~/.julia/packages/CodecBzip2/T5yr7/deps/build.log`
+  Building CDDLib ────→ `~/.julia/packages/CDDLib/AcD7T/deps/build.log`
+   Testing PolynomialAmoebas
+ Resolving package versions...
+    Status `/tmp/jl_4Rjjp9/Manifest.toml`
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.8
+  [3391f64e] CDDLib v0.5.3
+  [49dc2e85] Calculus v0.5.1
+  [523fee87] CodecBzip2 v0.6.0
+  [944b1d66] CodecZlib v0.6.0
+  [3da002f7] ColorTypes v0.8.1
+  [5ae59095] Colors v0.9.6
+  [bbf7d656] CommonSubexpressions v0.2.0
+  [e66e0078] CompilerSupportLibraries_jll v0.2.0+1
+  [d38c429a] Contour v0.5.2
+  [864edb3b] DataStructures v0.17.10
+  [163ba53b] DiffResults v1.0.2
+  [b552c78f] DiffRules v1.0.1
+  [7c1d4256] DynamicPolynomials v0.3.9
+  [53c48c17] FixedPointNumbers v0.6.1
+  [f6369f11] ForwardDiff v0.10.9
+  [4d00f742] GeometryTypes v0.8.1
+  [cd3eb016] HTTP v0.8.12
+  [83e8ac13] IniFile v0.5.0
+  [682c06a0] JSON v0.21.0
+  [7d188eb4] JSONSchema v0.2.0
+  [4076af6c] JuMP v0.20.1
+  [b8f27783] MathOptInterface v0.9.12
+  [739be429] MbedTLS v1.0.1
+  [c8ffd9c3] MbedTLS_jll v2.16.0+1
+  [102ac46a] MultivariatePolynomials v0.3.6
+  [d8a4904e] MutableArithmetics v0.2.7
+  [77ba4419] NaNMath v0.3.3
+  [efe28fd5] OpenSpecFun_jll v0.5.3+3
+  [bac558e1] OrderedCollections v1.1.0
+  [774612a8] ParameterJuMP v0.1.2
+  [69de0a69] Parsers v0.3.12
+  [995b91a9] PlotUtils v0.5.8
+  [67491407] Polyhedra v0.5.6
+  [438ff524] PolynomialAmoebas v0.1.1
+  [3cdcf5f2] RecipesBase v0.7.0
+  [189a3867] Reexport v0.2.0
+  [276daf66] SpecialFunctions v0.10.0
+  [90137ffa] StaticArrays v0.11.1
+  [62e018b1] StaticPolynomials v1.3.3
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [2a0f44e3] Base64  [`@stdlib/Base64`]
+  [ade2ca70] Dates  [`@stdlib/Dates`]
+  [8ba89e20] Distributed  [`@stdlib/Distributed`]
+  [9fa8497b] Future  [`@stdlib/Future`]
+  [b77e0a4c] InteractiveUtils  [`@stdlib/InteractiveUtils`]
+  [76f85450] LibGit2  [`@stdlib/LibGit2`]
+  [8f399da3] Libdl  [`@stdlib/Libdl`]
+  [37e2e46d] LinearAlgebra  [`@stdlib/LinearAlgebra`]
+  [56ddb016] Logging  [`@stdlib/Logging`]
+  [d6f4376e] Markdown  [`@stdlib/Markdown`]
+  [a63ad114] Mmap  [`@stdlib/Mmap`]
+  [44cfe95a] Pkg  [`@stdlib/Pkg`]
+  [de0858da] Printf  [`@stdlib/Printf`]
+  [3fa0cd96] REPL  [`@stdlib/REPL`]
+  [9a3f8284] Random  [`@stdlib/Random`]
+  [ea8e919c] SHA  [`@stdlib/SHA`]
+  [9e88b42a] Serialization  [`@stdlib/Serialization`]
+  [6462fe0b] Sockets  [`@stdlib/Sockets`]
+  [2f01184e] SparseArrays  [`@stdlib/SparseArrays`]
+  [10745b16] Statistics  [`@stdlib/Statistics`]
+  [8dfed614] Test  [`@stdlib/Test`]
+  [cf7118a7] UUIDs  [`@stdlib/UUIDs`]
+  [4ec0a83e] Unicode  [`@stdlib/Unicode`]
+fatal error: unexpected signal during runtime execution
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x55a7ee1f5004]
+
+runtime stack:
+runtime.throw(0x55a7ef809008, 0x2a)
+	/usr/local/go/src/runtime/panic.go:617 +0x74
+runtime.sigpanic()
+	/usr/local/go/src/runtime/signal_unix.go:374 +0x4ad
+runtime.(*gcSweepBuf).block(0x55a7f156cac0, 0x0, 0x100000000, 0x7fe0d5ffad20, 0x7fe0d5ffad48)
+	/usr/local/go/src/runtime/mgcsweepbuf.go:170 +0x94
+runtime.markrootSpans(0xc000063270, 0x0)
+	/usr/local/go/src/runtime/mgcmark.go:303 +0x54
+runtime.markroot(0xc000063270, 0x7fe000000004)
+	/usr/local/go/src/runtime/mgcmark.go:182 +0x30f
+runtime.gcDrain(0xc000063270, 0x7)
+	/usr/local/go/src/runtime/mgcmark.go:899 +0x116
+runtime.gcBgMarkWorker.func2()
+	/usr/local/go/src/runtime/mgc.go:1926 +0x16e
+runtime.systemstack(0xc0004ba480)
+	/usr/local/go/src/runtime/asm_amd64.s:351 +0x63
+runtime.mstart()
+	/usr/local/go/src/runtime/proc.go:1153
+
+goroutine 22 [GC worker (idle), 2 minutes]:
+runtime.systemstack_switch()
+	/usr/local/go/src/runtime/asm_amd64.s:311 fp=0xc0000ff760 sp=0xc0000ff758 pc=0x55a7ee22a1c0
+runtime.gcBgMarkWorker(0xc000062000)
+	/usr/local/go/src/runtime/mgc.go:1890 +0x1c6 fp=0xc0000ff7d8 sp=0xc0000ff760 pc=0x55a7ee1ee496
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1337 +0x1 fp=0xc0000ff7e0 sp=0xc0000ff7d8 pc=0x55a7ee22c2c1
+created by runtime.gcBgMarkStartWorkers
+	/usr/local/go/src/runtime/mgc.go:1784 +0x79
+
+goroutine 1 [select (scan), 12 minutes]:
+github.com/docker/cli/cli/command/container.(*hijackedIOStreamer).stream(0xc0003feb60, 0x55a7f0360480, 0xc000164020, 0x0, 0x0)
+	/go/src/github.com/docker/cli/cli/command/container/hijack.go:58 +0x3a6
+github.com/docker/cli/cli/command/container.runAttach(0x55a7f03a2980, 0xc0001aa0f0, 0xc0005e6090, 0x0, 0x0)
+	/go/src/github.com/docker/cli/cli/command/container/attach.go:137 +0x5b8
+github.com/docker/cli/cli/command/container.NewAttachCommand.func1(0xc0005d9900, 0xc000652060, 0x1, 0x1, 0x0, 0x0)
+	/go/src/github.com/docker/cli/cli/command/container/attach.go:55 +0x69
+github.com/docker/cli/vendor/github.com/spf13/cobra.(*Command).execute(0xc0005d9900, 0xc00000ea10, 0x1, 0x1, 0xc0005d9900, 0xc00000ea10)
+	/go/src/github.com/docker/cli/vendor/github.com/spf13/cobra/command.go:762 +0x467
+github.com/docker/cli/vendor/github.com/spf13/cobra.(*Command).ExecuteC(0xc000418a00, 0xc00000ea00, 0x2, 0x2)
+	/go/src/github.com/docker/cli/vendor/github.com/spf13/cobra/command.go:852 +0x2ee
+github.com/docker/cli/vendor/github.com/spf13/cobra.(*Command).Execute(...)
+	/go/src/github.com/docker/cli/vendor/github.com/spf13/cobra/command.go:800
+main.runDocker(0xc0001aa0f0, 0x55a7f030ad80, 0xc000166010)
+	/go/src/github.com/docker/cli/cmd/docker/docker.go:281 +0x1d5
+main.main()
+	/go/src/github.com/docker/cli/cmd/docker/docker.go:292 +0xf3
+
+goroutine 20 [syscall, 12 minutes]:
+os/signal.signal_recv(0x55a7ee22c2c6)
+	/usr/local/go/src/runtime/sigqueue.go:139 +0x9e
+os/signal.loop()
+	/usr/local/go/src/os/signal/signal_unix.go:23 +0x24
+created by os/signal.init.0
+	/usr/local/go/src/os/signal/signal_unix.go:29 +0x43
+
+goroutine 110 [chan receive, 2 minutes]:
+github.com/docker/cli/vendor/k8s.io/klog.(*loggingT).flushDaemon(0x55a7f1565da0)
+	/go/src/github.com/docker/cli/vendor/k8s.io/klog/klog.go:943 +0x8d
+created by github.com/docker/cli/vendor/k8s.io/klog.init.0
+	/go/src/github.com/docker/cli/vendor/k8s.io/klog/klog.go:403 +0x6e
+
+goroutine 55 [select, 12 minutes]:
+net/http.(*persistConn).readLoop(0xc0005e2900)
+	/usr/local/go/src/net/http/transport.go:1801 +0x95c
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1360 +0xafa
+
+goroutine 56 [select, 12 minutes]:
+net/http.(*persistConn).writeLoop(0xc0005e2900)
+	/usr/local/go/src/net/http/transport.go:1979 +0x115
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1361 +0xb1f
+
+goroutine 111 [IO wait (scan), 12 minutes]:
+internal/poll.runtime_pollWait(0x7fe0e46a3120, 0x72, 0xffffffffffffffff)
+	/usr/local/go/src/runtime/netpoll.go:182 +0x58
+internal/poll.(*pollDesc).wait(0xc0004eff18, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:87 +0x9d
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0004eff00, 0xc0005df000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:169 +0x19d
+net.(*netFD).Read(0xc0004eff00, 0xc0005df000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/fd_unix.go:202 +0x51
+net.(*conn).Read(0xc000504b70, 0xc0005df000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:177 +0x6b
+net/http.(*persistConn).Read(0xc0005e2900, 0xc0005df000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:1527 +0x7d
+bufio.(*Reader).fill(0xc00012fbc0)
+	/usr/local/go/src/bufio/bufio.go:100 +0x111
+bufio.(*Reader).ReadSlice(0xc00012fbc0, 0x40a, 0x7fe0e672b000, 0x20300000000000, 0x7fe0e68f5fff, 0x400, 0x20300000000000)
+	/usr/local/go/src/bufio/bufio.go:356 +0x3f
+net/http/internal.readChunkLine(0xc00012fbc0, 0x55a7ee1e9fc0, 0x7fe0e672af00, 0x20300000000000, 0x7fe0e68f5fff, 0x7fe0e44cf380)
+	/usr/local/go/src/net/http/internal/chunked.go:122 +0x36
+net/http/internal.(*chunkedReader).beginChunk(0xc000680030)
+	/usr/local/go/src/net/http/internal/chunked.go:48 +0x34
+net/http/internal.(*chunkedReader).Read(0xc000680030, 0xc00069e000, 0x200, 0x200, 0xc0004e7d48, 0x55a7ee1fded1, 0x8)
+	/usr/local/go/src/net/http/internal/chunked.go:93 +0x13c
+net/http.(*body).readLocked(0xc000686000, 0xc00069e000, 0x200, 0x200, 0x200, 0xc00069e000, 0x0)
+	/usr/local/go/src/net/http/transfer.go:816 +0x61
+net/http.(*body).Read(0xc000686000, 0xc00069e000, 0x200, 0x200, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transfer.go:808 +0xdd
+net/http.(*bodyEOFSignal).Read(0xc000686040, 0xc00069e000, 0x200, 0x200, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2351 +0xd5
+encoding/json.(*Decoder).refill(0xc00069c000, 0x155a7ee1fe37f, 0x138)
+	/usr/local/go/src/encoding/json/stream.go:159 +0xfa
+encoding/json.(*Decoder).readValue(0xc00069c000, 0x0, 0x0, 0x55a7f0243ca0)
+	/usr/local/go/src/encoding/json/stream.go:134 +0x212
+encoding/json.(*Decoder).Decode(0xc00069c000, 0x55a7eff35fa0, 0xc00069a000, 0x55a7f030aac0, 0xc000686040)
+	/usr/local/go/src/encoding/json/stream.go:63 +0x7b
+github.com/docker/cli/vendor/github.com/docker/docker/client.(*Client).ContainerWait.func1(0x55a7f0330ec0, 0xc000686040, 0xc000680000, 0xc8, 0xc000658080, 0xc000626120, 0xc0001460c0)
+	/go/src/github.com/docker/cli/vendor/github.com/docker/docker/client/container_wait.go:48 +0x115
+created by github.com/docker/cli/vendor/github.com/docker/docker/client.(*Client).ContainerWait
+	/go/src/github.com/docker/cli/vendor/github.com/docker/docker/client/container_wait.go:45 +0x468
+
+goroutine 26 [chan receive, 12 minutes]:
+github.com/docker/cli/cli/command/container.ForwardAllSignals.func1(0xc0004fcba0, 0x55a7f03a2980, 0xc0001aa0f0, 0x55a7f0360480, 0xc000164020, 0x7fffe4f3c514, 0x27)
+	/go/src/github.com/docker/cli/cli/command/container/tty.go:104 +0x5d
+created by github.com/docker/cli/cli/command/container.ForwardAllSignals
+	/go/src/github.com/docker/cli/cli/command/container/tty.go:103 +0xb3
+
+goroutine 24 [IO wait, 12 minutes]:
+internal/poll.runtime_pollWait(0x7fe0e46a3050, 0x72, 0xffffffffffffffff)
+	/usr/local/go/src/runtime/netpoll.go:182 +0x58
+internal/poll.(*pollDesc).wait(0xc000658218, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:87 +0x9d
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000658200, 0xc0005de000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:169 +0x19d
+net.(*netFD).Read(0xc000658200, 0xc0005de000, 0x1000, 0x1000, 0x1, 0x55a7ee200fee, 0xc000110b88)
+	/usr/local/go/src/net/fd_unix.go:202 +0x51
+net.(*conn).Read(0xc0006a4008, 0xc0005de000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:177 +0x6b
+net/http.(*persistConn).Read(0xc0005e2a20, 0xc0005de000, 0x1000, 0x1000, 0xc000110c88, 0x55a7ee1d7455, 0xc0001462a0)
+	/usr/local/go/src/net/http/transport.go:1527 +0x7d
+bufio.(*Reader).fill(0xc00068a0c0)
+	/usr/local/go/src/bufio/bufio.go:100 +0x111
+bufio.(*Reader).Peek(0xc00068a0c0, 0x1, 0x0, 0x0, 0x1, 0xc000698100, 0x0)
+	/usr/local/go/src/bufio/bufio.go:138 +0x51
+net/http.(*persistConn).readLoop(0xc0005e2a20)
+	/usr/local/go/src/net/http/transport.go:1680 +0x1a5
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1360 +0xafa
+
+goroutine 25 [select, 12 minutes]:
+net/http.(*persistConn).writeLoop(0xc0005e2a20)
+	/usr/local/go/src/net/http/transport.go:1979 +0x115
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1361 +0xb1f
+
+goroutine 37 [IO wait, 12 minutes]:
+internal/poll.runtime_pollWait(0x7fe0e46a2f80, 0x72, 0xffffffffffffffff)
+	/usr/local/go/src/runtime/netpoll.go:182 +0x58
+internal/poll.(*pollDesc).wait(0xc000690318, 0x72, 0x8000, 0x8009, 0xffffffffffffffff)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:87 +0x9d
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000690300, 0xc000616000, 0x8009, 0x8009, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:169 +0x19d
+net.(*netFD).Read(0xc000690300, 0xc000616000, 0x8009, 0x8009, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/fd_unix.go:202 +0x51
+net.(*conn).Read(0xc0006a4010, 0xc000616000, 0x8009, 0x8009, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:177 +0x6b
+bufio.(*Reader).Read(0xc00068a240, 0xc000616000, 0x8009, 0x8009, 0x1e, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:209 +0x128
+github.com/docker/cli/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x55a7f03089c0, 0xc000347a40, 0x55a7f030ad80, 0xc000166010, 0x55a7f0307f40, 0xc00068a240, 0x0, 0x0, 0x0)
+	/go/src/github.com/docker/cli/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:108 +0xf1
+github.com/docker/cli/cli/command/container.(*hijackedIOStreamer).beginOutputStream.func1(0xc0003feb60, 0x55a7f02d7f18, 0xc000146420)
+	/go/src/github.com/docker/cli/cli/command/container/hijack.go:129 +0x98
+created by github.com/docker/cli/cli/command/container.(*hijackedIOStreamer).beginOutputStream
+	/go/src/github.com/docker/cli/cli/command/container/hijack.go:118 +0x83

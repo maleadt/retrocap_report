@@ -1,0 +1,390 @@
+Julia Version 1.3.1
+Commit 2d5741174c (2019-12-30 21:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-6.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+ Resolving package versions...
+ Installed NaNMath ────────────────────── v0.3.3
+ Installed DualNumbers ────────────────── v0.6.2
+ Installed CompilerSupportLibraries_jll ─ v0.2.0+1
+ Installed Calculus ───────────────────── v0.5.1
+ Installed OpenSpecFun_jll ────────────── v0.5.3+3
+ Installed DiffRules ──────────────────── v0.0.10
+ Installed SpecialFunctions ───────────── v0.10.0
+ Installed Nabla ──────────────────────── v0.12.1
+ Installed FDM ────────────────────────── v0.6.1
+  Updating `~/.julia/environments/v1.3/Project.toml`
+  [49c96f43] + Nabla v0.12.1
+  Updating `~/.julia/environments/v1.3/Manifest.toml`
+  [49dc2e85] + Calculus v0.5.1
+  [e66e0078] + CompilerSupportLibraries_jll v0.2.0+1
+  [b552c78f] + DiffRules v0.0.10
+  [fa6b7ba4] + DualNumbers v0.6.2
+  [e25cca7e] + FDM v0.6.1
+  [77ba4419] + NaNMath v0.3.3
+  [49c96f43] + Nabla v0.12.1
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+3
+  [276daf66] + SpecialFunctions v0.10.0
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Testing Nabla
+ Resolving package versions...
+ Installed Rmath_jll ────────── v0.2.2+0
+ Installed FillArrays ───────── v0.8.5
+ Installed OrderedCollections ─ v1.1.0
+ Installed StatsFuns ────────── v0.9.4
+ Installed BenchmarkTools ───── v0.5.0
+ Installed QuadGK ───────────── v2.3.1
+ Installed Distributions ────── v0.22.5
+ Installed StatsBase ────────── v0.32.2
+ Installed DataAPI ──────────── v1.1.0
+ Installed Rmath ────────────── v0.6.1
+ Installed Parsers ──────────── v0.3.12
+ Installed Arpack ───────────── v0.4.0
+ Installed Arpack_jll ───────── v3.5.0+2
+ Installed OpenBLAS_jll ─────── v0.3.7+7
+ Installed JSON ─────────────── v0.21.0
+ Installed PDMats ───────────── v0.9.12
+ Installed SortingAlgorithms ── v0.3.1
+ Installed DataStructures ───── v0.17.10
+ Installed Missings ─────────── v0.4.3
+    Status `/tmp/jl_o0Zmfo/Manifest.toml`
+  [7d9fca2a] Arpack v0.4.0
+  [68821587] Arpack_jll v3.5.0+2
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [49dc2e85] Calculus v0.5.1
+  [e66e0078] CompilerSupportLibraries_jll v0.2.0+1
+  [9a962f9c] DataAPI v1.1.0
+  [864edb3b] DataStructures v0.17.10
+  [b552c78f] DiffRules v0.0.10
+  [31c24e10] Distributions v0.22.5
+  [fa6b7ba4] DualNumbers v0.6.2
+  [e25cca7e] FDM v0.6.1
+  [1a297f60] FillArrays v0.8.5
+  [682c06a0] JSON v0.21.0
+  [e1d29d7a] Missings v0.4.3
+  [77ba4419] NaNMath v0.3.3
+  [49c96f43] Nabla v0.12.1
+  [4536629a] OpenBLAS_jll v0.3.7+7
+  [efe28fd5] OpenSpecFun_jll v0.5.3+3
+  [bac558e1] OrderedCollections v1.1.0
+  [90014a1f] PDMats v0.9.12
+  [69de0a69] Parsers v0.3.12
+  [1fd47b50] QuadGK v2.3.1
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.10.0
+  [2913bbd2] StatsBase v0.32.2
+  [4c63d2b9] StatsFuns v0.9.4
+  [2a0f44e3] Base64  [`@stdlib/Base64`]
+  [ade2ca70] Dates  [`@stdlib/Dates`]
+  [8ba89e20] Distributed  [`@stdlib/Distributed`]
+  [b77e0a4c] InteractiveUtils  [`@stdlib/InteractiveUtils`]
+  [76f85450] LibGit2  [`@stdlib/LibGit2`]
+  [8f399da3] Libdl  [`@stdlib/Libdl`]
+  [37e2e46d] LinearAlgebra  [`@stdlib/LinearAlgebra`]
+  [56ddb016] Logging  [`@stdlib/Logging`]
+  [d6f4376e] Markdown  [`@stdlib/Markdown`]
+  [a63ad114] Mmap  [`@stdlib/Mmap`]
+  [44cfe95a] Pkg  [`@stdlib/Pkg`]
+  [de0858da] Printf  [`@stdlib/Printf`]
+  [3fa0cd96] REPL  [`@stdlib/REPL`]
+  [9a3f8284] Random  [`@stdlib/Random`]
+  [ea8e919c] SHA  [`@stdlib/SHA`]
+  [9e88b42a] Serialization  [`@stdlib/Serialization`]
+  [6462fe0b] Sockets  [`@stdlib/Sockets`]
+  [2f01184e] SparseArrays  [`@stdlib/SparseArrays`]
+  [10745b16] Statistics  [`@stdlib/Statistics`]
+  [4607b0f0] SuiteSparse  [`@stdlib/SuiteSparse`]
+  [8dfed614] Test  [`@stdlib/Test`]
+  [cf7118a7] UUIDs  [`@stdlib/UUIDs`]
+  [4ec0a83e] Unicode  [`@stdlib/Unicode`]
+Test Summary: | Pass  Total
+Core          |  234    234
+runtime: unexpected return pc for runtime.sigpanic called from 0x0
+stack: frame={sp:0xc0004b0f60, fp:0xc0004b0f68} stack=[0xc0004b0800,0xc0004b1000)
+000000c0004b0e60:  0000000000000000  0000000000000000 
+000000c0004b0e70:  0000000000000000  0000000000000000 
+000000c0004b0e80:  0000000000000000  0000000000000000 
+000000c0004b0e90:  0000000000000000  0000000000000000 
+000000c0004b0ea0:  0000000000000000  0000000000000000 
+000000c0004b0eb0:  0000000000000000  0000000000000000 
+000000c0004b0ec0:  0000000000000000  0000000000000000 
+000000c0004b0ed0:  0000000000000000  0000000000000000 
+000000c0004b0ee0:  0000000000000000  0000000000000000 
+000000c0004b0ef0:  0000000000000000  0000000000000000 
+000000c0004b0f00:  0000000000000000  0000000000000000 
+000000c0004b0f10:  0000000000000000  0000000000000000 
+000000c0004b0f20:  0000000000000000  0000000000000000 
+000000c0004b0f30:  0000000000000000  0000000000000000 
+000000c0004b0f40:  0000000000000000  0000000000000000 
+000000c0004b0f50:  0000000000000000  000055f2312b1fe4 <runtime.sigpanic+1204> 
+000000c0004b0f60: <0000000000000000 >0000000000000000 
+000000c0004b0f70:  0000000000000000  0000000000000000 
+000000c0004b0f80:  0000000000000000  0000000000000000 
+000000c0004b0f90:  0000000000000000  0000000000000000 
+000000c0004b0fa0:  0000000000000000  0000000000000000 
+000000c0004b0fb0:  0000000000000000  0000000000000000 
+000000c0004b0fc0:  0000000000000000  0000000000000000 
+000000c0004b0fd0:  0000000000000000  0000000000000000 
+000000c0004b0fe0:  0000000000000000  0000000000000000 
+000000c0004b0ff0:  0000000000000000  0000000000000000 
+fatal error: unknown caller pc
+runtime: unexpected return pc for runtime.sigpanic called from 0x0
+stack: frame={sp:0xc0004b0760, fp:0xc0004b0768} stack=[0xc0004b0000,0xc0004b0800)
+000000c0004b0660:  0000000000000000  0000000000000000 
+000000c0004b0670:  0000000000000000  0000000000000000 
+000000c0004b0680:  0000000000000000  0000000000000000 
+000000c0004b0690:  0000000000000000  0000000000000000 
+000000c0004b06a0:  0000000000000000  0000000000000000 
+000000c0004b06b0:  0000000000000000  0000000000000000 
+000000c0004b06c0:  0000000000000000  0000000000000000 
+000000c0004b06d0:  0000000000000000  0000000000000000 
+000000c0004b06e0:  0000000000000000  0000000000000000 
+000000c0004b06f0:  0000000000000000  0000000000000000 
+000000c0004b0700:  0000000000000000  0000000000000000 
+000000c0004b0710:  0000000000000000  0000000000000000 
+000000c0004b0720:  0000000000000000  0000000000000000 
+000000c0004b0730:  0000000000000000  0000000000000000 
+000000c0004b0740:  0000000000000000  0000000000000000 
+000000c0004b0750:  0000000000000000  000055f2312b1fe4 <runtime.sigpanic+1204> 
+000000c0004b0760: <0000000000000000 >0000000000000000 
+000000c0004b0770:  0000000000000000  0000000000000000 
+000000c0004b0780:  0000000000000000  0000000000000000 
+000000c0004b0790:  0000000000000000  0000000000000000 
+000000c0004b07a0:  0000000000000000  0000000000000000 
+000000c0004b07b0:  0000000000000000  0000000000000000 
+000000c0004b07c0:  0000000000000000  0000000000000000 
+000000c0004b07d0:  0000000000000000  0000000000000000 
+000000c0004b07e0:  0000000000000000  0000000000000000 
+000000c0004b07f0:  0000000000000000  0000000000000000 
+fatal error: unknown caller pc
+
+runtime stack:
+runtime.throw(0x55f232870baa, 0x11)
+	/usr/local/go/src/runtime/panic.go:617 +0x74
+runtime.gentraceback(0xffffffffffffffff, 0xffffffffffffffff, 0x0, 0xc00046cd80, 0x0, 0x0, 0x7fffffff, 0x7fd997ffeb88, 0x0, 0x0, ...)
+	/usr/local/go/src/runtime/traceback.go:275 +0x1cd5
+runtime.scanstack(0xc00046cd80, 0xc00006a170)
+	/usr/local/go/src/runtime/mgcmark.go:711 +0x163
+runtime.newstack()
+	/usr/local/go/src/runtime/stack.go:1019 +0x36b
+runtime.morestack()
+	/usr/local/go/src/runtime/asm_amd64.s:429 +0x84
+
+goroutine 13 [GC worker (idle) (scan)]:
+runtime: unexpected return pc for runtime.sigpanic called from 0x0
+stack: frame={sp:0xc0004b0f60, fp:0xc0004b0f68} stack=[0xc0004b0800,0xc0004b1000)
+000000c0004b0e60:  0000000000000000  0000000000000000 
+000000c0004b0e70:  0000000000000000  0000000000000000 
+000000c0004b0e80:  0000000000000000  0000000000000000 
+000000c0004b0e90:  0000000000000000  0000000000000000 
+000000c0004b0ea0:  0000000000000000  0000000000000000 
+000000c0004b0eb0:  0000000000000000  0000000000000000 
+000000c0004b0ec0:  0000000000000000  0000000000000000 
+000000c0004b0ed0:  0000000000000000  0000000000000000 
+000000c0004b0ee0:  0000000000000000  0000000000000000 
+000000c0004b0ef0:  0000000000000000  0000000000000000 
+000000c0004b0f00:  0000000000000000  0000000000000000 
+000000c0004b0f10:  0000000000000000  0000000000000000 
+000000c0004b0f20:  0000000000000000  0000000000000000 
+000000c0004b0f30:  0000000000000000  0000000000000000 
+000000c0004b0f40:  0000000000000000  0000000000000000 
+000000c0004b0f50:  0000000000000000  000055f2312b1fe4 <runtime.sigpanic+1204> 
+000000c0004b0f60: <0000000000000000 >0000000000000000 
+000000c0004b0f70:  0000000000000000  0000000000000000 
+000000c0004b0f80:  0000000000000000  0000000000000000 
+000000c0004b0f90:  0000000000000000  0000000000000000 
+000000c0004b0fa0:  0000000000000000  0000000000000000 
+000000c0004b0fb0:  0000000000000000  0000000000000000 
+000000c0004b0fc0:  0000000000000000  0000000000000000 
+000000c0004b0fd0:  0000000000000000  0000000000000000 
+000000c0004b0fe0:  0000000000000000  0000000000000000 
+000000c0004b0ff0:  0000000000000000  0000000000000000 
+runtime.sigpanic()
+	/usr/local/go/src/runtime/signal_unix.go:371 +0x4b4 fp=0xc0004b0f68 sp=0xc0004b0f60 pc=0x55f2312b1fe4
+created by runtime.gcBgMarkStartWorkers
+	/usr/local/go/src/runtime/mgc.go:1784 +0x79
+
+goroutine 1 [select, 4 minutes]:
+github.com/docker/cli/cli/command/container.(*hijackedIOStreamer).stream(0xc00047c070, 0x55f2333fe480, 0xc000058078, 0x0, 0x0)
+	/go/src/github.com/docker/cli/cli/command/container/hijack.go:58 +0x3a6
+github.com/docker/cli/cli/command/container.runAttach(0x55f233440980, 0xc0003a80f0, 0xc000250090, 0x0, 0x0)
+	/go/src/github.com/docker/cli/cli/command/container/attach.go:137 +0x5b8
+github.com/docker/cli/cli/command/container.NewAttachCommand.func1(0xc000247900, 0xc00059d470, 0x1, 0x1, 0x0, 0x0)
+	/go/src/github.com/docker/cli/cli/command/container/attach.go:55 +0x69
+github.com/docker/cli/vendor/github.com/spf13/cobra.(*Command).execute(0xc000247900, 0xc00054f250, 0x1, 0x1, 0xc000247900, 0xc00054f250)
+	/go/src/github.com/docker/cli/vendor/github.com/spf13/cobra/command.go:762 +0x467
+github.com/docker/cli/vendor/github.com/spf13/cobra.(*Command).ExecuteC(0xc0003c5680, 0xc00054f240, 0x2, 0x2)
+	/go/src/github.com/docker/cli/vendor/github.com/spf13/cobra/command.go:852 +0x2ee
+github.com/docker/cli/vendor/github.com/spf13/cobra.(*Command).Execute(...)
+	/go/src/github.com/docker/cli/vendor/github.com/spf13/cobra/command.go:800
+main.runDocker(0xc0003a80f0, 0x55f2333a8d80, 0xc000010020)
+	/go/src/github.com/docker/cli/cmd/docker/docker.go:281 +0x1d5
+main.main()
+	/go/src/github.com/docker/cli/cmd/docker/docker.go:292 +0xf3
+
+goroutine 7 [syscall, 4 minutes]:
+os/signal.signal_recv(0x55f2312ca2c6)
+	/usr/local/go/src/runtime/sigqueue.go:139 +0x9e
+os/signal.loop()
+	/usr/local/go/src/os/signal/signal_unix.go:23 +0x24
+created by os/signal.init.0
+	/usr/local/go/src/os/signal/signal_unix.go:29 +0x43
+
+goroutine 9 [chan receive, 2 minutes]:
+github.com/docker/cli/vendor/k8s.io/klog.(*loggingT).flushDaemon(0x55f234603da0)
+	/go/src/github.com/docker/cli/vendor/k8s.io/klog/klog.go:943 +0x8d
+created by github.com/docker/cli/vendor/k8s.io/klog.init.0
+	/go/src/github.com/docker/cli/vendor/k8s.io/klog/klog.go:403 +0x6e
+
+goroutine 133 [IO wait, 4 minutes]:
+internal/poll.runtime_pollWait(0x7fd9c0062f08, 0x72, 0xffffffffffffffff)
+	/usr/local/go/src/runtime/netpoll.go:182 +0x58
+internal/poll.(*pollDesc).wait(0xc000015f18, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:87 +0x9d
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000015f00, 0xc00024d000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:169 +0x19d
+net.(*netFD).Read(0xc000015f00, 0xc00024d000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/fd_unix.go:202 +0x51
+net.(*conn).Read(0xc000010b10, 0xc00024d000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:177 +0x6b
+net/http.(*persistConn).Read(0xc0002c2240, 0xc00024d000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:1527 +0x7d
+bufio.(*Reader).fill(0xc000464060)
+	/usr/local/go/src/bufio/bufio.go:100 +0x111
+bufio.(*Reader).ReadSlice(0xc000464060, 0xa, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:356 +0x3f
+net/http/internal.readChunkLine(0xc000464060, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/internal/chunked.go:122 +0x36
+net/http/internal.(*chunkedReader).beginChunk(0xc0002ea1b0)
+	/usr/local/go/src/net/http/internal/chunked.go:48 +0x34
+net/http/internal.(*chunkedReader).Read(0xc0002ea1b0, 0xc000268200, 0x200, 0x200, 0xc0004cfd48, 0x55f23129bed1, 0x8)
+	/usr/local/go/src/net/http/internal/chunked.go:93 +0x13c
+net/http.(*body).readLocked(0xc0005ba880, 0xc000268200, 0x200, 0x200, 0x200, 0xc000268200, 0x0)
+	/usr/local/go/src/net/http/transfer.go:816 +0x61
+net/http.(*body).Read(0xc0005ba880, 0xc000268200, 0x200, 0x200, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transfer.go:808 +0xdd
+net/http.(*bodyEOFSignal).Read(0xc0005ba8c0, 0xc000268200, 0x200, 0x200, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2351 +0xd5
+encoding/json.(*Decoder).refill(0xc0002614a0, 0x0, 0x138)
+	/usr/local/go/src/encoding/json/stream.go:159 +0xfa
+encoding/json.(*Decoder).readValue(0xc0002614a0, 0x0, 0x0, 0x55f2332e1ca0)
+	/usr/local/go/src/encoding/json/stream.go:134 +0x212
+encoding/json.(*Decoder).Decode(0xc0002614a0, 0x55f232fd3fa0, 0xc00059d630, 0x55f2333a8ac0, 0xc0005ba8c0)
+	/usr/local/go/src/encoding/json/stream.go:63 +0x7b
+github.com/docker/cli/vendor/github.com/docker/docker/client.(*Client).ContainerWait.func1(0x55f2333ceec0, 0xc0005ba8c0, 0xc0002ea180, 0xc8, 0xc0002cc180, 0xc0004641e0, 0xc0003ba4e0)
+	/go/src/github.com/docker/cli/vendor/github.com/docker/docker/client/container_wait.go:48 +0x115
+created by github.com/docker/cli/vendor/github.com/docker/docker/client.(*Client).ContainerWait
+	/go/src/github.com/docker/cli/vendor/github.com/docker/docker/client/container_wait.go:45 +0x468
+
+goroutine 131 [select, 4 minutes]:
+net/http.(*persistConn).readLoop(0xc0002c2240)
+	/usr/local/go/src/net/http/transport.go:1801 +0x95c
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1360 +0xafa
+
+goroutine 132 [select, 4 minutes]:
+net/http.(*persistConn).writeLoop(0xc0002c2240)
+	/usr/local/go/src/net/http/transport.go:1979 +0x115
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1361 +0xb1f
+
+goroutine 135 [IO wait, 4 minutes]:
+internal/poll.runtime_pollWait(0x7fd9c0062e38, 0x72, 0xffffffffffffffff)
+	/usr/local/go/src/runtime/netpoll.go:182 +0x58
+internal/poll.(*pollDesc).wait(0xc0002cc418, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:87 +0x9d
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0002cc400, 0xc0002cf000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:169 +0x19d
+net.(*netFD).Read(0xc0002cc400, 0xc0002cf000, 0x1000, 0x1000, 0x1, 0x55f23129efee, 0xc000115b88)
+	/usr/local/go/src/net/fd_unix.go:202 +0x51
+net.(*conn).Read(0xc000010b78, 0xc0002cf000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:177 +0x6b
+net/http.(*persistConn).Read(0xc0002c2360, 0xc0002cf000, 0x1000, 0x1000, 0xc000115c88, 0x55f231275455, 0xc0003ba8a0)
+	/usr/local/go/src/net/http/transport.go:1527 +0x7d
+bufio.(*Reader).fill(0xc0004645a0)
+	/usr/local/go/src/bufio/bufio.go:100 +0x111
+bufio.(*Reader).Peek(0xc0004645a0, 0x1, 0x0, 0x0, 0x1, 0xc000138100, 0x0)
+	/usr/local/go/src/bufio/bufio.go:138 +0x51
+net/http.(*persistConn).readLoop(0xc0002c2360)
+	/usr/local/go/src/net/http/transport.go:1680 +0x1a5
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1360 +0xafa
+
+goroutine 136 [select, 4 minutes]:
+net/http.(*persistConn).writeLoop(0xc0002c2360)
+	/usr/local/go/src/net/http/transport.go:1979 +0x115
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1361 +0xb1f
+
+goroutine 56 [chan receive, 4 minutes]:
+github.com/docker/cli/cli/command/container.ForwardAllSignals.func1(0xc000464b40, 0x55f233440980, 0xc0003a80f0, 0x55f2333fe480, 0xc000058078, 0x7fffe6c43520, 0x1b)
+	/go/src/github.com/docker/cli/cli/command/container/tty.go:104 +0x5d
+created by github.com/docker/cli/cli/command/container.ForwardAllSignals
+	/go/src/github.com/docker/cli/cli/command/container/tty.go:103 +0xb3
+
+goroutine 138 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x7fd9c0062d68, 0x72, 0xffffffffffffffff)
+	/usr/local/go/src/runtime/netpoll.go:182 +0x58
+internal/poll.(*pollDesc).wait(0xc000014118, 0x72, 0x8000, 0x8009, 0xffffffffffffffff)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:87 +0x9d
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000014100, 0xc0002b4000, 0x8009, 0x8009, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:169 +0x19d
+net.(*netFD).Read(0xc000014100, 0xc0002b4000, 0x8009, 0x8009, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/fd_unix.go:202 +0x51
+net.(*conn).Read(0xc000010008, 0xc0002b4000, 0x8009, 0x8009, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:177 +0x6b
+bufio.(*Reader).Read(0xc0002b2120, 0xc0002b4000, 0x8009, 0x8009, 0x6, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:209 +0x128
+github.com/docker/cli/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x55f2333a69c0, 0xc00041ba40, 0x55f2333a8d80, 0xc000010020, 0x55f2333a5f40, 0xc0002b2120, 0x0, 0x0, 0x0)
+	/go/src/github.com/docker/cli/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:108 +0xf1
+github.com/docker/cli/cli/command/container.(*hijackedIOStreamer).beginOutputStream.func1(0xc00047c070, 0x55f233375f18, 0xc0003ba3c0)
+	/go/src/github.com/docker/cli/cli/command/container/hijack.go:129 +0x98
+created by github.com/docker/cli/cli/command/container.(*hijackedIOStreamer).beginOutputStream
+	/go/src/github.com/docker/cli/cli/command/container/hijack.go:118 +0x83
+
+runtime stack:
+runtime.throw(0x55f232870baa, 0x11)
+	/usr/local/go/src/runtime/panic.go:617 +0x74
+runtime.gentraceback(0xffffffffffffffff, 0xffffffffffffffff, 0x0, 0xc00046cc00, 0x0, 0x0, 0x7fffffff, 0x7fd9957f9b88, 0x0, 0x0, ...)
+	/usr/local/go/src/runtime/traceback.go:275 +0x1cd5
+runtime.scanstack(0xc00046cc00, 0xc000067c70)
+	/usr/local/go/src/runtime/mgcmark.go:711 +0x163
+runtime.newstack()
+	/usr/local/go/src/runtime/stack.go:1019 +0x36b
+runtime.morestack()
+	/usr/local/go/src/runtime/asm_amd64.s:429 +0x84
