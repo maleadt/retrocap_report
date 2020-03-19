@@ -1,0 +1,116 @@
+On v1.3.1-General.retrocap, out of 3235 packages 2152 passed, 753 failed, 37 got killed and 293 were skipped.
+
+Comparing against v1.3.1-General.master:
+- ParquetFiles status was fail (reason: test_failures), now ok
+- InverseDistanceWeighting status was ok, now fail (reason: unsatisfiable)
+- Latexify status was ok, now fail (reason: unsatisfiable)
+- MLDatasets status was ok, now fail (reason: test_failures)
+- EMpht status was ok, now fail (reason: unknown)
+- AbstractPlotting status was kill (reason: time_limit), now fail (reason: unsatisfiable)
+- SingularSpectrumAnalysis status was ok, now fail (reason: test_failures)
+- SimpleDiffEq status was ok, now fail (reason: missing_package)
+- Immerse status was ok, now fail (reason: unknown)
+- MeshCatMechanisms status was ok, now fail (reason: unsatisfiable)
+- BEAST status was ok, now fail (reason: unknown)
+- DelayDiffEq status was ok, now fail (reason: unsatisfiable)
+- JDF status was ok, now fail (reason: unsatisfiable)
+- GeoStatsBase status was fail (reason: test_failures), now ok
+- QuantumOptics status was ok, now fail (reason: test_failures)
+- EconJobMarket status was ok, now fail (reason: unsatisfiable)
+- LazySets status was ok, now fail (reason: test_failures)
+- DFControl status was ok, now fail (reason: test_failures)
+- LPVSpectral status was ok, now fail (reason: test_failures)
+- PowerModelsSecurityConstrained status was ok, now fail (reason: unknown)
+- Catlab status was ok, now fail (reason: test_failures)
+- PowerSystems status was ok, now fail (reason: unknown)
+- JuliaDBMeta status was ok, now fail (reason: unknown)
+- RandomCorrelationMatrices status was ok, now fail (reason: unknown)
+- DASSL status was ok, now fail (reason: missing_package)
+- PolynomialAmoebas status was fail (reason: unknown), now ok
+- GtkUtilities status was ok, now fail (reason: unknown)
+- ReinforcementLearningZoo status was ok, now kill (reason: log_limit)
+- Registrator status was ok, now fail (reason: test_failures)
+- Sundials status was ok, now fail (reason: unsatisfiable)
+- RobustAdaptiveMetropolisSampler status was ok, now fail (reason: unknown)
+- DemoCards status was ok, now fail (reason: unsatisfiable)
+- CurricularAnalytics status was ok, now fail (reason: unknown)
+- WGLMakie status was kill (reason: time_limit), now fail (reason: unsatisfiable)
+- LinearCovarianceModels status was ok, now fail (reason: unknown)
+- MLJTuning status was ok, now fail (reason: unknown)
+- MRIReco status was ok, now kill (reason: time_limit)
+- DiffEqCallbacks status was ok, now fail (reason: test_failures)
+- MakieThemes status was fail (reason: unknown), now ok
+- AIBECS status was ok, now fail (reason: test_failures)
+- StressTest status was ok, now fail (reason: test_failures)
+- ChaosTools status was ok, now fail (reason: unsatisfiable)
+- BoundaryValueDiffEq status was ok, now fail (reason: unsatisfiable)
+- Graph500 status was ok, now fail (reason: test_failures)
+- ECharts status was ok, now fail (reason: unsatisfiable)
+- PrincipalMomentAnalysisApp status was ok, now fail (reason: unsatisfiable)
+- ControlSystemIdentification status was ok, now fail (reason: unknown)
+- DynamicPPL status was kill (reason: log_limit), now fail (reason: unsatisfiable)
+- DynamicMovementPrimitives status was ok, now fail (reason: unknown)
+- TuringPatterns status was ok, now fail (reason: test_failures)
+- RecurrenceAnalysis status was ok, now fail (reason: unsatisfiable)
+- PolyChaos status was ok, now fail (reason: unknown)
+- IntervalContractors status was ok, now fail (reason: test_failures)
+- Plots status was fail (reason: unsatisfiable), now ok
+- VoronoiCells status was fail (reason: test_failures), now ok
+- DiffEqDevTools status was ok, now fail (reason: missing_package)
+- MonteCarloMeasurements status was ok, now fail (reason: unsatisfiable)
+- OhMyREPL status was kill (reason: time_limit), now ok
+- SwitchOnSafety status was ok, now fail (reason: test_failures)
+- DynamicBoundsBase status was ok, now fail (reason: unsatisfiable)
+- PushVectors status was ok, now fail (reason: test_failures)
+- ConvexBodyProximityQueries status was ok, now fail (reason: unsatisfiable)
+- PolynomialBases status was ok, now fail (reason: unsatisfiable)
+- Sched status was ok, now fail (reason: test_failures)
+- Reactive status was ok, now fail (reason: test_failures)
+- NeRCA status was ok, now fail (reason: unknown)
+- CanDecomp status was fail (reason: unknown), now ok
+- SingularIntegralEquations status was kill (reason: time_limit), now ok
+- Controlz status was ok, now fail (reason: unsatisfiable)
+- GaussianMixtures status was fail (reason: test_failures), now ok
+- GLMakie status was kill (reason: time_limit), now fail (reason: unsatisfiable)
+- HELICS status was ok, now fail (reason: test_failures)
+- DelayEmbeddings status was ok, now fail (reason: unsatisfiable)
+- Bijectors status was fail (reason: unknown), now kill (reason: time_limit)
+- SchwarzChristoffel status was ok, now fail (reason: unsatisfiable)
+- ComplexPhasePortrait status was fail (reason: unknown), now ok
+- NLsolve status was ok, now fail (reason: unsatisfiable)
+- DatasetsCF status was ok, now fail (reason: unknown)
+- ControlSystems status was ok, now fail (reason: test_failures)
+- Diagonalizations status was ok, now fail (reason: test_failures)
+- NTNk status was fail (reason: unknown), now kill (reason: time_limit)
+- Nabla status was fail (reason: unknown), now ok
+- Rocket status was ok, now fail (reason: test_failures)
+- DistributedFactorGraphs status was ok, now fail (reason: unsatisfiable)
+- PointPatterns status was ok, now fail (reason: unsatisfiable)
+- FEMMaterials status was fail (reason: unknown), now ok
+- DiffEqJump status was ok, now fail (reason: missing_package)
+- ForwardDiff2 status was ok, now fail (reason: unsatisfiable)
+- Variography status was kill (reason: time_limit), now ok
+- Makie status was kill (reason: time_limit), now fail (reason: unsatisfiable)
+- BlobTracking status was fail (reason: unknown), now ok
+- RegressionTables status was ok, now fail (reason: test_failures)
+- NBodySimulator status was ok, now fail (reason: unknown)
+- ClimatePlots status was ok, now fail (reason: unsatisfiable)
+- Mimi status was kill (reason: time_limit), now fail (reason: test_failures)
+- ClimateTools status was ok, now fail (reason: unknown)
+- StratiGraphics status was ok, now fail (reason: unsatisfiable)
+- ODE status was ok, now fail (reason: unsatisfiable)
+- DynamicalSystemsBase status was ok, now fail (reason: unknown)
+- ApproxFunOrthogonalPolynomials status was ok, now kill (reason: time_limit)
+- NTFk status was fail (reason: unknown), now kill (reason: time_limit)
+- DiskDataProviders status was fail (reason: test_failures), now ok
+- DiffEqSensitivity status was ok, now fail (reason: unsatisfiable)
+- AlphaStableDistributions status was ok, now fail (reason: test_failures)
+- Optim status was ok, now kill (reason: time_limit)
+- SparseDiffTools status was ok, now fail (reason: unsatisfiable)
+- SMC status was fail (reason: unknown), now kill (reason: time_limit)
+- TextClassification status was fail (reason: test_failures), now ok
+- AdvancedHMC status was ok, now fail (reason: unsatisfiable)
+- MulticlassPerceptron status was fail (reason: unknown), now ok
+- CausalityTools status was ok, now fail (reason: test_failures)
+- MLJBase status was kill (reason: time_limit), now ok
+In summary, 19 packages now succeed, while 93 have started to fail.
