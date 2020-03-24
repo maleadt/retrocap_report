@@ -1,0 +1,214 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed DiffieHellman ──── v0.3.0
+  Installed Primes ─────────── v0.4.0
+  Installed PeaceVote ──────── v0.2.4
+  Installed PeaceFounder ───── v0.2.2
+  Installed CryptoGroups ───── v0.1.2
+    Cloning [3a3ce9e8-98e7-11e9-0fa0-055639f146d3] BitConverter from https://gitlab.com/braneproject/BitConverter.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BitConverter ───── v0.1.1
+    Cloning [3cdcf5f2-1ef4-517c-9805-6587b60abb01] RecipesBase from https://github.com/JuliaPlots/RecipesBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RecipesBase ────── v0.8.0
+    Cloning [a99b485a-c5c8-540e-ab00-7a7265134077] ECC from https://gitlab.com/braneproject/ECC.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ECC ────────────── v0.2.3
+    Cloning [9279c0cf-0ddb-4a8a-93c9-19d312620a08] Synchronizers from https://github.com/PeaceFounder/Synchronizers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Synchronizers ──── v0.1.0
+    Cloning [c35d69d1-b747-5018-a192-25bc5e63c83d] SMTPClient from https://github.com/aviks/SMTPClient.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SMTPClient ─────── v0.3.1
+    Cloning [b27032c2-a3e7-50c8-80cd-2d36dbcbfd21] LibCURL from https://github.com/JuliaWeb/LibCURL.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LibCURL ────────── v0.5.2
+    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ─── v0.5.8
+    Cloning [f27b6e38-b328-58d1-80ce-0feddd5e7a45] Polynomials from https://github.com/JuliaMath/Polynomials.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Polynomials ────── v0.6.1
+    Cloning [7475f97c-0381-53b1-977b-4c60186c8d62] Mods from https://github.com/scheinerman/Mods.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Mods ───────────── v0.1.0
+    Cloning [84e01822-a062-59e4-8289-aa032edeecdd] Paillier from https://github.com/hardbyte/Paillier.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Paillier ───────── v0.2.4
+    Cloning [d8f48be2-8af9-45f0-b400-11a6372d221d] Multiplexers from https://github.com/PeaceFounder/Multiplexers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Multiplexers ───── v0.3.1
+    Cloning [c4fd2470-c9f5-491f-b4e2-53b9059945a5] SynchronicBallot from https://github.com/PeaceFounder/SynchronicBallot.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SynchronicBallot ─ v0.2.1
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [916f7771] + PeaceFounder v0.2.2
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [b99e7846] + BinaryProvider v0.5.8
+  [3a3ce9e8] + BitConverter v0.1.1
+  [bc997328] + CryptoGroups v0.1.2
+  [0e61fee8] + DiffieHellman v0.3.0
+  [a99b485a] + ECC v0.2.3
+  [b27032c2] + LibCURL v0.5.2
+  [7475f97c] + Mods v0.1.0
+  [d8f48be2] + Multiplexers v0.3.1
+  [84e01822] + Paillier v0.2.4
+  [916f7771] + PeaceFounder v0.2.2
+  [129db535] + PeaceVote v0.2.4
+  [f27b6e38] + Polynomials v0.6.1
+  [27ebfcd6] + Primes v0.4.0
+  [3cdcf5f2] + RecipesBase v0.8.0
+  [c35d69d1] + SMTPClient v0.3.1
+  [c4fd2470] + SynchronicBallot v0.2.1
+  [9279c0cf] + Synchronizers v0.1.0
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [6462fe0b] + Sockets 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Building LibCURL → `~/.julia/packages/LibCURL/lWJxD/deps/build.log`
+┌ Error: Error building `LibCURL`: 
+│ WARNING: replacing module Anon.
+│ [ Info: Downloading https://github.com/bicycle1885/ZlibBuilder/releases/download/v1.0.4/Zlib.v1.2.11.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/LibCURL/lWJxD/deps/usr/downloads/Zlib.v1.2.11.x86_64-linux-gnu.tar.gz...
+│ [ Info: Downloading https://github.com/JuliaWeb/MbedTLSBuilder/releases/download/v0.20.0/MbedTLS.v2.6.1.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/LibCURL/lWJxD/deps/usr/downloads/MbedTLS.v2.6.1.x86_64-linux-gnu.tar.gz...
+│ ERROR: LoadError: Could not download https://github.com/JuliaWeb/LibCURLBuilder/releases/download/v0.5.1/build_LibCURL.v7.64.1.jl to /home/pkgeval/.julia/packages/LibCURL/lWJxD/deps/build_LibCURL.v7.64.1.jl:
+│ ErrorException("")
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:502
+│  [3] download(::String, ::String) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:489
+│  [4] top-level scope at /home/pkgeval/.julia/packages/LibCURL/lWJxD/deps/build.jl:19
+│  [5] include(::String) at ./client.jl:439
+│  [6] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/LibCURL/lWJxD/deps/build.jl:14
+│ caused by [exception 1]
+│ 
+│ Stacktrace:
+│  [1] error() at ./error.jl:42
+│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:496
+│  [3] download(::String, ::String) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:489
+│  [4] top-level scope at /home/pkgeval/.julia/packages/LibCURL/lWJxD/deps/build.jl:19
+│  [5] include(::String) at ./client.jl:439
+│  [6] top-level scope at none:5
+│ [11:08:05] #=#=#                                                                         [11:08:05] ##O#- #                                                                       [11:08:05] [11:08:05] ######################################################################## 100.0%##O=#  #                                                                      [11:08:05] #-#O=#  #                                                                     [11:08:05]  #=#=-#   #                                                                   [11:08:06] [11:08:06] #########                                                                 12.8%[11:08:06] ################################################                          67.8%[11:08:06] ######################################################################## 100.0%
+│ [11:08:09] #=#=#                                                                         [11:08:09] ##O#- #                                                                       [11:08:09] ##O=#  #                                                                      [11:08:09] #=#=-#  #                                                                     [11:08:09] [11:08:09] ######################################################################## 100.0%-#O#- #   #                                                                   [11:08:10]  -#O#-  #   #                                                                 [11:08:10]  -=#=-#  #    #                                                               [11:08:10] [11:08:10] #                                                                          1.8%[11:08:10] ####                                                                       5.7%[11:08:10] ########                                                                  11.4%[11:08:10] ################                                                          23.0%[11:08:10] ##################################                                        48.1%[11:08:10] ######################################################################## 100.0%
+│ #=#=#                                                                         ##O#- #                                                                       
+│ curl: (22) The requested URL returned error: 401 UNAUTHORIZED
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:892
+    Testing PeaceFounder
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_K1zvNL/Manifest.toml`
+  [9e28174c] BinDeps v0.8.10
+  [b99e7846] BinaryProvider v0.5.8
+  [3a3ce9e8] BitConverter v0.1.1
+  [34da2185] Compat v2.2.0
+  [bc997328] CryptoGroups v0.1.2
+  [35cc5888] CryptoSignatures v0.2.2
+  [0e61fee8] DiffieHellman v0.3.0
+  [a99b485a] ECC v0.2.3
+  [b27032c2] LibCURL v0.5.2
+  [7475f97c] Mods v0.1.0
+  [d8f48be2] Multiplexers v0.3.1
+  [49dea1ee] Nettle v0.4.0
+  [84e01822] Paillier v0.2.4
+  [7743456c] PeaceCypher v0.1.2
+  [916f7771] PeaceFounder v0.2.2
+  [129db535] PeaceVote v0.2.4
+  [f27b6e38] Polynomials v0.6.1
+  [27ebfcd6] Primes v0.4.0
+  [3cdcf5f2] RecipesBase v0.8.0
+  [c35d69d1] SMTPClient v0.3.1
+  [ee77041e] SecureIO v0.3.0
+  [c4fd2470] SynchronicBallot v0.2.1
+  [9279c0cf] Synchronizers v0.1.0
+  [30578b45] URIParser v0.4.0
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8bb1440f] DelimitedFiles 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+WARNING: could not import Base.ctranspose into Mods
+WARNING: Method definition @async(LineNumberNode, Module, Any) in module Base at task.jl:356 overwritten in module Certifiers at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/src/debug.jl:7.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition @async(LineNumberNode, Module, Any) in module Certifiers at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/src/debug.jl:7 overwritten in module BraidChains at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/src/debug.jl:7.
+  ** incremental compilation may be fatally broken for this module **
+
+ERROR: LoadError: LoadError: InitError: UndefVarError: libcurl not defined
+Stacktrace:
+ [1] curl_global_init at /home/pkgeval/.julia/packages/LibCURL/lWJxD/src/lC_curl_h.jl:98 [inlined]
+ [2] __init__() at /home/pkgeval/.julia/packages/SMTPClient/VShKI/src/SMTPClient.jl:21
+ [3] _include_from_serialized(::String, ::Array{Any,1}) at ./loading.jl:697
+ [4] _require_from_serialized(::String) at ./loading.jl:748
+ [5] _require(::Base.PkgId) at ./loading.jl:1039
+ [6] require(::Base.PkgId) at ./loading.jl:927
+ [7] require(::Module, ::Symbol) at ./loading.jl:922
+ [8] include(::Module, ::String) at ./Base.jl:377
+ [9] include(::String) at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/src/PeaceFounder.jl:1
+ [10] top-level scope at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/src/PeaceFounder.jl:32
+ [11] include(::Module, ::String) at ./Base.jl:377
+ [12] top-level scope at none:2
+ [13] eval at ./boot.jl:331 [inlined]
+ [14] eval(::Expr) at ./client.jl:449
+ [15] top-level scope at ./none:3
+during initialization of module SMTPClient
+in expression starting at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/src/MaintainerTools/MaintainerTools.jl:7
+in expression starting at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/src/PeaceFounder.jl:32
+ERROR: LoadError: LoadError: Failed to precompile PeaceFounder [916f7771-afe2-4319-943d-0e770c333432] to /home/pkgeval/.julia/compiled/v1.4/PeaceFounder/BIKZG_KuJ65.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+ [3] _require(::Base.PkgId) at ./loading.jl:1029
+ [4] require(::Base.PkgId) at ./loading.jl:927
+ [5] require(::Module, ::Symbol) at ./loading.jl:922
+ [6] include(::Module, ::String) at ./Base.jl:377
+ [7] include(::String) at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/test/runtests.jl:1
+ [8] top-level scope at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/test/runtests.jl:2
+ [9] include(::String) at ./client.jl:439
+ [10] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/test/certifier.jl:1
+in expression starting at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/test/runtests.jl:2
+ERROR: Package PeaceFounder errored during testing
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
+ [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [11] top-level scope at none:16

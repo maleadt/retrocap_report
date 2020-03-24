@@ -1,57 +1,103 @@
-Julia Version 1.3.1
-Commit 2d5741174c (2019-12-30 21:36 UTC)
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
   CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-6.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
 Environment:
   JULIA_DEPOT_PATH = ::/usr/local/share/julia
   JULIA_NUM_THREADS = 2
 
- Resolving package versions...
- Installed ArrayInterface ────────────── v0.1.1
- Installed Requires ──────────────────── v0.5.2
- Installed RecipesBase ───────────────── v0.7.0
- Installed DiffEqJump ────────────────── v6.2.2
- Installed FunctionWrappers ──────────── v1.1.1
- Installed StaticArrays ──────────────── v0.12.1
- Installed DataStructures ────────────── v0.17.10
- Installed Roots ─────────────────────── v0.8.4
- Installed IteratorInterfaceExtensions ─ v1.0.0
- Installed TableTraits ───────────────── v1.0.0
- Installed OrderedCollections ────────── v1.1.0
- Installed Parameters ────────────────── v0.12.0
- Installed Compat ────────────────────── v2.2.0
- Installed DiffEqBase ────────────────── v5.6.4
- Installed RecursiveArrayTools ───────── v0.20.0
- Installed RandomNumbers ─────────────── v1.4.0
- Installed TreeViews ─────────────────── v0.3.0
- Installed DocStringExtensions ───────── v0.8.1
- Installed PoissonRandom ─────────────── v0.4.0
-  Updating `~/.julia/environments/v1.3/Project.toml`
-  [c894b116] + DiffEqJump v6.2.2
-  Updating `~/.julia/environments/v1.3/Manifest.toml`
-  [4fba245c] + ArrayInterface v0.1.1
-  [34da2185] + Compat v2.2.0
+  Resolving package versions...
+  Installed ZygoteRules ───────────────── v0.2.0
+  Installed RecipesBase ───────────────── v0.8.0
+  Installed IterativeSolvers ──────────── v0.8.3
+  Installed ArrayInterface ────────────── v2.6.1
+  Installed AbstractTrees ─────────────── v0.3.2
+  Installed Roots ─────────────────────── v1.0.1
+  Installed TerminalLoggers ───────────── v0.1.1
+  Installed PoissonRandom ─────────────── v0.4.0
+  Installed RecursiveFactorization ────── v0.1.0
+  Installed FunctionWrappers ──────────── v1.1.1
+  Installed LoggingExtras ─────────────── v0.4.0
+  Installed RecursiveArrayTools ───────── v2.1.0
+    Cloning [82899510-4779-5014-852e-03e436cf321d] IteratorInterfaceExtensions from https://github.com/queryverse/IteratorInterfaceExtensions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IteratorInterfaceExtensions ─ v1.0.0
+    Cloning [c894b116-72e5-5b58-be3c-e6d8d4ac2b12] DiffEqJump from https://github.com/JuliaDiffEq/DiffEqJump.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffEqJump ────────────────── v6.5.0
+    Cloning [ae029012-a4dd-5104-9daa-d747884805df] Requires from https://github.com/MikeInnes/Requires.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Requires ──────────────────── v1.0.1
+    Cloning [1d6d02ad-be62-4b6b-8a6d-2f90e265016e] LeftChildRightSiblingTrees from https://github.com/JuliaCollections/LeftChildRightSiblingTrees.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LeftChildRightSiblingTrees ── v0.1.2
+    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ────────── v1.1.0
+    Cloning [88cd18e8-d9cc-4ea6-8889-5259c0d15c8b] ConsoleProgressMonitor from https://github.com/tkf/ConsoleProgressMonitor.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ConsoleProgressMonitor ────── v0.1.2
+    Cloning [46d2c3a1-f734-5fdb-9937-b9b9aeba4221] MuladdMacro from https://github.com/JuliaDiffEq/MuladdMacro.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MuladdMacro ───────────────── v0.2.2
+    Cloning [a2a6695c-b41b-5b7d-aed9-dbfdeacea5d7] TreeViews from https://github.com/pfitzseb/TreeViews.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TreeViews ─────────────────── v0.3.0
+    Cloning [d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4] ChainRulesCore from https://github.com/JuliaDiff/ChainRulesCore.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ChainRulesCore ────────────── v0.7.1
+    Cloning [1914dd2f-81c6-5fcd-8719-6d5c9610ff09] MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MacroTools ────────────────── v0.5.5
+    Cloning [33c8b6b6-d38a-422a-b730-caa89a2f386c] ProgressLogging from https://github.com/JunoLab/ProgressLogging.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ProgressLogging ───────────── v0.1.2
+    Cloning [e6cf234a-135c-5ec9-84dd-332b85af5143] RandomNumbers from https://github.com/sunoru/RandomNumbers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RandomNumbers ─────────────── v1.4.0
+    Cloning [2b5f629d-d688-5b77-993f-72d75c75574e] DiffEqBase from https://github.com/JuliaDiffEq/DiffEqBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffEqBase ────────────────── v6.25.0
+    Cloning [34da2185-b29b-5c13-b0c7-acf172513d20] Compat from https://github.com/JuliaLang/Compat.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Compat ────────────────────── v3.8.0
+    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ────────────── v0.17.10
+    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ──────────────── v0.12.1
+    Cloning [ffbed154-4ef7-542d-bbb7-c09d3a79fcae] DocStringExtensions from https://github.com/JuliaDocs/DocStringExtensions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DocStringExtensions ───────── v0.8.1
+    Cloning [3783bdb8-4a98-5b6b-af9a-565f29a5fe9c] TableTraits from https://github.com/queryverse/TableTraits.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TableTraits ───────────────── v1.0.0
+    Cloning [d96e819e-fc66-5662-9728-84c9c7592b0a] Parameters from https://github.com/mauro3/Parameters.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parameters ────────────────── v0.12.0
+    Cloning [92933f4c-e287-5a05-a399-4b506db050ca] ProgressMeter from https://github.com/timholy/ProgressMeter.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ProgressMeter ─────────────── v1.2.0
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [c894b116] + DiffEqJump v6.5.0
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [1520ce14] + AbstractTrees v0.3.2
+  [4fba245c] + ArrayInterface v2.6.1
+  [d360d2e6] + ChainRulesCore v0.7.1
+  [34da2185] + Compat v3.8.0
+  [88cd18e8] + ConsoleProgressMonitor v0.1.2
   [864edb3b] + DataStructures v0.17.10
-  [2b5f629d] + DiffEqBase v5.6.4
-  [c894b116] + DiffEqJump v6.2.2
+  [2b5f629d] + DiffEqBase v6.25.0
+  [c894b116] + DiffEqJump v6.5.0
   [ffbed154] + DocStringExtensions v0.8.1
   [069b7b12] + FunctionWrappers v1.1.1
+  [42fd0dbc] + IterativeSolvers v0.8.3
   [82899510] + IteratorInterfaceExtensions v1.0.0
+  [1d6d02ad] + LeftChildRightSiblingTrees v0.1.2
+  [e6f89c97] + LoggingExtras v0.4.0
+  [1914dd2f] + MacroTools v0.5.5
+  [46d2c3a1] + MuladdMacro v0.2.2
   [bac558e1] + OrderedCollections v1.1.0
   [d96e819e] + Parameters v0.12.0
   [e409e4f3] + PoissonRandom v0.4.0
+  [33c8b6b6] + ProgressLogging v0.1.2
+  [92933f4c] + ProgressMeter v1.2.0
   [e6cf234a] + RandomNumbers v1.4.0
-  [3cdcf5f2] + RecipesBase v0.7.0
-  [731186ca] + RecursiveArrayTools v0.20.0
-  [ae029012] + Requires v0.5.2
-  [f2b01f46] + Roots v0.8.4
+  [3cdcf5f2] + RecipesBase v0.8.0
+  [731186ca] + RecursiveArrayTools v2.1.0
+  [f2c3362d] + RecursiveFactorization v0.1.0
+  [ae029012] + Requires v1.0.1
+  [f2b01f46] + Roots v1.0.1
   [90137ffa] + StaticArrays v0.12.1
   [3783bdb8] + TableTraits v1.0.0
+  [5d786b92] + TerminalLoggers v0.1.1
   [a2a6695c] + TreeViews v0.3.0
+  [700de1a5] + ZygoteRules v0.2.0
   [2a0f44e3] + Base64 
   [ade2ca70] + Dates 
   [8bb1440f] + DelimitedFiles 
@@ -77,260 +123,132 @@ Environment:
   [8dfed614] + Test 
   [cf7118a7] + UUIDs 
   [4ec0a83e] + Unicode 
-   Testing DiffEqJump
- Resolving package versions...
- Installed NaNMath ───────────────── v0.3.3
- Installed DiffEqProblemLibrary ──── v4.4.0
- Installed DiffResults ───────────── v1.0.2
- Installed Rmath_jll ─────────────── v0.2.2+0
- Installed BlockArrays ───────────── v0.10.2
- Installed StochasticDiffEq ──────── v6.7.0
- Installed Distributions ─────────── v0.22.5
- Installed StatsFuns ─────────────── v0.9.4
- Installed DiffRules ─────────────── v0.1.0
- Installed ModelingToolkit ───────── v0.8.0
- Installed StatsBase ─────────────── v0.32.2
- Installed OrdinaryDiffEq ────────── v5.3.0
- Installed QuadGK ────────────────── v2.3.1
- Installed NameResolution ────────── v0.1.3
- Installed VertexSafeGraphs ──────── v0.1.1
- Installed PrettyPrint ───────────── v0.1.0
- Installed OpenBLAS_jll ──────────── v0.3.7+7
- Installed DiffEqOperators ───────── v3.5.0
- Installed MLStyle ───────────────── v0.3.1
- Installed NLSolversBase ─────────── v7.5.0
- Installed Latexify ──────────────── v0.12.3
- Installed ExponentialUtilities ──── v1.6.0
- Installed SymEngine ─────────────── v0.7.1
- Installed MacroTools ────────────── v0.5.4
- Installed LightGraphs ───────────── v1.3.1
- Installed ElasticArrays ─────────── v1.0.0
- Installed HomotopyContinuation ──── v1.4.1
- Installed MixedSubdivisions ─────── v1.0.0
- Installed DataAPI ───────────────── v1.1.0
- Installed FillArrays ────────────── v0.8.5
- Installed BinDeps ───────────────── v1.0.0
- Installed Quadmath ──────────────── v0.5.2
- Installed Arpack_jll ────────────── v3.5.0+2
- Installed ProgressMeter ─────────── v1.2.0
- Installed DiffEqBiological ──────── v3.9.1
- Installed GenericSchur ──────────── v0.4.0
- Installed MatrixFactorizations ──── v0.2.1
- Installed DataValueInterfaces ───── v1.0.0
- Installed Arpack ────────────────── v0.4.0
- Installed SimpleTraits ──────────── v0.9.1
- Installed JuliaVariables ────────── v0.2.0
- Installed FixedPolynomials ──────── v0.4.0
- Installed ArrayLayouts ──────────── v0.1.5
- Installed DoubleFloats ──────────── v1.1.6
- Installed Distances ─────────────── v0.8.2
- Installed MutableArithmetics ────── v0.2.7
- Installed ArnoldiMethod ─────────── v0.0.4
- Installed DiffEqDiffTools ───────── v0.14.0
- Installed SpecialFunctions ──────── v0.8.0
- Installed DiffEqNoiseProcess ────── v3.3.1
- Installed StaticPolynomials ─────── v1.3.3
- Installed ProjectiveVectors ─────── v1.1.2
- Installed GenericSVD ────────────── v0.2.2
- Installed ForwardDiff ───────────── v0.10.9
- Installed ResettableStacks ──────── v1.0.0
- Installed MultivariatePolynomials ─ v0.3.6
- Installed Inflate ───────────────── v0.1.1
- Installed Crayons ───────────────── v4.0.1
- Installed Rmath ─────────────────── v0.6.1
- Installed SortingAlgorithms ─────── v0.3.1
- Installed Formatting ────────────── v0.4.1
- Installed BlockBandedMatrices ───── v0.6.0
- Installed PDMats ────────────────── v0.9.12
- Installed Tables ────────────────── v1.0.3
- Installed Reexport ──────────────── v0.2.0
- Installed BandedMatrices ────────── v0.14.3
- Installed LineSearches ──────────── v7.0.1
- Installed NLsolve ───────────────── v4.3.0
- Installed SparseDiffTools ───────── v0.6.0
- Installed CanonicalTraits ───────── v0.1.0
- Installed DynamicPolynomials ────── v0.3.9
- Installed URIParser ─────────────── v0.4.0
- Installed BinaryProvider ────────── v0.5.8
- Installed CommonSubexpressions ──── v0.2.0
- Installed Missings ──────────────── v0.4.3
- Installed LaTeXStrings ──────────── v1.1.0
- Installed MuladdMacro ───────────── v0.2.2
- Installed Calculus ──────────────── v0.5.1
- Installed GeneralizedGenerated ──── v0.2.1
- Installed Polynomials ───────────── v0.6.1
- Installed PrettyTables ──────────── v0.8.4
-  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/ne2iw/deps/build.log`
-  Building SymEngine ───────→ `~/.julia/packages/SymEngine/RK5Ks/deps/build.log`
-    Status `/tmp/jl_WdhToj/Manifest.toml`
-  [ec485272] ArnoldiMethod v0.0.4
-  [7d9fca2a] Arpack v0.4.0
-  [68821587] Arpack_jll v3.5.0+2
-  [4fba245c] ArrayInterface v0.1.1
-  [4c555306] ArrayLayouts v0.1.5
-  [aae01518] BandedMatrices v0.14.3
-  [9e28174c] BinDeps v1.0.0
-  [b99e7846] BinaryProvider v0.5.8
-  [8e7c35d0] BlockArrays v0.10.2
-  [ffab5731] BlockBandedMatrices v0.6.0
-  [49dc2e85] Calculus v0.5.1
-  [a603d957] CanonicalTraits v0.1.0
-  [bbf7d656] CommonSubexpressions v0.2.0
-  [34da2185] Compat v2.2.0
-  [a8cc5b0e] Crayons v4.0.1
-  [9a962f9c] DataAPI v1.1.0
-  [864edb3b] DataStructures v0.17.10
-  [e2d170a0] DataValueInterfaces v1.0.0
-  [2b5f629d] DiffEqBase v5.6.4
-  [eb300fae] DiffEqBiological v3.9.1
-  [01453d9d] DiffEqDiffTools v0.14.0
-  [c894b116] DiffEqJump v6.2.2
-  [77a26b50] DiffEqNoiseProcess v3.3.1
-  [9fdde737] DiffEqOperators v3.5.0
-  [a077e3f3] DiffEqProblemLibrary v4.4.0
-  [163ba53b] DiffResults v1.0.2
-  [b552c78f] DiffRules v0.1.0
-  [b4f34e82] Distances v0.8.2
-  [31c24e10] Distributions v0.22.5
-  [ffbed154] DocStringExtensions v0.8.1
-  [497a8b3b] DoubleFloats v1.1.6
-  [7c1d4256] DynamicPolynomials v0.3.9
-  [fdbdab4c] ElasticArrays v1.0.0
-  [d4d017d3] ExponentialUtilities v1.6.0
-  [1a297f60] FillArrays v0.8.5
-  [3dd14ad9] FixedPolynomials v0.4.0
-  [59287772] Formatting v0.4.1
-  [f6369f11] ForwardDiff v0.10.9
-  [069b7b12] FunctionWrappers v1.1.1
-  [6b9d7cbe] GeneralizedGenerated v0.2.1
-  [01680d73] GenericSVD v0.2.2
-  [c145ed77] GenericSchur v0.4.0
-  [f213a82b] HomotopyContinuation v1.4.1
-  [d25df0c9] Inflate v0.1.1
-  [82899510] IteratorInterfaceExtensions v1.0.0
-  [b14d175d] JuliaVariables v0.2.0
-  [b964fa9f] LaTeXStrings v1.1.0
-  [23fbe1c1] Latexify v0.12.3
-  [093fc24a] LightGraphs v1.3.1
-  [d3d80556] LineSearches v7.0.1
-  [d8e11817] MLStyle v0.3.1
-  [1914dd2f] MacroTools v0.5.4
-  [a3b82374] MatrixFactorizations v0.2.1
-  [e1d29d7a] Missings v0.4.3
-  [291d046c] MixedSubdivisions v1.0.0
-  [961ee093] ModelingToolkit v0.8.0
-  [46d2c3a1] MuladdMacro v0.2.2
-  [102ac46a] MultivariatePolynomials v0.3.6
-  [d8a4904e] MutableArithmetics v0.2.7
-  [d41bc354] NLSolversBase v7.5.0
-  [2774e3e8] NLsolve v4.3.0
-  [77ba4419] NaNMath v0.3.3
-  [71a1bf82] NameResolution v0.1.3
-  [4536629a] OpenBLAS_jll v0.3.7+7
-  [bac558e1] OrderedCollections v1.1.0
-  [1dea7af3] OrdinaryDiffEq v5.3.0
-  [90014a1f] PDMats v0.9.12
-  [d96e819e] Parameters v0.12.0
-  [e409e4f3] PoissonRandom v0.4.0
-  [f27b6e38] Polynomials v0.6.1
-  [8162dcfd] PrettyPrint v0.1.0
-  [08abe8d2] PrettyTables v0.8.4
-  [92933f4c] ProgressMeter v1.2.0
-  [01f381cc] ProjectiveVectors v1.1.2
-  [1fd47b50] QuadGK v2.3.1
-  [be4d8f0f] Quadmath v0.5.2
-  [e6cf234a] RandomNumbers v1.4.0
-  [3cdcf5f2] RecipesBase v0.7.0
-  [731186ca] RecursiveArrayTools v0.20.0
-  [189a3867] Reexport v0.2.0
-  [ae029012] Requires v0.5.2
-  [ae5879a3] ResettableStacks v1.0.0
-  [79098fc4] Rmath v0.6.1
-  [f50d1b31] Rmath_jll v0.2.2+0
-  [f2b01f46] Roots v0.8.4
-  [699a6c99] SimpleTraits v0.9.1
-  [a2af1166] SortingAlgorithms v0.3.1
-  [47a9eef4] SparseDiffTools v0.6.0
-  [276daf66] SpecialFunctions v0.8.0
-  [90137ffa] StaticArrays v0.12.1
-  [62e018b1] StaticPolynomials v1.3.3
-  [2913bbd2] StatsBase v0.32.2
-  [4c63d2b9] StatsFuns v0.9.4
-  [789caeaf] StochasticDiffEq v6.7.0
-  [123dc426] SymEngine v0.7.1
-  [3783bdb8] TableTraits v1.0.0
-  [bd369af6] Tables v1.0.3
-  [a2a6695c] TreeViews v0.3.0
-  [30578b45] URIParser v0.4.0
-  [19fa3120] VertexSafeGraphs v0.1.1
-  [2a0f44e3] Base64  [`@stdlib/Base64`]
-  [ade2ca70] Dates  [`@stdlib/Dates`]
-  [8bb1440f] DelimitedFiles  [`@stdlib/DelimitedFiles`]
-  [8ba89e20] Distributed  [`@stdlib/Distributed`]
-  [9fa8497b] Future  [`@stdlib/Future`]
-  [b77e0a4c] InteractiveUtils  [`@stdlib/InteractiveUtils`]
-  [76f85450] LibGit2  [`@stdlib/LibGit2`]
-  [8f399da3] Libdl  [`@stdlib/Libdl`]
-  [37e2e46d] LinearAlgebra  [`@stdlib/LinearAlgebra`]
-  [56ddb016] Logging  [`@stdlib/Logging`]
-  [d6f4376e] Markdown  [`@stdlib/Markdown`]
-  [a63ad114] Mmap  [`@stdlib/Mmap`]
-  [44cfe95a] Pkg  [`@stdlib/Pkg`]
-  [de0858da] Printf  [`@stdlib/Printf`]
-  [3fa0cd96] REPL  [`@stdlib/REPL`]
-  [9a3f8284] Random  [`@stdlib/Random`]
-  [ea8e919c] SHA  [`@stdlib/SHA`]
-  [9e88b42a] Serialization  [`@stdlib/Serialization`]
-  [1a1011a3] SharedArrays  [`@stdlib/SharedArrays`]
-  [6462fe0b] Sockets  [`@stdlib/Sockets`]
-  [2f01184e] SparseArrays  [`@stdlib/SparseArrays`]
-  [10745b16] Statistics  [`@stdlib/Statistics`]
-  [4607b0f0] SuiteSparse  [`@stdlib/SuiteSparse`]
-  [8dfed614] Test  [`@stdlib/Test`]
-  [cf7118a7] UUIDs  [`@stdlib/UUIDs`]
-  [4ec0a83e] Unicode  [`@stdlib/Unicode`]
-Constant Rate Tests: Error During Test at /home/pkgeval/.julia/packages/DiffEqJump/HSO5d/test/runtests.jl:4
-  Got exception outside of a @test
-  LoadError: ArgumentError: Package Statistics not found in current path:
-  - Run `import Pkg; Pkg.add("Statistics")` to install the Statistics package.
-  
-  Stacktrace:
-   [1] require(::Module, ::Symbol) at ./loading.jl:887
-   [2] include at ./boot.jl:328 [inlined]
-   [3] include_relative(::Module, ::String) at ./loading.jl:1105
-   [4] include(::Module, ::String) at ./Base.jl:31
-   [5] include(::String) at ./client.jl:424
-   [6] top-level scope at /home/pkgeval/.julia/packages/DiffEqJump/HSO5d/test/runtests.jl:4
-   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [8] top-level scope at /home/pkgeval/.julia/packages/DiffEqJump/HSO5d/test/runtests.jl:4
-   [9] top-level scope at util.jl:155
-   [10] top-level scope at /home/pkgeval/.julia/packages/DiffEqJump/HSO5d/test/runtests.jl:4
-   [11] top-level scope at util.jl:155
-   [12] include at ./boot.jl:328 [inlined]
-   [13] include_relative(::Module, ::String) at ./loading.jl:1105
-   [14] include(::Module, ::String) at ./Base.jl:31
-   [15] include(::String) at ./client.jl:424
-   [16] top-level scope at none:6
-   [17] eval(::Module, ::Any) at ./boot.jl:330
-   [18] exec_options(::Base.JLOptions) at ./client.jl:263
-   [19] _start() at ./client.jl:460
-  in expression starting at /home/pkgeval/.julia/packages/DiffEqJump/HSO5d/test/constant_rate.jl:1
-  
-Test Summary:       | Error  Total
-Constant Rate Tests |     1      1
-ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
-in expression starting at /home/pkgeval/.julia/packages/DiffEqJump/HSO5d/test/runtests.jl:3
-ERROR: Package DiffEqJump errored during testing
+    Testing DiffEqJump
+┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package HomotopyContinuation [f213a82b]:\n HomotopyContinuation [f213a82b] log:\n ├─possible versions are: [0.3.0-0.3.3, 0.4.0-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.2, 0.7.0-0.7.1, 0.8.0, 1.0.0-1.0.2, 1.1.0-1.1.2, 1.2.0-1.2.1, 1.3.0-1.3.1, 1.4.0-1.4.1] or uninstalled\n ├─restricted by compatibility requirements with ProgressMeter [92933f4c] to versions: [0.8.0, 1.0.0-1.0.2, 1.1.0-1.1.2, 1.2.0-1.2.1, 1.3.0-1.3.1, 1.4.0-1.4.1] or uninstalled\n │ └─ProgressMeter [92933f4c] log:\n │   ├─possible versions are: [0.6.0-0.6.1, 0.7.0, 0.8.0, 0.9.0, 1.0.0, 1.1.0, 1.2.0] or uninstalled\n │   └─restricted to versions 1.2.0 by an explicit requirement, leaving only versions 1.2.0\n ├─restricted by compatibility requirements with StaticArrays [90137ffa] to versions: [0.3.0-0.3.3, 1.3.0-1.3.1, 1.4.0-1.4.1] or uninstalled, leaving only versions: [1.3.0-1.3.1, 1.4.0-1.4.1] or uninstalled\n │ └─StaticArrays [90137ffa] log:\n │   ├─possible versions are: [0.8.0-0.8.3, 0.9.0-0.9.2, 0.10.0, 0.10.2-0.10.3, 0.11.0-0.11.1, 0.12.0-0.12.1] or uninstalled\n │   └─restricted to versions 0.12.1 by an explicit requirement, leaving only versions 0.12.1\n ├─restricted by compatibility requirements with DiffEqBiological [eb300fae] to versions: [1.0.0-1.0.2, 1.1.0-1.1.2, 1.2.0-1.2.1, 1.3.0-1.3.1, 1.4.0-1.4.1], leaving only versions: [1.3.0-1.3.1, 1.4.0-1.4.1]\n │ └─DiffEqBiological [eb300fae] log:\n │   ├─possible versions are: [3.0.0, 3.1.0, 3.2.0, 3.3.0-3.3.1, 3.4.0-3.4.2, 3.5.0-3.5.5, 3.6.0-3.6.1, 3.7.0-3.7.2, 3.8.0-3.8.2, 3.9.0-3.9.1, 3.10.0, 3.11.0, 4.0.0-4.0.2, 4.1.0, 4.2.0] or uninstalled\n │   ├─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [3.10.0, 3.11.0, 4.0.0-4.0.2, 4.1.0, 4.2.0] or uninstalled\n │   │ └─DiffEqBase [2b5f629d] log:\n │   │   ├─possible versions are: [3.13.2-3.13.3, 4.0.0-4.0.1, 4.1.0, 4.2.0, 4.3.0-4.3.1, 4.4.0, 4.5.0, 4.6.0, 4.7.0, 4.8.0, 4.9.0, 4.10.0-4.10.1, 4.11.0-4.11.1, 4.12.0, 4.13.0, 4.14.0-4.14.1, 4.15.0, 4.16.0, 4.17.0, 4.18.0, 4.19.0, 4.20.0-4.20.3, 4.21.0, 4.21.2-4.21.3, 4.22.0-4.22.2, 4.23.0, 4.23.2-4.23.4, 4.24.0-4.24.3, 4.25.0-4.25.1, 4.26.0-4.26.3, 4.27.0-4.27.1, 4.28.0-4.28.1, 4.29.0-4.29.2, 4.30.0-4.30.2, 4.31.0-4.31.2, 4.32.0, 5.0.0-5.0.1, 5.1.0, 5.2.0-5.2.3, 5.3.0-5.3.2, 5.4.0-5.4.1, 5.5.0-5.5.2, 5.6.0-5.6.4, 5.7.0, 5.8.0-5.8.1, 5.9.0, 5.10.0-5.10.3, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0-5.14.2, 5.15.0, 5.16.0-5.16.5, 5.17.0-5.17.1, 5.18.0, 5.19.0, 5.20.0-5.20.1, 6.0.0, 6.1.0, 6.2.0-6.2.4, 6.3.0-6.3.6, 6.4.0-6.4.2, 6.5.0-6.5.1, 6.6.0, 6.7.0, 6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0] or uninstalled\n │   │   └─restricted to versions 6.25.0 by an explicit requirement, leaving only versions 6.25.0\n │   ├─restricted by compatibility requirements with DiffEqProblemLibrary [a077e3f3] to versions: [3.0.0, 3.1.0, 3.2.0, 3.3.0-3.3.1, 3.4.0-3.4.2, 3.5.0-3.5.5, 3.6.0-3.6.1, 3.7.0-3.7.2, 3.8.0-3.8.2, 3.9.0-3.9.1, 3.10.0, 3.11.0, 4.0.0-4.0.2, 4.1.0, 4.2.0], leaving only versions: [3.10.0, 3.11.0, 4.0.0-4.0.2, 4.1.0, 4.2.0]\n │   │ └─DiffEqProblemLibrary [a077e3f3] log:\n │   │   ├─possible versions are: [3.0.0, 3.1.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0, 3.7.0, 4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.4.0, 4.5.0-4.5.1, 4.6.0-4.6.4] or uninstalled\n │   │   ├─restricted to versions * by an explicit requirement, leaving only versions [3.0.0, 3.1.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0, 3.7.0, 4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.4.0, 4.5.0-4.5.1, 4.6.0-4.6.4]\n │   │   └─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [4.2.0, 4.3.0, 4.4.0, 4.5.0-4.5.1, 4.6.0-4.6.4] or uninstalled, leaving only versions: [4.2.0, 4.3.0, 4.4.0, 4.5.0-4.5.1, 4.6.0-4.6.4]\n │   │     └─DiffEqBase [2b5f629d] log: see above\n │   └─restricted by compatibility requirements with RecipesBase [3cdcf5f2] to versions: [3.0.0, 3.1.0, 3.2.0, 3.3.0-3.3.1, 3.4.0-3.4.2, 3.5.0-3.5.5, 3.6.0-3.6.1, 3.7.0-3.7.2, 3.8.0-3.8.2, 4.2.0] or uninstalled, leaving only versions: 4.2.0\n │     └─RecipesBase [3cdcf5f2] log:\n │       ├─possible versions are: [0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.8.0] or uninstalled\n │       └─restricted to versions 0.8.0 by an explicit requirement, leaving only versions 0.8.0\n └─restricted by compatibility requirements with Latexify [23fbe1c1] to versions: [0.3.0-0.3.3, 0.4.0-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.2, 0.7.0-0.7.1, 0.8.0, 1.0.0-1.0.2, 1.1.0-1.1.2, 1.2.0-1.2.1] or uninstalled — no versions left\n   └─Latexify [23fbe1c1] log:\n     ├─possible versions are: [0.5.0-0.5.1, 0.6.0, 0.7.0, 0.8.1-0.8.2, 0.9.0, 0.10.0, 0.11.0, 0.12.0-0.12.3, 0.13.0] or uninstalled\n     ├─restricted by compatibility requirements with Requires [ae029012] to versions: 0.13.0 or uninstalled\n     │ └─Requires [ae029012] log:\n     │   ├─possible versions are: [0.5.0-0.5.2, 1.0.0-1.0.1] or uninstalled\n     │   └─restricted to versions 1.0.1 by an explicit requirement, leaving only versions 1.0.1\n     └─restricted by compatibility requirements with DiffEqBiological [eb300fae] to versions: [0.11.0, 0.12.0-0.12.3, 0.13.0], leaving only versions: 0.13.0\n       └─DiffEqBiological [eb300fae] log: see above", nothing)
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1365
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l[2K[?25hERROR: failed to clone from https://github.com/JuliaDiffEq/StochasticDiffEq.jl.git, error: GitError(Code:ERROR, Class:OS, failed to connect to github.com: Connection timed out)
 Stacktrace:
- [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Types.jl:113
- [2] #test#131(::Bool, ::Nothing, ::Cmd, ::Cmd, ::typeof(Pkg.Operations.test), ::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Operations.jl:1372
- [3] #test at ./none:0 [inlined]
- [4] #test#62(::Bool, ::Nothing, ::Cmd, ::Cmd, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Pkg.API.test), ::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:253
- [5] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:239
- [6] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:233 [inlined]
- [7] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:233 [inlined]
- [8] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:232 [inlined]
- [9] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:232 [inlined]
- [10] #test#59(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Pkg.API.test), ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:231
- [11] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:231
- [12] top-level scope at none:13
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
+ [2] clone(::Pkg.Types.Context, ::String, ::String; header::String, credentials::Nothing, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:isbare,),Tuple{Bool}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/GitTools.jl:149
+ [3] #ensure_clone#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/GitTools.jl:110 [inlined]
+ [4] install_git(::Pkg.Types.Context, ::Base.UUID, ::String, ::Base.SHA1, ::Array{String,1}, ::VersionNumber, ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:555
+ [5] download_source(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Dict{Base.UUID,Array{String,1}}; readonly::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:714
+ [6] #download_source#39 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:633 [inlined]
+ [7] download_source at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:631 [inlined]
+ [8] up(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Pkg.Types.UpgradeLevel) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1168
+ [9] up(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; level::Pkg.Types.UpgradeLevel, mode::Pkg.Types.PackageMode, update_registry::Bool, kwargs::Base.Iterators.Pairs{Symbol,Base.DevNull,Tuple{Symbol},NamedTuple{(:io,),Tuple{Base.DevNull}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:224
+ [10] up(::Pkg.Types.Context; kwargs::Base.Iterators.Pairs{Symbol,Any,NTuple{4,Symbol},NamedTuple{(:level, :mode, :update_registry, :io),Tuple{Pkg.Types.UpgradeLevel,Pkg.Types.PackageMode,Bool,Base.DevNull}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:192
+ [11] resolve(::Pkg.Types.Context; kwargs::Base.Iterators.Pairs{Symbol,Base.DevNull,Tuple{Symbol},NamedTuple{(:io,),Tuple{Base.DevNull}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:230
+ [12] (::Pkg.Operations.var"#85#89"{String,Pkg.Operations.var"#95#96"{Bool,Cmd,Cmd,Nothing,Pkg.Types.Context,Array{String,1},String,Pkg.Types.PackageSpec},Pkg.Types.PackageSpec})() at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1367
+ [13] with_temp_env(::Pkg.Operations.var"#85#89"{String,Pkg.Operations.var"#95#96"{Bool,Cmd,Cmd,Nothing,Pkg.Types.Context,Array{String,1},String,Pkg.Types.PackageSpec},Pkg.Types.PackageSpec}, ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1286
+ [14] (::Pkg.Operations.var"#84#88"{Pkg.Operations.var"#95#96"{Bool,Cmd,Cmd,Nothing,Pkg.Types.Context,Array{String,1},String,Pkg.Types.PackageSpec},Pkg.Types.Context,Pkg.Types.PackageSpec,String,Pkg.Types.Project,String})(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1357
+ [15] mktempdir(::Pkg.Operations.var"#84#88"{Pkg.Operations.var"#95#96"{Bool,Cmd,Cmd,Nothing,Pkg.Types.Context,Array{String,1},String,Pkg.Types.PackageSpec},Pkg.Types.Context,Pkg.Types.PackageSpec,String,Pkg.Types.Project,String}, ::String; prefix::String) at ./file.jl:682
+ [16] mktempdir(::Function, ::String) at ./file.jl:680 (repeats 2 times)
+ [17] sandbox(::Function, ::Pkg.Types.Context, ::Pkg.Types.PackageSpec, ::String, ::String, ::Pkg.Types.Project) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1324
+ [18] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1488
+ [19] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
+ [20] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
+ [21] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [22] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [23] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [24] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [25] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [26] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [27] top-level scope at none:16
+caused by [exception 2]
+GitError(Code:ERROR, Class:OS, failed to connect to github.com: Connection timed out)
+Stacktrace:
+ [1] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LibGit2/src/error.jl:101 [inlined]
+ [2] clone(::String, ::String, ::LibGit2.CloneOptions) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LibGit2/src/repository.jl:459
+ [3] clone(::String, ::String; branch::String, isbare::Bool, remote_cb::Ptr{Nothing}, credentials::LibGit2.CachedCredentials, callbacks::Dict{Symbol,Tuple{Ptr{Nothing},Any}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LibGit2/src/LibGit2.jl:580
+ [4] clone(::Pkg.Types.Context, ::String, ::String; header::String, credentials::Nothing, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:isbare,),Tuple{Bool}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/GitTools.jl:141
+ [5] #ensure_clone#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/GitTools.jl:110 [inlined]
+ [6] install_git(::Pkg.Types.Context, ::Base.UUID, ::String, ::Base.SHA1, ::Array{String,1}, ::VersionNumber, ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:555
+ [7] download_source(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Dict{Base.UUID,Array{String,1}}; readonly::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:714
+ [8] #download_source#39 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:633 [inlined]
+ [9] download_source at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:631 [inlined]
+ [10] up(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Pkg.Types.UpgradeLevel) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1168
+ [11] up(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; level::Pkg.Types.UpgradeLevel, mode::Pkg.Types.PackageMode, update_registry::Bool, kwargs::Base.Iterators.Pairs{Symbol,Base.DevNull,Tuple{Symbol},NamedTuple{(:io,),Tuple{Base.DevNull}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:224
+ [12] up(::Pkg.Types.Context; kwargs::Base.Iterators.Pairs{Symbol,Any,NTuple{4,Symbol},NamedTuple{(:level, :mode, :update_registry, :io),Tuple{Pkg.Types.UpgradeLevel,Pkg.Types.PackageMode,Bool,Base.DevNull}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:192
+ [13] resolve(::Pkg.Types.Context; kwargs::Base.Iterators.Pairs{Symbol,Base.DevNull,Tuple{Symbol},NamedTuple{(:io,),Tuple{Base.DevNull}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:230
+ [14] (::Pkg.Operations.var"#85#89"{String,Pkg.Operations.var"#95#96"{Bool,Cmd,Cmd,Nothing,Pkg.Types.Context,Array{String,1},String,Pkg.Types.PackageSpec},Pkg.Types.PackageSpec})() at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1367
+ [15] with_temp_env(::Pkg.Operations.var"#85#89"{String,Pkg.Operations.var"#95#96"{Bool,Cmd,Cmd,Nothing,Pkg.Types.Context,Array{String,1},String,Pkg.Types.PackageSpec},Pkg.Types.PackageSpec}, ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1286
+ [16] (::Pkg.Operations.var"#84#88"{Pkg.Operations.var"#95#96"{Bool,Cmd,Cmd,Nothing,Pkg.Types.Context,Array{String,1},String,Pkg.Types.PackageSpec},Pkg.Types.Context,Pkg.Types.PackageSpec,String,Pkg.Types.Project,String})(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1357
+ [17] mktempdir(::Pkg.Operations.var"#84#88"{Pkg.Operations.var"#95#96"{Bool,Cmd,Cmd,Nothing,Pkg.Types.Context,Array{String,1},String,Pkg.Types.PackageSpec},Pkg.Types.Context,Pkg.Types.PackageSpec,String,Pkg.Types.Project,String}, ::String; prefix::String) at ./file.jl:682
+ [18] mktempdir(::Function, ::String) at ./file.jl:680 (repeats 2 times)
+ [19] sandbox(::Function, ::Pkg.Types.Context, ::Pkg.Types.PackageSpec, ::String, ::String, ::Pkg.Types.Project) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1324
+ [20] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1488
+ [21] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
+ [22] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
+ [23] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [24] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [25] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [26] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [27] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [28] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [29] top-level scope at none:16
+caused by [exception 1]
+Unsatisfiable requirements detected for package HomotopyContinuation [f213a82b]:
+ HomotopyContinuation [f213a82b] log:
+ ├─possible versions are: [0.3.0-0.3.3, 0.4.0-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.2, 0.7.0-0.7.1, 0.8.0, 1.0.0-1.0.2, 1.1.0-1.1.2, 1.2.0-1.2.1, 1.3.0-1.3.1, 1.4.0-1.4.1] or uninstalled
+ ├─restricted by compatibility requirements with ProgressMeter [92933f4c] to versions: [0.8.0, 1.0.0-1.0.2, 1.1.0-1.1.2, 1.2.0-1.2.1, 1.3.0-1.3.1, 1.4.0-1.4.1] or uninstalled
+ │ └─ProgressMeter [92933f4c] log:
+ │   ├─possible versions are: [0.6.0-0.6.1, 0.7.0, 0.8.0, 0.9.0, 1.0.0, 1.1.0, 1.2.0] or uninstalled
+ │   └─restricted to versions 1.2.0 by an explicit requirement, leaving only versions 1.2.0
+ ├─restricted by compatibility requirements with StaticArrays [90137ffa] to versions: [0.3.0-0.3.3, 1.3.0-1.3.1, 1.4.0-1.4.1] or uninstalled, leaving only versions: [1.3.0-1.3.1, 1.4.0-1.4.1] or uninstalled
+ │ └─StaticArrays [90137ffa] log:
+ │   ├─possible versions are: [0.8.0-0.8.3, 0.9.0-0.9.2, 0.10.0, 0.10.2-0.10.3, 0.11.0-0.11.1, 0.12.0-0.12.1] or uninstalled
+ │   └─restricted to versions 0.12.1 by an explicit requirement, leaving only versions 0.12.1
+ ├─restricted by compatibility requirements with DiffEqBiological [eb300fae] to versions: [1.0.0-1.0.2, 1.1.0-1.1.2, 1.2.0-1.2.1, 1.3.0-1.3.1, 1.4.0-1.4.1], leaving only versions: [1.3.0-1.3.1, 1.4.0-1.4.1]
+ │ └─DiffEqBiological [eb300fae] log:
+ │   ├─possible versions are: [3.0.0, 3.1.0, 3.2.0, 3.3.0-3.3.1, 3.4.0-3.4.2, 3.5.0-3.5.5, 3.6.0-3.6.1, 3.7.0-3.7.2, 3.8.0-3.8.2, 3.9.0-3.9.1, 3.10.0, 3.11.0, 4.0.0-4.0.2, 4.1.0, 4.2.0] or uninstalled
+ │   ├─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [3.10.0, 3.11.0, 4.0.0-4.0.2, 4.1.0, 4.2.0] or uninstalled
+ │   │ └─DiffEqBase [2b5f629d] log:
+ │   │   ├─possible versions are: [3.13.2-3.13.3, 4.0.0-4.0.1, 4.1.0, 4.2.0, 4.3.0-4.3.1, 4.4.0, 4.5.0, 4.6.0, 4.7.0, 4.8.0, 4.9.0, 4.10.0-4.10.1, 4.11.0-4.11.1, 4.12.0, 4.13.0, 4.14.0-4.14.1, 4.15.0, 4.16.0, 4.17.0, 4.18.0, 4.19.0, 4.20.0-4.20.3, 4.21.0, 4.21.2-4.21.3, 4.22.0-4.22.2, 4.23.0, 4.23.2-4.23.4, 4.24.0-4.24.3, 4.25.0-4.25.1, 4.26.0-4.26.3, 4.27.0-4.27.1, 4.28.0-4.28.1, 4.29.0-4.29.2, 4.30.0-4.30.2, 4.31.0-4.31.2, 4.32.0, 5.0.0-5.0.1, 5.1.0, 5.2.0-5.2.3, 5.3.0-5.3.2, 5.4.0-5.4.1, 5.5.0-5.5.2, 5.6.0-5.6.4, 5.7.0, 5.8.0-5.8.1, 5.9.0, 5.10.0-5.10.3, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0-5.14.2, 5.15.0, 5.16.0-5.16.5, 5.17.0-5.17.1, 5.18.0, 5.19.0, 5.20.0-5.20.1, 6.0.0, 6.1.0, 6.2.0-6.2.4, 6.3.0-6.3.6, 6.4.0-6.4.2, 6.5.0-6.5.1, 6.6.0, 6.7.0, 6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0] or uninstalled
+ │   │   └─restricted to versions 6.25.0 by an explicit requirement, leaving only versions 6.25.0
+ │   ├─restricted by compatibility requirements with DiffEqProblemLibrary [a077e3f3] to versions: [3.0.0, 3.1.0, 3.2.0, 3.3.0-3.3.1, 3.4.0-3.4.2, 3.5.0-3.5.5, 3.6.0-3.6.1, 3.7.0-3.7.2, 3.8.0-3.8.2, 3.9.0-3.9.1, 3.10.0, 3.11.0, 4.0.0-4.0.2, 4.1.0, 4.2.0], leaving only versions: [3.10.0, 3.11.0, 4.0.0-4.0.2, 4.1.0, 4.2.0]
+ │   │ └─DiffEqProblemLibrary [a077e3f3] log:
+ │   │   ├─possible versions are: [3.0.0, 3.1.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0, 3.7.0, 4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.4.0, 4.5.0-4.5.1, 4.6.0-4.6.4] or uninstalled
+ │   │   ├─restricted to versions * by an explicit requirement, leaving only versions [3.0.0, 3.1.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0, 3.7.0, 4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.4.0, 4.5.0-4.5.1, 4.6.0-4.6.4]
+ │   │   └─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [4.2.0, 4.3.0, 4.4.0, 4.5.0-4.5.1, 4.6.0-4.6.4] or uninstalled, leaving only versions: [4.2.0, 4.3.0, 4.4.0, 4.5.0-4.5.1, 4.6.0-4.6.4]
+ │   │     └─DiffEqBase [2b5f629d] log: see above
+ │   └─restricted by compatibility requirements with RecipesBase [3cdcf5f2] to versions: [3.0.0, 3.1.0, 3.2.0, 3.3.0-3.3.1, 3.4.0-3.4.2, 3.5.0-3.5.5, 3.6.0-3.6.1, 3.7.0-3.7.2, 3.8.0-3.8.2, 4.2.0] or uninstalled, leaving only versions: 4.2.0
+ │     └─RecipesBase [3cdcf5f2] log:
+ │       ├─possible versions are: [0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.8.0] or uninstalled
+ │       └─restricted to versions 0.8.0 by an explicit requirement, leaving only versions 0.8.0
+ └─restricted by compatibility requirements with Latexify [23fbe1c1] to versions: [0.3.0-0.3.3, 0.4.0-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.2, 0.7.0-0.7.1, 0.8.0, 1.0.0-1.0.2, 1.1.0-1.1.2, 1.2.0-1.2.1] or uninstalled — no versions left
+   └─Latexify [23fbe1c1] log:
+     ├─possible versions are: [0.5.0-0.5.1, 0.6.0, 0.7.0, 0.8.1-0.8.2, 0.9.0, 0.10.0, 0.11.0, 0.12.0-0.12.3, 0.13.0] or uninstalled
+     ├─restricted by compatibility requirements with Requires [ae029012] to versions: 0.13.0 or uninstalled
+     │ └─Requires [ae029012] log:
+     │   ├─possible versions are: [0.5.0-0.5.2, 1.0.0-1.0.1] or uninstalled
+     │   └─restricted to versions 1.0.1 by an explicit requirement, leaving only versions 1.0.1
+     └─restricted by compatibility requirements with DiffEqBiological [eb300fae] to versions: [0.11.0, 0.12.0-0.12.3, 0.13.0], leaving only versions: 0.13.0
+       └─DiffEqBiological [eb300fae] log: see above
+Stacktrace:
+ [1] propagate_constraints!(::Pkg.Resolve.Graph, ::Set{Int64}; log_events::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Resolve/graphtype.jl:1010
+ [2] propagate_constraints! at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Resolve/graphtype.jl:951 [inlined] (repeats 2 times)
+ [3] simplify_graph!(::Pkg.Resolve.Graph, ::Set{Int64}; clean_graph::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Resolve/graphtype.jl:1465
+ [4] simplify_graph! at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Resolve/graphtype.jl:1465 [inlined] (repeats 2 times)
+ [5] resolve_versions!(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:341
+ [6] up(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Pkg.Types.UpgradeLevel) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1165
+ [7] up(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; level::Pkg.Types.UpgradeLevel, mode::Pkg.Types.PackageMode, update_registry::Bool, kwargs::Base.Iterators.Pairs{Symbol,Base.DevNull,Tuple{Symbol},NamedTuple{(:io,),Tuple{Base.DevNull}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:224
+ [8] up(::Pkg.Types.Context; kwargs::Base.Iterators.Pairs{Symbol,Any,NTuple{4,Symbol},NamedTuple{(:level, :mode, :update_registry, :io),Tuple{Pkg.Types.UpgradeLevel,Pkg.Types.PackageMode,Bool,Base.DevNull}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:192
+ [9] resolve(::Pkg.Types.Context; kwargs::Base.Iterators.Pairs{Symbol,Base.DevNull,Tuple{Symbol},NamedTuple{(:io,),Tuple{Base.DevNull}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:230
+ [10] resolve(; kwargs::Base.Iterators.Pairs{Symbol,Base.DevNull,Tuple{Symbol},NamedTuple{(:io,),Tuple{Base.DevNull}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:228
+ [11] (::Pkg.Operations.var"#85#89"{String,Pkg.Operations.var"#95#96"{Bool,Cmd,Cmd,Nothing,Pkg.Types.Context,Array{String,1},String,Pkg.Types.PackageSpec},Pkg.Types.PackageSpec})() at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1362
+ [12] with_temp_env(::Pkg.Operations.var"#85#89"{String,Pkg.Operations.var"#95#96"{Bool,Cmd,Cmd,Nothing,Pkg.Types.Context,Array{String,1},String,Pkg.Types.PackageSpec},Pkg.Types.PackageSpec}, ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1286
+ [13] (::Pkg.Operations.var"#84#88"{Pkg.Operations.var"#95#96"{Bool,Cmd,Cmd,Nothing,Pkg.Types.Context,Array{String,1},String,Pkg.Types.PackageSpec},Pkg.Types.Context,Pkg.Types.PackageSpec,String,Pkg.Types.Project,String})(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1357
+ [14] mktempdir(::Pkg.Operations.var"#84#88"{Pkg.Operations.var"#95#96"{Bool,Cmd,Cmd,Nothing,Pkg.Types.Context,Array{String,1},String,Pkg.Types.PackageSpec},Pkg.Types.Context,Pkg.Types.PackageSpec,String,Pkg.Types.Project,String}, ::String; prefix::String) at ./file.jl:682
+ [15] mktempdir(::Function, ::String) at ./file.jl:680 (repeats 2 times)
+ [16] sandbox(::Function, ::Pkg.Types.Context, ::Pkg.Types.PackageSpec, ::String, ::String, ::Pkg.Types.Project) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1324
+ [17] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1488
+ [18] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
+ [19] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
+ [20] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [21] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [22] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [23] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [24] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [25] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [26] top-level scope at none:16

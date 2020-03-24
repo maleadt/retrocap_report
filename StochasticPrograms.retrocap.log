@@ -1,0 +1,258 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed Calculus ───────────────────── v0.5.1
+  Installed Distances ──────────────────── v0.8.2
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed StochasticPrograms ─────────── v0.3.0
+  Installed OrderedCollections ─────────── v1.1.0
+  Installed DiffResults ────────────────── v1.0.2
+  Installed MacroTools ─────────────────── v0.5.5
+  Installed ForwardDiff ────────────────── v0.10.9
+  Installed OpenBLAS_jll ───────────────── v0.3.7+8
+  Installed OpenSpecFun_jll ────────────── v0.5.3+3
+    Cloning [9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a] DataAPI from https://github.com/JuliaData/DataAPI.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataAPI ────────────────────── v1.1.0
+    Cloning [e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28] Missings from https://github.com/JuliaData/Missings.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Missings ───────────────────── v0.4.3
+    Cloning [b8a86587-4115-5ab1-83bc-aa920d37bbce] NearestNeighbors from https://github.com/KristofferC/NearestNeighbors.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NearestNeighbors ───────────── v0.4.4
+    Cloning [189a3867-3050-52da-a836-e630ba90ab69] Reexport from https://github.com/simonster/Reexport.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Reexport ───────────────────── v0.2.0
+    Cloning [77ba4419-2d1f-58cd-9bb1-8ffee604a2e3] NaNMath from https://github.com/mlubin/NaNMath.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NaNMath ────────────────────── v0.3.3
+    Cloning [276daf66-3868-5448-9aa4-cd146d93841b] SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SpecialFunctions ───────────── v0.10.0
+    Cloning [89212889-6d3f-5f97-b412-7825138f6c9c] ReverseDiffSparse from https://github.com/mlubin/ReverseDiffSparse.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ReverseDiffSparse ──────────── v0.8.6
+    Cloning [4c63d2b9-4356-54db-8cca-17b64c39e42c] StatsFuns from https://github.com/JuliaStats/StatsFuns.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StatsFuns ──────────────────── v0.9.4
+    Cloning [1fd47b50-473d-5c70-9696-f719f8f3bcdc] QuadGK from https://github.com/JuliaMath/QuadGK.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed QuadGK ─────────────────────── v2.3.1
+    Cloning [a2af1166-a08f-5f64-846c-94a0d3cef48c] SortingAlgorithms from https://github.com/JuliaCollections/SortingAlgorithms.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SortingAlgorithms ──────────── v0.3.1
+    Cloning [1a297f60-69ca-5386-bcde-b61e274b549b] FillArrays from https://github.com/JuliaArrays/FillArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FillArrays ─────────────────── v0.8.5
+    Cloning [7d9fca2a-8960-54d3-9f78-7d1dccf2cb97] Arpack from https://github.com/JuliaLinearAlgebra/Arpack.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Arpack ─────────────────────── v0.4.0
+    Cloning [68821587-b530-5797-8361-c406ea357684] Arpack_jll from https://github.com/JuliaBinaryWrappers/Arpack_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Arpack_jll ─────────────────── v3.5.0+2
+    Cloning [b552c78f-8df3-52c6-915a-8e097449b14b] DiffRules from https://github.com/JuliaDiff/DiffRules.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffRules ──────────────────── v1.0.1
+    Cloning [f50d1b31-88e8-58de-be2c-1cc44531875f] Rmath_jll from https://github.com/JuliaBinaryWrappers/Rmath_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Rmath_jll ──────────────────── v0.2.2+0
+    Cloning [90014a1f-27ba-587c-ab20-58faa44d9150] PDMats from https://github.com/JuliaStats/PDMats.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PDMats ─────────────────────── v0.9.12
+    Cloning [34da2185-b29b-5c13-b0c7-acf172513d20] Compat from https://github.com/JuliaLang/Compat.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Compat ─────────────────────── v2.2.0
+    Cloning [31c24e10-a181-5473-b8eb-7969acd0382f] Distributions from https://github.com/JuliaStats/Distributions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Distributions ──────────────── v0.22.6
+    Cloning [aaaa29a8-35af-508c-8bc3-b662a17a0fe5] Clustering from https://github.com/JuliaStats/Clustering.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Clustering ─────────────────── v0.13.5
+    Cloning [2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91] StatsBase from https://github.com/JuliaStats/StatsBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StatsBase ──────────────────── v0.32.2
+    Cloning [fdba3010-5040-5b88-9595-932c9decdf73] MathProgBase from https://github.com/JuliaOpt/MathProgBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MathProgBase ───────────────── v0.7.8
+    Cloning [4076af6c-e467-56ae-b986-b466b2749572] JuMP from https://github.com/JuliaOpt/JuMP.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [===============>                         ]  36.8 %[2K[?25h  Installed JuMP ───────────────────────── v0.18.6
+    Cloning [bbf7d656-a473-5ed7-a52c-81e309532950] CommonSubexpressions from https://github.com/rdeits/CommonSubexpressions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CommonSubexpressions ───────── v0.2.0
+    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ───────────────── v0.12.1
+    Cloning [e66e0078-7015-5450-92f7-15fbd957f2ae] CompilerSupportLibraries_jll from https://github.com/JuliaBinaryWrappers/CompilerSupportLibraries_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
+    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ─────────────── v0.17.10
+    Cloning [d96e819e-fc66-5662-9728-84c9c7592b0a] Parameters from https://github.com/mauro3/Parameters.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parameters ─────────────────── v0.12.0
+    Cloning [92933f4c-e287-5a05-a399-4b506db050ca] ProgressMeter from https://github.com/timholy/ProgressMeter.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ProgressMeter ──────────────── v1.2.0
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [8b8459f2] + StochasticPrograms v0.3.0
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+2
+  [49dc2e85] + Calculus v0.5.1
+  [aaaa29a8] + Clustering v0.13.5
+  [bbf7d656] + CommonSubexpressions v0.2.0
+  [34da2185] + Compat v2.2.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.1+0
+  [9a962f9c] + DataAPI v1.1.0
+  [864edb3b] + DataStructures v0.17.10
+  [163ba53b] + DiffResults v1.0.2
+  [b552c78f] + DiffRules v1.0.1
+  [b4f34e82] + Distances v0.8.2
+  [31c24e10] + Distributions v0.22.6
+  [1a297f60] + FillArrays v0.8.5
+  [f6369f11] + ForwardDiff v0.10.9
+  [4076af6c] + JuMP v0.18.6
+  [1914dd2f] + MacroTools v0.5.5
+  [fdba3010] + MathProgBase v0.7.8
+  [e1d29d7a] + Missings v0.4.3
+  [77ba4419] + NaNMath v0.3.3
+  [b8a86587] + NearestNeighbors v0.4.4
+  [4536629a] + OpenBLAS_jll v0.3.7+8
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+3
+  [bac558e1] + OrderedCollections v1.1.0
+  [90014a1f] + PDMats v0.9.12
+  [d96e819e] + Parameters v0.12.0
+  [92933f4c] + ProgressMeter v1.2.0
+  [1fd47b50] + QuadGK v2.3.1
+  [189a3867] + Reexport v0.2.0
+  [89212889] + ReverseDiffSparse v0.8.6
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.10.0
+  [90137ffa] + StaticArrays v0.12.1
+  [2913bbd2] + StatsBase v0.32.2
+  [4c63d2b9] + StatsFuns v0.9.4
+  [8b8459f2] + StochasticPrograms v0.3.0
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8bb1440f] + DelimitedFiles 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [1a1011a3] + SharedArrays 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [4607b0f0] + SuiteSparse 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+    Testing StochasticPrograms
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [=====>                                   ]  11.9 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_qPsYNY/Manifest.toml`
+  [7d9fca2a] Arpack v0.4.0
+  [68821587] Arpack_jll v3.5.0+2
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.8
+  [49dc2e85] Calculus v0.5.1
+  [aaaa29a8] Clustering v0.13.5
+  [523fee87] CodecBzip2 v0.6.0
+  [944b1d66] CodecZlib v0.6.0
+  [bbf7d656] CommonSubexpressions v0.2.0
+  [34da2185] Compat v2.2.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.1+0
+  [9a962f9c] DataAPI v1.1.0
+  [864edb3b] DataStructures v0.17.10
+  [163ba53b] DiffResults v1.0.2
+  [b552c78f] DiffRules v1.0.1
+  [b4f34e82] Distances v0.8.2
+  [31c24e10] Distributions v0.22.6
+  [1a297f60] FillArrays v0.8.5
+  [f6369f11] ForwardDiff v0.10.9
+  [60bf3e95] GLPK v0.12.1
+  [3c7084bd] GLPKMathProgInterface v0.4.4
+  [cd3eb016] HTTP v0.8.13
+  [83e8ac13] IniFile v0.5.0
+  [682c06a0] JSON v0.21.0
+  [7d188eb4] JSONSchema v0.2.0
+  [4076af6c] JuMP v0.18.6
+  [1914dd2f] MacroTools v0.5.5
+  [b8f27783] MathOptInterface v0.9.12
+  [fdba3010] MathProgBase v0.7.8
+  [739be429] MbedTLS v1.0.1
+  [c8ffd9c3] MbedTLS_jll v2.16.0+1
+  [e1d29d7a] Missings v0.4.3
+  [d8a4904e] MutableArithmetics v0.2.7
+  [77ba4419] NaNMath v0.3.3
+  [b8a86587] NearestNeighbors v0.4.4
+  [4536629a] OpenBLAS_jll v0.3.7+8
+  [efe28fd5] OpenSpecFun_jll v0.5.3+3
+  [bac558e1] OrderedCollections v1.1.0
+  [90014a1f] PDMats v0.9.12
+  [d96e819e] Parameters v0.12.0
+  [69de0a69] Parsers v0.3.12
+  [92933f4c] ProgressMeter v1.2.0
+  [1fd47b50] QuadGK v2.3.1
+  [189a3867] Reexport v0.2.0
+  [89212889] ReverseDiffSparse v0.8.6
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.10.0
+  [90137ffa] StaticArrays v0.12.1
+  [2913bbd2] StatsBase v0.32.2
+  [4c63d2b9] StatsFuns v0.9.4
+  [8b8459f2] StochasticPrograms v0.3.0
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8bb1440f] DelimitedFiles 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [4607b0f0] SuiteSparse 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+[ Info: Loading test problems...
+[ Info: Loading simple...
+[ Info: Loading instant simple...
+[ Info: Loading infeasible...
+[ Info: Loading deferred simple...
+[ Info: Loading farmer...
+[ Info: Loading sampler...
+[ Info: Test problems loaded. Starting test sequence.
+[ Info: Running functionality tests...
+Test Summary:                      | Pass  Total
+Stochastic Programs: Functionality |   88     88
+[ Info: Running L-shaped tests...
+[ Info: Running progressive-hedging tests...
+Test Summary:      | Pass  Total
+Structured Solvers |  329    329
+[ Info: Starting distributed tests...
+[ Info: Loading test problems...
+[ Info: Loading simple...
+[ Info: Loading instant simple...
+[ Info: Loading infeasible...
+[ Info: Loading deferred simple...
+[ Info: Loading farmer...
+[ Info: Loading sampler...
+[ Info: Test problems loaded. Starting test sequence.
+[ Info: Running functionality tests...
+Test Summary:                   | Pass  Total
+Distributed Stochastic Programs |  101    101
+[ Info: Running L-shaped tests...
+[ Info: Running progressive-hedging tests...
+Test Summary:      | Pass  Total
+Structured Solvers | 1135   1135
+    Testing StochasticPrograms tests passed 

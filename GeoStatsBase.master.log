@@ -1,85 +1,126 @@
-Julia Version 1.3.1
-Commit 2d5741174c (2019-12-30 21:36 UTC)
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
   CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-6.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
 Environment:
   JULIA_DEPOT_PATH = ::/usr/local/share/julia
   JULIA_NUM_THREADS = 2
 
- Resolving package versions...
- Installed Rmath_jll ─────────────────── v0.2.2+0
- Installed NaNMath ───────────────────── v0.3.3
- Installed StatsFuns ─────────────────── v0.8.0
- Installed DiffResults ───────────────── v1.0.2
- Installed DiffRules ─────────────────── v0.0.10
- Installed MLJBase ───────────────────── v0.8.4
- Installed StatsBase ─────────────────── v0.32.2
- Installed ArrayInterface ────────────── v2.5.1
- Installed OpenBLAS_jll ──────────────── v0.3.7+7
- Installed QuadGK ────────────────────── v2.3.1
- Installed CategoricalArrays ─────────── v0.7.7
- Installed NLSolversBase ─────────────── v7.6.1
- Installed DataAPI ───────────────────── v1.1.0
- Installed BinDeps ───────────────────── v0.8.10
- Installed DataFrames ────────────────── v0.18.4
- Installed FilePathsBase ─────────────── v0.7.0
- Installed Arpack_jll ────────────────── v3.5.0+2
- Installed Arpack ────────────────────── v0.4.0
- Installed LearnBase ─────────────────── v0.2.2
- Installed AverageShiftedHistograms ──── v0.8.2
- Installed DataValueInterfaces ───────── v1.0.0
- Installed StaticArrays ──────────────── v0.12.1
- Installed FiniteDiff ────────────────── v2.2.1
- Installed UnicodePlots ──────────────── v1.2.0
- Installed RecipesBase ───────────────── v0.7.0
- Installed Requires ──────────────────── v1.0.1
- Installed DataStructures ────────────── v0.17.10
- Installed DiffEqDiffTools ───────────── v0.14.0
- Installed Distances ─────────────────── v0.8.2
- Installed NearestNeighbors ──────────── v0.4.4
- Installed GeoStatsBase ──────────────── v0.7.1
- Installed SpecialFunctions ──────────── v0.7.2
- Installed Distributions ─────────────── v0.21.5
- Installed IteratorInterfaceExtensions ─ v1.0.0
- Installed ForwardDiff ───────────────── v0.10.9
- Installed ColorTypes ────────────────── v0.8.1
- Installed WeakRefStrings ────────────── v0.6.2
- Installed Optim ─────────────────────── v0.18.1
- Installed Compat ────────────────────── v2.2.0
- Installed CSV ───────────────────────── v0.5.23
- Installed Parsers ───────────────────── v0.3.12
- Installed InvertedIndices ───────────── v1.0.0
- Installed FixedPointNumbers ─────────── v0.7.1
- Installed Crayons ───────────────────── v4.0.1
- Installed JSON ──────────────────────── v0.21.0
- Installed Rmath ─────────────────────── v0.6.1
- Installed TableTraits ───────────────── v1.0.0
- Installed Reexport ──────────────────── v0.2.0
- Installed Tables ────────────────────── v0.2.11
- Installed PDMats ────────────────────── v0.9.12
- Installed LossFunctions ─────────────── v0.5.1
- Installed SortingAlgorithms ─────────── v0.3.1
- Installed LineSearches ──────────────── v7.0.1
- Installed PooledArrays ──────────────── v0.5.3
- Installed URIParser ─────────────────── v0.4.0
- Installed PositiveFactorizations ────── v0.2.3
- Installed BinaryProvider ────────────── v0.5.8
- Installed ScientificTypes ───────────── v0.2.7
- Installed Parameters ────────────────── v0.12.0
- Installed OrderedCollections ────────── v1.1.0
- Installed Calculus ──────────────────── v0.5.1
- Installed Missings ──────────────────── v0.4.3
- Installed CommonSubexpressions ──────── v0.2.0
-  Updating `~/.julia/environments/v1.3/Project.toml`
+  Resolving package versions...
+  Installed PooledArrays ──────────────── v0.5.3
+  Installed Requires ──────────────────── v1.0.1
+  Installed Calculus ──────────────────── v0.5.1
+  Installed Parsers ───────────────────── v0.3.12
+  Installed FixedPointNumbers ─────────── v0.7.1
+  Installed OrderedCollections ────────── v1.1.0
+  Installed Distances ─────────────────── v0.8.2
+  Installed RecipesBase ───────────────── v0.7.0
+  Installed AverageShiftedHistograms ──── v0.8.2
+  Installed Arpack ────────────────────── v0.4.0
+  Installed Arpack_jll ────────────────── v3.5.0+2
+  Installed Rmath_jll ─────────────────── v0.2.2+0
+  Installed UnicodePlots ──────────────── v1.2.0
+  Installed InvertedIndices ───────────── v1.0.0
+  Installed ScientificTypes ───────────── v0.2.7
+  Installed Compat ────────────────────── v2.2.0
+  Installed OpenBLAS_jll ──────────────── v0.3.7+8
+  Installed LossFunctions ─────────────── v0.5.1
+  Installed PositiveFactorizations ────── v0.2.3
+  Installed Distributions ─────────────── v0.21.5
+  Installed CommonSubexpressions ──────── v0.2.0
+  Installed Optim ─────────────────────── v0.18.1
+    Cloning [323cb8eb-fbf6-51c0-afd0-f8fba70507b2] GeoStatsBase from https://github.com/JuliaEarth/GeoStatsBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GeoStatsBase ──────────────── v0.7.1
+    Cloning [9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a] DataAPI from https://github.com/JuliaData/DataAPI.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataAPI ───────────────────── v1.1.0
+    Cloning [e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28] Missings from https://github.com/JuliaData/Missings.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Missings ──────────────────── v0.4.3
+    Cloning [b8a86587-4115-5ab1-83bc-aa920d37bbce] NearestNeighbors from https://github.com/KristofferC/NearestNeighbors.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NearestNeighbors ──────────── v0.4.4
+    Cloning [189a3867-3050-52da-a836-e630ba90ab69] Reexport from https://github.com/simonster/Reexport.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Reexport ──────────────────── v0.2.0
+    Cloning [bd369af6-aec1-5ad0-b16a-f7cc5008161c] Tables from https://github.com/JuliaData/Tables.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Tables ────────────────────── v0.2.11
+    Cloning [77ba4419-2d1f-58cd-9bb1-8ffee604a2e3] NaNMath from https://github.com/mlubin/NaNMath.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NaNMath ───────────────────── v0.3.3
+    Cloning [30578b45-9adc-5946-b283-645ec420af67] URIParser from https://github.com/JuliaWeb/URIParser.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed URIParser ─────────────────── v0.4.0
+    Cloning [d41bc354-129a-5804-8e4c-c37616107c6c] NLSolversBase from https://github.com/JuliaNLSolvers/NLSolversBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NLSolversBase ─────────────── v7.6.1
+    Cloning [82899510-4779-5014-852e-03e436cf321d] IteratorInterfaceExtensions from https://github.com/queryverse/IteratorInterfaceExtensions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IteratorInterfaceExtensions ─ v1.0.0
+    Cloning [276daf66-3868-5448-9aa4-cd146d93841b] SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SpecialFunctions ──────────── v0.7.2
+    Cloning [a7f614a8-145f-11e9-1d2a-a57a1082229d] MLJBase from https://github.com/alan-turing-institute/MLJBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MLJBase ───────────────────── v0.8.4
+    Cloning [79098fc4-a85e-5d69-aa6a-4863f24498fa] Rmath from https://github.com/JuliaStats/Rmath.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Rmath ─────────────────────── v0.6.1
+    Cloning [9e28174c-4ba2-5203-b857-d8d62c4213ee] BinDeps from https://github.com/JuliaPackaging/BinDeps.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinDeps ───────────────────── v0.8.10
+    Cloning [ea10d353-3f73-51f8-a26c-33c1cb351aa5] WeakRefStrings from https://github.com/JuliaData/WeakRefStrings.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed WeakRefStrings ────────────── v0.6.2
+    Cloning [a8cc5b0e-0ffa-5ad4-8c14-923d3ee1735f] Crayons from https://github.com/KristofferC/Crayons.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Crayons ───────────────────── v4.0.1
+    Cloning [4c63d2b9-4356-54db-8cca-17b64c39e42c] StatsFuns from https://github.com/JuliaStats/StatsFuns.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StatsFuns ─────────────────── v0.8.0
+    Cloning [a2af1166-a08f-5f64-846c-94a0d3cef48c] SortingAlgorithms from https://github.com/JuliaCollections/SortingAlgorithms.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SortingAlgorithms ─────────── v0.3.1
+    Cloning [d3d80556-e9d4-5f37-9878-2ab0fcc64255] LineSearches from https://github.com/JuliaNLSolvers/LineSearches.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LineSearches ──────────────── v7.0.1
+    Cloning [1fd47b50-473d-5c70-9696-f719f8f3bcdc] QuadGK from https://github.com/JuliaMath/QuadGK.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed QuadGK ────────────────────── v2.3.1
+    Cloning [6a86dc24-6348-571c-b903-95158fe2bd41] FiniteDiff from https://github.com/JuliaDiff/FiniteDiff.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FiniteDiff ────────────────── v2.3.0
+    Cloning [3da002f7-5984-5a60-b8a6-cbb66c0b333f] ColorTypes from https://github.com/JuliaGraphics/ColorTypes.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ColorTypes ────────────────── v0.8.1
+    Cloning [4fba245c-0d91-5ea0-9b3e-6abc04ee57a9] ArrayInterface from https://github.com/JuliaDiffEq/ArrayInterface.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ArrayInterface ────────────── v2.6.1
+    Cloning [e2d170a0-9d28-54be-80f0-106bbe20a464] DataValueInterfaces from https://github.com/queryverse/DataValueInterfaces.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataValueInterfaces ───────── v1.0.0
+    Cloning [f6369f11-7733-5829-9624-2563aa707210] ForwardDiff from https://github.com/JuliaDiff/ForwardDiff.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ForwardDiff ───────────────── v0.10.9
+    Cloning [b552c78f-8df3-52c6-915a-8e097449b14b] DiffRules from https://github.com/JuliaDiff/DiffRules.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffRules ─────────────────── v0.0.10
+    Cloning [336ed68f-0bac-5ca0-87d4-7b16caf5d00b] CSV from https://github.com/JuliaData/CSV.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [=========>                               ]  21.0 %[2K[?25h  Installed CSV ───────────────────────── v0.5.23
+    Cloning [a93c6f00-e57d-5684-b7b6-d8193f3e46c0] DataFrames from https://github.com/JuliaData/DataFrames.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [================>                        ]  39.1 %[2K[?25h  Installed DataFrames ────────────────── v0.18.4
+    Cloning [163ba53b-c6d8-5494-b064-1a9d43ac40c5] DiffResults from https://github.com/JuliaDiff/DiffResults.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffResults ───────────────── v1.0.2
+    Cloning [90014a1f-27ba-587c-ab20-58faa44d9150] PDMats from https://github.com/JuliaStats/PDMats.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PDMats ────────────────────── v0.9.12
+    Cloning [48062228-2e41-5def-b9a4-89aafe57970f] FilePathsBase from https://github.com/rofinn/FilePathsBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FilePathsBase ─────────────── v0.7.0
+    Cloning [2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91] StatsBase from https://github.com/JuliaStats/StatsBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StatsBase ─────────────────── v0.32.2
+    Cloning [7f8f8fb0-2700-5f03-b4bd-41f8cfc144b6] LearnBase from https://github.com/JuliaML/LearnBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LearnBase ─────────────────── v0.2.2
+    Cloning [01453d9d-ee7c-5054-8395-0335cb756afa] DiffEqDiffTools from https://github.com/JuliaDiffEq/DiffEqDiffTools.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffEqDiffTools ───────────── v0.14.0
+    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ──────────────── v0.12.1
+    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ────────────── v0.5.8
+    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ────────────── v0.17.10
+    Cloning [324d7699-5711-5eae-9e2f-1d82baa6b597] CategoricalArrays from https://github.com/JuliaData/CategoricalArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CategoricalArrays ─────────── v0.7.7
+    Cloning [682c06a0-de6a-54ab-a142-c8b1cf79cde6] JSON from https://github.com/JuliaIO/JSON.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed JSON ──────────────────────── v0.21.0
+    Cloning [d96e819e-fc66-5662-9728-84c9c7592b0a] Parameters from https://github.com/mauro3/Parameters.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parameters ────────────────── v0.12.0
+    Cloning [3783bdb8-4a98-5b6b-af9a-565f29a5fe9c] TableTraits from https://github.com/queryverse/TableTraits.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TableTraits ───────────────── v1.0.0
+   Updating `~/.julia/environments/v1.4/Project.toml`
   [323cb8eb] + GeoStatsBase v0.7.1
-  Updating `~/.julia/environments/v1.3/Manifest.toml`
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
   [7d9fca2a] + Arpack v0.4.0
   [68821587] + Arpack_jll v3.5.0+2
-  [4fba245c] + ArrayInterface v2.5.1
+  [4fba245c] + ArrayInterface v2.6.1
   [77b51b56] + AverageShiftedHistograms v0.8.2
   [9e28174c] + BinDeps v0.8.10
   [b99e7846] + BinaryProvider v0.5.8
@@ -100,7 +141,7 @@ Environment:
   [b4f34e82] + Distances v0.8.2
   [31c24e10] + Distributions v0.21.5
   [48062228] + FilePathsBase v0.7.0
-  [6a86dc24] + FiniteDiff v2.2.1
+  [6a86dc24] + FiniteDiff v2.3.0
   [53c48c17] + FixedPointNumbers v0.7.1
   [f6369f11] + ForwardDiff v0.10.9
   [323cb8eb] + GeoStatsBase v0.7.1
@@ -115,7 +156,7 @@ Environment:
   [d41bc354] + NLSolversBase v7.6.1
   [77ba4419] + NaNMath v0.3.3
   [b8a86587] + NearestNeighbors v0.4.4
-  [4536629a] + OpenBLAS_jll v0.3.7+7
+  [4536629a] + OpenBLAS_jll v0.3.7+8
   [429524aa] + Optim v0.18.1
   [bac558e1] + OrderedCollections v1.1.0
   [90014a1f] + PDMats v0.9.12
@@ -166,78 +207,13 @@ Environment:
   [8dfed614] + Test 
   [cf7118a7] + UUIDs 
   [4ec0a83e] + Unicode 
-  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
-   Testing GeoStatsBase
- Resolving package versions...
- Installed Bzip2_jll ────────────── v1.0.6+1
- Installed QuartzImageIO ────────── v0.6.0
- Installed ImageMagick ──────────── v1.1.3
- Installed Zstd_jll ─────────────── v1.4.4+0
- Installed Plots ────────────────── v0.27.1
- Installed libvorbis_jll ────────── v1.3.6+2
- Installed LibVPX_jll ───────────── v1.8.1+1
- Installed PlotUtils ────────────── v0.6.4
- Installed RangeArrays ──────────── v0.3.2
- Installed VisualRegressionTests ── v0.3.1
- Installed PaddedViews ──────────── v0.5.3
- Installed x265_jll ─────────────── v3.0.0+0
- Installed Measures ─────────────── v0.3.1
- Installed IterTools ────────────── v1.3.0
- Installed IntelOpenMP_jll ──────── v2018.0.3+0
- Installed libpng_jll ───────────── v1.6.37+2
- Installed FFMPEG ───────────────── v0.3.0
- Installed MacroTools ───────────── v0.5.4
- Installed ImageMagick_jll ──────── v6.9.10-12+0
- Installed GeometryTypes ────────── v0.8.1
- Installed EllipsisNotation ─────── v0.4.0
- Installed FriBidi_jll ──────────── v1.0.5+2
- Installed FFTViews ─────────────── v0.3.1
- Installed ComputationalResources ─ v0.3.1
- Installed ImageCore ────────────── v0.8.12
- Installed PlotThemes ───────────── v1.0.1
- Installed Showoff ──────────────── v0.3.1
- Installed MappedArrays ─────────── v0.2.2
- Installed SimpleTraits ─────────── v0.9.1
- Installed FFTW ─────────────────── v1.2.0
- Installed ImageMetadata ────────── v0.9.0
- Installed CatIndices ───────────── v0.2.1
- Installed Zlib_jll ─────────────── v1.2.11+8
- Installed Graphics ─────────────── v1.0.2
- Installed FreeType2_jll ────────── v2.10.1+1
- Installed AxisArrays ───────────── v0.4.2
- Installed OffsetArrays ─────────── v1.0.3
- Installed ColorVectorSpace ─────── v0.8.3
- Installed x264_jll ─────────────── v2019.5.25+1
- Installed CustomUnitRanges ─────── v1.0.0
- Installed AbstractFFTs ─────────── v0.5.0
- Installed TiledIteration ───────── v0.2.4
- Installed IntervalSets ─────────── v0.4.0
- Installed FFMPEG_jll ───────────── v4.1.0+2
- Installed Colors ───────────────── v0.10.2
- Installed ImageAxes ────────────── v0.6.4
- Installed libfdk_aac_jll ───────── v0.1.6+1
- Installed MKL_jll ──────────────── v2019.0.117+2
- Installed libass_jll ───────────── v0.14.0+0
- Installed Ogg_jll ──────────────── v1.3.3+0
- Installed IndirectArrays ───────── v0.5.1
- Installed ImageFiltering ───────── v0.6.11
- Installed JpegTurbo_jll ────────── v2.0.1+0
- Installed FFTW_jll ─────────────── v3.3.9+4
- Installed Libtiff_jll ──────────── v4.0.10+0
- Installed Contour ──────────────── v0.5.2
- Installed LAME_jll ─────────────── v3.100.0+0
- Installed Opus_jll ─────────────── v1.3.1+0
- Installed FileIO ───────────────── v1.2.3
- Installed GR ───────────────────── v0.48.0
- Installed OpenSSL_jll ──────────── v1.1.1+1
-  Building GR ───→ `~/.julia/packages/GR/yMV3y/deps/build.log`
-  Building Plots → `~/.julia/packages/Plots/WwFyB/deps/build.log`
-  Building FFTW ─→ `~/.julia/packages/FFTW/qqcBj/deps/build.log`
-    Status `/tmp/jl_bYEkTM/Manifest.toml`
+   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+    Testing GeoStatsBase
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [==============>                          ]  34.4 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_2axeYc/Manifest.toml`
   [621f4979] AbstractFFTs v0.5.0
   [7d9fca2a] Arpack v0.4.0
   [68821587] Arpack_jll v3.5.0+2
-  [4fba245c] ArrayInterface v2.5.1
+  [4fba245c] ArrayInterface v2.6.1
   [77b51b56] AverageShiftedHistograms v0.8.2
   [39de3d68] AxisArrays v0.4.2
   [9e28174c] BinDeps v0.8.10
@@ -252,7 +228,7 @@ Environment:
   [5ae59095] Colors v0.10.2
   [bbf7d656] CommonSubexpressions v0.2.0
   [34da2185] Compat v2.2.0
-  [ed09eef8] ComputationalResources v0.3.1
+  [ed09eef8] ComputationalResources v0.3.2
   [d38c429a] Contour v0.5.2
   [a8cc5b0e] Crayons v4.0.1
   [dc8bdbbb] CustomUnitRanges v1.0.0
@@ -271,9 +247,9 @@ Environment:
   [4f61f5a4] FFTViews v0.3.1
   [7a1cc6ca] FFTW v1.2.0
   [f5851436] FFTW_jll v3.3.9+4
-  [5789e2e9] FileIO v1.2.3
+  [5789e2e9] FileIO v1.2.4
   [48062228] FilePathsBase v0.7.0
-  [6a86dc24] FiniteDiff v2.2.1
+  [6a86dc24] FiniteDiff v2.3.0
   [53c48c17] FixedPointNumbers v0.7.1
   [f6369f11] ForwardDiff v0.10.9
   [d7e528f0] FreeType2_jll v2.10.1+1
@@ -304,7 +280,7 @@ Environment:
   [30fc2ffe] LossFunctions v0.5.1
   [856f044c] MKL_jll v2019.0.117+2
   [a7f614a8] MLJBase v0.8.4
-  [1914dd2f] MacroTools v0.5.4
+  [1914dd2f] MacroTools v0.5.5
   [dbb5928d] MappedArrays v0.2.2
   [442fdcdd] Measures v0.3.1
   [e1d29d7a] Missings v0.4.3
@@ -313,7 +289,7 @@ Environment:
   [b8a86587] NearestNeighbors v0.4.4
   [6fe1bfb0] OffsetArrays v1.0.3
   [e7412a2a] Ogg_jll v1.3.3+0
-  [4536629a] OpenBLAS_jll v0.3.7+7
+  [4536629a] OpenBLAS_jll v0.3.7+8
   [458c3c95] OpenSSL_jll v1.1.1+1
   [429524aa] Optim v0.18.1
   [91d4177d] Opus_jll v1.3.1+0
@@ -358,103 +334,145 @@ Environment:
   [f27f6e37] libvorbis_jll v1.3.6+2
   [1270edf5] x264_jll v2019.5.25+1
   [dfaa095f] x265_jll v3.0.0+0
-  [2a0f44e3] Base64  [`@stdlib/Base64`]
-  [ade2ca70] Dates  [`@stdlib/Dates`]
-  [8bb1440f] DelimitedFiles  [`@stdlib/DelimitedFiles`]
-  [8ba89e20] Distributed  [`@stdlib/Distributed`]
-  [9fa8497b] Future  [`@stdlib/Future`]
-  [b77e0a4c] InteractiveUtils  [`@stdlib/InteractiveUtils`]
-  [76f85450] LibGit2  [`@stdlib/LibGit2`]
-  [8f399da3] Libdl  [`@stdlib/Libdl`]
-  [37e2e46d] LinearAlgebra  [`@stdlib/LinearAlgebra`]
-  [56ddb016] Logging  [`@stdlib/Logging`]
-  [d6f4376e] Markdown  [`@stdlib/Markdown`]
-  [a63ad114] Mmap  [`@stdlib/Mmap`]
-  [44cfe95a] Pkg  [`@stdlib/Pkg`]
-  [de0858da] Printf  [`@stdlib/Printf`]
-  [3fa0cd96] REPL  [`@stdlib/REPL`]
-  [9a3f8284] Random  [`@stdlib/Random`]
-  [ea8e919c] SHA  [`@stdlib/SHA`]
-  [9e88b42a] Serialization  [`@stdlib/Serialization`]
-  [1a1011a3] SharedArrays  [`@stdlib/SharedArrays`]
-  [6462fe0b] Sockets  [`@stdlib/Sockets`]
-  [2f01184e] SparseArrays  [`@stdlib/SparseArrays`]
-  [10745b16] Statistics  [`@stdlib/Statistics`]
-  [4607b0f0] SuiteSparse  [`@stdlib/SuiteSparse`]
-  [8dfed614] Test  [`@stdlib/Test`]
-  [cf7118a7] UUIDs  [`@stdlib/UUIDs`]
-  [4ec0a83e] Unicode  [`@stdlib/Unicode`]
- Resolving package versions...
- Installed Libiconv_jll ────────────── v1.16.0+1
- Installed Wayland_protocols_jll ───── v1.18.0+1
- Installed Libgpg_error_jll ────────── v1.36.0+0
- Installed Xorg_recordproto_jll ────── v1.14.2+0
- Installed ATK_jll ─────────────────── v2.34.1+2
- Installed gdk_pixbuf_jll ──────────── v2.38.2+6
- Installed LZO_jll ─────────────────── v2.10.0+0
- Installed Gtk ─────────────────────── v1.1.3
- Installed Xorg_libpthread_stubs_jll ─ v0.1.0+0
- Installed Dbus_jll ────────────────── v1.12.16+0
- Installed Libgcrypt_jll ───────────── v1.8.5+0
- Installed Xorg_libXau_jll ─────────── v1.0.9+1
- Installed hicolor_icon_theme_jll ──── v0.17.0+1
- Installed Xorg_xineramaproto_jll ──── v1.2.1+0
- Installed Xorg_libXrandr_jll ──────── v1.5.2+1
- Installed Gettext_jll ─────────────── v0.20.1+1
- Installed xkbcommon_jll ───────────── v0.9.1+1
- Installed Xorg_xextproto_jll ──────── v7.3.0+0
- Installed adwaita_icon_theme_jll ──── v3.33.92+3
- Installed XSLT_jll ────────────────── v1.1.33+0
- Installed Libglvnd_jll ────────────── v1.3.0+1
- Installed Xorg_libXi_jll ──────────── v1.7.10+1
- Installed Xorg_libXtst_jll ────────── v1.2.3+1
- Installed Xorg_damageproto_jll ────── v1.2.1+0
- Installed Pixman_jll ──────────────── v0.38.4+1
- Installed XML2_jll ────────────────── v2.9.9+1
- Installed Cairo_jll ───────────────── v1.16.0+2
- Installed X11_jll ─────────────────── v1.6.8+5
- Installed Wayland_jll ─────────────── v1.17.0+0
- Installed Xorg_libxcb_jll ─────────── v1.13.0+1
- Installed Libuuid_jll ─────────────── v2.34.0+3
- Installed Xorg_util_macros_jll ────── v1.19.2+0
- Installed HarfBuzz_jll ────────────── v2.6.1+4
- Installed Xorg_randrproto_jll ─────── v1.5.0+0
- Installed Xorg_libXrender_jll ─────── v0.9.10+1
- Installed Graphene_jll ────────────── v1.10.0+1
- Installed Cairo ───────────────────── v1.0.2
- Installed iso_codes_jll ───────────── v4.3.0+1
- Installed Xorg_libXdmcp_jll ───────── v1.1.3+1
- Installed Xorg_libXdamage_jll ─────── v1.1.5+1
- Installed Xorg_libXext_jll ────────── v1.3.4+1
- Installed at_spi2_core_jll ────────── v2.34.0+0
- Installed Fontconfig_jll ──────────── v2.13.1+10
- Installed Expat_jll ───────────────── v2.2.7+0
- Installed Graphite2_jll ───────────── v1.3.13+1
- Installed Xorg_renderproto_jll ────── v0.11.1+0
- Installed Xorg_compositeproto_jll ─── v0.4.0+0
- Installed Xorg_libX11_jll ─────────── v1.6.9+1
- Installed Xorg_inputproto_jll ─────── v2.3.2+0
- Installed Xorg_xproto_jll ─────────── v7.0.31+0
- Installed Xorg_xkeyboard_config_jll ─ v2.27.0+1
- Installed Xorg_libXcursor_jll ─────── v1.2.0+1
- Installed Glib_jll ────────────────── v2.59.0+1
- Installed Xorg_libXinerama_jll ────── v1.1.4+1
- Installed Xorg_xtrans_jll ─────────── v1.4.0+0
- Installed Xorg_xkbcomp_jll ────────── v1.4.2+1
- Installed Libffi_jll ──────────────── v3.2.1+0
- Installed GTK3_jll ────────────────── v3.24.11+1
- Installed Xorg_libXfixes_jll ──────── v5.0.3+1
- Installed at_spi2_atk_jll ─────────── v2.34.1+0
- Installed Pango_jll ───────────────── v1.42.4+7
- Installed Xorg_fixesproto_jll ─────── v5.0.0+0
- Installed Xorg_libxkbfile_jll ─────── v1.1.0+1
- Installed PCRE_jll ────────────────── v8.42.0+1
- Installed Xorg_libXcomposite_jll ──── v0.4.5+1
- Installed Libepoxy_jll ────────────── v1.5.4+0
- Installed Xorg_xcb_proto_jll ──────── v1.13.0+0
-  Updating `/tmp/jl_bYEkTM/Project.toml`
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8bb1440f] DelimitedFiles 
+  [8ba89e20] Distributed 
+  [9fa8497b] Future 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [4607b0f0] SuiteSparse 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+WARNING: Method definition dot(Any, Any, Any) in module LinearAlgebra at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/generic.jl:924 overwritten in module Optim at /home/pkgeval/.julia/packages/Optim/Agd3B/src/multivariate/precon.jl:23.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition dot(Any, Any, Any) in module LinearAlgebra at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/generic.jl:924 overwritten in module Optim at /home/pkgeval/.julia/packages/Optim/Agd3B/src/multivariate/precon.jl:23.
+  ** incremental compilation may be fatally broken for this module **
+
+  Resolving package versions...
+  Installed Xorg_util_macros_jll ────── v1.19.2+0
+  Installed Xorg_xcb_proto_jll ──────── v1.13.0+0
+  Installed Xorg_libXcursor_jll ─────── v1.2.0+1
+  Installed Libgcrypt_jll ───────────── v1.8.5+0
+  Installed Glib_jll ────────────────── v2.59.0+1
+  Installed Graphene_jll ────────────── v1.10.0+1
+  Installed Xorg_inputproto_jll ─────── v2.3.2+0
+  Installed Xorg_renderproto_jll ────── v0.11.1+0
+  Installed PCRE_jll ────────────────── v8.42.0+1
+  Installed Expat_jll ───────────────── v2.2.7+0
+  Installed xkbcommon_jll ───────────── v0.9.1+1
+  Installed Xorg_compositeproto_jll ─── v0.4.0+0
+  Installed Xorg_libXdmcp_jll ───────── v1.1.3+1
+  Installed XML2_jll ────────────────── v2.9.9+1
+  Installed gdk_pixbuf_jll ──────────── v2.38.2+6
+  Installed Xorg_randrproto_jll ─────── v1.5.0+0
+  Installed GTK3_jll ────────────────── v3.24.11+1
+  Installed Cairo ───────────────────── v1.0.2
+  Installed Libglvnd_jll ────────────── v1.3.0+1
+  Installed Libuuid_jll ─────────────── v2.34.0+3
+  Installed Graphite2_jll ───────────── v1.3.13+1
+  Installed Xorg_libXrender_jll ─────── v0.9.10+1
+  Installed Wayland_jll ─────────────── v1.17.0+0
+  Installed Xorg_xkbcomp_jll ────────── v1.4.2+1
+  Installed Xorg_damageproto_jll ────── v1.2.1+0
+  Installed Xorg_libxkbfile_jll ─────── v1.1.0+1
+  Installed HarfBuzz_jll ────────────── v2.6.1+4
+  Installed Fontconfig_jll ──────────── v2.13.1+10
+  Installed adwaita_icon_theme_jll ──── v3.33.92+3
+  Installed Xorg_libpthread_stubs_jll ─ v0.1.0+0
+  Installed Xorg_libXinerama_jll ────── v1.1.4+1
+    Cloning [d091e8ba-531a-589c-9de9-94069b037ed8] Xorg_libXfixes_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXfixes_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXfixes_jll ──────── v5.0.3+1
+    Cloning [4c0ca9eb-093a-5379-98c5-f87ac0bbbf44] Gtk from https://github.com/JuliaGraphics/Gtk.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Gtk ─────────────────────── v1.1.3
+    Cloning [546b0b6d-9ca3-5ba2-8705-1bc1841d8479] X11_jll from https://github.com/JuliaBinaryWrappers/X11_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed X11_jll ─────────────────── v1.6.8+5
+    Cloning [a51aa0fd-4e3c-5386-b890-e753decda492] Xorg_libXi_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXi_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXi_jll ──────────── v1.7.10+1
+    Cloning [b6f176f1-7aea-5357-ad67-1d3e565ea1c6] Xorg_libXtst_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXtst_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXtst_jll ────────── v1.2.3+1
+    Cloning [ec84b674-ba8e-5d96-8ba1-2a689ba10484] Xorg_libXrandr_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXrandr_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXrandr_jll ──────── v1.5.2+1
+    Cloning [94ce4f54-9a6c-5748-9c1c-f9c7231a4531] Libiconv_jll from https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libiconv_jll ────────────── v1.16.0+1
+    Cloning [30392449-352a-5448-841d-b1acce4e97dc] Pixman_jll from https://github.com/JuliaBinaryWrappers/Pixman_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Pixman_jll ──────────────── v0.38.4+1
+    Cloning [dd4b983a-f0e5-5f8d-a1b7-129d4a5fb1ac] LZO_jll from https://github.com/JuliaBinaryWrappers/LZO_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LZO_jll ─────────────────── v2.10.0+0
+    Cloning [c7cfdc94-dc32-55de-ac96-5a1b8d977c5b] Xorg_libxcb_jll from https://github.com/JuliaBinaryWrappers/Xorg_libxcb_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libxcb_jll ─────────── v1.13.0+1
+    Cloning [aed1982a-8fda-507f-9586-7b0439959a61] XSLT_jll from https://github.com/JuliaBinaryWrappers/XSLT_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed XSLT_jll ────────────────── v1.1.33+0
+    Cloning [1082639a-0dae-5f34-9b06-72781eeb8cb3] Xorg_libXext_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXext_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXext_jll ────────── v1.3.4+1
+    Cloning [0aeada51-83db-5f97-b67e-184615cfc6f6] Xorg_libXdamage_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXdamage_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXdamage_jll ─────── v1.1.5+1
+    Cloning [4f6342f7-b3d2-589e-9d20-edeb45f2b2bc] Xorg_libX11_jll from https://github.com/JuliaBinaryWrappers/Xorg_libX11_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libX11_jll ─────────── v1.6.9+1
+    Cloning [0fc3237b-ac94-5853-b45c-d43d59a06200] at_spi2_core_jll from https://github.com/JuliaBinaryWrappers/at_spi2_core_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed at_spi2_core_jll ────────── v2.34.0+0
+    Cloning [46797783-dccc-5433-be59-056c4bde8513] Xorg_xproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_xproto_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xproto_jll ─────────── v7.0.31+0
+    Cloning [2381bf8a-dfd0-557d-9999-79630e7b1b91] Wayland_protocols_jll from https://github.com/JuliaBinaryWrappers/Wayland_protocols_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Wayland_protocols_jll ───── v1.18.0+1
+    Cloning [36c8627f-9965-5494-a995-c6b170f724f3] Pango_jll from https://github.com/JuliaBinaryWrappers/Pango_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Pango_jll ───────────────── v1.42.4+7
+    Cloning [42c93a91-0102-5b3f-8f9d-e41de60ac950] Libepoxy_jll from https://github.com/JuliaBinaryWrappers/Libepoxy_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libepoxy_jll ────────────── v1.5.4+0
+    Cloning [3c9796d7-64a0-5134-86ad-79f8eb684845] Xorg_libXcomposite_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXcomposite_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXcomposite_jll ──── v0.4.5+1
+    Cloning [a7b44dc7-5846-51fe-a1cd-6b242f0ec0a2] Xorg_recordproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_recordproto_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_recordproto_jll ────── v1.14.2+0
+    Cloning [cf2f014d-5496-555f-b295-889ac9dfddaa] Xorg_fixesproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_fixesproto_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_fixesproto_jll ─────── v5.0.0+0
+    Cloning [e9f186c6-92d2-5b65-8a66-fee21dc1b490] Libffi_jll from https://github.com/JuliaBinaryWrappers/Libffi_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libffi_jll ──────────────── v3.2.1+0
+    Cloning [c5fb5394-a638-5e4d-96e5-b29de1b5cf10] Xorg_xtrans_jll from https://github.com/JuliaBinaryWrappers/Xorg_xtrans_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xtrans_jll ─────────── v1.4.0+0
+    Cloning [33bec58e-1273-512f-9401-5d533626f822] Xorg_xkeyboard_config_jll from https://github.com/JuliaBinaryWrappers/Xorg_xkeyboard_config_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xkeyboard_config_jll ─ v2.27.0+1
+    Cloning [7b86fcea-f67b-53e1-809c-8f1719c154e8] ATK_jll from https://github.com/JuliaBinaryWrappers/ATK_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ATK_jll ─────────────────── v2.34.1+2
+    Cloning [78b55507-aeef-58d4-861c-77aaff3498b1] Gettext_jll from https://github.com/JuliaBinaryWrappers/Gettext_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Gettext_jll ─────────────── v0.20.1+1
+    Cloning [d13bc2ba-d276-5c6f-8a1c-29ed04aab5d0] Xorg_xextproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_xextproto_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xextproto_jll ──────── v7.3.0+0
+    Cloning [de012916-1e3f-58c2-8f29-df3ef51d412d] at_spi2_atk_jll from https://github.com/JuliaBinaryWrappers/at_spi2_atk_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed at_spi2_atk_jll ─────────── v2.34.1+0
+    Cloning [83423d85-b0ee-5818-9007-b63ccbeb887a] Cairo_jll from https://github.com/JuliaBinaryWrappers/Cairo_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Cairo_jll ───────────────── v1.16.0+2
+    Cloning [6a3da44c-33b1-5374-838f-bf0fbf92c29b] Xorg_xineramaproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_xineramaproto_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xineramaproto_jll ──── v1.2.1+0
+    Cloning [ee1fde0b-3d02-5ea6-8484-8dfef6360eab] Dbus_jll from https://github.com/JuliaBinaryWrappers/Dbus_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Dbus_jll ────────────────── v1.12.16+0
+    Cloning [bf975903-5238-5d20-8243-bc370bc1e7e5] iso_codes_jll from https://github.com/JuliaBinaryWrappers/iso_codes_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed iso_codes_jll ───────────── v4.3.0+1
+    Cloning [059c91fe-1bad-52ad-bddd-f7b78713c282] hicolor_icon_theme_jll from https://github.com/JuliaBinaryWrappers/hicolor_icon_theme_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed hicolor_icon_theme_jll ──── v0.17.0+1
+    Cloning [7add5ba3-2f88-524e-9cd5-f83b8a55f7b8] Libgpg_error_jll from https://github.com/JuliaBinaryWrappers/Libgpg_error_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libgpg_error_jll ────────── v1.36.0+0
+    Cloning [0c0b7dd1-d40b-584c-a123-a41640f87eec] Xorg_libXau_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXau_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXau_jll ─────────── v1.0.9+1
+   Updating `/tmp/jl_2axeYc/Project.toml`
   [4c0ca9eb] + Gtk v1.1.3
-  Updating `/tmp/jl_bYEkTM/Manifest.toml`
+   Updating `/tmp/jl_2axeYc/Manifest.toml`
   [7b86fcea] + ATK_jll v2.34.1+2
   [159f3aea] + Cairo v1.0.2
   [83423d85] + Cairo_jll v1.16.0+2
@@ -522,25 +540,6 @@ Environment:
   [059c91fe] + hicolor_icon_theme_jll v0.17.0+1
   [bf975903] + iso_codes_jll v4.3.0+1
   [d8fb68d0] + xkbcommon_jll v0.9.1+1
-  [2a0f44e3] ~ Base64  [`@stdlib/Base64`] ⇒ 
-  [ade2ca70] ~ Dates  [`@stdlib/Dates`] ⇒ 
-  [9fa8497b] ~ Future  [`@stdlib/Future`] ⇒ 
-  [b77e0a4c] ~ InteractiveUtils  [`@stdlib/InteractiveUtils`] ⇒ 
-  [76f85450] ~ LibGit2  [`@stdlib/LibGit2`] ⇒ 
-  [8f399da3] ~ Libdl  [`@stdlib/Libdl`] ⇒ 
-  [56ddb016] ~ Logging  [`@stdlib/Logging`] ⇒ 
-  [d6f4376e] ~ Markdown  [`@stdlib/Markdown`] ⇒ 
-  [a63ad114] ~ Mmap  [`@stdlib/Mmap`] ⇒ 
-  [de0858da] ~ Printf  [`@stdlib/Printf`] ⇒ 
-  [3fa0cd96] ~ REPL  [`@stdlib/REPL`] ⇒ 
-  [ea8e919c] ~ SHA  [`@stdlib/SHA`] ⇒ 
-  [9e88b42a] ~ Serialization  [`@stdlib/Serialization`] ⇒ 
-  [1a1011a3] ~ SharedArrays  [`@stdlib/SharedArrays`] ⇒ 
-  [6462fe0b] ~ Sockets  [`@stdlib/Sockets`] ⇒ 
-  [2f01184e] ~ SparseArrays  [`@stdlib/SparseArrays`] ⇒ 
-  [4607b0f0] ~ SuiteSparse  [`@stdlib/SuiteSparse`] ⇒ 
-  [cf7118a7] ~ UUIDs  [`@stdlib/UUIDs`] ⇒ 
-  [4ec0a83e] ~ Unicode  [`@stdlib/Unicode`] ⇒ 
 [ Info: Reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/CurveData1D.png matches.  Difference: 0.0034938100697279426
 [ Info: Reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/CurveData2D.png matches.  Difference: 0.0035995209071751602
 [ Info: Reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/CurveData3D.png matches.  Difference: 0.0029984137722492746
@@ -553,17 +552,16 @@ Environment:
 └ @ VisualRegressionTests ~/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:39
 StructuredGridData: Error During Test at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
   Test threw exception
-  Expression: test_images(testFilename, joinpath(datadir, "StructuredGridData.png"), popup=!istravis, tol=0.02) |> success
+  Expression: test_images(testFilename, joinpath(datadir, "StructuredGridData.png"), popup = !istravis, tol = 0.02) |> success
   UndefVarError: replace_refimg_dialog not defined
   Stacktrace:
-   [1] #test_images#5(::Bool, ::String, ::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}, ::typeof(test_images), ::String, ::String) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
-   [2] (::VisualRegressionTests.var"#kw##test_images")(::NamedTuple{(:popup, :tol),Tuple{Bool,Float64}}, ::typeof(test_images), ::String, ::String) at ./none:0
-   [3] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
-   [4] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data.jl:122
-   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [6] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data.jl:100
-   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [8] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data.jl:2
+   [1] test_images(::String, ::String; popup::Bool, newfn::String, kw::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
+   [2] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data.jl:122
+   [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data.jl:100
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [7] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data.jl:2
   
 [ Info: Reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/Curve1D.png matches.  Difference: 0.0030035805248958456
 [ Info: Reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/Curve2D.png matches.  Difference: 0.003351493177337264
@@ -582,17 +580,16 @@ StructuredGridData: Error During Test at /home/pkgeval/.julia/packages/VisualReg
 └ @ VisualRegressionTests ~/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:39
 RegularGrid: Error During Test at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
   Test threw exception
-  Expression: test_images(testFilename, joinpath(datadir, "grid3D.png"), popup=!istravis, tol=0.02) |> success
+  Expression: test_images(testFilename, joinpath(datadir, "grid3D.png"), popup = !istravis, tol = 0.02) |> success
   UndefVarError: replace_refimg_dialog not defined
   Stacktrace:
-   [1] #test_images#5(::Bool, ::String, ::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}, ::typeof(test_images), ::String, ::String) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
-   [2] (::VisualRegressionTests.var"#kw##test_images")(::NamedTuple{(:popup, :tol),Tuple{Bool,Float64}}, ::typeof(test_images), ::String, ::String) at ./none:0
-   [3] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
-   [4] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:81
-   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [6] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:46
-   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [8] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:2
+   [1] test_images(::String, ::String; popup::Bool, newfn::String, kw::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
+   [2] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:81
+   [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:46
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [7] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:2
   
 [ Info: Reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/grid1D-data.png matches.  Difference: 0.0032355717650689067
 [ Info: Reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/grid2D-data.png matches.  Difference: 0.002418489890773218
@@ -604,17 +601,16 @@ RegularGrid: Error During Test at /home/pkgeval/.julia/packages/VisualRegression
 └ @ VisualRegressionTests ~/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:39
 StructuredGrid: Error During Test at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
   Test threw exception
-  Expression: test_images(testFilename, joinpath(datadir, "sgrid3D.png"), popup=!istravis, tol=0.02) |> success
+  Expression: test_images(testFilename, joinpath(datadir, "sgrid3D.png"), popup = !istravis, tol = 0.02) |> success
   UndefVarError: replace_refimg_dialog not defined
   Stacktrace:
-   [1] #test_images#5(::Bool, ::String, ::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}, ::typeof(test_images), ::String, ::String) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
-   [2] (::VisualRegressionTests.var"#kw##test_images")(::NamedTuple{(:popup, :tol),Tuple{Bool,Float64}}, ::typeof(test_images), ::String, ::String) at ./none:0
-   [3] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
-   [4] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:122
-   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [6] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:89
-   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [8] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:2
+   [1] test_images(::String, ::String; popup::Bool, newfn::String, kw::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
+   [2] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:122
+   [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:89
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [7] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:2
   
 [ Info: Reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/sgrid1D-data.png matches.  Difference: 0.008681198831990238
 [ Info: Reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/sgrid2D-data.png matches.  Difference: 0.010270346894739784
@@ -624,17 +620,16 @@ StructuredGrid: Error During Test at /home/pkgeval/.julia/packages/VisualRegress
 └ @ VisualRegressionTests ~/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:39
 StructuredGrid: Error During Test at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
   Test threw exception
-  Expression: test_images(testFilename, joinpath(datadir, "sgrid3D-data.png"), popup=!istravis, tol=0.02) |> success
+  Expression: test_images(testFilename, joinpath(datadir, "sgrid3D-data.png"), popup = !istravis, tol = 0.02) |> success
   UndefVarError: replace_refimg_dialog not defined
   Stacktrace:
-   [1] #test_images#5(::Bool, ::String, ::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}, ::typeof(test_images), ::String, ::String) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
-   [2] (::VisualRegressionTests.var"#kw##test_images")(::NamedTuple{(:popup, :tol),Tuple{Bool,Float64}}, ::typeof(test_images), ::String, ::String) at ./none:0
-   [3] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
-   [4] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:125
-   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [6] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:89
-   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [8] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:2
+   [1] test_images(::String, ::String; popup::Bool, newfn::String, kw::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
+   [2] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:125
+   [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:89
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [7] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/domains.jl:2
   
 ┌ Warning: Image did not match reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/SLICPartitioner.png. err: Images differ.  Difference: 0.15459391064521583  tolerance: 0.02
 └ @ VisualRegressionTests ~/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:34
@@ -642,17 +637,16 @@ StructuredGrid: Error During Test at /home/pkgeval/.julia/packages/VisualRegress
 └ @ VisualRegressionTests ~/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:39
 SLICPartitioner: Error During Test at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
   Test threw exception
-  Expression: test_images(testFilename, joinpath(datadir, "SLICPartitioner.png"), popup=!istravis, tol=0.02) |> success
+  Expression: test_images(testFilename, joinpath(datadir, "SLICPartitioner.png"), popup = !istravis, tol = 0.02) |> success
   UndefVarError: replace_refimg_dialog not defined
   Stacktrace:
-   [1] #test_images#5(::Bool, ::String, ::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}, ::typeof(test_images), ::String, ::String) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
-   [2] (::VisualRegressionTests.var"#kw##test_images")(::NamedTuple{(:popup, :tol),Tuple{Bool,Float64}}, ::typeof(test_images), ::String, ::String) at ./none:0
-   [3] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
-   [4] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/partitioning.jl:91
-   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [6] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/partitioning.jl:74
-   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [8] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/partitioning.jl:2
+   [1] test_images(::String, ::String; popup::Bool, newfn::String, kw::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
+   [2] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/partitioning.jl:91
+   [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/partitioning.jl:74
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [7] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/partitioning.jl:2
   
 [ Info: Reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/KLIEPWeighter.png matches.  Difference: 0.0022107567324768005
 ┌ Warning: Image did not match reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/EstimationProblem2D.png. err: Images differ.  Difference: 0.04809956173590524  tolerance: 0.02
@@ -661,17 +655,16 @@ SLICPartitioner: Error During Test at /home/pkgeval/.julia/packages/VisualRegres
 └ @ VisualRegressionTests ~/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:39
 Estimation: Error During Test at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
   Test threw exception
-  Expression: test_images(testFilename, joinpath(datadir, "EstimationProblem2D.png"), popup=!istravis, tol=0.02) |> success
+  Expression: test_images(testFilename, joinpath(datadir, "EstimationProblem2D.png"), popup = !istravis, tol = 0.02) |> success
   UndefVarError: replace_refimg_dialog not defined
   Stacktrace:
-   [1] #test_images#5(::Bool, ::String, ::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}, ::typeof(test_images), ::String, ::String) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
-   [2] (::VisualRegressionTests.var"#kw##test_images")(::NamedTuple{(:popup, :tol),Tuple{Bool,Float64}}, ::typeof(test_images), ::String, ::String) at ./none:0
-   [3] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
-   [4] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/problems.jl:30
-   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [6] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/problems.jl:9
-   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [8] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/problems.jl:2
+   [1] test_images(::String, ::String; popup::Bool, newfn::String, kw::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
+   [2] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/problems.jl:30
+   [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/problems.jl:9
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [7] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/problems.jl:2
   
 ┌ Warning: Image did not match reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/SimulationProblem2D.png. err: Images differ.  Difference: 0.04553906281929996  tolerance: 0.02
 └ @ VisualRegressionTests ~/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:34
@@ -679,17 +672,16 @@ Estimation: Error During Test at /home/pkgeval/.julia/packages/VisualRegressionT
 └ @ VisualRegressionTests ~/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:39
 Simulation: Error During Test at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
   Test threw exception
-  Expression: test_images(testFilename, joinpath(datadir, "SimulationProblem2D.png"), popup=!istravis, tol=0.02) |> success
+  Expression: test_images(testFilename, joinpath(datadir, "SimulationProblem2D.png"), popup = !istravis, tol = 0.02) |> success
   UndefVarError: replace_refimg_dialog not defined
   Stacktrace:
-   [1] #test_images#5(::Bool, ::String, ::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}, ::typeof(test_images), ::String, ::String) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
-   [2] (::VisualRegressionTests.var"#kw##test_images")(::NamedTuple{(:popup, :tol),Tuple{Bool,Float64}}, ::typeof(test_images), ::String, ::String) at ./none:0
-   [3] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
-   [4] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/problems.jl:79
-   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [6] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/problems.jl:36
-   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107
-   [8] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/problems.jl:2
+   [1] test_images(::String, ::String; popup::Bool, newfn::String, kw::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:tol,),Tuple{Float64}}}) at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/imgcomp.jl:40
+   [2] top-level scope at /home/pkgeval/.julia/packages/VisualRegressionTests/q0Rxt/src/macros.jl:18
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/problems.jl:79
+   [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/problems.jl:36
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [7] top-level scope at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/problems.jl:2
   
 [ Info: Reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/LearningProblem2D.png matches.  Difference: 0.009729335761691105
 [ Info: Reference image /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/data/CookieCutter.png matches.  Difference: 0.004688970241884168
@@ -745,15 +737,14 @@ ERROR: LoadError: Some tests did not pass: 414 passed, 0 failed, 7 errored, 0 br
 in expression starting at /home/pkgeval/.julia/packages/GeoStatsBase/DNVy5/test/runtests.jl:45
 ERROR: Package GeoStatsBase errored during testing
 Stacktrace:
- [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Types.jl:113
- [2] #test#131(::Bool, ::Nothing, ::Cmd, ::Cmd, ::typeof(Pkg.Operations.test), ::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Operations.jl:1372
- [3] #test at ./none:0 [inlined]
- [4] #test#62(::Bool, ::Nothing, ::Cmd, ::Cmd, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Pkg.API.test), ::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:253
- [5] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:239
- [6] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:233 [inlined]
- [7] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:233 [inlined]
- [8] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:232 [inlined]
- [9] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:232 [inlined]
- [10] #test#59(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Pkg.API.test), ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:231
- [11] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:231
- [12] top-level scope at none:13
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
+ [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [11] top-level scope at none:16

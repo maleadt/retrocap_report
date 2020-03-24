@@ -1,0 +1,72 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed ReplMaker ──────── v0.2.3
+  Installed ForceImport ────── v0.0.3
+    Cloning [bfcbc1eb-9170-5dc4-a833-47b2e27cecb4] ReduceLinAlg from https://github.com/JuliaReducePkg/ReduceLinAlg.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ReduceLinAlg ───── v0.1.0
+    Cloning [398f06c4-4d28-53ec-89ca-5b2656b7603d] AbstractLattices from https://github.com/scheinerman/AbstractLattices.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed AbstractLattices ─ v0.1.2
+    Cloning [a8e43f4a-99b7-5565-8bf1-0165161caaea] AbstractTensors from https://github.com/chakravala/AbstractTensors.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed AbstractTensors ── v0.4.4
+    Cloning [a4af3ec5-f8ac-5fed-a759-c2e80b4d74cb] SyntaxTree from https://github.com/chakravala/SyntaxTree.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SyntaxTree ─────── v1.0.1
+    Cloning [93e0c654-6965-5f22-aba9-9c1ae6b3c259] Reduce from https://github.com/chakravala/Reduce.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Reduce ─────────── v1.2.5
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [bfcbc1eb] + ReduceLinAlg v0.1.0
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [398f06c4] + AbstractLattices v0.1.2
+  [a8e43f4a] + AbstractTensors v0.4.4
+  [9dda63f9] + ForceImport v0.0.3
+  [93e0c654] + Reduce v1.2.5
+  [bfcbc1eb] + ReduceLinAlg v0.1.0
+  [b873ce64] + ReplMaker v0.2.3
+  [a4af3ec5] + SyntaxTree v1.0.1
+  [2a0f44e3] + Base64 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [9e88b42a] + Serialization 
+  [6462fe0b] + Sockets 
+  [8dfed614] + Test 
+  [4ec0a83e] + Unicode 
+   Building Reduce → `~/.julia/packages/Reduce/gkKoh/deps/build.log`
+    Testing ReduceLinAlg
+Status `/tmp/jl_kKA0rv/Manifest.toml`
+  [398f06c4] AbstractLattices v0.1.2
+  [a8e43f4a] AbstractTensors v0.4.4
+  [9dda63f9] ForceImport v0.0.3
+  [93e0c654] Reduce v1.2.5
+  [bfcbc1eb] ReduceLinAlg v0.1.0
+  [b873ce64] ReplMaker v0.2.3
+  [a4af3ec5] SyntaxTree v1.0.1
+  [2a0f44e3] Base64 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [9e88b42a] Serialization 
+  [6462fe0b] Sockets 
+  [8dfed614] Test 
+  [4ec0a83e] Unicode 
+    Testing ReduceLinAlg tests passed 

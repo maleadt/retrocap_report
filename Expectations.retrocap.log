@@ -1,0 +1,235 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed Missings ──────────── v0.4.3
+  Installed URIParser ─────────── v0.4.0
+  Installed Expectations ──────── v1.3.0
+  Installed SpecialFunctions ──── v0.8.0
+  Installed SortingAlgorithms ─── v0.3.1
+  Installed StatsFuns ─────────── v0.9.4
+  Installed Compat ────────────── v3.8.0
+  Installed Arpack_jll ────────── v3.5.0+2
+  Installed Arpack ────────────── v0.4.0
+  Installed StatsBase ─────────── v0.32.2
+  Installed Distributions ─────── v0.22.6
+    Cloning [79098fc4-a85e-5d69-aa6a-4863f24498fa] Rmath from https://github.com/JuliaStats/Rmath.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Rmath ─────────────── v0.6.1
+    Cloning [9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a] DataAPI from https://github.com/JuliaData/DataAPI.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataAPI ───────────── v1.1.0
+    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ── v1.1.0
+    Cloning [9e28174c-4ba2-5203-b857-d8d62c4213ee] BinDeps from https://github.com/JuliaPackaging/BinDeps.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinDeps ───────────── v1.0.0
+    Cloning [1a297f60-69ca-5386-bcde-b61e274b549b] FillArrays from https://github.com/JuliaArrays/FillArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FillArrays ────────── v0.8.5
+    Cloning [1fd47b50-473d-5c70-9696-f719f8f3bcdc] QuadGK from https://github.com/JuliaMath/QuadGK.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed QuadGK ────────────── v2.3.1
+    Cloning [f50d1b31-88e8-58de-be2c-1cc44531875f] Rmath_jll from https://github.com/JuliaBinaryWrappers/Rmath_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Rmath_jll ─────────── v0.2.2+0
+    Cloning [90014a1f-27ba-587c-ab20-58faa44d9150] PDMats from https://github.com/JuliaStats/PDMats.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PDMats ────────────── v0.9.12
+    Cloning [4536629a-c528-5b80-bd46-f80d51c5b363] OpenBLAS_jll from https://github.com/JuliaBinaryWrappers/OpenBLAS_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenBLAS_jll ──────── v0.3.7+8
+    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ────── v0.5.8
+    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ────── v0.17.10
+    Cloning [442a2c76-b920-505d-bb47-c5924d526838] FastGaussQuadrature from https://github.com/JuliaApproximation/FastGaussQuadrature.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FastGaussQuadrature ─ v0.4.2
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [2fe49d83] + Expectations v1.3.0
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+2
+  [9e28174c] + BinDeps v1.0.0
+  [b99e7846] + BinaryProvider v0.5.8
+  [34da2185] + Compat v3.8.0
+  [9a962f9c] + DataAPI v1.1.0
+  [864edb3b] + DataStructures v0.17.10
+  [31c24e10] + Distributions v0.22.6
+  [2fe49d83] + Expectations v1.3.0
+  [442a2c76] + FastGaussQuadrature v0.4.2
+  [1a297f60] + FillArrays v0.8.5
+  [e1d29d7a] + Missings v0.4.3
+  [4536629a] + OpenBLAS_jll v0.3.7+8
+  [bac558e1] + OrderedCollections v1.1.0
+  [90014a1f] + PDMats v0.9.12
+  [1fd47b50] + QuadGK v2.3.1
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.8.0
+  [2913bbd2] + StatsBase v0.32.2
+  [4c63d2b9] + StatsFuns v0.9.4
+  [30578b45] + URIParser v0.4.0
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8bb1440f] + DelimitedFiles 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [1a1011a3] + SharedArrays 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [4607b0f0] + SuiteSparse 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/ne2iw/deps/build.log`
+┌ Error: Error building `SpecialFunctions`: 
+│ [ Info: Downloading https://github.com/JuliaPackaging/Yggdrasil/releases/download/OpenSpecFun-v0.5.3+0/OpenSpecFun.v0.5.3.x86_64-linux-gnu-gcc7.tar.gz to /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/usr/downloads/OpenSpecFun.v0.5.3.x86_64-linux-gnu-gcc7.tar.gz...
+│ ERROR: LoadError: Could not download https://github.com/JuliaPackaging/Yggdrasil/releases/download/OpenSpecFun-v0.5.3+0/OpenSpecFun.v0.5.3.x86_64-linux-gnu-gcc7.tar.gz to /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/usr/downloads/OpenSpecFun.v0.5.3.x86_64-linux-gnu-gcc7.tar.gz:
+│ ErrorException("")
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:502
+│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
+│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
+│  [5] top-level scope at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/build.jl:142
+│  [6] include(::String) at ./client.jl:439
+│  [7] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/build.jl:139
+│ caused by [exception 1]
+│ 
+│ Stacktrace:
+│  [1] error() at ./error.jl:42
+│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:496
+│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
+│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
+│  [5] top-level scope at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/build.jl:142
+│  [6] include(::String) at ./client.jl:439
+│  [7] top-level scope at none:5
+│ [10:28:48] #=#=#                                                                         [10:28:48] ##O#- #                                                                       [10:28:48] 
+│ [10:28:48] curl: (22) The requested URL returned error: 401 UNAUTHORIZED
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:892
+    Testing Expectations
+Status `/tmp/jl_CEY08q/Manifest.toml`
+  [7d9fca2a] Arpack v0.4.0
+  [68821587] Arpack_jll v3.5.0+2
+  [9e28174c] BinDeps v1.0.0
+  [b99e7846] BinaryProvider v0.5.8
+  [34da2185] Compat v3.8.0
+  [9a962f9c] DataAPI v1.1.0
+  [864edb3b] DataStructures v0.17.10
+  [31c24e10] Distributions v0.22.6
+  [2fe49d83] Expectations v1.3.0
+  [442a2c76] FastGaussQuadrature v0.4.2
+  [1a297f60] FillArrays v0.8.5
+  [e1d29d7a] Missings v0.4.3
+  [4536629a] OpenBLAS_jll v0.3.7+8
+  [bac558e1] OrderedCollections v1.1.0
+  [90014a1f] PDMats v0.9.12
+  [1fd47b50] QuadGK v2.3.1
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.8.0
+  [2913bbd2] StatsBase v0.32.2
+  [4c63d2b9] StatsFuns v0.9.4
+  [30578b45] URIParser v0.4.0
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8bb1440f] DelimitedFiles 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [4607b0f0] SuiteSparse 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+ERROR: LoadError: SpecialFunctions is not installed properly, run `Pkg.build("SpecialFunctions")`,restart Julia and try again
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/src/SpecialFunctions.jl:6
+ [3] include(::Module, ::String) at ./Base.jl:377
+ [4] top-level scope at none:2
+ [5] eval at ./boot.jl:331 [inlined]
+ [6] eval(::Expr) at ./client.jl:449
+ [7] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/src/SpecialFunctions.jl:4
+ERROR: LoadError: Failed to precompile SpecialFunctions [276daf66-3868-5448-9aa4-cd146d93841b] to /home/pkgeval/.julia/compiled/v1.4/SpecialFunctions/78gOt_XB3ih.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+ [3] _require(::Base.PkgId) at ./loading.jl:1029
+ [4] require(::Base.PkgId) at ./loading.jl:927
+ [5] require(::Module, ::Symbol) at ./loading.jl:922
+ [6] include(::Module, ::String) at ./Base.jl:377
+ [7] top-level scope at none:2
+ [8] eval at ./boot.jl:331 [inlined]
+ [9] eval(::Expr) at ./client.jl:449
+ [10] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/FastGaussQuadrature/eUIcX/src/FastGaussQuadrature.jl:3
+ERROR: LoadError: Failed to precompile FastGaussQuadrature [442a2c76-b920-505d-bb47-c5924d526838] to /home/pkgeval/.julia/compiled/v1.4/FastGaussQuadrature/vg51R_XB3ih.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+ [3] _require(::Base.PkgId) at ./loading.jl:1029
+ [4] require(::Base.PkgId) at ./loading.jl:927
+ [5] require(::Module, ::Symbol) at ./loading.jl:922
+ [6] include(::Module, ::String) at ./Base.jl:377
+ [7] top-level scope at none:2
+ [8] eval at ./boot.jl:331 [inlined]
+ [9] eval(::Expr) at ./client.jl:449
+ [10] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/Expectations/NKmWV/src/Expectations.jl:6
+ERROR: LoadError: Failed to precompile Expectations [2fe49d83-0758-5602-8f54-1f90ad0d522b] to /home/pkgeval/.julia/compiled/v1.4/Expectations/r1e2K_XB3ih.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+ [3] _require(::Base.PkgId) at ./loading.jl:1029
+ [4] require(::Base.PkgId) at ./loading.jl:927
+ [5] require(::Module, ::Symbol) at ./loading.jl:922
+ [6] include(::String) at ./client.jl:439
+ [7] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/Expectations/NKmWV/test/runtests.jl:1
+ERROR: Package Expectations errored during testing
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
+ [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [11] top-level scope at none:16

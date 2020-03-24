@@ -1,0 +1,544 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed Compat ───────── v2.2.0
+  Installed JSON ─────────── v0.21.0
+    Cloning [d8beea63-0952-562e-9c6a-8e8ef7364055] FINUFFT from https://github.com/ludvigak/FINUFFT.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FINUFFT ──────── v0.4.2
+    Cloning [8f4d0f93-b110-5947-807f-2305c1781a2d] Conda from https://github.com/JuliaPy/Conda.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Conda ────────── v1.4.1
+    Cloning [30578b45-9adc-5946-b283-645ec420af67] URIParser from https://github.com/JuliaWeb/URIParser.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed URIParser ────── v0.4.0
+    Cloning [81def892-9a0e-5fdd-b105-ffc91e053289] VersionParsing from https://github.com/stevengj/VersionParsing.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed VersionParsing ─ v1.2.0
+    Cloning [69de0a69-1ddd-5017-9359-2bf0b02dc9f0] Parsers from https://github.com/JuliaData/Parsers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parsers ──────── v0.3.12
+    Cloning [9e28174c-4ba2-5203-b857-d8d62c4213ee] BinDeps from https://github.com/JuliaPackaging/BinDeps.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinDeps ──────── v0.8.10
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [d8beea63] + FINUFFT v0.4.2
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [9e28174c] + BinDeps v0.8.10
+  [34da2185] + Compat v2.2.0
+  [8f4d0f93] + Conda v1.4.1
+  [d8beea63] + FINUFFT v0.4.2
+  [682c06a0] + JSON v0.21.0
+  [69de0a69] + Parsers v0.3.12
+  [30578b45] + URIParser v0.4.0
+  [81def892] + VersionParsing v1.2.0
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8bb1440f] + DelimitedFiles 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [1a1011a3] + SharedArrays 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Building Conda ──→ `~/.julia/packages/Conda/3rPhK/deps/build.log`
+   Building FINUFFT → `~/.julia/packages/FINUFFT/bgr7t/deps/build.log`
+┌ Error: Error building `FINUFFT`: 
+│ PREFIX=/home/pkgeval/.julia/conda/3
+│ Unpacking payload ...
+│   0%|          | 0/36 [00:00<?, ?it/s]Extracting : requests-2.22.0-py37_1.conda:   0%|          | 0/36 [00:00<?, ?it/s]Extracting : requests-2.22.0-py37_1.conda:   3%|▎         | 1/36 [00:00<00:11,  3.04it/s]Extracting : urllib3-1.25.8-py37_0.conda:   3%|▎         | 1/36 [00:00<00:11,  3.04it/s] Extracting : pyopenssl-19.1.0-py37_0.conda:   6%|▌         | 2/36 [00:00<00:11,  3.04it/s]Extracting : pip-20.0.2-py37_1.conda:   8%|▊         | 3/36 [00:00<00:10,  3.04it/s]      Extracting : pip-20.0.2-py37_1.conda:  11%|█         | 4/36 [00:00<00:09,  3.40it/s]Extracting : wheel-0.34.2-py37_0.conda:  11%|█         | 4/36 [00:00<00:09,  3.40it/s]Extracting : cryptography-2.8-py37h1ba5d50_0.conda:  14%|█▍        | 5/36 [00:00<00:09,  3.40it/s]Extracting : setuptools-45.2.0-py37_0.conda:  17%|█▋        | 6/36 [00:00<00:08,  3.40it/s]       Extracting : conda-package-handling-1.6.0-py37h7b6447c_0.conda:  19%|█▉        | 7/36 [00:00<00:08,  3.40it/s]Extracting : cffi-1.14.0-py37h2e261b9_0.conda:  22%|██▏       | 8/36 [00:00<00:08,  3.40it/s]                 Extracting : tqdm-4.42.1-py_0.conda:  25%|██▌       | 9/36 [00:00<00:07,  3.40it/s]          Extracting : six-1.14.0-py37_0.conda:  28%|██▊       | 10/36 [00:00<00:07,  3.40it/s]Extracting : ruamel_yaml-0.15.87-py37h7b6447c_0.conda:  31%|███       | 11/36 [00:00<00:07,  3.40it/s]Extracting : pysocks-1.7.1-py37_0.conda:  33%|███▎      | 12/36 [00:00<00:07,  3.40it/s]              Extracting : pycparser-2.19-py37_0.conda:  36%|███▌      | 13/36 [00:00<00:06,  3.40it/s]Extracting : pycosat-0.6.3-py37h7b6447c_0.conda:  39%|███▉      | 14/36 [00:00<00:06,  3.40it/s]Extracting : idna-2.8-py37_0.conda:  42%|████▏     | 15/36 [00:00<00:06,  3.40it/s]             Extracting : chardet-3.0.4-py37_1003.conda:  44%|████▍     | 16/36 [00:00<00:05,  3.40it/s]Extracting : certifi-2019.11.28-py37_0.conda:  47%|████▋     | 17/36 [00:00<00:05,  3.40it/s]Extracting : asn1crypto-1.3.0-py37_0.conda:  50%|█████     | 18/36 [00:00<00:05,  3.40it/s]  Extracting : sqlite-3.31.1-h7b6447c_0.conda:  53%|█████▎    | 19/36 [00:00<00:05,  3.40it/s]Extracting : tk-8.6.8-hbc83047_0.conda:  56%|█████▌    | 20/36 [00:01<00:04,  3.40it/s]     Extracting : tk-8.6.8-hbc83047_0.conda:  58%|█████▊    | 21/36 [00:01<00:03,  4.81it/s]Extracting : readline-7.0-h7b6447c_5.conda:  58%|█████▊    | 21/36 [00:01<00:03,  4.81it/s]Extracting : libedit-3.1.20181209-hc058e9b_0.conda:  61%|██████    | 22/36 [00:01<00:02,  4.81it/s]Extracting : zlib-1.2.11-h7b6447c_3.conda:  64%|██████▍   | 23/36 [00:01<00:02,  4.81it/s]         Extracting : yaml-0.1.7-had09818_2.conda:  67%|██████▋   | 24/36 [00:01<00:02,  4.81it/s] Extracting : xz-5.2.4-h14c3975_4.conda:  69%|██████▉   | 25/36 [00:01<00:02,  4.81it/s]  Extracting : openssl-1.1.1d-h7b6447c_4.conda:  72%|███████▏  | 26/36 [00:01<00:02,  4.81it/s]Extracting : libffi-3.2.1-hd88cf55_4.conda:  75%|███████▌  | 27/36 [00:01<00:01,  4.81it/s]  Extracting : libgcc-ng-9.1.0-hdf63c60_0.conda:  78%|███████▊  | 28/36 [00:01<00:01,  4.81it/s]Extracting : libstdcxx-ng-9.1.0-hdf63c60_0.conda:  81%|████████  | 29/36 [00:01<00:01,  4.81it/s]Extracting : libstdcxx-ng-9.1.0-hdf63c60_0.conda:  83%|████████▎ | 30/36 [00:01<00:00,  6.67it/s]Extracting : ld_impl_linux-64-2.33.1-h53a641e_7.conda:  83%|████████▎ | 30/36 [00:01<00:00,  6.67it/s]Extracting : ca-certificates-2020.1.1-0.conda:  86%|████████▌ | 31/36 [00:01<00:00,  6.67it/s]        Extracting : _libgcc_mutex-0.1-main.conda:  89%|████████▉ | 32/36 [00:01<00:00,  6.67it/s]    Extracting : python-3.7.6-h0371630_2.conda:  92%|█████████▏| 33/36 [00:02<00:00,  6.67it/s]Extracting : conda-4.8.2-py37_0.tar.bz2:  94%|█████████▍| 34/36 [00:02<00:00,  6.67it/s]   Extracting : ncurses-6.2-he6710b0_0.tar.bz2:  97%|█████████▋| 35/36 [00:02<00:00,  6.67it/s]Extracting : ncurses-6.2-he6710b0_0.tar.bz2: 100%|██████████| 36/36 [00:02<00:00,  6.12it/s]                                                                                            Collecting package metadata (current_repodata.json): ...working... done
+│ Solving environment: ...working... done
+│ 
+│ ## Package Plan ##
+│ 
+│   environment location: /home/pkgeval/.julia/conda/3
+│ 
+│   added / updated specs:
+│     - _libgcc_mutex==0.1=main
+│     - asn1crypto==1.3.0=py37_0
+│     - ca-certificates==2020.1.1=0
+│     - certifi==2019.11.28=py37_0
+│     - cffi==1.14.0=py37h2e261b9_0
+│     - chardet==3.0.4=py37_1003
+│     - conda-package-handling==1.6.0=py37h7b6447c_0
+│     - conda==4.8.2=py37_0
+│     - cryptography==2.8=py37h1ba5d50_0
+│     - idna==2.8=py37_0
+│     - ld_impl_linux-64==2.33.1=h53a641e_7
+│     - libedit==3.1.20181209=hc058e9b_0
+│     - libffi==3.2.1=hd88cf55_4
+│     - libgcc-ng==9.1.0=hdf63c60_0
+│     - libstdcxx-ng==9.1.0=hdf63c60_0
+│     - ncurses==6.2=he6710b0_0
+│     - openssl==1.1.1d=h7b6447c_4
+│     - pip==20.0.2=py37_1
+│     - pycosat==0.6.3=py37h7b6447c_0
+│     - pycparser==2.19=py37_0
+│     - pyopenssl==19.1.0=py37_0
+│     - pysocks==1.7.1=py37_0
+│     - python==3.7.6=h0371630_2
+│     - readline==7.0=h7b6447c_5
+│     - requests==2.22.0=py37_1
+│     - ruamel_yaml==0.15.87=py37h7b6447c_0
+│     - setuptools==45.2.0=py37_0
+│     - six==1.14.0=py37_0
+│     - sqlite==3.31.1=h7b6447c_0
+│     - tk==8.6.8=hbc83047_0
+│     - tqdm==4.42.1=py_0
+│     - urllib3==1.25.8=py37_0
+│     - wheel==0.34.2=py37_0
+│     - xz==5.2.4=h14c3975_4
+│     - yaml==0.1.7=had09818_2
+│     - zlib==1.2.11=h7b6447c_3
+│ 
+│ 
+│ The following NEW packages will be INSTALLED:
+│ 
+│   _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+│   asn1crypto         pkgs/main/linux-64::asn1crypto-1.3.0-py37_0
+│   ca-certificates    pkgs/main/linux-64::ca-certificates-2020.1.1-0
+│   certifi            pkgs/main/linux-64::certifi-2019.11.28-py37_0
+│   cffi               pkgs/main/linux-64::cffi-1.14.0-py37h2e261b9_0
+│   chardet            pkgs/main/linux-64::chardet-3.0.4-py37_1003
+│   conda              pkgs/main/linux-64::conda-4.8.2-py37_0
+│   conda-package-han~ pkgs/main/linux-64::conda-package-handling-1.6.0-py37h7b6447c_0
+│   cryptography       pkgs/main/linux-64::cryptography-2.8-py37h1ba5d50_0
+│   idna               pkgs/main/linux-64::idna-2.8-py37_0
+│   ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.33.1-h53a641e_7
+│   libedit            pkgs/main/linux-64::libedit-3.1.20181209-hc058e9b_0
+│   libffi             pkgs/main/linux-64::libffi-3.2.1-hd88cf55_4
+│   libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+│   libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+│   ncurses            pkgs/main/linux-64::ncurses-6.2-he6710b0_0
+│   openssl            pkgs/main/linux-64::openssl-1.1.1d-h7b6447c_4
+│   pip                pkgs/main/linux-64::pip-20.0.2-py37_1
+│   pycosat            pkgs/main/linux-64::pycosat-0.6.3-py37h7b6447c_0
+│   pycparser          pkgs/main/linux-64::pycparser-2.19-py37_0
+│   pyopenssl          pkgs/main/linux-64::pyopenssl-19.1.0-py37_0
+│   pysocks            pkgs/main/linux-64::pysocks-1.7.1-py37_0
+│   python             pkgs/main/linux-64::python-3.7.6-h0371630_2
+│   readline           pkgs/main/linux-64::readline-7.0-h7b6447c_5
+│   requests           pkgs/main/linux-64::requests-2.22.0-py37_1
+│   ruamel_yaml        pkgs/main/linux-64::ruamel_yaml-0.15.87-py37h7b6447c_0
+│   setuptools         pkgs/main/linux-64::setuptools-45.2.0-py37_0
+│   six                pkgs/main/linux-64::six-1.14.0-py37_0
+│   sqlite             pkgs/main/linux-64::sqlite-3.31.1-h7b6447c_0
+│   tk                 pkgs/main/linux-64::tk-8.6.8-hbc83047_0
+│   tqdm               pkgs/main/noarch::tqdm-4.42.1-py_0
+│   urllib3            pkgs/main/linux-64::urllib3-1.25.8-py37_0
+│   wheel              pkgs/main/linux-64::wheel-0.34.2-py37_0
+│   xz                 pkgs/main/linux-64::xz-5.2.4-h14c3975_4
+│   yaml               pkgs/main/linux-64::yaml-0.1.7-had09818_2
+│   zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+│ 
+│ 
+│ Preparing transaction: ...working... done
+│ Executing transaction: ...working... done
+│ installation finished.
+│ Warning: 'defaults' already in 'channels' list, moving to the top
+│ Collecting package metadata (current_repodata.json): ...working... done
+│ Solving environment: ...working... done
+│ 
+│ ## Package Plan ##
+│ 
+│   environment location: /home/pkgeval/.julia/conda/3
+│ 
+│   added / updated specs:
+│     - conda
+│ 
+│ 
+│ The following packages will be downloaded:
+│ 
+│     package                    |            build
+│     ---------------------------|-----------------
+│     certifi-2019.11.28         |           py37_1         156 KB
+│     conda-4.8.3                |           py37_0         2.8 MB
+│     idna-2.9                   |             py_1          49 KB
+│     openssl-1.1.1e             |       h7b6447c_0         2.5 MB
+│     pycparser-2.20             |             py_0          92 KB
+│     requests-2.23.0            |           py37_0          92 KB
+│     setuptools-46.1.1          |           py37_0         512 KB
+│     tqdm-4.43.0                |             py_0          56 KB
+│     ------------------------------------------------------------
+│                                            Total:         6.3 MB
+│ 
+│ The following packages will be UPDATED:
+│ 
+│   certifi                                 2019.11.28-py37_0 --> 2019.11.28-py37_1
+│   conda                                        4.8.2-py37_0 --> 4.8.3-py37_0
+│   idna                  pkgs/main/linux-64::idna-2.8-py37_0 --> pkgs/main/noarch::idna-2.9-py_1
+│   openssl                                 1.1.1d-h7b6447c_4 --> 1.1.1e-h7b6447c_0
+│   pycparser          pkgs/main/linux-64::pycparser-2.19-py~ --> pkgs/main/noarch::pycparser-2.20-py_0
+│   requests                                    2.22.0-py37_1 --> 2.23.0-py37_0
+│   setuptools                                  45.2.0-py37_0 --> 46.1.1-py37_0
+│   tqdm                                          4.42.1-py_0 --> 4.43.0-py_0
+│ 
+│ 
+│ Preparing transaction: ...working... done
+│ Verifying transaction: ...working... done
+│ Executing transaction: ...working... done
+│ Collecting package metadata (current_repodata.json): ...working... done
+│ Solving environment: ...working... done
+│ 
+│ ## Package Plan ##
+│ 
+│   environment location: /home/pkgeval/.julia/packages/FINUFFT/bgr7t/deps/usr
+│ 
+│   added / updated specs:
+│     - fftw
+│ 
+│ 
+│ The following packages will be downloaded:
+│ 
+│     package                    |            build
+│     ---------------------------|-----------------
+│     fftw-3.3.8                 |       h7b6447c_3         2.3 MB
+│     ------------------------------------------------------------
+│                                            Total:         2.3 MB
+│ 
+│ The following NEW packages will be INSTALLED:
+│ 
+│   _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+│   fftw               pkgs/main/linux-64::fftw-3.3.8-h7b6447c_3
+│   libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+│ 
+│ 
+│ Preparing transaction: ...working... done
+│ Verifying transaction: ...working... done
+│ Executing transaction: ...working... done
+│   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+│                                  Dload  Upload   Total   Spent    Left  Speed
+│   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+│ curl: (22) The requested URL returned error: 401 UNAUTHORIZED
+│ [ Info: Downloading miniconda installer ...
+│ [ Info: Installing miniconda ...
+│ [ Info: Running `conda config --add channels defaults --file /home/pkgeval/.julia/conda/3/condarc-julia.yml --force` in root environment
+│ [ Info: Running `conda update -q -y conda` in root environment
+│ [ Info: Running `conda install -q -y fftw` in /home/pkgeval/.julia/packages/FINUFFT/bgr7t/deps/usr environment
+│ [ Info: Attempting to create directory /home/pkgeval/.julia/packages/FINUFFT/bgr7t/deps/downloads
+│ [ Info: Downloading file https://github.com/flatironinstitute/finufft/archive/1.1.1.zip
+│ ERROR: LoadError: failed process: Process(`curl -f -o /home/pkgeval/.julia/packages/FINUFFT/bgr7t/deps/downloads/1.1.1.zip -L https://github.com/flatironinstitute/finufft/archive/1.1.1.zip`, ProcessExited(22)) [22]
+│ 
+│ Stacktrace:
+│  [1] pipeline_error at ./process.jl:525 [inlined]
+│  [2] run(::Cmd; wait::Bool) at ./process.jl:440
+│  [3] run(::Cmd) at ./process.jl:438
+│  [4] run(::BinDeps.SynchronousStepCollection) at /home/pkgeval/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:521
+│  [5] run(::FileRule) at /home/pkgeval/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:483
+│  [6] run(::BinDeps.SynchronousStepCollection) at /home/pkgeval/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:521 (repeats 2 times)
+│  [7] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/deps/build.jl:69
+│  [8] include(::String) at ./client.jl:439
+│  [9] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/deps/build.jl:69
+│ lib = BinDeps.libdir(fftw) = "/home/pkgeval/.julia/packages/FINUFFT/bgr7t/deps/usr/lib"
+│ inc = BinDeps.includedir(fftw) = "/home/pkgeval/.julia/packages/FINUFFT/bgr7t/deps/usr/include"
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:892
+    Testing FINUFFT
+Status `/tmp/jl_0LfV8J/Manifest.toml`
+  [9e28174c] BinDeps v0.8.10
+  [34da2185] Compat v2.2.0
+  [8f4d0f93] Conda v1.4.1
+  [d8beea63] FINUFFT v0.4.2
+  [682c06a0] JSON v0.21.0
+  [69de0a69] Parsers v0.3.12
+  [30578b45] URIParser v0.4.0
+  [81def892] VersionParsing v1.2.0
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8bb1440f] DelimitedFiles 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+Error handling: Error During Test at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_error_handler.jl:4
+  Got exception outside of a @test
+  UndefVarError: libfinufft not defined
+  Stacktrace:
+   [1] finufft_default_opts at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:103 [inlined]
+   [2] nufft1d1(::Array{Float64,1}, ::Array{Complex{Float64},1}, ::Int64, ::Float64, ::Int64) at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:177
+   [3] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_error_handler.jl:12
+   [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [5] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_error_handler.jl:6
+   [6] include(::String) at ./client.jl:439
+   [7] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:4
+   [8] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [9] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:4
+   [10] include(::String) at ./client.jl:439
+   [11] top-level scope at none:6
+   [12] eval(::Module, ::Any) at ./boot.jl:331
+   [13] exec_options(::Base.JLOptions) at ./client.jl:264
+   [14] _start() at ./client.jl:484
+  
+1D1: Error During Test at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:41
+  Got exception outside of a @test
+  UndefVarError: libfinufft not defined
+  Stacktrace:
+   [1] finufft_default_opts at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:103 [inlined]
+   [2] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:50 [inlined]
+   [3] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [4] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:42 [inlined]
+   [5] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [6] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:41 [inlined]
+   [7] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [8] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:39
+   [9] include(::String) at ./client.jl:439
+   [10] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:5
+   [11] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [12] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:4
+   [13] include(::String) at ./client.jl:439
+   [14] top-level scope at none:6
+   [15] eval(::Module, ::Any) at ./boot.jl:331
+   [16] exec_options(::Base.JLOptions) at ./client.jl:264
+   [17] _start() at ./client.jl:484
+  
+1D2: Error During Test at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:62
+  Got exception outside of a @test
+  UndefVarError: libfinufft not defined
+  Stacktrace:
+   [1] finufft_default_opts at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:103 [inlined]
+   [2] nufft1d2!(::Array{Float64,1}, ::Array{Complex{Float64},1}, ::Int64, ::Float64, ::Array{Complex{Float64},1}) at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:461
+   [3] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:70 [inlined]
+   [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [5] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:63 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [7] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:41 [inlined]
+   [8] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [9] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:39
+   [10] include(::String) at ./client.jl:439
+   [11] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:5
+   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [13] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:4
+   [14] include(::String) at ./client.jl:439
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:264
+   [18] _start() at ./client.jl:484
+  
+1D3: Error During Test at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:79
+  Got exception outside of a @test
+  UndefVarError: libfinufft not defined
+  Stacktrace:
+   [1] finufft_default_opts at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:103 [inlined]
+   [2] nufft1d3!(::Array{Float64,1}, ::Array{Complex{Float64},1}, ::Int64, ::Float64, ::Array{Float64,1}, ::Array{Complex{Float64},1}) at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:502
+   [3] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:87 [inlined]
+   [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [5] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:80 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [7] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:41 [inlined]
+   [8] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [9] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:39
+   [10] include(::String) at ./client.jl:439
+   [11] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:5
+   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [13] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:4
+   [14] include(::String) at ./client.jl:439
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:264
+   [18] _start() at ./client.jl:484
+  
+2D1: Error During Test at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:98
+  Got exception outside of a @test
+  UndefVarError: libfinufft not defined
+  Stacktrace:
+   [1] finufft_default_opts at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:103 [inlined]
+   [2] nufft2d1!(::Array{Float64,1}, ::Array{Float64,1}, ::Array{Complex{Float64},1}, ::Int64, ::Float64, ::Array{Complex{Float64},2}) at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:546
+   [3] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:109 [inlined]
+   [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [5] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:100 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [7] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:98 [inlined]
+   [8] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [9] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:39
+   [10] include(::String) at ./client.jl:439
+   [11] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:5
+   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [13] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:4
+   [14] include(::String) at ./client.jl:439
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:264
+   [18] _start() at ./client.jl:484
+  
+2D2: Error During Test at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:117
+  Got exception outside of a @test
+  UndefVarError: libfinufft not defined
+  Stacktrace:
+   [1] finufft_default_opts at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:103 [inlined]
+   [2] nufft2d2!(::Array{Float64,1}, ::Array{Float64,1}, ::Array{Complex{Float64},1}, ::Int64, ::Float64, ::Array{Complex{Float64},2}) at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:590
+   [3] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:128 [inlined]
+   [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [5] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:119 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [7] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:98 [inlined]
+   [8] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [9] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:39
+   [10] include(::String) at ./client.jl:439
+   [11] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:5
+   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [13] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:4
+   [14] include(::String) at ./client.jl:439
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:264
+   [18] _start() at ./client.jl:484
+  
+3D3: Error During Test at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:136
+  Got exception outside of a @test
+  UndefVarError: libfinufft not defined
+  Stacktrace:
+   [1] finufft_default_opts at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:103 [inlined]
+   [2] nufft2d3!(::Array{Float64,1}, ::Array{Float64,1}, ::Array{Complex{Float64},1}, ::Int64, ::Float64, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Complex{Float64},1}) at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:637
+   [3] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:145 [inlined]
+   [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [5] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:138 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [7] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:98 [inlined]
+   [8] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [9] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:39
+   [10] include(::String) at ./client.jl:439
+   [11] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:5
+   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [13] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:4
+   [14] include(::String) at ./client.jl:439
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:264
+   [18] _start() at ./client.jl:484
+  
+3D1: Error During Test at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:156
+  Got exception outside of a @test
+  UndefVarError: libfinufft not defined
+  Stacktrace:
+   [1] finufft_default_opts at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:103 [inlined]
+   [2] nufft3d1!(::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Complex{Float64},1}, ::Int64, ::Float64, ::Array{Complex{Float64},3}) at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:686
+   [3] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:169 [inlined]
+   [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [5] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:158 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [7] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:156 [inlined]
+   [8] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [9] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:39
+   [10] include(::String) at ./client.jl:439
+   [11] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:5
+   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [13] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:4
+   [14] include(::String) at ./client.jl:439
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:264
+   [18] _start() at ./client.jl:484
+  
+3D2: Error During Test at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:177
+  Got exception outside of a @test
+  UndefVarError: libfinufft not defined
+  Stacktrace:
+   [1] finufft_default_opts at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:103 [inlined]
+   [2] nufft3d2!(::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Complex{Float64},1}, ::Int64, ::Float64, ::Array{Complex{Float64},3}) at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:734
+   [3] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:190 [inlined]
+   [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [5] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:179 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [7] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:156 [inlined]
+   [8] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [9] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:39
+   [10] include(::String) at ./client.jl:439
+   [11] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:5
+   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [13] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:4
+   [14] include(::String) at ./client.jl:439
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:264
+   [18] _start() at ./client.jl:484
+  
+3D3: Error During Test at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:198
+  Got exception outside of a @test
+  UndefVarError: libfinufft not defined
+  Stacktrace:
+   [1] finufft_default_opts at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:103 [inlined]
+   [2] nufft3d3!(::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Complex{Float64},1}, ::Int64, ::Float64, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Complex{Float64},1}) at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/src/FINUFFT.jl:788
+   [3] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:207 [inlined]
+   [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [5] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:200 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [7] macro expansion at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:156 [inlined]
+   [8] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113 [inlined]
+   [9] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/test_nufft.jl:39
+   [10] include(::String) at ./client.jl:439
+   [11] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:5
+   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+   [13] top-level scope at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:4
+   [14] include(::String) at ./client.jl:439
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:264
+   [18] _start() at ./client.jl:484
+  
+Test Summary:    | Error  Total
+FINUFFT          |    10     10
+  Error handling |     1      1
+  NUFFT          |     9      9
+    1D           |     3      3
+      1D1        |     1      1
+      1D2        |     1      1
+      1D3        |     1      1
+    2D           |     3      3
+      2D1        |     1      1
+      2D2        |     1      1
+      3D3        |     1      1
+    3D           |     3      3
+      3D1        |     1      1
+      3D2        |     1      1
+      3D3        |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 10 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/FINUFFT/bgr7t/test/runtests.jl:3
+ERROR: Package FINUFFT errored during testing
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
+ [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [11] top-level scope at none:16

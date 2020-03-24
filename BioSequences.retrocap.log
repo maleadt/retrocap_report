@@ -1,0 +1,342 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed IntervalTrees ─────── v1.0.0
+    Cloning [861a8166-3701-5b0c-9a16-15d98fcdc6aa] Combinatorics from https://github.com/JuliaMath/Combinatorics.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Combinatorics ─────── v0.7.0
+    Cloning [7e6ae17a-c86d-528c-b3b9-7f778a29fe59] BioSequences from https://github.com/BioJulia/BioSequences.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BioSequences ──────── v1.1.0
+    Cloning [e1450e63-4bb3-523b-b2a4-4ffa8c0fd77d] BufferedStreams from https://github.com/BioJulia/BufferedStreams.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BufferedStreams ───── v1.0.0
+    Cloning [3cdcf5f2-1ef4-517c-9805-6587b60abb01] RecipesBase from https://github.com/JuliaPlots/RecipesBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RecipesBase ───────── v0.8.0
+    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ────── v0.17.10
+    Cloning [3c28c6f8-a34d-59c4-9654-267d177fcfa9] BioSymbols from https://github.com/BioJulia/BioSymbols.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BioSymbols ────────── v3.1.0
+    Cloning [7200193e-83a8-5a55-b20d-5d36d44a0795] Twiddle from https://github.com/BenJWard/Twiddle.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Twiddle ───────────── v1.1.1
+    Cloning [67c07d97-cdcb-5c2c-af73-a7f9c32a568b] Automa from https://github.com/BioJulia/Automa.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Automa ────────────── v0.8.0
+    Cloning [34da2185-b29b-5c13-b0c7-acf172513d20] Compat from https://github.com/JuliaLang/Compat.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Compat ────────────── v3.8.0
+    Cloning [1cb3b9ac-1ffd-5777-9e6b-a3d42300664d] IndexableBitVectors from https://github.com/BioJulia/IndexableBitVectors.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IndexableBitVectors ─ v1.0.0
+    Cloning [37cfa864-2cd6-5c12-ad9e-b6597d696c81] BioCore from https://github.com/BioJulia/BioCore.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BioCore ───────────── v2.0.5
+    Cloning [3bb67fe8-82b1-5028-8e26-92a6c54297fa] TranscodingStreams from https://github.com/bicycle1885/TranscodingStreams.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TranscodingStreams ── v0.9.5
+    Cloning [ddb6d928-2868-570f-bddf-ab3f9cf99eb6] YAML from https://github.com/BioJulia/YAML.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed YAML ──────────────── v0.4.0
+    Cloning [f27b6e38-b328-58d1-80ce-0feddd5e7a45] Polynomials from https://github.com/JuliaMath/Polynomials.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Polynomials ───────── v0.6.1
+    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ── v1.1.0
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [7e6ae17a] + BioSequences v1.1.0
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [67c07d97] + Automa v0.8.0
+  [37cfa864] + BioCore v2.0.5
+  [7e6ae17a] + BioSequences v1.1.0
+  [3c28c6f8] + BioSymbols v3.1.0
+  [e1450e63] + BufferedStreams v1.0.0
+  [861a8166] + Combinatorics v0.7.0
+  [34da2185] + Compat v3.8.0
+  [864edb3b] + DataStructures v0.17.10
+  [1cb3b9ac] + IndexableBitVectors v1.0.0
+  [524e6230] + IntervalTrees v1.0.0
+  [bac558e1] + OrderedCollections v1.1.0
+  [f27b6e38] + Polynomials v0.6.1
+  [3cdcf5f2] + RecipesBase v0.8.0
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [7200193e] + Twiddle v1.1.1
+  [ddb6d928] + YAML v0.4.0
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8bb1440f] + DelimitedFiles 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [9abbd945] + Profile 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [1a1011a3] + SharedArrays 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+┌ Warning: using test/REQUIRE files is deprecated and current support is lacking in some areas
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1413
+    Testing BioSequences
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_KlfK7A/Manifest.toml`
+  [67c07d97] Automa v0.8.0
+  [37cfa864] BioCore v2.0.5
+  [7e6ae17a] BioSequences v1.1.0
+  [3c28c6f8] BioSymbols v3.1.0
+  [e1450e63] BufferedStreams v1.0.0
+  [861a8166] Combinatorics v0.7.0
+  [34da2185] Compat v3.8.0
+  [9a962f9c] DataAPI v1.1.0
+  [864edb3b] DataStructures v0.17.10
+  [1cb3b9ac] IndexableBitVectors v1.0.0
+  [524e6230] IntervalTrees v1.0.0
+  [e1d29d7a] Missings v0.4.3
+  [bac558e1] OrderedCollections v1.1.0
+  [f27b6e38] Polynomials v0.6.1
+  [3cdcf5f2] RecipesBase v0.8.0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [2913bbd2] StatsBase v0.32.2
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [7200193e] Twiddle v1.1.1
+  [ddb6d928] YAML v0.4.0
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8bb1440f] DelimitedFiles 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [9abbd945] Profile 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+Test Summary: | Pass  Total
+Symbols       |  174    174
+Test Summary: | Pass  Total
+Sequences     |    6      6
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:78 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:78
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:78 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:78
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:92 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:92
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:92 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:92
+┌ Warning: count_zero_bitpairs is deprecated, use count_00_bitpairs instead
+│   caller = bp_chunk_count at site_counting.jl:96 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:96
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:78 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:78
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:78 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:78
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:92 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:92
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:92 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:92
+┌ Warning: count_zero_bitpairs is deprecated, use count_00_bitpairs instead
+│   caller = bp_chunk_count at site_counting.jl:96 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:96
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:92 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:92
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:92 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:92
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:78 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:78
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:78 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:78
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:92 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:92
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:78 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:78
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:92 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:92
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:78 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:78
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:92 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:92
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:78 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:78
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_bitpairs is deprecated, use count_00_bitpairs instead
+│   caller = bp_chunk_count at site_counting.jl:96 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:96
+┌ Warning: count_zero_bitpairs is deprecated, use count_00_bitpairs instead
+│   caller = bp_chunk_count at site_counting.jl:96 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:96
+┌ Warning: count_zero_bitpairs is deprecated, use count_00_bitpairs instead
+│   caller = bp_chunk_count at site_counting.jl:96 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:96
+┌ Warning: count_zero_bitpairs is deprecated, use count_00_bitpairs instead
+│   caller = bp_chunk_count at site_counting.jl:96 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:96
+┌ Warning: count_zero_bitpairs is deprecated, use count_00_bitpairs instead
+│   caller = bp_chunk_count at site_counting.jl:96 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:96
+┌ Warning: count_zero_bitpairs is deprecated, use count_00_bitpairs instead
+│   caller = bp_chunk_count at site_counting.jl:96 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:96
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:92 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:92
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:78 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:78
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+┌ Warning: count_zero_nibbles is deprecated, use count_0000_nibbles instead
+│   caller = bp_chunk_count at site_counting.jl:65 [inlined]
+└ @ Core ~/.julia/packages/BioSequences/7i86L/src/bioseq/site_counting/site_counting.jl:65
+Test Summary: |  Pass  Total
+BioSequences  | 20908  20908
+Test Summary:      | Pass  Total
+ReferenceSequences | 3466   3466
+Test Summary: | Pass  Total
+Composition   |   72     72
+┌ Warning: eachkmer is depreceated: type instability means it is too slow. Please use each(::Type{Kmer{T,K}}, seq, step) instead
+│   caller = (::Main.TestBioSequences.var"#test_eachkmer#152"{Main.TestBioSequences.var"#string_eachkmer#151"})(::Type{T} where T, ::String, ::Int64, ::Int64) at eachkmer.jl:17
+└ @ Main.TestBioSequences ~/.julia/packages/BioSequences/7i86L/test/kmers/eachkmer.jl:17
+┌ Warning: eachkmer is depreceated: type instability means it is too slow. Please use each(::Type{Kmer{T,K}}, seq, step) instead
+│   caller = (::Main.TestBioSequences.var"#test_eachkmer#152"{Main.TestBioSequences.var"#string_eachkmer#151"})(::Type{T} where T, ::String, ::Int64, ::Int64) at eachkmer.jl:17
+└ @ Main.TestBioSequences ~/.julia/packages/BioSequences/7i86L/test/kmers/eachkmer.jl:17
+┌ Warning: eachkmer is depreceated: type instability means it is too slow. Please use each(::Type{Kmer{T,K}}, seq, step) instead
+│   caller = (::Main.TestBioSequences.var"#test_iteratorlength#155"{Main.TestBioSequences.var"#string_eachkmer#151"})(::Type{T} where T, ::String, ::Int64, ::Int64) at eachkmer.jl:25
+└ @ Main.TestBioSequences ~/.julia/packages/BioSequences/7i86L/test/kmers/eachkmer.jl:25
+Test Summary: | Pass  Total
+Kmers         | 7572   7572
+Test Summary: | Pass  Total
+Search        |  227    227
+Test Summary: | Pass  Total
+Translation   |   15     15
+Test Summary: | Pass  Total
+Demultiplexer |  212    212
+Cloning into '/home/pkgeval/.julia/packages/BioSequences/7i86L/test/BioFmtSpecimens'...
+Test Summary:       | Pass  Total
+Reading and Writing |  513    513
+    Testing BioSequences tests passed 

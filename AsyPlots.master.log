@@ -1,0 +1,283 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed X11_jll ─────────────────── v1.6.8+5
+  Installed Xorg_xproto_jll ─────────── v7.0.31+0
+  Installed Cairo_jll ───────────────── v1.16.0+2
+  Installed Libuuid_jll ─────────────── v2.34.0+3
+  Installed AsyPlots ────────────────── v0.2.1
+  Installed Graphite2_jll ───────────── v1.3.13+1
+  Installed Graphics ────────────────── v1.0.2
+  Installed Interpolations ──────────── v0.12.5
+  Installed Xorg_libXrender_jll ─────── v0.9.10+1
+  Installed Xorg_libXdmcp_jll ───────── v1.1.3+1
+  Installed Xorg_libxcb_jll ─────────── v1.13.0+1
+  Installed Zlib_jll ────────────────── v1.2.11+8
+  Installed Xorg_libpthread_stubs_jll ─ v0.1.0+0
+  Installed AxisAlgorithms ──────────── v1.0.0
+  Installed XSLT_jll ────────────────── v1.1.33+0
+  Installed Xorg_libXext_jll ────────── v1.3.4+1
+  Installed Xorg_libX11_jll ─────────── v1.6.9+1
+  Installed Ratios ──────────────────── v0.4.0
+  Installed Libgpg_error_jll ────────── v1.36.0+0
+  Installed Xorg_libXau_jll ─────────── v1.0.9+1
+  Installed PCRE_jll ────────────────── v8.42.0+1
+    Cloning [d13bc2ba-d276-5c6f-8a1c-29ed04aab5d0] Xorg_xextproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_xextproto_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xextproto_jll ──────── v7.3.0+0
+    Cloning [7c09cfe3-afe2-5798-bcc9-d6b7fecfdca5] Xorg_util_macros_jll from https://github.com/JuliaBinaryWrappers/Xorg_util_macros_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_util_macros_jll ────── v1.19.2+0
+    Cloning [189a3867-3050-52da-a836-e630ba90ab69] Reexport from https://github.com/simonster/Reexport.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Reexport ────────────────── v0.2.0
+    Cloning [02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a] XML2_jll from https://github.com/JuliaBinaryWrappers/XML2_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed XML2_jll ────────────────── v2.9.9+1
+    Cloning [77ba4419-2d1f-58cd-9bb1-8ffee604a2e3] NaNMath from https://github.com/mlubin/NaNMath.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NaNMath ─────────────────── v0.3.3
+    Cloning [c2e9c405-c068-5e7b-9b35-084fd074cae4] Xorg_xcb_proto_jll from https://github.com/JuliaBinaryWrappers/Xorg_xcb_proto_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xcb_proto_jll ──────── v1.13.0+0
+    Cloning [ae029012-a4dd-5104-9daa-d747884805df] Requires from https://github.com/MikeInnes/Requires.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Requires ────────────────── v1.0.1
+    Cloning [9fb69e20-1954-56bb-a84f-559cc56a8ff7] Hiccup from https://github.com/JunoLab/Hiccup.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Hiccup ──────────────────── v0.2.2
+    Cloning [53c48c17-4a7d-5ca2-90c5-79b7896eea93] FixedPointNumbers from https://github.com/JuliaMath/FixedPointNumbers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FixedPointNumbers ───────── v0.7.1
+    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ──────── v1.1.0
+    Cloning [d4300ac3-e22c-5743-9152-c294e39db1e4] Libgcrypt_jll from https://github.com/JuliaBinaryWrappers/Libgcrypt_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libgcrypt_jll ───────────── v1.8.5+0
+    Cloning [d7e528f0-a631-5988-bf34-fe36492bcfd7] FreeType2_jll from https://github.com/JuliaBinaryWrappers/FreeType2_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FreeType2_jll ───────────── v2.10.1+1
+    Cloning [94ce4f54-9a6c-5748-9c1c-f9c7231a4531] Libiconv_jll from https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libiconv_jll ────────────── v1.16.0+1
+    Cloning [efce3f68-66dc-5838-9240-27a6d6f5f9b6] WoodburyMatrices from https://github.com/timholy/WoodburyMatrices.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed WoodburyMatrices ────────── v0.5.1
+    Cloning [21e99dc2-7dba-5609-a726-b181bd3bbb6c] Xorg_renderproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_renderproto_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_renderproto_jll ────── v0.11.1+0
+    Cloning [30392449-352a-5448-841d-b1acce4e97dc] Pixman_jll from https://github.com/JuliaBinaryWrappers/Pixman_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Pixman_jll ──────────────── v0.38.4+1
+    Cloning [7746bdde-850d-59dc-9ae8-88ece973131d] Glib_jll from https://github.com/JuliaBinaryWrappers/Glib_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Glib_jll ────────────────── v2.59.0+1
+    Cloning [3da002f7-5984-5a60-b8a6-cbb66c0b333f] ColorTypes from https://github.com/JuliaGraphics/ColorTypes.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ColorTypes ──────────────── v0.9.1
+    Cloning [36c8627f-9965-5494-a995-c6b170f724f3] Pango_jll from https://github.com/JuliaBinaryWrappers/Pango_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Pango_jll ───────────────── v1.42.4+7
+    Cloning [a3f928ae-7b40-5064-980b-68af3947d34b] Fontconfig_jll from https://github.com/JuliaBinaryWrappers/Fontconfig_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Fontconfig_jll ──────────── v2.13.1+10
+    Cloning [1914dd2f-81c6-5fcd-8719-6d5c9610ff09] MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MacroTools ──────────────── v0.5.5
+    Cloning [6fe1bfb0-de20-5000-8ca7-80f57d26f881] OffsetArrays from https://github.com/JuliaArrays/OffsetArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OffsetArrays ────────────── v1.0.3
+    Cloning [dd4b983a-f0e5-5f8d-a1b7-129d4a5fb1ac] LZO_jll from https://github.com/JuliaBinaryWrappers/LZO_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LZO_jll ─────────────────── v2.10.0+0
+    Cloning [b53b4c65-9356-5827-b1ea-8c7a1a84506f] libpng_jll from https://github.com/JuliaBinaryWrappers/libpng_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed libpng_jll ──────────────── v1.6.37+2
+    Cloning [159f3aea-2a34-519c-b102-8c37f9878175] Cairo from https://github.com/JuliaGraphics/Cairo.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Cairo ───────────────────── v1.0.2
+    Cloning [5ae59095-9a9b-59fe-a467-6f913c188581] Colors from https://github.com/JuliaGraphics/Colors.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Colors ──────────────────── v0.11.2
+    Cloning [e89f7d12-3494-54d1-8411-f7d8b9ae1f27] Media from https://github.com/JunoLab/Media.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Media ───────────────────── v0.5.0
+    Cloning [2e76f6c2-a576-52d4-95c1-20adfe4de566] HarfBuzz_jll from https://github.com/JuliaBinaryWrappers/HarfBuzz_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed HarfBuzz_jll ────────────── v2.6.1+4
+    Cloning [e9f186c6-92d2-5b65-8a66-fee21dc1b490] Libffi_jll from https://github.com/JuliaBinaryWrappers/Libffi_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libffi_jll ──────────────── v3.2.1+0
+    Cloning [c5fb5394-a638-5e4d-96e5-b29de1b5cf10] Xorg_xtrans_jll from https://github.com/JuliaBinaryWrappers/Xorg_xtrans_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xtrans_jll ─────────── v1.4.0+0
+    Cloning [d38c429a-6771-53c6-b99e-75d170b6e991] Contour from https://github.com/JuliaGeometry/Contour.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Contour ─────────────────── v0.5.2
+    Cloning [2e619515-83b5-522b-bb60-26c02a35a201] Expat_jll from https://github.com/JuliaBinaryWrappers/Expat_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Expat_jll ───────────────── v2.2.7+0
+    Cloning [559328eb-81f9-559d-9380-de523a88c83c] FriBidi_jll from https://github.com/JuliaBinaryWrappers/FriBidi_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FriBidi_jll ─────────────── v1.0.5+2
+    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ────────────── v0.12.1
+    Cloning [6e34b625-4abd-537c-b88f-471c36dfa7a0] Bzip2_jll from https://github.com/JuliaBinaryWrappers/Bzip2_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Bzip2_jll ───────────────── v1.0.6+1
+    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ──────────── v0.17.10
+    Cloning [78b55507-aeef-58d4-861c-77aaff3498b1] Gettext_jll from https://github.com/JuliaBinaryWrappers/Gettext_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Gettext_jll ─────────────── v0.20.1+1
+    Cloning [92933f4c-e287-5a05-a399-4b506db050ca] ProgressMeter from https://github.com/timholy/ProgressMeter.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ProgressMeter ───────────── v1.2.0
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [77e5a97a] + AsyPlots v0.2.1
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [77e5a97a] + AsyPlots v0.2.1
+  [13072b0f] + AxisAlgorithms v1.0.0
+  [6e34b625] + Bzip2_jll v1.0.6+1
+  [159f3aea] + Cairo v1.0.2
+  [83423d85] + Cairo_jll v1.16.0+2
+  [3da002f7] + ColorTypes v0.9.1
+  [5ae59095] + Colors v0.11.2
+  [d38c429a] + Contour v0.5.2
+  [864edb3b] + DataStructures v0.17.10
+  [2e619515] + Expat_jll v2.2.7+0
+  [53c48c17] + FixedPointNumbers v0.7.1
+  [a3f928ae] + Fontconfig_jll v2.13.1+10
+  [d7e528f0] + FreeType2_jll v2.10.1+1
+  [559328eb] + FriBidi_jll v1.0.5+2
+  [78b55507] + Gettext_jll v0.20.1+1
+  [7746bdde] + Glib_jll v2.59.0+1
+  [a2bd30eb] + Graphics v1.0.2
+  [3b182d85] + Graphite2_jll v1.3.13+1
+  [2e76f6c2] + HarfBuzz_jll v2.6.1+4
+  [9fb69e20] + Hiccup v0.2.2
+  [a98d9a8b] + Interpolations v0.12.5
+  [dd4b983a] + LZO_jll v2.10.0+0
+  [e9f186c6] + Libffi_jll v3.2.1+0
+  [d4300ac3] + Libgcrypt_jll v1.8.5+0
+  [7add5ba3] + Libgpg_error_jll v1.36.0+0
+  [94ce4f54] + Libiconv_jll v1.16.0+1
+  [38a345b3] + Libuuid_jll v2.34.0+3
+  [1914dd2f] + MacroTools v0.5.5
+  [e89f7d12] + Media v0.5.0
+  [77ba4419] + NaNMath v0.3.3
+  [6fe1bfb0] + OffsetArrays v1.0.3
+  [bac558e1] + OrderedCollections v1.1.0
+  [2f80f16e] + PCRE_jll v8.42.0+1
+  [36c8627f] + Pango_jll v1.42.4+7
+  [30392449] + Pixman_jll v0.38.4+1
+  [92933f4c] + ProgressMeter v1.2.0
+  [c84ed2f1] + Ratios v0.4.0
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.0.1
+  [90137ffa] + StaticArrays v0.12.1
+  [efce3f68] + WoodburyMatrices v0.5.1
+  [546b0b6d] + X11_jll v1.6.8+5
+  [02c8fc9c] + XML2_jll v2.9.9+1
+  [aed1982a] + XSLT_jll v1.1.33+0
+  [4f6342f7] + Xorg_libX11_jll v1.6.9+1
+  [0c0b7dd1] + Xorg_libXau_jll v1.0.9+1
+  [a3789734] + Xorg_libXdmcp_jll v1.1.3+1
+  [1082639a] + Xorg_libXext_jll v1.3.4+1
+  [ea2f1a96] + Xorg_libXrender_jll v0.9.10+1
+  [14d82f49] + Xorg_libpthread_stubs_jll v0.1.0+0
+  [c7cfdc94] + Xorg_libxcb_jll v1.13.0+1
+  [21e99dc2] + Xorg_renderproto_jll v0.11.1+0
+  [7c09cfe3] + Xorg_util_macros_jll v1.19.2+0
+  [c2e9c405] + Xorg_xcb_proto_jll v1.13.0+0
+  [d13bc2ba] + Xorg_xextproto_jll v7.3.0+0
+  [46797783] + Xorg_xproto_jll v7.0.31+0
+  [c5fb5394] + Xorg_xtrans_jll v1.4.0+0
+  [83775a58] + Zlib_jll v1.2.11+8
+  [b53b4c65] + libpng_jll v1.6.37+2
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8bb1440f] + DelimitedFiles 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [1a1011a3] + SharedArrays 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+    Testing AsyPlots
+Status `/tmp/jl_PFLVE9/Manifest.toml`
+  [77e5a97a] AsyPlots v0.2.1
+  [13072b0f] AxisAlgorithms v1.0.0
+  [6e34b625] Bzip2_jll v1.0.6+1
+  [159f3aea] Cairo v1.0.2
+  [83423d85] Cairo_jll v1.16.0+2
+  [3da002f7] ColorTypes v0.9.1
+  [5ae59095] Colors v0.11.2
+  [d38c429a] Contour v0.5.2
+  [864edb3b] DataStructures v0.17.10
+  [2e619515] Expat_jll v2.2.7+0
+  [53c48c17] FixedPointNumbers v0.7.1
+  [a3f928ae] Fontconfig_jll v2.13.1+10
+  [d7e528f0] FreeType2_jll v2.10.1+1
+  [559328eb] FriBidi_jll v1.0.5+2
+  [78b55507] Gettext_jll v0.20.1+1
+  [7746bdde] Glib_jll v2.59.0+1
+  [a2bd30eb] Graphics v1.0.2
+  [3b182d85] Graphite2_jll v1.3.13+1
+  [2e76f6c2] HarfBuzz_jll v2.6.1+4
+  [9fb69e20] Hiccup v0.2.2
+  [a98d9a8b] Interpolations v0.12.5
+  [dd4b983a] LZO_jll v2.10.0+0
+  [e9f186c6] Libffi_jll v3.2.1+0
+  [d4300ac3] Libgcrypt_jll v1.8.5+0
+  [7add5ba3] Libgpg_error_jll v1.36.0+0
+  [94ce4f54] Libiconv_jll v1.16.0+1
+  [38a345b3] Libuuid_jll v2.34.0+3
+  [1914dd2f] MacroTools v0.5.5
+  [e89f7d12] Media v0.5.0
+  [77ba4419] NaNMath v0.3.3
+  [6fe1bfb0] OffsetArrays v1.0.3
+  [bac558e1] OrderedCollections v1.1.0
+  [2f80f16e] PCRE_jll v8.42.0+1
+  [36c8627f] Pango_jll v1.42.4+7
+  [30392449] Pixman_jll v0.38.4+1
+  [92933f4c] ProgressMeter v1.2.0
+  [c84ed2f1] Ratios v0.4.0
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.0.1
+  [90137ffa] StaticArrays v0.12.1
+  [efce3f68] WoodburyMatrices v0.5.1
+  [546b0b6d] X11_jll v1.6.8+5
+  [02c8fc9c] XML2_jll v2.9.9+1
+  [aed1982a] XSLT_jll v1.1.33+0
+  [4f6342f7] Xorg_libX11_jll v1.6.9+1
+  [0c0b7dd1] Xorg_libXau_jll v1.0.9+1
+  [a3789734] Xorg_libXdmcp_jll v1.1.3+1
+  [1082639a] Xorg_libXext_jll v1.3.4+1
+  [ea2f1a96] Xorg_libXrender_jll v0.9.10+1
+  [14d82f49] Xorg_libpthread_stubs_jll v0.1.0+0
+  [c7cfdc94] Xorg_libxcb_jll v1.13.0+1
+  [21e99dc2] Xorg_renderproto_jll v0.11.1+0
+  [7c09cfe3] Xorg_util_macros_jll v1.19.2+0
+  [c2e9c405] Xorg_xcb_proto_jll v1.13.0+0
+  [d13bc2ba] Xorg_xextproto_jll v7.3.0+0
+  [46797783] Xorg_xproto_jll v7.0.31+0
+  [c5fb5394] Xorg_xtrans_jll v1.4.0+0
+  [83775a58] Zlib_jll v1.2.11+8
+  [b53b4c65] libpng_jll v1.6.37+2
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8bb1440f] DelimitedFiles 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+asy not found, using Cairo backend
+    Testing AsyPlots tests passed 

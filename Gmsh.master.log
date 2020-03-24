@@ -1,0 +1,25 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ─ v0.5.8
+    Cloning [705231aa-382f-11e9-3f0c-b7cb4346fdeb] Gmsh from https://github.com/JuliaFEM/Gmsh.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Gmsh ─────────── v0.1.1
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [705231aa] + Gmsh v0.1.1
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [b99e7846] + BinaryProvider v0.5.8
+  [705231aa] + Gmsh v0.1.1
+  [8f399da3] + Libdl 
+  [ea8e919c] + SHA 
+   Building Gmsh → `~/.julia/packages/Gmsh/eZVOZ/deps/build.log`

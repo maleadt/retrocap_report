@@ -1,0 +1,123 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed Reexport ───────────── v0.2.0
+  Installed Conda ──────────────── v1.4.1
+  Installed LaTeXStrings ───────── v1.1.0
+  Installed PyPlot ─────────────── v2.8.2
+  Installed Colors ─────────────── v0.12.0
+    Cloning [71805093-c1fc-4af5-8d0a-8dde53c6ac46] WeightsAndBiasLogger from https://github.com/xukai92/WeightsAndBiasLogger.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed WeightsAndBiasLogger ─ v0.3.0
+    Cloning [682c06a0-de6a-54ab-a142-c8b1cf79cde6] JSON from https://github.com/JuliaIO/JSON.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed JSON ───────────────── v0.21.0
+    Cloning [3da002f7-5984-5a60-b8a6-cbb66c0b333f] ColorTypes from https://github.com/JuliaGraphics/ColorTypes.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ColorTypes ─────────── v0.10.0
+    Cloning [438e738f-606a-5dbb-bf0a-cddfbfd45ab0] PyCall from https://github.com/JuliaPy/PyCall.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PyCall ─────────────── v1.91.4
+    Cloning [81def892-9a0e-5fdd-b105-ffc91e053289] VersionParsing from https://github.com/stevengj/VersionParsing.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed VersionParsing ─────── v1.2.0
+    Cloning [69de0a69-1ddd-5017-9359-2bf0b02dc9f0] Parsers from https://github.com/JuliaData/Parsers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parsers ────────────── v0.3.12
+    Cloning [53c48c17-4a7d-5ca2-90c5-79b7896eea93] FixedPointNumbers from https://github.com/JuliaMath/FixedPointNumbers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FixedPointNumbers ──── v0.8.0
+    Cloning [1914dd2f-81c6-5fcd-8719-6d5c9610ff09] MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MacroTools ─────────── v0.5.5
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [71805093] + WeightsAndBiasLogger v0.3.0
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [3da002f7] + ColorTypes v0.10.0
+  [5ae59095] + Colors v0.12.0
+  [8f4d0f93] + Conda v1.4.1
+  [53c48c17] + FixedPointNumbers v0.8.0
+  [682c06a0] + JSON v0.21.0
+  [b964fa9f] + LaTeXStrings v1.1.0
+  [1914dd2f] + MacroTools v0.5.5
+  [69de0a69] + Parsers v0.3.12
+  [438e738f] + PyCall v1.91.4
+  [d330b81b] + PyPlot v2.8.2
+  [189a3867] + Reexport v0.2.0
+  [81def892] + VersionParsing v1.2.0
+  [71805093] + WeightsAndBiasLogger v0.3.0
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [6462fe0b] + Sockets 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Building Conda ───────────────→ `~/.julia/packages/Conda/3rPhK/deps/build.log`
+   Building PyCall ──────────────→ `~/.julia/packages/PyCall/zqDXB/deps/build.log`
+   Building WeightsAndBiasLogger → `~/.julia/packages/WeightsAndBiasLogger/bZ5I2/deps/build.log`
+    Testing WeightsAndBiasLogger
+Status `/tmp/jl_YQwRgd/Manifest.toml`
+  [3da002f7] ColorTypes v0.10.0
+  [5ae59095] Colors v0.12.0
+  [8f4d0f93] Conda v1.4.1
+  [53c48c17] FixedPointNumbers v0.8.0
+  [682c06a0] JSON v0.21.0
+  [b964fa9f] LaTeXStrings v1.1.0
+  [1914dd2f] MacroTools v0.5.5
+  [69de0a69] Parsers v0.3.12
+  [438e738f] PyCall v1.91.4
+  [d330b81b] PyPlot v2.8.2
+  [189a3867] Reexport v0.2.0
+  [81def892] VersionParsing v1.2.0
+  [71805093] WeightsAndBiasLogger v0.3.0
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [6462fe0b] Sockets 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+Test Summary: | Pass  Total
+Utilities     |    3      3
+wandb: W&B is a tool that helps track and visualize machine learning experiments
+wandb: No credentials found.  Run "wandb login" to visualize your metrics
+wandb: Tracking run with wandb version 0.8.30
+wandb: Run data is saved locally in wandb/run-20200324_131106-2ptpg6cl
+
+Test Summary: |
+Demo          | No tests
+
+wandb: Waiting for W&B process to finish, PID 1512
+wandb: Program ended successfully.
+wandb: You can sync this run to the cloud by running: 
+wandb: wandb sync wandb/run-20200324_131106-2ptpg6cl
+    Testing WeightsAndBiasLogger tests passed 

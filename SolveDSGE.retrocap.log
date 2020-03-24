@@ -1,0 +1,243 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed PiecewiseLinearApprox ─ v0.1.0
+  Installed Requires ────────────── v1.0.1
+  Installed SpecialFunctions ────── v0.8.0
+  Installed FiniteDiff ──────────── v2.3.0
+  Installed StaticArrays ────────── v0.12.1
+  Installed ForwardDiff ─────────── v0.10.9
+    Cloning [189a3867-3050-52da-a836-e630ba90ab69] Reexport from https://github.com/simonster/Reexport.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Reexport ────────────── v0.2.0
+    Cloning [00bf1f32-23ad-54cc-bf6e-3216db8a43a2] SolveDSGE from https://github.com/RJDennis/SolveDSGE.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SolveDSGE ───────────── v0.3.2
+    Cloning [77ba4419-2d1f-58cd-9bb1-8ffee604a2e3] NaNMath from https://github.com/mlubin/NaNMath.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NaNMath ─────────────── v0.3.3
+    Cloning [2774e3e8-f4cf-5e23-947b-6d7e65073b56] NLsolve from https://github.com/JuliaNLSolvers/NLsolve.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NLsolve ─────────────── v4.3.0
+    Cloning [d41bc354-129a-5804-8e4c-c37616107c6c] NLSolversBase from https://github.com/JuliaNLSolvers/NLSolversBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NLSolversBase ───────── v7.6.1
+    Cloning [30578b45-9adc-5946-b283-645ec420af67] URIParser from https://github.com/JuliaWeb/URIParser.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed URIParser ───────────── v0.4.0
+    Cloning [b4f34e82-e78d-54a5-968a-f98e89d6e8f7] Distances from https://github.com/JuliaStats/Distances.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Distances ───────────── v0.8.2
+    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ──── v1.1.0
+    Cloning [9e28174c-4ba2-5203-b857-d8d62c4213ee] BinDeps from https://github.com/JuliaPackaging/BinDeps.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinDeps ─────────────── v1.0.0
+    Cloning [d3d80556-e9d4-5f37-9878-2ab0fcc64255] LineSearches from https://github.com/JuliaNLSolvers/LineSearches.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LineSearches ────────── v7.0.1
+    Cloning [b552c78f-8df3-52c6-915a-8e097449b14b] DiffRules from https://github.com/JuliaDiff/DiffRules.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffRules ───────────── v1.0.1
+    Cloning [4fba245c-0d91-5ea0-9b3e-6abc04ee57a9] ArrayInterface from https://github.com/JuliaDiffEq/ArrayInterface.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ArrayInterface ──────── v2.6.1
+    Cloning [17a596ad-87cd-578c-9b6d-01108c31dc04] ChebyshevApprox from https://github.com/RJDennis/ChebyshevApprox.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ChebyshevApprox ─────── v0.1.0
+    Cloning [163ba53b-c6d8-5494-b064-1a9d43ac40c5] DiffResults from https://github.com/JuliaDiff/DiffResults.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffResults ─────────── v1.0.2
+    Cloning [bbf7d656-a473-5ed7-a52c-81e309532950] CommonSubexpressions from https://github.com/rdeits/CommonSubexpressions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CommonSubexpressions ── v0.2.0
+    Cloning [d54b0c1a-921d-58e0-8e36-89d8069c0969] GaussQuadrature from https://github.com/billmclean/GaussQuadrature.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GaussQuadrature ─────── v0.5.3
+    Cloning [6b19cf85-48de-5d9d-bfff-465abea14fab] SmolyakApprox from https://github.com/RJDennis/SmolyakApprox.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SmolyakApprox ───────── v0.1.0
+    Cloning [d96e819e-fc66-5662-9728-84c9c7592b0a] Parameters from https://github.com/mauro3/Parameters.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parameters ──────────── v0.12.0
+    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ──────── v0.5.8
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [00bf1f32] + SolveDSGE v0.3.2
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [4fba245c] + ArrayInterface v2.6.1
+  [9e28174c] + BinDeps v1.0.0
+  [b99e7846] + BinaryProvider v0.5.8
+  [17a596ad] + ChebyshevApprox v0.1.0
+  [bbf7d656] + CommonSubexpressions v0.2.0
+  [163ba53b] + DiffResults v1.0.2
+  [b552c78f] + DiffRules v1.0.1
+  [b4f34e82] + Distances v0.8.2
+  [6a86dc24] + FiniteDiff v2.3.0
+  [f6369f11] + ForwardDiff v0.10.9
+  [d54b0c1a] + GaussQuadrature v0.5.3
+  [d3d80556] + LineSearches v7.0.1
+  [d41bc354] + NLSolversBase v7.6.1
+  [2774e3e8] + NLsolve v4.3.0
+  [77ba4419] + NaNMath v0.3.3
+  [bac558e1] + OrderedCollections v1.1.0
+  [d96e819e] + Parameters v0.12.0
+  [fcfa6960] + PiecewiseLinearApprox v0.1.0
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.0.1
+  [6b19cf85] + SmolyakApprox v0.1.0
+  [00bf1f32] + SolveDSGE v0.3.2
+  [276daf66] + SpecialFunctions v0.8.0
+  [90137ffa] + StaticArrays v0.12.1
+  [30578b45] + URIParser v0.4.0
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/ne2iw/deps/build.log`
+┌ Error: Error building `SpecialFunctions`: 
+│ [ Info: Downloading https://github.com/JuliaPackaging/Yggdrasil/releases/download/OpenSpecFun-v0.5.3+0/OpenSpecFun.v0.5.3.x86_64-linux-gnu-gcc7.tar.gz to /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/usr/downloads/OpenSpecFun.v0.5.3.x86_64-linux-gnu-gcc7.tar.gz...
+│ ERROR: LoadError: Could not download https://github.com/JuliaPackaging/Yggdrasil/releases/download/OpenSpecFun-v0.5.3+0/OpenSpecFun.v0.5.3.x86_64-linux-gnu-gcc7.tar.gz to /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/usr/downloads/OpenSpecFun.v0.5.3.x86_64-linux-gnu-gcc7.tar.gz:
+│ ErrorException("")
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:502
+│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
+│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
+│  [5] top-level scope at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/build.jl:142
+│  [6] include(::String) at ./client.jl:439
+│  [7] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/build.jl:139
+│ caused by [exception 1]
+│ 
+│ Stacktrace:
+│  [1] error() at ./error.jl:42
+│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:496
+│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
+│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
+│  [5] top-level scope at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/build.jl:142
+│  [6] include(::String) at ./client.jl:439
+│  [7] top-level scope at none:5
+│ [10:56:54] #=#=#                                                                         [10:56:54] ##O#- #                                                                       [10:56:54] 
+│ [10:56:54] curl: (22) The requested URL returned error: 401 UNAUTHORIZED
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:892
+    Testing SolveDSGE
+Status `/tmp/jl_SOpghx/Manifest.toml`
+  [4fba245c] ArrayInterface v2.6.1
+  [9e28174c] BinDeps v1.0.0
+  [b99e7846] BinaryProvider v0.5.8
+  [17a596ad] ChebyshevApprox v0.1.0
+  [bbf7d656] CommonSubexpressions v0.2.0
+  [163ba53b] DiffResults v1.0.2
+  [b552c78f] DiffRules v1.0.1
+  [b4f34e82] Distances v0.8.2
+  [6a86dc24] FiniteDiff v2.3.0
+  [f6369f11] ForwardDiff v0.10.9
+  [d54b0c1a] GaussQuadrature v0.5.3
+  [d3d80556] LineSearches v7.0.1
+  [d41bc354] NLSolversBase v7.6.1
+  [2774e3e8] NLsolve v4.3.0
+  [77ba4419] NaNMath v0.3.3
+  [bac558e1] OrderedCollections v1.1.0
+  [d96e819e] Parameters v0.12.0
+  [fcfa6960] PiecewiseLinearApprox v0.1.0
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.0.1
+  [6b19cf85] SmolyakApprox v0.1.0
+  [00bf1f32] SolveDSGE v0.3.2
+  [276daf66] SpecialFunctions v0.8.0
+  [90137ffa] StaticArrays v0.12.1
+  [30578b45] URIParser v0.4.0
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+ERROR: LoadError: SpecialFunctions is not installed properly, run `Pkg.build("SpecialFunctions")`,restart Julia and try again
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/src/SpecialFunctions.jl:6
+ [3] include(::Module, ::String) at ./Base.jl:377
+ [4] top-level scope at none:2
+ [5] eval at ./boot.jl:331 [inlined]
+ [6] eval(::Expr) at ./client.jl:449
+ [7] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/src/SpecialFunctions.jl:4
+ERROR: LoadError: Failed to precompile SpecialFunctions [276daf66-3868-5448-9aa4-cd146d93841b] to /home/pkgeval/.julia/compiled/v1.4/SpecialFunctions/78gOt_xQmmB.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+ [3] _require(::Base.PkgId) at ./loading.jl:1029
+ [4] require(::Base.PkgId) at ./loading.jl:927
+ [5] require(::Module, ::Symbol) at ./loading.jl:922
+ [6] include(::Module, ::String) at ./Base.jl:377
+ [7] top-level scope at none:2
+ [8] eval at ./boot.jl:331 [inlined]
+ [9] eval(::Expr) at ./client.jl:449
+ [10] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/ForwardDiff/vt5F1/src/ForwardDiff.jl:9
+ERROR: LoadError: Failed to precompile ForwardDiff [f6369f11-7733-5829-9624-2563aa707210] to /home/pkgeval/.julia/compiled/v1.4/ForwardDiff/k0ETY_xQmmB.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+ [3] _require(::Base.PkgId) at ./loading.jl:1029
+ [4] require(::Base.PkgId) at ./loading.jl:927
+ [5] require(::Module, ::Symbol) at ./loading.jl:922
+ [6] include(::Module, ::String) at ./Base.jl:377
+ [7] top-level scope at none:2
+ [8] eval at ./boot.jl:331 [inlined]
+ [9] eval(::Expr) at ./client.jl:449
+ [10] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/SolveDSGE/d8CyG/src/SolveDSGE.jl:4
+ERROR: LoadError: LoadError: Failed to precompile SolveDSGE [00bf1f32-23ad-54cc-bf6e-3216db8a43a2] to /home/pkgeval/.julia/compiled/v1.4/SolveDSGE/WPyVC_xQmmB.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+ [3] _require(::Base.PkgId) at ./loading.jl:1029
+ [4] require(::Base.PkgId) at ./loading.jl:927
+ [5] require(::Module, ::Symbol) at ./loading.jl:922
+ [6] include(::String) at ./client.jl:439
+ [7] top-level scope at /home/pkgeval/.julia/packages/SolveDSGE/d8CyG/test/runtests.jl:1
+ [8] include(::String) at ./client.jl:439
+ [9] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/SolveDSGE/d8CyG/test/old/linear_example.jl:15
+in expression starting at /home/pkgeval/.julia/packages/SolveDSGE/d8CyG/test/runtests.jl:1
+ERROR: Package SolveDSGE errored during testing
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
+ [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [11] top-level scope at none:16

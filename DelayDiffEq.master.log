@@ -1,110 +1,149 @@
-Julia Version 1.3.1
-Commit 2d5741174c (2019-12-30 21:36 UTC)
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
   CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-6.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
 Environment:
   JULIA_DEPOT_PATH = ::/usr/local/share/julia
   JULIA_NUM_THREADS = 2
 
- Resolving package versions...
- Installed VertexSafeGraphs ───────────── v0.1.1
- Installed UnPack ─────────────────────── v0.1.0
- Installed NaNMath ────────────────────── v0.3.3
- Installed DiffResults ────────────────── v1.0.2
- Installed NLSolversBase ──────────────── v7.6.1
- Installed DiffRules ──────────────────── v1.0.1
- Installed DelayDiffEq ────────────────── v5.23.0
- Installed LightGraphs ────────────────── v1.3.1
- Installed LeftChildRightSiblingTrees ─── v0.1.2
- Installed MacroTools ─────────────────── v0.5.4
- Installed ArrayInterface ─────────────── v2.5.1
- Installed FunctionWrappers ───────────── v1.1.1
- Installed ExponentialUtilities ───────── v1.6.0
- Installed CompilerSupportLibraries_jll ─ v0.2.0+1
- Installed LoggingExtras ──────────────── v0.4.0
- Installed Roots ──────────────────────── v1.0.0
- Installed ProgressMeter ──────────────── v1.2.0
- Installed ProgressLogging ────────────── v0.1.2
- Installed SimpleTraits ───────────────── v0.9.1
- Installed FiniteDiff ─────────────────── v2.2.1
- Installed StaticArrays ───────────────── v0.12.1
- Installed Requires ───────────────────── v1.0.1
- Installed RecipesBase ────────────────── v0.8.0
- Installed OrdinaryDiffEq ─────────────── v5.31.0
- Installed Distances ──────────────────── v0.8.2
- Installed DataStructures ─────────────── v0.17.10
- Installed RecursiveFactorization ─────── v0.1.0
- Installed SpecialFunctions ───────────── v0.10.0
- Installed ChainRulesCore ─────────────── v0.7.1
- Installed ArnoldiMethod ──────────────── v0.0.4
- Installed IteratorInterfaceExtensions ── v1.0.0
- Installed TerminalLoggers ────────────── v0.1.1
- Installed Compat ─────────────────────── v3.8.0
- Installed RecursiveArrayTools ────────── v2.1.0
- Installed AbstractTrees ──────────────── v0.3.2
- Installed ForwardDiff ────────────────── v0.10.9
- Installed ZygoteRules ────────────────── v0.2.0
- Installed GenericSVD ─────────────────── v0.2.2
- Installed Adapt ──────────────────────── v1.0.1
- Installed DiffEqBase ─────────────────── v6.24.0
- Installed TableTraits ────────────────── v1.0.0
- Installed Inflate ────────────────────── v0.1.1
- Installed Reexport ───────────────────── v0.2.0
- Installed SparseDiffTools ────────────── v1.4.0
- Installed LineSearches ───────────────── v7.0.1
- Installed OrderedCollections ─────────── v1.1.0
- Installed NLsolve ────────────────────── v4.3.0
- Installed Parameters ─────────────────── v0.12.0
- Installed ConsoleProgressMonitor ─────── v0.1.2
- Installed MuladdMacro ────────────────── v0.2.2
- Installed OpenSpecFun_jll ────────────── v0.5.3+3
- Installed CommonSubexpressions ───────── v0.2.0
- Installed TreeViews ──────────────────── v0.3.0
- Installed DocStringExtensions ────────── v0.8.1
- Installed IterativeSolvers ───────────── v0.8.1
-  Updating `~/.julia/environments/v1.3/Project.toml`
+  Resolving package versions...
+  Installed NLSolversBase ──────────────── v7.6.1
+  Installed NLsolve ────────────────────── v4.3.0
+  Installed DelayDiffEq ────────────────── v5.23.0
+  Installed RecipesBase ────────────────── v0.8.0
+  Installed LineSearches ───────────────── v7.0.1
+  Installed ConsoleProgressMonitor ─────── v0.1.2
+  Installed Roots ──────────────────────── v1.0.1
+  Installed ArrayInterface ─────────────── v2.6.1
+  Installed ProgressLogging ────────────── v0.1.2
+  Installed Inflate ────────────────────── v0.1.2
+  Installed ArnoldiMethod ──────────────── v0.0.4
+  Installed FunctionWrappers ───────────── v1.1.1
+  Installed RecursiveFactorization ─────── v0.1.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+3
+  Installed DataStructures ─────────────── v0.17.10
+  Installed RecursiveArrayTools ────────── v2.1.0
+    Cloning [77ba4419-2d1f-58cd-9bb1-8ffee604a2e3] NaNMath from https://github.com/mlubin/NaNMath.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NaNMath ────────────────────── v0.3.3
+    Cloning [700de1a5-db45-46bc-99cf-38207098b444] ZygoteRules from https://github.com/FluxML/ZygoteRules.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ZygoteRules ────────────────── v0.2.0
+    Cloning [3a884ed6-31ef-47d7-9d2a-63182c4928ed] UnPack from https://github.com/mauro3/UnPack.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed UnPack ─────────────────────── v0.1.0
+    Cloning [189a3867-3050-52da-a836-e630ba90ab69] Reexport from https://github.com/simonster/Reexport.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Reexport ───────────────────── v0.2.0
+    Cloning [093fc24a-ae57-5d10-9952-331d41423f4d] LightGraphs from https://github.com/JuliaGraphs/LightGraphs.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LightGraphs ────────────────── v1.3.1
+    Cloning [699a6c99-e7fa-54fc-8d76-47d257e15c1d] SimpleTraits from https://github.com/mauro3/SimpleTraits.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SimpleTraits ───────────────── v0.9.1
+    Cloning [82899510-4779-5014-852e-03e436cf321d] IteratorInterfaceExtensions from https://github.com/queryverse/IteratorInterfaceExtensions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IteratorInterfaceExtensions ── v1.0.0
+    Cloning [ae029012-a4dd-5104-9daa-d747884805df] Requires from https://github.com/MikeInnes/Requires.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Requires ───────────────────── v1.0.1
+    Cloning [b4f34e82-e78d-54a5-968a-f98e89d6e8f7] Distances from https://github.com/JuliaStats/Distances.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Distances ──────────────────── v0.8.2
+    Cloning [276daf66-3868-5448-9aa4-cd146d93841b] SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SpecialFunctions ───────────── v0.10.0
+    Cloning [42fd0dbc-a981-5370-80f2-aaf504508153] IterativeSolvers from https://github.com/JuliaMath/IterativeSolvers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IterativeSolvers ───────────── v0.8.3
+    Cloning [1d6d02ad-be62-4b6b-8a6d-2f90e265016e] LeftChildRightSiblingTrees from https://github.com/JuliaCollections/LeftChildRightSiblingTrees.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LeftChildRightSiblingTrees ─── v0.1.2
+    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ─────────── v1.1.0
+    Cloning [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed] OrdinaryDiffEq from https://github.com/JuliaDiffEq/OrdinaryDiffEq.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [====>                                    ]  8.5 %    Resolving Deltas: [================================>        ]  79.3 %[2K[?25h  Installed OrdinaryDiffEq ─────────────── v5.32.0
+    Cloning [46d2c3a1-f734-5fdb-9937-b9b9aeba4221] MuladdMacro from https://github.com/JuliaDiffEq/MuladdMacro.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MuladdMacro ────────────────── v0.2.2
+    Cloning [6a86dc24-6348-571c-b903-95158fe2bd41] FiniteDiff from https://github.com/JuliaDiff/FiniteDiff.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FiniteDiff ─────────────────── v2.3.0
+    Cloning [d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4] ChainRulesCore from https://github.com/JuliaDiff/ChainRulesCore.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ChainRulesCore ─────────────── v0.7.1
+    Cloning [a2a6695c-b41b-5b7d-aed9-dbfdeacea5d7] TreeViews from https://github.com/pfitzseb/TreeViews.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TreeViews ──────────────────── v0.3.0
+    Cloning [1520ce14-60c1-5f80-bbc7-55ef81b5835c] AbstractTrees from https://github.com/JuliaCollections/AbstractTrees.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed AbstractTrees ──────────────── v0.3.2
+    Cloning [b552c78f-8df3-52c6-915a-8e097449b14b] DiffRules from https://github.com/JuliaDiff/DiffRules.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffRules ──────────────────── v1.0.1
+    Cloning [79e6a3ab-5dfb-504d-930d-738a2a938a0e] Adapt from https://github.com/JuliaGPU/Adapt.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Adapt ──────────────────────── v1.0.1
+    Cloning [1914dd2f-81c6-5fcd-8719-6d5c9610ff09] MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MacroTools ─────────────────── v0.5.5
+    Cloning [5d786b92-1e48-4d6f-9151-6b4477ca9bed] TerminalLoggers from https://github.com/c42f/TerminalLoggers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TerminalLoggers ────────────── v0.1.1
+    Cloning [f6369f11-7733-5829-9624-2563aa707210] ForwardDiff from https://github.com/JuliaDiff/ForwardDiff.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ForwardDiff ────────────────── v0.10.9
+    Cloning [163ba53b-c6d8-5494-b064-1a9d43ac40c5] DiffResults from https://github.com/JuliaDiff/DiffResults.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffResults ────────────────── v1.0.2
+    Cloning [34da2185-b29b-5c13-b0c7-acf172513d20] Compat from https://github.com/JuliaLang/Compat.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Compat ─────────────────────── v3.8.0
+    Cloning [2b5f629d-d688-5b77-993f-72d75c75574e] DiffEqBase from https://github.com/JuliaDiffEq/DiffEqBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffEqBase ─────────────────── v6.25.0
+    Cloning [47a9eef4-7e08-11e9-0b38-333d64bd3804] SparseDiffTools from https://github.com/JuliaDiff/SparseDiffTools.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SparseDiffTools ────────────── v1.4.0
+    Cloning [e6f89c97-d47a-5376-807f-9c37f3926c36] LoggingExtras from https://github.com/oxinabox/LoggingExtras.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LoggingExtras ──────────────── v0.4.0
+    Cloning [ffbed154-4ef7-542d-bbb7-c09d3a79fcae] DocStringExtensions from https://github.com/JuliaDocs/DocStringExtensions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DocStringExtensions ────────── v0.8.1
+    Cloning [bbf7d656-a473-5ed7-a52c-81e309532950] CommonSubexpressions from https://github.com/rdeits/CommonSubexpressions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CommonSubexpressions ───────── v0.2.0
+    Cloning [01680d73-4ee2-5a08-a1aa-533608c188bb] GenericSVD from https://github.com/JuliaLinearAlgebra/GenericSVD.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GenericSVD ─────────────────── v0.3.0
+    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ───────────────── v0.12.1
+    Cloning [e66e0078-7015-5450-92f7-15fbd957f2ae] CompilerSupportLibraries_jll from https://github.com/JuliaBinaryWrappers/CompilerSupportLibraries_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
+    Cloning [d4d017d3-3776-5f7e-afef-a10c40355c18] ExponentialUtilities from https://github.com/JuliaDiffEq/ExponentialUtilities.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ExponentialUtilities ───────── v1.6.0
+    Cloning [19fa3120-7c27-5ec5-8db8-b0b0aa330d6f] VertexSafeGraphs from https://github.com/matbesancon/VertexSafeGraphs.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed VertexSafeGraphs ───────────── v0.1.1
+    Cloning [92933f4c-e287-5a05-a399-4b506db050ca] ProgressMeter from https://github.com/timholy/ProgressMeter.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ProgressMeter ──────────────── v1.2.0
+    Cloning [d96e819e-fc66-5662-9728-84c9c7592b0a] Parameters from https://github.com/mauro3/Parameters.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parameters ─────────────────── v0.12.0
+    Cloning [3783bdb8-4a98-5b6b-af9a-565f29a5fe9c] TableTraits from https://github.com/queryverse/TableTraits.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TableTraits ────────────────── v1.0.0
+   Updating `~/.julia/environments/v1.4/Project.toml`
   [bcd4f6db] + DelayDiffEq v5.23.0
-  Updating `~/.julia/environments/v1.3/Manifest.toml`
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
   [1520ce14] + AbstractTrees v0.3.2
   [79e6a3ab] + Adapt v1.0.1
   [ec485272] + ArnoldiMethod v0.0.4
-  [4fba245c] + ArrayInterface v2.5.1
+  [4fba245c] + ArrayInterface v2.6.1
   [d360d2e6] + ChainRulesCore v0.7.1
   [bbf7d656] + CommonSubexpressions v0.2.0
   [34da2185] + Compat v3.8.0
-  [e66e0078] + CompilerSupportLibraries_jll v0.2.0+1
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.1+0
   [88cd18e8] + ConsoleProgressMonitor v0.1.2
   [864edb3b] + DataStructures v0.17.10
   [bcd4f6db] + DelayDiffEq v5.23.0
-  [2b5f629d] + DiffEqBase v6.24.0
+  [2b5f629d] + DiffEqBase v6.25.0
   [163ba53b] + DiffResults v1.0.2
   [b552c78f] + DiffRules v1.0.1
   [b4f34e82] + Distances v0.8.2
   [ffbed154] + DocStringExtensions v0.8.1
   [d4d017d3] + ExponentialUtilities v1.6.0
-  [6a86dc24] + FiniteDiff v2.2.1
+  [6a86dc24] + FiniteDiff v2.3.0
   [f6369f11] + ForwardDiff v0.10.9
   [069b7b12] + FunctionWrappers v1.1.1
-  [01680d73] + GenericSVD v0.2.2
-  [d25df0c9] + Inflate v0.1.1
-  [42fd0dbc] + IterativeSolvers v0.8.1
+  [01680d73] + GenericSVD v0.3.0
+  [d25df0c9] + Inflate v0.1.2
+  [42fd0dbc] + IterativeSolvers v0.8.3
   [82899510] + IteratorInterfaceExtensions v1.0.0
   [1d6d02ad] + LeftChildRightSiblingTrees v0.1.2
   [093fc24a] + LightGraphs v1.3.1
   [d3d80556] + LineSearches v7.0.1
   [e6f89c97] + LoggingExtras v0.4.0
-  [1914dd2f] + MacroTools v0.5.4
+  [1914dd2f] + MacroTools v0.5.5
   [46d2c3a1] + MuladdMacro v0.2.2
   [d41bc354] + NLSolversBase v7.6.1
   [2774e3e8] + NLsolve v4.3.0
   [77ba4419] + NaNMath v0.3.3
   [efe28fd5] + OpenSpecFun_jll v0.5.3+3
   [bac558e1] + OrderedCollections v1.1.0
-  [1dea7af3] + OrdinaryDiffEq v5.31.0
+  [1dea7af3] + OrdinaryDiffEq v5.32.0
   [d96e819e] + Parameters v0.12.0
   [33c8b6b6] + ProgressLogging v0.1.2
   [92933f4c] + ProgressMeter v1.2.0
@@ -113,7 +152,7 @@ Environment:
   [f2c3362d] + RecursiveFactorization v0.1.0
   [189a3867] + Reexport v0.2.0
   [ae029012] + Requires v1.0.1
-  [f2b01f46] + Roots v1.0.0
+  [f2b01f46] + Roots v1.0.1
   [699a6c99] + SimpleTraits v0.9.1
   [47a9eef4] + SparseDiffTools v1.4.0
   [276daf66] + SpecialFunctions v0.10.0
@@ -149,86 +188,30 @@ Environment:
   [8dfed614] + Test 
   [cf7118a7] + UUIDs 
   [4ec0a83e] + Unicode 
-   Testing DelayDiffEq
- Resolving package versions...
- Installed SafeTestsets ──────────── v0.0.1
- Installed Calculus ──────────────── v0.5.1
- Installed DiffEqCallbacks ───────── v2.12.1
- Installed ModelingToolkit ───────── v1.2.10
- Installed BlockArrays ───────────── v0.11.1
- Installed DiffEqProblemLibrary ──── v4.6.4
- Installed Unitful ───────────────── v1.0.0
- Installed NameResolution ────────── v0.1.3
- Installed PrettyPrint ───────────── v0.1.0
- Installed DiffEqDevTools ────────── v2.18.0
- Installed Latexify ──────────────── v0.12.0
- Installed SymEngine ─────────────── v0.7.1
- Installed DiffEqOperators ───────── v4.8.1
- Installed ConstructionBase ──────── v1.0.0
- Installed MLStyle ───────────────── v0.3.1
- Installed ElasticArrays ─────────── v1.0.0
- Installed NNlib ─────────────────── v0.6.6
- Installed DataAPI ───────────────── v1.1.0
- Installed FillArrays ────────────── v0.8.5
- Installed HomotopyContinuation ──── v1.4.1
- Installed MixedSubdivisions ─────── v1.0.0
- Installed DiffEqBiological ──────── v4.2.0
- Installed MatrixFactorizations ──── v0.2.1
- Installed GenericSchur ──────────── v0.4.0
- Installed DataValueInterfaces ───── v1.0.0
- Installed DiffEqJump ────────────── v6.5.0
- Installed JuliaVariables ────────── v0.2.0
- Installed DoubleFloats ──────────── v1.1.6
- Installed ArrayLayouts ──────────── v0.1.5
- Installed FixedPolynomials ──────── v0.4.0
- Installed RandomNumbers ─────────── v1.4.0
- Installed Quadmath ──────────────── v0.5.4
- Installed MutableArithmetics ────── v0.2.7
- Installed ProjectiveVectors ─────── v1.1.2
- Installed StaticPolynomials ─────── v1.3.3
- Installed DiffEqNoiseProcess ────── v3.9.0
- Installed ResettableStacks ──────── v1.0.0
- Installed MultivariatePolynomials ─ v0.3.6
- Installed Crayons ───────────────── v4.0.1
- Installed BlockBandedMatrices ───── v0.7.1
- Installed Tables ────────────────── v1.0.3
- Installed Formatting ────────────── v0.4.1
- Installed CanonicalTraits ───────── v0.1.0
- Installed DynamicPolynomials ────── v0.3.9
- Installed LaTeXStrings ──────────── v1.1.0
- Installed BinaryProvider ────────── v0.5.8
- Installed BandedMatrices ────────── v0.14.3
- Installed Polynomials ───────────── v0.6.1
- Installed LazyArrays ────────────── v0.15.0
- Installed PoissonRandom ─────────── v0.4.0
- Installed GeneralizedGenerated ──── v0.2.1
- Installed PrettyTables ──────────── v0.8.4
-  Building SymEngine → `~/.julia/packages/SymEngine/RK5Ks/deps/build.log`
-  Building NNlib ────→ `~/.julia/packages/NNlib/FAI3o/deps/build.log`
-    Status `/tmp/jl_QFHQMj/Manifest.toml`
+    Testing DelayDiffEq
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_klFuws/Manifest.toml`
   [1520ce14] AbstractTrees v0.3.2
   [79e6a3ab] Adapt v1.0.1
   [ec485272] ArnoldiMethod v0.0.4
-  [4fba245c] ArrayInterface v2.5.1
+  [4fba245c] ArrayInterface v2.6.1
   [4c555306] ArrayLayouts v0.1.5
   [aae01518] BandedMatrices v0.14.3
   [b99e7846] BinaryProvider v0.5.8
   [8e7c35d0] BlockArrays v0.11.1
   [ffab5731] BlockBandedMatrices v0.7.1
   [49dc2e85] Calculus v0.5.1
-  [a603d957] CanonicalTraits v0.1.0
+  [a603d957] CanonicalTraits v0.2.1
   [d360d2e6] ChainRulesCore v0.7.1
   [bbf7d656] CommonSubexpressions v0.2.0
   [34da2185] Compat v3.8.0
-  [e66e0078] CompilerSupportLibraries_jll v0.2.0+1
+  [e66e0078] CompilerSupportLibraries_jll v0.3.1+0
   [88cd18e8] ConsoleProgressMonitor v0.1.2
-  [187b0558] ConstructionBase v1.0.0
   [a8cc5b0e] Crayons v4.0.1
   [9a962f9c] DataAPI v1.1.0
   [864edb3b] DataStructures v0.17.10
   [e2d170a0] DataValueInterfaces v1.0.0
   [bcd4f6db] DelayDiffEq v5.23.0
-  [2b5f629d] DiffEqBase v6.24.0
+  [2b5f629d] DiffEqBase v6.25.0
   [eb300fae] DiffEqBiological v4.2.0
   [459566f4] DiffEqCallbacks v2.12.1
   [f3b72e0c] DiffEqDevTools v2.18.0
@@ -245,31 +228,31 @@ Environment:
   [fdbdab4c] ElasticArrays v1.0.0
   [d4d017d3] ExponentialUtilities v1.6.0
   [1a297f60] FillArrays v0.8.5
-  [6a86dc24] FiniteDiff v2.2.1
+  [6a86dc24] FiniteDiff v2.3.0
   [3dd14ad9] FixedPolynomials v0.4.0
   [59287772] Formatting v0.4.1
   [f6369f11] ForwardDiff v0.10.9
   [069b7b12] FunctionWrappers v1.1.1
-  [6b9d7cbe] GeneralizedGenerated v0.2.1
-  [01680d73] GenericSVD v0.2.2
+  [6b9d7cbe] GeneralizedGenerated v0.2.2
+  [01680d73] GenericSVD v0.3.0
   [c145ed77] GenericSchur v0.4.0
   [f213a82b] HomotopyContinuation v1.4.1
-  [d25df0c9] Inflate v0.1.1
-  [42fd0dbc] IterativeSolvers v0.8.1
+  [d25df0c9] Inflate v0.1.2
+  [42fd0dbc] IterativeSolvers v0.8.3
   [82899510] IteratorInterfaceExtensions v1.0.0
   [b14d175d] JuliaVariables v0.2.0
   [b964fa9f] LaTeXStrings v1.1.0
   [23fbe1c1] Latexify v0.12.0
-  [5078a376] LazyArrays v0.15.0
+  [5078a376] LazyArrays v0.15.1
   [1d6d02ad] LeftChildRightSiblingTrees v0.1.2
   [093fc24a] LightGraphs v1.3.1
   [d3d80556] LineSearches v7.0.1
   [e6f89c97] LoggingExtras v0.4.0
   [d8e11817] MLStyle v0.3.1
-  [1914dd2f] MacroTools v0.5.4
+  [1914dd2f] MacroTools v0.5.5
   [a3b82374] MatrixFactorizations v0.2.1
   [291d046c] MixedSubdivisions v1.0.0
-  [961ee093] ModelingToolkit v1.2.10
+  [961ee093] ModelingToolkit v1.4.2
   [46d2c3a1] MuladdMacro v0.2.2
   [102ac46a] MultivariatePolynomials v0.3.6
   [d8a4904e] MutableArithmetics v0.2.7
@@ -280,7 +263,7 @@ Environment:
   [71a1bf82] NameResolution v0.1.3
   [efe28fd5] OpenSpecFun_jll v0.5.3+3
   [bac558e1] OrderedCollections v1.1.0
-  [1dea7af3] OrdinaryDiffEq v5.31.0
+  [1dea7af3] OrdinaryDiffEq v5.32.0
   [d96e819e] Parameters v0.12.0
   [e409e4f3] PoissonRandom v0.4.0
   [f27b6e38] Polynomials v0.6.1
@@ -297,7 +280,7 @@ Environment:
   [189a3867] Reexport v0.2.0
   [ae029012] Requires v1.0.1
   [ae5879a3] ResettableStacks v1.0.0
-  [f2b01f46] Roots v1.0.0
+  [f2b01f46] Roots v1.0.1
   [1bc83da4] SafeTestsets v0.0.1
   [699a6c99] SimpleTraits v0.9.1
   [47a9eef4] SparseDiffTools v1.4.0
@@ -310,80 +293,80 @@ Environment:
   [5d786b92] TerminalLoggers v0.1.1
   [a2a6695c] TreeViews v0.3.0
   [3a884ed6] UnPack v0.1.0
-  [1986cc42] Unitful v1.0.0
+  [1986cc42] Unitful v0.16.0
   [19fa3120] VertexSafeGraphs v0.1.1
   [700de1a5] ZygoteRules v0.2.0
-  [2a0f44e3] Base64  [`@stdlib/Base64`]
-  [ade2ca70] Dates  [`@stdlib/Dates`]
-  [8bb1440f] DelimitedFiles  [`@stdlib/DelimitedFiles`]
-  [8ba89e20] Distributed  [`@stdlib/Distributed`]
-  [9fa8497b] Future  [`@stdlib/Future`]
-  [b77e0a4c] InteractiveUtils  [`@stdlib/InteractiveUtils`]
-  [76f85450] LibGit2  [`@stdlib/LibGit2`]
-  [8f399da3] Libdl  [`@stdlib/Libdl`]
-  [37e2e46d] LinearAlgebra  [`@stdlib/LinearAlgebra`]
-  [56ddb016] Logging  [`@stdlib/Logging`]
-  [d6f4376e] Markdown  [`@stdlib/Markdown`]
-  [a63ad114] Mmap  [`@stdlib/Mmap`]
-  [44cfe95a] Pkg  [`@stdlib/Pkg`]
-  [de0858da] Printf  [`@stdlib/Printf`]
-  [3fa0cd96] REPL  [`@stdlib/REPL`]
-  [9a3f8284] Random  [`@stdlib/Random`]
-  [ea8e919c] SHA  [`@stdlib/SHA`]
-  [9e88b42a] Serialization  [`@stdlib/Serialization`]
-  [1a1011a3] SharedArrays  [`@stdlib/SharedArrays`]
-  [6462fe0b] Sockets  [`@stdlib/Sockets`]
-  [2f01184e] SparseArrays  [`@stdlib/SparseArrays`]
-  [10745b16] Statistics  [`@stdlib/Statistics`]
-  [4607b0f0] SuiteSparse  [`@stdlib/SuiteSparse`]
-  [8dfed614] Test  [`@stdlib/Test`]
-  [cf7118a7] UUIDs  [`@stdlib/UUIDs`]
-  [4ec0a83e] Unicode  [`@stdlib/Unicode`]
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8bb1440f] DelimitedFiles 
+  [8ba89e20] Distributed 
+  [9fa8497b] Future 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [4607b0f0] SuiteSparse 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
 Test Summary: | Pass  Broken  Total
 AD Tests      |    3       3      6
-426.211654 seconds (207.55 M allocations: 9.051 GiB, 2.02% gc time)
+588.474571 seconds (209.09 M allocations: 9.178 GiB, 1.70% gc time)
 Test Summary:   | Pass  Total
 Backwards Tests |   12     12
- 15.050683 seconds (15.23 M allocations: 805.829 MiB, 4.36% gc time)
+ 22.807855 seconds (16.42 M allocations: 856.596 MiB, 7.48% gc time)
 Test Summary:            | Pass  Total
 Composite Solution Tests |   12     12
- 64.759726 seconds (77.87 M allocations: 3.796 GiB, 5.53% gc time)
+ 80.867745 seconds (83.93 M allocations: 4.054 GiB, 4.84% gc time)
 Test Summary:                | Pass  Total
 Constrained Time Steps Tests |   10     10
- 35.462270 seconds (46.04 M allocations: 2.371 GiB, 4.70% gc time)
+ 41.994699 seconds (48.90 M allocations: 2.473 GiB, 5.79% gc time)
 Test Summary:         | Pass  Total
 Dependent Delay Tests |   17     17
- 12.723710 seconds (15.42 M allocations: 708.640 MiB, 6.42% gc time)
+ 14.230594 seconds (16.90 M allocations: 772.254 MiB, 3.75% gc time)
 Test Summary:       | Pass  Total
 Discontinuity Tests |   23     23
-  3.526022 seconds (2.95 M allocations: 145.231 MiB, 3.43% gc time)
+  4.085112 seconds (3.31 M allocations: 160.983 MiB, 3.47% gc time)
 Test Summary: | Pass  Total
 Export Tests  |    1      1
-  0.127145 seconds (126.19 k allocations: 6.289 MiB)
+  0.089019 seconds (32.36 k allocations: 1.544 MiB)
 Test Summary:               | Pass  Broken  Total
 Fixed-point Iteration Tests |   24      12     36
-114.759612 seconds (86.26 M allocations: 3.930 GiB, 3.66% gc time)
+113.887343 seconds (88.21 M allocations: 3.957 GiB, 3.55% gc time)
 Test Summary:          | Pass  Total
 History Function Tests |   81     81
- 17.943318 seconds (20.78 M allocations: 992.061 MiB, 4.28% gc time)
+ 18.730896 seconds (21.24 M allocations: 1009.760 MiB, 4.56% gc time)
 Test Summary:  | Pass  Broken  Total
 Jacobian Tests |   34      34     68
-135.866453 seconds (152.09 M allocations: 7.569 GiB, 5.11% gc time)
+160.263891 seconds (158.23 M allocations: 7.823 GiB, 4.61% gc time)
 Test Summary:                | Pass  Total
 Parameterized Function Tests |   12     12
- 10.819759 seconds (11.11 M allocations: 566.848 MiB, 2.44% gc time)
+ 14.441669 seconds (12.15 M allocations: 616.049 MiB, 3.73% gc time)
 Test Summary: | Pass  Total
 saveat Tests  |  101    101
- 13.978989 seconds (14.61 M allocations: 701.092 MiB, 4.39% gc time)
+ 21.101530 seconds (16.80 M allocations: 803.541 MiB, 3.65% gc time)
 Test Summary:   | Pass  Total
 save_idxs Tests |   52     52
- 24.179390 seconds (21.48 M allocations: 1.027 GiB, 2.92% gc time)
+ 32.077520 seconds (23.53 M allocations: 1.116 GiB, 3.94% gc time)
 Test Summary:                  | Pass  Total
 Unconstrained Time Steps Tests |   15     15
- 88.416542 seconds (66.58 M allocations: 3.426 GiB, 3.19% gc time)
+ 82.084066 seconds (72.17 M allocations: 3.666 GiB, 4.05% gc time)
 Test Summary: | Pass  Total
 Units Tests   |   13     13
-106.228255 seconds (53.43 M allocations: 2.593 GiB, 3.88% gc time)
+ 78.631723 seconds (56.49 M allocations: 2.729 GiB, 3.83% gc time)
 Check for stochastic errors
 Check some other integrators
 Rosenbrock23
@@ -423,10 +406,10 @@ Rodas4
 Rodas5
 Test Summary: | Pass  Total
 Cache Tests   |   45     45
-549.493304 seconds (416.52 M allocations: 20.421 GiB, 4.73% gc time)
+243.376293 seconds (445.03 M allocations: 21.528 GiB, 4.26% gc time)
 Test Summary: | Pass  Total
 Event Tests   |   13     13
- 93.567484 seconds (20.05 M allocations: 1017.948 MiB, 2.33% gc time)
+ 22.914597 seconds (20.77 M allocations: 1.017 GiB, 2.75% gc time)
 (tprev, t) = (0.0, 0.0625)
 (tprev, t) = (0.0625, 0.5)
 (tprev, t) = (0.5, 0.7113162729614714)
@@ -457,16 +440,16 @@ Event Tests   |   13     13
 (tprev, t) = (9.29844012816626, 10.0)
 Test Summary:  | Pass  Total
 Iterator Tests |   17     17
- 13.529538 seconds (7.63 M allocations: 392.269 MiB, 7.45% gc time)
+  5.576773 seconds (8.94 M allocations: 449.684 MiB, 2.51% gc time)
 Test Summary:          | Pass  Total
 Reinitialization Tests |    8      8
-  1.086075 seconds (1.12 M allocations: 58.737 MiB)
+  0.800828 seconds (1.12 M allocations: 56.150 MiB, 6.30% gc time)
 Test Summary:          | Pass  Total
 Residual Control Tests |   18     18
- 12.719955 seconds (12.73 M allocations: 643.225 MiB, 5.55% gc time)
+  5.901163 seconds (13.86 M allocations: 692.056 MiB, 3.27% gc time)
 Test Summary:     | Pass  Total
 Return Code Tests |    6      6
-  5.294333 seconds (4.87 M allocations: 279.571 MiB, 5.77% gc time)
+  2.162482 seconds (5.06 M allocations: 286.004 MiB, 2.23% gc time)
 Rosenbrock23
 Rosenbrock32
 ROS3P
@@ -483,7 +466,7 @@ Rodas4P
 Rodas5
 Test Summary:    | Pass  Total
 Rosenbrock Tests |   42     42
-574.542876 seconds (233.15 M allocations: 11.885 GiB, 4.63% gc time)
+112.819305 seconds (247.09 M allocations: 12.486 GiB, 3.89% gc time)
 ImplicitMidpoint
 SSPSDIRK2
 KenCarp5
@@ -513,10 +496,10 @@ KenCarp4
 Kvaerno5
 Test Summary: | Pass  Broken  Total
 SDIRK Tests   |   45      36     81
-626.947777 seconds (483.85 M allocations: 25.876 GiB, 6.64% gc time)
+206.018947 seconds (515.39 M allocations: 27.159 GiB, 4.52% gc time)
 Test Summary:           | Pass  Total
 Unique Timepoints Tests |    2      2
-  6.885958 seconds (4.66 M allocations: 239.487 MiB, 3.40% gc time)
+  2.093818 seconds (5.17 M allocations: 263.241 MiB, 2.82% gc time)
 Vern6
 Vern7
 Vern8
@@ -524,11 +507,11 @@ Vern9
 Mackey and Glass
 Test Summary: | Pass  Total
 Verner Tests  |   20     20
-197.685383 seconds (113.81 M allocations: 5.404 GiB, 10.95% gc time)
+718.625060 seconds (116.81 M allocations: 5.484 GiB, 0.41% gc time)
 Test Summary:   | Broken  Total
 Inference Tests |     10     10
- 20.412099 seconds (3.46 M allocations: 173.858 MiB, 1.21% gc time)
+  1.924553 seconds (3.89 M allocations: 194.191 MiB, 2.50% gc time)
 Test Summary:         | Pass  Total
 Waltman Problem Tests |   26     26
- 76.765470 seconds (48.91 M allocations: 2.423 GiB, 8.64% gc time)
-   Testing DelayDiffEq tests passed 
+ 18.673053 seconds (52.03 M allocations: 2.551 GiB, 3.45% gc time)
+    Testing DelayDiffEq tests passed 

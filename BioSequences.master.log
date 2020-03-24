@@ -1,0 +1,78 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed RecipesBase ───────── v0.8.0
+  Installed BioCore ───────────── v2.0.5
+  Installed Automa ────────────── v0.8.0
+    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ────── v0.17.10
+    Cloning [7e6ae17a-c86d-528c-b3b9-7f778a29fe59] BioSequences from https://github.com/BioJulia/BioSequences.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [======>                                  ]  14.5 %[2K[?25h  Installed BioSequences ──────── v1.1.0
+    Cloning [861a8166-3701-5b0c-9a16-15d98fcdc6aa] Combinatorics from https://github.com/JuliaMath/Combinatorics.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Combinatorics ─────── v0.7.0
+    Cloning [e1450e63-4bb3-523b-b2a4-4ffa8c0fd77d] BufferedStreams from https://github.com/BioJulia/BufferedStreams.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BufferedStreams ───── v1.0.0
+    Cloning [524e6230-43b7-53ae-be76-1e9e4d08d11b] IntervalTrees from https://github.com/BioJulia/IntervalTrees.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IntervalTrees ─────── v1.0.0
+    Cloning [3c28c6f8-a34d-59c4-9654-267d177fcfa9] BioSymbols from https://github.com/BioJulia/BioSymbols.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BioSymbols ────────── v3.1.0
+    Cloning [7200193e-83a8-5a55-b20d-5d36d44a0795] Twiddle from https://github.com/BenJWard/Twiddle.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Twiddle ───────────── v1.1.1
+    Cloning [34da2185-b29b-5c13-b0c7-acf172513d20] Compat from https://github.com/JuliaLang/Compat.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Compat ────────────── v3.8.0
+    Cloning [f27b6e38-b328-58d1-80ce-0feddd5e7a45] Polynomials from https://github.com/JuliaMath/Polynomials.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Polynomials ───────── v0.6.1
+    Cloning [1cb3b9ac-1ffd-5777-9e6b-a3d42300664d] IndexableBitVectors from https://github.com/BioJulia/IndexableBitVectors.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IndexableBitVectors ─ v1.0.0
+    Cloning [3bb67fe8-82b1-5028-8e26-92a6c54297fa] TranscodingStreams from https://github.com/bicycle1885/TranscodingStreams.jl.git
+[?25l[2K[?25hERROR: failed to clone from https://github.com/bicycle1885/TranscodingStreams.jl.git, error: GitError(Code:ERROR, Class:OS, failed to connect to github.com: Connection timed out)
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
+ [2] clone(::Pkg.Types.Context, ::String, ::String; header::String, credentials::Nothing, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:isbare,),Tuple{Bool}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/GitTools.jl:149
+ [3] #ensure_clone#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/GitTools.jl:110 [inlined]
+ [4] install_git(::Pkg.Types.Context, ::Base.UUID, ::String, ::Base.SHA1, ::Array{String,1}, ::VersionNumber, ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:555
+ [5] download_source(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Dict{Base.UUID,Array{String,1}}; readonly::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:714
+ [6] #download_source#39 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:633 [inlined]
+ [7] download_source at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:631 [inlined]
+ [8] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1080
+ [9] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:159
+ [10] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:112
+ [11] #add#27 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:109 [inlined]
+ [12] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:109 [inlined]
+ [13] #add#24 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:107 [inlined]
+ [14] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:107 [inlined]
+ [15] add(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:106
+ [16] add(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:106
+ [17] top-level scope at none:15
+caused by [exception 1]
+GitError(Code:ERROR, Class:OS, failed to connect to github.com: Connection timed out)
+Stacktrace:
+ [1] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LibGit2/src/error.jl:101 [inlined]
+ [2] clone(::String, ::String, ::LibGit2.CloneOptions) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LibGit2/src/repository.jl:459
+ [3] clone(::String, ::String; branch::String, isbare::Bool, remote_cb::Ptr{Nothing}, credentials::LibGit2.CachedCredentials, callbacks::Dict{Symbol,Tuple{Ptr{Nothing},Any}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LibGit2/src/LibGit2.jl:580
+ [4] clone(::Pkg.Types.Context, ::String, ::String; header::String, credentials::Nothing, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:isbare,),Tuple{Bool}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/GitTools.jl:141
+ [5] #ensure_clone#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/GitTools.jl:110 [inlined]
+ [6] install_git(::Pkg.Types.Context, ::Base.UUID, ::String, ::Base.SHA1, ::Array{String,1}, ::VersionNumber, ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:555
+ [7] download_source(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Dict{Base.UUID,Array{String,1}}; readonly::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:714
+ [8] #download_source#39 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:633 [inlined]
+ [9] download_source at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:631 [inlined]
+ [10] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1080
+ [11] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:159
+ [12] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:112
+ [13] #add#27 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:109 [inlined]
+ [14] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:109 [inlined]
+ [15] #add#24 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:107 [inlined]
+ [16] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:107 [inlined]
+ [17] add(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:106
+ [18] add(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:106
+ [19] top-level scope at none:15

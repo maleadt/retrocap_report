@@ -1,88 +1,117 @@
-Julia Version 1.3.1
-Commit 2d5741174c (2019-12-30 21:36 UTC)
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
   CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-6.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
 Environment:
   JULIA_DEPOT_PATH = ::/usr/local/share/julia
   JULIA_NUM_THREADS = 2
 
- Resolving package versions...
- Installed NaNMath ────────────────────── v0.3.3
- Installed LeftChildRightSiblingTrees ─── v0.1.2
- Installed LoggingExtras ──────────────── v0.4.0
- Installed DiffResults ────────────────── v1.0.2
- Installed DiffEqDevTools ─────────────── v2.18.0
- Installed NLSolversBase ──────────────── v7.6.1
- Installed DiffRules ──────────────────── v1.0.1
- Installed MacroTools ─────────────────── v0.5.4
- Installed FunctionWrappers ───────────── v1.1.1
- Installed ProgressLogging ────────────── v0.1.2
- Installed CompilerSupportLibraries_jll ─ v0.2.0+1
- Installed ArrayInterface ─────────────── v2.5.1
- Installed ProgressMeter ──────────────── v1.2.0
- Installed FiniteDiff ─────────────────── v2.2.1
- Installed StaticArrays ───────────────── v0.12.1
- Installed Roots ──────────────────────── v1.0.0
- Installed RecursiveFactorization ─────── v0.1.0
- Installed Requires ───────────────────── v1.0.1
- Installed RecipesBase ────────────────── v0.8.0
- Installed Distances ──────────────────── v0.8.2
- Installed RandomNumbers ──────────────── v1.4.0
- Installed DataStructures ─────────────── v0.17.10
- Installed SpecialFunctions ───────────── v0.10.0
- Installed IteratorInterfaceExtensions ── v1.0.0
- Installed TerminalLoggers ────────────── v0.1.1
- Installed DiffEqNoiseProcess ─────────── v3.9.0
- Installed RecursiveArrayTools ────────── v2.1.0
- Installed AbstractTrees ──────────────── v0.3.2
- Installed ForwardDiff ────────────────── v0.10.9
- Installed ZygoteRules ────────────────── v0.2.0
- Installed ResettableStacks ───────────── v1.0.0
- Installed TableTraits ────────────────── v1.0.0
- Installed DiffEqBase ─────────────────── v6.24.0
- Installed Reexport ───────────────────── v0.2.0
- Installed OrderedCollections ─────────── v1.1.0
- Installed NLsolve ────────────────────── v4.3.0
- Installed Parameters ─────────────────── v0.12.0
- Installed LineSearches ───────────────── v7.0.1
- Installed ConsoleProgressMonitor ─────── v0.1.2
- Installed MuladdMacro ────────────────── v0.2.2
- Installed CommonSubexpressions ───────── v0.2.0
- Installed OpenSpecFun_jll ────────────── v0.5.3+3
- Installed DocStringExtensions ────────── v0.8.1
- Installed TreeViews ──────────────────── v0.3.0
- Installed ChainRulesCore ─────────────── v0.7.1
- Installed IterativeSolvers ───────────── v0.8.1
-  Updating `~/.julia/environments/v1.3/Project.toml`
+  Resolving package versions...
+  Installed ZygoteRules ────────────────── v0.2.0
+  Installed Distances ──────────────────── v0.8.2
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed OrderedCollections ─────────── v1.1.0
+  Installed SpecialFunctions ───────────── v0.10.0
+  Installed DiffEqNoiseProcess ─────────── v3.9.0
+  Installed IterativeSolvers ───────────── v0.8.3
+  Installed TreeViews ──────────────────── v0.3.0
+  Installed Roots ──────────────────────── v1.0.1
+  Installed TerminalLoggers ────────────── v0.1.1
+  Installed FunctionWrappers ───────────── v1.1.1
+  Installed ForwardDiff ────────────────── v0.10.9
+  Installed DiffEqBase ─────────────────── v6.25.0
+  Installed RandomNumbers ──────────────── v1.4.0
+  Installed LoggingExtras ──────────────── v0.4.0
+  Installed DataStructures ─────────────── v0.17.10
+  Installed TableTraits ────────────────── v1.0.0
+    Cloning [f3b72e0c-5b89-59e1-b016-84e28bfd966d] DiffEqDevTools from https://github.com/JuliaDiffEq/DiffEqDevTools.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffEqDevTools ─────────────── v2.18.0
+    Cloning [189a3867-3050-52da-a836-e630ba90ab69] Reexport from https://github.com/simonster/Reexport.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Reexport ───────────────────── v0.2.0
+    Cloning [77ba4419-2d1f-58cd-9bb1-8ffee604a2e3] NaNMath from https://github.com/mlubin/NaNMath.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NaNMath ────────────────────── v0.3.3
+    Cloning [2774e3e8-f4cf-5e23-947b-6d7e65073b56] NLsolve from https://github.com/JuliaNLSolvers/NLsolve.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NLsolve ────────────────────── v4.3.0
+    Cloning [d41bc354-129a-5804-8e4c-c37616107c6c] NLSolversBase from https://github.com/JuliaNLSolvers/NLSolversBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NLSolversBase ──────────────── v7.6.1
+    Cloning [ae029012-a4dd-5104-9daa-d747884805df] Requires from https://github.com/MikeInnes/Requires.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Requires ───────────────────── v1.0.1
+    Cloning [1d6d02ad-be62-4b6b-8a6d-2f90e265016e] LeftChildRightSiblingTrees from https://github.com/JuliaCollections/LeftChildRightSiblingTrees.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LeftChildRightSiblingTrees ─── v0.1.2
+    Cloning [88cd18e8-d9cc-4ea6-8889-5259c0d15c8b] ConsoleProgressMonitor from https://github.com/tkf/ConsoleProgressMonitor.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ConsoleProgressMonitor ─────── v0.1.2
+    Cloning [3cdcf5f2-1ef4-517c-9805-6587b60abb01] RecipesBase from https://github.com/JuliaPlots/RecipesBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RecipesBase ────────────────── v0.8.0
+    Cloning [d3d80556-e9d4-5f37-9878-2ab0fcc64255] LineSearches from https://github.com/JuliaNLSolvers/LineSearches.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LineSearches ───────────────── v7.0.1
+    Cloning [46d2c3a1-f734-5fdb-9937-b9b9aeba4221] MuladdMacro from https://github.com/JuliaDiffEq/MuladdMacro.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MuladdMacro ────────────────── v0.2.2
+    Cloning [d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4] ChainRulesCore from https://github.com/JuliaDiff/ChainRulesCore.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ChainRulesCore ─────────────── v0.7.1
+    Cloning [1520ce14-60c1-5f80-bbc7-55ef81b5835c] AbstractTrees from https://github.com/JuliaCollections/AbstractTrees.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed AbstractTrees ──────────────── v0.3.2
+    Cloning [b552c78f-8df3-52c6-915a-8e097449b14b] DiffRules from https://github.com/JuliaDiff/DiffRules.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffRules ──────────────────── v1.0.1
+    Cloning [6a86dc24-6348-571c-b903-95158fe2bd41] FiniteDiff from https://github.com/JuliaDiff/FiniteDiff.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FiniteDiff ─────────────────── v2.3.0
+    Cloning [1914dd2f-81c6-5fcd-8719-6d5c9610ff09] MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MacroTools ─────────────────── v0.5.5
+    Cloning [33c8b6b6-d38a-422a-b730-caa89a2f386c] ProgressLogging from https://github.com/JunoLab/ProgressLogging.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ProgressLogging ────────────── v0.1.2
+    Cloning [4fba245c-0d91-5ea0-9b3e-6abc04ee57a9] ArrayInterface from https://github.com/JuliaDiffEq/ArrayInterface.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ArrayInterface ─────────────── v2.6.1
+    Cloning [ae5879a3-cd67-5da8-be7f-38c6eb64a37b] ResettableStacks from https://github.com/JuliaDiffEq/ResettableStacks.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ResettableStacks ───────────── v1.0.0
+    Cloning [163ba53b-c6d8-5494-b064-1a9d43ac40c5] DiffResults from https://github.com/JuliaDiff/DiffResults.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffResults ────────────────── v1.0.2
+    Cloning [f2c3362d-daeb-58d1-803e-2bc74f2840b4] RecursiveFactorization from https://github.com/YingboMa/RecursiveFactorization.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RecursiveFactorization ─────── v0.1.0
+    Cloning [ffbed154-4ef7-542d-bbb7-c09d3a79fcae] DocStringExtensions from https://github.com/JuliaDocs/DocStringExtensions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DocStringExtensions ────────── v0.8.1
+    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ───────────────── v0.12.1
+    Cloning [bbf7d656-a473-5ed7-a52c-81e309532950] CommonSubexpressions from https://github.com/rdeits/CommonSubexpressions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CommonSubexpressions ───────── v0.2.0
+    Cloning [d96e819e-fc66-5662-9728-84c9c7592b0a] Parameters from https://github.com/mauro3/Parameters.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parameters ─────────────────── v0.12.0
+    Cloning [efe28fd5-8261-553b-a9e1-b2916fc3738e] OpenSpecFun_jll from https://github.com/JuliaBinaryWrappers/OpenSpecFun_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenSpecFun_jll ────────────── v0.5.3+3
+    Cloning [731186ca-8d62-57ce-b412-fbd966d074cd] RecursiveArrayTools from https://github.com/JuliaDiffEq/RecursiveArrayTools.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RecursiveArrayTools ────────── v2.1.0
+    Cloning [92933f4c-e287-5a05-a399-4b506db050ca] ProgressMeter from https://github.com/timholy/ProgressMeter.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ProgressMeter ──────────────── v1.2.0
+    Cloning [e66e0078-7015-5450-92f7-15fbd957f2ae] CompilerSupportLibraries_jll from https://github.com/JuliaBinaryWrappers/CompilerSupportLibraries_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
+   Updating `~/.julia/environments/v1.4/Project.toml`
   [f3b72e0c] + DiffEqDevTools v2.18.0
-  Updating `~/.julia/environments/v1.3/Manifest.toml`
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
   [1520ce14] + AbstractTrees v0.3.2
-  [4fba245c] + ArrayInterface v2.5.1
+  [4fba245c] + ArrayInterface v2.6.1
   [d360d2e6] + ChainRulesCore v0.7.1
   [bbf7d656] + CommonSubexpressions v0.2.0
-  [e66e0078] + CompilerSupportLibraries_jll v0.2.0+1
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.1+0
   [88cd18e8] + ConsoleProgressMonitor v0.1.2
   [864edb3b] + DataStructures v0.17.10
-  [2b5f629d] + DiffEqBase v6.24.0
+  [2b5f629d] + DiffEqBase v6.25.0
   [f3b72e0c] + DiffEqDevTools v2.18.0
   [77a26b50] + DiffEqNoiseProcess v3.9.0
   [163ba53b] + DiffResults v1.0.2
   [b552c78f] + DiffRules v1.0.1
   [b4f34e82] + Distances v0.8.2
   [ffbed154] + DocStringExtensions v0.8.1
-  [6a86dc24] + FiniteDiff v2.2.1
+  [6a86dc24] + FiniteDiff v2.3.0
   [f6369f11] + ForwardDiff v0.10.9
   [069b7b12] + FunctionWrappers v1.1.1
-  [42fd0dbc] + IterativeSolvers v0.8.1
+  [42fd0dbc] + IterativeSolvers v0.8.3
   [82899510] + IteratorInterfaceExtensions v1.0.0
   [1d6d02ad] + LeftChildRightSiblingTrees v0.1.2
   [d3d80556] + LineSearches v7.0.1
   [e6f89c97] + LoggingExtras v0.4.0
-  [1914dd2f] + MacroTools v0.5.4
+  [1914dd2f] + MacroTools v0.5.5
   [46d2c3a1] + MuladdMacro v0.2.2
   [d41bc354] + NLSolversBase v7.6.1
   [2774e3e8] + NLsolve v4.3.0
@@ -99,7 +128,7 @@ Environment:
   [189a3867] + Reexport v0.2.0
   [ae029012] + Requires v1.0.1
   [ae5879a3] + ResettableStacks v1.0.0
-  [f2b01f46] + Roots v1.0.0
+  [f2b01f46] + Roots v1.0.1
   [276daf66] + SpecialFunctions v0.10.0
   [90137ffa] + StaticArrays v0.12.1
   [3783bdb8] + TableTraits v1.0.0
@@ -128,90 +157,29 @@ Environment:
   [8dfed614] + Test 
   [cf7118a7] + UUIDs 
   [4ec0a83e] + Unicode 
-   Testing DiffEqDevTools
- Resolving package versions...
- Installed UnPack ────────────────── v0.1.0
- Installed DelayDiffEq ───────────── v5.23.0
- Installed DiffEqProblemLibrary ──── v4.6.4
- Installed ParameterizedFunctions ── v4.2.1
- Installed BlockArrays ───────────── v0.11.1
- Installed ModelingToolkit ───────── v1.2.10
- Installed StochasticDiffEq ──────── v6.19.1
- Installed VertexSafeGraphs ──────── v0.1.1
- Installed PrettyPrint ───────────── v0.1.0
- Installed NameResolution ────────── v0.1.3
- Installed DiffEqOperators ───────── v4.8.1
- Installed OrdinaryDiffEq ────────── v5.31.0
- Installed ExponentialUtilities ──── v1.6.0
- Installed LightGraphs ───────────── v1.3.1
- Installed MLStyle ───────────────── v0.3.1
- Installed Latexify ──────────────── v0.12.0
- Installed SymEngine ─────────────── v0.7.1
- Installed ElasticArrays ─────────── v1.0.0
- Installed NNlib ─────────────────── v0.6.6
- Installed Quadmath ──────────────── v0.5.4
- Installed MixedSubdivisions ─────── v1.0.0
- Installed DataAPI ───────────────── v1.1.0
- Installed HomotopyContinuation ──── v1.4.1
- Installed FillArrays ────────────── v0.8.5
- Installed MatrixFactorizations ──── v0.2.1
- Installed GenericSchur ──────────── v0.4.0
- Installed DataValueInterfaces ───── v1.0.0
- Installed JuliaVariables ────────── v0.2.0
- Installed SimpleTraits ──────────── v0.9.1
- Installed DiffEqBiological ──────── v4.2.0
- Installed DiffEqJump ────────────── v6.5.0
- Installed ArrayLayouts ──────────── v0.1.5
- Installed DoubleFloats ──────────── v1.1.6
- Installed ArnoldiMethod ─────────── v0.0.4
- Installed FixedPolynomials ──────── v0.4.0
- Installed MutableArithmetics ────── v0.2.7
- Installed ProjectiveVectors ─────── v1.1.2
- Installed StaticPolynomials ─────── v1.3.3
- Installed GenericSVD ────────────── v0.2.2
- Installed Compat ────────────────── v3.8.0
- Installed MultivariatePolynomials ─ v0.3.6
- Installed Inflate ───────────────── v0.1.1
- Installed Adapt ─────────────────── v1.0.1
- Installed Tables ────────────────── v1.0.3
- Installed Crayons ───────────────── v4.0.1
- Installed Formatting ────────────── v0.4.1
- Installed BlockBandedMatrices ───── v0.7.1
- Installed BandedMatrices ────────── v0.14.3
- Installed SparseDiffTools ───────── v1.4.0
- Installed LaTeXStrings ──────────── v1.1.0
- Installed CanonicalTraits ───────── v0.1.0
- Installed BinaryProvider ────────── v0.5.8
- Installed DynamicPolynomials ────── v0.3.9
- Installed LazyArrays ────────────── v0.15.0
- Installed GeneralizedGenerated ──── v0.2.1
- Installed PoissonRandom ─────────── v0.4.0
- Installed Polynomials ───────────── v0.6.1
- Installed PrettyTables ──────────── v0.8.4
-  Building SymEngine → `~/.julia/packages/SymEngine/RK5Ks/deps/build.log`
-  Building NNlib ────→ `~/.julia/packages/NNlib/FAI3o/deps/build.log`
-    Status `/tmp/jl_r45D52/Manifest.toml`
+    Testing DiffEqDevTools
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [========>                                ]  17.6 %    Fetching: [===================================>     ]  86.1 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [======>                                  ]  15.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [=>                                       ]  1.2 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_VW1Ocm/Manifest.toml`
   [1520ce14] AbstractTrees v0.3.2
   [79e6a3ab] Adapt v1.0.1
   [ec485272] ArnoldiMethod v0.0.4
-  [4fba245c] ArrayInterface v2.5.1
+  [4fba245c] ArrayInterface v2.6.1
   [4c555306] ArrayLayouts v0.1.5
   [aae01518] BandedMatrices v0.14.3
   [b99e7846] BinaryProvider v0.5.8
   [8e7c35d0] BlockArrays v0.11.1
   [ffab5731] BlockBandedMatrices v0.7.1
-  [a603d957] CanonicalTraits v0.1.0
+  [a603d957] CanonicalTraits v0.2.1
   [d360d2e6] ChainRulesCore v0.7.1
   [bbf7d656] CommonSubexpressions v0.2.0
   [34da2185] Compat v3.8.0
-  [e66e0078] CompilerSupportLibraries_jll v0.2.0+1
+  [e66e0078] CompilerSupportLibraries_jll v0.3.1+0
   [88cd18e8] ConsoleProgressMonitor v0.1.2
   [a8cc5b0e] Crayons v4.0.1
   [9a962f9c] DataAPI v1.1.0
   [864edb3b] DataStructures v0.17.10
   [e2d170a0] DataValueInterfaces v1.0.0
   [bcd4f6db] DelayDiffEq v5.23.0
-  [2b5f629d] DiffEqBase v6.24.0
+  [2b5f629d] DiffEqBase v6.25.0
   [eb300fae] DiffEqBiological v4.2.0
   [f3b72e0c] DiffEqDevTools v2.18.0
   [c894b116] DiffEqJump v6.5.0
@@ -227,31 +195,31 @@ Environment:
   [fdbdab4c] ElasticArrays v1.0.0
   [d4d017d3] ExponentialUtilities v1.6.0
   [1a297f60] FillArrays v0.8.5
-  [6a86dc24] FiniteDiff v2.2.1
+  [6a86dc24] FiniteDiff v2.3.0
   [3dd14ad9] FixedPolynomials v0.4.0
   [59287772] Formatting v0.4.1
   [f6369f11] ForwardDiff v0.10.9
   [069b7b12] FunctionWrappers v1.1.1
-  [6b9d7cbe] GeneralizedGenerated v0.2.1
-  [01680d73] GenericSVD v0.2.2
+  [6b9d7cbe] GeneralizedGenerated v0.2.2
+  [01680d73] GenericSVD v0.3.0
   [c145ed77] GenericSchur v0.4.0
   [f213a82b] HomotopyContinuation v1.4.1
-  [d25df0c9] Inflate v0.1.1
-  [42fd0dbc] IterativeSolvers v0.8.1
+  [d25df0c9] Inflate v0.1.2
+  [42fd0dbc] IterativeSolvers v0.8.3
   [82899510] IteratorInterfaceExtensions v1.0.0
   [b14d175d] JuliaVariables v0.2.0
   [b964fa9f] LaTeXStrings v1.1.0
   [23fbe1c1] Latexify v0.12.0
-  [5078a376] LazyArrays v0.15.0
+  [5078a376] LazyArrays v0.15.1
   [1d6d02ad] LeftChildRightSiblingTrees v0.1.2
   [093fc24a] LightGraphs v1.3.1
   [d3d80556] LineSearches v7.0.1
   [e6f89c97] LoggingExtras v0.4.0
   [d8e11817] MLStyle v0.3.1
-  [1914dd2f] MacroTools v0.5.4
+  [1914dd2f] MacroTools v0.5.5
   [a3b82374] MatrixFactorizations v0.2.1
   [291d046c] MixedSubdivisions v1.0.0
-  [961ee093] ModelingToolkit v1.2.10
+  [961ee093] ModelingToolkit v1.4.2
   [46d2c3a1] MuladdMacro v0.2.2
   [102ac46a] MultivariatePolynomials v0.3.6
   [d8a4904e] MutableArithmetics v0.2.7
@@ -262,8 +230,8 @@ Environment:
   [71a1bf82] NameResolution v0.1.3
   [efe28fd5] OpenSpecFun_jll v0.5.3+3
   [bac558e1] OrderedCollections v1.1.0
-  [1dea7af3] OrdinaryDiffEq v5.31.0
-  [65888b18] ParameterizedFunctions v4.2.1
+  [1dea7af3] OrdinaryDiffEq v5.32.0
+  [65888b18] ParameterizedFunctions v5.0.3
   [d96e819e] Parameters v0.12.0
   [e409e4f3] PoissonRandom v0.4.0
   [f27b6e38] Polynomials v0.6.1
@@ -280,7 +248,7 @@ Environment:
   [189a3867] Reexport v0.2.0
   [ae029012] Requires v1.0.1
   [ae5879a3] ResettableStacks v1.0.0
-  [f2b01f46] Roots v1.0.0
+  [f2b01f46] Roots v1.0.1
   [699a6c99] SimpleTraits v0.9.1
   [47a9eef4] SparseDiffTools v1.4.0
   [276daf66] SpecialFunctions v0.10.0
@@ -295,32 +263,32 @@ Environment:
   [3a884ed6] UnPack v0.1.0
   [19fa3120] VertexSafeGraphs v0.1.1
   [700de1a5] ZygoteRules v0.2.0
-  [2a0f44e3] Base64  [`@stdlib/Base64`]
-  [ade2ca70] Dates  [`@stdlib/Dates`]
-  [8bb1440f] DelimitedFiles  [`@stdlib/DelimitedFiles`]
-  [8ba89e20] Distributed  [`@stdlib/Distributed`]
-  [9fa8497b] Future  [`@stdlib/Future`]
-  [b77e0a4c] InteractiveUtils  [`@stdlib/InteractiveUtils`]
-  [76f85450] LibGit2  [`@stdlib/LibGit2`]
-  [8f399da3] Libdl  [`@stdlib/Libdl`]
-  [37e2e46d] LinearAlgebra  [`@stdlib/LinearAlgebra`]
-  [56ddb016] Logging  [`@stdlib/Logging`]
-  [d6f4376e] Markdown  [`@stdlib/Markdown`]
-  [a63ad114] Mmap  [`@stdlib/Mmap`]
-  [44cfe95a] Pkg  [`@stdlib/Pkg`]
-  [de0858da] Printf  [`@stdlib/Printf`]
-  [3fa0cd96] REPL  [`@stdlib/REPL`]
-  [9a3f8284] Random  [`@stdlib/Random`]
-  [ea8e919c] SHA  [`@stdlib/SHA`]
-  [9e88b42a] Serialization  [`@stdlib/Serialization`]
-  [1a1011a3] SharedArrays  [`@stdlib/SharedArrays`]
-  [6462fe0b] Sockets  [`@stdlib/Sockets`]
-  [2f01184e] SparseArrays  [`@stdlib/SparseArrays`]
-  [10745b16] Statistics  [`@stdlib/Statistics`]
-  [4607b0f0] SuiteSparse  [`@stdlib/SuiteSparse`]
-  [8dfed614] Test  [`@stdlib/Test`]
-  [cf7118a7] UUIDs  [`@stdlib/UUIDs`]
-  [4ec0a83e] Unicode  [`@stdlib/Unicode`]
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8bb1440f] DelimitedFiles 
+  [8ba89e20] Distributed 
+  [9fa8497b] Future 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [4607b0f0] SuiteSparse 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
 Shootout Tests
 WorkPrecision Tests
 Test DP5
@@ -331,29 +299,10 @@ Test MethodOfSteps BS3 and Tsit5
 DDE Done
 Test Summary:   | Pass  Total
 Benchmark Tests |    2      2
-698.800410 seconds (525.30 M allocations: 25.968 GiB, 2.53% gc time)
+574.622735 seconds (557.95 M allocations: 27.157 GiB, 2.02% gc time)
 Test Summary:      | Pass  Total
 ODE AppxTrue Tests |    7      7
- 15.001668 seconds (10.84 M allocations: 598.475 MiB, 2.19% gc time)
-WARNING: importing deprecated binding Compat.invokelatest into SymEngine.
-WARNING: Compat.MathConstants is deprecated, use Base.MathConstants instead.
-  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/SymEngine.jl:6
-WARNING: Compat.MathConstants is deprecated, use Base.MathConstants instead.
-  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/SymEngine.jl:6
-WARNING: Compat.MathConstants is deprecated, use Base.MathConstants instead.
-  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/SymEngine.jl:6
-WARNING: Compat.MathConstants is deprecated, use Base.MathConstants instead.
-  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/SymEngine.jl:6
-WARNING: importing deprecated binding Compat.LinearAlgebra into SymEngine.
-WARNING: importing deprecated binding Compat.Libdl into SymEngine.
-WARNING: Compat.LinearAlgebra is deprecated, use LinearAlgebra instead.
-  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/dense-matrix.jl:162
-WARNING: Compat.LinearAlgebra is deprecated, use LinearAlgebra instead.
-  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/dense-matrix.jl:166
-WARNING: Compat.LinearAlgebra is deprecated, use LinearAlgebra instead.
-  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/dense-matrix.jl:168
-WARNING: Compat.LinearAlgebra is deprecated, use LinearAlgebra instead.
-  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/dense-matrix.jl:168
+  7.836617 seconds (11.03 M allocations: 589.920 MiB, 2.80% gc time)
 [ Info: Monte Carlo iteration: 1/400
 [ Info: Monte Carlo iteration: 2/400
 [ Info: Monte Carlo iteration: 3/400
@@ -756,11 +705,30 @@ WARNING: Compat.LinearAlgebra is deprecated, use LinearAlgebra instead.
 [ Info: Monte Carlo iteration: 400/400
 Test Summary:                  | Pass  Total
 Analyticless Convergence Tests |    3      3
-179.763481 seconds (182.38 M allocations: 15.150 GiB, 5.77% gc time)
+ 86.234662 seconds (188.40 M allocations: 15.385 GiB, 6.36% gc time)
 Convergence Test on Linear
 Test Summary:                 | Pass  Total
 ODE Tableau Convergence Tests |  166    166
-452.120006 seconds (294.84 M allocations: 15.197 GiB, 3.14% gc time)
+193.522844 seconds (305.90 M allocations: 15.532 GiB, 3.65% gc time)
+WARNING: importing deprecated binding Compat.invokelatest into SymEngine.
+WARNING: Compat.MathConstants is deprecated, use Base.MathConstants instead.
+  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/SymEngine.jl:6
+WARNING: Compat.MathConstants is deprecated, use Base.MathConstants instead.
+  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/SymEngine.jl:6
+WARNING: Compat.MathConstants is deprecated, use Base.MathConstants instead.
+  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/SymEngine.jl:6
+WARNING: Compat.MathConstants is deprecated, use Base.MathConstants instead.
+  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/SymEngine.jl:6
+WARNING: importing deprecated binding Compat.LinearAlgebra into SymEngine.
+WARNING: importing deprecated binding Compat.Libdl into SymEngine.
+WARNING: Compat.LinearAlgebra is deprecated, use LinearAlgebra instead.
+  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/dense-matrix.jl:162
+WARNING: Compat.LinearAlgebra is deprecated, use LinearAlgebra instead.
+  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/dense-matrix.jl:166
+WARNING: Compat.LinearAlgebra is deprecated, use LinearAlgebra instead.
+  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/dense-matrix.jl:168
+WARNING: Compat.LinearAlgebra is deprecated, use LinearAlgebra instead.
+  likely near /home/pkgeval/.julia/packages/SymEngine/RK5Ks/src/dense-matrix.jl:168
 ┌ Warning: The RegularJump interface has changed to be matrix-free. See the documentation for more details.
 └ @ DiffEqJump ~/.julia/packages/DiffEqJump/EDveF/src/jumps.jl:38
 [ Info: Error calculation: 1/20
@@ -1027,8 +995,8 @@ Get sample errors
 [ Info: Solution Run: 20
 Test Summary:              | Pass  Total
 Analyticless Stochastic WP |    1      1
-659.348012 seconds (572.97 M allocations: 105.871 GiB, 17.82% gc time)
+322.952775 seconds (551.10 M allocations: 105.362 GiB, 22.84% gc time)
 Test Summary:          | Pass  Total
 Stability Region Tests |    3      3
- 10.700964 seconds (4.90 M allocations: 256.535 MiB, 5.37% gc time)
-   Testing DiffEqDevTools tests passed 
+  5.890934 seconds (7.34 M allocations: 378.405 MiB, 3.32% gc time)
+    Testing DiffEqDevTools tests passed 

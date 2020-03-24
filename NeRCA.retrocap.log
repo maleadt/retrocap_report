@@ -1,83 +1,123 @@
-Julia Version 1.3.1
-Commit 2d5741174c (2019-12-30 21:36 UTC)
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
   CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-6.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
 Environment:
   JULIA_DEPOT_PATH = ::/usr/local/share/julia
   JULIA_NUM_THREADS = 2
 
- Resolving package versions...
- Installed CMakeWrapper ───────────────── v0.2.3
- Installed NaNMath ────────────────────── v0.3.3
- Installed DiffResults ────────────────── v1.0.2
- Installed CMake ──────────────────────── v1.2.0
- Installed Ipopt ──────────────────────── v0.6.1
- Installed DiffRules ──────────────────── v1.0.1
- Installed NeRCA ──────────────────────── v0.5.1
- Installed PlotUtils ──────────────────── v0.6.4
- Installed MacroTools ─────────────────── v0.5.4
- Installed StatsBase ──────────────────── v0.32.2
- Installed DefaultApplication ─────────── v1.0.0
- Installed HDF5 ───────────────────────── v0.13.0
- Installed HDF5_jll ───────────────────── v1.10.5+5
- Installed MbedTLS ────────────────────── v1.0.1
- Installed Blosc ──────────────────────── v0.5.1
- Installed CodecBzip2 ─────────────────── v0.6.0
- Installed CompilerSupportLibraries_jll ─ v0.2.0+1
- Installed CodecZlib ──────────────────── v0.6.0
- Installed PGFPlotsX ──────────────────── v1.2.5
- Installed HTTP ───────────────────────── v0.8.12
- Installed IntervalArithmetic ─────────── v0.16.6
- Installed DataAPI ────────────────────── v1.1.0
- Installed ArgCheck ───────────────────── v2.0.0
- Installed PlotThemes ─────────────────── v1.0.1
- Installed BenchmarkTools ─────────────── v0.5.0
- Installed BinDeps ────────────────────── v1.0.0
- Installed SetRounding ────────────────── v0.2.0
- Installed StaticArrays ───────────────── v0.12.1
- Installed Requires ───────────────────── v1.0.1
- Installed RecipesBase ────────────────── v0.7.0
- Installed MutableArithmetics ─────────── v0.2.7
- Installed SpecialFunctions ───────────── v0.10.0
- Installed DataStructures ─────────────── v0.17.10
- Installed Zlib_jll ───────────────────── v1.2.11+8
- Installed MbedTLS_jll ────────────────── v2.16.0+1
- Installed CRlibm ─────────────────────── v0.8.0
- Installed ErrorfreeArithmetic ────────── v0.5.0
- Installed ColorTypes ─────────────────── v0.10.0
- Installed ForwardDiff ────────────────── v0.10.9
- Installed Compat ─────────────────────── v2.2.0
- Installed MathProgBase ───────────────── v0.7.8
- Installed DrWatson ───────────────────── v1.10.0
- Installed FixedPointNumbers ──────────── v0.8.0
- Installed MathOptInterface ───────────── v0.9.12
- Installed Colors ─────────────────────── v0.12.0
- Installed JSON ───────────────────────── v0.21.0
- Installed SortingAlgorithms ──────────── v0.3.1
- Installed JSONSchema ─────────────────── v0.2.0
- Installed TranscodingStreams ─────────── v0.9.5
- Installed Reexport ───────────────────── v0.2.0
- Installed Parsers ────────────────────── v0.3.12
- Installed URIParser ──────────────────── v0.4.0
- Installed OrderedCollections ─────────── v1.1.0
- Installed IniFile ────────────────────── v0.5.0
- Installed Parameters ─────────────────── v0.12.0
- Installed BinaryProvider ─────────────── v0.5.8
- Installed JuMP ───────────────────────── v0.21.1
- Installed Calculus ───────────────────── v0.5.1
- Installed CommonSubexpressions ───────── v0.2.0
- Installed DocStringExtensions ────────── v0.8.1
- Installed OpenSpecFun_jll ────────────── v0.5.3+3
- Installed Missings ───────────────────── v0.4.3
- Installed FastRounding ───────────────── v0.2.0
- Installed FileIO ─────────────────────── v1.2.3
-  Updating `~/.julia/environments/v1.3/Project.toml`
+  Resolving package versions...
+  Installed DataAPI ────────────────────── v1.1.0
+  Installed SetRounding ────────────────── v0.2.0
+  Installed CMakeWrapper ───────────────── v0.2.3
+  Installed PlotUtils ──────────────────── v0.6.4
+  Installed SpecialFunctions ───────────── v0.10.0
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed OrderedCollections ─────────── v1.1.0
+  Installed Blosc ──────────────────────── v0.5.1
+  Installed RecipesBase ────────────────── v0.7.0
+  Installed MutableArithmetics ─────────── v0.2.7
+  Installed DiffRules ──────────────────── v1.0.1
+  Installed CodecZlib ──────────────────── v0.6.0
+  Installed MacroTools ─────────────────── v0.5.5
+  Installed ColorTypes ─────────────────── v0.10.0
+  Installed HDF5 ───────────────────────── v0.13.0
+  Installed PlotThemes ─────────────────── v1.0.1
+  Installed MbedTLS ────────────────────── v1.0.1
+  Installed ArgCheck ───────────────────── v2.0.0
+  Installed DocStringExtensions ────────── v0.8.1
+  Installed HTTP ───────────────────────── v0.8.13
+  Installed BinaryProvider ─────────────── v0.5.8
+  Installed CRlibm ─────────────────────── v0.8.0
+  Installed DataStructures ─────────────── v0.17.10
+  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
+    Cloning [e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28] Missings from https://github.com/JuliaData/Missings.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Missings ───────────────────── v0.4.3
+    Cloning [89b7c20c-a96a-11e9-35df-35fba0891eb2] NeRCA from https://github.com/tamasgal/NeRCA.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NeRCA ──────────────────────── v0.5.1
+    Cloning [49dc2e85-a5d0-5ad3-a950-438e2897f1b9] Calculus from https://github.com/JuliaMath/Calculus.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Calculus ───────────────────── v0.5.1
+    Cloning [8314cec4-20b6-5062-9cdb-752b83310925] PGFPlotsX from https://github.com/KristofferC/PGFPlotsX.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [===========>                             ]  27.2 %[2K[?25h  Installed PGFPlotsX ──────────────────── v1.2.5
+    Cloning [189a3867-3050-52da-a836-e630ba90ab69] Reexport from https://github.com/simonster/Reexport.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Reexport ───────────────────── v0.2.0
+    Cloning [77ba4419-2d1f-58cd-9bb1-8ffee604a2e3] NaNMath from https://github.com/mlubin/NaNMath.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NaNMath ────────────────────── v0.3.3
+    Cloning [90fa49ef-747e-5e6f-a989-263ba693cf1a] ErrorfreeArithmetic from https://github.com/JeffreySarnoff/ErrorfreeArithmetic.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ErrorfreeArithmetic ────────── v0.5.0
+    Cloning [30578b45-9adc-5946-b283-645ec420af67] URIParser from https://github.com/JuliaWeb/URIParser.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed URIParser ──────────────────── v0.4.0
+    Cloning [ae029012-a4dd-5104-9daa-d747884805df] Requires from https://github.com/MikeInnes/Requires.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Requires ───────────────────── v1.0.1
+    Cloning [3bb67fe8-82b1-5028-8e26-92a6c54297fa] TranscodingStreams from https://github.com/bicycle1885/TranscodingStreams.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TranscodingStreams ─────────── v0.9.5
+    Cloning [69de0a69-1ddd-5017-9359-2bf0b02dc9f0] Parsers from https://github.com/JuliaData/Parsers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parsers ────────────────────── v0.3.12
+    Cloning [53c48c17-4a7d-5ca2-90c5-79b7896eea93] FixedPointNumbers from https://github.com/JuliaMath/FixedPointNumbers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FixedPointNumbers ──────────── v0.8.0
+    Cloning [523fee87-0ab8-5b00-afb7-3ecf72e48cfd] CodecBzip2 from https://github.com/JuliaIO/CodecBzip2.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CodecBzip2 ─────────────────── v0.6.0
+    Cloning [3f0dd361-4fe0-5fc6-8523-80b14ec94d85] DefaultApplication from https://github.com/tpapp/DefaultApplication.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DefaultApplication ─────────── v1.0.0
+    Cloning [7d188eb4-7ad8-530c-ae41-71a32a6d4692] JSONSchema from https://github.com/fredo-dedup/JSONSchema.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed JSONSchema ─────────────────── v0.2.0
+    Cloning [0234f1f7-429e-5d53-9886-15a909be8d59] HDF5_jll from https://github.com/JuliaBinaryWrappers/HDF5_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed HDF5_jll ───────────────────── v1.10.5+5
+    Cloning [9e28174c-4ba2-5203-b857-d8d62c4213ee] BinDeps from https://github.com/JuliaPackaging/BinDeps.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinDeps ────────────────────── v1.0.0
+    Cloning [83e8ac13-25f8-5344-8a64-a9f2b223428f] IniFile from https://github.com/JuliaIO/IniFile.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IniFile ────────────────────── v0.5.0
+    Cloning [634d3b9d-ee7a-5ddf-bec9-22491ea816e1] DrWatson from https://github.com/JuliaDynamics/DrWatson.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DrWatson ───────────────────── v1.10.2
+    Cloning [fa42c844-2597-5d31-933b-ebd51ab2693f] FastRounding from https://github.com/JeffreySarnoff/FastRounding.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FastRounding ───────────────── v0.2.0
+    Cloning [631607c0-34d2-5d66-819e-eb0f9aa2061a] CMake from https://github.com/JuliaPackaging/CMake.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CMake ──────────────────────── v1.2.0
+    Cloning [5789e2e9-d7fb-5bc7-8068-2c6fae9b9549] FileIO from https://github.com/JuliaIO/FileIO.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FileIO ─────────────────────── v1.2.4
+    Cloning [f6369f11-7733-5829-9624-2563aa707210] ForwardDiff from https://github.com/JuliaDiff/ForwardDiff.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ForwardDiff ────────────────── v0.10.9
+    Cloning [163ba53b-c6d8-5494-b064-1a9d43ac40c5] DiffResults from https://github.com/JuliaDiff/DiffResults.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffResults ────────────────── v1.0.2
+    Cloning [5ae59095-9a9b-59fe-a467-6f913c188581] Colors from https://github.com/JuliaGraphics/Colors.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Colors ─────────────────────── v0.12.0
+    Cloning [34da2185-b29b-5c13-b0c7-acf172513d20] Compat from https://github.com/JuliaLang/Compat.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Compat ─────────────────────── v2.2.0
+    Cloning [b8f27783-ece8-5eb3-8dc8-9495eed66fee] MathOptInterface from https://github.com/JuliaOpt/MathOptInterface.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [================>                        ]  38.1 %    Resolving Deltas: [======================>                  ]  53.1 %[2K[?25h  Installed MathOptInterface ───────────── v0.9.12
+    Cloning [2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91] StatsBase from https://github.com/JuliaStats/StatsBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StatsBase ──────────────────── v0.32.2
+    Cloning [83775a58-1f1d-513f-b197-d71354ab007a] Zlib_jll from https://github.com/JuliaBinaryWrappers/Zlib_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Zlib_jll ───────────────────── v1.2.11+8
+    Cloning [4076af6c-e467-56ae-b986-b466b2749572] JuMP from https://github.com/JuliaOpt/JuMP.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [====>                                    ]  9.5 %[2K[?25h  Installed JuMP ───────────────────────── v0.21.1
+    Cloning [fdba3010-5040-5b88-9595-932c9decdf73] MathProgBase from https://github.com/JuliaOpt/MathProgBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MathProgBase ───────────────── v0.7.8
+    Cloning [bbf7d656-a473-5ed7-a52c-81e309532950] CommonSubexpressions from https://github.com/rdeits/CommonSubexpressions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CommonSubexpressions ───────── v0.2.0
+    Cloning [d1acc4aa-44c8-5952-acd4-ba5d80a2a253] IntervalArithmetic from https://github.com/JuliaIntervals/IntervalArithmetic.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IntervalArithmetic ─────────── v0.16.6
+    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ───────────────── v0.12.1
+    Cloning [b6b21f68-93f8-5de0-b562-5493be1d77c9] Ipopt from https://github.com/JuliaOpt/Ipopt.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Ipopt ──────────────────────── v0.6.1
+    Cloning [c8ffd9c3-330d-5841-b78e-0817d7145fa1] MbedTLS_jll from https://github.com/JuliaBinaryWrappers/MbedTLS_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MbedTLS_jll ────────────────── v2.16.0+1
+    Cloning [6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf] BenchmarkTools from https://github.com/JuliaCI/BenchmarkTools.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BenchmarkTools ─────────────── v0.5.0
+    Cloning [682c06a0-de6a-54ab-a142-c8b1cf79cde6] JSON from https://github.com/JuliaIO/JSON.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed JSON ───────────────────────── v0.21.0
+    Cloning [d96e819e-fc66-5662-9728-84c9c7592b0a] Parameters from https://github.com/mauro3/Parameters.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parameters ─────────────────── v0.12.0
+    Cloning [efe28fd5-8261-553b-a9e1-b2916fc3738e] OpenSpecFun_jll from https://github.com/JuliaBinaryWrappers/OpenSpecFun_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenSpecFun_jll ────────────── v0.5.3+3
+   Updating `~/.julia/environments/v1.4/Project.toml`
   [89b7c20c] + NeRCA v0.5.1
-  Updating `~/.julia/environments/v1.3/Manifest.toml`
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
   [dce04be8] + ArgCheck v2.0.0
   [6e4b80f9] + BenchmarkTools v0.5.0
   [9e28174c] + BinDeps v1.0.0
@@ -93,29 +133,29 @@ Environment:
   [5ae59095] + Colors v0.12.0
   [bbf7d656] + CommonSubexpressions v0.2.0
   [34da2185] + Compat v2.2.0
-  [e66e0078] + CompilerSupportLibraries_jll v0.2.0+1
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.1+0
   [9a962f9c] + DataAPI v1.1.0
   [864edb3b] + DataStructures v0.17.10
   [3f0dd361] + DefaultApplication v1.0.0
   [163ba53b] + DiffResults v1.0.2
   [b552c78f] + DiffRules v1.0.1
   [ffbed154] + DocStringExtensions v0.8.1
-  [634d3b9d] + DrWatson v1.10.0
+  [634d3b9d] + DrWatson v1.10.2
   [90fa49ef] + ErrorfreeArithmetic v0.5.0
   [fa42c844] + FastRounding v0.2.0
-  [5789e2e9] + FileIO v1.2.3
+  [5789e2e9] + FileIO v1.2.4
   [53c48c17] + FixedPointNumbers v0.8.0
   [f6369f11] + ForwardDiff v0.10.9
   [f67ccb44] + HDF5 v0.13.0
   [0234f1f7] + HDF5_jll v1.10.5+5
-  [cd3eb016] + HTTP v0.8.12
+  [cd3eb016] + HTTP v0.8.13
   [83e8ac13] + IniFile v0.5.0
   [d1acc4aa] + IntervalArithmetic v0.16.6
   [b6b21f68] + Ipopt v0.6.1
   [682c06a0] + JSON v0.21.0
   [7d188eb4] + JSONSchema v0.2.0
   [4076af6c] + JuMP v0.21.1
-  [1914dd2f] + MacroTools v0.5.4
+  [1914dd2f] + MacroTools v0.5.5
   [b8f27783] + MathOptInterface v0.9.12
   [fdba3010] + MathProgBase v0.7.8
   [739be429] + MbedTLS v1.0.1
@@ -166,16 +206,15 @@ Environment:
   [8dfed614] + Test 
   [cf7118a7] + UUIDs 
   [4ec0a83e] + Unicode 
-  Building CMake ─────→ `~/.julia/packages/CMake/ULbyn/deps/build.log`
-  Building CodecZlib ─→ `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
-  Building CodecBzip2 → `~/.julia/packages/CodecBzip2/T5yr7/deps/build.log`
-  Building Ipopt ─────→ `~/.julia/packages/Ipopt/ruIXY/deps/build.log`
-  Building Blosc ─────→ `~/.julia/packages/Blosc/lzFr0/deps/build.log`
-  Building HDF5 ──────→ `~/.julia/packages/HDF5/XQlr9/deps/build.log`
-  Building CRlibm ────→ `~/.julia/packages/CRlibm/NFCH5/deps/build.log`
-[ Info: No changes
-   Testing NeRCA
-    Status `/tmp/jl_gdARjI/Manifest.toml`
+   Building CodecBzip2 → `~/.julia/packages/CodecBzip2/T5yr7/deps/build.log`
+   Building CMake ─────→ `~/.julia/packages/CMake/ULbyn/deps/build.log`
+   Building Blosc ─────→ `~/.julia/packages/Blosc/lzFr0/deps/build.log`
+   Building CodecZlib ─→ `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+   Building HDF5 ──────→ `~/.julia/packages/HDF5/XQlr9/deps/build.log`
+   Building CRlibm ────→ `~/.julia/packages/CRlibm/NFCH5/deps/build.log`
+   Building Ipopt ─────→ `~/.julia/packages/Ipopt/ruIXY/deps/build.log`
+    Testing NeRCA
+Status `/tmp/jl_AwJfvY/Manifest.toml`
   [dce04be8] ArgCheck v2.0.0
   [6e4b80f9] BenchmarkTools v0.5.0
   [9e28174c] BinDeps v1.0.0
@@ -191,29 +230,29 @@ Environment:
   [5ae59095] Colors v0.12.0
   [bbf7d656] CommonSubexpressions v0.2.0
   [34da2185] Compat v2.2.0
-  [e66e0078] CompilerSupportLibraries_jll v0.2.0+1
+  [e66e0078] CompilerSupportLibraries_jll v0.3.1+0
   [9a962f9c] DataAPI v1.1.0
   [864edb3b] DataStructures v0.17.10
   [3f0dd361] DefaultApplication v1.0.0
   [163ba53b] DiffResults v1.0.2
   [b552c78f] DiffRules v1.0.1
   [ffbed154] DocStringExtensions v0.8.1
-  [634d3b9d] DrWatson v1.10.0
+  [634d3b9d] DrWatson v1.10.2
   [90fa49ef] ErrorfreeArithmetic v0.5.0
   [fa42c844] FastRounding v0.2.0
-  [5789e2e9] FileIO v1.2.3
+  [5789e2e9] FileIO v1.2.4
   [53c48c17] FixedPointNumbers v0.8.0
   [f6369f11] ForwardDiff v0.10.9
   [f67ccb44] HDF5 v0.13.0
   [0234f1f7] HDF5_jll v1.10.5+5
-  [cd3eb016] HTTP v0.8.12
+  [cd3eb016] HTTP v0.8.13
   [83e8ac13] IniFile v0.5.0
   [d1acc4aa] IntervalArithmetic v0.16.6
   [b6b21f68] Ipopt v0.6.1
   [682c06a0] JSON v0.21.0
   [7d188eb4] JSONSchema v0.2.0
   [4076af6c] JuMP v0.21.1
-  [1914dd2f] MacroTools v0.5.4
+  [1914dd2f] MacroTools v0.5.5
   [b8f27783] MathOptInterface v0.9.12
   [fdba3010] MathProgBase v0.7.8
   [739be429] MbedTLS v1.0.1
@@ -240,30 +279,30 @@ Environment:
   [3bb67fe8] TranscodingStreams v0.9.5
   [30578b45] URIParser v0.4.0
   [83775a58] Zlib_jll v1.2.11+8
-  [2a0f44e3] Base64  [`@stdlib/Base64`]
-  [ade2ca70] Dates  [`@stdlib/Dates`]
-  [8bb1440f] DelimitedFiles  [`@stdlib/DelimitedFiles`]
-  [8ba89e20] Distributed  [`@stdlib/Distributed`]
-  [b77e0a4c] InteractiveUtils  [`@stdlib/InteractiveUtils`]
-  [76f85450] LibGit2  [`@stdlib/LibGit2`]
-  [8f399da3] Libdl  [`@stdlib/Libdl`]
-  [37e2e46d] LinearAlgebra  [`@stdlib/LinearAlgebra`]
-  [56ddb016] Logging  [`@stdlib/Logging`]
-  [d6f4376e] Markdown  [`@stdlib/Markdown`]
-  [a63ad114] Mmap  [`@stdlib/Mmap`]
-  [44cfe95a] Pkg  [`@stdlib/Pkg`]
-  [de0858da] Printf  [`@stdlib/Printf`]
-  [3fa0cd96] REPL  [`@stdlib/REPL`]
-  [9a3f8284] Random  [`@stdlib/Random`]
-  [ea8e919c] SHA  [`@stdlib/SHA`]
-  [9e88b42a] Serialization  [`@stdlib/Serialization`]
-  [1a1011a3] SharedArrays  [`@stdlib/SharedArrays`]
-  [6462fe0b] Sockets  [`@stdlib/Sockets`]
-  [2f01184e] SparseArrays  [`@stdlib/SparseArrays`]
-  [10745b16] Statistics  [`@stdlib/Statistics`]
-  [8dfed614] Test  [`@stdlib/Test`]
-  [cf7118a7] UUIDs  [`@stdlib/UUIDs`]
-  [4ec0a83e] Unicode  [`@stdlib/Unicode`]
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8bb1440f] DelimitedFiles 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
 
 Update message: DrWatson v1.8.0
 
@@ -272,40 +311,41 @@ A cool new feature was added to the `@quickactivate` macro!
 
 ERROR: LoadError: LoadError: UndefVarError: HDF5Compound not defined
 Stacktrace:
- [1] getproperty(::Module, ::Symbol) at ./Base.jl:13
+ [1] getproperty(::Module, ::Symbol) at ./Base.jl:26
  [2] top-level scope at /home/pkgeval/.julia/packages/NeRCA/iYVxJ/src/types.jl:273
- [3] include at ./boot.jl:328 [inlined]
- [4] include_relative(::Module, ::String) at ./loading.jl:1105
- [5] include at ./Base.jl:31 [inlined]
- [6] include(::String) at /home/pkgeval/.julia/packages/NeRCA/iYVxJ/src/NeRCA.jl:1
- [7] top-level scope at /home/pkgeval/.julia/packages/NeRCA/iYVxJ/src/NeRCA.jl:41
- [8] include at ./boot.jl:328 [inlined]
- [9] include_relative(::Module, ::String) at ./loading.jl:1105
- [10] include(::Module, ::String) at ./Base.jl:31
- [11] top-level scope at none:2
- [12] eval at ./boot.jl:330 [inlined]
- [13] eval(::Expr) at ./client.jl:425
- [14] top-level scope at ./none:3
+ [3] include(::Module, ::String) at ./Base.jl:377
+ [4] include(::String) at /home/pkgeval/.julia/packages/NeRCA/iYVxJ/src/NeRCA.jl:1
+ [5] top-level scope at /home/pkgeval/.julia/packages/NeRCA/iYVxJ/src/NeRCA.jl:41
+ [6] include(::Module, ::String) at ./Base.jl:377
+ [7] top-level scope at none:2
+ [8] eval at ./boot.jl:331 [inlined]
+ [9] eval(::Expr) at ./client.jl:449
+ [10] top-level scope at ./none:3
 in expression starting at /home/pkgeval/.julia/packages/NeRCA/iYVxJ/src/types.jl:273
 in expression starting at /home/pkgeval/.julia/packages/NeRCA/iYVxJ/src/NeRCA.jl:41
-ERROR: LoadError: LoadError: Failed to precompile NeRCA [89b7c20c-a96a-11e9-35df-35fba0891eb2] to /home/pkgeval/.julia/compiled/v1.3/NeRCA/43Pse_RuAae.ji.
+ERROR: LoadError: LoadError: Failed to precompile NeRCA [89b7c20c-a96a-11e9-35df-35fba0891eb2] to /home/pkgeval/.julia/compiled/v1.4/NeRCA/43Pse_yKhEC.ji.
 Stacktrace:
  [1] error(::String) at ./error.jl:33
- [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1283
- [3] _require(::Base.PkgId) at ./loading.jl:1024
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+ [3] _require(::Base.PkgId) at ./loading.jl:1029
+ [4] require(::Base.PkgId) at ./loading.jl:927
+ [5] require(::Module, ::Symbol) at ./loading.jl:922
+ [6] include(::String) at ./client.jl:439
+ [7] top-level scope at /home/pkgeval/.julia/packages/NeRCA/iYVxJ/test/runtests.jl:1
+ [8] include(::String) at ./client.jl:439
+ [9] top-level scope at none:6
 in expression starting at /home/pkgeval/.julia/packages/NeRCA/iYVxJ/test/main_tests.jl:1
 in expression starting at /home/pkgeval/.julia/packages/NeRCA/iYVxJ/test/runtests.jl:1
 ERROR: Package NeRCA errored during testing
 Stacktrace:
- [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Types.jl:113
- [2] #test#131(::Bool, ::Nothing, ::Cmd, ::Cmd, ::typeof(Pkg.Operations.test), ::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/Operations.jl:1372
- [3] #test at ./none:0 [inlined]
- [4] #test#62(::Bool, ::Nothing, ::Cmd, ::Cmd, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Pkg.API.test), ::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:253
- [5] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:239
- [6] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:233 [inlined]
- [7] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:233 [inlined]
- [8] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:232 [inlined]
- [9] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:232 [inlined]
- [10] #test#59(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Pkg.API.test), ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:231
- [11] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:231
- [12] top-level scope at none:13
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
+ [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [11] top-level scope at none:16

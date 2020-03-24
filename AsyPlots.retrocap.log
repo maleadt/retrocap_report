@@ -1,0 +1,129 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed Reexport ────────────────── v0.2.0
+  Installed Xorg_util_macros_jll ────── v1.19.2+0
+  Installed Xorg_xextproto_jll ──────── v7.3.0+0
+  Installed OrderedCollections ──────── v1.1.0
+  Installed Libgcrypt_jll ───────────── v1.8.5+0
+  Installed FreeType2_jll ───────────── v2.10.1+1
+  Installed AsyPlots ────────────────── v0.2.1
+  Installed Cairo_jll ───────────────── v1.16.0+2
+  Installed FixedPointNumbers ───────── v0.7.1
+  Installed X11_jll ─────────────────── v1.6.8+5
+  Installed Pixman_jll ──────────────── v0.38.4+1
+  Installed Xorg_renderproto_jll ────── v0.11.1+0
+  Installed Glib_jll ────────────────── v2.59.0+1
+  Installed Pango_jll ───────────────── v1.42.4+7
+  Installed libpng_jll ──────────────── v1.6.37+2
+  Installed Graphite2_jll ───────────── v1.3.13+1
+  Installed Compat ──────────────────── v2.2.0
+  Installed Xorg_libpthread_stubs_jll ─ v0.1.0+0
+  Installed HarfBuzz_jll ────────────── v2.6.1+4
+  Installed Libgpg_error_jll ────────── v1.36.0+0
+  Installed ProgressMeter ───────────── v1.2.0
+  Installed Ratios ──────────────────── v0.3.1
+  Installed DataStructures ──────────── v0.17.10
+  Installed PCRE_jll ────────────────── v8.42.0+1
+    Cloning [ae029012-a4dd-5104-9daa-d747884805df] Requires from https://github.com/MikeInnes/Requires.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Requires ────────────────── v1.0.1
+    Cloning [02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a] XML2_jll from https://github.com/JuliaBinaryWrappers/XML2_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed XML2_jll ────────────────── v2.9.9+1
+    Cloning [77ba4419-2d1f-58cd-9bb1-8ffee604a2e3] NaNMath from https://github.com/mlubin/NaNMath.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NaNMath ─────────────────── v0.3.3
+    Cloning [c2e9c405-c068-5e7b-9b35-084fd074cae4] Xorg_xcb_proto_jll from https://github.com/JuliaBinaryWrappers/Xorg_xcb_proto_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xcb_proto_jll ──────── v1.13.0+0
+    Cloning [9fb69e20-1954-56bb-a84f-559cc56a8ff7] Hiccup from https://github.com/JunoLab/Hiccup.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Hiccup ──────────────────── v0.2.2
+    Cloning [94ce4f54-9a6c-5748-9c1c-f9c7231a4531] Libiconv_jll from https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libiconv_jll ────────────── v1.16.0+1
+    Cloning [efce3f68-66dc-5838-9240-27a6d6f5f9b6] WoodburyMatrices from https://github.com/timholy/WoodburyMatrices.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed WoodburyMatrices ────────── v0.5.1
+    Cloning [46797783-dccc-5433-be59-056c4bde8513] Xorg_xproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_xproto_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xproto_jll ─────────── v7.0.31+0
+    Cloning [a98d9a8b-a2ab-59e6-89dd-64a1c18fca59] Interpolations from https://github.com/JuliaMath/Interpolations.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [=============>                           ]  31.7 %[2K[?25h  Installed Interpolations ──────────── v0.12.8
+    Cloning [38a345b3-de98-5d2b-a5d3-14cd9215e700] Libuuid_jll from https://github.com/JuliaBinaryWrappers/Libuuid_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libuuid_jll ─────────────── v2.34.0+3
+    Cloning [3da002f7-5984-5a60-b8a6-cbb66c0b333f] ColorTypes from https://github.com/JuliaGraphics/ColorTypes.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ColorTypes ──────────────── v0.9.1
+    Cloning [a3f928ae-7b40-5064-980b-68af3947d34b] Fontconfig_jll from https://github.com/JuliaBinaryWrappers/Fontconfig_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Fontconfig_jll ──────────── v2.13.1+10
+    Cloning [159f3aea-2a34-519c-b102-8c37f9878175] Cairo from https://github.com/JuliaGraphics/Cairo.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Cairo ───────────────────── v1.0.2
+    Cloning [a2bd30eb-e257-5431-a919-1863eab51364] Graphics from https://github.com/JuliaGraphics/Graphics.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Graphics ────────────────── v1.0.2
+    Cloning [dd4b983a-f0e5-5f8d-a1b7-129d4a5fb1ac] LZO_jll from https://github.com/JuliaBinaryWrappers/LZO_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LZO_jll ─────────────────── v2.10.0+0
+    Cloning [1914dd2f-81c6-5fcd-8719-6d5c9610ff09] MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MacroTools ──────────────── v0.5.5
+    Cloning [6fe1bfb0-de20-5000-8ca7-80f57d26f881] OffsetArrays from https://github.com/JuliaArrays/OffsetArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OffsetArrays ────────────── v1.0.3
+    Cloning [ea2f1a96-1ddc-540d-b46f-429655e07cfa] Xorg_libXrender_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXrender_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXrender_jll ─────── v0.9.10+1
+    Cloning [a3789734-cfe1-5b06-b2d0-1dd0d9d62d05] Xorg_libXdmcp_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXdmcp_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXdmcp_jll ───────── v1.1.3+1
+    Cloning [5ae59095-9a9b-59fe-a467-6f913c188581] Colors from https://github.com/JuliaGraphics/Colors.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Colors ──────────────────── v0.11.2
+    Cloning [c7cfdc94-dc32-55de-ac96-5a1b8d977c5b] Xorg_libxcb_jll from https://github.com/JuliaBinaryWrappers/Xorg_libxcb_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libxcb_jll ─────────── v1.13.0+1
+    Cloning [e89f7d12-3494-54d1-8411-f7d8b9ae1f27] Media from https://github.com/JunoLab/Media.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Media ───────────────────── v0.5.0
+    Cloning [d38c429a-6771-53c6-b99e-75d170b6e991] Contour from https://github.com/JuliaGeometry/Contour.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Contour ─────────────────── v0.5.2
+    Cloning [e9f186c6-92d2-5b65-8a66-fee21dc1b490] Libffi_jll from https://github.com/JuliaBinaryWrappers/Libffi_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libffi_jll ──────────────── v3.2.1+0
+    Cloning [c5fb5394-a638-5e4d-96e5-b29de1b5cf10] Xorg_xtrans_jll from https://github.com/JuliaBinaryWrappers/Xorg_xtrans_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xtrans_jll ─────────── v1.4.0+0
+    Cloning [83775a58-1f1d-513f-b197-d71354ab007a] Zlib_jll from https://github.com/JuliaBinaryWrappers/Zlib_jll.jl.git
+[?25l[2K[?25hERROR: failed to clone from https://github.com/JuliaBinaryWrappers/Zlib_jll.jl.git, error: GitError(Code:ERROR, Class:OS, failed to connect to github.com: Connection timed out)
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
+ [2] clone(::Pkg.Types.Context, ::String, ::String; header::String, credentials::Nothing, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:isbare,),Tuple{Bool}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/GitTools.jl:149
+ [3] #ensure_clone#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/GitTools.jl:110 [inlined]
+ [4] install_git(::Pkg.Types.Context, ::Base.UUID, ::String, ::Base.SHA1, ::Array{String,1}, ::VersionNumber, ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:555
+ [5] download_source(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Dict{Base.UUID,Array{String,1}}; readonly::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:714
+ [6] #download_source#39 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:633 [inlined]
+ [7] download_source at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:631 [inlined]
+ [8] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1080
+ [9] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:159
+ [10] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:112
+ [11] #add#27 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:109 [inlined]
+ [12] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:109 [inlined]
+ [13] #add#24 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:107 [inlined]
+ [14] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:107 [inlined]
+ [15] add(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:106
+ [16] add(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:106
+ [17] top-level scope at none:15
+caused by [exception 1]
+GitError(Code:ERROR, Class:OS, failed to connect to github.com: Connection timed out)
+Stacktrace:
+ [1] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LibGit2/src/error.jl:101 [inlined]
+ [2] clone(::String, ::String, ::LibGit2.CloneOptions) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LibGit2/src/repository.jl:459
+ [3] clone(::String, ::String; branch::String, isbare::Bool, remote_cb::Ptr{Nothing}, credentials::LibGit2.CachedCredentials, callbacks::Dict{Symbol,Tuple{Ptr{Nothing},Any}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LibGit2/src/LibGit2.jl:580
+ [4] clone(::Pkg.Types.Context, ::String, ::String; header::String, credentials::Nothing, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:isbare,),Tuple{Bool}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/GitTools.jl:141
+ [5] #ensure_clone#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/GitTools.jl:110 [inlined]
+ [6] install_git(::Pkg.Types.Context, ::Base.UUID, ::String, ::Base.SHA1, ::Array{String,1}, ::VersionNumber, ::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:555
+ [7] download_source(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Dict{Base.UUID,Array{String,1}}; readonly::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:714
+ [8] #download_source#39 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:633 [inlined]
+ [9] download_source at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:631 [inlined]
+ [10] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1080
+ [11] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:159
+ [12] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:112
+ [13] #add#27 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:109 [inlined]
+ [14] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:109 [inlined]
+ [15] #add#24 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:107 [inlined]
+ [16] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:107 [inlined]
+ [17] add(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:106
+ [18] add(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:106
+ [19] top-level scope at none:15

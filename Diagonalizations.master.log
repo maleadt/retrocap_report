@@ -1,32 +1,38 @@
-Julia Version 1.3.1
-Commit 2d5741174c (2019-12-30 21:36 UTC)
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
   CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-6.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
 Environment:
   JULIA_DEPOT_PATH = ::/usr/local/share/julia
   JULIA_NUM_THREADS = 2
 
- Resolving package versions...
- Installed SortingAlgorithms ──── v0.3.1
- Installed DataAPI ────────────── v1.1.0
- Installed Missings ───────────── v0.4.3
- Installed OrderedCollections ─── v1.1.0
- Installed StatsBase ──────────── v0.32.2
- Installed CovarianceEstimation ─ v0.2.3
- Installed Diagonalizations ───── v0.1.9
- Installed PosDefManifold ─────── v0.4.7
- Installed DataStructures ─────── v0.17.10
-  Updating `~/.julia/environments/v1.3/Project.toml`
-  [9cd687f3] + Diagonalizations v0.1.9
-  Updating `~/.julia/environments/v1.3/Manifest.toml`
+  Resolving package versions...
+  Installed SortingAlgorithms ──── v0.3.1
+  Installed StatsBase ──────────── v0.32.2
+  Installed PosDefManifold ─────── v0.4.7
+    Cloning [9cd687f3-b62d-43f3-8fd3-ffcd9e581047] Diagonalizations from https://github.com/Marco-Congedo/Diagonalizations.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Diagonalizations ───── v0.1.11
+    Cloning [9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a] DataAPI from https://github.com/JuliaData/DataAPI.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataAPI ────────────── v1.1.0
+    Cloning [e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28] Missings from https://github.com/JuliaData/Missings.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Missings ───────────── v0.4.3
+    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ─────── v0.17.10
+    Cloning [587fd27a-f159-11e8-2dae-1979310e6154] CovarianceEstimation from https://github.com/mateuszbaran/CovarianceEstimation.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CovarianceEstimation ─ v0.2.3
+    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ─── v1.1.0
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [9cd687f3] + Diagonalizations v0.1.11
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
   [587fd27a] + CovarianceEstimation v0.2.3
   [9a962f9c] + DataAPI v1.1.0
   [864edb3b] + DataStructures v0.17.10
-  [9cd687f3] + Diagonalizations v0.1.9
+  [9cd687f3] + Diagonalizations v0.1.11
   [e1d29d7a] + Missings v0.4.3
   [bac558e1] + OrderedCollections v1.1.0
   [f45a3650] + PosDefManifold v0.4.7
@@ -47,38 +53,37 @@ Environment:
   [10745b16] + Statistics 
   [8dfed614] + Test 
   [4ec0a83e] + Unicode 
-   Testing Diagonalizations
- Resolving package versions...
-    Status `/tmp/jl_MB0BDh/Manifest.toml`
+    Testing Diagonalizations
+Status `/tmp/jl_PRviI5/Manifest.toml`
   [587fd27a] CovarianceEstimation v0.2.3
   [9a962f9c] DataAPI v1.1.0
   [864edb3b] DataStructures v0.17.10
-  [9cd687f3] Diagonalizations v0.1.9
+  [9cd687f3] Diagonalizations v0.1.11
   [e1d29d7a] Missings v0.4.3
   [bac558e1] OrderedCollections v1.1.0
   [f45a3650] PosDefManifold v0.4.7
   [a2af1166] SortingAlgorithms v0.3.1
   [2913bbd2] StatsBase v0.32.2
-  [2a0f44e3] Base64  [`@stdlib/Base64`]
-  [8ba89e20] Distributed  [`@stdlib/Distributed`]
-  [b77e0a4c] InteractiveUtils  [`@stdlib/InteractiveUtils`]
-  [8f399da3] Libdl  [`@stdlib/Libdl`]
-  [37e2e46d] LinearAlgebra  [`@stdlib/LinearAlgebra`]
-  [56ddb016] Logging  [`@stdlib/Logging`]
-  [d6f4376e] Markdown  [`@stdlib/Markdown`]
-  [de0858da] Printf  [`@stdlib/Printf`]
-  [9a3f8284] Random  [`@stdlib/Random`]
-  [9e88b42a] Serialization  [`@stdlib/Serialization`]
-  [6462fe0b] Sockets  [`@stdlib/Sockets`]
-  [2f01184e] SparseArrays  [`@stdlib/SparseArrays`]
-  [10745b16] Statistics  [`@stdlib/Statistics`]
-  [8dfed614] Test  [`@stdlib/Test`]
-  [4ec0a83e] Unicode  [`@stdlib/Unicode`]
+  [2a0f44e3] Base64 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [de0858da] Printf 
+  [9a3f8284] Random 
+  [9e88b42a] Serialization 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [8dfed614] Test 
+  [4ec0a83e] Unicode 
 
 ⭐  Welcome to the[91m PosDefManifold.jl [0mpackage ⭐
 
 [ Info:  
- Your Machine `3ed5d6ceaa4b` (x86_64-pc-linux-gnu)
+ Your Machine `35458b167aae` (x86_64-pc-linux-gnu)
  runs on kernel Linux with word size 64.
  CPU  Threads: 64
  Base.Threads: 2
@@ -88,7 +93,7 @@ Environment:
 ⭐  Welcome to the[35m Diagonalizations.jl [0mpackage ⭐
 
 [ Info:  
- Your Machine `3ed5d6ceaa4b` (x86_64-pc-linux-gnu)
+ Your Machine `35458b167aae` (x86_64-pc-linux-gnu)
  runs on kernel Linux with word size 64.
  CPU  Threads: 64
  Base.Threads: 2
@@ -106,12 +111,27 @@ Test Summary: | Pass  Total
 CSP           |    7      7
 Test Summary: | Pass  Total
 CSTP          |    3      3
-Test Summary: | Pass  Total
-AJD           |   14     14
-Test Summary: | Pass  Total
-gMCA          |    3      3
-Test Summary: | Pass  Total
-gCCA          |   12     12
-Test Summary: | Pass  Total
-mAJD          |    1      1
-   Testing Diagonalizations tests passed 
+AJD: Test Failed at /home/pkgeval/.julia/packages/Diagonalizations/noSKS/test/runtests.jl:266
+  Expression: mean((nonD((a.F)' * Cset3[i] * a.F) for i = 1:k)) < err
+   Evaluated: 1.4301037739206544e-6 < 1.0e-6
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/Diagonalizations/noSKS/test/runtests.jl:266
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
+ [3] top-level scope at /home/pkgeval/.julia/packages/Diagonalizations/noSKS/test/runtests.jl:220
+Test Summary: | Pass  Fail  Total
+AJD           |   13     1     14
+ERROR: LoadError: Some tests did not pass: 13 passed, 1 failed, 0 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/Diagonalizations/noSKS/test/runtests.jl:219
+ERROR: Package Diagonalizations errored during testing
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
+ [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [11] top-level scope at none:16

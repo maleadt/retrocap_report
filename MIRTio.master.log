@@ -1,0 +1,63 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed URIParser ────────── v0.4.0
+  Installed OrderedCollections ─ v1.1.0
+  Installed BinDeps ──────────── v1.0.0
+    Cloning [274281c4-ae57-11e9-2014-65d3d5d9358c] MIRTio from https://github.com/JeffFessler/MIRTio.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MIRTio ───────────── v0.2.2
+    Cloning [631607c0-34d2-5d66-819e-eb0f9aa2061a] CMake from https://github.com/JuliaPackaging/CMake.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CMake ────────────── v1.2.0
+    Cloning [a74b3585-a348-5f62-a45c-50e91977d574] Blosc from https://github.com/stevengj/Blosc.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Blosc ────────────── v0.6.0
+    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ───── v0.5.8
+    Cloning [d5fb7624-851a-54ee-a528-d3f3bac0b4a0] CMakeWrapper from https://github.com/JuliaPackaging/CMakeWrapper.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CMakeWrapper ─────── v0.2.3
+    Cloning [f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f] HDF5 from https://github.com/JuliaIO/HDF5.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed HDF5 ─────────────── v0.12.5
+    Cloning [d96e819e-fc66-5662-9728-84c9c7592b0a] Parameters from https://github.com/mauro3/Parameters.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parameters ───────── v0.12.0
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [274281c4] + MIRTio v0.2.2
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [9e28174c] + BinDeps v1.0.0
+  [b99e7846] + BinaryProvider v0.5.8
+  [a74b3585] + Blosc v0.6.0
+  [631607c0] + CMake v1.2.0
+  [d5fb7624] + CMakeWrapper v0.2.3
+  [f67ccb44] + HDF5 v0.12.5
+  [274281c4] + MIRTio v0.2.2
+  [bac558e1] + OrderedCollections v1.1.0
+  [d96e819e] + Parameters v0.12.0
+  [30578b45] + URIParser v0.4.0
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [6462fe0b] + Sockets 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Building CMake → `~/.julia/packages/CMake/ULbyn/deps/build.log`

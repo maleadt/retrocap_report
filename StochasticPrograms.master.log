@@ -1,0 +1,473 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed Calculus ───────────────────── v0.5.1
+  Installed Missings ───────────────────── v0.4.3
+  Installed Reexport ───────────────────── v0.2.0
+  Installed Distances ──────────────────── v0.8.2
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed ReverseDiffSparse ──────────── v0.8.6
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed QuadGK ─────────────────────── v2.3.1
+  Installed MacroTools ─────────────────── v0.5.5
+  Installed DiffResults ────────────────── v1.0.2
+  Installed PDMats ─────────────────────── v0.9.12
+  Installed ForwardDiff ────────────────── v0.10.9
+  Installed OpenBLAS_jll ───────────────── v0.3.7+8
+  Installed Distributions ──────────────── v0.22.6
+  Installed StatsBase ──────────────────── v0.32.2
+  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
+  Installed Parameters ─────────────────── v0.12.0
+    Cloning [8b8459f2-c380-502b-8633-9aed2d6c2b35] StochasticPrograms from https://github.com/martinbiel/StochasticPrograms.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StochasticPrograms ─────────── v0.3.0
+    Cloning [9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a] DataAPI from https://github.com/JuliaData/DataAPI.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataAPI ────────────────────── v1.1.0
+    Cloning [b8a86587-4115-5ab1-83bc-aa920d37bbce] NearestNeighbors from https://github.com/KristofferC/NearestNeighbors.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NearestNeighbors ───────────── v0.4.4
+    Cloning [77ba4419-2d1f-58cd-9bb1-8ffee604a2e3] NaNMath from https://github.com/mlubin/NaNMath.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NaNMath ────────────────────── v0.3.3
+    Cloning [276daf66-3868-5448-9aa4-cd146d93841b] SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SpecialFunctions ───────────── v0.10.0
+    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ─────────── v1.1.0
+    Cloning [4c63d2b9-4356-54db-8cca-17b64c39e42c] StatsFuns from https://github.com/JuliaStats/StatsFuns.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StatsFuns ──────────────────── v0.9.4
+    Cloning [7d9fca2a-8960-54d3-9f78-7d1dccf2cb97] Arpack from https://github.com/JuliaLinearAlgebra/Arpack.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Arpack ─────────────────────── v0.4.0
+    Cloning [68821587-b530-5797-8361-c406ea357684] Arpack_jll from https://github.com/JuliaBinaryWrappers/Arpack_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Arpack_jll ─────────────────── v3.5.0+2
+    Cloning [b552c78f-8df3-52c6-915a-8e097449b14b] DiffRules from https://github.com/JuliaDiff/DiffRules.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffRules ──────────────────── v1.0.1
+    Cloning [f50d1b31-88e8-58de-be2c-1cc44531875f] Rmath_jll from https://github.com/JuliaBinaryWrappers/Rmath_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Rmath_jll ──────────────────── v0.2.2+0
+    Cloning [1a297f60-69ca-5386-bcde-b61e274b549b] FillArrays from https://github.com/JuliaArrays/FillArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FillArrays ─────────────────── v0.8.5
+    Cloning [34da2185-b29b-5c13-b0c7-acf172513d20] Compat from https://github.com/JuliaLang/Compat.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Compat ─────────────────────── v2.2.0
+    Cloning [aaaa29a8-35af-508c-8bc3-b662a17a0fe5] Clustering from https://github.com/JuliaStats/Clustering.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Clustering ─────────────────── v0.13.5
+    Cloning [fdba3010-5040-5b88-9595-932c9decdf73] MathProgBase from https://github.com/JuliaOpt/MathProgBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MathProgBase ───────────────── v0.7.8
+    Cloning [4076af6c-e467-56ae-b986-b466b2749572] JuMP from https://github.com/JuliaOpt/JuMP.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [===================================>     ]  86.9 %[2K[?25h  Installed JuMP ───────────────────────── v0.18.6
+    Cloning [bbf7d656-a473-5ed7-a52c-81e309532950] CommonSubexpressions from https://github.com/rdeits/CommonSubexpressions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CommonSubexpressions ───────── v0.2.0
+    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ───────────────── v0.12.1
+    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ─────────────── v0.17.10
+    Cloning [efe28fd5-8261-553b-a9e1-b2916fc3738e] OpenSpecFun_jll from https://github.com/JuliaBinaryWrappers/OpenSpecFun_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenSpecFun_jll ────────────── v0.5.3+3
+    Cloning [92933f4c-e287-5a05-a399-4b506db050ca] ProgressMeter from https://github.com/timholy/ProgressMeter.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ProgressMeter ──────────────── v1.2.0
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [8b8459f2] + StochasticPrograms v0.3.0
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+2
+  [49dc2e85] + Calculus v0.5.1
+  [aaaa29a8] + Clustering v0.13.5
+  [bbf7d656] + CommonSubexpressions v0.2.0
+  [34da2185] + Compat v2.2.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.1+0
+  [9a962f9c] + DataAPI v1.1.0
+  [864edb3b] + DataStructures v0.17.10
+  [163ba53b] + DiffResults v1.0.2
+  [b552c78f] + DiffRules v1.0.1
+  [b4f34e82] + Distances v0.8.2
+  [31c24e10] + Distributions v0.22.6
+  [1a297f60] + FillArrays v0.8.5
+  [f6369f11] + ForwardDiff v0.10.9
+  [4076af6c] + JuMP v0.18.6
+  [1914dd2f] + MacroTools v0.5.5
+  [fdba3010] + MathProgBase v0.7.8
+  [e1d29d7a] + Missings v0.4.3
+  [77ba4419] + NaNMath v0.3.3
+  [b8a86587] + NearestNeighbors v0.4.4
+  [4536629a] + OpenBLAS_jll v0.3.7+8
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+3
+  [bac558e1] + OrderedCollections v1.1.0
+  [90014a1f] + PDMats v0.9.12
+  [d96e819e] + Parameters v0.12.0
+  [92933f4c] + ProgressMeter v1.2.0
+  [1fd47b50] + QuadGK v2.3.1
+  [189a3867] + Reexport v0.2.0
+  [89212889] + ReverseDiffSparse v0.8.6
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.10.0
+  [90137ffa] + StaticArrays v0.12.1
+  [2913bbd2] + StatsBase v0.32.2
+  [4c63d2b9] + StatsFuns v0.9.4
+  [8b8459f2] + StochasticPrograms v0.3.0
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8bb1440f] + DelimitedFiles 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [1a1011a3] + SharedArrays 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [4607b0f0] + SuiteSparse 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+    Testing StochasticPrograms
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [=====>                                   ]  12.2 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [=>                                       ]  1.9 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_ET3XEl/Manifest.toml`
+  [7d9fca2a] Arpack v0.4.0
+  [68821587] Arpack_jll v3.5.0+2
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.8
+  [49dc2e85] Calculus v0.5.1
+  [aaaa29a8] Clustering v0.13.5
+  [523fee87] CodecBzip2 v0.6.0
+  [944b1d66] CodecZlib v0.6.0
+  [bbf7d656] CommonSubexpressions v0.2.0
+  [34da2185] Compat v2.2.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.1+0
+  [9a962f9c] DataAPI v1.1.0
+  [864edb3b] DataStructures v0.17.10
+  [163ba53b] DiffResults v1.0.2
+  [b552c78f] DiffRules v1.0.1
+  [b4f34e82] Distances v0.8.2
+  [31c24e10] Distributions v0.22.6
+  [1a297f60] FillArrays v0.8.5
+  [f6369f11] ForwardDiff v0.10.9
+  [60bf3e95] GLPK v0.12.1
+  [3c7084bd] GLPKMathProgInterface v0.4.4
+  [cd3eb016] HTTP v0.8.13
+  [83e8ac13] IniFile v0.5.0
+  [682c06a0] JSON v0.21.0
+  [7d188eb4] JSONSchema v0.2.0
+  [4076af6c] JuMP v0.18.6
+  [1914dd2f] MacroTools v0.5.5
+  [b8f27783] MathOptInterface v0.9.12
+  [fdba3010] MathProgBase v0.7.8
+  [739be429] MbedTLS v1.0.1
+  [c8ffd9c3] MbedTLS_jll v2.16.0+1
+  [e1d29d7a] Missings v0.4.3
+  [d8a4904e] MutableArithmetics v0.2.7
+  [77ba4419] NaNMath v0.3.3
+  [b8a86587] NearestNeighbors v0.4.4
+  [4536629a] OpenBLAS_jll v0.3.7+8
+  [efe28fd5] OpenSpecFun_jll v0.5.3+3
+  [bac558e1] OrderedCollections v1.1.0
+  [90014a1f] PDMats v0.9.12
+  [d96e819e] Parameters v0.12.0
+  [69de0a69] Parsers v0.3.12
+  [92933f4c] ProgressMeter v1.2.0
+  [1fd47b50] QuadGK v2.3.1
+  [189a3867] Reexport v0.2.0
+  [89212889] ReverseDiffSparse v0.8.6
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.10.0
+  [90137ffa] StaticArrays v0.12.1
+  [2913bbd2] StatsBase v0.32.2
+  [4c63d2b9] StatsFuns v0.9.4
+  [8b8459f2] StochasticPrograms v0.3.0
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8bb1440f] DelimitedFiles 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [4607b0f0] SuiteSparse 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+[ Info: Loading test problems...
+[ Info: Loading simple...
+[ Info: Loading instant simple...
+[ Info: Loading infeasible...
+[ Info: Loading deferred simple...
+[ Info: Loading farmer...
+[ Info: Loading sampler...
+[ Info: Test problems loaded. Starting test sequence.
+[ Info: Running functionality tests...
+Test Summary:                      | Pass  Total
+Stochastic Programs: Functionality |   88     88
+[ Info: Running L-shaped tests...
+[ Info: Running progressive-hedging tests...
+Test Summary:      | Pass  Total
+Structured Solvers |  329    329
+[ Info: Starting distributed tests...
+[ Info: Loading test problems...
+[ Info: Loading simple...
+[ Info: Loading instant simple...
+[ Info: Loading infeasible...
+[ Info: Loading deferred simple...
+[ Info: Loading farmer...
+[ Info: Loading sampler...
+[ Info: Test problems loaded. Starting test sequence.
+[ Info: Running functionality tests...
+Test Summary:                   | Pass  Total
+Distributed Stochastic Programs |  101    101
+[ Info: Running L-shaped tests...
+fatal error: unexpected signal during runtime execution
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x0]
+
+runtime stack:
+runtime: unexpected return pc for runtime.sigpanic called from 0x0
+stack: frame={sp:0x7fa7a4c5cc80, fp:0x7fa7a4c5ccb0} stack=[0x7fa7a445d288,0x7fa7a4c5ce88)
+00007fa7a4c5cb80:  000000c000130480  010055fc000003e8 
+00007fa7a4c5cb90:  0000000000000004  000000000000001f 
+00007fa7a4c5cba0:  0000000000000000  0000000000000000 
+00007fa7a4c5cbb0:  0000000000000001  000055fca228028c 
+00007fa7a4c5cbc0:  00007fa7a4c5cc08  000055fca0cbaac1 <runtime.fatalthrow.func1+97> 
+00007fa7a4c5cbd0:  000000c000130480  000055fca0c91194 <runtime.throw+116> 
+00007fa7a4c5cbe0:  00007fa7a4c5cc50  0000000000000001 
+00007fa7a4c5cbf0:  00007fa7a4c5cc50  000055fca0c91194 <runtime.throw+116> 
+00007fa7a4c5cc00:  000000c000130480  00007fa7a4c5cc40 
+00007fa7a4c5cc10:  000055fca0c91369 <runtime.fatalthrow+89>  00007fa7a4c5cc20 
+00007fa7a4c5cc20:  000055fca0cbaa60 <runtime.fatalthrow.func1+0>  000000c000130480 
+00007fa7a4c5cc30:  000055fca0c91194 <runtime.throw+116>  00007fa7a4c5cc50 
+00007fa7a4c5cc40:  00007fa7a4c5cc70  000055fca0c91194 <runtime.throw+116> 
+00007fa7a4c5cc50:  00007fa7a4c5cc58  000055fca0cba9d0 <runtime.throw.func1+0> 
+00007fa7a4c5cc60:  000055fca229b008  000000000000002a 
+00007fa7a4c5cc70:  00007fa7a4c5cca0  000055fca0ca5fdd <runtime.sigpanic+1197> 
+00007fa7a4c5cc80: <000055fca229b008  000000000000002a 
+00007fa7a4c5cc90:  0000000000000000  0000000000000000 
+00007fa7a4c5cca0:  00007fa7a4c5cce8 !0000000000000000 
+00007fa7a4c5ccb0: >0000000000000000  0000000000000000 
+00007fa7a4c5ccc0:  0000000000000000  0000000000000000 
+00007fa7a4c5ccd0:  0000000000000000  0000000000000000 
+00007fa7a4c5cce0:  0000000000000000  0000000000000000 
+00007fa7a4c5ccf0:  0000000000000000  0000000000000000 
+00007fa7a4c5cd00:  0000000000000000  0000000000000000 
+00007fa7a4c5cd10:  0000000000000000  0000000000000000 
+00007fa7a4c5cd20:  0000000000000000  0000000000000000 
+00007fa7a4c5cd30:  0000000000000000  0000000000000000 
+00007fa7a4c5cd40:  0000000000000000  0000000000000000 
+00007fa7a4c5cd50:  0000000000000000  0000000000000000 
+00007fa7a4c5cd60:  0000000000000000  0000000000000000 
+00007fa7a4c5cd70:  0000000000000000  0000000000000000 
+00007fa7a4c5cd80:  0000000000000000  0000000000000000 
+00007fa7a4c5cd90:  0000000000000000  0000000000000000 
+00007fa7a4c5cda0:  0000000000000000  0000000000000000 
+runtime.throw(0x55fca229b008, 0x2a)
+	/usr/local/go/src/runtime/panic.go:617 +0x74
+runtime: unexpected return pc for runtime.sigpanic called from 0x0
+stack: frame={sp:0x7fa7a4c5cc80, fp:0x7fa7a4c5ccb0} stack=[0x7fa7a445d288,0x7fa7a4c5ce88)
+00007fa7a4c5cb80:  000000c000130480  010055fc000003e8 
+00007fa7a4c5cb90:  0000000000000004  000000000000001f 
+00007fa7a4c5cba0:  0000000000000000  0000000000000000 
+00007fa7a4c5cbb0:  0000000000000001  000055fca228028c 
+00007fa7a4c5cbc0:  00007fa7a4c5cc08  000055fca0cbaac1 <runtime.fatalthrow.func1+97> 
+00007fa7a4c5cbd0:  000000c000130480  000055fca0c91194 <runtime.throw+116> 
+00007fa7a4c5cbe0:  00007fa7a4c5cc50  0000000000000001 
+00007fa7a4c5cbf0:  00007fa7a4c5cc50  000055fca0c91194 <runtime.throw+116> 
+00007fa7a4c5cc00:  000000c000130480  00007fa7a4c5cc40 
+00007fa7a4c5cc10:  000055fca0c91369 <runtime.fatalthrow+89>  00007fa7a4c5cc20 
+00007fa7a4c5cc20:  000055fca0cbaa60 <runtime.fatalthrow.func1+0>  000000c000130480 
+00007fa7a4c5cc30:  000055fca0c91194 <runtime.throw+116>  00007fa7a4c5cc50 
+00007fa7a4c5cc40:  00007fa7a4c5cc70  000055fca0c91194 <runtime.throw+116> 
+00007fa7a4c5cc50:  00007fa7a4c5cc58  000055fca0cba9d0 <runtime.throw.func1+0> 
+00007fa7a4c5cc60:  000055fca229b008  000000000000002a 
+00007fa7a4c5cc70:  00007fa7a4c5cca0  000055fca0ca5fdd <runtime.sigpanic+1197> 
+00007fa7a4c5cc80: <000055fca229b008  000000000000002a 
+00007fa7a4c5cc90:  0000000000000000  0000000000000000 
+00007fa7a4c5cca0:  00007fa7a4c5cce8 !0000000000000000 
+00007fa7a4c5ccb0: >0000000000000000  0000000000000000 
+00007fa7a4c5ccc0:  0000000000000000  0000000000000000 
+00007fa7a4c5ccd0:  0000000000000000  0000000000000000 
+00007fa7a4c5cce0:  0000000000000000  0000000000000000 
+00007fa7a4c5ccf0:  0000000000000000  0000000000000000 
+00007fa7a4c5cd00:  0000000000000000  0000000000000000 
+00007fa7a4c5cd10:  0000000000000000  0000000000000000 
+00007fa7a4c5cd20:  0000000000000000  0000000000000000 
+00007fa7a4c5cd30:  0000000000000000  0000000000000000 
+00007fa7a4c5cd40:  0000000000000000  0000000000000000 
+00007fa7a4c5cd50:  0000000000000000  0000000000000000 
+00007fa7a4c5cd60:  0000000000000000  0000000000000000 
+00007fa7a4c5cd70:  0000000000000000  0000000000000000 
+00007fa7a4c5cd80:  0000000000000000  0000000000000000 
+00007fa7a4c5cd90:  0000000000000000  0000000000000000 
+00007fa7a4c5cda0:  0000000000000000  0000000000000000 
+runtime.sigpanic()
+	/usr/local/go/src/runtime/signal_unix.go:374 +0x4ad
+
+goroutine 1 [select (scan), 22 minutes]:
+github.com/docker/cli/cli/command/container.(*hijackedIOStreamer).stream(0xc0005981c0, 0x55fca2df2480, 0xc00016a020, 0x0, 0x0)
+	/go/src/github.com/docker/cli/cli/command/container/hijack.go:58 +0x3a6
+github.com/docker/cli/cli/command/container.runAttach(0x55fca2e34980, 0xc00012c0f0, 0xc00062e540, 0x0, 0x0)
+	/go/src/github.com/docker/cli/cli/command/container/attach.go:137 +0x5b8
+github.com/docker/cli/cli/command/container.NewAttachCommand.func1(0xc00062d180, 0xc000118150, 0x1, 0x1, 0x0, 0x0)
+	/go/src/github.com/docker/cli/cli/command/container/attach.go:55 +0x69
+github.com/docker/cli/vendor/github.com/spf13/cobra.(*Command).execute(0xc00062d180, 0xc00033f7f0, 0x1, 0x1, 0xc00062d180, 0xc00033f7f0)
+	/go/src/github.com/docker/cli/vendor/github.com/spf13/cobra/command.go:762 +0x467
+github.com/docker/cli/vendor/github.com/spf13/cobra.(*Command).ExecuteC(0xc000216000, 0xc00033f7e0, 0x2, 0x2)
+	/go/src/github.com/docker/cli/vendor/github.com/spf13/cobra/command.go:852 +0x2ee
+github.com/docker/cli/vendor/github.com/spf13/cobra.(*Command).Execute(...)
+	/go/src/github.com/docker/cli/vendor/github.com/spf13/cobra/command.go:800
+main.runDocker(0xc00012c0f0, 0x55fca2d9cd80, 0xc00016c010)
+	/go/src/github.com/docker/cli/cmd/docker/docker.go:281 +0x1d5
+main.main()
+	/go/src/github.com/docker/cli/cmd/docker/docker.go:292 +0xf3
+
+goroutine 35 [syscall, 22 minutes]:
+os/signal.signal_recv(0x55fca0cbe2c6)
+	/usr/local/go/src/runtime/sigqueue.go:139 +0x9e
+os/signal.loop()
+	/usr/local/go/src/os/signal/signal_unix.go:23 +0x24
+created by os/signal.init.0
+	/usr/local/go/src/os/signal/signal_unix.go:29 +0x43
+
+goroutine 89 [chan receive]:
+github.com/docker/cli/vendor/k8s.io/klog.(*loggingT).flushDaemon(0x55fca3ff7da0)
+	/go/src/github.com/docker/cli/vendor/k8s.io/klog/klog.go:943 +0x8d
+created by github.com/docker/cli/vendor/k8s.io/klog.init.0
+	/go/src/github.com/docker/cli/vendor/k8s.io/klog/klog.go:403 +0x6e
+
+goroutine 92 [IO wait, 22 minutes]:
+internal/poll.runtime_pollWait(0x7fa7a4c6f030, 0x72, 0xffffffffffffffff)
+	/usr/local/go/src/runtime/netpoll.go:182 +0x58
+internal/poll.(*pollDesc).wait(0xc00069a098, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:87 +0x9d
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00069a080, 0xc0003ef000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:169 +0x19d
+net.(*netFD).Read(0xc00069a080, 0xc0003ef000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/fd_unix.go:202 +0x51
+net.(*conn).Read(0xc00016c030, 0xc0003ef000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:177 +0x6b
+net/http.(*persistConn).Read(0xc000694000, 0xc0003ef000, 0x1000, 0x1000, 0x55fca2ba76e0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:1527 +0x7d
+bufio.(*Reader).fill(0xc000144060)
+	/usr/local/go/src/bufio/bufio.go:100 +0x111
+bufio.(*Reader).ReadSlice(0xc000144060, 0x40a, 0x7fa7a74f1900, 0x20300000000000, 0x7fa7a76c2fff, 0x400, 0x20300000000000)
+	/usr/local/go/src/bufio/bufio.go:356 +0x3f
+net/http/internal.readChunkLine(0xc000144060, 0x55fca0c7bfc0, 0x7fa7a74f1800, 0x20300000000000, 0x7fa7a76c2fff, 0x7fa7a42bf618)
+	/usr/local/go/src/net/http/internal/chunked.go:122 +0x36
+net/http/internal.(*chunkedReader).beginChunk(0xc0005b8cc0)
+	/usr/local/go/src/net/http/internal/chunked.go:48 +0x34
+net/http/internal.(*chunkedReader).Read(0xc0005b8cc0, 0xc0005d0000, 0x200, 0x200, 0xc000455548, 0x55fca0c8fed1, 0x7fa700000008)
+	/usr/local/go/src/net/http/internal/chunked.go:93 +0x13c
+net/http.(*body).readLocked(0xc00012a0c0, 0xc0005d0000, 0x200, 0x200, 0x200, 0xc0005d0000, 0xc000455701)
+	/usr/local/go/src/net/http/transfer.go:816 +0x61
+net/http.(*body).Read(0xc00012a0c0, 0xc0005d0000, 0x200, 0x200, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transfer.go:808 +0xdd
+net/http.(*bodyEOFSignal).Read(0xc00012a100, 0xc0005d0000, 0x200, 0x200, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2351 +0xd5
+encoding/json.(*Decoder).refill(0xc000200840, 0x55fca2a3a3e0, 0x138)
+	/usr/local/go/src/encoding/json/stream.go:159 +0xfa
+encoding/json.(*Decoder).readValue(0xc000200840, 0x0, 0x0, 0x55fca2cd5ca0)
+	/usr/local/go/src/encoding/json/stream.go:134 +0x212
+encoding/json.(*Decoder).Decode(0xc000200840, 0x55fca29c7fa0, 0xc000118260, 0x55fca2d9cac0, 0xc00012a100)
+	/usr/local/go/src/encoding/json/stream.go:63 +0x7b
+github.com/docker/cli/vendor/github.com/docker/docker/client.(*Client).ContainerWait.func1(0x55fca2dc2ec0, 0xc00012a100, 0xc0005b8c30, 0xc8, 0xc00017e080, 0xc0002fc1e0, 0xc0001465a0)
+	/go/src/github.com/docker/cli/vendor/github.com/docker/docker/client/container_wait.go:48 +0x115
+created by github.com/docker/cli/vendor/github.com/docker/docker/client.(*Client).ContainerWait
+	/go/src/github.com/docker/cli/vendor/github.com/docker/docker/client/container_wait.go:45 +0x468
+
+goroutine 90 [select, 22 minutes]:
+net/http.(*persistConn).readLoop(0xc000694000)
+	/usr/local/go/src/net/http/transport.go:1801 +0x95c
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1360 +0xafa
+
+goroutine 91 [select, 22 minutes]:
+net/http.(*persistConn).writeLoop(0xc000694000)
+	/usr/local/go/src/net/http/transport.go:1979 +0x115
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1361 +0xb1f
+
+goroutine 95 [IO wait, 22 minutes]:
+internal/poll.runtime_pollWait(0x7fa7a4c6ef60, 0x72, 0xffffffffffffffff)
+	/usr/local/go/src/runtime/netpoll.go:182 +0x58
+internal/poll.(*pollDesc).wait(0xc00069a418, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:87 +0x9d
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00069a400, 0xc00034b000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:169 +0x19d
+net.(*netFD).Read(0xc00069a400, 0xc00034b000, 0x1000, 0x1000, 0x1, 0x55fca0c92fee, 0xc00065cb88)
+	/usr/local/go/src/net/fd_unix.go:202 +0x51
+net.(*conn).Read(0xc00016c0e8, 0xc00034b000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:177 +0x6b
+net/http.(*persistConn).Read(0xc0005c2000, 0xc00034b000, 0x1000, 0x1000, 0xc00065cc88, 0x55fca0c69455, 0xc0006900c0)
+	/usr/local/go/src/net/http/transport.go:1527 +0x7d
+bufio.(*Reader).fill(0xc000144360)
+	/usr/local/go/src/bufio/bufio.go:100 +0x111
+bufio.(*Reader).Peek(0xc000144360, 0x1, 0x0, 0x0, 0x1, 0xc000690100, 0x0)
+	/usr/local/go/src/bufio/bufio.go:138 +0x51
+net/http.(*persistConn).readLoop(0xc0005c2000)
+	/usr/local/go/src/net/http/transport.go:1680 +0x1a5
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1360 +0xafa
+
+goroutine 96 [select, 22 minutes]:
+net/http.(*persistConn).writeLoop(0xc0005c2000)
+	/usr/local/go/src/net/http/transport.go:1979 +0x115
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1361 +0xb1f
+
+goroutine 41 [chan receive, 22 minutes]:
+github.com/docker/cli/cli/command/container.ForwardAllSignals.func1(0xc000145680, 0x55fca2e34980, 0xc00012c0f0, 0x55fca2df2480, 0xc00016a020, 0x7ffdddcfa503, 0x28)
+	/go/src/github.com/docker/cli/cli/command/container/tty.go:104 +0x5d
+created by github.com/docker/cli/cli/command/container.ForwardAllSignals
+	/go/src/github.com/docker/cli/cli/command/container/tty.go:103 +0xb3
+
+goroutine 130 [IO wait, 6 minutes]:
+internal/poll.runtime_pollWait(0x7fa7a4c6ee90, 0x72, 0xffffffffffffffff)
+	/usr/local/go/src/runtime/netpoll.go:182 +0x58
+internal/poll.(*pollDesc).wait(0xc00052e118, 0x72, 0x8000, 0x8009, 0xffffffffffffffff)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:87 +0x9d
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00052e100, 0xc0002a2000, 0x8009, 0x8009, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:169 +0x19d
+net.(*netFD).Read(0xc00052e100, 0xc0002a2000, 0x8009, 0x8009, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/fd_unix.go:202 +0x51
+net.(*conn).Read(0xc000010008, 0xc0002a2000, 0x8009, 0x8009, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:177 +0x6b
+bufio.(*Reader).Read(0xc000688180, 0xc0002a2000, 0x8009, 0x8009, 0x22, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:209 +0x128
+github.com/docker/cli/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x55fca2d9a9c0, 0xc0003f5ef0, 0x55fca2d9cd80, 0xc00016c010, 0x55fca2d99f40, 0xc000688180, 0x0, 0x0, 0x0)
+	/go/src/github.com/docker/cli/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:108 +0xf1
+github.com/docker/cli/cli/command/container.(*hijackedIOStreamer).beginOutputStream.func1(0xc0005981c0, 0x55fca2d69f18, 0xc000686780)
+	/go/src/github.com/docker/cli/cli/command/container/hijack.go:129 +0x98
+created by github.com/docker/cli/cli/command/container.(*hijackedIOStreamer).beginOutputStream
+	/go/src/github.com/docker/cli/cli/command/container/hijack.go:118 +0x83

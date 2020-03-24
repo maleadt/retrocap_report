@@ -1,0 +1,269 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed Syslogs ────────────────────── v0.3.0
+  Installed MutableArithmetics ─────────── v0.2.7
+  Installed CodecZlib ──────────────────── v0.6.0
+  Installed ExprTools ──────────────────── v0.1.0
+  Installed ForwardDiff ────────────────── v0.10.9
+  Installed CommonSubexpressions ───────── v0.2.0
+  Installed BinaryProvider ─────────────── v0.5.8
+  Installed HTTP ───────────────────────── v0.8.13
+  Installed Memento ────────────────────── v1.0.0
+  Installed Mocking ────────────────────── v0.7.1
+    Cloning [49dc2e85-a5d0-5ad3-a950-438e2897f1b9] Calculus from https://github.com/JuliaMath/Calculus.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Calculus ───────────────────── v0.5.1
+    Cloning [2030c09a-7f63-5d83-885d-db604e0e9cc0] InfrastructureModels from https://github.com/lanl-ansi/InfrastructureModels.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed InfrastructureModels ───────── v0.4.2
+    Cloning [02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a] XML2_jll from https://github.com/JuliaBinaryWrappers/XML2_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed XML2_jll ───────────────────── v2.9.9+1
+    Cloning [77ba4419-2d1f-58cd-9bb1-8ffee604a2e3] NaNMath from https://github.com/mlubin/NaNMath.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NaNMath ────────────────────── v0.3.3
+    Cloning [3bb67fe8-82b1-5028-8e26-92a6c54297fa] TranscodingStreams from https://github.com/bicycle1885/TranscodingStreams.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TranscodingStreams ─────────── v0.9.5
+    Cloning [523fee87-0ab8-5b00-afb7-3ecf72e48cfd] CodecBzip2 from https://github.com/JuliaIO/CodecBzip2.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CodecBzip2 ─────────────────── v0.6.0
+    Cloning [276daf66-3868-5448-9aa4-cd146d93841b] SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SpecialFunctions ───────────── v0.10.0
+    Cloning [8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615] EzXML from https://github.com/bicycle1885/EzXML.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed EzXML ──────────────────────── v1.1.0
+    Cloning [69de0a69-1ddd-5017-9359-2bf0b02dc9f0] Parsers from https://github.com/JuliaData/Parsers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parsers ────────────────────── v0.3.12
+    Cloning [94ce4f54-9a6c-5748-9c1c-f9c7231a4531] Libiconv_jll from https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libiconv_jll ───────────────── v1.16.0+1
+    Cloning [7d188eb4-7ad8-530c-ae41-71a32a6d4692] JSONSchema from https://github.com/fredo-dedup/JSONSchema.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed JSONSchema ─────────────────── v0.2.0
+    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ─────────── v1.1.0
+    Cloning [f269a46b-ccf7-5d73-abea-4c690281aa53] TimeZones from https://github.com/JuliaTime/TimeZones.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TimeZones ──────────────────── v1.0.1
+    Cloning [83e8ac13-25f8-5344-8a64-a9f2b223428f] IniFile from https://github.com/JuliaIO/IniFile.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IniFile ────────────────────── v0.5.0
+    Cloning [b552c78f-8df3-52c6-915a-8e097449b14b] DiffRules from https://github.com/JuliaDiff/DiffRules.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffRules ──────────────────── v1.0.1
+    Cloning [163ba53b-c6d8-5494-b064-1a9d43ac40c5] DiffResults from https://github.com/JuliaDiff/DiffResults.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffResults ────────────────── v1.0.2
+    Cloning [b8f27783-ece8-5eb3-8dc8-9495eed66fee] MathOptInterface from https://github.com/JuliaOpt/MathOptInterface.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [==============>                          ]  33.2 %    Fetching: [========================================>]  99.8 %[2K[?25h  Installed MathOptInterface ───────────── v0.9.12
+    Cloning [83775a58-1f1d-513f-b197-d71354ab007a] Zlib_jll from https://github.com/JuliaBinaryWrappers/Zlib_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Zlib_jll ───────────────────── v1.2.11+8
+    Cloning [739be429-bea8-5141-9913-cc70e7f3736d] MbedTLS from https://github.com/JuliaLang/MbedTLS.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MbedTLS ────────────────────── v1.0.1
+    Cloning [4076af6c-e467-56ae-b986-b466b2749572] JuMP from https://github.com/JuliaOpt/JuMP.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [====>                                    ]  8.9 %[2K[?25h  Installed JuMP ───────────────────────── v0.21.1
+    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ───────────────── v0.12.1
+    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ─────────────── v0.17.10
+    Cloning [6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf] BenchmarkTools from https://github.com/JuliaCI/BenchmarkTools.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BenchmarkTools ─────────────── v0.5.0
+    Cloning [c8ffd9c3-330d-5841-b78e-0817d7145fa1] MbedTLS_jll from https://github.com/JuliaBinaryWrappers/MbedTLS_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MbedTLS_jll ────────────────── v2.16.0+1
+    Cloning [682c06a0-de6a-54ab-a142-c8b1cf79cde6] JSON from https://github.com/JuliaIO/JSON.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed JSON ───────────────────────── v0.21.0
+    Cloning [efe28fd5-8261-553b-a9e1-b2916fc3738e] OpenSpecFun_jll from https://github.com/JuliaBinaryWrappers/OpenSpecFun_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenSpecFun_jll ────────────── v0.5.3+3
+    Cloning [e66e0078-7015-5450-92f7-15fbd957f2ae] CompilerSupportLibraries_jll from https://github.com/JuliaBinaryWrappers/CompilerSupportLibraries_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [2030c09a] + InfrastructureModels v0.4.2
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [b99e7846] + BinaryProvider v0.5.8
+  [49dc2e85] + Calculus v0.5.1
+  [523fee87] + CodecBzip2 v0.6.0
+  [944b1d66] + CodecZlib v0.6.0
+  [bbf7d656] + CommonSubexpressions v0.2.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.1+0
+  [864edb3b] + DataStructures v0.17.10
+  [163ba53b] + DiffResults v1.0.2
+  [b552c78f] + DiffRules v1.0.1
+  [e2ba6199] + ExprTools v0.1.0
+  [8f5d6c58] + EzXML v1.1.0
+  [f6369f11] + ForwardDiff v0.10.9
+  [cd3eb016] + HTTP v0.8.13
+  [2030c09a] + InfrastructureModels v0.4.2
+  [83e8ac13] + IniFile v0.5.0
+  [682c06a0] + JSON v0.21.0
+  [7d188eb4] + JSONSchema v0.2.0
+  [4076af6c] + JuMP v0.21.1
+  [94ce4f54] + Libiconv_jll v1.16.0+1
+  [b8f27783] + MathOptInterface v0.9.12
+  [739be429] + MbedTLS v1.0.1
+  [c8ffd9c3] + MbedTLS_jll v2.16.0+1
+  [f28f55f0] + Memento v1.0.0
+  [78c3b35d] + Mocking v0.7.1
+  [d8a4904e] + MutableArithmetics v0.2.7
+  [77ba4419] + NaNMath v0.3.3
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+3
+  [bac558e1] + OrderedCollections v1.1.0
+  [69de0a69] + Parsers v0.3.12
+  [276daf66] + SpecialFunctions v0.10.0
+  [90137ffa] + StaticArrays v0.12.1
+  [cea106d9] + Syslogs v0.3.0
+  [f269a46b] + TimeZones v1.0.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [02c8fc9c] + XML2_jll v2.9.9+1
+  [83775a58] + Zlib_jll v1.2.11+8
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Building CodecBzip2 → `~/.julia/packages/CodecBzip2/T5yr7/deps/build.log`
+   Building TimeZones ─→ `~/.julia/packages/TimeZones/zymSN/deps/build.log`
+   Building CodecZlib ─→ `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+    Testing InfrastructureModels
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h┌ Error: Error building `ECOS`: 
+│ ┌ Warning: platform_key() is deprecated, use platform_key_abi() from now on
+│ │   caller = ip:0x0
+│ └ @ Core :-1
+│ [ Info: Downloading https://github.com/juan-pablo-vielma/ECOSBuilder/releases/download/v2.0.5-beta/ECOSBuilder.v2.0.5.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/ECOS/LcqTD/deps/usr/downloads/ECOSBuilder.v2.0.5.x86_64-linux-gnu.tar.gz...
+│ ERROR: LoadError: Could not download https://github.com/juan-pablo-vielma/ECOSBuilder/releases/download/v2.0.5-beta/ECOSBuilder.v2.0.5.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/ECOS/LcqTD/deps/usr/downloads/ECOSBuilder.v2.0.5.x86_64-linux-gnu.tar.gz:
+│ ErrorException("")
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:502
+│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
+│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
+│  [5] top-level scope at /home/pkgeval/.julia/packages/ECOS/LcqTD/deps/build.jl:38
+│  [6] include(::String) at ./client.jl:439
+│  [7] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/ECOS/LcqTD/deps/build.jl:32
+│ caused by [exception 1]
+│ 
+│ Stacktrace:
+│  [1] error() at ./error.jl:42
+│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:496
+│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
+│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
+│  [5] top-level scope at /home/pkgeval/.julia/packages/ECOS/LcqTD/deps/build.jl:38
+│  [6] include(::String) at ./client.jl:439
+│  [7] top-level scope at none:5
+│ [10:45:58] #=#=#                                                                         [10:45:58] 
+│ [10:45:58] curl: (22) The requested URL returned error: 401 UNAUTHORIZED
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:892
+Status `/tmp/jl_siaKx3/Manifest.toml`
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.8
+  [49dc2e85] Calculus v0.5.1
+  [523fee87] CodecBzip2 v0.6.0
+  [944b1d66] CodecZlib v0.6.0
+  [bbf7d656] CommonSubexpressions v0.2.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.1+0
+  [864edb3b] DataStructures v0.17.10
+  [163ba53b] DiffResults v1.0.2
+  [b552c78f] DiffRules v1.0.1
+  [e2685f51] ECOS v0.11.0
+  [e2ba6199] ExprTools v0.1.0
+  [8f5d6c58] EzXML v1.1.0
+  [f6369f11] ForwardDiff v0.10.9
+  [cd3eb016] HTTP v0.8.13
+  [2030c09a] InfrastructureModels v0.4.2
+  [83e8ac13] IniFile v0.5.0
+  [b6b21f68] Ipopt v0.6.1
+  [682c06a0] JSON v0.21.0
+  [7d188eb4] JSONSchema v0.2.0
+  [4076af6c] JuMP v0.21.1
+  [2ddba703] Juniper v0.6.2
+  [94ce4f54] Libiconv_jll v1.16.0+1
+  [b8f27783] MathOptInterface v0.9.12
+  [fdba3010] MathProgBase v0.7.8
+  [739be429] MbedTLS v1.0.1
+  [c8ffd9c3] MbedTLS_jll v2.16.0+1
+  [f28f55f0] Memento v1.0.0
+  [78c3b35d] Mocking v0.7.1
+  [d8a4904e] MutableArithmetics v0.2.7
+  [77ba4419] NaNMath v0.3.3
+  [efe28fd5] OpenSpecFun_jll v0.5.3+3
+  [bac558e1] OrderedCollections v1.1.0
+  [69de0a69] Parsers v0.3.12
+  [276daf66] SpecialFunctions v0.10.0
+  [90137ffa] StaticArrays v0.12.1
+  [cea106d9] Syslogs v0.3.0
+  [f269a46b] TimeZones v1.0.1
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [02c8fc9c] XML2_jll v2.9.9+1
+  [83775a58] Zlib_jll v1.2.11+8
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+ERROR: LoadError: ECOS not properly installed. Please run Pkg.build("ECOS")
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at /home/pkgeval/.julia/packages/ECOS/LcqTD/src/ECOS.jl:19
+ [3] include(::Module, ::String) at ./Base.jl:377
+ [4] top-level scope at none:2
+ [5] eval at ./boot.jl:331 [inlined]
+ [6] eval(::Expr) at ./client.jl:449
+ [7] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/ECOS/LcqTD/src/ECOS.jl:16
+ERROR: LoadError: Failed to precompile ECOS [e2685f51-7e38-5353-a97d-a921fd2c8199] to /home/pkgeval/.julia/compiled/v1.4/ECOS/2ivnJ_I93W7.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+ [3] _require(::Base.PkgId) at ./loading.jl:1029
+ [4] require(::Base.PkgId) at ./loading.jl:927
+ [5] require(::Module, ::Symbol) at ./loading.jl:922
+ [6] include(::String) at ./client.jl:439
+ [7] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/InfrastructureModels/ElsNP/test/runtests.jl:8
+ERROR: Package InfrastructureModels errored during testing
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
+ [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [11] top-level scope at none:16

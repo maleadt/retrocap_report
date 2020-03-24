@@ -1,0 +1,181 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed SMTPClient ─────── v0.3.1
+  Installed Primes ─────────── v0.4.0
+  Installed RecipesBase ────── v0.8.0
+  Installed PeaceFounder ───── v0.2.2
+  Installed Paillier ───────── v0.2.4
+    Cloning [3a3ce9e8-98e7-11e9-0fa0-055639f146d3] BitConverter from https://gitlab.com/braneproject/BitConverter.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BitConverter ───── v0.1.1
+    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ─── v0.5.8
+    Cloning [a99b485a-c5c8-540e-ab00-7a7265134077] ECC from https://gitlab.com/braneproject/ECC.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ECC ────────────── v0.2.3
+    Cloning [9279c0cf-0ddb-4a8a-93c9-19d312620a08] Synchronizers from https://github.com/PeaceFounder/Synchronizers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Synchronizers ──── v0.1.0
+    Cloning [b27032c2-a3e7-50c8-80cd-2d36dbcbfd21] LibCURL from https://github.com/JuliaWeb/LibCURL.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LibCURL ────────── v0.5.2
+    Cloning [0e61fee8-20a4-4374-8233-5198f28d9d66] DiffieHellman from https://github.com/PeaceFounder/DiffieHellman.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffieHellman ──── v0.3.0
+    Cloning [f27b6e38-b328-58d1-80ce-0feddd5e7a45] Polynomials from https://github.com/JuliaMath/Polynomials.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Polynomials ────── v0.6.1
+    Cloning [7475f97c-0381-53b1-977b-4c60186c8d62] Mods from https://github.com/scheinerman/Mods.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Mods ───────────── v0.1.0
+    Cloning [129db535-0459-46ad-8d3d-b1fb8f318c74] PeaceVote from https://github.com/PeaceFounder/PeaceVote.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PeaceVote ──────── v0.2.4
+    Cloning [d8f48be2-8af9-45f0-b400-11a6372d221d] Multiplexers from https://github.com/PeaceFounder/Multiplexers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Multiplexers ───── v0.3.1
+    Cloning [c4fd2470-c9f5-491f-b4e2-53b9059945a5] SynchronicBallot from https://github.com/PeaceFounder/SynchronicBallot.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SynchronicBallot ─ v0.2.1
+    Cloning [bc997328-bedd-407e-bcd3-5758e064a52d] CryptoGroups from https://github.com/PeaceFounder/CryptoGroups.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CryptoGroups ───── v0.1.2
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [916f7771] + PeaceFounder v0.2.2
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [b99e7846] + BinaryProvider v0.5.8
+  [3a3ce9e8] + BitConverter v0.1.1
+  [bc997328] + CryptoGroups v0.1.2
+  [0e61fee8] + DiffieHellman v0.3.0
+  [a99b485a] + ECC v0.2.3
+  [b27032c2] + LibCURL v0.5.2
+  [7475f97c] + Mods v0.1.0
+  [d8f48be2] + Multiplexers v0.3.1
+  [84e01822] + Paillier v0.2.4
+  [916f7771] + PeaceFounder v0.2.2
+  [129db535] + PeaceVote v0.2.4
+  [f27b6e38] + Polynomials v0.6.1
+  [27ebfcd6] + Primes v0.4.0
+  [3cdcf5f2] + RecipesBase v0.8.0
+  [c35d69d1] + SMTPClient v0.3.1
+  [c4fd2470] + SynchronicBallot v0.2.1
+  [9279c0cf] + Synchronizers v0.1.0
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [6462fe0b] + Sockets 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Building LibCURL → `~/.julia/packages/LibCURL/lWJxD/deps/build.log`
+    Testing PeaceFounder
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_aBUBjM/Manifest.toml`
+  [9e28174c] BinDeps v0.8.10
+  [b99e7846] BinaryProvider v0.5.8
+  [3a3ce9e8] BitConverter v0.1.1
+  [34da2185] Compat v2.2.0
+  [bc997328] CryptoGroups v0.1.2
+  [35cc5888] CryptoSignatures v0.2.2
+  [0e61fee8] DiffieHellman v0.3.0
+  [a99b485a] ECC v0.2.3
+  [b27032c2] LibCURL v0.5.2
+  [7475f97c] Mods v0.1.0
+  [d8f48be2] Multiplexers v0.3.1
+  [49dea1ee] Nettle v0.4.0
+  [84e01822] Paillier v0.2.4
+  [7743456c] PeaceCypher v0.1.2
+  [916f7771] PeaceFounder v0.2.2
+  [129db535] PeaceVote v0.2.4
+  [f27b6e38] Polynomials v0.6.1
+  [27ebfcd6] Primes v0.4.0
+  [3cdcf5f2] RecipesBase v0.8.0
+  [c35d69d1] SMTPClient v0.3.1
+  [ee77041e] SecureIO v0.3.0
+  [c4fd2470] SynchronicBallot v0.2.1
+  [9279c0cf] Synchronizers v0.1.0
+  [30578b45] URIParser v0.4.0
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8bb1440f] DelimitedFiles 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+WARNING: could not import Base.ctranspose into Mods
+WARNING: Method definition @async(LineNumberNode, Module, Any) in module Base at task.jl:356 overwritten in module Certifiers at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/src/debug.jl:7.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition @async(LineNumberNode, Module, Any) in module Certifiers at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/src/debug.jl:7 overwritten in module BraidChains at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/src/debug.jl:7.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition @async(LineNumberNode, Module, Any) in module BraidChains at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/src/debug.jl:7 overwritten in module PeaceFounder at /home/pkgeval/.julia/packages/PeaceFounder/sZN9Z/src/debug.jl:7.
+  ** incremental compilation may be fatally broken for this module **
+
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+cert = certify(config, deme, id, tooken) = PeaceVote.Certificate{PeaceFounder.Types.PFID}(PeaceFounder.Types.PFID("Person X", "Date X", PeaceVote.ID(20886372349691673462332299231484603046712471668573078725541152139747796930474)), Dict{Any,Any}("hash" => "65fdf0e137b515c72557498b4bb829057afe1f63cdfe2b283d165b717816b6fb","r" => "c37aefde25db6cde9a41d633b5e1109af1a0f5a1c1c93944dea1beaa280cdfef","pub" => "3486f3c16242dc5d7aab2e2485a2eb2c8be7d1ef106a05e15417bad4a27ca0009","s" => "f9f54a35c076a1730194b232994818cffe696b90d5f61c6e3e6392e66f9b3bf1"))
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+consentbraid = Consensus(contractbraid, deme.notary) = PeaceVote.Consensus{PeaceFounder.Types.Braid}(PeaceFounder.Types.Braid(nothing, nothing, Any[PeaceVote.ID(21403948846322614489933468533250103310333137319855993892260688934849091824973), PeaceVote.ID(26169499673096736115718659244797953253511995538522327879179340733420702665383), PeaceVote.ID(92686329662587048194182178762289631198822331545996343156538132862154174237419)]), PeaceVote.ID[PeaceVote.ID(75458839064193139300669499931167645804393329622566521098019663267001124584898), PeaceVote.ID(71093702897637765347078937352321700551245024781738337376947837460133305373316), PeaceVote.ID(7704509414070101502359065886517284222914475965307376670546499753867686300436)])
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+register(recorderconfig, cert) = nothing
+[ Info: Creating a new signer for the community
+register(recorderconfig, cert) = nothing
+[ Info: Creating a new signer for the community
+register(recorderconfig, cert) = nothing
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+register(deme, cert) = nothing
+[ Info: Creating a new signer for the community
+register(deme, cert) = nothing
+[ Info: Creating a new signer for the community
+[ Info: Spending tooken for certificate
+[ Info: Registering the certificate in the ledger
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+[ Info: Creating a new signer for the community
+tally = count(index, proposal.document, deme) = [2, 0, 1]
+tally = count(index, proposal.document, demesync) = [2, 0, 1]
+    Testing PeaceFounder tests passed 

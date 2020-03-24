@@ -1,0 +1,158 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed CMake ────────────── v1.2.0
+  Installed Parameters ───────── v0.12.0
+  Installed MathProgBase ─────── v0.7.8
+    Cloning [76087f3c-5699-56af-9a33-bf431cd00edd] NLopt from https://github.com/JuliaOpt/NLopt.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NLopt ────────────── v0.5.1
+    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ───── v0.5.8
+    Cloning [d5fb7624-851a-54ee-a528-d3f3bac0b4a0] CMakeWrapper from https://github.com/JuliaPackaging/CMakeWrapper.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CMakeWrapper ─────── v0.2.3
+    Cloning [30578b45-9adc-5946-b283-645ec420af67] URIParser from https://github.com/JuliaWeb/URIParser.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed URIParser ────────── v0.4.0
+    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ─ v1.1.0
+    Cloning [9e28174c-4ba2-5203-b857-d8d62c4213ee] BinDeps from https://github.com/JuliaPackaging/BinDeps.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinDeps ──────────── v1.0.0
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [76087f3c] + NLopt v0.5.1
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [9e28174c] + BinDeps v1.0.0
+  [b99e7846] + BinaryProvider v0.5.8
+  [631607c0] + CMake v1.2.0
+  [d5fb7624] + CMakeWrapper v0.2.3
+  [fdba3010] + MathProgBase v0.7.8
+  [76087f3c] + NLopt v0.5.1
+  [bac558e1] + OrderedCollections v1.1.0
+  [d96e819e] + Parameters v0.12.0
+  [30578b45] + URIParser v0.4.0
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Building CMake → `~/.julia/packages/CMake/ULbyn/deps/build.log`
+   Building NLopt → `~/.julia/packages/NLopt/eqN9a/deps/build.log`
+┌ Error: Error building `NLopt`: 
+│ ┌ Warning: platform_key() is deprecated, use platform_key_abi() from now on
+│ │   caller = ip:0x0
+│ └ @ Core :-1
+│ [ Info: Downloading https://github.com/stevengj/NLoptBuilder/releases/download/v2.5.0/NLopt.v2.5.0.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/NLopt/eqN9a/deps/usr/downloads/NLopt.v2.5.0.x86_64-linux-gnu.tar.gz...
+│ ERROR: LoadError: Could not download https://github.com/stevengj/NLoptBuilder/releases/download/v2.5.0/NLopt.v2.5.0.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/NLopt/eqN9a/deps/usr/downloads/NLopt.v2.5.0.x86_64-linux-gnu.tar.gz:
+│ ErrorException("")
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:502
+│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
+│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
+│  [5] top-level scope at /home/pkgeval/.julia/packages/NLopt/eqN9a/deps/build.jl:45
+│  [6] include(::String) at ./client.jl:439
+│  [7] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/NLopt/eqN9a/deps/build.jl:41
+│ caused by [exception 1]
+│ 
+│ Stacktrace:
+│  [1] error() at ./error.jl:42
+│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:496
+│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
+│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
+│  [5] top-level scope at /home/pkgeval/.julia/packages/NLopt/eqN9a/deps/build.jl:45
+│  [6] include(::String) at ./client.jl:439
+│  [7] top-level scope at none:5
+│ [11:27:53] #=#=#                                                                         [11:27:53] ##O#- #                                                                       [11:27:53] 
+│ [11:27:53] curl: (22) The requested URL returned error: 401 UNAUTHORIZED
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:892
+    Testing NLopt
+Status `/tmp/jl_lSrzwk/Manifest.toml`
+  [9e28174c] BinDeps v1.0.0
+  [b99e7846] BinaryProvider v0.5.8
+  [631607c0] CMake v1.2.0
+  [d5fb7624] CMakeWrapper v0.2.3
+  [fdba3010] MathProgBase v0.7.8
+  [76087f3c] NLopt v0.5.1
+  [bac558e1] OrderedCollections v1.1.0
+  [d96e819e] Parameters v0.12.0
+  [30578b45] URIParser v0.4.0
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+ERROR: LoadError: NLopt not installed properly; run Pkg.build("NLopt"), restart Julia, and try again.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at /home/pkgeval/.julia/packages/NLopt/eqN9a/src/NLopt.jl:16
+ [3] include(::Module, ::String) at ./Base.jl:377
+ [4] top-level scope at none:2
+ [5] eval at ./boot.jl:331 [inlined]
+ [6] eval(::Expr) at ./client.jl:449
+ [7] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/NLopt/eqN9a/src/NLopt.jl:15
+ERROR: LoadError: LoadError: Failed to precompile NLopt [76087f3c-5699-56af-9a33-bf431cd00edd] to /home/pkgeval/.julia/compiled/v1.4/NLopt/faRdv_84alm.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+ [3] _require(::Base.PkgId) at ./loading.jl:1029
+ [4] require(::Base.PkgId) at ./loading.jl:927
+ [5] require(::Module, ::Symbol) at ./loading.jl:922
+ [6] include(::String) at ./client.jl:439
+ [7] top-level scope at /home/pkgeval/.julia/packages/NLopt/eqN9a/test/runtests.jl:1
+ [8] include(::String) at ./client.jl:439
+ [9] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/NLopt/eqN9a/test/tutorial.jl:1
+in expression starting at /home/pkgeval/.julia/packages/NLopt/eqN9a/test/runtests.jl:1
+ERROR: Package NLopt errored during testing
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
+ [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [11] top-level scope at none:16
