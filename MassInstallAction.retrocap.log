@@ -1,244 +1,0 @@
-Julia Version 1.4.0
-Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
-Platform Info:
-  OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
-  WORD_SIZE: 64
-  LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
-Environment:
-  JULIA_DEPOT_PATH = ::/usr/local/share/julia
-  JULIA_NUM_THREADS = 2
-
-  Resolving package versions...
-  Installed Expat_jll ───────── v2.2.7+0
-  Installed XML2_jll ────────── v2.9.9+1
-  Installed LibCURL_jll ─────── v7.68.0+0
-  Installed JSON ────────────── v0.21.0
-  Installed HTTP ────────────── v0.8.13
-  Installed Gettext_jll ─────── v0.20.1+1
-  Installed Libiconv_jll ────── v1.16.0+1
-  Installed PCRE2_jll ───────── v10.31.0+1
-    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ──── v0.5.8
-    Cloning [e162569b-3ff4-40cf-b055-1e5f8042da73] MassInstallAction from https://github.com/bcbi/MassInstallAction.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MassInstallAction ─ v0.1.0
-    Cloning [f8c6e375-362e-5223-8a59-34ff63f689eb] Git_jll from https://github.com/JuliaBinaryWrappers/Git_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Git_jll ─────────── v2.23.0+1
-    Cloning [c8ffd9c3-330d-5841-b78e-0817d7145fa1] MbedTLS_jll from https://github.com/JuliaBinaryWrappers/MbedTLS_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MbedTLS_jll ─────── v2.16.0+1
-    Cloning [83e8ac13-25f8-5344-8a64-a9f2b223428f] IniFile from https://github.com/JuliaIO/IniFile.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IniFile ─────────── v0.5.0
-    Cloning [69de0a69-1ddd-5017-9359-2bf0b02dc9f0] Parsers from https://github.com/JuliaData/Parsers.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parsers ─────────── v0.3.12
-    Cloning [739be429-bea8-5141-9913-cc70e7f3736d] MbedTLS from https://github.com/JuliaLang/MbedTLS.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MbedTLS ─────────── v0.7.0
-    Cloning [83775a58-1f1d-513f-b197-d71354ab007a] Zlib_jll from https://github.com/JuliaBinaryWrappers/Zlib_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Zlib_jll ────────── v1.2.11+8
-    Cloning [49b5b516-ca3f-4003-a081-42bdcf55082d] GitCommand from https://github.com/bcbi/GitCommand.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GitCommand ──────── v1.1.0
-    Cloning [bc5e4493-9b4d-5f90-b8aa-2b2bcaad7a26] GitHub from https://github.com/JuliaWeb/GitHub.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GitHub ──────────── v5.1.4
-    Cloning [b873ce64-0db9-51f5-a568-4457d8e49576] ReplMaker from https://github.com/MasonProtter/ReplMaker.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ReplMaker ───────── v0.2.3
-    Cloning [458c3c95-2e84-50aa-8efc-19380b2a3a95] OpenSSL_jll from https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenSSL_jll ─────── v1.1.1+1
-    Cloning [29816b5a-b9ab-546f-933c-edad1886dfa8] LibSSH2_jll from https://github.com/JuliaBinaryWrappers/LibSSH2_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LibSSH2_jll ─────── v1.9.0+1
-#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ##=O#- #                                                                      #-#O=#  #                                                                                                                                                0.0%                                                                           0.1%                                                                           0.5%#                                                                          1.9%##                                                                         3.2%#####                                                                      7.8%######                                                                     9.4%#######                                                                   11.1%#########                                                                 13.5%###########                                                               15.4%############                                                              17.3%#############                                                             19.0%##############                                                            20.6%################                                                          22.4%#################                                                         24.3%##################                                                        26.4%####################                                                      28.6%######################                                                    30.6%#######################                                                   32.3%#######################                                                   32.7%#########################                                                 36.1%###########################                                               37.5%############################                                              39.0%############################                                              39.8%##############################                                            42.2%###############################                                           43.1%###############################                                           44.1%################################                                          45.6%#################################                                         46.3%#################################                                         47.1%##################################                                        47.8%###################################                                       48.9%###################################                                       49.4%####################################                                      50.0%####################################                                      50.5%####################################                                      51.0%#####################################                                     51.7%#####################################                                     52.2%#####################################                                     52.7%######################################                                    53.3%######################################                                    53.9%#######################################                                   54.4%#######################################                                   55.1%########################################                                  55.6%########################################                                  56.1%########################################                                  56.9%#########################################                                 57.5%#########################################                                 58.1%##########################################                                58.7%##########################################                                59.2%###########################################                               59.9%###########################################                               60.5%############################################                              61.3%############################################                              61.9%############################################                              62.5%#############################################                             63.1%#############################################                             63.7%##############################################                            64.2%##############################################                            64.9%###############################################                           65.5%###############################################                           66.1%################################################                          66.9%################################################                          67.5%#################################################                         68.1%#################################################                         68.7%#################################################                         69.3%##################################################                        69.9%##################################################                        70.6%###################################################                       71.1%###################################################                       71.9%####################################################                      72.5%####################################################                      73.1%#####################################################                     73.7%#####################################################                     74.3%#####################################################                     74.8%######################################################                    75.4%######################################################                    76.0%#######################################################                   76.6%#######################################################                   77.2%########################################################                  78.2%########################################################                  78.7%#########################################################                 79.3%#########################################################                 79.9%#########################################################                 80.4%##########################################################                81.0%##########################################################                81.6%###########################################################               82.2%###########################################################               82.8%############################################################              83.4%############################################################              84.1%#############################################################             84.9%#############################################################             85.5%#############################################################             86.1%##############################################################            86.4%###############################################################           87.5%###############################################################           88.0%###############################################################           88.5%################################################################          88.9%################################################################          89.3%################################################################          89.8%#################################################################         90.4%#################################################################         90.9%#################################################################         91.5%##################################################################        91.9%##################################################################        92.5%##################################################################        93.0%###################################################################       93.5%###################################################################       94.1%####################################################################      94.6%####################################################################      95.1%####################################################################      95.7%#####################################################################     96.3%#####################################################################     96.8%######################################################################    97.6%######################################################################    98.2%#######################################################################   98.8%#######################################################################   99.4%#######################################################################   99.9%######################################################################## 100.0%
-#=#=#                                                                         ##O#- #                                                                       ######################################################################## 100.0%##O=#  #                                                                      #-#O=#  #                                                                      #=#=-#   #                                                                                                                                              1.3%#####                                                                      7.1%#############                                                             18.5%############################################                              61.3%######################################################################## 100.0%
-   Updating `~/.julia/environments/v1.4/Project.toml`
-  [e162569b] + MassInstallAction v0.1.0
-   Updating `~/.julia/environments/v1.4/Manifest.toml`
-  [b99e7846] + BinaryProvider v0.5.8
-  [2e619515] + Expat_jll v2.2.7+0
-  [78b55507] + Gettext_jll v0.20.1+1
-  [49b5b516] + GitCommand v1.1.0
-  [bc5e4493] + GitHub v5.1.4
-  [f8c6e375] + Git_jll v2.23.0+1
-  [cd3eb016] + HTTP v0.8.13
-  [83e8ac13] + IniFile v0.5.0
-  [682c06a0] + JSON v0.21.0
-  [deac9b47] + LibCURL_jll v7.68.0+0
-  [29816b5a] + LibSSH2_jll v1.9.0+1
-  [94ce4f54] + Libiconv_jll v1.16.0+1
-  [e162569b] + MassInstallAction v0.1.0
-  [739be429] + MbedTLS v0.7.0
-  [c8ffd9c3] + MbedTLS_jll v2.16.0+1
-  [458c3c95] + OpenSSL_jll v1.1.1+1
-  [efcefdf7] + PCRE2_jll v10.31.0+1
-  [69de0a69] + Parsers v0.3.12
-  [b873ce64] + ReplMaker v0.2.3
-  [02c8fc9c] + XML2_jll v2.9.9+1
-  [83775a58] + Zlib_jll v1.2.11+8
-  [2a0f44e3] + Base64 
-  [ade2ca70] + Dates 
-  [8ba89e20] + Distributed 
-  [b77e0a4c] + InteractiveUtils 
-  [76f85450] + LibGit2 
-  [8f399da3] + Libdl 
-  [56ddb016] + Logging 
-  [d6f4376e] + Markdown 
-  [a63ad114] + Mmap 
-  [44cfe95a] + Pkg 
-  [de0858da] + Printf 
-  [3fa0cd96] + REPL 
-  [9a3f8284] + Random 
-  [ea8e919c] + SHA 
-  [9e88b42a] + Serialization 
-  [6462fe0b] + Sockets 
-  [8dfed614] + Test 
-  [cf7118a7] + UUIDs 
-  [4ec0a83e] + Unicode 
-   Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
-┌ Error: Error building `MbedTLS`: 
-│ ┌ Warning: platform_key() is deprecated, use platform_key_abi() from now on
-│ │   caller = ip:0x0
-│ └ @ Core :-1
-│ [ Info: Downloading https://github.com/JuliaWeb/MbedTLSBuilder/releases/download/v0.17.0/MbedTLS.v2.16.0.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/MbedTLS/a1JFn/deps/usr/downloads/MbedTLS.v2.16.0.x86_64-linux-gnu.tar.gz...
-│ ERROR: LoadError: Could not download https://github.com/JuliaWeb/MbedTLSBuilder/releases/download/v0.17.0/MbedTLS.v2.16.0.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/MbedTLS/a1JFn/deps/usr/downloads/MbedTLS.v2.16.0.x86_64-linux-gnu.tar.gz:
-│ ErrorException("")
-│ Stacktrace:
-│  [1] error(::String) at ./error.jl:33
-│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:502
-│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
-│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
-│  [5] top-level scope at /home/pkgeval/.julia/packages/MbedTLS/a1JFn/deps/build.jl:48
-│  [6] include(::String) at ./client.jl:439
-│  [7] top-level scope at none:5
-│ in expression starting at /home/pkgeval/.julia/packages/MbedTLS/a1JFn/deps/build.jl:44
-│ caused by [exception 1]
-│ 
-│ Stacktrace:
-│  [1] error() at ./error.jl:42
-│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:496
-│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
-│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
-│  [5] top-level scope at /home/pkgeval/.julia/packages/MbedTLS/a1JFn/deps/build.jl:48
-│  [6] include(::String) at ./client.jl:439
-│  [7] top-level scope at none:5
-│ [10:50:55] #=#=#                                                                         [10:50:55] ##O#- #                                                                       [10:50:55] 
-│ [10:50:55] curl: (22) The requested URL returned error: 401 UNAUTHORIZED
-└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:892
-    Testing MassInstallAction
-Status `/tmp/jl_i2TsUA/Manifest.toml`
-  [b99e7846] BinaryProvider v0.5.8
-  [2e619515] Expat_jll v2.2.7+0
-  [78b55507] Gettext_jll v0.20.1+1
-  [49b5b516] GitCommand v1.1.0
-  [bc5e4493] GitHub v5.1.4
-  [f8c6e375] Git_jll v2.23.0+1
-  [cd3eb016] HTTP v0.8.13
-  [83e8ac13] IniFile v0.5.0
-  [682c06a0] JSON v0.21.0
-  [deac9b47] LibCURL_jll v7.68.0+0
-  [29816b5a] LibSSH2_jll v1.9.0+1
-  [94ce4f54] Libiconv_jll v1.16.0+1
-  [e162569b] MassInstallAction v0.1.0
-  [739be429] MbedTLS v0.7.0
-  [c8ffd9c3] MbedTLS_jll v2.16.0+1
-  [458c3c95] OpenSSL_jll v1.1.1+1
-  [efcefdf7] PCRE2_jll v10.31.0+1
-  [69de0a69] Parsers v0.3.12
-  [b873ce64] ReplMaker v0.2.3
-  [02c8fc9c] XML2_jll v2.9.9+1
-  [83775a58] Zlib_jll v1.2.11+8
-  [2a0f44e3] Base64 
-  [ade2ca70] Dates 
-  [8ba89e20] Distributed 
-  [b77e0a4c] InteractiveUtils 
-  [76f85450] LibGit2 
-  [8f399da3] Libdl 
-  [56ddb016] Logging 
-  [d6f4376e] Markdown 
-  [a63ad114] Mmap 
-  [44cfe95a] Pkg 
-  [de0858da] Printf 
-  [3fa0cd96] REPL 
-  [9a3f8284] Random 
-  [ea8e919c] SHA 
-  [9e88b42a] Serialization 
-  [6462fe0b] Sockets 
-  [8dfed614] Test 
-  [cf7118a7] UUIDs 
-  [4ec0a83e] Unicode 
-ERROR: LoadError: MbedTLS not installed properly, run Pkg.build("MbedTLS"), restart Julia and try again
-Stacktrace:
- [1] error(::String) at ./error.jl:33
- [2] top-level scope at /home/pkgeval/.julia/packages/MbedTLS/a1JFn/src/MbedTLS.jl:43
- [3] include(::Module, ::String) at ./Base.jl:377
- [4] top-level scope at none:2
- [5] eval at ./boot.jl:331 [inlined]
- [6] eval(::Expr) at ./client.jl:449
- [7] top-level scope at ./none:3
-in expression starting at /home/pkgeval/.julia/packages/MbedTLS/a1JFn/src/MbedTLS.jl:42
-ERROR: LoadError: LoadError: Failed to precompile MbedTLS [739be429-bea8-5141-9913-cc70e7f3736d] to /home/pkgeval/.julia/compiled/v1.4/MbedTLS/bf9T0_9CpDX.ji.
-Stacktrace:
- [1] error(::String) at ./error.jl:33
- [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
- [3] _require(::Base.PkgId) at ./loading.jl:1029
- [4] require(::Base.PkgId) at ./loading.jl:927
- [5] require(::Module, ::Symbol) at ./loading.jl:922
- [6] include(::Module, ::String) at ./Base.jl:377
- [7] include(::String) at /home/pkgeval/.julia/packages/HTTP/facW7/src/HTTP.jl:1
- [8] top-level scope at /home/pkgeval/.julia/packages/HTTP/facW7/src/HTTP.jl:18
- [9] include(::Module, ::String) at ./Base.jl:377
- [10] top-level scope at none:2
- [11] eval at ./boot.jl:331 [inlined]
- [12] eval(::Expr) at ./client.jl:449
- [13] top-level scope at ./none:3
-in expression starting at /home/pkgeval/.julia/packages/HTTP/facW7/src/IOExtras.jl:11
-in expression starting at /home/pkgeval/.julia/packages/HTTP/facW7/src/HTTP.jl:18
-ERROR: LoadError: Failed to precompile HTTP [cd3eb016-35fb-5094-929b-558a96fad6f3] to /home/pkgeval/.julia/compiled/v1.4/HTTP/zXWya_9CpDX.ji.
-Stacktrace:
- [1] error(::String) at ./error.jl:33
- [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
- [3] _require(::Base.PkgId) at ./loading.jl:1029
- [4] require(::Base.PkgId) at ./loading.jl:927
- [5] require(::Module, ::Symbol) at ./loading.jl:922
- [6] include(::Module, ::String) at ./Base.jl:377
- [7] top-level scope at none:2
- [8] eval at ./boot.jl:331 [inlined]
- [9] eval(::Expr) at ./client.jl:449
- [10] top-level scope at ./none:3
-in expression starting at /home/pkgeval/.julia/packages/GitHub/erMbA/src/GitHub.jl:11
-ERROR: LoadError: LoadError: Failed to precompile GitHub [bc5e4493-9b4d-5f90-b8aa-2b2bcaad7a26] to /home/pkgeval/.julia/compiled/v1.4/GitHub/ks6Kg_9CpDX.ji.
-Stacktrace:
- [1] error(::String) at ./error.jl:33
- [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
- [3] _require(::Base.PkgId) at ./loading.jl:1029
- [4] require(::Base.PkgId) at ./loading.jl:927
- [5] require(::Module, ::Symbol) at ./loading.jl:922
- [6] include(::Module, ::String) at ./Base.jl:377
- [7] include(::String) at /home/pkgeval/.julia/packages/MassInstallAction/yvD6x/src/MassInstallAction.jl:1
- [8] top-level scope at /home/pkgeval/.julia/packages/MassInstallAction/yvD6x/src/MassInstallAction.jl:5
- [9] include(::Module, ::String) at ./Base.jl:377
- [10] top-level scope at none:2
- [11] eval at ./boot.jl:331 [inlined]
- [12] eval(::Expr) at ./client.jl:449
- [13] top-level scope at ./none:3
-in expression starting at /home/pkgeval/.julia/packages/MassInstallAction/yvD6x/src/public.jl:2
-in expression starting at /home/pkgeval/.julia/packages/MassInstallAction/yvD6x/src/MassInstallAction.jl:5
-ERROR: LoadError: Failed to precompile MassInstallAction [e162569b-3ff4-40cf-b055-1e5f8042da73] to /home/pkgeval/.julia/compiled/v1.4/MassInstallAction/kVUEA_9CpDX.ji.
-Stacktrace:
- [1] error(::String) at ./error.jl:33
- [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
- [3] _require(::Base.PkgId) at ./loading.jl:1029
- [4] require(::Base.PkgId) at ./loading.jl:927
- [5] require(::Module, ::Symbol) at ./loading.jl:922
- [6] include(::String) at ./client.jl:439
- [7] top-level scope at none:6
-in expression starting at /home/pkgeval/.julia/packages/MassInstallAction/yvD6x/test/runtests.jl:1
-ERROR: Package MassInstallAction errored during testing
-Stacktrace:
- [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
- [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
- [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
- [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
- [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
- [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
- [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
- [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
- [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
- [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
- [11] top-level scope at none:16

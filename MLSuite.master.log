@@ -1,148 +1,0 @@
-Julia Version 1.4.0
-Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
-Platform Info:
-  OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
-  WORD_SIZE: 64
-  LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
-Environment:
-  JULIA_DEPOT_PATH = ::/usr/local/share/julia
-  JULIA_NUM_THREADS = 2
-
-  Resolving package versions...
-  Installed DataAPI ───────────────────── v1.1.0
-  Installed CMakeWrapper ──────────────── v0.2.3
-  Installed BinDeps ───────────────────── v1.0.0
-  Installed FillArrays ────────────────── v0.7.4
-  Installed DataValueInterfaces ───────── v1.0.0
-  Installed Conda ─────────────────────── v1.4.1
-  Installed TextWrap ──────────────────── v0.3.0
-  Installed ArgParse ──────────────────── v0.6.2
-  Installed TableTraitsUtils ──────────── v1.0.1
-  Installed BSON ──────────────────────── v0.2.5
-  Installed BinaryProvider ────────────── v0.5.8
-  Installed JSON ──────────────────────── v0.21.0
-  Installed HDF5Utils ─────────────────── v0.1.15
-  Installed DataStructures ────────────── v0.17.10
-  Installed Parameters ────────────────── v0.12.0
-    Cloning [30578b45-9adc-5946-b283-645ec420af67] URIParser from https://github.com/JuliaWeb/URIParser.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed URIParser ─────────────────── v0.4.0
-    Cloning [fd36aebc-0777-11ea-1be3-eb1bdc5c01e1] MLSuite from https://github.com/AStupidBear/MLSuite.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MLSuite ───────────────────── v0.1.4
-    Cloning [e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28] Missings from https://github.com/JuliaData/Missings.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Missings ──────────────────── v0.4.3
-    Cloning [f5117550-fbe7-11e9-2624-0f3969024220] PandasLite from https://github.com/AStupidBear/PandasLite.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PandasLite ────────────────── v0.1.2
-    Cloning [d01462b0-16b5-11ea-1c8e-eb7ed7586854] MLSuiteBase from https://github.com/AStupidBear/MLSuiteBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MLSuiteBase ───────────────── v0.1.0
-    Cloning [82899510-4779-5014-852e-03e436cf321d] IteratorInterfaceExtensions from https://github.com/queryverse/IteratorInterfaceExtensions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IteratorInterfaceExtensions ─ v1.0.0
-    Cloning [ae029012-a4dd-5104-9daa-d747884805df] Requires from https://github.com/MikeInnes/Requires.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Requires ──────────────────── v0.5.2
-    Cloning [438e738f-606a-5dbb-bf0a-cddfbfd45ab0] PyCall from https://github.com/JuliaPy/PyCall.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PyCall ────────────────────── v1.91.4
-    Cloning [02651160-e6c3-11e9-0e2a-551f75d9519e] PyCallUtils from https://github.com/AStupidBear/PyCallUtils.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PyCallUtils ───────────────── v0.2.1
-    Cloning [69de0a69-1ddd-5017-9359-2bf0b02dc9f0] Parsers from https://github.com/JuliaData/Parsers.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parsers ───────────────────── v0.3.12
-    Cloning [e7dc6d0d-1eca-5fa6-8ad6-5aecde8b7ea5] DataValues from https://github.com/queryverse/DataValues.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataValues ────────────────── v0.4.13
-    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ────────── v1.1.0
-    Cloning [1914dd2f-81c6-5fcd-8719-6d5c9610ff09] MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MacroTools ────────────────── v0.5.5
-    Cloning [a74b3585-a348-5f62-a45c-50e91977d574] Blosc from https://github.com/stevengj/Blosc.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Blosc ─────────────────────── v0.6.0
-    Cloning [81def892-9a0e-5fdd-b105-ffc91e053289] VersionParsing from https://github.com/stevengj/VersionParsing.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed VersionParsing ────────────── v1.2.0
-    Cloning [f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f] HDF5 from https://github.com/JuliaIO/HDF5.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed HDF5 ──────────────────────── v0.12.5
-    Cloning [631607c0-34d2-5d66-819e-eb0f9aa2061a] CMake from https://github.com/JuliaPackaging/CMake.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CMake ─────────────────────── v1.2.0
-    Cloning [c27321d9-0574-5035-807b-f59d2c89b15c] Glob from https://github.com/vtjnash/Glob.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Glob ──────────────────────── v1.2.0
-    Cloning [f60d2a9e-e6c3-11e9-1104-51987764600f] Iconv from https://github.com/AStupidBear/Iconv.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Iconv ─────────────────────── v0.1.0
-    Cloning [34da2185-b29b-5c13-b0c7-acf172513d20] Compat from https://github.com/JuliaLang/Compat.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Compat ────────────────────── v2.2.0
-    Cloning [a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f] TimerOutputs from https://github.com/KristofferC/TimerOutputs.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TimerOutputs ──────────────── v0.5.3
-    Cloning [b51eda20-e6c3-11e9-27c2-99820284193b] SVMLightWriter from https://github.com/AStupidBear/SVMLightWriter.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SVMLightWriter ────────────── v0.1.0
-    Cloning [92933f4c-e287-5a05-a399-4b506db050ca] ProgressMeter from https://github.com/timholy/ProgressMeter.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ProgressMeter ─────────────── v1.2.0
-    Cloning [3783bdb8-4a98-5b6b-af9a-565f29a5fe9c] TableTraits from https://github.com/queryverse/TableTraits.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TableTraits ───────────────── v1.0.0
-    Cloning [6e75b9c4-186b-50bd-896f-2d2496a4843e] ScikitLearnBase from https://github.com/cstjean/ScikitLearnBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ScikitLearnBase ───────────── v0.5.0
-   Updating `~/.julia/environments/v1.4/Project.toml`
-  [fd36aebc] + MLSuite v0.1.4
-   Updating `~/.julia/environments/v1.4/Manifest.toml`
-  [c7e460c6] + ArgParse v0.6.2
-  [fbb218c0] + BSON v0.2.5
-  [9e28174c] + BinDeps v1.0.0
-  [b99e7846] + BinaryProvider v0.5.8
-  [a74b3585] + Blosc v0.6.0
-  [631607c0] + CMake v1.2.0
-  [d5fb7624] + CMakeWrapper v0.2.3
-  [34da2185] + Compat v2.2.0
-  [8f4d0f93] + Conda v1.4.1
-  [9a962f9c] + DataAPI v1.1.0
-  [864edb3b] + DataStructures v0.17.10
-  [e2d170a0] + DataValueInterfaces v1.0.0
-  [e7dc6d0d] + DataValues v0.4.13
-  [1a297f60] + FillArrays v0.7.4
-  [c27321d9] + Glob v1.2.0
-  [f67ccb44] + HDF5 v0.12.5
-  [2ec8e600] + HDF5Utils v0.1.15
-  [f60d2a9e] + Iconv v0.1.0
-  [82899510] + IteratorInterfaceExtensions v1.0.0
-  [682c06a0] + JSON v0.21.0
-  [fd36aebc] + MLSuite v0.1.4
-  [d01462b0] + MLSuiteBase v0.1.0
-  [1914dd2f] + MacroTools v0.5.5
-  [e1d29d7a] + Missings v0.4.3
-  [bac558e1] + OrderedCollections v1.1.0
-  [f5117550] + PandasLite v0.1.2
-  [d96e819e] + Parameters v0.12.0
-  [69de0a69] + Parsers v0.3.12
-  [92933f4c] + ProgressMeter v1.2.0
-  [438e738f] + PyCall v1.91.4
-  [02651160] + PyCallUtils v0.2.1
-  [ae029012] + Requires v0.5.2
-  [b51eda20] + SVMLightWriter v0.1.0
-  [6e75b9c4] + ScikitLearnBase v0.5.0
-  [3783bdb8] + TableTraits v1.0.0
-  [382cd787] + TableTraitsUtils v1.0.1
-  [b718987f] + TextWrap v0.3.0
-  [a759f4b9] + TimerOutputs v0.5.3
-  [30578b45] + URIParser v0.4.0
-  [81def892] + VersionParsing v1.2.0
-  [2a0f44e3] + Base64 
-  [ade2ca70] + Dates 
-  [8bb1440f] + DelimitedFiles 
-  [8ba89e20] + Distributed 
-  [b77e0a4c] + InteractiveUtils 
-  [76f85450] + LibGit2 
-  [8f399da3] + Libdl 
-  [37e2e46d] + LinearAlgebra 
-  [56ddb016] + Logging 
-  [d6f4376e] + Markdown 
-  [a63ad114] + Mmap 
-  [44cfe95a] + Pkg 
-  [de0858da] + Printf 
-  [3fa0cd96] + REPL 
-  [9a3f8284] + Random 
-  [ea8e919c] + SHA 
-  [9e88b42a] + Serialization 
-  [1a1011a3] + SharedArrays 
-  [6462fe0b] + Sockets 
-  [2f01184e] + SparseArrays 
-  [10745b16] + Statistics 
-  [8dfed614] + Test 
-  [cf7118a7] + UUIDs 
-  [4ec0a83e] + Unicode 
-   Building Conda ──→ `~/.julia/packages/Conda/3rPhK/deps/build.log`
-   Building PyCall ─→ `~/.julia/packages/PyCall/zqDXB/deps/build.log`
-   Building CMake ──→ `~/.julia/packages/CMake/ULbyn/deps/build.log`

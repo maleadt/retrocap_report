@@ -1,238 +1,0 @@
-Julia Version 1.4.0
-Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
-Platform Info:
-  OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
-  WORD_SIZE: 64
-  LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
-Environment:
-  JULIA_DEPOT_PATH = ::/usr/local/share/julia
-  JULIA_NUM_THREADS = 2
-
-  Resolving package versions...
-    Cloning [3cdcf5f2-1ef4-517c-9805-6587b60abb01] RecipesBase from https://github.com/JuliaPlots/RecipesBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RecipesBase ───────── v0.8.0
-    Cloning [356ae075-8bc9-5ef9-a342-46c9ba26438c] GridArrays from https://github.com/JuliaApproximation/GridArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GridArrays ────────── v0.1.3
-    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ──────── v0.12.1
-    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ────── v0.5.8
-    Cloning [1a297f60-69ca-5386-bcde-b61e274b549b] FillArrays from https://github.com/JuliaArrays/FillArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FillArrays ────────── v0.8.5
-    Cloning [442a2c76-b920-505d-bb47-c5924d526838] FastGaussQuadrature from https://github.com/JuliaApproximation/FastGaussQuadrature.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FastGaussQuadrature ─ v0.4.2
-    Cloning [da5c29d0-fa7d-589e-88eb-ea29b0a81949] EllipsisNotation from https://github.com/ChrisRackauckas/EllipsisNotation.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed EllipsisNotation ──── v0.4.0
-    Cloning [5b8099bc-c8ec-5219-889f-1d9e522a28bf] DomainSets from https://github.com/JuliaApproximation/DomainSets.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DomainSets ────────── v0.2.0
-    Cloning [d54b0c1a-921d-58e0-8e36-89d8069c0969] GaussQuadrature from https://github.com/billmclean/GaussQuadrature.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GaussQuadrature ───── v0.5.3
-    Cloning [8197267c-284f-5f27-9208-e0e47529a953] IntervalSets from https://github.com/JuliaMath/IntervalSets.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IntervalSets ──────── v0.4.0
-    Cloning [9e28174c-4ba2-5203-b857-d8d62c4213ee] BinDeps from https://github.com/JuliaPackaging/BinDeps.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinDeps ───────────── v1.0.0
-    Cloning [30578b45-9adc-5946-b283-645ec420af67] URIParser from https://github.com/JuliaWeb/URIParser.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed URIParser ─────────── v0.4.0
-    Cloning [276daf66-3868-5448-9aa4-cd146d93841b] SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [==================================>      ]  83.0 %[2K[?25h  Installed SpecialFunctions ──── v0.8.0
-   Updating `~/.julia/environments/v1.4/Project.toml`
-  [356ae075] + GridArrays v0.1.3
-   Updating `~/.julia/environments/v1.4/Manifest.toml`
-  [9e28174c] + BinDeps v1.0.0
-  [b99e7846] + BinaryProvider v0.5.8
-  [5b8099bc] + DomainSets v0.2.0
-  [da5c29d0] + EllipsisNotation v0.4.0
-  [442a2c76] + FastGaussQuadrature v0.4.2
-  [1a297f60] + FillArrays v0.8.5
-  [d54b0c1a] + GaussQuadrature v0.5.3
-  [356ae075] + GridArrays v0.1.3
-  [8197267c] + IntervalSets v0.4.0
-  [3cdcf5f2] + RecipesBase v0.8.0
-  [276daf66] + SpecialFunctions v0.8.0
-  [90137ffa] + StaticArrays v0.12.1
-  [30578b45] + URIParser v0.4.0
-  [2a0f44e3] + Base64 
-  [ade2ca70] + Dates 
-  [8ba89e20] + Distributed 
-  [b77e0a4c] + InteractiveUtils 
-  [76f85450] + LibGit2 
-  [8f399da3] + Libdl 
-  [37e2e46d] + LinearAlgebra 
-  [56ddb016] + Logging 
-  [d6f4376e] + Markdown 
-  [44cfe95a] + Pkg 
-  [de0858da] + Printf 
-  [3fa0cd96] + REPL 
-  [9a3f8284] + Random 
-  [ea8e919c] + SHA 
-  [9e88b42a] + Serialization 
-  [6462fe0b] + Sockets 
-  [2f01184e] + SparseArrays 
-  [10745b16] + Statistics 
-  [8dfed614] + Test 
-  [cf7118a7] + UUIDs 
-  [4ec0a83e] + Unicode 
-   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/ne2iw/deps/build.log`
-┌ Error: Error building `SpecialFunctions`: 
-│ [ Info: Downloading https://github.com/JuliaPackaging/Yggdrasil/releases/download/OpenSpecFun-v0.5.3+0/OpenSpecFun.v0.5.3.x86_64-linux-gnu-gcc7.tar.gz to /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/usr/downloads/OpenSpecFun.v0.5.3.x86_64-linux-gnu-gcc7.tar.gz...
-│ ERROR: LoadError: Could not download https://github.com/JuliaPackaging/Yggdrasil/releases/download/OpenSpecFun-v0.5.3+0/OpenSpecFun.v0.5.3.x86_64-linux-gnu-gcc7.tar.gz to /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/usr/downloads/OpenSpecFun.v0.5.3.x86_64-linux-gnu-gcc7.tar.gz:
-│ ErrorException("")
-│ Stacktrace:
-│  [1] error(::String) at ./error.jl:33
-│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:502
-│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
-│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
-│  [5] top-level scope at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/build.jl:142
-│  [6] include(::String) at ./client.jl:439
-│  [7] top-level scope at none:5
-│ in expression starting at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/build.jl:139
-│ caused by [exception 1]
-│ 
-│ Stacktrace:
-│  [1] error() at ./error.jl:42
-│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:496
-│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
-│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
-│  [5] top-level scope at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/deps/build.jl:142
-│  [6] include(::String) at ./client.jl:439
-│  [7] top-level scope at none:5
-│ [10:50:41] #=#=#                                                                         [10:50:41] 
-│ [10:50:41] curl: (22) The requested URL returned error: 401 UNAUTHORIZED
-└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:892
-    Testing GridArrays
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [===================================>     ]  85.8 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [=============>                           ]  32.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [================================>        ]  79.6 %    Fetching: [=================================>       ]  82.2 %    Fetching: [=====================================>   ]  91.9 %    Fetching: [========================================>]  98.5 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_8kxXIJ/Manifest.toml`
-  [9e28174c] BinDeps v1.0.0
-  [b99e7846] BinaryProvider v0.5.8
-  [6e34b625] Bzip2_jll v1.0.6+1
-  [3da002f7] ColorTypes v0.9.1
-  [5ae59095] Colors v0.11.2
-  [d38c429a] Contour v0.5.2
-  [9a962f9c] DataAPI v1.1.0
-  [864edb3b] DataStructures v0.17.10
-  [5b8099bc] DomainSets v0.2.0
-  [da5c29d0] EllipsisNotation v0.4.0
-  [c87230d0] FFMPEG v0.3.0
-  [b22a6f82] FFMPEG_jll v4.1.0+2
-  [442a2c76] FastGaussQuadrature v0.4.2
-  [1a297f60] FillArrays v0.8.5
-  [53c48c17] FixedPointNumbers v0.7.1
-  [d7e528f0] FreeType2_jll v2.10.1+1
-  [559328eb] FriBidi_jll v1.0.5+2
-  [28b8d3ca] GR v0.48.0
-  [d54b0c1a] GaussQuadrature v0.5.3
-  [4d00f742] GeometryTypes v0.8.1
-  [356ae075] GridArrays v0.1.3
-  [8197267c] IntervalSets v0.4.0
-  [682c06a0] JSON v0.21.0
-  [c1c5ebd0] LAME_jll v3.100.0+0
-  [dd192d2f] LibVPX_jll v1.8.1+1
-  [442fdcdd] Measures v0.3.1
-  [e1d29d7a] Missings v0.4.3
-  [77ba4419] NaNMath v0.3.3
-  [e7412a2a] Ogg_jll v1.3.3+0
-  [458c3c95] OpenSSL_jll v1.1.1+1
-  [91d4177d] Opus_jll v1.3.1+0
-  [bac558e1] OrderedCollections v1.1.0
-  [69de0a69] Parsers v0.3.12
-  [ccf2f8ad] PlotThemes v1.0.1
-  [995b91a9] PlotUtils v0.6.4
-  [91a5bcdd] Plots v0.29.8
-  [3cdcf5f2] RecipesBase v0.8.0
-  [189a3867] Reexport v0.2.0
-  [ae029012] Requires v1.0.1
-  [992d4aef] Showoff v0.3.1
-  [a2af1166] SortingAlgorithms v0.3.1
-  [276daf66] SpecialFunctions v0.8.0
-  [90137ffa] StaticArrays v0.12.1
-  [2913bbd2] StatsBase v0.32.2
-  [30578b45] URIParser v0.4.0
-  [83775a58] Zlib_jll v1.2.11+8
-  [0ac62f75] libass_jll v0.14.0+0
-  [f638f0a6] libfdk_aac_jll v0.1.6+1
-  [f27f6e37] libvorbis_jll v1.3.6+2
-  [1270edf5] x264_jll v2019.5.25+1
-  [dfaa095f] x265_jll v3.0.0+0
-  [2a0f44e3] Base64 
-  [ade2ca70] Dates 
-  [8bb1440f] DelimitedFiles 
-  [8ba89e20] Distributed 
-  [b77e0a4c] InteractiveUtils 
-  [76f85450] LibGit2 
-  [8f399da3] Libdl 
-  [37e2e46d] LinearAlgebra 
-  [56ddb016] Logging 
-  [d6f4376e] Markdown 
-  [a63ad114] Mmap 
-  [44cfe95a] Pkg 
-  [de0858da] Printf 
-  [3fa0cd96] REPL 
-  [9a3f8284] Random 
-  [ea8e919c] SHA 
-  [9e88b42a] Serialization 
-  [6462fe0b] Sockets 
-  [2f01184e] SparseArrays 
-  [10745b16] Statistics 
-  [8dfed614] Test 
-  [cf7118a7] UUIDs 
-  [4ec0a83e] Unicode 
-ERROR: LoadError: SpecialFunctions is not installed properly, run `Pkg.build("SpecialFunctions")`,restart Julia and try again
-Stacktrace:
- [1] error(::String) at ./error.jl:33
- [2] top-level scope at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/src/SpecialFunctions.jl:6
- [3] include(::Module, ::String) at ./Base.jl:377
- [4] top-level scope at none:2
- [5] eval at ./boot.jl:331 [inlined]
- [6] eval(::Expr) at ./client.jl:449
- [7] top-level scope at ./none:3
-in expression starting at /home/pkgeval/.julia/packages/SpecialFunctions/ne2iw/src/SpecialFunctions.jl:4
-ERROR: LoadError: Failed to precompile SpecialFunctions [276daf66-3868-5448-9aa4-cd146d93841b] to /home/pkgeval/.julia/compiled/v1.4/SpecialFunctions/78gOt_efEGt.ji.
-Stacktrace:
- [1] error(::String) at ./error.jl:33
- [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
- [3] _require(::Base.PkgId) at ./loading.jl:1029
- [4] require(::Base.PkgId) at ./loading.jl:927
- [5] require(::Module, ::Symbol) at ./loading.jl:922
- [6] include(::Module, ::String) at ./Base.jl:377
- [7] top-level scope at none:2
- [8] eval at ./boot.jl:331 [inlined]
- [9] eval(::Expr) at ./client.jl:449
- [10] top-level scope at ./none:3
-in expression starting at /home/pkgeval/.julia/packages/FastGaussQuadrature/eUIcX/src/FastGaussQuadrature.jl:3
-ERROR: LoadError: Failed to precompile FastGaussQuadrature [442a2c76-b920-505d-bb47-c5924d526838] to /home/pkgeval/.julia/compiled/v1.4/FastGaussQuadrature/vg51R_efEGt.ji.
-Stacktrace:
- [1] error(::String) at ./error.jl:33
- [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
- [3] _require(::Base.PkgId) at ./loading.jl:1029
- [4] require(::Base.PkgId) at ./loading.jl:927
- [5] require(::Module, ::Symbol) at ./loading.jl:922
- [6] include(::Module, ::String) at ./Base.jl:377
- [7] top-level scope at none:2
- [8] eval at ./boot.jl:331 [inlined]
- [9] eval(::Expr) at ./client.jl:449
- [10] top-level scope at ./none:3
-in expression starting at /home/pkgeval/.julia/packages/GridArrays/4JkiE/src/GridArrays.jl:9
-ERROR: LoadError: Failed to precompile GridArrays [356ae075-8bc9-5ef9-a342-46c9ba26438c] to /home/pkgeval/.julia/compiled/v1.4/GridArrays/yMry8_efEGt.ji.
-Stacktrace:
- [1] error(::String) at ./error.jl:33
- [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
- [3] _require(::Base.PkgId) at ./loading.jl:1029
- [4] require(::Base.PkgId) at ./loading.jl:927
- [5] require(::Module, ::Symbol) at ./loading.jl:922
- [6] include(::String) at ./client.jl:439
- [7] top-level scope at none:6
-in expression starting at /home/pkgeval/.julia/packages/GridArrays/4JkiE/test/runtests.jl:1
-ERROR: Package GridArrays errored during testing
-Stacktrace:
- [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
- [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
- [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
- [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
- [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
- [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
- [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
- [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
- [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
- [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
- [11] top-level scope at none:16

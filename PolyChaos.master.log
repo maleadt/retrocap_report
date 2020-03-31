@@ -2,77 +2,52 @@ Julia Version 1.4.0
 Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  CPU: Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-8.0.1 (ORCJIT, skylake)
 Environment:
   JULIA_DEPOT_PATH = ::/usr/local/share/julia
   JULIA_NUM_THREADS = 2
 
   Resolving package versions...
+  Installed DataAPI ────────────────────── v1.1.0
+  Installed Missings ───────────────────── v0.4.3
   Installed Reexport ───────────────────── v0.2.0
   Installed NaNMath ────────────────────── v0.3.3
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed OrderedCollections ─────────── v1.1.0
+  Installed SpecialFunctions ───────────── v0.10.0
   Installed MKL_jll ────────────────────── v2019.0.117+2
   Installed Combinatorics ──────────────── v1.0.0
+  Installed FillArrays ─────────────────── v0.8.5
+  Installed RecipesBase ────────────────── v0.8.0
+  Installed StatsFuns ──────────────────── v0.9.4
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed QuadGK ─────────────────────── v2.3.1
+  Installed Arpack ─────────────────────── v0.4.0
+  Installed Arpack_jll ─────────────────── v3.5.0+2
+  Installed Rmath_jll ──────────────────── v0.2.2+0
   Installed DiffResults ────────────────── v1.0.2
-  Installed PDMats ─────────────────────── v0.9.12
+  Installed DiffRules ──────────────────── v1.0.1
   Installed ForwardDiff ────────────────── v0.10.9
-  Installed AbstractFFTs ───────────────── v0.5.0
-  Installed StaticArrays ───────────────── v0.12.1
-  Installed OpenSpecFun_jll ────────────── v0.5.3+3
-  Installed Polynomials ────────────────── v0.6.1
+  Installed PDMats ─────────────────────── v0.9.12
+  Installed OpenBLAS_jll ───────────────── v0.3.9+0
+  Installed FFTW_jll ───────────────────── v3.3.9+4
+  Installed AdaptiveRejectionSampling ──── v0.1.0
+  Installed CommonSubexpressions ───────── v0.2.0
+  Installed StatsBase ──────────────────── v0.32.2
   Installed PolyChaos ──────────────────── v0.2.2
-    Cloning [e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28] Missings from https://github.com/JuliaData/Missings.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Missings ───────────────────── v0.4.3
-    Cloning [9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a] DataAPI from https://github.com/JuliaData/DataAPI.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataAPI ────────────────────── v1.1.0
-    Cloning [276daf66-3868-5448-9aa4-cd146d93841b] SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SpecialFunctions ───────────── v0.10.0
-    Cloning [79098fc4-a85e-5d69-aa6a-4863f24498fa] Rmath from https://github.com/JuliaStats/Rmath.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Rmath ──────────────────────── v0.6.1
-    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ─────────── v1.1.0
-    Cloning [4c63d2b9-4356-54db-8cca-17b64c39e42c] StatsFuns from https://github.com/JuliaStats/StatsFuns.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StatsFuns ──────────────────── v0.9.4
-    Cloning [3cdcf5f2-1ef4-517c-9805-6587b60abb01] RecipesBase from https://github.com/JuliaPlots/RecipesBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RecipesBase ────────────────── v0.8.0
-    Cloning [a2af1166-a08f-5f64-846c-94a0d3cef48c] SortingAlgorithms from https://github.com/JuliaCollections/SortingAlgorithms.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SortingAlgorithms ──────────── v0.3.1
-    Cloning [1a297f60-69ca-5386-bcde-b61e274b549b] FillArrays from https://github.com/JuliaArrays/FillArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FillArrays ─────────────────── v0.8.5
-    Cloning [1fd47b50-473d-5c70-9696-f719f8f3bcdc] QuadGK from https://github.com/JuliaMath/QuadGK.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed QuadGK ─────────────────────── v2.3.1
-    Cloning [7d9fca2a-8960-54d3-9f78-7d1dccf2cb97] Arpack from https://github.com/JuliaLinearAlgebra/Arpack.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Arpack ─────────────────────── v0.4.0
-    Cloning [68821587-b530-5797-8361-c406ea357684] Arpack_jll from https://github.com/JuliaBinaryWrappers/Arpack_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Arpack_jll ─────────────────── v3.5.0+2
-    Cloning [b552c78f-8df3-52c6-915a-8e097449b14b] DiffRules from https://github.com/JuliaDiff/DiffRules.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffRules ──────────────────── v1.0.1
-    Cloning [f50d1b31-88e8-58de-be2c-1cc44531875f] Rmath_jll from https://github.com/JuliaBinaryWrappers/Rmath_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Rmath_jll ──────────────────── v0.2.2+0
-    Cloning [c75e803d-635f-53bd-ab7d-544e482d8c75] AdaptiveRejectionSampling from https://github.com/mauriciogtec/AdaptiveRejectionSampling.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed AdaptiveRejectionSampling ──── v0.1.0
-    Cloning [2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91] StatsBase from https://github.com/JuliaStats/StatsBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StatsBase ──────────────────── v0.32.2
-    Cloning [4536629a-c528-5b80-bd46-f80d51c5b363] OpenBLAS_jll from https://github.com/JuliaBinaryWrappers/OpenBLAS_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenBLAS_jll ───────────────── v0.3.7+8
-    Cloning [bbf7d656-a473-5ed7-a52c-81e309532950] CommonSubexpressions from https://github.com/rdeits/CommonSubexpressions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CommonSubexpressions ───────── v0.2.0
-    Cloning [31c24e10-a181-5473-b8eb-7969acd0382f] Distributions from https://github.com/JuliaStats/Distributions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Distributions ──────────────── v0.22.6
-    Cloning [f5851436-0d7a-5f13-b9de-f02708fd171a] FFTW_jll from https://github.com/JuliaBinaryWrappers/FFTW_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FFTW_jll ───────────────────── v3.3.9+4
-    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ─────────────── v0.17.10
-    Cloning [e66e0078-7015-5450-92f7-15fbd957f2ae] CompilerSupportLibraries_jll from https://github.com/JuliaBinaryWrappers/CompilerSupportLibraries_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
-    Cloning [1d5cc7b8-4909-519e-a0f8-d0f5ad9712d0] IntelOpenMP_jll from https://github.com/JuliaBinaryWrappers/IntelOpenMP_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
-    Cloning [d54b0c1a-921d-58e0-8e36-89d8069c0969] GaussQuadrature from https://github.com/billmclean/GaussQuadrature.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GaussQuadrature ────────────── v0.5.0
-    Cloning [7a1cc6ca-52ef-59f5-83cd-3a7055c09341] FFTW from https://github.com/JuliaMath/FFTW.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FFTW ───────────────────────── v1.2.0
+  Installed Distributions ──────────────── v0.22.6
+  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
+  Installed AbstractFFTs ───────────────── v0.5.0
+  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+3
+  Installed StaticArrays ───────────────── v0.12.1
+  Installed Polynomials ────────────────── v0.6.1
+  Installed DataStructures ─────────────── v0.17.10
+  Installed GaussQuadrature ────────────── v0.5.0
+  Installed FFTW ───────────────────────── v1.2.0
    Updating `~/.julia/environments/v1.4/Project.toml`
   [8d666b04] + PolyChaos v0.2.2
    Updating `~/.julia/environments/v1.4/Manifest.toml`
@@ -97,7 +72,7 @@ Environment:
   [856f044c] + MKL_jll v2019.0.117+2
   [e1d29d7a] + Missings v0.4.3
   [77ba4419] + NaNMath v0.3.3
-  [4536629a] + OpenBLAS_jll v0.3.7+8
+  [4536629a] + OpenBLAS_jll v0.3.9+0
   [efe28fd5] + OpenSpecFun_jll v0.5.3+3
   [bac558e1] + OrderedCollections v1.1.0
   [90014a1f] + PDMats v0.9.12
@@ -137,7 +112,7 @@ Environment:
   [4ec0a83e] + Unicode 
    Building FFTW → `~/.julia/packages/FFTW/qqcBj/deps/build.log`
     Testing PolyChaos
-Status `/tmp/jl_DEysOy/Manifest.toml`
+Status `/tmp/jl_fp47i6/Manifest.toml`
   [621f4979] AbstractFFTs v0.5.0
   [c75e803d] AdaptiveRejectionSampling v0.1.0
   [7d9fca2a] Arpack v0.4.0
@@ -159,7 +134,7 @@ Status `/tmp/jl_DEysOy/Manifest.toml`
   [856f044c] MKL_jll v2019.0.117+2
   [e1d29d7a] Missings v0.4.3
   [77ba4419] NaNMath v0.3.3
-  [4536629a] OpenBLAS_jll v0.3.7+8
+  [4536629a] OpenBLAS_jll v0.3.9+0
   [efe28fd5] OpenSpecFun_jll v0.5.3+3
   [bac558e1] OrderedCollections v1.1.0
   [90014a1f] PDMats v0.9.12
@@ -223,7 +198,7 @@ Test Summary:     | Pass  Total
 Hermite 161 nodes |   22     22
 Test Summary:     | Pass  Total
 Hermite 181 nodes |   22     22
-  0.841583 seconds (1.14 M allocations: 57.879 MiB, 1.79% gc time)
+  0.840659 seconds (1.14 M allocations: 57.879 MiB, 1.83% gc time)
 Test Summary:    | Pass  Total
 Logistic 1 nodes |    2      2
 Test Summary:     | Pass  Total
@@ -244,7 +219,7 @@ Test Summary:      | Pass  Total
 Logistic 161 nodes |    2      2
 Test Summary:      | Pass  Total
 Logistic 181 nodes |    2      2
-  0.018014 seconds (11.04 k allocations: 870.960 KiB)
+  0.022455 seconds (11.04 k allocations: 870.960 KiB)
 Test Summary:  | Pass  Total
 Jacobi 1 nodes |  363    363
 Test Summary:   | Pass  Total
@@ -265,7 +240,7 @@ Test Summary:    | Pass  Total
 Jacobi 161 nodes |  363    363
 Test Summary:    | Pass  Total
 Jacobi 181 nodes |  363    363
-  0.410516 seconds (832.69 k allocations: 82.313 MiB, 6.17% gc time)
+  0.504749 seconds (832.69 k allocations: 82.313 MiB, 5.54% gc time)
 Test Summary:    | Pass  Total
 Jacobi01 1 nodes |  242    242
 Test Summary:     | Pass  Total
@@ -286,7 +261,7 @@ Test Summary:      | Pass  Total
 Jacobi01 161 nodes |  242    242
 Test Summary:      | Pass  Total
 Jacobi01 181 nodes |  242    242
-  0.317125 seconds (624.35 k allocations: 68.969 MiB, 6.05% gc time)
+  0.372088 seconds (624.35 k allocations: 68.969 MiB, 6.32% gc time)
 Test Summary:    | Pass  Total
 Laguerre 1 nodes |   22     22
 Test Summary:     | Pass  Total
@@ -307,7 +282,7 @@ Test Summary:      | Pass  Total
 Laguerre 161 nodes |   22     22
 Test Summary:      | Pass  Total
 Laguerre 181 nodes |   22     22
-  0.063488 seconds (92.81 k allocations: 6.436 MiB)
+  0.086177 seconds (92.81 k allocations: 6.436 MiB)
 Test Summary:             | Pass  Total
 meixner_pollaczek 1 nodes |  400    400
 Test Summary:              | Pass  Total
@@ -328,7 +303,7 @@ Test Summary:               | Pass  Total
 meixner_pollaczek 161 nodes |  400    400
 Test Summary:               | Pass  Total
 meixner_pollaczek 181 nodes |  400    400
-  1.202174 seconds (1.90 M allocations: 123.059 MiB, 3.29% gc time)
+  1.203139 seconds (1.90 M allocations: 123.060 MiB, 3.32% gc time)
 Test Summary:       | Pass  Total
 Stieltjes procedure |    8      8
 Test Summary:     | Pass  Total
@@ -343,25 +318,25 @@ Test Summary:                 | Pass  Total
 N+2 quadrature rule (lobatto) |   20     20
 Test Summary: | Pass  Total
 Fejer         |    4      4
-  0.001026 seconds (1.10 k allocations: 75.828 KiB)
+  0.001076 seconds (1.10 k allocations: 75.828 KiB)
 Test Summary: | Pass  Total
 Fejer2        |    4      4
-  0.121516 seconds (313.61 k allocations: 15.844 MiB)
+  0.144795 seconds (313.62 k allocations: 15.844 MiB)
 Test Summary:   | Pass  Total
 Clenshaw Curtis |    4      4
-  0.001375 seconds (1.82 k allocations: 150.844 KiB)
+  0.001432 seconds (1.83 k allocations: 150.953 KiB)
 Test Summary: | Pass  Total
 Gauss         |   18     18
-  0.183452 seconds (139.83 k allocations: 7.387 MiB, 10.11% gc time)
+  0.129854 seconds (139.83 k allocations: 7.387 MiB)
 Test Summary:       | Pass  Total
 Radau with Logistic |   36     36
-  0.417724 seconds (228.80 k allocations: 11.903 MiB)
+  0.344150 seconds (228.80 k allocations: 11.903 MiB)
 Test Summary:      | Pass  Total
 Radau with Hermite |   36     36
-  0.027509 seconds (14.91 k allocations: 1.219 MiB)
+  0.029708 seconds (14.91 k allocations: 1.219 MiB)
 Test Summary: | Pass  Total
 gpquad        |   12     12
-  0.633920 seconds (777.84 k allocations: 39.346 MiB, 2.58% gc time)
+  0.464516 seconds (777.84 k allocations: 39.346 MiB, 2.70% gc time)
 Test Summary:         | Pass  Total
 OrthoPoly overloading |    3      3
 Test Summary: | Pass  Total
@@ -421,5 +396,5 @@ getentry for StaticArrays |  210    210
 Test Summary:         | Pass  Total
 Supports of densities |    8      8
 Test Summary:                          | Pass  Total
-Mean and variance of beta distribution | 4725   4725
+Mean and variance of beta distribution | 5175   5175
     Testing PolyChaos tests passed 

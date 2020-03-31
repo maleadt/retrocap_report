@@ -1,406 +1,0 @@
-Julia Version 1.4.0
-Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
-Platform Info:
-  OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
-  WORD_SIZE: 64
-  LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
-Environment:
-  JULIA_DEPOT_PATH = ::/usr/local/share/julia
-  JULIA_NUM_THREADS = 2
-
-  Resolving package versions...
-  Installed UnPack ─────────────────────── v0.1.0
-  Installed DiffEqJump ─────────────────── v6.5.0
-  Installed NLsolve ────────────────────── v4.3.0
-  Installed SimpleTraits ───────────────── v0.9.1
-  Installed Requires ───────────────────── v1.0.1
-  Installed LeftChildRightSiblingTrees ─── v0.1.2
-  Installed FillArrays ─────────────────── v0.8.5
-  Installed ChainRulesCore ─────────────── v0.7.1
-  Installed TreeViews ──────────────────── v0.3.0
-  Installed MuladdMacro ────────────────── v0.2.2
-  Installed SteadyStateDiffEq ──────────── v1.5.0
-  Installed ArrayInterface ─────────────── v2.6.1
-  Installed MLStyle ────────────────────── v0.3.1
-  Installed BandedMatrices ─────────────── v0.14.3
-  Installed TerminalLoggers ────────────── v0.1.1
-  Installed Compat ─────────────────────── v3.8.0
-  Installed RandomNumbers ──────────────── v1.4.0
-  Installed FunctionWrappers ───────────── v1.1.1
-  Installed DiffEqBase ─────────────────── v6.25.0
-  Installed CanonicalTraits ────────────── v0.2.1
-  Installed ArrayLayouts ───────────────── v0.1.5
-  Installed Formatting ─────────────────── v0.4.1
-  Installed DimensionalPlotRecipes ─────── v1.1.0
-  Installed BinaryProvider ─────────────── v0.5.8
-  Installed Latexify ───────────────────── v0.13.0
-  Installed OpenSpecFun_jll ────────────── v0.5.3+3
-  Installed DiffEqPhysics ──────────────── v3.5.0
-  Installed DataStructures ─────────────── v0.17.10
-  Installed ProgressMeter ──────────────── v1.2.0
-  Installed RecursiveArrayTools ────────── v2.1.0
-    Cloning [093fc24a-ae57-5d10-9952-331d41423f4d] LightGraphs from https://github.com/JuliaGraphs/LightGraphs.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LightGraphs ────────────────── v1.3.1
-    Cloning [0c46a032-eb83-5123-abaf-570d42b7fbaa] DifferentialEquations from https://github.com/JuliaDiffEq/DifferentialEquations.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [===========>                             ]  27.5 %    Fetching: [============>                            ]  27.6 %    Fetching: [=====================================>   ]  91.1 %    Fetching: [======================================>  ]  93.5 %    Fetching: [========================================>]  99.3 %[2K[?25h  Installed DifferentialEquations ──────── v6.12.0
-    Cloning [f9640e96-87f6-5992-9c3b-0743c6a49ffa] MultiScaleArrays from https://github.com/JuliaDiffEq/MultiScaleArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MultiScaleArrays ───────────── v1.6.0
-    Cloning [189a3867-3050-52da-a836-e630ba90ab69] Reexport from https://github.com/simonster/Reexport.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Reexport ───────────────────── v0.2.0
-    Cloning [459566f4-90b8-5000-8ac3-15dfb0a30def] DiffEqCallbacks from https://github.com/JuliaDiffEq/DiffEqCallbacks.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffEqCallbacks ────────────── v2.12.1
-    Cloning [77ba4419-2d1f-58cd-9bb1-8ffee604a2e3] NaNMath from https://github.com/mlubin/NaNMath.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NaNMath ────────────────────── v0.3.3
-    Cloning [b14d175d-62b4-44ba-8fb7-3064adc8c3ec] JuliaVariables from https://github.com/thautwarm/JuliaVariables.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed JuliaVariables ─────────────── v0.2.0
-    Cloning [8162dcfd-2161-5ef2-ae6c-7681170c5f98] PrettyPrint from https://github.com/thautwarm/PrettyPrint.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PrettyPrint ────────────────── v0.1.0
-    Cloning [d41bc354-129a-5804-8e4c-c37616107c6c] NLSolversBase from https://github.com/JuliaNLSolvers/NLSolversBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NLSolversBase ──────────────── v7.6.1
-    Cloning [82899510-4779-5014-852e-03e436cf321d] IteratorInterfaceExtensions from https://github.com/queryverse/IteratorInterfaceExtensions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IteratorInterfaceExtensions ── v1.0.0
-    Cloning [b4f34e82-e78d-54a5-968a-f98e89d6e8f7] Distances from https://github.com/JuliaStats/Distances.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Distances ──────────────────── v0.8.2
-    Cloning [700de1a5-db45-46bc-99cf-38207098b444] ZygoteRules from https://github.com/FluxML/ZygoteRules.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ZygoteRules ────────────────── v0.2.0
-    Cloning [276daf66-3868-5448-9aa4-cd146d93841b] SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [====================>                    ]  48.1 %[2K[?25h  Installed SpecialFunctions ───────────── v0.10.0
-    Cloning [71a1bf82-56d0-4bbc-8a3c-48b961074391] NameResolution from https://github.com/thautwarm/NameResolution.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NameResolution ─────────────── v0.1.3
-    Cloning [b964fa9f-0449-5b57-a5c2-d3ea65f4040f] LaTeXStrings from https://github.com/stevengj/LaTeXStrings.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LaTeXStrings ───────────────── v1.1.0
-    Cloning [77a26b50-5914-5dd7-bc55-306e6241c503] DiffEqNoiseProcess from https://github.com/JuliaDiffEq/DiffEqNoiseProcess.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffEqNoiseProcess ─────────── v3.9.0
-    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ─────────── v1.1.0
-    Cloning [42fd0dbc-a981-5370-80f2-aaf504508153] IterativeSolvers from https://github.com/JuliaMath/IterativeSolvers.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IterativeSolvers ───────────── v0.8.3
-    Cloning [f2b01f46-fcfa-551c-844a-d8ac1e96c665] Roots from https://github.com/JuliaMath/Roots.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Roots ──────────────────────── v1.0.1
-    Cloning [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed] OrdinaryDiffEq from https://github.com/JuliaDiffEq/OrdinaryDiffEq.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [===============================>         ]  77.2 %[2K[?25h  Installed OrdinaryDiffEq ─────────────── v5.32.0
-    Cloning [3cdcf5f2-1ef4-517c-9805-6587b60abb01] RecipesBase from https://github.com/JuliaPlots/RecipesBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RecipesBase ────────────────── v0.8.0
-    Cloning [88cd18e8-d9cc-4ea6-8889-5259c0d15c8b] ConsoleProgressMonitor from https://github.com/tkf/ConsoleProgressMonitor.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ConsoleProgressMonitor ─────── v0.1.2
-    Cloning [bcd4f6db-9728-5f36-b5f7-82caef46ccdb] DelayDiffEq from https://github.com/JuliaDiffEq/DelayDiffEq.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DelayDiffEq ────────────────── v5.23.0
-    Cloning [d3d80556-e9d4-5f37-9878-2ab0fcc64255] LineSearches from https://github.com/JuliaNLSolvers/LineSearches.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LineSearches ───────────────── v7.0.1
-    Cloning [6a86dc24-6348-571c-b903-95158fe2bd41] FiniteDiff from https://github.com/JuliaDiff/FiniteDiff.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FiniteDiff ─────────────────── v2.3.0
-    Cloning [e409e4f3-bfea-5376-8464-e040bb5c01ab] PoissonRandom from https://github.com/JuliaDiffEq/PoissonRandom.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PoissonRandom ──────────────── v0.4.0
-    Cloning [1520ce14-60c1-5f80-bbc7-55ef81b5835c] AbstractTrees from https://github.com/JuliaCollections/AbstractTrees.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed AbstractTrees ──────────────── v0.3.2
-    Cloning [b552c78f-8df3-52c6-915a-8e097449b14b] DiffRules from https://github.com/JuliaDiff/DiffRules.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffRules ──────────────────── v1.0.1
-    Cloning [79e6a3ab-5dfb-504d-930d-738a2a938a0e] Adapt from https://github.com/JuliaGPU/Adapt.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Adapt ──────────────────────── v1.0.1
-    Cloning [1914dd2f-81c6-5fcd-8719-6d5c9610ff09] MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MacroTools ─────────────────── v0.5.5
-    Cloning [33c8b6b6-d38a-422a-b730-caa89a2f386c] ProgressLogging from https://github.com/JunoLab/ProgressLogging.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ProgressLogging ────────────── v0.1.2
-    Cloning [47a9eef4-7e08-11e9-0b38-333d64bd3804] SparseDiffTools from https://github.com/JuliaDiff/SparseDiffTools.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SparseDiffTools ────────────── v1.4.0
-    Cloning [f6369f11-7733-5829-9624-2563aa707210] ForwardDiff from https://github.com/JuliaDiff/ForwardDiff.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ForwardDiff ────────────────── v0.10.9
-    Cloning [163ba53b-c6d8-5494-b064-1a9d43ac40c5] DiffResults from https://github.com/JuliaDiff/DiffResults.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffResults ────────────────── v1.0.2
-    Cloning [ec485272-7323-5ecc-a04f-4719b315124d] ArnoldiMethod from https://github.com/haampie/ArnoldiMethod.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ArnoldiMethod ──────────────── v0.0.4
-    Cloning [5a0ffddc-d203-54b0-88ba-2c03c0fc2e67] DiffEqFinancial from https://github.com/JuliaDiffEq/DiffEqFinancial.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffEqFinancial ────────────── v2.2.1
-    Cloning [65888b18-ceab-5e60-b2b9-181511a3b968] ParameterizedFunctions from https://github.com/JuliaDiffEq/ParameterizedFunctions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ParameterizedFunctions ─────── v5.0.3
-    Cloning [789caeaf-c7a9-5a7d-9973-96adeb23e2a0] StochasticDiffEq from https://github.com/JuliaDiffEq/StochasticDiffEq.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StochasticDiffEq ───────────── v6.19.1
-    Cloning [d25df0c9-e2be-5dd7-82c8-3ad0b3e990b9] Inflate from https://github.com/GunnarFarneback/Inflate.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Inflate ────────────────────── v0.1.2
-    Cloning [ae5879a3-cd67-5da8-be7f-38c6eb64a37b] ResettableStacks from https://github.com/JuliaDiffEq/ResettableStacks.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ResettableStacks ───────────── v1.0.0
-    Cloning [6b9d7cbe-bcb9-11e9-073f-15a7a543e2eb] GeneralizedGenerated from https://github.com/thautwarm/GeneralizedGenerated.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GeneralizedGenerated ───────── v0.2.2
-    Cloning [e6f89c97-d47a-5376-807f-9c37f3926c36] LoggingExtras from https://github.com/oxinabox/LoggingExtras.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LoggingExtras ──────────────── v0.4.0
-    Cloning [f2c3362d-daeb-58d1-803e-2bc74f2840b4] RecursiveFactorization from https://github.com/YingboMa/RecursiveFactorization.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RecursiveFactorization ─────── v0.1.0
-    Cloning [ffbed154-4ef7-542d-bbb7-c09d3a79fcae] DocStringExtensions from https://github.com/JuliaDocs/DocStringExtensions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DocStringExtensions ────────── v0.8.1
-    Cloning [bbf7d656-a473-5ed7-a52c-81e309532950] CommonSubexpressions from https://github.com/rdeits/CommonSubexpressions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CommonSubexpressions ───────── v0.2.0
-    Cloning [01680d73-4ee2-5a08-a1aa-533608c188bb] GenericSVD from https://github.com/JuliaLinearAlgebra/GenericSVD.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GenericSVD ─────────────────── v0.3.0
-    Cloning [961ee093-0014-501f-94e3-6117800e7a78] ModelingToolkit from https://github.com/JuliaDiffEq/ModelingToolkit.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ModelingToolkit ────────────── v1.4.2
-    Cloning [c3572dad-4567-51f8-b174-8c6c989267f4] Sundials from https://github.com/JuliaDiffEq/Sundials.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Sundials ───────────────────── v3.9.0
-    Cloning [e66e0078-7015-5450-92f7-15fbd957f2ae] CompilerSupportLibraries_jll from https://github.com/JuliaBinaryWrappers/CompilerSupportLibraries_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
-    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ───────────────── v0.12.1
-    Cloning [764a87c0-6b3e-53db-9096-fe964310641d] BoundaryValueDiffEq from https://github.com/JuliaDiffEq/BoundaryValueDiffEq.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BoundaryValueDiffEq ────────── v2.4.0
-    Cloning [d4d017d3-3776-5f7e-afef-a10c40355c18] ExponentialUtilities from https://github.com/JuliaDiffEq/ExponentialUtilities.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ExponentialUtilities ───────── v1.6.0
-    Cloning [19fa3120-7c27-5ec5-8db8-b0b0aa330d6f] VertexSafeGraphs from https://github.com/matbesancon/VertexSafeGraphs.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed VertexSafeGraphs ───────────── v0.1.1
-    Cloning [d96e819e-fc66-5662-9728-84c9c7592b0a] Parameters from https://github.com/mauro3/Parameters.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parameters ─────────────────── v0.12.0
-    Cloning [3783bdb8-4a98-5b6b-af9a-565f29a5fe9c] TableTraits from https://github.com/queryverse/TableTraits.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TableTraits ────────────────── v1.0.0
-   Updating `~/.julia/environments/v1.4/Project.toml`
-  [0c46a032] + DifferentialEquations v6.12.0
-   Updating `~/.julia/environments/v1.4/Manifest.toml`
-  [1520ce14] + AbstractTrees v0.3.2
-  [79e6a3ab] + Adapt v1.0.1
-  [ec485272] + ArnoldiMethod v0.0.4
-  [4fba245c] + ArrayInterface v2.6.1
-  [4c555306] + ArrayLayouts v0.1.5
-  [aae01518] + BandedMatrices v0.14.3
-  [b99e7846] + BinaryProvider v0.5.8
-  [764a87c0] + BoundaryValueDiffEq v2.4.0
-  [a603d957] + CanonicalTraits v0.2.1
-  [d360d2e6] + ChainRulesCore v0.7.1
-  [bbf7d656] + CommonSubexpressions v0.2.0
-  [34da2185] + Compat v3.8.0
-  [e66e0078] + CompilerSupportLibraries_jll v0.3.1+0
-  [88cd18e8] + ConsoleProgressMonitor v0.1.2
-  [864edb3b] + DataStructures v0.17.10
-  [bcd4f6db] + DelayDiffEq v5.23.0
-  [2b5f629d] + DiffEqBase v6.25.0
-  [459566f4] + DiffEqCallbacks v2.12.1
-  [5a0ffddc] + DiffEqFinancial v2.2.1
-  [c894b116] + DiffEqJump v6.5.0
-  [77a26b50] + DiffEqNoiseProcess v3.9.0
-  [055956cb] + DiffEqPhysics v3.5.0
-  [163ba53b] + DiffResults v1.0.2
-  [b552c78f] + DiffRules v1.0.1
-  [0c46a032] + DifferentialEquations v6.12.0
-  [c619ae07] + DimensionalPlotRecipes v1.1.0
-  [b4f34e82] + Distances v0.8.2
-  [ffbed154] + DocStringExtensions v0.8.1
-  [d4d017d3] + ExponentialUtilities v1.6.0
-  [1a297f60] + FillArrays v0.8.5
-  [6a86dc24] + FiniteDiff v2.3.0
-  [59287772] + Formatting v0.4.1
-  [f6369f11] + ForwardDiff v0.10.9
-  [069b7b12] + FunctionWrappers v1.1.1
-  [6b9d7cbe] + GeneralizedGenerated v0.2.2
-  [01680d73] + GenericSVD v0.3.0
-  [d25df0c9] + Inflate v0.1.2
-  [42fd0dbc] + IterativeSolvers v0.8.3
-  [82899510] + IteratorInterfaceExtensions v1.0.0
-  [b14d175d] + JuliaVariables v0.2.0
-  [b964fa9f] + LaTeXStrings v1.1.0
-  [23fbe1c1] + Latexify v0.13.0
-  [1d6d02ad] + LeftChildRightSiblingTrees v0.1.2
-  [093fc24a] + LightGraphs v1.3.1
-  [d3d80556] + LineSearches v7.0.1
-  [e6f89c97] + LoggingExtras v0.4.0
-  [d8e11817] + MLStyle v0.3.1
-  [1914dd2f] + MacroTools v0.5.5
-  [961ee093] + ModelingToolkit v1.4.2
-  [46d2c3a1] + MuladdMacro v0.2.2
-  [f9640e96] + MultiScaleArrays v1.6.0
-  [d41bc354] + NLSolversBase v7.6.1
-  [2774e3e8] + NLsolve v4.3.0
-  [77ba4419] + NaNMath v0.3.3
-  [71a1bf82] + NameResolution v0.1.3
-  [efe28fd5] + OpenSpecFun_jll v0.5.3+3
-  [bac558e1] + OrderedCollections v1.1.0
-  [1dea7af3] + OrdinaryDiffEq v5.32.0
-  [65888b18] + ParameterizedFunctions v5.0.3
-  [d96e819e] + Parameters v0.12.0
-  [e409e4f3] + PoissonRandom v0.4.0
-  [8162dcfd] + PrettyPrint v0.1.0
-  [33c8b6b6] + ProgressLogging v0.1.2
-  [92933f4c] + ProgressMeter v1.2.0
-  [e6cf234a] + RandomNumbers v1.4.0
-  [3cdcf5f2] + RecipesBase v0.8.0
-  [731186ca] + RecursiveArrayTools v2.1.0
-  [f2c3362d] + RecursiveFactorization v0.1.0
-  [189a3867] + Reexport v0.2.0
-  [ae029012] + Requires v1.0.1
-  [ae5879a3] + ResettableStacks v1.0.0
-  [f2b01f46] + Roots v1.0.1
-  [699a6c99] + SimpleTraits v0.9.1
-  [47a9eef4] + SparseDiffTools v1.4.0
-  [276daf66] + SpecialFunctions v0.10.0
-  [90137ffa] + StaticArrays v0.12.1
-  [9672c7b4] + SteadyStateDiffEq v1.5.0
-  [789caeaf] + StochasticDiffEq v6.19.1
-  [c3572dad] + Sundials v3.9.0
-  [3783bdb8] + TableTraits v1.0.0
-  [5d786b92] + TerminalLoggers v0.1.1
-  [a2a6695c] + TreeViews v0.3.0
-  [3a884ed6] + UnPack v0.1.0
-  [19fa3120] + VertexSafeGraphs v0.1.1
-  [700de1a5] + ZygoteRules v0.2.0
-  [2a0f44e3] + Base64 
-  [ade2ca70] + Dates 
-  [8bb1440f] + DelimitedFiles 
-  [8ba89e20] + Distributed 
-  [b77e0a4c] + InteractiveUtils 
-  [76f85450] + LibGit2 
-  [8f399da3] + Libdl 
-  [37e2e46d] + LinearAlgebra 
-  [56ddb016] + Logging 
-  [d6f4376e] + Markdown 
-  [a63ad114] + Mmap 
-  [44cfe95a] + Pkg 
-  [de0858da] + Printf 
-  [3fa0cd96] + REPL 
-  [9a3f8284] + Random 
-  [ea8e919c] + SHA 
-  [9e88b42a] + Serialization 
-  [1a1011a3] + SharedArrays 
-  [6462fe0b] + Sockets 
-  [2f01184e] + SparseArrays 
-  [10745b16] + Statistics 
-  [4607b0f0] + SuiteSparse 
-  [8dfed614] + Test 
-  [cf7118a7] + UUIDs 
-  [4ec0a83e] + Unicode 
-   Building Sundials → `~/.julia/packages/Sundials/S5Ws7/deps/build.log`
-    Testing DifferentialEquations
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_0LFSR3/Manifest.toml`
-  [1520ce14] AbstractTrees v0.3.2
-  [79e6a3ab] Adapt v1.0.1
-  [ec485272] ArnoldiMethod v0.0.4
-  [4fba245c] ArrayInterface v2.6.1
-  [4c555306] ArrayLayouts v0.1.5
-  [aae01518] BandedMatrices v0.14.3
-  [b99e7846] BinaryProvider v0.5.8
-  [764a87c0] BoundaryValueDiffEq v2.4.0
-  [a603d957] CanonicalTraits v0.2.1
-  [d360d2e6] ChainRulesCore v0.7.1
-  [bbf7d656] CommonSubexpressions v0.2.0
-  [34da2185] Compat v3.8.0
-  [e66e0078] CompilerSupportLibraries_jll v0.3.1+0
-  [88cd18e8] ConsoleProgressMonitor v0.1.2
-  [864edb3b] DataStructures v0.17.10
-  [bcd4f6db] DelayDiffEq v5.23.0
-  [2b5f629d] DiffEqBase v6.25.0
-  [459566f4] DiffEqCallbacks v2.12.1
-  [5a0ffddc] DiffEqFinancial v2.2.1
-  [c894b116] DiffEqJump v6.5.0
-  [77a26b50] DiffEqNoiseProcess v3.9.0
-  [055956cb] DiffEqPhysics v3.5.0
-  [163ba53b] DiffResults v1.0.2
-  [b552c78f] DiffRules v1.0.1
-  [0c46a032] DifferentialEquations v6.12.0
-  [c619ae07] DimensionalPlotRecipes v1.1.0
-  [b4f34e82] Distances v0.8.2
-  [ffbed154] DocStringExtensions v0.8.1
-  [d4d017d3] ExponentialUtilities v1.6.0
-  [1a297f60] FillArrays v0.8.5
-  [6a86dc24] FiniteDiff v2.3.0
-  [59287772] Formatting v0.4.1
-  [f6369f11] ForwardDiff v0.10.9
-  [069b7b12] FunctionWrappers v1.1.1
-  [6b9d7cbe] GeneralizedGenerated v0.2.2
-  [01680d73] GenericSVD v0.3.0
-  [d25df0c9] Inflate v0.1.2
-  [42fd0dbc] IterativeSolvers v0.8.3
-  [82899510] IteratorInterfaceExtensions v1.0.0
-  [b14d175d] JuliaVariables v0.2.0
-  [b964fa9f] LaTeXStrings v1.1.0
-  [23fbe1c1] Latexify v0.13.0
-  [1d6d02ad] LeftChildRightSiblingTrees v0.1.2
-  [093fc24a] LightGraphs v1.3.1
-  [d3d80556] LineSearches v7.0.1
-  [e6f89c97] LoggingExtras v0.4.0
-  [d8e11817] MLStyle v0.3.1
-  [1914dd2f] MacroTools v0.5.5
-  [961ee093] ModelingToolkit v1.4.2
-  [46d2c3a1] MuladdMacro v0.2.2
-  [f9640e96] MultiScaleArrays v1.6.0
-  [d41bc354] NLSolversBase v7.6.1
-  [2774e3e8] NLsolve v4.3.0
-  [77ba4419] NaNMath v0.3.3
-  [71a1bf82] NameResolution v0.1.3
-  [efe28fd5] OpenSpecFun_jll v0.5.3+3
-  [bac558e1] OrderedCollections v1.1.0
-  [1dea7af3] OrdinaryDiffEq v5.32.0
-  [65888b18] ParameterizedFunctions v5.0.3
-  [d96e819e] Parameters v0.12.0
-  [e409e4f3] PoissonRandom v0.4.0
-  [8162dcfd] PrettyPrint v0.1.0
-  [33c8b6b6] ProgressLogging v0.1.2
-  [92933f4c] ProgressMeter v1.2.0
-  [e6cf234a] RandomNumbers v1.4.0
-  [3cdcf5f2] RecipesBase v0.8.0
-  [731186ca] RecursiveArrayTools v2.1.0
-  [f2c3362d] RecursiveFactorization v0.1.0
-  [189a3867] Reexport v0.2.0
-  [ae029012] Requires v1.0.1
-  [ae5879a3] ResettableStacks v1.0.0
-  [f2b01f46] Roots v1.0.1
-  [1bc83da4] SafeTestsets v0.0.1
-  [699a6c99] SimpleTraits v0.9.1
-  [47a9eef4] SparseDiffTools v1.4.0
-  [276daf66] SpecialFunctions v0.10.0
-  [90137ffa] StaticArrays v0.12.1
-  [9672c7b4] SteadyStateDiffEq v1.5.0
-  [789caeaf] StochasticDiffEq v6.19.1
-  [c3572dad] Sundials v3.9.0
-  [3783bdb8] TableTraits v1.0.0
-  [5d786b92] TerminalLoggers v0.1.1
-  [a2a6695c] TreeViews v0.3.0
-  [3a884ed6] UnPack v0.1.0
-  [19fa3120] VertexSafeGraphs v0.1.1
-  [700de1a5] ZygoteRules v0.2.0
-  [2a0f44e3] Base64 
-  [ade2ca70] Dates 
-  [8bb1440f] DelimitedFiles 
-  [8ba89e20] Distributed 
-  [b77e0a4c] InteractiveUtils 
-  [76f85450] LibGit2 
-  [8f399da3] Libdl 
-  [37e2e46d] LinearAlgebra 
-  [56ddb016] Logging 
-  [d6f4376e] Markdown 
-  [a63ad114] Mmap 
-  [44cfe95a] Pkg 
-  [de0858da] Printf 
-  [3fa0cd96] REPL 
-  [9a3f8284] Random 
-  [ea8e919c] SHA 
-  [9e88b42a] Serialization 
-  [1a1011a3] SharedArrays 
-  [6462fe0b] Sockets 
-  [2f01184e] SparseArrays 
-  [10745b16] Statistics 
-  [4607b0f0] SuiteSparse 
-  [8dfed614] Test 
-  [cf7118a7] UUIDs 
-  [4ec0a83e] Unicode 
-Test Summary:              | Pass  Total
-Default Discrete Algorithm |    1      1
-  8.562324 seconds (14.34 M allocations: 742.060 MiB, 4.59% gc time)
-Test Summary:         | Pass  Total
-Default ODE Algorithm |   22     22
-163.110240 seconds (313.85 M allocations: 14.214 GiB, 4.71% gc time)
-Test Summary:                  | Pass  Total
-Default Steady State Algorithm |    1      1
-  9.442423 seconds (16.09 M allocations: 849.893 MiB, 3.41% gc time)
-Test Summary:         | Pass  Total
-Default SDE Algorithm |    8      8
- 87.086557 seconds (147.39 M allocations: 33.946 GiB, 7.67% gc time)
-Test Summary:          | Pass  Total
-Default RODE Algorithm |    1      1
- 14.891612 seconds (23.21 M allocations: 6.978 GiB, 8.65% gc time)
-Test Summary:         | Pass  Total
-Default DDE Algorithm |    3      3
-  8.049140 seconds (14.43 M allocations: 770.330 MiB, 3.02% gc time)
-Test Summary:         | Pass  Total
-Default DAE Algorithm |    1      1
-  3.711536 seconds (6.78 M allocations: 350.849 MiB, 3.16% gc time)
-Test Summary:         | Pass  Total
-Default BVP Algorithm |    2      2
- 10.130887 seconds (19.47 M allocations: 1007.055 MiB, 4.78% gc time)
-305.288411 seconds (556.55 M allocations: 58.816 GiB, 5.65% gc time)
-    Testing DifferentialEquations tests passed 

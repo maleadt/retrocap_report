@@ -2,69 +2,50 @@ Julia Version 1.4.0
 Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  CPU: Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-8.0.1 (ORCJIT, skylake)
 Environment:
   JULIA_DEPOT_PATH = ::/usr/local/share/julia
   JULIA_NUM_THREADS = 2
 
   Resolving package versions...
+  Installed SimpleTraits ───────────────── v0.9.1
+  Installed DataAPI ────────────────────── v1.1.0
   Installed Missings ───────────────────── v0.4.3
+  Installed Rmath ──────────────────────── v0.6.1
   Installed OrderedCollections ─────────── v1.1.0
-  Installed POMDPPolicies ──────────────── v0.3.0
+  Installed SpecialFunctions ───────────── v0.10.0
+  Installed POMDPPolicies ──────────────── v0.3.1
+  Installed LightGraphs ────────────────── v1.3.1
   Installed SortingAlgorithms ──────────── v0.3.1
   Installed StatsFuns ──────────────────── v0.9.4
+  Installed Crayons ────────────────────── v4.0.1
+  Installed QuadGK ─────────────────────── v2.3.1
+  Installed FillArrays ─────────────────── v0.8.5
+  Installed Arpack ─────────────────────── v0.4.0
+  Installed Arpack_jll ─────────────────── v3.5.0+2
   Installed Rmath_jll ──────────────────── v0.2.2+0
   Installed PDMats ─────────────────────── v0.9.12
-  Installed StatsBase ──────────────────── v0.32.2
-  Installed LightGraphs ────────────────── v1.3.1
-  Installed Distributions ──────────────── v0.23.1
-  Installed POMDPModelTools ────────────── v0.2.3
-  Installed StaticArrays ───────────────── v0.12.1
+  Installed MacroTools ─────────────────── v0.5.5
+  Installed Inflate ────────────────────── v0.1.2
+  Installed ArnoldiMethod ──────────────── v0.0.4
+  Installed POMDPs ─────────────────────── v0.8.2
+  Installed UnicodePlots ───────────────── v1.2.0
+  Installed OpenBLAS_jll ───────────────── v0.3.9+0
+  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
   Installed BeliefUpdaters ─────────────── v0.1.2
+  Installed Parameters ─────────────────── v0.12.0
+  Installed StaticArrays ───────────────── v0.12.1
+  Installed POMDPModelTools ────────────── v0.2.3
+  Installed DataStructures ─────────────── v0.17.10
+  Installed StatsBase ──────────────────── v0.32.2
+  Installed Distributions ──────────────── v0.23.2
+  Installed OpenSpecFun_jll ────────────── v0.5.3+3
   Installed NamedTupleTools ────────────── v0.13.2
-    Cloning [9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a] DataAPI from https://github.com/JuliaData/DataAPI.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataAPI ────────────────────── v1.1.0
-    Cloning [699a6c99-e7fa-54fc-8d76-47d257e15c1d] SimpleTraits from https://github.com/mauro3/SimpleTraits.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SimpleTraits ───────────────── v0.9.1
-    Cloning [276daf66-3868-5448-9aa4-cd146d93841b] SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SpecialFunctions ───────────── v0.10.0
-    Cloning [79098fc4-a85e-5d69-aa6a-4863f24498fa] Rmath from https://github.com/JuliaStats/Rmath.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Rmath ──────────────────────── v0.6.1
-    Cloning [a8cc5b0e-0ffa-5ad4-8c14-923d3ee1735f] Crayons from https://github.com/KristofferC/Crayons.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Crayons ────────────────────── v4.0.1
-    Cloning [1a297f60-69ca-5386-bcde-b61e274b549b] FillArrays from https://github.com/JuliaArrays/FillArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FillArrays ─────────────────── v0.8.5
-    Cloning [a93abf59-7444-517b-a68a-c42f96afdd7d] POMDPs from https://github.com/JuliaPOMDP/POMDPs.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed POMDPs ─────────────────────── v0.8.2
-    Cloning [b8865327-cd53-5732-bb35-84acbb429228] UnicodePlots from https://github.com/Evizero/UnicodePlots.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed UnicodePlots ───────────────── v1.2.0
-    Cloning [1fd47b50-473d-5c70-9696-f719f8f3bcdc] QuadGK from https://github.com/JuliaMath/QuadGK.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed QuadGK ─────────────────────── v2.3.1
-    Cloning [7d9fca2a-8960-54d3-9f78-7d1dccf2cb97] Arpack from https://github.com/JuliaLinearAlgebra/Arpack.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Arpack ─────────────────────── v0.4.0
-    Cloning [ec485272-7323-5ecc-a04f-4719b315124d] ArnoldiMethod from https://github.com/haampie/ArnoldiMethod.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ArnoldiMethod ──────────────── v0.0.4
-    Cloning [68821587-b530-5797-8361-c406ea357684] Arpack_jll from https://github.com/JuliaBinaryWrappers/Arpack_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Arpack_jll ─────────────────── v3.5.0+2
-    Cloning [1914dd2f-81c6-5fcd-8719-6d5c9610ff09] MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MacroTools ─────────────────── v0.5.5
-    Cloning [d25df0c9-e2be-5dd7-82c8-3ad0b3e990b9] Inflate from https://github.com/GunnarFarneback/Inflate.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Inflate ────────────────────── v0.1.2
-    Cloning [4536629a-c528-5b80-bd46-f80d51c5b363] OpenBLAS_jll from https://github.com/JuliaBinaryWrappers/OpenBLAS_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenBLAS_jll ───────────────── v0.3.7+8
-    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ─────────────── v0.17.10
-    Cloning [efe28fd5-8261-553b-a9e1-b2916fc3738e] OpenSpecFun_jll from https://github.com/JuliaBinaryWrappers/OpenSpecFun_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenSpecFun_jll ────────────── v0.5.3+3
-    Cloning [e66e0078-7015-5450-92f7-15fbd957f2ae] CompilerSupportLibraries_jll from https://github.com/JuliaBinaryWrappers/CompilerSupportLibraries_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
-    Cloning [d96e819e-fc66-5662-9728-84c9c7592b0a] Parameters from https://github.com/mauro3/Parameters.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parameters ─────────────────── v0.12.0
    Updating `~/.julia/environments/v1.4/Project.toml`
-  [182e52fb] + POMDPPolicies v0.3.0
+  [182e52fb] + POMDPPolicies v0.3.1
    Updating `~/.julia/environments/v1.4/Manifest.toml`
   [ec485272] + ArnoldiMethod v0.0.4
   [7d9fca2a] + Arpack v0.4.0
@@ -74,19 +55,19 @@ Environment:
   [a8cc5b0e] + Crayons v4.0.1
   [9a962f9c] + DataAPI v1.1.0
   [864edb3b] + DataStructures v0.17.10
-  [31c24e10] + Distributions v0.23.1
+  [31c24e10] + Distributions v0.23.2
   [1a297f60] + FillArrays v0.8.5
   [d25df0c9] + Inflate v0.1.2
   [093fc24a] + LightGraphs v1.3.1
   [1914dd2f] + MacroTools v0.5.5
   [e1d29d7a] + Missings v0.4.3
   [d9ec5142] + NamedTupleTools v0.13.2
-  [4536629a] + OpenBLAS_jll v0.3.7+8
+  [4536629a] + OpenBLAS_jll v0.3.9+0
   [efe28fd5] + OpenSpecFun_jll v0.5.3+3
   [bac558e1] + OrderedCollections v1.1.0
   [90014a1f] + PDMats v0.9.12
   [08074719] + POMDPModelTools v0.2.3
-  [182e52fb] + POMDPPolicies v0.3.0
+  [182e52fb] + POMDPPolicies v0.3.1
   [a93abf59] + POMDPs v0.8.2
   [d96e819e] + Parameters v0.12.0
   [1fd47b50] + QuadGK v2.3.1
@@ -125,9 +106,9 @@ Environment:
   [cf7118a7] + UUIDs 
   [4ec0a83e] + Unicode 
     Testing POMDPPolicies
-┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package POMDPSimulators [e0d0a172]:\n POMDPSimulators [e0d0a172] log:\n ├─possible versions are: [0.1.0-0.1.3, 0.2.0, 0.3.0-0.3.4] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0-0.1.3, 0.2.0, 0.3.0-0.3.4]\n └─restricted by compatibility requirements with POMDPPolicies [182e52fb] to versions: uninstalled — no versions left\n   └─POMDPPolicies [182e52fb] log:\n     ├─possible versions are: [0.1.0-0.1.5, 0.2.0-0.2.2, 0.3.0] or uninstalled\n     └─restricted to versions 0.3.0 by an explicit requirement, leaving only versions 0.3.0", nothing)
+┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package POMDPSimulators [e0d0a172]:\n POMDPSimulators [e0d0a172] log:\n ├─possible versions are: [0.1.0-0.1.3, 0.2.0, 0.3.0-0.3.4] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0-0.1.3, 0.2.0, 0.3.0-0.3.4]\n └─restricted by compatibility requirements with POMDPPolicies [182e52fb] to versions: uninstalled — no versions left\n   └─POMDPPolicies [182e52fb] log:\n     ├─possible versions are: [0.1.0-0.1.5, 0.2.0-0.2.2, 0.3.0-0.3.1] or uninstalled\n     └─restricted to versions 0.3.1 by an explicit requirement, leaving only versions 0.3.1", nothing)
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1365
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [=======================>                 ]  55.8 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [=====>                                   ]  10.5 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [=====>                                   ]  10.5 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_l6eLb7/Manifest.toml`
+Status `/tmp/jl_HFieq8/Manifest.toml`
   [ec485272] ArnoldiMethod v0.0.4
   [7d9fca2a] Arpack v0.4.0
   [68821587] Arpack_jll v3.5.0+2
@@ -144,7 +125,7 @@ Environment:
   [a93c6f00] DataFrames v0.20.2
   [864edb3b] DataStructures v0.17.10
   [e2d170a0] DataValueInterfaces v1.0.0
-  [31c24e10] Distributions v0.23.1
+  [31c24e10] Distributions v0.23.2
   [1a297f60] FillArrays v0.8.5
   [53c48c17] FixedPointNumbers v0.7.1
   [d25df0c9] Inflate v0.1.2
@@ -157,7 +138,7 @@ Environment:
   [442fdcdd] Measures v0.3.1
   [e1d29d7a] Missings v0.4.3
   [d9ec5142] NamedTupleTools v0.13.2
-  [4536629a] OpenBLAS_jll v0.3.7+8
+  [4536629a] OpenBLAS_jll v0.3.9+0
   [efe28fd5] OpenSpecFun_jll v0.5.3+3
   [bac558e1] OrderedCollections v1.1.0
   [90014a1f] PDMats v0.9.12
@@ -167,7 +148,7 @@ Environment:
   [e0d0a172] POMDPSimulators v0.3.4
   [a93abf59] POMDPs v0.8.2
   [d96e819e] Parameters v0.12.0
-  [69de0a69] Parsers v0.3.12
+  [69de0a69] Parsers v1.0.0
   [2dfb63ee] PooledArrays v0.5.3
   [92933f4c] ProgressMeter v1.2.0
   [1fd47b50] QuadGK v2.3.1
@@ -216,10 +197,10 @@ Test Summary: | Pass  Total
 function      |    3      3
 Test Summary: |
 stochastic    | No tests
-policy chose action left 32 of 100 times.
-policy chose action right 21 of 100 times.
-policy chose action up 21 of 100 times.
-policy chose action down 26 of 100 times.
+policy chose action left 19 of 62 times.
+policy chose action right 15 of 62 times.
+policy chose action up 12 of 62 times.
+policy chose action down 16 of 62 times.
 Test Summary: |
 utility       | No tests
 Test Summary: | Pass  Total
@@ -228,10 +209,10 @@ Test Summary: | Pass  Total
 random        |    1      1
 ┌ Warning: `n_states(m)` is deprecated, use `length(states(m))` instead.
 │   caller = top-level scope at test_pretty_printing.jl:4
-└ @ Core ~/.julia/packages/POMDPPolicies/GFHwO/test/test_pretty_printing.jl:4
+└ @ Core ~/.julia/packages/POMDPPolicies/VNzW9/test/test_pretty_printing.jl:4
 Test Summary:   | Pass  Total
 pretty_printing |    3      3
-exploration policies: Error During Test at /home/pkgeval/.julia/packages/POMDPPolicies/GFHwO/test/runtests.jl:31
+exploration policies: Error During Test at /home/pkgeval/.julia/packages/POMDPPolicies/VNzW9/test/runtests.jl:31
   Got exception outside of a @test
   LoadError: MethodError: no method matching action(::EpsGreedyPolicy, ::FunctionPolicy{var"#17#18"}, ::Int64, ::StaticArrays.SArray{Tuple{2},Int64,1,2})
   Closest candidates are:
@@ -240,22 +221,22 @@ exploration policies: Error During Test at /home/pkgeval/.julia/packages/POMDPPo
     action(!Matched::CategoricalTabularPolicy, ::Any) at /home/pkgeval/.julia/packages/POMDPPolicies/j6BMj/src/stochastic.jl:57
     ...
   Stacktrace:
-   [1] top-level scope at /home/pkgeval/.julia/packages/POMDPPolicies/GFHwO/test/test_exploration_policies.jl:7
+   [1] top-level scope at /home/pkgeval/.julia/packages/POMDPPolicies/VNzW9/test/test_exploration_policies.jl:7
    [2] include(::String) at ./client.jl:439
-   [3] top-level scope at /home/pkgeval/.julia/packages/POMDPPolicies/GFHwO/test/runtests.jl:32
+   [3] top-level scope at /home/pkgeval/.julia/packages/POMDPPolicies/VNzW9/test/runtests.jl:32
    [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Test/src/Test.jl:1113
-   [5] top-level scope at /home/pkgeval/.julia/packages/POMDPPolicies/GFHwO/test/runtests.jl:32
+   [5] top-level scope at /home/pkgeval/.julia/packages/POMDPPolicies/VNzW9/test/runtests.jl:32
    [6] include(::String) at ./client.jl:439
    [7] top-level scope at none:6
    [8] eval(::Module, ::Any) at ./boot.jl:331
    [9] exec_options(::Base.JLOptions) at ./client.jl:264
    [10] _start() at ./client.jl:484
-  in expression starting at /home/pkgeval/.julia/packages/POMDPPolicies/GFHwO/test/test_exploration_policies.jl:7
+  in expression starting at /home/pkgeval/.julia/packages/POMDPPolicies/VNzW9/test/test_exploration_policies.jl:7
   
 Test Summary:        | Error  Total
 exploration policies |     1      1
 ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
-in expression starting at /home/pkgeval/.julia/packages/POMDPPolicies/GFHwO/test/runtests.jl:31
+in expression starting at /home/pkgeval/.julia/packages/POMDPPolicies/VNzW9/test/runtests.jl:31
 ERROR: Package POMDPPolicies errored during testing
 Stacktrace:
  [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53

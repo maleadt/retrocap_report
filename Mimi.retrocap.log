@@ -2,125 +2,99 @@ Julia Version 1.4.0
 Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  CPU: Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-8.0.1 (ORCJIT, skylake)
 Environment:
   JULIA_DEPOT_PATH = ::/usr/local/share/julia
   JULIA_NUM_THREADS = 2
 
   Resolving package versions...
-  Installed DataAPI ────────────────────── v1.1.0
-  Installed Missings ───────────────────── v0.4.3
-  Installed FilePaths ──────────────────── v0.8.0
   Installed Reexport ───────────────────── v0.2.0
+  Installed DataAPI ────────────────────── v1.1.0
+  Installed FilePaths ──────────────────── v0.8.0
   Installed Tables ─────────────────────── v0.2.11
+  Installed Missings ───────────────────── v0.4.3
   Installed Setfield ───────────────────── v0.5.4
-  Installed LightGraphs ────────────────── v1.3.0
   Installed Mimi ───────────────────────── v0.9.4
+  Installed LightGraphs ────────────────── v1.3.0
+  Installed SimpleTraits ───────────────── v0.9.1
   Installed PooledArrays ───────────────── v0.5.3
   Installed URIParser ──────────────────── v0.4.0
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed Measures ───────────────────── v0.3.1
   Installed IteratorInterfaceExtensions ── v1.0.0
   Installed TableShowUtils ─────────────── v0.2.5
-  Installed SimpleTraits ───────────────── v0.9.1
-  Installed Measures ───────────────────── v0.3.1
   Installed Requires ───────────────────── v0.5.2
+  Installed IterTools ──────────────────── v1.3.0
   Installed Rmath ──────────────────────── v0.6.1
-  Installed TranscodingStreams ─────────── v0.9.5
-  Installed FixedPointNumbers ──────────── v0.6.1
   Installed Nullables ──────────────────── v1.0.0
   Installed SpecialFunctions ───────────── v0.9.0
-  Installed IterTools ──────────────────── v1.3.0
-  Installed JSONSchema ─────────────────── v0.1.1
+  Installed FixedPointNumbers ──────────── v0.6.1
   Installed OrderedCollections ─────────── v1.1.0
-  Installed WeakRefStrings ─────────────── v0.6.2
+  Installed JSONSchema ─────────────────── v0.1.1
   Installed Combinatorics ──────────────── v1.0.0
-  Installed RecipesBase ────────────────── v0.8.0
-  Installed SortingAlgorithms ──────────── v0.3.1
-  Installed StatsFuns ──────────────────── v0.9.4
+  Installed WeakRefStrings ─────────────── v0.6.2
   Installed MetaGraphs ─────────────────── v0.6.4
-  Installed DataValueInterfaces ────────── v1.0.0
-  Installed DoubleFloats ───────────────── v1.1.6
+  Installed RecipesBase ────────────────── v0.8.0
+  Installed StatsFuns ──────────────────── v0.9.4
+  Installed SortingAlgorithms ──────────── v0.3.1
   Installed QuadGK ─────────────────────── v2.3.1
-  Installed DataValues ─────────────────── v0.4.13
-  Installed Compose ────────────────────── v0.7.4
-  Installed JLD2 ───────────────────────── v0.1.3
+  Installed DataValueInterfaces ────────── v1.0.0
   Installed FillArrays ─────────────────── v0.8.5
+  Installed JLD2 ───────────────────────── v0.1.3
+  Installed Compose ────────────────────── v0.7.4
+  Installed DataValues ─────────────────── v0.4.13
+  Installed DoubleFloats ───────────────── v1.1.6
   Installed GenericSchur ───────────────── v0.4.0
   Installed Arpack ─────────────────────── v0.4.0
   Installed IniFile ────────────────────── v0.5.0
-  Installed Arpack_jll ─────────────────── v3.5.0+2
-  Installed CodecZlib ──────────────────── v0.6.0
   Installed MacroTools ─────────────────── v0.5.5
+  Installed Arpack_jll ─────────────────── v3.5.0+2
   Installed ColorTypes ─────────────────── v0.8.1
   Installed Rmath_jll ──────────────────── v0.2.2+0
   Installed Quadmath ───────────────────── v0.5.2
+  Installed CodecZlib ──────────────────── v0.6.0
   Installed CSVFiles ───────────────────── v0.16.1
-  Installed GraphPlot ──────────────────── v0.3.1
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed TableTraitsUtils ───────────── v1.0.1
   Installed FileIO ─────────────────────── v1.2.4
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed PDMats ─────────────────────── v0.9.12
+  Installed GraphPlot ──────────────────── v0.3.1
+  Installed ArnoldiMethod ──────────────── v0.0.4
+  Installed Inflate ────────────────────── v0.1.2
+  Installed DataFrames ─────────────────── v0.19.4
+  Installed Compat ─────────────────────── v2.2.0
+  Installed FilePathsBase ──────────────── v0.6.2
+  Installed Colors ─────────────────────── v0.9.6
+  Installed MbedTLS ────────────────────── v1.0.1
+  Installed OpenBLAS_jll ───────────────── v0.3.9+0
   Installed GenericSVD ─────────────────── v0.3.0
   Installed StatsBase ──────────────────── v0.32.0
-  Installed TextParse ──────────────────── v0.9.1
-  Installed StringBuilders ─────────────── v0.2.2
   Installed Distributions ──────────────── v0.21.12
+  Installed HTTP ───────────────────────── v0.8.13
+  Installed TextParse ──────────────────── v0.9.1
+  Installed BinaryProvider ─────────────── v0.5.8
+  Installed StaticArrays ───────────────── v0.12.1
+  Installed GlobalSensitivityAnalysis ──── v0.0.5
+  Installed StringBuilders ─────────────── v0.2.2
+  Installed NodeJS ─────────────────────── v1.1.1
+  Installed DataStructures ─────────────── v0.15.0
   Installed CompilerSupportLibraries_jll ─ v0.3.1+0
+  Installed MbedTLS_jll ────────────────── v2.16.0+1
+  Installed Polynomials ────────────────── v0.6.1
+  Installed CategoricalArrays ──────────── v0.7.7
+  Installed JSON ───────────────────────── v0.20.1
+  Installed IterableTables ─────────────── v1.0.0
+  Installed ProgressMeter ──────────────── v1.2.0
+  Installed Electron ───────────────────── v1.1.0
   Installed TableTraits ────────────────── v1.0.0
   Installed OpenSpecFun_jll ────────────── v0.5.3+3
+  Installed NamedArrays ────────────────── v0.9.4
   Installed VegaLite ───────────────────── v1.0.0
   Installed Sobol ──────────────────────── v1.3.0
-    Cloning [382cd787-c1b6-5bf2-a167-d5b971a19bda] TableTraitsUtils from https://github.com/queryverse/TableTraitsUtils.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TableTraitsUtils ───────────── v1.0.1
-    Cloning [41ab1584-1d38-5bbf-9106-f11c6c58b48f] InvertedIndices from https://github.com/mbauman/InvertedIndices.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed InvertedIndices ────────────── v1.0.0
-    Cloning [a93c6f00-e57d-5684-b7b6-d8193f3e46c0] DataFrames from https://github.com/JuliaData/DataFrames.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [=======>                                 ]  15.4 %[2K[?25h  Installed DataFrames ─────────────────── v0.19.4
-    Cloning [187b0558-2788-49d3-abe0-74a17ed4e7c9] ConstructionBase from https://github.com/JuliaObjects/ConstructionBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ConstructionBase ───────────── v1.0.0
-    Cloning [ec485272-7323-5ecc-a04f-4719b315124d] ArnoldiMethod from https://github.com/haampie/ArnoldiMethod.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ArnoldiMethod ──────────────── v0.0.4
-    Cloning [5ae59095-9a9b-59fe-a467-6f913c188581] Colors from https://github.com/JuliaGraphics/Colors.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Colors ─────────────────────── v0.9.6
-    Cloning [d25df0c9-e2be-5dd7-82c8-3ad0b3e990b9] Inflate from https://github.com/GunnarFarneback/Inflate.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Inflate ────────────────────── v0.1.2
-    Cloning [34da2185-b29b-5c13-b0c7-acf172513d20] Compat from https://github.com/JuliaLang/Compat.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Compat ─────────────────────── v2.2.0
-    Cloning [48062228-2e41-5def-b9a4-89aafe57970f] FilePathsBase from https://github.com/rofinn/FilePathsBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FilePathsBase ──────────────── v0.6.2
-    Cloning [4536629a-c528-5b80-bd46-f80d51c5b363] OpenBLAS_jll from https://github.com/JuliaBinaryWrappers/OpenBLAS_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenBLAS_jll ───────────────── v0.3.7+8
-    Cloning [90014a1f-27ba-587c-ab20-58faa44d9150] PDMats from https://github.com/JuliaStats/PDMats.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PDMats ─────────────────────── v0.9.12
-    Cloning [739be429-bea8-5141-9913-cc70e7f3736d] MbedTLS from https://github.com/JuliaLang/MbedTLS.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MbedTLS ────────────────────── v1.0.1
-    Cloning [1b10255b-6da3-57ce-9089-d24e8517b87e] GlobalSensitivityAnalysis from https://github.com/lrennels/GlobalSensitivityAnalysis.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [==============>                          ]  32.9 %    Fetching: [=======================>                 ]  57.4 %    Fetching: [========================>                ]  57.6 %    Fetching: [========================>                ]  57.8 %    Fetching: [===========================>             ]  65.2 %    Fetching: [===========================>             ]  65.4 %[2K[?25h  Installed GlobalSensitivityAnalysis ──── v0.0.5
-    Cloning [cd3eb016-35fb-5094-929b-558a96fad6f3] HTTP from https://github.com/JuliaWeb/HTTP.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed HTTP ───────────────────────── v0.8.13
-    Cloning [2bd173c7-0d6d-553b-b6af-13a54713934c] NodeJS from https://github.com/davidanthoff/NodeJS.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NodeJS ─────────────────────── v1.1.1
-    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ───────────────── v0.12.1
-    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ─────────────── v0.5.8
-    Cloning [c8ffd9c3-330d-5841-b78e-0817d7145fa1] MbedTLS_jll from https://github.com/JuliaBinaryWrappers/MbedTLS_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MbedTLS_jll ────────────────── v2.16.0+1
-    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ─────────────── v0.15.0
-    Cloning [324d7699-5711-5eae-9e2f-1d82baa6b597] CategoricalArrays from https://github.com/JuliaData/CategoricalArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CategoricalArrays ──────────── v0.7.7
-    Cloning [682c06a0-de6a-54ab-a142-c8b1cf79cde6] JSON from https://github.com/JuliaIO/JSON.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed JSON ───────────────────────── v0.20.1
-    Cloning [1c8ee90f-4401-5389-894e-7a04a3dc0f4d] IterableTables from https://github.com/queryverse/IterableTables.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IterableTables ─────────────── v1.0.0
-    Cloning [a1bb12fb-d4d1-54b4-b10a-ee7951ef7ad3] Electron from https://github.com/davidanthoff/Electron.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Electron ───────────────────── v1.1.0
-    Cloning [f27b6e38-b328-58d1-80ce-0feddd5e7a45] Polynomials from https://github.com/JuliaMath/Polynomials.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Polynomials ────────────────── v0.6.1
-    Cloning [86f7a689-2022-50b4-a561-43c23ac3c673] NamedArrays from https://github.com/davidavdav/NamedArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NamedArrays ────────────────── v0.9.4
-    Cloning [92933f4c-e287-5a05-a399-4b506db050ca] ProgressMeter from https://github.com/timholy/ProgressMeter.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ProgressMeter ──────────────── v1.2.0
    Updating `~/.julia/environments/v1.4/Project.toml`
   [e4e893b0] + Mimi v0.9.4
    Updating `~/.julia/environments/v1.4/Manifest.toml`
@@ -176,7 +150,7 @@ Environment:
   [86f7a689] + NamedArrays v0.9.4
   [2bd173c7] + NodeJS v1.1.1
   [4d1e1d77] + Nullables v1.0.0
-  [4536629a] + OpenBLAS_jll v0.3.7+8
+  [4536629a] + OpenBLAS_jll v0.3.9+0
   [efe28fd5] + OpenSpecFun_jll v0.5.3+3
   [bac558e1] + OrderedCollections v1.1.0
   [90014a1f] + PDMats v0.9.12
@@ -238,7 +212,7 @@ Environment:
    Building VegaLite ─→ `~/.julia/packages/VegaLite/CzoMX/deps/build.log`
    Building Electron ─→ `~/.julia/packages/Electron/aRIgh/deps/build.log`
     Testing Mimi
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_E1O9Ul/Manifest.toml`
+Status `/tmp/jl_8KeTu4/Manifest.toml`
   [ec485272] ArnoldiMethod v0.0.4
   [7d9fca2a] Arpack v0.4.0
   [68821587] Arpack_jll v3.5.0+2
@@ -296,7 +270,7 @@ Environment:
   [86f7a689] NamedArrays v0.9.4
   [2bd173c7] NodeJS v1.1.1
   [4d1e1d77] Nullables v1.0.0
-  [4536629a] OpenBLAS_jll v0.3.7+8
+  [4536629a] OpenBLAS_jll v0.3.9+0
   [efe28fd5] OpenSpecFun_jll v0.5.3+3
   [bac558e1] OrderedCollections v1.1.0
   [90014a1f] PDMats v0.9.12
@@ -421,8 +395,8 @@ Stacktrace:
 [ Info: test_connectorcomp.jl
 [ Info: test_explorer_model.jl
 [ Info: test_explorer_sim.jl
-Running 100 trials for 1 scenarios...  2%|▎             |  ETA: 0:02:57[KRunning 100 trials for 1 scenarios...100%|██████████████| Time: 0:00:03[K
-Running 100 trials for 1 scenarios...  2%|▎             |  ETA: 0:03:46[KRunning 100 trials for 1 scenarios...100%|██████████████| Time: 0:00:05[K
+Running 100 trials for 1 scenarios...  2%|▎             |  ETA: 0:02:25[KRunning 100 trials for 1 scenarios...100%|██████████████| Time: 0:00:03[K
+Running 100 trials for 1 scenarios...  2%|▎             |  ETA: 0:03:18[KRunning 100 trials for 1 scenarios...100%|██████████████| Time: 0:00:04[K
 [ Info: test_plotting.jl
 [ Info: test_empirical.jl
 ERROR: LoadError: InitError: PyError (PyImport_ImportModule
@@ -473,7 +447,7 @@ during initialization of module ExcelReaders
 in expression starting at /home/pkgeval/.julia/packages/ExcelFiles/NtqPa/src/ExcelFiles.jl:4
 Mimi-SA: Error During Test at /home/pkgeval/.julia/packages/Mimi/lWNcc/test/mcs/runtests.jl:4
   Got exception outside of a @test
-  LoadError: Failed to precompile ExcelFiles [89b67f3b-d1aa-5f6f-9ca4-282e8d98620d] to /home/pkgeval/.julia/compiled/v1.4/ExcelFiles/cZRj4_Lh13l.ji.
+  LoadError: Failed to precompile ExcelFiles [89b67f3b-d1aa-5f6f-9ca4-282e8d98620d] to /home/pkgeval/.julia/compiled/v1.4/ExcelFiles/cZRj4_fWise.ji.
   Stacktrace:
    [1] error(::String) at ./error.jl:33
    [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272

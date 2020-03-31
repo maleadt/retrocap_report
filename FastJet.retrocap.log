@@ -1,212 +1,0 @@
-Julia Version 1.4.0
-Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
-Platform Info:
-  OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
-  WORD_SIZE: 64
-  LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
-Environment:
-  JULIA_DEPOT_PATH = ::/usr/local/share/julia
-  JULIA_NUM_THREADS = 2
-
-  Resolving package versions...
-    Cloning [33ff6b16-4e4c-5b96-9396-f34816859298] FastJet_Julia_Wrapper_jll from https://github.com/JuliaBinaryWrappers/FastJet_Julia_Wrapper_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FastJet_Julia_Wrapper_jll ─ v0.5.0+0
-    Cloning [8509a5d2-ae42-11e8-0b46-5d0ace601ee4] FastJet from https://github.com/jstrube/FastJet.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FastJet ─────────────────── v0.3.0
-    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ──────────── v0.5.8
-    Cloning [7111ce8a-33e8-59c0-b870-b64149b8fb4c] FastJet_jll from https://github.com/JuliaBinaryWrappers/FastJet_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FastJet_jll ─────────────── v3.3.3+2
-    Cloning [1f15a43c-97ca-5a2a-ae31-89f07a497df4] CxxWrap from https://github.com/JuliaInterop/CxxWrap.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CxxWrap ─────────────────── v0.9.0
-    Cloning [1914dd2f-81c6-5fcd-8719-6d5c9610ff09] MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MacroTools ──────────────── v0.5.5
-    Cloning [3eaa8342-bff7-56a5-9981-c04077f7cee7] libcxxwrap_julia_jll from https://github.com/JuliaBinaryWrappers/libcxxwrap_julia_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed libcxxwrap_julia_jll ────── v0.6.6+0
-#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ##=O#- #                                                                      #-#O=#  #                                                                                                                                                0.1%                                                                           0.4%                                                                           0.7%                                                                           1.1%#                                                                          2.2%###                                                                        4.9%#######                                                                    9.7%###########                                                               15.4%###########                                                               15.5%#########################                                                 35.6%################################                                          45.6%########################################                                  56.6%################################################                          67.7%########################################################                  79.0%#################################################################         90.4%######################################################################## 100.0%
-#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ##=O#- #                                                                      #-#O=#  #                                                                                                                                                0.1%                                                                           0.4%                                                                           0.8%#                                                                          1.8%##                                                                         3.7%#####                                                                      7.6%###########                                                               15.3%##############                                                            20.1%###############################                                           43.2%#################################                                         46.1%############################################                              61.4%################################################                          67.7%#####################################################                     74.8%##########################################################                81.9%################################################################          89.1%#####################################################################     96.3%######################################################################## 100.0%
-#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ##=O#- #                                                                      #-#O=#  #                                                                     #######                                                                   10.1%######################                                                    31.3%#############################################                             63.6%######################################################################## 100.0%
-   Updating `~/.julia/environments/v1.4/Project.toml`
-  [8509a5d2] + FastJet v0.3.0
-   Updating `~/.julia/environments/v1.4/Manifest.toml`
-  [b99e7846] + BinaryProvider v0.5.8
-  [1f15a43c] + CxxWrap v0.9.0
-  [8509a5d2] + FastJet v0.3.0
-  [33ff6b16] + FastJet_Julia_Wrapper_jll v0.5.0+0
-  [7111ce8a] + FastJet_jll v3.3.3+2
-  [1914dd2f] + MacroTools v0.5.5
-  [3eaa8342] + libcxxwrap_julia_jll v0.6.6+0
-  [2a0f44e3] + Base64 
-  [ade2ca70] + Dates 
-  [b77e0a4c] + InteractiveUtils 
-  [76f85450] + LibGit2 
-  [8f399da3] + Libdl 
-  [56ddb016] + Logging 
-  [d6f4376e] + Markdown 
-  [44cfe95a] + Pkg 
-  [de0858da] + Printf 
-  [3fa0cd96] + REPL 
-  [9a3f8284] + Random 
-  [ea8e919c] + SHA 
-  [9e88b42a] + Serialization 
-  [6462fe0b] + Sockets 
-  [cf7118a7] + UUIDs 
-  [4ec0a83e] + Unicode 
-   Building CxxWrap → `~/.julia/packages/CxxWrap/lDNAy/deps/build.log`
-   Building FastJet → `~/.julia/packages/FastJet/s1NtW/deps/build.log`
-┌ Error: Error building `FastJet`: 
-│ 
-│ signal (11): Segmentation fault
-│ in expression starting at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/StdLib.jl:16
-│ jl_object_id_ at /buildworker/worker/package_linux64/build/src/builtins.c:342
-│ jl_object_id_ at /buildworker/worker/package_linux64/build/src/builtins.c:344
-│ objectid at ./reflection.jl:312 [inlined]
-│ protect_from_gc at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:319
-│ _jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2158 [inlined]
-│ jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2322
-│ unknown function (ip: 0x7fe27d8732cf)
-│ _ZN5jlcxx15protect_from_gcEP11_jl_value_t at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/deps/usr/lib/libcxxwrap_julia.so (unknown line)
-│ _ZN5jlcxx13ParameterListIJNS_7TypeVarILi1EEEEEclEm.constprop.7574 at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/deps/usr/lib/libcxxwrap_julia_stl.so (unknown line)
-│ _ZN5jlcxx6Module17add_type_internalINS_10ParametricIJNS_7TypeVarILi1EEEEEENS_13ParameterListIJEEE11_jl_value_tEENS_11TypeWrapperIT_EERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPT1_ at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/deps/usr/lib/libcxxwrap_julia_stl.so (unknown line)
-│ _ZN5jlcxx17add_smart_pointerISt10shared_ptrEERNS_11TypeWrapperINS_10ParametricIJNS_7TypeVarILi1EEEEEEEERNS_6ModuleERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/deps/usr/lib/libcxxwrap_julia_stl.so (unknown line)
-│ define_cxxwrap_stl_module at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/deps/usr/lib/libcxxwrap_julia_stl.so (unknown line)
-│ register_julia_module at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/deps/usr/lib/libcxxwrap_julia.so (unknown line)
-│ register_julia_module at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:360 [inlined]
-│ readmodule at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:664
-│ wrapmodule at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:670
-│ unknown function (ip: 0x7fe27d89a070)
-│ _jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2158 [inlined]
-│ jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2322
-│ jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1692 [inlined]
-│ do_call at /buildworker/worker/package_linux64/build/src/interpreter.c:369
-│ eval_value at /buildworker/worker/package_linux64/build/src/interpreter.c:458
-│ eval_stmt_value at /buildworker/worker/package_linux64/build/src/interpreter.c:409 [inlined]
-│ eval_body at /buildworker/worker/package_linux64/build/src/interpreter.c:817
-│ jl_interpret_toplevel_thunk at /buildworker/worker/package_linux64/build/src/interpreter.c:911
-│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:814
-│ jl_eval_module_expr at /buildworker/worker/package_linux64/build/src/toplevel.c:181
-│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:640
-│ jl_parse_eval_all at /buildworker/worker/package_linux64/build/src/ast.c:872
-│ jl_load at /buildworker/worker/package_linux64/build/src/toplevel.c:872
-│ include at ./Base.jl:377
-│ include at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:1
-│ _jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2158 [inlined]
-│ jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2322
-│ jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1692 [inlined]
-│ do_call at /buildworker/worker/package_linux64/build/src/interpreter.c:369
-│ eval_value at /buildworker/worker/package_linux64/build/src/interpreter.c:458
-│ eval_stmt_value at /buildworker/worker/package_linux64/build/src/interpreter.c:409 [inlined]
-│ eval_body at /buildworker/worker/package_linux64/build/src/interpreter.c:817
-│ jl_interpret_toplevel_thunk at /buildworker/worker/package_linux64/build/src/interpreter.c:911
-│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:814
-│ jl_eval_module_expr at /buildworker/worker/package_linux64/build/src/toplevel.c:181
-│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:640
-│ jl_parse_eval_all at /buildworker/worker/package_linux64/build/src/ast.c:872
-│ jl_load at /buildworker/worker/package_linux64/build/src/toplevel.c:872
-│ include at ./Base.jl:377
-│ _jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2144 [inlined]
-│ jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2322
-│ jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1692 [inlined]
-│ do_call at /buildworker/worker/package_linux64/build/src/interpreter.c:369
-│ eval_value at /buildworker/worker/package_linux64/build/src/interpreter.c:458
-│ eval_stmt_value at /buildworker/worker/package_linux64/build/src/interpreter.c:409 [inlined]
-│ eval_body at /buildworker/worker/package_linux64/build/src/interpreter.c:817
-│ eval_body at /buildworker/worker/package_linux64/build/src/interpreter.c:744
-│ jl_interpret_toplevel_thunk at /buildworker/worker/package_linux64/build/src/interpreter.c:911
-│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:814
-│ jl_toplevel_eval_in at /buildworker/worker/package_linux64/build/src/toplevel.c:843
-│ eval at ./boot.jl:331 [inlined]
-│ eval at ./client.jl:449
-│ _jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2144 [inlined]
-│ jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2322
-│ top-level scope at ./none:3
-│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:808
-│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:764
-│ jl_toplevel_eval_in at /buildworker/worker/package_linux64/build/src/toplevel.c:843
-│ eval at ./boot.jl:331
-│ _jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2144 [inlined]
-│ jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2322
-│ exec_options at ./client.jl:264
-│ _start at ./client.jl:484
-│ jfptr__start_2076.clone_1 at /opt/julia/lib/julia/sys.so (unknown line)
-│ _jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2144 [inlined]
-│ jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2322
-│ jl_apply at /buildworker/worker/package_linux64/build/ui/../src/julia.h:1692 [inlined]
-│ true_main at /buildworker/worker/package_linux64/build/ui/repl.c:96
-│ main at /buildworker/worker/package_linux64/build/ui/repl.c:217
-│ __libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
-│ _start at /opt/julia/bin/julia (unknown line)
-│ Allocations: 6850330 (Pool: 6848653; Big: 1677); GC: 6
-│ ERROR: LoadError: Failed to precompile CxxWrap [1f15a43c-97ca-5a2a-ae31-89f07a497df4] to /home/pkgeval/.julia/compiled/v1.4/CxxWrap/WGIJU_3PUOn.ji.
-│ Stacktrace:
-│  [1] error(::String) at ./error.jl:33
-│  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
-│  [3] _require(::Base.PkgId) at ./loading.jl:1029
-│  [4] require(::Base.PkgId) at ./loading.jl:927
-│  [5] require(::Module, ::Symbol) at ./loading.jl:922
-│  [6] include(::String) at ./client.jl:439
-│  [7] top-level scope at none:5
-│ in expression starting at /home/pkgeval/.julia/packages/FastJet/s1NtW/deps/build.jl:1
-└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:892
-    Testing FastJet
-Status `/tmp/jl_1yt7iH/Manifest.toml`
-  [b99e7846] BinaryProvider v0.5.8
-  [1f15a43c] CxxWrap v0.9.0
-  [8509a5d2] FastJet v0.3.0
-  [33ff6b16] FastJet_Julia_Wrapper_jll v0.5.0+0
-  [7111ce8a] FastJet_jll v3.3.3+2
-  [1914dd2f] MacroTools v0.5.5
-  [3eaa8342] libcxxwrap_julia_jll v0.6.6+0
-  [2a0f44e3] Base64 
-  [ade2ca70] Dates 
-  [8ba89e20] Distributed 
-  [b77e0a4c] InteractiveUtils 
-  [76f85450] LibGit2 
-  [8f399da3] Libdl 
-  [56ddb016] Logging 
-  [d6f4376e] Markdown 
-  [44cfe95a] Pkg 
-  [de0858da] Printf 
-  [3fa0cd96] REPL 
-  [9a3f8284] Random 
-  [ea8e919c] SHA 
-  [9e88b42a] Serialization 
-  [6462fe0b] Sockets 
-  [8dfed614] Test 
-  [cf7118a7] UUIDs 
-  [4ec0a83e] Unicode 
-ERROR: LoadError: /home/pkgeval/.julia/packages/FastJet/s1NtW/deps/deps.jl not found, CxxWrap did not build properly
-Stacktrace:
- [1] error(::String) at ./error.jl:33
- [2] top-level scope at /home/pkgeval/.julia/packages/FastJet/s1NtW/src/FastJet.jl:5
- [3] include(::Module, ::String) at ./Base.jl:377
- [4] top-level scope at none:2
- [5] eval at ./boot.jl:331 [inlined]
- [6] eval(::Expr) at ./client.jl:449
- [7] top-level scope at ./none:3
-in expression starting at /home/pkgeval/.julia/packages/FastJet/s1NtW/src/FastJet.jl:4
-ERROR: LoadError: Failed to precompile FastJet [8509a5d2-ae42-11e8-0b46-5d0ace601ee4] to /home/pkgeval/.julia/compiled/v1.4/FastJet/yu4oa_S238L.ji.
-Stacktrace:
- [1] error(::String) at ./error.jl:33
- [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
- [3] _require(::Base.PkgId) at ./loading.jl:1029
- [4] require(::Base.PkgId) at ./loading.jl:927
- [5] require(::Module, ::Symbol) at ./loading.jl:922
- [6] include(::String) at ./client.jl:439
- [7] top-level scope at none:6
-in expression starting at /home/pkgeval/.julia/packages/FastJet/s1NtW/test/runtests.jl:1
-ERROR: Package FastJet errored during testing
-Stacktrace:
- [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
- [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
- [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
- [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
- [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
- [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
- [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
- [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
- [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
- [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
- [11] top-level scope at none:16

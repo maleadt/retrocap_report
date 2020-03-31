@@ -2,70 +2,50 @@ Julia Version 1.4.0
 Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  CPU: Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-8.0.1 (ORCJIT, skylake)
 Environment:
   JULIA_DEPOT_PATH = ::/usr/local/share/julia
   JULIA_NUM_THREADS = 2
 
   Resolving package versions...
+  Installed Missings ───────────────────── v0.4.3
   Installed DataAPI ────────────────────── v1.1.0
+  Installed SimpleTraits ───────────────── v0.9.1
   Installed Rmath ──────────────────────── v0.6.1
-  Installed FillArrays ─────────────────── v0.8.5
-  Installed StatsFuns ──────────────────── v0.9.4
-  Installed Arpack_jll ─────────────────── v3.5.0+2
+  Installed OrderedCollections ─────────── v1.1.0
+  Installed SpecialFunctions ───────────── v0.10.0
+  Installed POMDPPolicies ──────────────── v0.3.1
   Installed LightGraphs ────────────────── v1.3.1
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed QuadGK ─────────────────────── v2.3.1
+  Installed StatsFuns ──────────────────── v0.9.4
+  Installed Crayons ────────────────────── v4.0.1
+  Installed Arpack ─────────────────────── v0.4.0
+  Installed FillArrays ─────────────────── v0.8.5
+  Installed Arpack_jll ─────────────────── v3.5.0+2
+  Installed Rmath_jll ──────────────────── v0.2.2+0
+  Installed PDMats ─────────────────────── v0.9.12
+  Installed MacroTools ─────────────────── v0.5.5
+  Installed ArnoldiMethod ──────────────── v0.0.4
   Installed POMDPs ─────────────────────── v0.8.2
-  Installed OpenSpecFun_jll ────────────── v0.5.3+3
+  Installed Inflate ────────────────────── v0.1.2
   Installed UnicodePlots ───────────────── v1.2.0
+  Installed POMDPModelTools ────────────── v0.2.3
+  Installed Distributions ──────────────── v0.23.2
+  Installed OpenBLAS_jll ───────────────── v0.3.9+0
   Installed CompilerSupportLibraries_jll ─ v0.3.1+0
-  Installed NamedTupleTools ────────────── v0.13.2
+  Installed OpenSpecFun_jll ────────────── v0.5.3+3
+  Installed BeliefUpdaters ─────────────── v0.1.2
   Installed Parameters ─────────────────── v0.12.0
-  Installed Distributions ──────────────── v0.23.1
-    Cloning [699a6c99-e7fa-54fc-8d76-47d257e15c1d] SimpleTraits from https://github.com/mauro3/SimpleTraits.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SimpleTraits ───────────────── v0.9.1
-    Cloning [182e52fb-cfd0-5e46-8c26-fd0667c990f4] POMDPPolicies from https://github.com/JuliaPOMDP/POMDPPolicies.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed POMDPPolicies ──────────────── v0.3.0
-    Cloning [e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28] Missings from https://github.com/JuliaData/Missings.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Missings ───────────────────── v0.4.3
-    Cloning [276daf66-3868-5448-9aa4-cd146d93841b] SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SpecialFunctions ───────────── v0.10.0
-    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ─────────── v1.1.0
-    Cloning [a8cc5b0e-0ffa-5ad4-8c14-923d3ee1735f] Crayons from https://github.com/KristofferC/Crayons.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Crayons ────────────────────── v4.0.1
-    Cloning [a2af1166-a08f-5f64-846c-94a0d3cef48c] SortingAlgorithms from https://github.com/JuliaCollections/SortingAlgorithms.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SortingAlgorithms ──────────── v0.3.1
-    Cloning [1fd47b50-473d-5c70-9696-f719f8f3bcdc] QuadGK from https://github.com/JuliaMath/QuadGK.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed QuadGK ─────────────────────── v2.3.1
-    Cloning [7d9fca2a-8960-54d3-9f78-7d1dccf2cb97] Arpack from https://github.com/JuliaLinearAlgebra/Arpack.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Arpack ─────────────────────── v0.4.0
-    Cloning [1914dd2f-81c6-5fcd-8719-6d5c9610ff09] MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MacroTools ─────────────────── v0.5.5
-    Cloning [ec485272-7323-5ecc-a04f-4719b315124d] ArnoldiMethod from https://github.com/haampie/ArnoldiMethod.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ArnoldiMethod ──────────────── v0.0.4
-    Cloning [f50d1b31-88e8-58de-be2c-1cc44531875f] Rmath_jll from https://github.com/JuliaBinaryWrappers/Rmath_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Rmath_jll ──────────────────── v0.2.2+0
-    Cloning [90014a1f-27ba-587c-ab20-58faa44d9150] PDMats from https://github.com/JuliaStats/PDMats.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PDMats ─────────────────────── v0.9.12
-    Cloning [d25df0c9-e2be-5dd7-82c8-3ad0b3e990b9] Inflate from https://github.com/GunnarFarneback/Inflate.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Inflate ────────────────────── v0.1.2
-    Cloning [08074719-1b2a-587c-a292-00f91cc44415] POMDPModelTools from https://github.com/JuliaPOMDP/POMDPModelTools.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed POMDPModelTools ────────────── v0.2.3
-    Cloning [2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91] StatsBase from https://github.com/JuliaStats/StatsBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StatsBase ──────────────────── v0.32.2
-    Cloning [4536629a-c528-5b80-bd46-f80d51c5b363] OpenBLAS_jll from https://github.com/JuliaBinaryWrappers/OpenBLAS_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenBLAS_jll ───────────────── v0.3.7+8
-    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ─────────────── v0.17.10
-    Cloning [8bb6e9a1-7d73-552c-a44a-e5dc5634aac4] BeliefUpdaters from https://github.com/JuliaPOMDP/BeliefUpdaters.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BeliefUpdaters ─────────────── v0.1.2
-    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ───────────────── v0.12.1
+  Installed StaticArrays ───────────────── v0.12.1
+  Installed StatsBase ──────────────────── v0.32.2
+  Installed DataStructures ─────────────── v0.17.10
+  Installed NamedTupleTools ────────────── v0.13.2
    Updating `~/.julia/environments/v1.4/Project.toml`
-  [182e52fb] + POMDPPolicies v0.3.0
+  [182e52fb] + POMDPPolicies v0.3.1
    Updating `~/.julia/environments/v1.4/Manifest.toml`
   [ec485272] + ArnoldiMethod v0.0.4
   [7d9fca2a] + Arpack v0.4.0
@@ -75,19 +55,19 @@ Environment:
   [a8cc5b0e] + Crayons v4.0.1
   [9a962f9c] + DataAPI v1.1.0
   [864edb3b] + DataStructures v0.17.10
-  [31c24e10] + Distributions v0.23.1
+  [31c24e10] + Distributions v0.23.2
   [1a297f60] + FillArrays v0.8.5
   [d25df0c9] + Inflate v0.1.2
   [093fc24a] + LightGraphs v1.3.1
   [1914dd2f] + MacroTools v0.5.5
   [e1d29d7a] + Missings v0.4.3
   [d9ec5142] + NamedTupleTools v0.13.2
-  [4536629a] + OpenBLAS_jll v0.3.7+8
+  [4536629a] + OpenBLAS_jll v0.3.9+0
   [efe28fd5] + OpenSpecFun_jll v0.5.3+3
   [bac558e1] + OrderedCollections v1.1.0
   [90014a1f] + PDMats v0.9.12
   [08074719] + POMDPModelTools v0.2.3
-  [182e52fb] + POMDPPolicies v0.3.0
+  [182e52fb] + POMDPPolicies v0.3.1
   [a93abf59] + POMDPs v0.8.2
   [d96e819e] + Parameters v0.12.0
   [1fd47b50] + QuadGK v2.3.1
@@ -126,7 +106,7 @@ Environment:
   [cf7118a7] + UUIDs 
   [4ec0a83e] + Unicode 
     Testing POMDPPolicies
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [=======================================> ]  96.3 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_4rPTIM/Manifest.toml`
+Status `/tmp/jl_NdT0Vs/Manifest.toml`
   [ec485272] ArnoldiMethod v0.0.4
   [7d9fca2a] Arpack v0.4.0
   [68821587] Arpack_jll v3.5.0+2
@@ -143,7 +123,7 @@ Environment:
   [a93c6f00] DataFrames v0.20.2
   [864edb3b] DataStructures v0.17.10
   [e2d170a0] DataValueInterfaces v1.0.0
-  [31c24e10] Distributions v0.23.1
+  [31c24e10] Distributions v0.23.2
   [1a297f60] FillArrays v0.8.5
   [53c48c17] FixedPointNumbers v0.8.0
   [d25df0c9] Inflate v0.1.2
@@ -156,17 +136,17 @@ Environment:
   [442fdcdd] Measures v0.3.1
   [e1d29d7a] Missings v0.4.3
   [d9ec5142] NamedTupleTools v0.13.2
-  [4536629a] OpenBLAS_jll v0.3.7+8
+  [4536629a] OpenBLAS_jll v0.3.9+0
   [efe28fd5] OpenSpecFun_jll v0.5.3+3
   [bac558e1] OrderedCollections v1.1.0
   [90014a1f] PDMats v0.9.12
   [08074719] POMDPModelTools v0.2.3
   [355abbd5] POMDPModels v0.4.6
-  [182e52fb] POMDPPolicies v0.3.0
+  [182e52fb] POMDPPolicies v0.3.1
   [e0d0a172] POMDPSimulators v0.3.1
   [a93abf59] POMDPs v0.8.2
   [d96e819e] Parameters v0.12.0
-  [69de0a69] Parsers v0.3.12
+  [69de0a69] Parsers v1.0.0
   [2dfb63ee] PooledArrays v0.5.3
   [92933f4c] ProgressMeter v1.2.0
   [1fd47b50] QuadGK v2.3.1
@@ -215,10 +195,10 @@ Test Summary: | Pass  Total
 function      |    3      3
 Test Summary: |
 stochastic    | No tests
-policy chose action left 15 of 64 times.
-policy chose action right 19 of 64 times.
-policy chose action up 17 of 64 times.
-policy chose action down 13 of 64 times.
+policy chose action left 1 of 7 times.
+policy chose action right 2 of 7 times.
+policy chose action up 2 of 7 times.
+policy chose action down 2 of 7 times.
 Test Summary: |
 utility       | No tests
 Test Summary: | Pass  Total
@@ -227,7 +207,7 @@ Test Summary: | Pass  Total
 random        |    1      1
 ┌ Warning: `n_states(m)` is deprecated, use `length(states(m))` instead.
 │   caller = top-level scope at test_pretty_printing.jl:4
-└ @ Core ~/.julia/packages/POMDPPolicies/GFHwO/test/test_pretty_printing.jl:4
+└ @ Core ~/.julia/packages/POMDPPolicies/VNzW9/test/test_pretty_printing.jl:4
 Test Summary:   | Pass  Total
 pretty_printing |    3      3
 Test Summary:        | Pass  Total

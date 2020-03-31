@@ -1,45 +1,0 @@
-Julia Version 1.4.0
-Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
-Platform Info:
-  OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
-  WORD_SIZE: 64
-  LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
-Environment:
-  JULIA_DEPOT_PATH = ::/usr/local/share/julia
-  JULIA_NUM_THREADS = 2
-
-  Resolving package versions...
-  Installed TimerOutputs ──── v0.5.3
-    Cloning [b169e327-5944-5131-97a6-5d3d3f0a476a] PROPACK from https://github.com/JuliaSmoothOptimizers/PROPACK.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [=================>                       ]  40.2 %    Fetching: [=======================>                 ]  55.0 %[2K[?25h  Installed PROPACK ───────── v0.3.0
-    Cloning [5c8ed15e-5a4c-59e4-a42b-c7e8811fb125] LinearOperators from https://github.com/JuliaSmoothOptimizers/LinearOperators.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LinearOperators ─ v1.0.1
-    Cloning [2c99449f-f194-5e92-8ff0-13814ff41dcf] PROPACK_jll from https://github.com/JuliaBinaryWrappers/PROPACK_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PROPACK_jll ───── v0.1.0+0
-    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ── v0.5.8
-    Cloning [9aa1b823-49e4-5ca5-8b0f-3971ec8bab6a] FastClosures from https://github.com/c42f/FastClosures.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FastClosures ──── v0.3.2
-    Cloning [4536629a-c528-5b80-bd46-f80d51c5b363] OpenBLAS_jll from https://github.com/JuliaBinaryWrappers/OpenBLAS_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenBLAS_jll ──── v0.3.7+8
-#=#=#                                                                         ##O#- #                                                                       
-curl: (22) The requested URL returned error: 401 UNAUTHORIZED
-ERROR: Unable to automatically install 'PROPACK' from '/home/pkgeval/.julia/packages/PROPACK_jll/Sy488/Artifacts.toml'
-Stacktrace:
- [1] error(::String) at ./error.jl:33
- [2] ensure_artifact_installed(::String, ::Dict{String,Any}, ::String; platform::Pkg.BinaryPlatforms.Platform, verbose::Bool, quiet_download::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Artifacts.jl:894
- [3] ensure_all_artifacts_installed(::String; platform::Pkg.BinaryPlatforms.Platform, pkg_uuid::Nothing, include_lazy::Bool, verbose::Bool, quiet_download::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Artifacts.jl:958
- [4] download_artifacts(::Pkg.Types.Context, ::Array{String,1}; platform::Pkg.BinaryPlatforms.Linux, verbose::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:609
- [5] download_artifacts(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; platform::Pkg.BinaryPlatforms.Linux, verbose::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:588
- [6] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1084
- [7] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:159
- [8] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:112
- [9] #add#27 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:109 [inlined]
- [10] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:109 [inlined]
- [11] #add#24 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:107 [inlined]
- [12] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:107 [inlined]
- [13] add(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:106
- [14] add(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:106
- [15] top-level scope at none:15

@@ -2,98 +2,69 @@ Julia Version 1.4.0
 Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  CPU: Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-8.0.1 (ORCJIT, skylake)
 Environment:
   JULIA_DEPOT_PATH = ::/usr/local/share/julia
   JULIA_NUM_THREADS = 2
 
   Resolving package versions...
-  Installed SimpleTraits ───────────────── v0.9.1
-  Installed CatIndices ─────────────────── v0.2.1
-  Installed OrderedCollections ─────────── v1.1.0
-  Installed SpecialFunctions ───────────── v0.10.0
-  Installed IterTools ──────────────────── v1.3.0
+  Installed NaNMath ────────────────────── v0.3.3
+  Installed DataAPI ────────────────────── v1.1.0
+  Installed Missings ───────────────────── v0.4.3
+  Installed Reexport ───────────────────── v0.2.0
+  Installed ImageMorphology ────────────── v0.2.5
+  Installed ImageCore ──────────────────── v0.8.12
   Installed LightGraphs ────────────────── v1.3.1
   Installed ImageQuilting ──────────────── v0.9.1
+  Installed OrderedCollections ─────────── v1.1.0
+  Installed SimpleTraits ───────────────── v0.9.1
+  Installed FixedPointNumbers ──────────── v0.7.1
+  Installed IterTools ──────────────────── v1.3.0
+  Installed SpecialFunctions ───────────── v0.10.0
+  Installed Requires ───────────────────── v0.5.2
+  Installed CatIndices ─────────────────── v0.2.1
+  Installed MKL_jll ────────────────────── v2019.0.117+2
   Installed SortingAlgorithms ──────────── v0.3.1
+  Installed RecipesBase ────────────────── v0.7.0
   Installed MacroTools ─────────────────── v0.5.5
-  Installed ImageAxes ──────────────────── v0.6.4
-  Installed Graphics ───────────────────── v1.0.2
   Installed ColorTypes ─────────────────── v0.9.1
-  Installed MappedArrays ───────────────── v0.2.2
+  Installed CustomUnitRanges ───────────── v1.0.0
+  Installed ImageAxes ──────────────────── v0.6.4
   Installed AxisArrays ─────────────────── v0.4.2
+  Installed PaddedViews ────────────────── v0.5.3
+  Installed MappedArrays ───────────────── v0.2.2
+  Installed Graphics ───────────────────── v1.0.2
+  Installed RangeArrays ────────────────── v0.3.2
+  Installed FFTViews ───────────────────── v0.3.1
+  Installed CpuId ──────────────────────── v0.2.2
+  Installed ArnoldiMethod ──────────────── v0.0.4
+  Installed LightGraphsFlows ───────────── v0.3.1
+  Installed Inflate ────────────────────── v0.1.2
   Installed OffsetArrays ───────────────── v1.0.3
   Installed ImageMetadata ──────────────── v0.9.0
-  Installed ArnoldiMethod ──────────────── v0.0.4
-  Installed Inflate ────────────────────── v0.1.2
-  Installed EllipsisNotation ───────────── v0.4.0
-  Installed FFTW_jll ───────────────────── v3.3.9+4
+  Installed Colors ─────────────────────── v0.11.2
   Installed MathProgBase ───────────────── v0.7.8
+  Installed EllipsisNotation ───────────── v0.4.0
   Installed StatsBase ──────────────────── v0.32.2
+  Installed ComputationalResources ─────── v0.3.2
+  Installed FFTW_jll ───────────────────── v3.3.9+4
+  Installed ColorVectorSpace ───────────── v0.8.3
+  Installed Primes ─────────────────────── v0.4.0
   Installed TiledIteration ─────────────── v0.2.4
+  Installed IndirectArrays ─────────────── v0.5.1
   Installed AbstractFFTs ───────────────── v0.5.0
+  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
+  Installed StaticArrays ───────────────── v0.12.1
+  Installed ImageFiltering ─────────────── v0.6.11
+  Installed DataStructures ─────────────── v0.17.10
+  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+3
+  Installed FFTW ───────────────────────── v1.2.0
   Installed ProgressMeter ──────────────── v1.2.0
-    Cloning [e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28] Missings from https://github.com/JuliaData/Missings.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Missings ───────────────────── v0.4.3
-    Cloning [9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a] DataAPI from https://github.com/JuliaData/DataAPI.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataAPI ────────────────────── v1.1.0
-    Cloning [189a3867-3050-52da-a836-e630ba90ab69] Reexport from https://github.com/simonster/Reexport.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Reexport ───────────────────── v0.2.0
-    Cloning [77ba4419-2d1f-58cd-9bb1-8ffee604a2e3] NaNMath from https://github.com/mlubin/NaNMath.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NaNMath ────────────────────── v0.3.3
-    Cloning [a09fc81d-aa75-5fe9-8630-4744c3626534] ImageCore from https://github.com/JuliaImages/ImageCore.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ImageCore ──────────────────── v0.8.12
-    Cloning [787d08f9-d448-5407-9aad-5290dd7ab264] ImageMorphology from https://github.com/JuliaImages/ImageMorphology.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ImageMorphology ────────────── v0.2.5
-    Cloning [ae029012-a4dd-5104-9daa-d747884805df] Requires from https://github.com/MikeInnes/Requires.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Requires ───────────────────── v0.5.2
-    Cloning [53c48c17-4a7d-5ca2-90c5-79b7896eea93] FixedPointNumbers from https://github.com/JuliaMath/FixedPointNumbers.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FixedPointNumbers ──────────── v0.7.1
-    Cloning [856f044c-d86e-5d09-b602-aeab76dc8ba7] MKL_jll from https://github.com/JuliaBinaryWrappers/MKL_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MKL_jll ────────────────────── v2019.0.117+2
-    Cloning [dc8bdbbb-1ca9-579f-8c36-e416f6a65cce] CustomUnitRanges from https://github.com/JuliaArrays/CustomUnitRanges.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CustomUnitRanges ───────────── v1.0.0
-    Cloning [5432bcbf-9aad-5242-b902-cca2824c8663] PaddedViews from https://github.com/JuliaArrays/PaddedViews.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PaddedViews ────────────────── v0.5.3
-    Cloning [3cdcf5f2-1ef4-517c-9805-6587b60abb01] RecipesBase from https://github.com/JuliaPlots/RecipesBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RecipesBase ────────────────── v0.7.0
-    Cloning [4f61f5a4-77b1-5117-aa51-3ab5ef4ef0cd] FFTViews from https://github.com/JuliaArrays/FFTViews.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FFTViews ───────────────────── v0.3.1
-    Cloning [adafc99b-e345-5852-983c-f28acb93d879] CpuId from https://github.com/m-j-w/CpuId.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CpuId ──────────────────────── v0.2.2
-    Cloning [b3c3ace0-ae52-54e7-9d0b-2c1406fd6b9d] RangeArrays from https://github.com/JuliaArrays/RangeArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RangeArrays ────────────────── v0.3.2
-    Cloning [2f5eb75a-258c-59e0-affc-f41c55f75335] LightGraphsFlows from https://github.com/JuliaGraphs/LightGraphsFlows.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LightGraphsFlows ───────────── v0.3.1
-    Cloning [5ae59095-9a9b-59fe-a467-6f913c188581] Colors from https://github.com/JuliaGraphics/Colors.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Colors ─────────────────────── v0.11.2
-    Cloning [ed09eef8-17a6-5b46-8889-db040fac31e3] ComputationalResources from https://github.com/timholy/ComputationalResources.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ComputationalResources ─────── v0.3.2
-    Cloning [c3611d14-8923-5661-9e6a-0046d554d3a4] ColorVectorSpace from https://github.com/JuliaGraphics/ColorVectorSpace.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ColorVectorSpace ───────────── v0.8.3
-    Cloning [6a3955dd-da59-5b1f-98d4-e7296123deb5] ImageFiltering from https://github.com/JuliaImages/ImageFiltering.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ImageFiltering ─────────────── v0.6.11
-    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ───────────────── v0.12.1
-    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ─────────────── v0.17.10
-    Cloning [27ebfcd6-29c5-5fa9-bf4b-fb8fc14df3ae] Primes from https://github.com/JuliaMath/Primes.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Primes ─────────────────────── v0.4.0
-    Cloning [e66e0078-7015-5450-92f7-15fbd957f2ae] CompilerSupportLibraries_jll from https://github.com/JuliaBinaryWrappers/CompilerSupportLibraries_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
-    Cloning [9b13fd28-a010-5f03-acff-a1bbcff69959] IndirectArrays from https://github.com/JuliaArrays/IndirectArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IndirectArrays ─────────────── v0.5.1
-    Cloning [1d5cc7b8-4909-519e-a0f8-d0f5ad9712d0] IntelOpenMP_jll from https://github.com/JuliaBinaryWrappers/IntelOpenMP_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
-    Cloning [8197267c-284f-5f27-9208-e0e47529a953] IntervalSets from https://github.com/JuliaMath/IntervalSets.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IntervalSets ───────────────── v0.4.0
-    Cloning [efe28fd5-8261-553b-a9e1-b2916fc3738e] OpenSpecFun_jll from https://github.com/JuliaBinaryWrappers/OpenSpecFun_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenSpecFun_jll ────────────── v0.5.3+3
-    Cloning [7a1cc6ca-52ef-59f5-83cd-3a7055c09341] FFTW from https://github.com/JuliaMath/FFTW.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FFTW ───────────────────────── v1.2.0
+  Installed IntervalSets ───────────────── v0.4.0
    Updating `~/.julia/environments/v1.4/Project.toml`
   [e8712464] + ImageQuilting v0.9.1
    Updating `~/.julia/environments/v1.4/Manifest.toml`
@@ -179,12 +150,12 @@ Environment:
     Testing ImageQuilting
 ┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package SpecialFunctions [276daf66]:\n SpecialFunctions [276daf66] log:\n ├─possible versions are: [0.7.0-0.7.2, 0.8.0, 0.9.0, 0.10.0] or uninstalled\n ├─restricted to versions 0.10.0 by an explicit requirement, leaving only versions 0.10.0\n └─restricted by compatibility requirements with GeoStatsBase [323cb8eb] to versions: 0.7.0-0.7.2 — no versions left\n   └─GeoStatsBase [323cb8eb] log:\n     ├─possible versions are: [0.2.0-0.2.6, 0.3.0-0.3.6, 0.4.0-0.4.3, 0.5.0, 0.6.0-0.6.4, 0.7.0-0.7.1] or uninstalled\n     └─restricted to versions 0.7 by an explicit requirement, leaving only versions 0.7.0-0.7.1", nothing)
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1365
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [================================>        ]  79.8 %    Fetching: [==================================>      ]  83.3 %    Fetching: [=======================================> ]  96.4 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [================================>        ]  78.1 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [========>                                ]  18.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [========================>                ]  59.5 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_TXAXRC/Manifest.toml`
+Status `/tmp/jl_SA4wX3/Manifest.toml`
   [621f4979] AbstractFFTs v0.5.0
   [ec485272] ArnoldiMethod v0.0.4
   [7d9fca2a] Arpack v0.4.0
   [68821587] Arpack_jll v3.5.0+2
-  [4fba245c] ArrayInterface v2.6.1
+  [4fba245c] ArrayInterface v2.6.2
   [77b51b56] AverageShiftedHistograms v0.8.2
   [39de3d68] AxisArrays v0.4.2
   [9e28174c] BinDeps v0.8.10
@@ -260,14 +231,14 @@ Environment:
   [77ba4419] NaNMath v0.3.3
   [b8a86587] NearestNeighbors v0.4.4
   [6fe1bfb0] OffsetArrays v1.0.3
-  [4536629a] OpenBLAS_jll v0.3.7+8
+  [4536629a] OpenBLAS_jll v0.3.9+0
   [429524aa] Optim v0.18.1
   [bac558e1] OrderedCollections v1.1.0
   [90014a1f] PDMats v0.9.12
   [5432bcbf] PaddedViews v0.5.3
   [d96e819e] Parameters v0.12.0
   [69de0a69] Parsers v0.3.12
-  [ccf2f8ad] PlotThemes v1.0.1
+  [ccf2f8ad] PlotThemes v1.0.2
   [995b91a9] PlotUtils v0.6.4
   [91a5bcdd] Plots v0.28.4
   [2dfb63ee] PooledArrays v0.5.3
@@ -333,126 +304,79 @@ WARNING: Method definition dot(Any, Any, Any) in module LinearAlgebra at /buildw
   ** incremental compilation may be fatally broken for this module **
 
   Resolving package versions...
+  Installed X11_jll ─────────────────── v1.6.8+5
+  Installed Xorg_util_macros_jll ────── v1.19.2+0
+  Installed Xorg_xcb_proto_jll ──────── v1.13.0+0
   Installed Xorg_libXcursor_jll ─────── v1.2.0+1
+  Installed Libgcrypt_jll ───────────── v1.8.5+0
   Installed Xorg_libXfixes_jll ──────── v5.0.3+1
+  Installed Glib_jll ────────────────── v2.59.0+1
+  Installed Gtk ─────────────────────── v1.1.3
+  Installed Expat_jll ───────────────── v2.2.7+0
+  Installed Graphene_jll ────────────── v1.10.0+1
   Installed Xorg_libXi_jll ──────────── v1.7.10+1
-  Installed Xorg_libXtst_jll ────────── v1.2.3+1
-  Installed PCRE_jll ────────────────── v8.42.0+1
   Installed LZO_jll ─────────────────── v2.10.0+0
+  Installed Xorg_inputproto_jll ─────── v2.3.2+0
+  Installed PCRE_jll ────────────────── v8.42.0+1
+  Installed Xorg_libXrandr_jll ──────── v1.5.2+1
+  Installed Xorg_libXtst_jll ────────── v1.2.3+1
+  Installed Libiconv_jll ────────────── v1.16.0+1
+  Installed FreeType2_jll ───────────── v2.10.1+1
+  Installed Pixman_jll ──────────────── v0.38.4+1
+  Installed xkbcommon_jll ───────────── v0.9.1+1
   Installed Xorg_renderproto_jll ────── v0.11.1+0
+  Installed Xorg_libXdmcp_jll ───────── v1.1.3+1
+  Installed Xorg_compositeproto_jll ─── v0.4.0+0
   Installed Xorg_libxcb_jll ─────────── v1.13.0+1
+  Installed Cairo ───────────────────── v1.0.2
+  Installed FriBidi_jll ─────────────── v1.0.5+2
+  Installed Xorg_libXext_jll ────────── v1.3.4+1
+  Installed XML2_jll ────────────────── v2.9.9+1
   Installed Xorg_libXdamage_jll ─────── v1.1.5+1
+  Installed XSLT_jll ────────────────── v1.1.33+0
+  Installed Xorg_libX11_jll ─────────── v1.6.9+1
+  Installed gdk_pixbuf_jll ──────────── v2.38.2+6
+  Installed Xorg_randrproto_jll ─────── v1.5.0+0
+  Installed GTK3_jll ────────────────── v3.24.11+1
+  Installed at_spi2_core_jll ────────── v2.34.0+0
+  Installed Xorg_xproto_jll ─────────── v7.0.31+0
   Installed Libuuid_jll ─────────────── v2.34.0+3
+  Installed Wayland_protocols_jll ───── v1.18.0+1
+  Installed Libglvnd_jll ────────────── v1.3.0+1
+  Installed Pango_jll ───────────────── v1.42.4+7
+  Installed Libepoxy_jll ────────────── v1.5.4+0
   Installed Graphite2_jll ───────────── v1.3.13+1
+  Installed Xorg_libXcomposite_jll ──── v0.4.5+1
   Installed Xorg_libXrender_jll ─────── v0.9.10+1
-  Installed Libffi_jll ──────────────── v3.2.1+0
-  Installed Xorg_xtrans_jll ─────────── v1.4.0+0
   Installed Xorg_recordproto_jll ────── v1.14.2+0
+  Installed Xorg_fixesproto_jll ─────── v5.0.0+0
+  Installed Xorg_xtrans_jll ─────────── v1.4.0+0
+  Installed HarfBuzz_jll ────────────── v2.6.1+4
+  Installed Libffi_jll ──────────────── v3.2.1+0
+  Installed Xorg_xkbcomp_jll ────────── v1.4.2+1
+  Installed Wayland_jll ─────────────── v1.17.0+0
+  Installed Xorg_libxkbfile_jll ─────── v1.1.0+1
   Installed Xorg_damageproto_jll ────── v1.2.1+0
+  Installed Gettext_jll ─────────────── v0.20.1+1
   Installed Xorg_xkeyboard_config_jll ─ v2.27.0+1
+  Installed ATK_jll ─────────────────── v2.34.1+2
+  Installed Xorg_xextproto_jll ──────── v7.3.0+0
+  Installed at_spi2_atk_jll ─────────── v2.34.1+0
   Installed Cairo_jll ───────────────── v1.16.0+2
   Installed adwaita_icon_theme_jll ──── v3.33.92+3
   Installed Xorg_xineramaproto_jll ──── v1.2.1+0
+  Installed Dbus_jll ────────────────── v1.12.16+0
+  Installed Fontconfig_jll ──────────── v2.13.1+10
+  Installed Xorg_libpthread_stubs_jll ─ v0.1.0+0
   Installed Xorg_libXinerama_jll ────── v1.1.4+1
+  Installed Bzip2_jll ───────────────── v1.0.6+1
+  Installed Xorg_libXau_jll ─────────── v1.0.9+1
   Installed hicolor_icon_theme_jll ──── v0.17.0+1
+  Installed Libgpg_error_jll ────────── v1.36.0+0
   Installed iso_codes_jll ───────────── v4.3.0+1
-    Cloning [546b0b6d-9ca3-5ba2-8705-1bc1841d8479] X11_jll from https://github.com/JuliaBinaryWrappers/X11_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed X11_jll ─────────────────── v1.6.8+5
-    Cloning [4c0ca9eb-093a-5379-98c5-f87ac0bbbf44] Gtk from https://github.com/JuliaGraphics/Gtk.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Gtk ─────────────────────── v1.1.3
-    Cloning [7c09cfe3-afe2-5798-bcc9-d6b7fecfdca5] Xorg_util_macros_jll from https://github.com/JuliaBinaryWrappers/Xorg_util_macros_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_util_macros_jll ────── v1.19.2+0
-    Cloning [c2e9c405-c068-5e7b-9b35-084fd074cae4] Xorg_xcb_proto_jll from https://github.com/JuliaBinaryWrappers/Xorg_xcb_proto_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xcb_proto_jll ──────── v1.13.0+0
-    Cloning [d4300ac3-e22c-5743-9152-c294e39db1e4] Libgcrypt_jll from https://github.com/JuliaBinaryWrappers/Libgcrypt_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libgcrypt_jll ───────────── v1.8.5+0
-    Cloning [7746bdde-850d-59dc-9ae8-88ece973131d] Glib_jll from https://github.com/JuliaBinaryWrappers/Glib_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Glib_jll ────────────────── v2.59.0+1
-    Cloning [75302f13-0b7e-5bab-a6d1-23fa92e4c2ea] Graphene_jll from https://github.com/JuliaBinaryWrappers/Graphene_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Graphene_jll ────────────── v1.10.0+1
-    Cloning [84d6cd60-beca-5f49-93c5-789031781a2d] Xorg_inputproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_inputproto_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_inputproto_jll ─────── v2.3.2+0
-    Cloning [ec84b674-ba8e-5d96-8ba1-2a689ba10484] Xorg_libXrandr_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXrandr_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXrandr_jll ──────── v1.5.2+1
-    Cloning [2e619515-83b5-522b-bb60-26c02a35a201] Expat_jll from https://github.com/JuliaBinaryWrappers/Expat_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Expat_jll ───────────────── v2.2.7+0
-    Cloning [d7e528f0-a631-5988-bf34-fe36492bcfd7] FreeType2_jll from https://github.com/JuliaBinaryWrappers/FreeType2_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FreeType2_jll ───────────── v2.10.1+1
-    Cloning [94ce4f54-9a6c-5748-9c1c-f9c7231a4531] Libiconv_jll from https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libiconv_jll ────────────── v1.16.0+1
-    Cloning [30392449-352a-5448-841d-b1acce4e97dc] Pixman_jll from https://github.com/JuliaBinaryWrappers/Pixman_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Pixman_jll ──────────────── v0.38.4+1
-    Cloning [d8fb68d0-12a3-5cfd-a85a-d49703b185fd] xkbcommon_jll from https://github.com/JuliaBinaryWrappers/xkbcommon_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed xkbcommon_jll ───────────── v0.9.1+1
-    Cloning [159f3aea-2a34-519c-b102-8c37f9878175] Cairo from https://github.com/JuliaGraphics/Cairo.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Cairo ───────────────────── v1.0.2
-    Cloning [a3789734-cfe1-5b06-b2d0-1dd0d9d62d05] Xorg_libXdmcp_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXdmcp_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXdmcp_jll ───────── v1.1.3+1
-    Cloning [0af4abc2-9bda-511f-85a5-daebf69421ba] Xorg_compositeproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_compositeproto_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_compositeproto_jll ─── v0.4.0+0
-    Cloning [559328eb-81f9-559d-9380-de523a88c83c] FriBidi_jll from https://github.com/JuliaBinaryWrappers/FriBidi_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FriBidi_jll ─────────────── v1.0.5+2
-    Cloning [aed1982a-8fda-507f-9586-7b0439959a61] XSLT_jll from https://github.com/JuliaBinaryWrappers/XSLT_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed XSLT_jll ────────────────── v1.1.33+0
-    Cloning [1082639a-0dae-5f34-9b06-72781eeb8cb3] Xorg_libXext_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXext_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXext_jll ────────── v1.3.4+1
-    Cloning [4f6342f7-b3d2-589e-9d20-edeb45f2b2bc] Xorg_libX11_jll from https://github.com/JuliaBinaryWrappers/Xorg_libX11_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libX11_jll ─────────── v1.6.9+1
-    Cloning [da03df04-f53b-5353-a52f-6a8b0620ced0] gdk_pixbuf_jll from https://github.com/JuliaBinaryWrappers/gdk_pixbuf_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed gdk_pixbuf_jll ──────────── v2.38.2+6
-    Cloning [02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a] XML2_jll from https://github.com/JuliaBinaryWrappers/XML2_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed XML2_jll ────────────────── v2.9.9+1
-    Cloning [0e394dc1-71ae-5c65-abe5-8749687e42d3] Xorg_randrproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_randrproto_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_randrproto_jll ─────── v1.5.0+0
-    Cloning [0fc3237b-ac94-5853-b45c-d43d59a06200] at_spi2_core_jll from https://github.com/JuliaBinaryWrappers/at_spi2_core_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed at_spi2_core_jll ────────── v2.34.0+0
-    Cloning [77ec8976-b24b-556a-a1bf-49a033a670a6] GTK3_jll from https://github.com/JuliaBinaryWrappers/GTK3_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GTK3_jll ────────────────── v3.24.11+1
-    Cloning [46797783-dccc-5433-be59-056c4bde8513] Xorg_xproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_xproto_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xproto_jll ─────────── v7.0.31+0
-    Cloning [2381bf8a-dfd0-557d-9999-79630e7b1b91] Wayland_protocols_jll from https://github.com/JuliaBinaryWrappers/Wayland_protocols_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Wayland_protocols_jll ───── v1.18.0+1
-    Cloning [7e76a0d4-f3c7-5321-8279-8d96eeed0f29] Libglvnd_jll from https://github.com/JuliaBinaryWrappers/Libglvnd_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libglvnd_jll ────────────── v1.3.0+1
-    Cloning [36c8627f-9965-5494-a995-c6b170f724f3] Pango_jll from https://github.com/JuliaBinaryWrappers/Pango_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Pango_jll ───────────────── v1.42.4+7
-    Cloning [42c93a91-0102-5b3f-8f9d-e41de60ac950] Libepoxy_jll from https://github.com/JuliaBinaryWrappers/Libepoxy_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libepoxy_jll ────────────── v1.5.4+0
-    Cloning [3c9796d7-64a0-5134-86ad-79f8eb684845] Xorg_libXcomposite_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXcomposite_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXcomposite_jll ──── v0.4.5+1
-    Cloning [cf2f014d-5496-555f-b295-889ac9dfddaa] Xorg_fixesproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_fixesproto_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_fixesproto_jll ─────── v5.0.0+0
-    Cloning [2e76f6c2-a576-52d4-95c1-20adfe4de566] HarfBuzz_jll from https://github.com/JuliaBinaryWrappers/HarfBuzz_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed HarfBuzz_jll ────────────── v2.6.1+4
-    Cloning [35661453-b289-5fab-8a00-3d9160c6a3a4] Xorg_xkbcomp_jll from https://github.com/JuliaBinaryWrappers/Xorg_xkbcomp_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xkbcomp_jll ────────── v1.4.2+1
-    Cloning [a2964d1f-97da-50d4-b82a-358c7fce9d89] Wayland_jll from https://github.com/JuliaBinaryWrappers/Wayland_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Wayland_jll ─────────────── v1.17.0+0
-    Cloning [cc61e674-0454-545c-8b26-ed2c68acab7a] Xorg_libxkbfile_jll from https://github.com/JuliaBinaryWrappers/Xorg_libxkbfile_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libxkbfile_jll ─────── v1.1.0+1
-    Cloning [7b86fcea-f67b-53e1-809c-8f1719c154e8] ATK_jll from https://github.com/JuliaBinaryWrappers/ATK_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ATK_jll ─────────────────── v2.34.1+2
-    Cloning [78b55507-aeef-58d4-861c-77aaff3498b1] Gettext_jll from https://github.com/JuliaBinaryWrappers/Gettext_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Gettext_jll ─────────────── v0.20.1+1
-    Cloning [d13bc2ba-d276-5c6f-8a1c-29ed04aab5d0] Xorg_xextproto_jll from https://github.com/JuliaBinaryWrappers/Xorg_xextproto_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_xextproto_jll ──────── v7.3.0+0
-    Cloning [de012916-1e3f-58c2-8f29-df3ef51d412d] at_spi2_atk_jll from https://github.com/JuliaBinaryWrappers/at_spi2_atk_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed at_spi2_atk_jll ─────────── v2.34.1+0
-    Cloning [ee1fde0b-3d02-5ea6-8484-8dfef6360eab] Dbus_jll from https://github.com/JuliaBinaryWrappers/Dbus_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Dbus_jll ────────────────── v1.12.16+0
-    Cloning [a3f928ae-7b40-5064-980b-68af3947d34b] Fontconfig_jll from https://github.com/JuliaBinaryWrappers/Fontconfig_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Fontconfig_jll ──────────── v2.13.1+10
-    Cloning [14d82f49-176c-5ed1-bb49-ad3f5cbd8c74] Xorg_libpthread_stubs_jll from https://github.com/JuliaBinaryWrappers/Xorg_libpthread_stubs_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libpthread_stubs_jll ─ v0.1.0+0
-    Cloning [6e34b625-4abd-537c-b88f-471c36dfa7a0] Bzip2_jll from https://github.com/JuliaBinaryWrappers/Bzip2_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Bzip2_jll ───────────────── v1.0.6+1
-    Cloning [7add5ba3-2f88-524e-9cd5-f83b8a55f7b8] Libgpg_error_jll from https://github.com/JuliaBinaryWrappers/Libgpg_error_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libgpg_error_jll ────────── v1.36.0+0
-    Cloning [0c0b7dd1-d40b-584c-a123-a41640f87eec] Xorg_libXau_jll from https://github.com/JuliaBinaryWrappers/Xorg_libXau_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Xorg_libXau_jll ─────────── v1.0.9+1
-   Updating `/tmp/jl_TXAXRC/Project.toml`
+   Updating `/tmp/jl_SA4wX3/Project.toml`
   [4c0ca9eb] + Gtk v1.1.3
-   Updating `/tmp/jl_TXAXRC/Manifest.toml`
+   Updating `/tmp/jl_SA4wX3/Manifest.toml`
   [7b86fcea] + ATK_jll v2.34.1+2
   [6e34b625] + Bzip2_jll v1.0.6+1
   [159f3aea] + Cairo v1.0.2
@@ -525,13 +449,13 @@ WARNING: Method definition dot(Any, Any, Any) in module LinearAlgebra at /buildw
   [d8fb68d0] + xkbcommon_jll v0.9.1+1
 [ Info: Reference image /home/pkgeval/.julia/packages/ImageQuilting/uzqqn/test/data/RealsStrebelle.png matches.  Difference: 0.0
 [ Info: Reference image /home/pkgeval/.julia/packages/ImageQuilting/uzqqn/test/data/RealsStoneWall.png matches.  Difference: 0.0
-Progress:   7%|██▉                                      |  ETA: 0:00:15[KProgress:  14%|█████▉                                   |  ETA: 0:00:13[KProgress:  21%|████████▊                                |  ETA: 0:00:10[KProgress:  29%|███████████▊                             |  ETA: 0:00:10[KProgress:  36%|██████████████▋                          |  ETA: 0:00:08[KProgress:  43%|█████████████████▋                       |  ETA: 0:00:07[KProgress:  50%|████████████████████▌                    |  ETA: 0:00:06[KProgress:  57%|███████████████████████▍                 |  ETA: 0:00:05[KProgress:  64%|██████████████████████████▍              |  ETA: 0:00:04[KProgress:  71%|█████████████████████████████▎           |  ETA: 0:00:03[KProgress:  79%|████████████████████████████████▎        |  ETA: 0:00:03[KProgress:  86%|███████████████████████████████████▏     |  ETA: 0:00:02[KProgress:  93%|██████████████████████████████████████▏  |  ETA: 0:00:01[KProgress: 100%|█████████████████████████████████████████| Time: 0:00:12[K
-Progress:   7%|██▉                                      |  ETA: 0:00:11[KProgress:  14%|█████▉                                   |  ETA: 0:00:11[KProgress:  21%|████████▊                                |  ETA: 0:00:09[KProgress:  29%|███████████▊                             |  ETA: 0:00:08[KProgress:  36%|██████████████▋                          |  ETA: 0:00:07[KProgress:  43%|█████████████████▋                       |  ETA: 0:00:06[KProgress:  50%|████████████████████▌                    |  ETA: 0:00:06[KProgress:  57%|███████████████████████▍                 |  ETA: 0:00:05[KProgress:  64%|██████████████████████████▍              |  ETA: 0:00:04[KProgress:  71%|█████████████████████████████▎           |  ETA: 0:00:03[KProgress:  79%|████████████████████████████████▎        |  ETA: 0:00:03[KProgress:  86%|███████████████████████████████████▏     |  ETA: 0:00:02[KProgress:  93%|██████████████████████████████████████▏  |  ETA: 0:00:01[KProgress: 100%|█████████████████████████████████████████| Time: 0:00:12[K
+Progress:   7%|██▉                                      |  ETA: 0:00:15[KProgress:  14%|█████▉                                   |  ETA: 0:00:14[KProgress:  21%|████████▊                                |  ETA: 0:00:13[KProgress:  29%|███████████▊                             |  ETA: 0:00:10[KProgress:  36%|██████████████▋                          |  ETA: 0:00:09[KProgress:  43%|█████████████████▋                       |  ETA: 0:00:08[KProgress:  50%|████████████████████▌                    |  ETA: 0:00:07[KProgress:  57%|███████████████████████▍                 |  ETA: 0:00:07[KProgress:  64%|██████████████████████████▍              |  ETA: 0:00:05[KProgress:  71%|█████████████████████████████▎           |  ETA: 0:00:04[KProgress:  79%|████████████████████████████████▎        |  ETA: 0:00:03[KProgress:  86%|███████████████████████████████████▏     |  ETA: 0:00:02[KProgress:  93%|██████████████████████████████████████▏  |  ETA: 0:00:01[KProgress: 100%|█████████████████████████████████████████| Time: 0:00:15[K
+Progress:   7%|██▉                                      |  ETA: 0:00:06[KProgress:  14%|█████▉                                   |  ETA: 0:00:07[KProgress:  21%|████████▊                                |  ETA: 0:00:07[KProgress:  29%|███████████▊                             |  ETA: 0:00:06[KProgress:  36%|██████████████▋                          |  ETA: 0:00:05[KProgress:  43%|█████████████████▋                       |  ETA: 0:00:05[KProgress:  50%|████████████████████▌                    |  ETA: 0:00:04[KProgress:  57%|███████████████████████▍                 |  ETA: 0:00:03[KProgress:  64%|██████████████████████████▍              |  ETA: 0:00:03[KProgress:  71%|█████████████████████████████▎           |  ETA: 0:00:02[KProgress:  79%|████████████████████████████████▎        |  ETA: 0:00:02[KProgress:  86%|███████████████████████████████████▏     |  ETA: 0:00:01[KProgress:  93%|██████████████████████████████████████▏  |  ETA: 0:00:01[KProgress: 100%|█████████████████████████████████████████| Time: 0:00:10[K
 [ Info: Reference image /home/pkgeval/.julia/packages/ImageQuilting/uzqqn/test/data/VoxelStoneWall.png matches.  Difference: 3.610021797767714e-5
-Progress:   7%|██▉                                      |  ETA: 0:00:12[KProgress:  14%|█████▉                                   |  ETA: 0:00:11[KProgress:  21%|████████▊                                |  ETA: 0:00:11[KProgress:  29%|███████████▊                             |  ETA: 0:00:09[KProgress:  36%|██████████████▋                          |  ETA: 0:00:08[KProgress:  43%|█████████████████▋                       |  ETA: 0:00:07[KProgress:  50%|████████████████████▌                    |  ETA: 0:00:06[KProgress:  57%|███████████████████████▍                 |  ETA: 0:00:05[KProgress:  64%|██████████████████████████▍              |  ETA: 0:00:05[KProgress:  71%|█████████████████████████████▎           |  ETA: 0:00:04[KProgress:  79%|████████████████████████████████▎        |  ETA: 0:00:03[KProgress:  86%|███████████████████████████████████▏     |  ETA: 0:00:02[KProgress:  93%|██████████████████████████████████████▏  |  ETA: 0:00:01[KProgress: 100%|█████████████████████████████████████████| Time: 0:00:12[K
-Progress:   7%|██▉                                      |  ETA: 0:00:09[KProgress:  14%|█████▉                                   |  ETA: 0:00:09[KProgress:  21%|████████▊                                |  ETA: 0:00:10[KProgress:  29%|███████████▊                             |  ETA: 0:00:09[KProgress:  36%|██████████████▋                          |  ETA: 0:00:08[KProgress:  43%|█████████████████▋                       |  ETA: 0:00:07[KProgress:  50%|████████████████████▌                    |  ETA: 0:00:07[KProgress:  57%|███████████████████████▍                 |  ETA: 0:00:06[KProgress:  64%|██████████████████████████▍              |  ETA: 0:00:05[KProgress:  71%|█████████████████████████████▎           |  ETA: 0:00:04[KProgress:  79%|████████████████████████████████▎        |  ETA: 0:00:04[KProgress:  86%|███████████████████████████████████▏     |  ETA: 0:00:03[KProgress:  93%|██████████████████████████████████████▏  |  ETA: 0:00:01[KProgress: 100%|█████████████████████████████████████████| Time: 0:00:19[K
+Progress:   7%|██▉                                      |  ETA: 0:00:09[KProgress:  14%|█████▉                                   |  ETA: 0:00:06[KProgress:  21%|████████▊                                |  ETA: 0:00:05[KProgress:  29%|███████████▊                             |  ETA: 0:00:05[KProgress:  36%|██████████████▋                          |  ETA: 0:00:05[KProgress:  43%|█████████████████▋                       |  ETA: 0:00:04[KProgress:  50%|████████████████████▌                    |  ETA: 0:00:03[KProgress:  57%|███████████████████████▍                 |  ETA: 0:00:03[KProgress:  64%|██████████████████████████▍              |  ETA: 0:00:03[KProgress:  71%|█████████████████████████████▎           |  ETA: 0:00:02[KProgress:  79%|████████████████████████████████▎        |  ETA: 0:00:02[KProgress:  86%|███████████████████████████████████▏     |  ETA: 0:00:01[KProgress:  93%|██████████████████████████████████████▏  |  ETA: 0:00:01[KProgress: 100%|█████████████████████████████████████████| Time: 0:00:08[K
+Progress:   7%|██▉                                      |  ETA: 0:00:05[KProgress:  14%|█████▉                                   |  ETA: 0:00:08[KProgress:  21%|████████▊                                |  ETA: 0:00:06[KProgress:  29%|███████████▊                             |  ETA: 0:00:05[KProgress:  36%|██████████████▋                          |  ETA: 0:00:04[KProgress:  43%|█████████████████▋                       |  ETA: 0:00:03[KProgress:  50%|████████████████████▌                    |  ETA: 0:00:03[KProgress:  57%|███████████████████████▍                 |  ETA: 0:00:04[KProgress:  64%|██████████████████████████▍              |  ETA: 0:00:03[KProgress:  71%|█████████████████████████████▎           |  ETA: 0:00:02[KProgress:  79%|████████████████████████████████▎        |  ETA: 0:00:02[KProgress:  86%|███████████████████████████████████▏     |  ETA: 0:00:01[KProgress:  93%|██████████████████████████████████████▏  |  ETA: 0:00:01[KProgress: 100%|█████████████████████████████████████████| Time: 0:00:09[K
 [ Info: Reference image /home/pkgeval/.julia/packages/ImageQuilting/uzqqn/test/data/VoxelWalkerLake.png matches.  Difference: 0.0015626711652845639
-[ Info: Reference image /home/pkgeval/.julia/packages/ImageQuilting/uzqqn/test/data/GeoStatsAPI.png matches.  Difference: 0.018569281909724122
+[ Info: Reference image /home/pkgeval/.julia/packages/ImageQuilting/uzqqn/test/data/GeoStatsAPI.png matches.  Difference: 0.008018630392526496
 Test Summary:    | Pass  Total
 ImageQuilting.jl |   32     32
     Testing ImageQuilting tests passed 

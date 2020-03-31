@@ -1,162 +1,0 @@
-Julia Version 1.4.0
-Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
-Platform Info:
-  OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
-  WORD_SIZE: 64
-  LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
-Environment:
-  JULIA_DEPOT_PATH = ::/usr/local/share/julia
-  JULIA_NUM_THREADS = 2
-
-  Resolving package versions...
-  Installed NaNMath ────────────────────── v0.3.3
-  Installed Requires ───────────────────── v1.0.1
-  Installed NLSolversBase ──────────────── v7.6.1
-  Installed OrderedCollections ─────────── v1.1.0
-  Installed LineSearches ───────────────── v7.0.1
-  Installed SpecialFunctions ───────────── v0.10.0
-  Installed ForwardDiff ────────────────── v0.10.9
-  Installed GaussQuadrature ────────────── v0.5.0
-    Cloning [2774e3e8-f4cf-5e23-947b-6d7e65073b56] NLsolve from https://github.com/JuliaNLSolvers/NLsolve.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NLsolve ────────────────────── v4.3.0
-    Cloning [00bf1f32-23ad-54cc-bf6e-3216db8a43a2] SolveDSGE from https://github.com/RJDennis/SolveDSGE.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SolveDSGE ──────────────────── v0.3.2
-    Cloning [189a3867-3050-52da-a836-e630ba90ab69] Reexport from https://github.com/simonster/Reexport.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Reexport ───────────────────── v0.2.0
-    Cloning [fcfa6960-8e2e-11e9-2cde-29dd09221fb3] PiecewiseLinearApprox from https://github.com/RJDennis/PiecewiseLinearApprox.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PiecewiseLinearApprox ──────── v0.1.0
-    Cloning [b4f34e82-e78d-54a5-968a-f98e89d6e8f7] Distances from https://github.com/JuliaStats/Distances.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Distances ──────────────────── v0.8.2
-    Cloning [6a86dc24-6348-571c-b903-95158fe2bd41] FiniteDiff from https://github.com/JuliaDiff/FiniteDiff.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FiniteDiff ─────────────────── v2.3.0
-    Cloning [17a596ad-87cd-578c-9b6d-01108c31dc04] ChebyshevApprox from https://github.com/RJDennis/ChebyshevApprox.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ChebyshevApprox ────────────── v0.1.0
-    Cloning [bbf7d656-a473-5ed7-a52c-81e309532950] CommonSubexpressions from https://github.com/rdeits/CommonSubexpressions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CommonSubexpressions ───────── v0.2.0
-    Cloning [163ba53b-c6d8-5494-b064-1a9d43ac40c5] DiffResults from https://github.com/JuliaDiff/DiffResults.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffResults ────────────────── v1.0.2
-    Cloning [6b19cf85-48de-5d9d-bfff-465abea14fab] SmolyakApprox from https://github.com/RJDennis/SmolyakApprox.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SmolyakApprox ──────────────── v0.1.0
-    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [===========>                             ]  25.4 %[2K[?25h  Installed StaticArrays ───────────────── v0.12.1
-    Cloning [e66e0078-7015-5450-92f7-15fbd957f2ae] CompilerSupportLibraries_jll from https://github.com/JuliaBinaryWrappers/CompilerSupportLibraries_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
-    Cloning [b552c78f-8df3-52c6-915a-8e097449b14b] DiffRules from https://github.com/JuliaDiff/DiffRules.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffRules ──────────────────── v1.0.1
-    Cloning [4fba245c-0d91-5ea0-9b3e-6abc04ee57a9] ArrayInterface from https://github.com/JuliaDiffEq/ArrayInterface.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ArrayInterface ─────────────── v2.6.1
-    Cloning [efe28fd5-8261-553b-a9e1-b2916fc3738e] OpenSpecFun_jll from https://github.com/JuliaBinaryWrappers/OpenSpecFun_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenSpecFun_jll ────────────── v0.5.3+3
-    Cloning [d96e819e-fc66-5662-9728-84c9c7592b0a] Parameters from https://github.com/mauro3/Parameters.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parameters ─────────────────── v0.12.0
-   Updating `~/.julia/environments/v1.4/Project.toml`
-  [00bf1f32] + SolveDSGE v0.3.2
-   Updating `~/.julia/environments/v1.4/Manifest.toml`
-  [4fba245c] + ArrayInterface v2.6.1
-  [17a596ad] + ChebyshevApprox v0.1.0
-  [bbf7d656] + CommonSubexpressions v0.2.0
-  [e66e0078] + CompilerSupportLibraries_jll v0.3.1+0
-  [163ba53b] + DiffResults v1.0.2
-  [b552c78f] + DiffRules v1.0.1
-  [b4f34e82] + Distances v0.8.2
-  [6a86dc24] + FiniteDiff v2.3.0
-  [f6369f11] + ForwardDiff v0.10.9
-  [d54b0c1a] + GaussQuadrature v0.5.0
-  [d3d80556] + LineSearches v7.0.1
-  [d41bc354] + NLSolversBase v7.6.1
-  [2774e3e8] + NLsolve v4.3.0
-  [77ba4419] + NaNMath v0.3.3
-  [efe28fd5] + OpenSpecFun_jll v0.5.3+3
-  [bac558e1] + OrderedCollections v1.1.0
-  [d96e819e] + Parameters v0.12.0
-  [fcfa6960] + PiecewiseLinearApprox v0.1.0
-  [189a3867] + Reexport v0.2.0
-  [ae029012] + Requires v1.0.1
-  [6b19cf85] + SmolyakApprox v0.1.0
-  [00bf1f32] + SolveDSGE v0.3.2
-  [276daf66] + SpecialFunctions v0.10.0
-  [90137ffa] + StaticArrays v0.12.1
-  [2a0f44e3] + Base64 
-  [ade2ca70] + Dates 
-  [8ba89e20] + Distributed 
-  [b77e0a4c] + InteractiveUtils 
-  [76f85450] + LibGit2 
-  [8f399da3] + Libdl 
-  [37e2e46d] + LinearAlgebra 
-  [56ddb016] + Logging 
-  [d6f4376e] + Markdown 
-  [44cfe95a] + Pkg 
-  [de0858da] + Printf 
-  [3fa0cd96] + REPL 
-  [9a3f8284] + Random 
-  [ea8e919c] + SHA 
-  [9e88b42a] + Serialization 
-  [6462fe0b] + Sockets 
-  [2f01184e] + SparseArrays 
-  [10745b16] + Statistics 
-  [8dfed614] + Test 
-  [cf7118a7] + UUIDs 
-  [4ec0a83e] + Unicode 
-    Testing SolveDSGE
-Status `/tmp/jl_EULJeJ/Manifest.toml`
-  [4fba245c] ArrayInterface v2.6.1
-  [17a596ad] ChebyshevApprox v0.1.0
-  [bbf7d656] CommonSubexpressions v0.2.0
-  [e66e0078] CompilerSupportLibraries_jll v0.3.1+0
-  [163ba53b] DiffResults v1.0.2
-  [b552c78f] DiffRules v1.0.1
-  [b4f34e82] Distances v0.8.2
-  [6a86dc24] FiniteDiff v2.3.0
-  [f6369f11] ForwardDiff v0.10.9
-  [d54b0c1a] GaussQuadrature v0.5.0
-  [d3d80556] LineSearches v7.0.1
-  [d41bc354] NLSolversBase v7.6.1
-  [2774e3e8] NLsolve v4.3.0
-  [77ba4419] NaNMath v0.3.3
-  [efe28fd5] OpenSpecFun_jll v0.5.3+3
-  [bac558e1] OrderedCollections v1.1.0
-  [d96e819e] Parameters v0.12.0
-  [fcfa6960] PiecewiseLinearApprox v0.1.0
-  [189a3867] Reexport v0.2.0
-  [ae029012] Requires v1.0.1
-  [6b19cf85] SmolyakApprox v0.1.0
-  [00bf1f32] SolveDSGE v0.3.2
-  [276daf66] SpecialFunctions v0.10.0
-  [90137ffa] StaticArrays v0.12.1
-  [2a0f44e3] Base64 
-  [ade2ca70] Dates 
-  [8ba89e20] Distributed 
-  [b77e0a4c] InteractiveUtils 
-  [76f85450] LibGit2 
-  [8f399da3] Libdl 
-  [37e2e46d] LinearAlgebra 
-  [56ddb016] Logging 
-  [d6f4376e] Markdown 
-  [44cfe95a] Pkg 
-  [de0858da] Printf 
-  [3fa0cd96] REPL 
-  [9a3f8284] Random 
-  [ea8e919c] SHA 
-  [9e88b42a] Serialization 
-  [6462fe0b] Sockets 
-  [2f01184e] SparseArrays 
-  [10745b16] Statistics 
-  [8dfed614] Test 
-  [cf7118a7] UUIDs 
-  [4ec0a83e] Unicode 
-Pass
-Pass
-Pass
-Pass
-Pass
-1.0408340855860843e-16
-5.898059818321144e-17
-2.7755575615628914e-17
-Fail: Need first derivative for all model equations
-1.734265953068359e-9
-1.9218707597579154e-9
-2.920382824456169e-10
-The model's variables are now in this order: ["tech", "cap", "cons"]
-    Testing SolveDSGE tests passed 

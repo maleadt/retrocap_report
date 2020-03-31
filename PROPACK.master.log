@@ -1,145 +1,0 @@
-Julia Version 1.4.0
-Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
-Platform Info:
-  OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
-  WORD_SIZE: 64
-  LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
-Environment:
-  JULIA_DEPOT_PATH = ::/usr/local/share/julia
-  JULIA_NUM_THREADS = 2
-
-  Resolving package versions...
-  Installed OpenBLAS_jll ──── v0.3.7+8
-    Cloning [a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f] TimerOutputs from https://github.com/KristofferC/TimerOutputs.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TimerOutputs ──── v0.5.3
-    Cloning [b169e327-5944-5131-97a6-5d3d3f0a476a] PROPACK from https://github.com/JuliaSmoothOptimizers/PROPACK.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [=======>                                 ]  15.8 %    Fetching: [=================>                       ]  40.4 %    Fetching: [====================>                    ]  48.6 %    Fetching: [=======================>                 ]  55.2 %[2K[?25h  Installed PROPACK ───────── v0.3.0
-    Cloning [5c8ed15e-5a4c-59e4-a42b-c7e8811fb125] LinearOperators from https://github.com/JuliaSmoothOptimizers/LinearOperators.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LinearOperators ─ v1.0.1
-    Cloning [2c99449f-f194-5e92-8ff0-13814ff41dcf] PROPACK_jll from https://github.com/JuliaBinaryWrappers/PROPACK_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PROPACK_jll ───── v0.1.0+0
-    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ── v0.5.8
-    Cloning [9aa1b823-49e4-5ca5-8b0f-3971ec8bab6a] FastClosures from https://github.com/c42f/FastClosures.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FastClosures ──── v0.3.2
-#=#=#                                                                         ##O#- #                                                                       ######################################################################## 100.0%##O=#  #                                                                      #-#O=#  #                                                                     ############                                                              17.2%###################################################                       71.7%######################################################################## 100.0%
-   Updating `~/.julia/environments/v1.4/Project.toml`
-  [b169e327] + PROPACK v0.3.0
-   Updating `~/.julia/environments/v1.4/Manifest.toml`
-  [b99e7846] + BinaryProvider v0.5.8
-  [9aa1b823] + FastClosures v0.3.2
-  [5c8ed15e] + LinearOperators v1.0.1
-  [4536629a] + OpenBLAS_jll v0.3.7+8
-  [b169e327] + PROPACK v0.3.0
-  [2c99449f] + PROPACK_jll v0.1.0+0
-  [a759f4b9] + TimerOutputs v0.5.3
-  [2a0f44e3] + Base64 
-  [ade2ca70] + Dates 
-  [b77e0a4c] + InteractiveUtils 
-  [76f85450] + LibGit2 
-  [8f399da3] + Libdl 
-  [37e2e46d] + LinearAlgebra 
-  [56ddb016] + Logging 
-  [d6f4376e] + Markdown 
-  [44cfe95a] + Pkg 
-  [de0858da] + Printf 
-  [3fa0cd96] + REPL 
-  [9a3f8284] + Random 
-  [ea8e919c] + SHA 
-  [9e88b42a] + Serialization 
-  [6462fe0b] + Sockets 
-  [2f01184e] + SparseArrays 
-  [cf7118a7] + UUIDs 
-  [4ec0a83e] + Unicode 
-    Testing PROPACK
-Status `/tmp/jl_e21kCB/Manifest.toml`
-  [b99e7846] BinaryProvider v0.5.8
-  [9aa1b823] FastClosures v0.3.2
-  [5c8ed15e] LinearOperators v1.0.1
-  [4536629a] OpenBLAS_jll v0.3.7+8
-  [b169e327] PROPACK v0.3.0
-  [2c99449f] PROPACK_jll v0.1.0+0
-  [a759f4b9] TimerOutputs v0.5.3
-  [2a0f44e3] Base64 
-  [ade2ca70] Dates 
-  [8ba89e20] Distributed 
-  [b77e0a4c] InteractiveUtils 
-  [76f85450] LibGit2 
-  [8f399da3] Libdl 
-  [37e2e46d] LinearAlgebra 
-  [56ddb016] Logging 
-  [d6f4376e] Markdown 
-  [44cfe95a] Pkg 
-  [de0858da] Printf 
-  [3fa0cd96] REPL 
-  [9a3f8284] Random 
-  [ea8e919c] SHA 
-  [9e88b42a] Serialization 
-  [6462fe0b] Sockets 
-  [2f01184e] SparseArrays 
-  [8dfed614] Test 
-  [cf7118a7] UUIDs 
-  [4ec0a83e] Unicode 
---- Test functions with Float32 types ---
-computed singular values: Float32[5.0000005, 4.0000005, 3.000001]
-exact singular values: [5, 4, 3]
-error bounds reported: Float32[0.0, 0.0, 0.0]
-number of matvecs and transposed matvecs: 8, 7
-computed singular values: Float32[5.0000005, 4.0000005, 3.000001]
-number of matvecs and transposed matvecs: 8, 7
-computed smallest singular values: Float32[2.0000002, 0.99999976]
-exact smallest singular values: [2, 1]
-error bounds reported: Float32[0.0, 0.0]
-number of matvecs and transposed matvecs: 10, 5
-computed smallest singular values: Float32[2.0000002, 0.99999976]
-number of matvecs and transposed matvecs: 10, 5
-
---- Test functions with Float64 types ---
-computed singular values: [4.999999999999999, 3.999999999999999, 2.9999999999999996]
-exact singular values: [5, 4, 3]
-error bounds reported: [0.0, 0.0, 0.0]
-number of matvecs and transposed matvecs: 8, 7
-computed singular values: [4.999999999999999, 3.999999999999999, 2.9999999999999996]
-number of matvecs and transposed matvecs: 8, 7
-computed smallest singular values: [2.0000000000000004, 0.9999999999999996]
-exact smallest singular values: [2, 1]
-error bounds reported: [0.0, 0.0]
-number of matvecs and transposed matvecs: 10, 5
-computed smallest singular values: [2.0000000000000004, 0.9999999999999996]
-number of matvecs and transposed matvecs: 10, 5
-
---- Test functions with Complex{Float32} types ---
- UNVARIANT SUBSPACE, beta small
-computed singular values: Float32[5.0000005, 3.9999986, 2.9999995]
-exact singular values: [5, 4, 3]
-error bounds reported: Float32[0.0, 0.0, 0.0]
-number of matvecs and transposed matvecs: 8, 7
- UNVARIANT SUBSPACE, beta small
-computed singular values: Float32[5.0000005, 3.9999986, 2.9999995]
-number of matvecs and transposed matvecs: 8, 7
- UNVARIANT SUBSPACE, beta small
-computed smallest singular values: Float32[1.9999995, 0.9999999]
-exact smallest singular values: [2, 1]
-error bounds reported: Float32[0.0, 0.0]
-number of matvecs and transposed matvecs: 10, 5
- UNVARIANT SUBSPACE, beta small
-computed smallest singular values: Float32[1.9999995, 0.9999999]
-number of matvecs and transposed matvecs: 10, 5
-
---- Test functions with Complex{Float64} types ---
-computed singular values: [4.9999999999999964, 3.9999999999999973, 3.000000000000001]
-exact singular values: [5, 4, 3]
-error bounds reported: [0.0, 0.0, 0.0]
-number of matvecs and transposed matvecs: 7, 7
-computed singular values: [4.9999999999999964, 3.9999999999999973, 3.000000000000001]
-number of matvecs and transposed matvecs: 7, 7
-computed smallest singular values: [2.0, 0.9999999999999997]
-exact smallest singular values: [2, 1]
-error bounds reported: [0.0, 0.0]
-number of matvecs and transposed matvecs: 10, 5
-computed smallest singular values: [2.0, 0.9999999999999997]
-number of matvecs and transposed matvecs: 10, 5
-
-    Testing PROPACK tests passed 

@@ -2,141 +2,102 @@ Julia Version 1.4.0
 Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  CPU: Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-8.0.1 (ORCJIT, skylake)
 Environment:
   JULIA_DEPOT_PATH = ::/usr/local/share/julia
   JULIA_NUM_THREADS = 2
 
   Resolving package versions...
+  Installed Reexport ───────────────────── v0.2.0
   Installed NaNMath ────────────────────── v0.3.3
+  Installed DataAPI ────────────────────── v1.1.0
+  Installed Missings ───────────────────── v0.4.3
+  Installed MultivariatePolynomials ────── v0.3.6
+  Installed SwitchOnSafety ─────────────── v0.1.0
+  Installed LightGraphs ────────────────── v1.3.1
+  Installed Calculus ───────────────────── v0.5.1
+  Installed Measures ───────────────────── v0.3.1
   Installed SimpleTraits ───────────────── v0.9.1
-  Installed FixedPointNumbers ──────────── v0.7.1
-  Installed TranscodingStreams ─────────── v0.9.5
-  Installed JSONSchema ─────────────────── v0.2.0
-  Installed OrderedCollections ─────────── v1.1.0
-  Installed GeometryTypes ──────────────── v0.7.10
+  Installed Requires ───────────────────── v1.0.1
+  Installed NLSolversBase ──────────────── v7.6.1
   Installed IterTools ──────────────────── v1.3.0
-  Installed Parsers ────────────────────── v0.3.12
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed CodecBzip2 ─────────────────── v0.7.1
+  Installed SpecialFunctions ───────────── v0.10.0
+  Installed Parsers ────────────────────── v1.0.0
+  Installed FixedPointNumbers ──────────── v0.7.1
+  Installed OrderedCollections ─────────── v1.1.0
+  Installed Combinatorics ──────────────── v1.0.0
+  Installed RecipesBase ────────────────── v0.8.0
+  Installed GeometryTypes ──────────────── v0.7.10
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed ParameterJuMP ──────────────── v0.2.0
+  Installed JSONSchema ─────────────────── v0.2.0
   Installed MathematicalSystems ────────── v0.11.1
+  Installed LineSearches ───────────────── v7.0.1
+  Installed FillArrays ─────────────────── v0.8.5
+  Installed MultivariateMoments ────────── v0.3.0
+  Installed DynamicPolynomials ─────────── v0.3.9
+  Installed MutableArithmetics ─────────── v0.2.7
+  Installed Espresso ───────────────────── v0.6.0
   Installed IniFile ────────────────────── v0.5.0
+  Installed FiniteDiff ─────────────────── v2.3.0
+  Installed Compose ────────────────────── v0.8.2
+  Installed MacroTools ─────────────────── v0.5.5
   Installed DiffRules ──────────────────── v1.0.1
-  Installed ArrayInterface ─────────────── v2.6.1
   Installed MappedArrays ───────────────── v0.2.2
+  Installed ColorTypes ─────────────────── v0.9.1
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed ArrayInterface ─────────────── v2.6.2
   Installed DiffResults ────────────────── v1.0.2
   Installed ForwardDiff ────────────────── v0.10.9
+  Installed Inflate ────────────────────── v0.1.2
   Installed ArnoldiMethod ──────────────── v0.0.4
+  Installed GraphPlot ──────────────────── v0.3.1
+  Installed HybridSystems ──────────────── v0.3.0
   Installed PolyJuMP ───────────────────── v0.4.0
-  Installed PositiveFactorizations ─────── v0.2.3
+  Installed Colors ─────────────────────── v0.11.2
+  Installed Compat ─────────────────────── v2.2.0
+  Installed MbedTLS ────────────────────── v1.0.1
+  Installed Zlib_jll ───────────────────── v1.2.11+8
+  Installed MultivariateBases ──────────── v0.1.2
+  Installed StatsBase ──────────────────── v0.32.2
   Installed CommonSubexpressions ───────── v0.2.0
   Installed SetProg ────────────────────── v0.1.0
-  Installed MathOptInterface ───────────── v0.9.12
+  Installed MathOptInterface ───────────── v0.9.13
+  Installed PositiveFactorizations ─────── v0.2.3
+  Installed StaticArrays ───────────────── v0.12.1
   Installed HTTP ───────────────────────── v0.8.13
-  Installed SemialgebraicSets ──────────── v0.2.0
+  Installed SemialgebraicSets ──────────── v0.2.1
+  Installed MbedTLS_jll ────────────────── v2.16.0+1
+  Installed Bzip2_jll ──────────────────── v1.0.6+1
   Installed BinaryProvider ─────────────── v0.5.8
-  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
-  Installed RowEchelon ─────────────────── v0.1.1
-  Installed JSON ───────────────────────── v0.21.0
   Installed DataStructures ─────────────── v0.17.10
+  Installed JuMP ───────────────────────── v0.21.1
+  Installed CompilerSupportLibraries_jll ─ v0.3.1+0
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed JSON ───────────────────────── v0.21.0
+  Installed RowEchelon ─────────────────── v0.1.1
+  Installed Polynomials ────────────────── v0.6.1
   Installed OpenSpecFun_jll ────────────── v0.5.3+3
+  Installed Parameters ─────────────────── v0.12.0
   Installed Optim ──────────────────────── v0.20.1
+  Installed SumOfSquares ───────────────── v0.4.0
   Installed Polyhedra ──────────────────── v0.6.1
-    Cloning [9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a] DataAPI from https://github.com/JuliaData/DataAPI.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataAPI ────────────────────── v1.1.0
-    Cloning [189a3867-3050-52da-a836-e630ba90ab69] Reexport from https://github.com/simonster/Reexport.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Reexport ───────────────────── v0.2.0
-    Cloning [ceb7f16a-07bf-5f4a-9354-b68f01b1610f] SwitchOnSafety from https://github.com/blegat/SwitchOnSafety.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SwitchOnSafety ─────────────── v0.1.0
-    Cloning [e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28] Missings from https://github.com/JuliaData/Missings.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Missings ───────────────────── v0.4.3
-    Cloning [49dc2e85-a5d0-5ad3-a950-438e2897f1b9] Calculus from https://github.com/JuliaMath/Calculus.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Calculus ───────────────────── v0.5.1
-    Cloning [093fc24a-ae57-5d10-9952-331d41423f4d] LightGraphs from https://github.com/JuliaGraphs/LightGraphs.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LightGraphs ────────────────── v1.3.1
-    Cloning [102ac46a-7ee4-5c85-9060-abc95bfdeaa3] MultivariatePolynomials from https://github.com/JuliaAlgebra/MultivariatePolynomials.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MultivariatePolynomials ────── v0.3.6
-    Cloning [d41bc354-129a-5804-8e4c-c37616107c6c] NLSolversBase from https://github.com/JuliaNLSolvers/NLSolversBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NLSolversBase ──────────────── v7.6.1
-    Cloning [442fdcdd-2543-5da2-b0f3-8c86c306513e] Measures from https://github.com/JuliaGraphics/Measures.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Measures ───────────────────── v0.3.1
-    Cloning [ae029012-a4dd-5104-9daa-d747884805df] Requires from https://github.com/MikeInnes/Requires.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Requires ───────────────────── v1.0.1
-    Cloning [276daf66-3868-5448-9aa4-cd146d93841b] SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SpecialFunctions ───────────── v0.10.0
-    Cloning [523fee87-0ab8-5b00-afb7-3ecf72e48cfd] CodecBzip2 from https://github.com/JuliaIO/CodecBzip2.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CodecBzip2 ─────────────────── v0.6.0
-    Cloning [774612a8-9878-5177-865a-ca53ae2495f9] ParameterJuMP from https://github.com/JuliaStochOpt/ParameterJuMP.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ParameterJuMP ──────────────── v0.2.0
-    Cloning [861a8166-3701-5b0c-9a16-15d98fcdc6aa] Combinatorics from https://github.com/JuliaMath/Combinatorics.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Combinatorics ──────────────── v1.0.0
-    Cloning [3cdcf5f2-1ef4-517c-9805-6587b60abb01] RecipesBase from https://github.com/JuliaPlots/RecipesBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RecipesBase ────────────────── v0.8.0
-    Cloning [a2af1166-a08f-5f64-846c-94a0d3cef48c] SortingAlgorithms from https://github.com/JuliaCollections/SortingAlgorithms.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SortingAlgorithms ──────────── v0.3.1
-    Cloning [7c1d4256-1411-5781-91ec-d7bc3513ac07] DynamicPolynomials from https://github.com/JuliaAlgebra/DynamicPolynomials.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DynamicPolynomials ─────────── v0.3.9
-    Cloning [a81c6b42-2e10-5240-aca2-a61377ecd94b] Compose from https://github.com/GiovineItalia/Compose.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Compose ────────────────────── v0.8.2
-    Cloning [1a297f60-69ca-5386-bcde-b61e274b549b] FillArrays from https://github.com/JuliaArrays/FillArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FillArrays ─────────────────── v0.8.5
-    Cloning [6a86dc24-6348-571c-b903-95158fe2bd41] FiniteDiff from https://github.com/JuliaDiff/FiniteDiff.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FiniteDiff ─────────────────── v2.3.0
-    Cloning [6912e4f1-e036-58b0-9138-08d1e6358ea9] Espresso from https://github.com/dfdx/Espresso.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Espresso ───────────────────── v0.6.0
-    Cloning [d8a4904e-b15c-11e9-3269-09a3773c0cb0] MutableArithmetics from https://github.com/JuliaOpt/MutableArithmetics.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MutableArithmetics ─────────── v0.2.7
-    Cloning [f4abf1af-0426-5881-a0da-e2f168889b5e] MultivariateMoments from https://github.com/JuliaAlgebra/MultivariateMoments.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MultivariateMoments ────────── v0.3.0
-    Cloning [a2cc645c-3eea-5389-862e-a155d0052231] GraphPlot from https://github.com/JuliaGraphs/GraphPlot.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GraphPlot ──────────────────── v0.3.1
-    Cloning [3da002f7-5984-5a60-b8a6-cbb66c0b333f] ColorTypes from https://github.com/JuliaGraphics/ColorTypes.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ColorTypes ─────────────────── v0.9.1
-    Cloning [1914dd2f-81c6-5fcd-8719-6d5c9610ff09] MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MacroTools ─────────────────── v0.5.5
-    Cloning [d3d80556-e9d4-5f37-9878-2ab0fcc64255] LineSearches from https://github.com/JuliaNLSolvers/LineSearches.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LineSearches ───────────────── v7.0.1
-    Cloning [944b1d66-785c-5afd-91f1-9de20f533193] CodecZlib from https://github.com/JuliaIO/CodecZlib.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CodecZlib ──────────────────── v0.6.0
-    Cloning [2207ec0c-686c-5054-b4d2-543502888820] HybridSystems from https://github.com/blegat/HybridSystems.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed HybridSystems ──────────────── v0.3.0
-    Cloning [d25df0c9-e2be-5dd7-82c8-3ad0b3e990b9] Inflate from https://github.com/GunnarFarneback/Inflate.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Inflate ────────────────────── v0.1.2
-    Cloning [34da2185-b29b-5c13-b0c7-acf172513d20] Compat from https://github.com/JuliaLang/Compat.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Compat ─────────────────────── v2.2.0
-    Cloning [5ae59095-9a9b-59fe-a467-6f913c188581] Colors from https://github.com/JuliaGraphics/Colors.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Colors ─────────────────────── v0.11.2
-    Cloning [739be429-bea8-5141-9913-cc70e7f3736d] MbedTLS from https://github.com/JuliaLang/MbedTLS.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MbedTLS ────────────────────── v1.0.1
-    Cloning [4076af6c-e467-56ae-b986-b466b2749572] JuMP from https://github.com/JuliaOpt/JuMP.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed JuMP ───────────────────────── v0.21.1
-    Cloning [be282fd4-ad43-11e9-1d11-8bd9d7e43378] MultivariateBases from https://github.com/JuliaAlgebra/MultivariateBases.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MultivariateBases ──────────── v0.1.2
-    Cloning [2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91] StatsBase from https://github.com/JuliaStats/StatsBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StatsBase ──────────────────── v0.32.2
-    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ───────────────── v0.12.1
-    Cloning [c8ffd9c3-330d-5841-b78e-0817d7145fa1] MbedTLS_jll from https://github.com/JuliaBinaryWrappers/MbedTLS_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MbedTLS_jll ────────────────── v2.16.0+1
-    Cloning [6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf] BenchmarkTools from https://github.com/JuliaCI/BenchmarkTools.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BenchmarkTools ─────────────── v0.5.0
-    Cloning [4b9e565b-77fc-50a5-a571-1244f986bda1] SumOfSquares from https://github.com/JuliaOpt/SumOfSquares.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SumOfSquares ───────────────── v0.4.0
-    Cloning [f27b6e38-b328-58d1-80ce-0feddd5e7a45] Polynomials from https://github.com/JuliaMath/Polynomials.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Polynomials ────────────────── v0.6.1
-    Cloning [d96e819e-fc66-5662-9728-84c9c7592b0a] Parameters from https://github.com/mauro3/Parameters.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parameters ─────────────────── v0.12.0
    Updating `~/.julia/environments/v1.4/Project.toml`
   [ceb7f16a] + SwitchOnSafety v0.1.0
    Updating `~/.julia/environments/v1.4/Manifest.toml`
   [ec485272] + ArnoldiMethod v0.0.4
-  [4fba245c] + ArrayInterface v2.6.1
+  [4fba245c] + ArrayInterface v2.6.2
   [6e4b80f9] + BenchmarkTools v0.5.0
   [b99e7846] + BinaryProvider v0.5.8
+  [6e34b625] + Bzip2_jll v1.0.6+1
   [49dc2e85] + Calculus v0.5.1
-  [523fee87] + CodecBzip2 v0.6.0
-  [944b1d66] + CodecZlib v0.6.0
+  [523fee87] + CodecBzip2 v0.7.1
+  [944b1d66] + CodecZlib v0.7.0
   [3da002f7] + ColorTypes v0.9.1
   [5ae59095] + Colors v0.11.2
   [861a8166] + Combinatorics v1.0.0
@@ -168,7 +129,7 @@ Environment:
   [d3d80556] + LineSearches v7.0.1
   [1914dd2f] + MacroTools v0.5.5
   [dbb5928d] + MappedArrays v0.2.2
-  [b8f27783] + MathOptInterface v0.9.12
+  [b8f27783] + MathOptInterface v0.9.13
   [d14a8603] + MathematicalSystems v0.11.1
   [739be429] + MbedTLS v1.0.1
   [c8ffd9c3] + MbedTLS_jll v2.16.0+1
@@ -185,7 +146,7 @@ Environment:
   [bac558e1] + OrderedCollections v1.1.0
   [774612a8] + ParameterJuMP v0.2.0
   [d96e819e] + Parameters v0.12.0
-  [69de0a69] + Parsers v0.3.12
+  [69de0a69] + Parsers v1.0.0
   [ddf597a6] + PolyJuMP v0.4.0
   [67491407] + Polyhedra v0.6.1
   [f27b6e38] + Polynomials v0.6.1
@@ -194,7 +155,7 @@ Environment:
   [189a3867] + Reexport v0.2.0
   [ae029012] + Requires v1.0.1
   [af85af4c] + RowEchelon v0.1.1
-  [8e049039] + SemialgebraicSets v0.2.0
+  [8e049039] + SemialgebraicSets v0.2.1
   [39881422] + SetProg v0.1.0
   [699a6c99] + SimpleTraits v0.9.1
   [a2af1166] + SortingAlgorithms v0.3.1
@@ -204,6 +165,7 @@ Environment:
   [4b9e565b] + SumOfSquares v0.4.0
   [ceb7f16a] + SwitchOnSafety v0.1.0
   [3bb67fe8] + TranscodingStreams v0.9.5
+  [83775a58] + Zlib_jll v1.2.11+8
   [2a0f44e3] + Base64 
   [ade2ca70] + Dates 
   [8bb1440f] + DelimitedFiles 
@@ -229,19 +191,18 @@ Environment:
   [8dfed614] + Test 
   [cf7118a7] + UUIDs 
   [4ec0a83e] + Unicode 
-   Building CodecBzip2 → `~/.julia/packages/CodecBzip2/T5yr7/deps/build.log`
-   Building CodecZlib ─→ `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
     Testing SwitchOnSafety
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_B7K27I/Manifest.toml`
+Status `/tmp/jl_sGjE2P/Manifest.toml`
   [ec485272] ArnoldiMethod v0.0.4
-  [4fba245c] ArrayInterface v2.6.1
+  [4fba245c] ArrayInterface v2.6.2
   [6e4b80f9] BenchmarkTools v0.5.0
   [9e28174c] BinDeps v1.0.0
   [b99e7846] BinaryProvider v0.5.8
+  [6e34b625] Bzip2_jll v1.0.6+1
   [0a46da34] CSDP v0.5.4
   [49dc2e85] Calculus v0.5.1
-  [523fee87] CodecBzip2 v0.6.0
-  [944b1d66] CodecZlib v0.6.0
+  [523fee87] CodecBzip2 v0.7.1
+  [944b1d66] CodecZlib v0.7.0
   [3da002f7] ColorTypes v0.9.1
   [5ae59095] Colors v0.11.2
   [861a8166] Combinatorics v1.0.0
@@ -275,7 +236,7 @@ Environment:
   [d3d80556] LineSearches v7.0.1
   [1914dd2f] MacroTools v0.5.5
   [dbb5928d] MappedArrays v0.2.2
-  [b8f27783] MathOptInterface v0.9.12
+  [b8f27783] MathOptInterface v0.9.13
   [fdba3010] MathProgBase v0.7.8
   [d14a8603] MathematicalSystems v0.11.1
   [739be429] MbedTLS v1.0.1
@@ -293,7 +254,7 @@ Environment:
   [bac558e1] OrderedCollections v1.1.0
   [774612a8] ParameterJuMP v0.2.0
   [d96e819e] Parameters v0.12.0
-  [69de0a69] Parsers v0.3.12
+  [69de0a69] Parsers v1.0.0
   [ddf597a6] PolyJuMP v0.4.0
   [67491407] Polyhedra v0.6.1
   [f27b6e38] Polynomials v0.6.1
@@ -302,7 +263,7 @@ Environment:
   [189a3867] Reexport v0.2.0
   [ae029012] Requires v1.0.1
   [af85af4c] RowEchelon v0.1.1
-  [8e049039] SemialgebraicSets v0.2.0
+  [8e049039] SemialgebraicSets v0.2.1
   [169818f4] SemidefiniteModels v0.1.1
   [39881422] SetProg v0.1.0
   [699a6c99] SimpleTraits v0.9.1
@@ -314,6 +275,7 @@ Environment:
   [ceb7f16a] SwitchOnSafety v0.1.0
   [3bb67fe8] TranscodingStreams v0.9.5
   [30578b45] URIParser v0.4.0
+  [83775a58] Zlib_jll v1.2.11+8
   [2a0f44e3] Base64 
   [ade2ca70] Dates 
   [8bb1440f] DelimitedFiles 

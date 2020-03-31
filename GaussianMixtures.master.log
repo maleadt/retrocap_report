@@ -2,115 +2,77 @@ Julia Version 1.4.0
 Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  CPU: Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-8.0.1 (ORCJIT, skylake)
 Environment:
   JULIA_DEPOT_PATH = ::/usr/local/share/julia
   JULIA_NUM_THREADS = 2
 
   Resolving package versions...
-  Installed DataAPI ────────────────────── v1.1.0
   Installed Reexport ───────────────────── v0.2.0
+  Installed DataAPI ────────────────────── v1.1.0
+  Installed Missings ───────────────────── v0.4.3
+  Installed XML2_jll ───────────────────── v2.9.9+1
+  Installed GaussianMixtures ───────────── v0.3.2
+  Installed NearestNeighbors ───────────── v0.4.4
   Installed Tables ─────────────────────── v1.0.3
-  Installed Rmath ──────────────────────── v0.6.1
+  Installed RData ──────────────────────── v0.7.1
+  Installed PooledArrays ───────────────── v0.5.3
   Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed Distances ──────────────────── v0.8.2
+  Installed SpecialFunctions ───────────── v0.10.0
+  Installed Requires ───────────────────── v1.0.1
+  Installed EzXML ──────────────────────── v1.1.0
+  Installed TranscodingStreams ─────────── v0.9.5
   Installed Libiconv_jll ───────────────── v1.16.0+1
-  Installed Parsers ────────────────────── v0.3.12
+  Installed OrderedCollections ─────────── v1.1.0
+  Installed Parsers ────────────────────── v1.0.0
+  Installed WeakRefStrings ─────────────── v0.6.2
+  Installed StatsFuns ──────────────────── v0.9.4
   Installed SortingAlgorithms ──────────── v0.3.1
   Installed QuadGK ─────────────────────── v2.3.1
-  Installed CodecZlib ──────────────────── v0.6.0
+  Installed FillArrays ─────────────────── v0.8.5
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed TimeZones ──────────────────── v1.0.1
+  Installed Arpack_jll ─────────────────── v3.5.0+2
   Installed Arpack ─────────────────────── v0.4.0
-  Installed InvertedIndices ────────────── v1.0.0
+  Installed CodecZlib ──────────────────── v0.6.0
+  Installed ExprTools ──────────────────── v0.1.0
+  Installed Rmath_jll ──────────────────── v0.2.2+0
   Installed JLD2 ───────────────────────── v0.1.12
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed FileIO ─────────────────────── v1.2.4
+  Installed PDMats ─────────────────────── v0.9.12
+  Installed Compat ─────────────────────── v3.8.0
+  Installed DataFrames ─────────────────── v0.20.2
+  Installed FilePathsBase ──────────────── v0.7.0
+  Installed Zlib_jll ───────────────────── v1.2.11+8
+  Installed OpenBLAS_jll ───────────────── v0.3.9+0
+  Installed StatsBase ──────────────────── v0.32.2
   Installed ScikitLearnBase ────────────── v0.5.0
   Installed CompilerSupportLibraries_jll ─ v0.3.1+0
   Installed StaticArrays ───────────────── v0.12.1
+  Installed BinaryProvider ─────────────── v0.5.8
   Installed DataStructures ─────────────── v0.17.10
-    Cloning [e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28] Missings from https://github.com/JuliaData/Missings.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Missings ───────────────────── v0.4.3
-    Cloning [cc18c42c-b769-54ff-9e2a-b28141a64aae] GaussianMixtures from https://github.com/davidavdav/GaussianMixtures.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GaussianMixtures ───────────── v0.3.2
-    Cloning [b8a86587-4115-5ab1-83bc-aa920d37bbce] NearestNeighbors from https://github.com/KristofferC/NearestNeighbors.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NearestNeighbors ───────────── v0.4.4
-    Cloning [df47a6cb-8c03-5eed-afd8-b6050d6c41da] RData from https://github.com/JuliaData/RData.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RData ──────────────────────── v0.7.1
-    Cloning [02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a] XML2_jll from https://github.com/JuliaBinaryWrappers/XML2_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed XML2_jll ───────────────────── v2.9.9+1
-    Cloning [2dfb63ee-cc39-5dd5-95bd-886bf059d720] PooledArrays from https://github.com/JuliaData/PooledArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PooledArrays ───────────────── v0.5.3
-    Cloning [3bb67fe8-82b1-5028-8e26-92a6c54297fa] TranscodingStreams from https://github.com/bicycle1885/TranscodingStreams.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TranscodingStreams ─────────── v0.9.5
-    Cloning [b4f34e82-e78d-54a5-968a-f98e89d6e8f7] Distances from https://github.com/JuliaStats/Distances.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Distances ──────────────────── v0.8.2
-    Cloning [276daf66-3868-5448-9aa4-cd146d93841b] SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SpecialFunctions ───────────── v0.10.0
-    Cloning [8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615] EzXML from https://github.com/bicycle1885/EzXML.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed EzXML ──────────────────────── v1.1.0
-    Cloning [ce6b1742-4840-55fa-b093-852dadbb1d8b] RDatasets from https://github.com/JuliaStats/RDatasets.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %    Fetching: [=>                                       ]  2.3 %    Fetching: [==>                                      ]  3.4 %    Fetching: [=====>                                   ]  11.8 %    Fetching: [==============================>          ]  73.8 %[2K[?25h  Installed RDatasets ──────────────────── v0.6.1
-    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OrderedCollections ─────────── v1.1.0
-    Cloning [ea10d353-3f73-51f8-a26c-33c1cb351aa5] WeakRefStrings from https://github.com/JuliaData/WeakRefStrings.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed WeakRefStrings ─────────────── v0.6.2
-    Cloning [4c63d2b9-4356-54db-8cca-17b64c39e42c] StatsFuns from https://github.com/JuliaStats/StatsFuns.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StatsFuns ──────────────────── v0.9.4
-    Cloning [f269a46b-ccf7-5d73-abea-4c690281aa53] TimeZones from https://github.com/JuliaTime/TimeZones.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TimeZones ──────────────────── v1.0.1
-    Cloning [ae029012-a4dd-5104-9daa-d747884805df] Requires from https://github.com/MikeInnes/Requires.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Requires ───────────────────── v1.0.1
-    Cloning [1a297f60-69ca-5386-bcde-b61e274b549b] FillArrays from https://github.com/JuliaArrays/FillArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FillArrays ─────────────────── v0.8.5
-    Cloning [e2d170a0-9d28-54be-80f0-106bbe20a464] DataValueInterfaces from https://github.com/queryverse/DataValueInterfaces.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataValueInterfaces ────────── v1.0.0
-    Cloning [68821587-b530-5797-8361-c406ea357684] Arpack_jll from https://github.com/JuliaBinaryWrappers/Arpack_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Arpack_jll ─────────────────── v3.5.0+2
-    Cloning [e2ba6199-217a-4e67-a87a-7c52f15ade04] ExprTools from https://github.com/invenia/ExprTools.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ExprTools ──────────────────── v0.1.0
-    Cloning [336ed68f-0bac-5ca0-87d4-7b16caf5d00b] CSV from https://github.com/JuliaData/CSV.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CSV ────────────────────────── v0.5.26
-    Cloning [f50d1b31-88e8-58de-be2c-1cc44531875f] Rmath_jll from https://github.com/JuliaBinaryWrappers/Rmath_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Rmath_jll ──────────────────── v0.2.2+0
-    Cloning [5789e2e9-d7fb-5bc7-8068-2c6fae9b9549] FileIO from https://github.com/JuliaIO/FileIO.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FileIO ─────────────────────── v1.2.4
-    Cloning [a93c6f00-e57d-5684-b7b6-d8193f3e46c0] DataFrames from https://github.com/JuliaData/DataFrames.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [=========>                               ]  21.8 %[2K[?25h  Installed DataFrames ─────────────────── v0.20.2
-    Cloning [90014a1f-27ba-587c-ab20-58faa44d9150] PDMats from https://github.com/JuliaStats/PDMats.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PDMats ─────────────────────── v0.9.12
-    Cloning [34da2185-b29b-5c13-b0c7-acf172513d20] Compat from https://github.com/JuliaLang/Compat.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Compat ─────────────────────── v3.8.0
-    Cloning [31c24e10-a181-5473-b8eb-7969acd0382f] Distributions from https://github.com/JuliaStats/Distributions.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Distributions ──────────────── v0.22.6
-    Cloning [aaaa29a8-35af-508c-8bc3-b662a17a0fe5] Clustering from https://github.com/JuliaStats/Clustering.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Clustering ─────────────────── v0.13.5
-    Cloning [2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91] StatsBase from https://github.com/JuliaStats/StatsBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StatsBase ──────────────────── v0.32.2
-    Cloning [48062228-2e41-5def-b9a4-89aafe57970f] FilePathsBase from https://github.com/rofinn/FilePathsBase.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FilePathsBase ──────────────── v0.7.0
-    Cloning [83775a58-1f1d-513f-b197-d71354ab007a] Zlib_jll from https://github.com/JuliaBinaryWrappers/Zlib_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Zlib_jll ───────────────────── v1.2.11+8
-    Cloning [4536629a-c528-5b80-bd46-f80d51c5b363] OpenBLAS_jll from https://github.com/JuliaBinaryWrappers/OpenBLAS_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenBLAS_jll ───────────────── v0.3.7+8
-    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ─────────────── v0.5.8
-    Cloning [78c3b35d-d492-501b-9361-3d52fe80e533] Mocking from https://github.com/invenia/Mocking.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Mocking ────────────────────── v0.7.1
-    Cloning [324d7699-5711-5eae-9e2f-1d82baa6b597] CategoricalArrays from https://github.com/JuliaData/CategoricalArrays.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CategoricalArrays ──────────── v0.7.7
-    Cloning [682c06a0-de6a-54ab-a142-c8b1cf79cde6] JSON from https://github.com/JuliaIO/JSON.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed JSON ───────────────────────── v0.21.0
-    Cloning [efe28fd5-8261-553b-a9e1-b2916fc3738e] OpenSpecFun_jll from https://github.com/JuliaBinaryWrappers/OpenSpecFun_jll.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenSpecFun_jll ────────────── v0.5.3+3
-    Cloning [3783bdb8-4a98-5b6b-af9a-565f29a5fe9c] TableTraits from https://github.com/queryverse/TableTraits.jl.git
-[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TableTraits ────────────────── v1.0.0
+  Installed Clustering ─────────────────── v0.13.5
+  Installed Distributions ──────────────── v0.22.6
+  Installed RDatasets ──────────────────── v0.6.1
+  Installed OpenSpecFun_jll ────────────── v0.5.3+3
+  Installed Mocking ────────────────────── v0.7.1
+  Installed TableTraits ────────────────── v1.0.0
+  Installed JSON ───────────────────────── v0.21.0
+  Installed CategoricalArrays ──────────── v0.7.7
+  Installed CSV ────────────────────────── v0.6.0
    Updating `~/.julia/environments/v1.4/Project.toml`
   [cc18c42c] + GaussianMixtures v0.3.2
    Updating `~/.julia/environments/v1.4/Manifest.toml`
   [7d9fca2a] + Arpack v0.4.0
   [68821587] + Arpack_jll v3.5.0+2
   [b99e7846] + BinaryProvider v0.5.8
-  [336ed68f] + CSV v0.5.26
+  [336ed68f] + CSV v0.6.0
   [324d7699] + CategoricalArrays v0.7.7
   [aaaa29a8] + Clustering v0.13.5
   [944b1d66] + CodecZlib v0.6.0
@@ -136,11 +98,11 @@ Environment:
   [e1d29d7a] + Missings v0.4.3
   [78c3b35d] + Mocking v0.7.1
   [b8a86587] + NearestNeighbors v0.4.4
-  [4536629a] + OpenBLAS_jll v0.3.7+8
+  [4536629a] + OpenBLAS_jll v0.3.9+0
   [efe28fd5] + OpenSpecFun_jll v0.5.3+3
   [bac558e1] + OrderedCollections v1.1.0
   [90014a1f] + PDMats v0.9.12
-  [69de0a69] + Parsers v0.3.12
+  [69de0a69] + Parsers v1.0.0
   [2dfb63ee] + PooledArrays v0.5.3
   [1fd47b50] + QuadGK v2.3.1
   [df47a6cb] + RData v0.7.1
@@ -191,11 +153,11 @@ Environment:
    Building TimeZones → `~/.julia/packages/TimeZones/zymSN/deps/build.log`
    Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
     Testing GaussianMixtures
-Status `/tmp/jl_x1gEhU/Manifest.toml`
+Status `/tmp/jl_lLlFxa/Manifest.toml`
   [7d9fca2a] Arpack v0.4.0
   [68821587] Arpack_jll v3.5.0+2
   [b99e7846] BinaryProvider v0.5.8
-  [336ed68f] CSV v0.5.26
+  [336ed68f] CSV v0.6.0
   [324d7699] CategoricalArrays v0.7.7
   [aaaa29a8] Clustering v0.13.5
   [944b1d66] CodecZlib v0.6.0
@@ -221,11 +183,11 @@ Status `/tmp/jl_x1gEhU/Manifest.toml`
   [e1d29d7a] Missings v0.4.3
   [78c3b35d] Mocking v0.7.1
   [b8a86587] NearestNeighbors v0.4.4
-  [4536629a] OpenBLAS_jll v0.3.7+8
+  [4536629a] OpenBLAS_jll v0.3.9+0
   [efe28fd5] OpenSpecFun_jll v0.5.3+3
   [bac558e1] OrderedCollections v1.1.0
   [90014a1f] PDMats v0.9.12
-  [69de0a69] Parsers v0.3.12
+  [69de0a69] Parsers v1.0.0
   [2dfb63ee] PooledArrays v0.5.3
   [1fd47b50] QuadGK v2.3.1
   [df47a6cb] RData v0.7.1
@@ -273,14 +235,14 @@ Status `/tmp/jl_x1gEhU/Manifest.toml`
   [8dfed614] Test 
   [cf7118a7] UUIDs 
   [4ec0a83e] Unicode 
-(100000, -4.1549882306966865e6, [58188.12884142094, 41811.87115857906], [32964.85707384054 -3093.178437877527 2186.604095814476; -33480.04730053465 2537.0411526733365 -2013.9958482251454], [[62102.108128981476 2105.9295368782314 -5559.404800773208; 2105.9295368782314 58619.74946572304 -2434.208468908234; -5559.404800773208 -2434.2084689082344 63417.52107173342], [37232.84004409134 -2430.990457558334 5522.438247803804; -2430.990457558334 41057.103414318306 2823.8580687280228; 5522.438247803804 2823.8580687280228 36546.140725406716]])
+(100000, -1.4092411319136892e6, [99039.34595664701, 960.6540433529985], [-2089.0182236624405 1029.3072982990093 987.3649510058866; 2159.666057034649 -809.5810756727549 -869.1296979345782], [[95113.9212703734 1687.8127625322186 1034.579844109797; 1687.8127625322186 98103.39186538456 -669.909197673167; 1034.579844109797 -669.909197673167 98133.38763349467], [5205.384148118916 -1591.5241905832904 -1507.3828912963477; -1591.5241905832904 1535.8505875745755 645.7625215555565; -1507.3828912963477 645.7625215555565 1788.7508099880322]])
 Test Summary: | Pass  Total
 data.jl       |    8      8
 bayes.jl: Error During Test at /home/pkgeval/.julia/packages/GaussianMixtures/bTNkf/test/bayes.jl:3
   Got exception outside of a @test
   MethodError: no method matching CSV.File(::Base.GenericIOBuffer{Array{UInt8,1}}; delim=',', quotechar='"', missingstring="NA", rows_for_type_detect=200)
   Closest candidates are:
-    CSV.File(::Any; header, normalizenames, datarow, skipto, footerskip, limit, transpose, comment, use_mmap, ignoreemptylines, missingstrings, missingstring, delim, ignorerepeated, quotechar, openquotechar, closequotechar, escapechar, dateformat, decimal, truestrings, falsestrings, type, types, typemap, categorical, pool, strict, silencewarnings, threaded, debug, parsingdebug, allowmissing) at /home/pkgeval/.julia/packages/CSV/DOr2V/src/CSV.jl:258 got unsupported keyword argument "rows_for_type_detect"
+    CSV.File(::Any; header, normalizenames, datarow, skipto, footerskip, limit, transpose, comment, use_mmap, ignoreemptylines, threaded, select, drop, missingstrings, missingstring, delim, ignorerepeated, quotechar, openquotechar, closequotechar, escapechar, dateformat, decimal, truestrings, falsestrings, type, types, typemap, categorical, pool, strict, silencewarnings, debug, parsingdebug, allowmissing) at /home/pkgeval/.julia/packages/CSV/7Dav7/src/CSV.jl:262 got unsupported keyword argument "rows_for_type_detect"
   Stacktrace:
    [1] kwerr(::NamedTuple{(:delim, :quotechar, :missingstring, :rows_for_type_detect),Tuple{Char,Char,String,Int64}}, ::Type{T} where T, ::Base.GenericIOBuffer{Array{UInt8,1}}) at ./error.jl:157
    [2] (::RDatasets.var"#1#2"{String,String})(::IOStream) at /home/pkgeval/.julia/packages/RDatasets/1Ih8s/src/dataset.jl:28
