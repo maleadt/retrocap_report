@@ -1,0 +1,290 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed DataAPI ──────────────────────── v1.1.0
+  Installed Missings ─────────────────────── v0.4.3
+  Installed Calculus ─────────────────────── v0.5.1
+  Installed Reexport ─────────────────────── v0.2.0
+  Installed NaNMath ──────────────────────── v0.3.3
+  Installed FastTransforms_jll ───────────── v0.2.13+1
+  Installed LowRankApprox ────────────────── v0.4.0
+  Installed ApproxFunOrthogonalPolynomials ─ v0.3.2
+  Installed Nullables ────────────────────── v1.0.0
+  Installed OrderedCollections ───────────── v1.1.0
+  Installed MKL_jll ──────────────────────── v2019.0.117+2
+  Installed SpecialFunctions ─────────────── v0.10.0
+  Installed RecipesBase ──────────────────── v0.8.0
+  Installed SortingAlgorithms ────────────── v0.3.1
+  Installed IterTools ────────────────────── v1.3.0
+  Installed ApproxFunBase ────────────────── v0.3.2
+  Installed FillArrays ───────────────────── v0.8.6
+  Installed GMP_jll ──────────────────────── v6.1.2+5
+  Installed MacroTools ───────────────────── v0.5.5
+  Installed BlockBandedMatrices ──────────── v0.7.2
+  Installed LazyArrays ───────────────────── v0.15.1
+  Installed InfiniteArrays ───────────────── v0.6.1
+  Installed MatrixFactorizations ─────────── v0.3.0
+  Installed FastTransforms ───────────────── v0.8.2
+  Installed BandedMatrices ───────────────── v0.14.3
+  Installed OpenBLAS_jll ─────────────────── v0.3.9+0
+  Installed ArrayLayouts ─────────────────── v0.1.5
+  Installed StatsBase ────────────────────── v0.32.2
+  Installed DualNumbers ──────────────────── v0.6.2
+  Installed DSP ──────────────────────────── v0.6.3
+  Installed FFTW_jll ─────────────────────── v3.3.9+5
+  Installed MPFR_jll ─────────────────────── v4.0.2+2
+  Installed BinaryProvider ───────────────── v0.5.8
+  Installed CompilerSupportLibraries_jll ─── v0.3.3+0
+  Installed StaticArrays ─────────────────── v0.12.1
+  Installed DataStructures ───────────────── v0.17.11
+  Installed ToeplitzMatrices ─────────────── v0.6.1
+  Installed FastGaussQuadrature ──────────── v0.4.2
+  Installed DomainSets ───────────────────── v0.1.0
+  Installed AbstractFFTs ─────────────────── v0.5.0
+  Installed IntelOpenMP_jll ──────────────── v2018.0.3+0
+  Installed Polynomials ──────────────────── v0.6.1
+  Installed BlockArrays ──────────────────── v0.11.2
+  Installed OpenSpecFun_jll ──────────────── v0.5.3+3
+  Installed IntervalSets ─────────────────── v0.3.2
+  Installed FFTW ─────────────────────────── v1.2.0
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [b70543e2] + ApproxFunOrthogonalPolynomials v0.3.2
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.5.0
+  [fbd15aa5] + ApproxFunBase v0.3.2
+  [b70543e2] + ApproxFunOrthogonalPolynomials v0.3.2
+  [4c555306] + ArrayLayouts v0.1.5
+  [aae01518] + BandedMatrices v0.14.3
+  [b99e7846] + BinaryProvider v0.5.8
+  [8e7c35d0] + BlockArrays v0.11.2
+  [ffab5731] + BlockBandedMatrices v0.7.2
+  [49dc2e85] + Calculus v0.5.1
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.3+0
+  [717857b8] + DSP v0.6.3
+  [9a962f9c] + DataAPI v1.1.0
+  [864edb3b] + DataStructures v0.17.11
+  [5b8099bc] + DomainSets v0.1.0
+  [fa6b7ba4] + DualNumbers v0.6.2
+  [7a1cc6ca] + FFTW v1.2.0
+  [f5851436] + FFTW_jll v3.3.9+5
+  [442a2c76] + FastGaussQuadrature v0.4.2
+  [057dd010] + FastTransforms v0.8.2
+  [34b6f7d7] + FastTransforms_jll v0.2.13+1
+  [1a297f60] + FillArrays v0.8.6
+  [781609d7] + GMP_jll v6.1.2+5
+  [4858937d] + InfiniteArrays v0.6.1
+  [1d5cc7b8] + IntelOpenMP_jll v2018.0.3+0
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [5078a376] + LazyArrays v0.15.1
+  [898213cb] + LowRankApprox v0.4.0
+  [856f044c] + MKL_jll v2019.0.117+2
+  [3a97d323] + MPFR_jll v4.0.2+2
+  [1914dd2f] + MacroTools v0.5.5
+  [a3b82374] + MatrixFactorizations v0.3.0
+  [e1d29d7a] + Missings v0.4.3
+  [77ba4419] + NaNMath v0.3.3
+  [4d1e1d77] + Nullables v1.0.0
+  [4536629a] + OpenBLAS_jll v0.3.9+0
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+3
+  [bac558e1] + OrderedCollections v1.1.0
+  [f27b6e38] + Polynomials v0.6.1
+  [3cdcf5f2] + RecipesBase v0.8.0
+  [189a3867] + Reexport v0.2.0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.10.0
+  [90137ffa] + StaticArrays v0.12.1
+  [2913bbd2] + StatsBase v0.32.2
+  [c751599d] + ToeplitzMatrices v0.6.1
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [37e2e46d] + LinearAlgebra 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [1a1011a3] + SharedArrays 
+  [6462fe0b] + Sockets 
+  [2f01184e] + SparseArrays 
+  [10745b16] + Statistics 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Building FFTW ──────────→ `~/.julia/packages/FFTW/qqcBj/deps/build.log`
+   Building FastTransforms → `~/.julia/packages/FastTransforms/MjTJy/deps/build.log`
+    Testing ApproxFunOrthogonalPolynomials
+Status `/tmp/jl_vg8bRQ/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [fbd15aa5] ApproxFunBase v0.3.2
+  [b70543e2] ApproxFunOrthogonalPolynomials v0.3.2
+  [4c555306] ArrayLayouts v0.1.5
+  [aae01518] BandedMatrices v0.14.3
+  [b99e7846] BinaryProvider v0.5.8
+  [8e7c35d0] BlockArrays v0.11.2
+  [ffab5731] BlockBandedMatrices v0.7.2
+  [49dc2e85] Calculus v0.5.1
+  [e66e0078] CompilerSupportLibraries_jll v0.3.3+0
+  [717857b8] DSP v0.6.3
+  [9a962f9c] DataAPI v1.1.0
+  [864edb3b] DataStructures v0.17.11
+  [5b8099bc] DomainSets v0.1.0
+  [fa6b7ba4] DualNumbers v0.6.2
+  [7a1cc6ca] FFTW v1.2.0
+  [f5851436] FFTW_jll v3.3.9+5
+  [442a2c76] FastGaussQuadrature v0.4.2
+  [057dd010] FastTransforms v0.8.2
+  [34b6f7d7] FastTransforms_jll v0.2.13+1
+  [1a297f60] FillArrays v0.8.6
+  [781609d7] GMP_jll v6.1.2+5
+  [4858937d] InfiniteArrays v0.6.1
+  [1d5cc7b8] IntelOpenMP_jll v2018.0.3+0
+  [8197267c] IntervalSets v0.3.2
+  [c8e1da08] IterTools v1.3.0
+  [5078a376] LazyArrays v0.15.1
+  [898213cb] LowRankApprox v0.4.0
+  [856f044c] MKL_jll v2019.0.117+2
+  [3a97d323] MPFR_jll v4.0.2+2
+  [1914dd2f] MacroTools v0.5.5
+  [a3b82374] MatrixFactorizations v0.3.0
+  [e1d29d7a] Missings v0.4.3
+  [77ba4419] NaNMath v0.3.3
+  [4d1e1d77] Nullables v1.0.0
+  [4536629a] OpenBLAS_jll v0.3.9+0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+3
+  [bac558e1] OrderedCollections v1.1.0
+  [f27b6e38] Polynomials v0.6.1
+  [3cdcf5f2] RecipesBase v0.8.0
+  [189a3867] Reexport v0.2.0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.10.0
+  [90137ffa] StaticArrays v0.12.1
+  [2913bbd2] StatsBase v0.32.2
+  [c751599d] ToeplitzMatrices v0.6.1
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+Test Summary: | Pass  Total
+Domain        |    1      1
+Test Summary: | Pass  Total
+Clenshaw      |    1      1
+  5.279194 seconds (7.01 M allocations: 355.577 MiB, 3.34% gc time)
+Test Summary: | Pass  Total
+Chebyshev     |  488    488
+285.061531 seconds (128.00 M allocations: 6.345 GiB, 7.07% gc time)
+Test Summary: | Pass  Total
+Complex       |   13     13
+  8.156155 seconds (3.34 M allocations: 168.794 MiB, 2.17% gc time)
+Test Summary: | Pass  Total
+broadcast     |   18     18
+ 78.595806 seconds (31.80 M allocations: 1.544 GiB, 4.14% gc time)
+  3.965186 seconds (4.99 M allocations: 237.072 MiB, 4.79% gc time)
+  8.778628 seconds (11.38 M allocations: 598.484 MiB, 3.79% gc time)
+  4.847379 seconds (6.01 M allocations: 281.217 MiB, 3.92% gc time)
+  0.056652 seconds (41.45 k allocations: 2.239 MiB)
+  0.743831 seconds (1.57 M allocations: 71.847 MiB, 5.21% gc time)
+ 21.402408 seconds (25.69 M allocations: 1.293 GiB, 3.18% gc time)
+Test Summary: |  Pass  Total
+Operator      | 12366  12366
+291.671809 seconds (379.46 M allocations: 17.773 GiB, 4.44% gc time)
+  0.458073 seconds (656.15 k allocations: 33.682 MiB)
+  1.971597 seconds (1.94 M allocations: 105.693 MiB, 3.23% gc time)
+  1.993997 seconds (2.54 M allocations: 130.992 MiB, 2.79% gc time)
+  2.010107 seconds (3.87 M allocations: 143.097 MiB, 4.32% gc time)
+  2.126345 seconds (3.54 M allocations: 174.384 MiB, 1.62% gc time)
+  4.438147 seconds (7.65 M allocations: 402.769 MiB, 4.05% gc time)
+  5.899149 seconds (6.07 M allocations: 304.717 MiB, 2.72% gc time)
+  2.942917 seconds (2.93 M allocations: 148.716 MiB, 1.40% gc time)
+Test Summary: | Pass  Total
+ODE           | 2729   2729
+132.584370 seconds (174.56 M allocations: 8.539 GiB, 3.22% gc time)
+Test Summary:       | Pass  Total
+Eigenvalue problems |   13     13
+273.979766 seconds (127.28 M allocations: 6.364 GiB, 4.96% gc time)
+ 81.076406 seconds (1.80 M allocations: 91.297 MiB, 48.71% gc time)
+  0.161983 seconds (27.62 k allocations: 1.290 MiB)
+ 22.009876 seconds (5.74 M allocations: 295.343 MiB, 17.78% gc time)
+  0.647697 seconds (730.92 k allocations: 36.408 MiB, 19.23% gc time)
+Test Summary: | Pass  Broken  Total
+Vector        |  446       1    447
+505.277942 seconds (79.19 M allocations: 4.060 GiB, 24.01% gc time)
+  0.000275 seconds (149 allocations: 6.969 KiB)
+ 10.521517 seconds (7.44 M allocations: 356.485 MiB, 3.43% gc time)
+  0.328807 seconds (18 allocations: 32.844 KiB)
+ 39.474229 seconds (11.19 M allocations: 786.549 MiB, 19.35% gc time)
+179.348489 seconds (10.96 M allocations: 582.335 MiB, 38.23% gc time)
+ 14.112162 seconds (7.70 M allocations: 371.101 MiB, 5.34% gc time)
+  6.006595 seconds (2.52 M allocations: 128.513 MiB, 2.88% gc time)
+  8.741951 seconds (5.47 M allocations: 264.969 MiB, 1.38% gc time)
+ 12.174482 seconds (4.02 M allocations: 198.633 MiB, 3.42% gc time)
+ 30.435521 seconds (13.83 M allocations: 686.753 MiB, 2.86% gc time)
+ 15.890783 seconds (5.32 M allocations: 259.816 MiB, 1.46% gc time)
+Test Summary: | Pass  Total
+Jacobi        | 4811   4811
+737.223837 seconds (160.50 M allocations: 8.318 GiB, 17.45% gc time)
+Test Summary:                 | Pass  Total
+Laguerre and WeightedLaguerre |   21     21
+156.389281 seconds (86.83 M allocations: 3.735 GiB, 10.72% gc time)
+Test Summary:           | Pass  Total
+Hermite and GaussWeight |  415    415
+ 43.868381 seconds (51.03 M allocations: 2.347 GiB, 6.43% gc time)
+  0.102706 seconds (103.21 k allocations: 5.511 MiB)
+  1.510448 seconds (3.92 M allocations: 199.911 MiB, 16.15% gc time)
+  2.050193 seconds (2.42 M allocations: 124.712 MiB)
+  0.002047 seconds (5.21 k allocations: 288.922 KiB)
+  1.537217 seconds (1.53 M allocations: 79.750 MiB)
+Test Summary: | Pass  Broken  Total
+Spaces        | 1745       1   1746
+257.004291 seconds (223.59 M allocations: 11.878 GiB, 3.12% gc time)
+  1.786823 seconds (2.26 M allocations: 120.551 MiB)
+  3.075467 seconds (2.18 M allocations: 136.860 MiB, 5.68% gc time)
+  0.242718 seconds (169.64 k allocations: 12.873 MiB)
+  1.891001 seconds (1.91 M allocations: 100.124 MiB, 7.70% gc time)
+  0.167701 seconds (211.99 k allocations: 11.006 MiB)
+  0.558105 seconds (2.21 M allocations: 201.045 MiB, 22.17% gc time)
+  0.565834 seconds (2.34 M allocations: 206.177 MiB, 13.92% gc time)
+ 94.849433 seconds (102.47 M allocations: 4.632 GiB, 3.37% gc time)
+ 15.514250 seconds (14.26 M allocations: 747.447 MiB, 3.56% gc time)
+Test Summary: | Pass  Total
+Multivariate  | 3286   3286
+341.882456 seconds (296.48 M allocations: 15.655 GiB, 3.18% gc time)
+ 20.591369 seconds (15.91 M allocations: 850.262 MiB, 4.06% gc time)
+ 33.470137 seconds (7.22 M allocations: 435.281 MiB, 52.69% gc time)
