@@ -12,13 +12,13 @@ Environment:
 
   Resolving package versions...
   Installed FastRounding ──────── v0.3.1
-  Installed RecipesBase ───────── v0.8.0
-  Installed IntervalContractors ─ v0.4.1
+  Installed SetRounding ───────── v0.2.0
+  Installed RecipesBase ───────── v1.0.0
   Installed ErrorfreeArithmetic ─ v0.5.0
   Installed StaticArrays ──────── v0.12.1
+  Installed IntervalContractors ─ v0.4.1
   Installed IntervalArithmetic ── v0.16.1
   Installed CRlibm ────────────── v0.8.0
-  Installed SetRounding ───────── v0.2.0
    Updating `~/.julia/environments/v1.4/Project.toml`
   [15111844] + IntervalContractors v0.4.1
    Updating `~/.julia/environments/v1.4/Manifest.toml`
@@ -27,7 +27,7 @@ Environment:
   [fa42c844] + FastRounding v0.3.1
   [d1acc4aa] + IntervalArithmetic v0.16.1
   [15111844] + IntervalContractors v0.4.1
-  [3cdcf5f2] + RecipesBase v0.8.0
+  [3cdcf5f2] + RecipesBase v1.0.0
   [3cc68bcd] + SetRounding v0.2.0
   [90137ffa] + StaticArrays v0.12.1
   [2a0f44e3] + Base64 
@@ -45,7 +45,7 @@ Environment:
   [8dfed614] + Test 
    Building CRlibm → `~/.julia/packages/CRlibm/NFCH5/deps/build.log`
     Testing IntervalContractors
-Status `/tmp/jl_exQHQX/Manifest.toml`
+Status `/tmp/jl_FxiEtU/Manifest.toml`
   [96374032] CRlibm v0.8.0
   [ffbed154] DocStringExtensions v0.8.1
   [e30172f5] Documenter v0.24.7
@@ -55,7 +55,7 @@ Status `/tmp/jl_exQHQX/Manifest.toml`
   [15111844] IntervalContractors v0.4.1
   [682c06a0] JSON v0.21.0
   [69de0a69] Parsers v1.0.1
-  [3cdcf5f2] RecipesBase v0.8.0
+  [3cdcf5f2] RecipesBase v1.0.0
   [3cc68bcd] SetRounding v0.2.0
   [90137ffa] StaticArrays v0.12.1
   [2a0f44e3] Base64 

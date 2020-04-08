@@ -11,52 +11,53 @@ Environment:
   JULIA_NUM_THREADS = 2
 
   Resolving package versions...
-  Installed Missings ───────────────────── v0.4.3
-  Installed DataAPI ────────────────────── v1.1.0
   Installed Reexport ───────────────────── v0.2.0
   Installed NaNMath ────────────────────── v0.3.3
+  Installed DataAPI ────────────────────── v1.1.0
+  Installed Missings ───────────────────── v0.4.3
   Installed ImageMorphology ────────────── v0.2.5
   Installed SimpleTraits ───────────────── v0.9.1
   Installed ImageCore ──────────────────── v0.8.12
-  Installed Requires ───────────────────── v1.0.1
   Installed ImageInpainting ────────────── v0.2.0
-  Installed MKL_jll ────────────────────── v2019.0.117+2
-  Installed OrderedCollections ─────────── v1.1.0
-  Installed CatIndices ─────────────────── v0.2.1
+  Installed Requires ───────────────────── v1.0.1
   Installed FixedPointNumbers ──────────── v0.8.0
+  Installed CatIndices ─────────────────── v0.2.1
+  Installed OrderedCollections ─────────── v1.1.0
   Installed SpecialFunctions ───────────── v0.10.0
   Installed IterTools ──────────────────── v1.3.0
+  Installed MKL_jll ────────────────────── v2019.0.117+2
   Installed SortingAlgorithms ──────────── v0.3.1
   Installed CustomUnitRanges ───────────── v1.0.0
-  Installed ImageAxes ──────────────────── v0.6.4
-  Installed Graphics ───────────────────── v1.0.2
   Installed MacroTools ─────────────────── v0.5.5
+  Installed MappedArrays ───────────────── v0.2.2
+  Installed FFTViews ───────────────────── v0.3.1
   Installed PaddedViews ────────────────── v0.5.4
   Installed ColorTypes ─────────────────── v0.10.0
-  Installed MappedArrays ───────────────── v0.2.2
   Installed AxisArrays ─────────────────── v0.4.2
-  Installed RangeArrays ────────────────── v0.3.2
-  Installed FFTViews ───────────────────── v0.3.1
-  Installed OffsetArrays ───────────────── v1.0.4
-  Installed ImageMetadata ──────────────── v0.9.0
-  Installed EllipsisNotation ───────────── v0.4.0
-  Installed ComputationalResources ─────── v0.3.2
-  Installed ColorVectorSpace ───────────── v0.8.4
+  Installed Graphics ───────────────────── v1.0.2
   Installed CpuId ──────────────────────── v0.2.2
+  Installed RangeArrays ────────────────── v0.3.2
+  Installed ComputationalResources ─────── v0.3.2
+  Installed EllipsisNotation ───────────── v0.4.0
+  Installed ImageMetadata ──────────────── v0.9.0
+  Installed ColorVectorSpace ───────────── v0.8.5
   Installed FFTW_jll ───────────────────── v3.3.9+5
-  Installed StatsBase ──────────────────── v0.32.2
+  Installed OffsetArrays ───────────────── v1.0.4
   Installed Colors ─────────────────────── v0.12.0
-  Installed CompilerSupportLibraries_jll ─ v0.3.3+0
+  Installed StatsBase ──────────────────── v0.33.0
   Installed StaticArrays ───────────────── v0.12.1
+  Installed CompilerSupportLibraries_jll ─ v0.3.3+0
   Installed DataStructures ─────────────── v0.17.11
   Installed TiledIteration ─────────────── v0.2.4
-  Installed ImageFiltering ─────────────── v0.6.11
-  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
   Installed AbstractFFTs ───────────────── v0.5.0
   Installed IndirectArrays ─────────────── v0.5.1
+  Installed ImageFiltering ─────────────── v0.6.11
+  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
   Installed OpenSpecFun_jll ────────────── v0.5.3+3
-  Installed IntervalSets ───────────────── v0.4.0
   Installed FFTW ───────────────────────── v1.2.0
+  Installed IntervalSets ───────────────── v0.4.0
+    Cloning [2803e5a7-5153-5ecf-9a86-9b4c37f5f5ac] ImageAxes from https://github.com/JuliaImages/ImageAxes.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ImageAxes ──────────────────── v0.6.4
    Updating `~/.julia/environments/v1.4/Project.toml`
   [2bcd8d84] + ImageInpainting v0.2.0
    Updating `~/.julia/environments/v1.4/Manifest.toml`
@@ -64,7 +65,7 @@ Environment:
   [39de3d68] + AxisArrays v0.4.2
   [aafaddc9] + CatIndices v0.2.1
   [3da002f7] + ColorTypes v0.10.0
-  [c3611d14] + ColorVectorSpace v0.8.4
+  [c3611d14] + ColorVectorSpace v0.8.5
   [5ae59095] + Colors v0.12.0
   [e66e0078] + CompilerSupportLibraries_jll v0.3.3+0
   [ed09eef8] + ComputationalResources v0.3.2
@@ -104,7 +105,7 @@ Environment:
   [a2af1166] + SortingAlgorithms v0.3.1
   [276daf66] + SpecialFunctions v0.10.0
   [90137ffa] + StaticArrays v0.12.1
-  [2913bbd2] + StatsBase v0.32.2
+  [2913bbd2] + StatsBase v0.33.0
   [06e1c1a7] + TiledIteration v0.2.4
   [2a0f44e3] + Base64 
   [ade2ca70] + Dates 
@@ -129,13 +130,13 @@ Environment:
   [4ec0a83e] + Unicode 
    Building FFTW → `~/.julia/packages/FFTW/qqcBj/deps/build.log`
     Testing ImageInpainting
-Status `/tmp/jl_aOUkEj/Manifest.toml`
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_SsLWsw/Manifest.toml`
   [621f4979] AbstractFFTs v0.5.0
   [39de3d68] AxisArrays v0.4.2
   [6e34b625] Bzip2_jll v1.0.6+2
   [aafaddc9] CatIndices v0.2.1
   [3da002f7] ColorTypes v0.10.0
-  [c3611d14] ColorVectorSpace v0.8.4
+  [c3611d14] ColorVectorSpace v0.8.5
   [5ae59095] Colors v0.12.0
   [e66e0078] CompilerSupportLibraries_jll v0.3.3+0
   [ed09eef8] ComputationalResources v0.3.2
@@ -188,7 +189,7 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
   [bac558e1] OrderedCollections v1.1.0
   [5432bcbf] PaddedViews v0.5.4
   [69de0a69] Parsers v1.0.1
-  [ccf2f8ad] PlotThemes v1.0.2
+  [ccf2f8ad] PlotThemes v1.0.3
   [995b91a9] PlotUtils v0.6.5
   [91a5bcdd] Plots v0.29.9
   [dca85d43] QuartzImageIO v0.6.0
@@ -201,14 +202,14 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
   [a2af1166] SortingAlgorithms v0.3.1
   [276daf66] SpecialFunctions v0.10.0
   [90137ffa] StaticArrays v0.12.1
-  [2913bbd2] StatsBase v0.32.2
+  [2913bbd2] StatsBase v0.33.0
   [5e47fb64] TestImages v1.0.2
   [06e1c1a7] TiledIteration v0.2.4
   [34922c18] VisualRegressionTests v0.3.1
   [a5390f91] ZipFile v0.9.1
   [83775a58] Zlib_jll v1.2.11+9
   [3161d3a3] Zstd_jll v1.4.4+0
-  [0ac62f75] libass_jll v0.14.0+0
+  [0ac62f75] libass_jll v0.14.0+1
   [f638f0a6] libfdk_aac_jll v0.1.6+1
   [b53b4c65] libpng_jll v1.6.37+3
   [f27f6e37] libvorbis_jll v1.3.6+2
@@ -244,18 +245,18 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
   Installed LibCURL ───────── v0.5.2
   Installed BinDeps ───────── v0.8.10
   Installed BufferedStreams ─ v1.0.0
-  Installed Gtk ───────────── v0.18.0
   Installed Cairo ─────────── v0.6.0
-  Installed BinaryProvider ── v0.5.8
-  Installed Expat_jll ─────── v2.2.7+1
-  Installed WinRPM ────────── v0.4.2
+  Installed Gtk ───────────── v0.18.0
   Installed Compat ────────── v2.2.0
+  Installed BinaryProvider ── v0.5.8
+  Installed HTTPClient ────── v0.2.1
+  Installed Expat_jll ─────── v2.2.7+1
   Installed LibExpat ──────── v0.6.1
   Installed Homebrew ──────── v0.7.1
-  Installed HTTPClient ────── v0.2.1
-   Updating `/tmp/jl_aOUkEj/Project.toml`
+  Installed WinRPM ────────── v0.4.2
+   Updating `/tmp/jl_SsLWsw/Project.toml`
   [4c0ca9eb] + Gtk v0.18.0
-   Updating `/tmp/jl_aOUkEj/Manifest.toml`
+   Updating `/tmp/jl_SsLWsw/Manifest.toml`
   [9e28174c] + BinDeps v0.8.10
   [b99e7846] + BinaryProvider v0.5.8
   [e1450e63] + BufferedStreams v1.0.0
@@ -355,32 +356,32 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
 │ gcc -DLOCALEDIR=\"/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/locale\" -DHAVE_CONFIG_H -I. -I/home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/tests -I..  -I.. -I../gnulib-lib -I/home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/gnulib-lib -I../intl -I/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/include  -g -O2 -c /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/tests/format-c-4-prg.c
 │ gcc -DLOCALEDIR=\"/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/locale\" -DHAVE_CONFIG_H -I. -I/home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/tests -I..  -I.. -I../gnulib-lib -I/home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/gnulib-lib -I../intl -I/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/include  -g -O2 -c /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/tests/format-c-5-prg.c
 │ gcc -DLOCALEDIR=\"/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/locale\" -DHAVE_CONFIG_H -I. -I/home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/tests -I..  -I../libgettextpo -I/home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/libgettextpo -I.. -I../gnulib-lib -I/home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/gnulib-lib -I../intl -I/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/include  -g -O2 -c -o gettextpo_1_prg-gettextpo-1-prg.o `test -f 'gettextpo-1-prg.c' || echo '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/tests/'`gettextpo-1-prg.c
-│ /bin/bash ../libtool  --tag=CC   --mode=link gcc -DINSTALLDIR=\".\" -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o tstgettext tstgettext-tstgettext.o tstgettext-setlocale.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
-│ /bin/bash ../libtool  --tag=CC   --mode=link gcc -DINSTALLDIR=\".\" -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o tstngettext tstngettext-tstngettext.o tstngettext-setlocale.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
 │ /bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o testlocale testlocale.o ../intl/libgnuintl.la    
+│ /bin/bash ../libtool  --tag=CC   --mode=link gcc -DINSTALLDIR=\".\" -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o tstngettext tstngettext-tstngettext.o tstngettext-setlocale.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
 │ /bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o gettext-3-prg gettext-3-prg.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
 │ /bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o gettext-4-prg gettext-4-prg.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
 │ /bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o gettext-5-prg gettext-5-prg.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
 │ /bin/bash ../libtool  --tag=CC   --mode=link gcc -DUSE_POSIX_THREADS -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o gettext-6-prg gettext_6_prg-gettext-6-prg.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    -lpthread 
-│ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/testlocale testlocale.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../intl/.libs/libgnuintl.so -lc -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
-│ libtool: link: gcc -DINSTALLDIR=\".\" -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/tstgettext tstgettext-tstgettext.o tstgettext-setlocale.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
-│ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/gettext-3-prg gettext-3-prg.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
-│ libtool: link: gcc -DINSTALLDIR=\".\" -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/tstngettext tstngettext-tstngettext.o tstngettext-setlocale.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
 │ /bin/bash ../libtool  --tag=CC   --mode=link gcc -DUSE_POSIX_THREADS -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o gettext-7-prg gettext_7_prg-gettext-7-prg.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    -lpthread 
-│ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/gettext-4-prg gettext-4-prg.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
-│ libtool: link: gcc -DUSE_POSIX_THREADS -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/gettext-6-prg gettext_6_prg-gettext-6-prg.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -lpthread -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
+│ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/testlocale testlocale.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../intl/.libs/libgnuintl.so -lc -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
 │ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/gettext-5-prg gettext-5-prg.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
+│ libtool: link: gcc -DINSTALLDIR=\".\" -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/tstngettext tstngettext-tstngettext.o tstngettext-setlocale.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
+│ libtool: link: gcc -DUSE_POSIX_THREADS -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/gettext-6-prg gettext_6_prg-gettext-6-prg.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -lpthread -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
+│ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/gettext-3-prg gettext-3-prg.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
 │ /bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o gettext-8-prg gettext-8-prg.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
 │ /bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o cake plural-1-prg.o setlocale.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
-│ /bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o fc3 format-c-3-prg.o setlocale.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
-│ /bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o fc5 format-c-5-prg.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
-│ /bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o fc4 format-c-4-prg.o setlocale.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
+│ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/gettext-4-prg gettext-4-prg.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
 │ libtool: link: gcc -DUSE_POSIX_THREADS -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/gettext-7-prg gettext_7_prg-gettext-7-prg.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -lpthread -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
+│ /bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o fc3 format-c-3-prg.o setlocale.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
+│ /bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o fc4 format-c-4-prg.o setlocale.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
+│ /bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o fc5 format-c-5-prg.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
+│ /bin/bash ../libtool  --tag=CC   --mode=link gcc -DINSTALLDIR=\".\" -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o tstgettext tstgettext-tstgettext.o tstgettext-setlocale.o ../gnulib-lib/libgettextlib.la ../intl/libgnuintl.la    
 │ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/cake plural-1-prg.o setlocale.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
 │ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/gettext-8-prg gettext-8-prg.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
 │ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/fc3 format-c-3-prg.o setlocale.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
-│ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/fc4 format-c-4-prg.o setlocale.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
 │ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/fc5 format-c-5-prg.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
+│ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/fc4 format-c-4-prg.o setlocale.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
+│ libtool: link: gcc -DINSTALLDIR=\".\" -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/tstgettext tstgettext-tstgettext.o tstgettext-setlocale.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../gnulib-lib/.libs/libgettextlib.so -lncurses ../intl/.libs/libgnuintl.so -lc -fopenmp -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
 │ /bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o gettextpo-1-prg gettextpo_1_prg-gettextpo-1-prg.o ../libgettextpo/libgettextpo.la ../intl/libgnuintl.la    
 │ libtool: link: gcc -g -O2 -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib -o .libs/gettextpo-1-prg gettextpo_1_prg-gettextpo-1-prg.o  -L/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib ../libgettextpo/.libs/libgettextpo.so ../intl/.libs/libgnuintl.so -lc -Wl,-rpath -Wl,/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib
 │ make[3]: Leaving directory '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gettext/gettext-tools/tests'
@@ -660,12 +661,12 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
 │ make  install-am
 │ make[3]: Entering directory '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gettext/gettext-runtime/libasprintf'
 │ make[4]: Entering directory '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gettext/gettext-runtime/libasprintf'
-│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/doc/libasprintf'
-│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/include'
 │  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib'
+│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/include'
+│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/doc/libasprintf'
+│  /bin/bash ./libtool   --mode=install /usr/bin/install -c   libasprintf.la '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib'
 │  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/info'
 │  /usr/bin/install -c -m 644 autosprintf.h '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/include'
-│  /bin/bash ./libtool   --mode=install /usr/bin/install -c   libasprintf.la '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib'
 │  /usr/bin/install -c -m 644 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-runtime/libasprintf/autosprintf_all.html '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/doc/libasprintf'
 │  /usr/bin/install -c -m 644 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-runtime/libasprintf/autosprintf.info '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/info'
 │ libtool: install: /usr/bin/install -c .libs/libasprintf.so.0.0.0 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib/libasprintf.so.0.0.0
@@ -703,8 +704,8 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
 │ make[3]: Nothing to be done for 'install-data-am'.
 │  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin'
 │  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin'
-│   /bin/bash ../libtool   --mode=install /usr/bin/install -c gettext ngettext envsubst '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin'
 │  /usr/bin/install -c gettext.sh '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin'
+│   /bin/bash ../libtool   --mode=install /usr/bin/install -c gettext ngettext envsubst '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin'
 │ libtool: install: /usr/bin/install -c gettext /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin/gettext
 │ libtool: install: /usr/bin/install -c ngettext /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin/ngettext
 │ libtool: install: /usr/bin/install -c envsubst /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin/envsubst
@@ -773,11 +774,11 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
 │   if test -f $file; then dir=.; else dir=/home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-runtime/man; fi; \
 │   /usr/bin/install -c -m 644 $dir/$file /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/doc/gettext/$file; \
 │ done
-│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/man/man3'
 │  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/man/man1'
+│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/man/man3'
 │  /usr/bin/install -c -m 644 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-runtime/man/gettext.3 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-runtime/man/ngettext.3 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-runtime/man/textdomain.3 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-runtime/man/bindtextdomain.3 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-runtime/man/bind_textdomain_codeset.3 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-runtime/man/dgettext.3 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-runtime/man/dcgettext.3 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-runtime/man/dngettext.3 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-runtime/man/dcngettext.3 '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/man/man3'
-│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/man/man3'
 │  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/man/man1'
+│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/man/man3'
 │  /usr/bin/install -c -m 644 gettext.1 ngettext.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-runtime/man/envsubst.1 '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/man/man1'
 │ make[3]: Leaving directory '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gettext/gettext-runtime/man'
 │ make[2]: Leaving directory '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gettext/gettext-runtime/man'
@@ -810,10 +811,10 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
 │ make[3]: Entering directory '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gettext/gettext-tools/doc'
 │ make[3]: Nothing to be done for 'install-exec-am'.
 │ /bin/mkdir -p /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/doc/gettext
+│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/doc/gettext'
 │ for file in `if test -f gettext_toc.html; then echo .; else echo /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/doc; fi`/gettext_*.html; do \
 │   /usr/bin/install -c -m 644 $file /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/doc/gettext/`basename $file`; \
 │ done
-│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/doc/gettext'
 │  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/info'
 │  /usr/bin/install -c -m 644 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/doc/FAQ.html /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/doc/tutorial.html '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/doc/gettext'
 │  /usr/bin/install -c -m 644 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/doc/gettext.info '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/info'
@@ -980,10 +981,10 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
 │     rm -f /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib/charset.tmp ; \
 │   fi ; \
 │ fi
+│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/gettext'
 │  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib'
 │  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/gettext'
 │  /bin/bash ../libtool   --mode=install /usr/bin/install -c   libgettextlib.la '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib'
-│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/gettext'
 │  /usr/bin/install -c -m 644 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/gnulib-lib/gettext.h '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/gettext'
 │  /usr/bin/install -c -m 644 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/gnulib-lib/javaversion.class '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/gettext'
 │ libtool: install: /usr/bin/install -c .libs/libgettextlib-0.18.2.so /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib/libgettextlib-0.18.2.so
@@ -1075,8 +1076,8 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
 │ libtool: install: /usr/bin/install -c .libs/msgcmp /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin/msgcmp
 │ libtool: install: /usr/bin/install -c .libs/msgfmt /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin/msgfmt
 │ libtool: install: /usr/bin/install -c .libs/urlget /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib/gettext/urlget
-│ libtool: install: /usr/bin/install -c .libs/msgmerge /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin/msgmerge
 │ /usr/bin/install -c user-email /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib/gettext/user-email
+│ libtool: install: /usr/bin/install -c .libs/msgmerge /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin/msgmerge
 │ /usr/bin/install -c /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/src/project-id /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib/gettext/project-id
 │ libtool: install: /usr/bin/install -c .libs/msgunfmt /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin/msgunfmt
 │ libtool: install: /usr/bin/install -c .libs/xgettext /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin/xgettext
@@ -1247,8 +1248,8 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
 │ make[3]: Entering directory '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gettext/gettext-tools/misc'
 │  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin'
 │  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/gettext'
-│  /usr/bin/install -c gettextize autopoint '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin'
 │  /usr/bin/install -c -m 644 archive.dir.tar.xz '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/gettext'
+│  /usr/bin/install -c gettextize autopoint '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin'
 │ make[3]: Leaving directory '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gettext/gettext-tools/misc'
 │ make[2]: Leaving directory '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gettext/gettext-tools/misc'
 │ Making install in man
@@ -1256,11 +1257,11 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
 │ make[3]: Entering directory '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gettext/gettext-tools/man'
 │ make[3]: Nothing to be done for 'install-exec-am'.
 │ /bin/mkdir -p /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/doc/gettext
-│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/man/man1'
 │ for file in msgcmp.1.html msgfmt.1.html msgmerge.1.html msgunfmt.1.html xgettext.1.html msgattrib.1.html msgcat.1.html msgcomm.1.html msgconv.1.html msgen.1.html msgexec.1.html msgfilter.1.html msggrep.1.html msginit.1.html msguniq.1.html recode-sr-latin.1.html gettextize.1.html autopoint.1.html; do \
 │   if test -f $file; then dir=.; else dir=/home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man; fi; \
 │   /usr/bin/install -c -m 644 $dir/$file /home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/doc/gettext/$file; \
 │ done
+│  /bin/mkdir -p '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/man/man1'
 │  /usr/bin/install -c -m 644 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msgcmp.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msgfmt.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msgmerge.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msgunfmt.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/xgettext.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msgattrib.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msgcat.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msgcomm.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msgconv.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msgen.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msgexec.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msgfilter.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msggrep.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msginit.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/msguniq.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/recode-sr-latin.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/gettextize.1 /home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/gettext-0.18.2/gettext-tools/man/autopoint.1 '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/share/man/man1'
 │ make[3]: Leaving directory '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gettext/gettext-tools/man'
 │ make[2]: Leaving directory '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gettext/gettext-tools/man'
@@ -2811,8 +2812,8 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
 │ make[1]: Leaving directory '/home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gettext'
 │   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
 │                                  Dload  Upload   Total   Spent    Left  Speed
-│   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   377  100   377    0     0   2371      0 --:--:-- --:--:-- --:--:--  2371
-│   0 6186k    0 14269    0     0  46937      0  0:02:14 --:--:--  0:02:14 46937100 6186k  100 6186k    0     0  8183k      0 --:--:-- --:--:-- --:--:-- 13.3M
+│   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   377  100   377    0     0   1071      0 --:--:-- --:--:-- --:--:--  1071
+│   8 6186k    8  522k    0     0   709k      0  0:00:08 --:--:--  0:00:08  709k100 6186k  100 6186k    0     0  6753k      0 --:--:-- --:--:-- --:--:-- 30.8M
 │ glib-2.34.3/
 │ glib-2.34.3/gmodule-no-export-2.0.pc.in
 │ glib-2.34.3/autogen.sh
@@ -5262,7 +5263,7 @@ Status `/tmp/jl_aOUkEj/Manifest.toml`
 │ [ Info: Directory /home/pkgeval/.julia/packages/Cairo/p68X8/deps already exists
 │ [ Info: Attempting to create directory /home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gobject
 │ [ Info: Changing directory to /home/pkgeval/.julia/packages/Cairo/p68X8/deps/builds/gobject
-│ ERROR: LoadError: failed process: Process(setenv(`/home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/glib-2.34.3/configure --prefix=/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr`,["GKSwstype=100", "PATH=/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "PWD=/home/pkgeval", "GRDIR=/home/pkgeval/.julia/packages/GR/yMV3y/src/../deps/gr", "DISPLAY=:99", "NVIDIA_DRIVER_CAPABILITIES=all", "OPENBLAS_NUM_THREADS=8", "XAUTHORITY=/tmp/xvfb-run.wnuqBM/Xauthority", "GKS_FONTPATH=/home/pkgeval/.julia/packages/GR/yMV3y/src/../deps/gr", "CI=true"  …  "DEBIAN_FRONTEND=noninteractive", "PKG_CONFIG_PATH=/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib/pkgconfig", "JULIA_LOAD_PATH=@:/tmp/jl_B5kH6Y", "PKGEVAL=true", "HOME=/home/pkgeval", "JULIA_PKGEVAL=true", "JULIA_DEPOT_PATH=::/usr/local/share/julia", "HOSTNAME=afc4b53c265b", "JULIA_NUM_THREADS=2", "OPENBLAS_MAIN_FREE=1"]), ProcessExited(1)) [1]
+│ ERROR: LoadError: failed process: Process(setenv(`/home/pkgeval/.julia/packages/Cairo/p68X8/deps/src/glib-2.34.3/configure --prefix=/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr`,["GKSwstype=100", "PATH=/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "PWD=/home/pkgeval", "GRDIR=/home/pkgeval/.julia/packages/GR/yMV3y/src/../deps/gr", "DISPLAY=:99", "NVIDIA_DRIVER_CAPABILITIES=all", "OPENBLAS_NUM_THREADS=8", "XAUTHORITY=/tmp/xvfb-run.z2t72d/Xauthority", "GKS_FONTPATH=/home/pkgeval/.julia/packages/GR/yMV3y/src/../deps/gr", "CI=true"  …  "DEBIAN_FRONTEND=noninteractive", "PKG_CONFIG_PATH=/home/pkgeval/.julia/packages/Cairo/p68X8/deps/usr/lib/pkgconfig", "JULIA_LOAD_PATH=@:/tmp/jl_40dCPJ", "PKGEVAL=true", "HOME=/home/pkgeval", "JULIA_PKGEVAL=true", "JULIA_DEPOT_PATH=::/usr/local/share/julia", "HOSTNAME=a86be319dda7", "JULIA_NUM_THREADS=2", "OPENBLAS_MAIN_FREE=1"]), ProcessExited(1)) [1]
 │ 
 │ Stacktrace:
 │  [1] pipeline_error at ./process.jl:525 [inlined]
@@ -5293,7 +5294,7 @@ Stacktrace:
  [6] eval(::Expr) at ./client.jl:449
  [7] top-level scope at ./none:3
 in expression starting at /home/pkgeval/.julia/packages/Cairo/p68X8/src/Cairo.jl:9
-ERROR: LoadError: Failed to precompile Cairo [159f3aea-2a34-519c-b102-8c37f9878175] to /home/pkgeval/.julia/compiled/v1.4/Cairo/l6vnT_nUxRD.ji.
+ERROR: LoadError: Failed to precompile Cairo [159f3aea-2a34-519c-b102-8c37f9878175] to /home/pkgeval/.julia/compiled/v1.4/Cairo/l6vnT_aEdnY.ji.
 Stacktrace:
  [1] error(::String) at ./error.jl:33
  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
@@ -5306,7 +5307,7 @@ Stacktrace:
  [9] eval(::Expr) at ./client.jl:449
  [10] top-level scope at ./none:3
 in expression starting at /home/pkgeval/.julia/packages/Gtk/mVhmL/src/Gtk.jl:30
-ERROR: LoadError: Failed to precompile Gtk [4c0ca9eb-093a-5379-98c5-f87ac0bbbf44] to /home/pkgeval/.julia/compiled/v1.4/Gtk/Vjnq0_nUxRD.ji.
+ERROR: LoadError: Failed to precompile Gtk [4c0ca9eb-093a-5379-98c5-f87ac0bbbf44] to /home/pkgeval/.julia/compiled/v1.4/Gtk/Vjnq0_aEdnY.ji.
 Stacktrace:
  [1] error(::String) at ./error.jl:33
  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272

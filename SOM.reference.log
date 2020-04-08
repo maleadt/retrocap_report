@@ -14,62 +14,62 @@ Environment:
   Installed Missings ───────────────────── v0.4.3
   Installed DataAPI ────────────────────── v1.1.0
   Installed Reexport ───────────────────── v0.2.0
+  Installed PooledArrays ───────────────── v0.5.3
   Installed XML2_jll ───────────────────── v2.9.9+2
   Installed Tables ─────────────────────── v0.2.11
-  Installed PooledArrays ───────────────── v0.5.3
-  Installed SOM ────────────────────────── v0.4.1
   Installed RData ──────────────────────── v0.6.3
+  Installed SOM ────────────────────────── v0.4.1
   Installed IteratorInterfaceExtensions ── v1.0.0
-  Installed Rmath ──────────────────────── v0.6.1
   Installed Requires ───────────────────── v1.0.1
+  Installed Rmath ──────────────────────── v0.6.1
   Installed Distances ──────────────────── v0.8.2
   Installed Parsers ────────────────────── v1.0.1
   Installed PyCall ─────────────────────── v1.91.4
-  Installed SpecialFunctions ───────────── v0.9.0
-  Installed FixedPointNumbers ──────────── v0.8.0
-  Installed Libiconv_jll ───────────────── v1.16.0+2
   Installed TranscodingStreams ─────────── v0.9.5
+  Installed SpecialFunctions ───────────── v0.9.0
+  Installed Libiconv_jll ───────────────── v1.16.0+2
+  Installed FixedPointNumbers ──────────── v0.8.0
   Installed LaTeXStrings ───────────────── v1.1.0
   Installed EzXML ──────────────────────── v1.1.0
   Installed OrderedCollections ─────────── v1.1.0
+  Installed PyPlot ─────────────────────── v2.9.0
   Installed StatsFuns ──────────────────── v0.9.4
   Installed SortingAlgorithms ──────────── v0.3.1
-  Installed WeakRefStrings ─────────────── v0.5.8
-  Installed PyPlot ─────────────────────── v2.8.2
   Installed DataStreams ────────────────── v0.4.2
+  Installed WeakRefStrings ─────────────── v0.5.8
   Installed QuadGK ─────────────────────── v2.3.1
-  Installed TimeZones ──────────────────── v1.0.1
   Installed DataValueInterfaces ────────── v1.0.0
-  Installed Conda ──────────────────────── v1.4.1
-  Installed FillArrays ─────────────────── v0.8.6
+  Installed FillArrays ─────────────────── v0.8.7
+  Installed TimeZones ──────────────────── v1.0.1
   Installed Arpack ─────────────────────── v0.4.0
+  Installed Conda ──────────────────────── v1.4.1
+  Installed Arpack_jll ─────────────────── v3.5.0+3
   Installed VersionParsing ─────────────── v1.2.0
+  Installed ColorTypes ─────────────────── v0.10.0
+  Installed CodecZlib ──────────────────── v0.7.0
   Installed ExprTools ──────────────────── v0.1.0
   Installed MacroTools ─────────────────── v0.5.5
-  Installed Arpack_jll ─────────────────── v3.5.0+3
-  Installed CodecZlib ──────────────────── v0.7.0
-  Installed ColorTypes ─────────────────── v0.10.0
   Installed Rmath_jll ──────────────────── v0.2.2+0
   Installed InvertedIndices ────────────── v1.0.0
   Installed PDMats ─────────────────────── v0.9.12
-  Installed Compat ─────────────────────── v2.2.0
   Installed FileIO ─────────────────────── v1.2.4
-  Installed DataFrames ─────────────────── v0.19.4
-  Installed RDatasets ──────────────────── v0.6.1
+  Installed Compat ─────────────────────── v2.2.0
+  Installed OpenBLAS_jll ───────────────── v0.3.9+2
   Installed Colors ─────────────────────── v0.12.0
+  Installed StatsBase ──────────────────── v0.32.2
+  Installed DataFrames ─────────────────── v0.19.4
   Installed Distributions ──────────────── v0.21.12
-  Installed OpenBLAS_jll ───────────────── v0.3.9+0
-  Installed Zlib_jll ───────────────────── v1.2.11+9
+  Installed RDatasets ──────────────────── v0.6.1
   Installed CompilerSupportLibraries_jll ─ v0.3.3+0
   Installed Mocking ────────────────────── v0.7.1
-  Installed CategoricalArrays ──────────── v0.7.7
   Installed JSON ───────────────────────── v0.21.0
-  Installed OpenSpecFun_jll ────────────── v0.5.3+3
-  Installed DataStructures ─────────────── v0.17.11
-  Installed StatsBase ──────────────────── v0.32.2
   Installed ProgressMeter ──────────────── v1.2.0
+  Installed Zlib_jll ───────────────────── v1.2.11+9
+  Installed OpenSpecFun_jll ────────────── v0.5.3+3
   Installed TableTraits ────────────────── v1.0.0
   Installed CSV ────────────────────────── v0.4.0
+  Installed DataStructures ─────────────── v0.17.11
+  Installed CategoricalArrays ──────────── v0.7.7
    Updating `~/.julia/environments/v1.4/Project.toml`
   [172a5912] + SOM v0.4.1
    Updating `~/.julia/environments/v1.4/Manifest.toml`
@@ -93,7 +93,7 @@ Environment:
   [e2ba6199] + ExprTools v0.1.0
   [8f5d6c58] + EzXML v1.1.0
   [5789e2e9] + FileIO v1.2.4
-  [1a297f60] + FillArrays v0.8.6
+  [1a297f60] + FillArrays v0.8.7
   [53c48c17] + FixedPointNumbers v0.8.0
   [41ab1584] + InvertedIndices v1.0.0
   [82899510] + IteratorInterfaceExtensions v1.0.0
@@ -103,7 +103,7 @@ Environment:
   [1914dd2f] + MacroTools v0.5.5
   [e1d29d7a] + Missings v0.4.3
   [78c3b35d] + Mocking v0.7.1
-  [4536629a] + OpenBLAS_jll v0.3.9+0
+  [4536629a] + OpenBLAS_jll v0.3.9+2
   [efe28fd5] + OpenSpecFun_jll v0.5.3+3
   [bac558e1] + OrderedCollections v1.1.0
   [90014a1f] + PDMats v0.9.12
@@ -111,7 +111,7 @@ Environment:
   [2dfb63ee] + PooledArrays v0.5.3
   [92933f4c] + ProgressMeter v1.2.0
   [438e738f] + PyCall v1.91.4
-  [d330b81b] + PyPlot v2.8.2
+  [d330b81b] + PyPlot v2.9.0
   [1fd47b50] + QuadGK v2.3.1
   [df47a6cb] + RData v0.6.3
   [ce6b1742] + RDatasets v0.6.1
@@ -163,7 +163,7 @@ Environment:
    Building PyCall ───→ `~/.julia/packages/PyCall/zqDXB/deps/build.log`
    Building TimeZones → `~/.julia/packages/TimeZones/zymSN/deps/build.log`
     Testing SOM
-Status `/tmp/jl_cL15Ez/Manifest.toml`
+Status `/tmp/jl_tZ0nBK/Manifest.toml`
   [7d9fca2a] Arpack v0.4.0
   [68821587] Arpack_jll v3.5.0+3
   [336ed68f] CSV v0.4.0
@@ -184,7 +184,7 @@ Status `/tmp/jl_cL15Ez/Manifest.toml`
   [e2ba6199] ExprTools v0.1.0
   [8f5d6c58] EzXML v1.1.0
   [5789e2e9] FileIO v1.2.4
-  [1a297f60] FillArrays v0.8.6
+  [1a297f60] FillArrays v0.8.7
   [53c48c17] FixedPointNumbers v0.8.0
   [41ab1584] InvertedIndices v1.0.0
   [82899510] IteratorInterfaceExtensions v1.0.0
@@ -194,7 +194,7 @@ Status `/tmp/jl_cL15Ez/Manifest.toml`
   [1914dd2f] MacroTools v0.5.5
   [e1d29d7a] Missings v0.4.3
   [78c3b35d] Mocking v0.7.1
-  [4536629a] OpenBLAS_jll v0.3.9+0
+  [4536629a] OpenBLAS_jll v0.3.9+2
   [efe28fd5] OpenSpecFun_jll v0.5.3+3
   [bac558e1] OrderedCollections v1.1.0
   [90014a1f] PDMats v0.9.12
@@ -202,7 +202,7 @@ Status `/tmp/jl_cL15Ez/Manifest.toml`
   [2dfb63ee] PooledArrays v0.5.3
   [92933f4c] ProgressMeter v1.2.0
   [438e738f] PyCall v1.91.4
-  [d330b81b] PyPlot v2.8.2
+  [d330b81b] PyPlot v2.9.0
   [1fd47b50] QuadGK v2.3.1
   [df47a6cb] RData v0.6.3
   [ce6b1742] RDatasets v0.6.1
@@ -263,7 +263,7 @@ Stacktrace:
  [5] eval(::Expr) at ./client.jl:449
  [6] top-level scope at ./none:3
 in expression starting at /home/pkgeval/.julia/packages/CSV/Jf3xI/src/CSV.jl:3
-ERROR: LoadError: Failed to precompile CSV [336ed68f-0bac-5ca0-87d4-7b16caf5d00b] to /home/pkgeval/.julia/compiled/v1.4/CSV/HHBkp_1YT4b.ji.
+ERROR: LoadError: Failed to precompile CSV [336ed68f-0bac-5ca0-87d4-7b16caf5d00b] to /home/pkgeval/.julia/compiled/v1.4/CSV/HHBkp_JLrgh.ji.
 Stacktrace:
  [1] error(::String) at ./error.jl:33
  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
@@ -276,7 +276,7 @@ Stacktrace:
  [9] eval(::Expr) at ./client.jl:449
  [10] top-level scope at ./none:3
 in expression starting at /home/pkgeval/.julia/packages/RDatasets/1Ih8s/src/RDatasets.jl:2
-ERROR: LoadError: Failed to precompile RDatasets [ce6b1742-4840-55fa-b093-852dadbb1d8b] to /home/pkgeval/.julia/compiled/v1.4/RDatasets/JyIbx_1YT4b.ji.
+ERROR: LoadError: Failed to precompile RDatasets [ce6b1742-4840-55fa-b093-852dadbb1d8b] to /home/pkgeval/.julia/compiled/v1.4/RDatasets/JyIbx_JLrgh.ji.
 Stacktrace:
  [1] error(::String) at ./error.jl:33
  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272

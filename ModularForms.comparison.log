@@ -1,134 +1,0 @@
-Julia Version 1.4.0
-Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
-Platform Info:
-  OS: Linux (x86_64-pc-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
-  WORD_SIZE: 64
-  LIBM: libopenlibm
-  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
-Environment:
-  JULIA_DEPOT_PATH = ::/usr/local/share/julia
-  JULIA_NUM_THREADS = 2
-
-  Resolving package versions...
-  Installed ModularForms ──── v0.1.0
-  Installed LoadFlint ─────── v0.1.2
-  Installed BinaryProvider ── v0.5.8
-  Installed AbstractAlgebra ─ v0.9.0
-  Installed Nemo ──────────── v0.17.1
-   Updating `~/.julia/environments/v1.4/Project.toml`
-  [e4207f9d] + ModularForms v0.1.0
-   Updating `~/.julia/environments/v1.4/Manifest.toml`
-  [c3fe647b] + AbstractAlgebra v0.9.0
-  [b99e7846] + BinaryProvider v0.5.8
-  [472f376f] + LoadFlint v0.1.2
-  [e4207f9d] + ModularForms v0.1.0
-  [2edaba10] + Nemo v0.17.1
-  [2a0f44e3] + Base64 
-  [8ba89e20] + Distributed 
-  [b77e0a4c] + InteractiveUtils 
-  [8f399da3] + Libdl 
-  [37e2e46d] + LinearAlgebra 
-  [56ddb016] + Logging 
-  [d6f4376e] + Markdown 
-  [9a3f8284] + Random 
-  [ea8e919c] + SHA 
-  [9e88b42a] + Serialization 
-  [6462fe0b] + Sockets 
-  [2f01184e] + SparseArrays 
-  [8dfed614] + Test 
-   Building LoadFlint → `~/.julia/packages/LoadFlint/3t3NS/deps/build.log`
-   Building Nemo ─────→ `~/.julia/packages/Nemo/J7Y4Z/deps/build.log`
-┌ Error: Error building `Nemo`: 
-│ [ Info: Downloading https://github.com/JuliaPackaging/Yggdrasil/releases/download/GMP-v6.1.2-1/GMP.v6.1.2.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/usr/downloads/GMP.v6.1.2.x86_64-linux-gnu.tar.gz...
-│ [ Info: Downloading https://github.com/JuliaPackaging/Yggdrasil/releases/download/MPFR-v4.0.2-1/MPFR.v4.0.2.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/usr/downloads/MPFR.v4.0.2.x86_64-linux-gnu.tar.gz...
-│ [ Info: Downloading https://github.com/thofma/Flint2Builder/releases/download/dd1021/libflint.v0.0.0-dd1021a6cbaca75d94e6e066c26a3a5622884a7c.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/usr/downloads/libflint.v0.0.0-dd1021a6cbaca75d94e6e066c26a3a5622884a7c.x86_64-linux-gnu.tar.gz...
-│ [ Info: Downloading https://github.com/thofma/ArbBuilder/releases/download/6c3738-v2/libarb.v0.0.0-6c3738555d00b8b8b24a1f5e0065ef787432513c.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/usr/downloads/libarb.v0.0.0-6c3738555d00b8b8b24a1f5e0065ef787432513c.x86_64-linux-gnu.tar.gz...
-│ [ Info: Downloading https://github.com/thofma/AnticBuilder/releases/download/364f97-v2/libantic.v0.0.0-364f97edd9b6af537787113cf910f16d7bbc48a3.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/usr/downloads/libantic.v0.0.0-364f97edd9b6af537787113cf910f16d7bbc48a3.x86_64-linux-gnu.tar.gz...
-│ ERROR: LoadError: LoadError: Could not download https://github.com/thofma/AnticBuilder/releases/download/364f97-v2/libantic.v0.0.0-364f97edd9b6af537787113cf910f16d7bbc48a3.x86_64-linux-gnu.tar.gz to /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/usr/downloads/libantic.v0.0.0-364f97edd9b6af537787113cf910f16d7bbc48a3.x86_64-linux-gnu.tar.gz:
-│ ErrorException("")
-│ Stacktrace:
-│  [1] error(::String) at ./error.jl:33
-│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:502
-│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
-│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
-│  [5] top-level scope at /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/build_libantic.v0.0.0-364f97edd9b6af537787113cf910f16d7bbc48a3.jl:34
-│  [6] include(::Module, ::String) at ./Base.jl:377
-│  [7] include(::String) at /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/build.jl:40
-│  [8] top-level scope at /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/build.jl:40
-│  [9] eval(::Module, ::Any) at ./boot.jl:331
-│  [10] top-level scope at /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/build.jl:40
-│  [11] include(::String) at ./client.jl:439
-│  [12] top-level scope at none:5
-│ in expression starting at /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/build_libantic.v0.0.0-364f97edd9b6af537787113cf910f16d7bbc48a3.jl:32
-│ in expression starting at /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/build.jl:14
-│ caused by [exception 1]
-│ 
-│ Stacktrace:
-│  [1] error() at ./error.jl:42
-│  [2] download(::String, ::String; verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:496
-│  [3] download_verify(::String, ::String, ::String; verbose::Bool, force::Bool, quiet_download::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/PlatformEngines.jl:571
-│  [4] install(::String, ::String; prefix::Prefix, tarball_path::String, force::Bool, ignore_platform::Bool, verbose::Bool) at /home/pkgeval/.julia/packages/BinaryProvider/kcGxO/src/Prefix.jl:314
-│  [5] top-level scope at /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/build_libantic.v0.0.0-364f97edd9b6af537787113cf910f16d7bbc48a3.jl:34
-│  [6] include(::Module, ::String) at ./Base.jl:377
-│  [7] include(::String) at /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/build.jl:40
-│  [8] top-level scope at /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/build.jl:40
-│  [9] eval(::Module, ::Any) at ./boot.jl:331
-│  [10] top-level scope at /home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/build.jl:40
-│  [11] include(::String) at ./client.jl:439
-│  [12] top-level scope at none:5
-│ [20:07:06] [20:07:06] ######################################################################## 100.0%#=#=#                                                                         [20:07:06] ##=#=-#                                                                       [20:07:06] ##=O#- #                                                                      [20:07:06] [20:07:07] ##                                                                         3.4%[20:07:07] ################                                                          23.1%[20:07:07] ############################################################              84.0%[20:07:07] ######################################################################## 100.0%
-│ [20:07:07] [20:07:07] ######################################################################## 100.0%#=#=#                                                                         [20:07:07] ##=#=-#                                                                       [20:07:08] ##=O#- #                                                                      [20:07:08] [20:07:08] ##                                                                         4.0%[20:07:08] ##                                                                         4.1%[20:07:08] #####                                                                      8.1%[20:07:08] ######                                                                     8.4%[20:07:08] #########                                                                 12.7%[20:07:08] ###############                                                           20.9%[20:07:08] ##################                                                        25.2%[20:07:09] #####################                                                     29.7%[20:07:09] ########################                                                  33.9%[20:07:09] ###########################                                               38.2%[20:07:09] #################################                                         46.4%[20:07:09] ####################################                                      50.7%[20:07:09] #######################################                                   55.2%[20:07:09] ##########################################                                59.5%[20:07:09] #############################################                             63.7%[20:07:09] ###################################################                       72.0%[20:07:09] #######################################################                   76.5%[20:07:10] #############################################################             84.8%[20:07:10] ################################################################          89.3%[20:07:10] ######################################################################    97.5%[20:07:10] ######################################################################## 100.0%
-│ [20:07:10] [20:07:10] ######################################################################## 100.0%#=#=#                                                                         [20:07:10] ##=#=-#                                                                       [20:07:11] [20:07:11]                                                                            0.2%[20:07:11]                                                                            0.6%[20:07:11]                                                                            0.8%[20:07:11]                                                                            1.3%[20:07:12] #                                                                          1.8%[20:07:12] #                                                                          2.3%[20:07:12] ##                                                                         2.8%[20:07:12] ##                                                                         3.5%[20:07:12] ##                                                                         4.0%[20:07:13] ###                                                                        4.6%[20:07:13] ###                                                                        5.1%[20:07:13] ####                                                                       5.8%[20:07:13] ####                                                                       6.5%[20:07:13] #####                                                                      7.1%[20:07:13] #####                                                                      7.8%[20:07:14] ######                                                                     8.6%[20:07:14] ######                                                                     9.0%[20:07:14] ######                                                                     9.5%[20:07:14] #######                                                                   10.1%[20:07:14] #######                                                                   10.6%[20:07:14] #######                                                                   11.1%[20:07:14] ########                                                                  11.8%[20:07:14] ########                                                                  12.3%[20:07:15] #########                                                                 12.8%[20:07:15] #########                                                                 13.6%[20:07:15] ##########                                                                14.3%[20:07:15] ##########                                                                15.1%[20:07:15] ###########                                                               15.6%[20:07:15] ###########                                                               16.6%[20:07:15] ############                                                              17.1%[20:07:16] #############                                                             18.1%[20:07:16] #############                                                             18.7%[20:07:16] ##############                                                            19.7%[20:07:16] ##############                                                            20.4%[20:07:16] ###############                                                           21.4%[20:07:16] ###############                                                           21.9%[20:07:16] ################                                                          22.7%[20:07:17] #################                                                         23.7%[20:07:17] #################                                                         24.5%[20:07:17] ##################                                                        25.4%[20:07:17] ##################                                                        26.2%[20:07:17] ###################                                                       27.0%[20:07:17] ####################                                                      28.0%[20:07:17] ####################                                                      28.7%[20:07:17] #####################                                                     29.5%[20:07:18] #####################                                                     30.5%[20:07:18] ######################                                                    31.4%[20:07:18] #######################                                                   32.2%[20:07:18] #######################                                                   33.2%[20:07:18] ########################                                                  34.2%[20:07:18] #########################                                                 35.3%[20:07:18] ##########################                                                36.2%[20:07:18] ##########################                                                37.2%[20:07:18] ###########################                                               38.0%[20:07:19] ############################                                              39.1%[20:07:19] ############################                                              40.2%[20:07:19] #############################                                             41.3%[20:07:19] ##############################                                            42.5%[20:07:19] ###############################                                           43.6%[20:07:19] ################################                                          44.8%[20:07:19] #################################                                         46.1%[20:07:19] ##################################                                        47.6%[20:07:19] ###################################                                       48.9%[20:07:19] ####################################                                      50.6%[20:07:20] #####################################                                     52.1%[20:07:20] ######################################                                    53.8%[20:07:20] #######################################                                   55.4%[20:07:20] #########################################                                 57.2%[20:07:20] ##########################################                                59.1%[20:07:20] ###########################################                               61.1%[20:07:20] #############################################                             63.9%[20:07:20] ###############################################                           66.0%[20:07:20] #################################################                         69.0%[20:07:21] ###################################################                       71.8%[20:07:21] #####################################################                     74.2%[20:07:21] #######################################################                   77.5%[20:07:21] #########################################################                 80.5%[20:07:21] ############################################################              83.6%[20:07:21] ##############################################################            87.4%[20:07:21] #################################################################         90.4%[20:07:21] ###################################################################       94.4%[20:07:21] ######################################################################    98.2%[20:07:21] ######################################################################## 100.0%
-│ [20:07:22] #=#=#                                                                         [20:07:23] [20:07:23] ######################################################################## 100.0%##O#- #                                                                       [20:07:23] ##=O#- #                                                                      [20:07:23] #-#O=#  #                                                                     [20:07:23] [20:07:23]                                                                            0.3%[20:07:24] #                                                                          1.9%[20:07:24] ######                                                                     8.9%[20:07:24] ##########                                                                14.6%[20:07:24] ###########################                                               38.6%[20:07:24] ######################################                                    53.9%[20:07:24] ##########################################                                59.0%[20:07:24] ####################################################                      73.4%[20:07:25] ###########################################################               82.1%[20:07:25] ################################################################          89.6%[20:07:25] ######################################################################    98.3%[20:07:25] ######################################################################## 100.0%
-│ [20:07:25] #=#=#                                                                         [20:07:26] ##O#- #                                                                       [20:07:27] ##O=#  #                                                                      [20:07:28] #=#=-#  #                                                                     [20:07:29] -#O#- #   #                                                                   [20:07:30] -=#=#   #   #                                                                 [20:07:31] -=O#- #  #    #                                                               [20:07:32] -=O=#  #   #   #                                                              [20:07:33] -=O=-#  #    #   #                                                            [20:07:34] -=O=- #   #   #     #                                                         [20:07:35] -=O=-   #   #   #     #                                                       [20:07:36] -=O=-    #    #    #    #                                                     [20:07:37] -=O=-      #   #     #    #                                                   [20:07:38] -=O=-        #   #     #     #                                                [20:07:39] -=O=-         #     #    #     #                                              [20:07:40] -=O=-           #     #    #     #                                            [20:07:41] -=O=-              #    #     #     #                                         [20:07:42] -=O=-                #    #     #     #                                       [20:07:43] -=O=-                  #     #     #     #                                    [20:07:44] -=O=-                    #     #     #     #                                  [20:07:45] -=O=-                      #     #     #      #                               [20:07:46] -=O=-                         #     #     #     #                             [20:07:47] -=O=-                           #     #     #     #                           [20:07:48] -=O=-                              #     #     #     #                        [20:07:49] -=O=-                                #     #     #     #                      [20:07:50] -=O=-                                  #      #    #     #                    [20:07:51] -=O=-                                     #     #     #    #                  [20:07:52] -=O=-                                       #     #     #    #                [20:07:53] -=O=-                                          #     #    #    #              [20:07:54] -=O=-                                            #     #    #    #            [20:07:55] -=O=-                                              #     #    #    #          [20:07:56] -=O=-                                                 #    #    #   #         [20:07:57] 
-│ [20:07:57] curl: (7) Failed to connect to github.com port 443: Connection timed out
-└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:892
-    Testing ModularForms
-Status `/tmp/jl_2YJlGS/Manifest.toml`
-  [c3fe647b] AbstractAlgebra v0.9.0
-  [b99e7846] BinaryProvider v0.5.8
-  [472f376f] LoadFlint v0.1.2
-  [e4207f9d] ModularForms v0.1.0
-  [2edaba10] Nemo v0.17.1
-  [2a0f44e3] Base64 
-  [8ba89e20] Distributed 
-  [b77e0a4c] InteractiveUtils 
-  [8f399da3] Libdl 
-  [37e2e46d] LinearAlgebra 
-  [56ddb016] Logging 
-  [d6f4376e] Markdown 
-  [9a3f8284] Random 
-  [ea8e919c] SHA 
-  [9e88b42a] Serialization 
-  [6462fe0b] Sockets 
-  [2f01184e] SparseArrays 
-  [8dfed614] Test 
-ERROR: LoadError: InitError: could not load library "/home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/usr/lib/libantic"
-/home/pkgeval/.julia/packages/Nemo/J7Y4Z/deps/usr/lib/libantic.so: cannot open shared object file: No such file or directory
-Stacktrace:
- [1] dlopen(::String, ::UInt32; throw_error::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Libdl/src/Libdl.jl:109
- [2] dlopen at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Libdl/src/Libdl.jl:109 [inlined] (repeats 2 times)
- [3] __init__() at /home/pkgeval/.julia/packages/Nemo/J7Y4Z/src/Nemo.jl:239
- [4] _include_from_serialized(::String, ::Array{Any,1}) at ./loading.jl:697
- [5] _require_from_serialized(::String) at ./loading.jl:748
- [6] _require(::Base.PkgId) at ./loading.jl:1039
- [7] require(::Base.PkgId) at ./loading.jl:927
- [8] require(::Module, ::Symbol) at ./loading.jl:922
- [9] include(::String) at ./client.jl:439
- [10] top-level scope at none:6
-during initialization of module Nemo
-in expression starting at /home/pkgeval/.julia/packages/ModularForms/allDj/test/runtests.jl:1
-ERROR: Package ModularForms errored during testing
-Stacktrace:
- [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
- [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
- [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
- [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
- [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
- [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
- [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
- [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
- [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
- [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
- [11] top-level scope at none:16

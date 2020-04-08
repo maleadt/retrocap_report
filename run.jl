@@ -6,7 +6,7 @@ julia_comparison = VersionNumber("$(julia)-comparison")
 
 regpath = NewPkgEval.registry_dir("General")
 
-ninstances = Sys.CPU_THREADS ÷ 2
+ninstances = Sys.CPU_THREADS ÷ 3 * 2
 
 url = "https://github.com/maleadt/retrocap_report/blob/master"
 
@@ -20,7 +20,7 @@ function main()
     serialize("data_reference.jls", data_reference)
 
     # add bounds
-    run(ignorestatus(`git branch -D tb/retrocap`))
+    run(ignorestatus(`git -C $regpath branch -D tb/retrocap`))
     run(`git -C $regpath checkout -b tb/retrocap`)
     RetroCap.add_caps(RetroCap.MonotonicUpperBound(), RetroCap.CapLatestVersion(), regpath)
     run(`git -C $regpath add -A`)
@@ -37,9 +37,6 @@ function main()
     serialize("data.jls", data)
     rm("data_reference.jls")
     rm("data_comparison.jls")
-
-    run(`xz -d data.jls.xz`)
-    data = deserialize("data.jls")
 
     # clean
     for file in readdir(@__DIR__)

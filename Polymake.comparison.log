@@ -14,13 +14,13 @@ Environment:
   Installed URIParser ────── v0.4.0
   Installed CxxWrap ──────── v0.9.0
   Installed CMake ────────── v1.2.0
+  Installed LoadFlint ────── v0.1.2
+  Installed Parsers ──────── v1.0.1
+  Installed BinaryProvider ─ v0.5.8
   Installed JSON ─────────── v0.21.0
   Installed Polymake ─────── v0.3.2
   Installed MacroTools ───── v0.5.5
   Installed BinDeps ──────── v1.0.0
-  Installed LoadFlint ────── v0.1.2
-  Installed Parsers ──────── v1.0.1
-  Installed BinaryProvider ─ v0.5.8
    Updating `~/.julia/environments/v1.4/Project.toml`
   [d720cf60] + Polymake v0.3.2
    Updating `~/.julia/environments/v1.4/Manifest.toml`
@@ -60,26 +60,83 @@ Environment:
    Building CMake ────→ `~/.julia/packages/CMake/ULbyn/deps/build.log`
    Building Polymake ─→ `~/.julia/packages/Polymake/kIMyn/deps/build.log`
 ┌ Error: Error building `Polymake`: 
-│ ERROR: LoadError: LoadError: TypeError: in Type, in parameter, expected Type, got Core.Compiler.UseRefIterator
-│ Stacktrace:
-│  [1] top-level scope at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/StdLib.jl:16
-│  [2] eval at ./boot.jl:331 [inlined]
-│  [3] makereftype(::Type{CxxWrap.StdLib.StdVector{Core.Compiler.UseRefIterator((Core.Compiler.UseRef(nothing, 0), nothing), false)}}, ::Module) at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:598
-│  [4] wrap_reference_converters(::Module) at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:608
-│  [5] wrapfunctions(::Module) at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:651
-│  [6] wrapmodule(::String, ::Symbol, ::Module, ::UInt32) at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:672
-│  [7] top-level scope at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/StdLib.jl:16
-│  [8] include(::Module, ::String) at ./Base.jl:377
-│  [9] include(::String) at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:1
-│  [10] top-level scope at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:780
-│  [11] include(::Module, ::String) at ./Base.jl:377
-│  [12] top-level scope at none:2
-│  [13] eval at ./boot.jl:331 [inlined]
-│  [14] eval(::Expr) at ./client.jl:449
-│  [15] top-level scope at ./none:3
+│ 
+│ signal (11): Segmentation fault
 │ in expression starting at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/StdLib.jl:16
-│ in expression starting at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:780
-│ ERROR: LoadError: Failed to precompile CxxWrap [1f15a43c-97ca-5a2a-ae31-89f07a497df4] to /home/pkgeval/.julia/compiled/v1.4/CxxWrap/WGIJU_J08UG.ji.
+│ has_free_typevars at /buildworker/worker/package_linux64/build/src/jltypes.c:150 [inlined]
+│ jl_has_free_typevars at /buildworker/worker/package_linux64/build/src/jltypes.c:179
+│ jl_apply_type at /buildworker/worker/package_linux64/build/src/jltypes.c:878
+│ _ZN5jlcxx6Module17add_type_internalINS_10ParametricIJNS_7TypeVarILi1EEEEEENS_13ParameterListIJEEE11_jl_value_tEENS_11TypeWrapperIT_EERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPT1_ at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/deps/usr/lib/libcxxwrap_julia_stl.so (unknown line)
+│ _ZN5jlcxx17add_smart_pointerISt10shared_ptrEERNS_11TypeWrapperINS_10ParametricIJNS_7TypeVarILi1EEEEEEEERNS_6ModuleERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/deps/usr/lib/libcxxwrap_julia_stl.so (unknown line)
+│ define_cxxwrap_stl_module at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/deps/usr/lib/libcxxwrap_julia_stl.so (unknown line)
+│ register_julia_module at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/deps/usr/lib/libcxxwrap_julia.so (unknown line)
+│ register_julia_module at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:360 [inlined]
+│ readmodule at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:664
+│ wrapmodule at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:670
+│ unknown function (ip: 0x7fc62c27d070)
+│ _jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2158 [inlined]
+│ jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2322
+│ jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1692 [inlined]
+│ do_call at /buildworker/worker/package_linux64/build/src/interpreter.c:369
+│ eval_value at /buildworker/worker/package_linux64/build/src/interpreter.c:458
+│ eval_stmt_value at /buildworker/worker/package_linux64/build/src/interpreter.c:409 [inlined]
+│ eval_body at /buildworker/worker/package_linux64/build/src/interpreter.c:817
+│ jl_interpret_toplevel_thunk at /buildworker/worker/package_linux64/build/src/interpreter.c:911
+│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:814
+│ jl_eval_module_expr at /buildworker/worker/package_linux64/build/src/toplevel.c:181
+│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:640
+│ jl_parse_eval_all at /buildworker/worker/package_linux64/build/src/ast.c:872
+│ jl_load at /buildworker/worker/package_linux64/build/src/toplevel.c:872
+│ include at ./Base.jl:377
+│ include at /home/pkgeval/.julia/packages/CxxWrap/lDNAy/src/CxxWrap.jl:1
+│ _jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2158 [inlined]
+│ jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2322
+│ jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1692 [inlined]
+│ do_call at /buildworker/worker/package_linux64/build/src/interpreter.c:369
+│ eval_value at /buildworker/worker/package_linux64/build/src/interpreter.c:458
+│ eval_stmt_value at /buildworker/worker/package_linux64/build/src/interpreter.c:409 [inlined]
+│ eval_body at /buildworker/worker/package_linux64/build/src/interpreter.c:817
+│ jl_interpret_toplevel_thunk at /buildworker/worker/package_linux64/build/src/interpreter.c:911
+│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:814
+│ jl_eval_module_expr at /buildworker/worker/package_linux64/build/src/toplevel.c:181
+│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:640
+│ jl_parse_eval_all at /buildworker/worker/package_linux64/build/src/ast.c:872
+│ jl_load at /buildworker/worker/package_linux64/build/src/toplevel.c:872
+│ include at ./Base.jl:377
+│ _jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2144 [inlined]
+│ jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2322
+│ jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1692 [inlined]
+│ do_call at /buildworker/worker/package_linux64/build/src/interpreter.c:369
+│ eval_value at /buildworker/worker/package_linux64/build/src/interpreter.c:458
+│ eval_stmt_value at /buildworker/worker/package_linux64/build/src/interpreter.c:409 [inlined]
+│ eval_body at /buildworker/worker/package_linux64/build/src/interpreter.c:817
+│ eval_body at /buildworker/worker/package_linux64/build/src/interpreter.c:744
+│ jl_interpret_toplevel_thunk at /buildworker/worker/package_linux64/build/src/interpreter.c:911
+│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:814
+│ jl_toplevel_eval_in at /buildworker/worker/package_linux64/build/src/toplevel.c:843
+│ eval at ./boot.jl:331 [inlined]
+│ eval at ./client.jl:449
+│ _jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2144 [inlined]
+│ jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2322
+│ top-level scope at ./none:3
+│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:808
+│ jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:764
+│ jl_toplevel_eval_in at /buildworker/worker/package_linux64/build/src/toplevel.c:843
+│ eval at ./boot.jl:331
+│ _jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2144 [inlined]
+│ jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2322
+│ exec_options at ./client.jl:264
+│ _start at ./client.jl:484
+│ jfptr__start_2076.clone_1 at /opt/julia/lib/julia/sys.so (unknown line)
+│ _jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2144 [inlined]
+│ jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2322
+│ jl_apply at /buildworker/worker/package_linux64/build/ui/../src/julia.h:1692 [inlined]
+│ true_main at /buildworker/worker/package_linux64/build/ui/repl.c:96
+│ main at /buildworker/worker/package_linux64/build/ui/repl.c:217
+│ __libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+│ _start at /opt/julia/bin/julia (unknown line)
+│ Allocations: 6851141 (Pool: 6849467; Big: 1674); GC: 7
+│ ERROR: LoadError: Failed to precompile CxxWrap [1f15a43c-97ca-5a2a-ae31-89f07a497df4] to /home/pkgeval/.julia/compiled/v1.4/CxxWrap/WGIJU_cira1.ji.
 │ Stacktrace:
 │  [1] error(::String) at ./error.jl:33
 │  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
@@ -91,7 +148,7 @@ Environment:
 │ in expression starting at /home/pkgeval/.julia/packages/Polymake/kIMyn/deps/build.jl:1
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:892
     Testing Polymake
-Status `/tmp/jl_CdLXlu/Manifest.toml`
+Status `/tmp/jl_bn0wmv/Manifest.toml`
   [9e28174c] BinDeps v1.0.0
   [b99e7846] BinaryProvider v0.5.8
   [631607c0] CMake v1.2.0
@@ -137,7 +194,7 @@ Stacktrace:
  [9] eval(::Expr) at ./client.jl:449
  [10] top-level scope at ./none:3
 in expression starting at /home/pkgeval/.julia/packages/Polymake/kIMyn/src/Polymake.jl:41
-ERROR: LoadError: Failed to precompile Polymake [d720cf60-89b5-51f5-aff5-213f193123e7] to /home/pkgeval/.julia/compiled/v1.4/Polymake/QizyK_mDDiY.ji.
+ERROR: LoadError: Failed to precompile Polymake [d720cf60-89b5-51f5-aff5-213f193123e7] to /home/pkgeval/.julia/compiled/v1.4/Polymake/QizyK_8dB3C.ji.
 Stacktrace:
  [1] error(::String) at ./error.jl:33
  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272

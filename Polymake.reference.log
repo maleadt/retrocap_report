@@ -12,15 +12,15 @@ Environment:
 
   Resolving package versions...
   Installed URIParser ────── v0.4.0
-  Installed CMake ────────── v1.2.0
   Installed CxxWrap ──────── v0.9.0
-  Installed Parsers ──────── v1.0.1
-  Installed BinaryProvider ─ v0.5.8
-  Installed JSON ─────────── v0.21.0
   Installed LoadFlint ────── v0.1.2
+  Installed Parsers ──────── v1.0.1
+  Installed JSON ─────────── v0.21.0
+  Installed CMake ────────── v1.2.0
   Installed Polymake ─────── v0.3.2
-  Installed BinDeps ──────── v1.0.0
   Installed MacroTools ───── v0.5.5
+  Installed BinDeps ──────── v1.0.0
+  Installed BinaryProvider ─ v0.5.8
    Updating `~/.julia/environments/v1.4/Project.toml`
   [d720cf60] + Polymake v0.3.2
    Updating `~/.julia/environments/v1.4/Manifest.toml`
@@ -60,7 +60,7 @@ Environment:
    Building CMake ────→ `~/.julia/packages/CMake/ULbyn/deps/build.log`
    Building Polymake ─→ `~/.julia/packages/Polymake/kIMyn/deps/build.log`
     Testing Polymake
-Status `/tmp/jl_Va7vvX/Manifest.toml`
+Status `/tmp/jl_loC4eV/Manifest.toml`
   [9e28174c] BinDeps v1.0.0
   [b99e7846] BinaryProvider v0.5.8
   [631607c0] CMake v1.2.0

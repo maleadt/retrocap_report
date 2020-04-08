@@ -1,0 +1,236 @@
+Julia Version 1.4.0
+Commit b8e9a9ecc6 (2020-03-21 16:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-8.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed HDF5_jll ────────────── v1.10.5+5
+  Installed CMakeWrapper ────────── v0.2.3
+  Installed CMake ───────────────── v1.2.0
+  Installed Blosc ───────────────── v0.6.0
+  Installed BinaryProvider ──────── v0.5.8
+  Installed JSON ────────────────── v0.21.0
+  Installed Languages ───────────── v0.4.2
+  Installed ConceptnetNumberbatch ─ v0.1.5
+  Installed Zlib_jll ────────────── v1.2.11+9
+  Installed CodecZlib ───────────── v0.7.0
+  Installed URIParser ───────────── v0.4.0
+  Installed Parameters ──────────── v0.12.0
+  Installed Parsers ─────────────── v1.0.1
+  Installed OrderedCollections ──── v1.1.0
+  Installed TranscodingStreams ──── v0.9.5
+  Installed HDF5 ────────────────── v0.13.1
+  Installed BinDeps ─────────────── v1.0.0
+   Updating `~/.julia/environments/v1.4/Project.toml`
+  [6bdbf80b] + ConceptnetNumberbatch v0.1.5
+   Updating `~/.julia/environments/v1.4/Manifest.toml`
+  [9e28174c] + BinDeps v1.0.0
+  [b99e7846] + BinaryProvider v0.5.8
+  [a74b3585] + Blosc v0.6.0
+  [631607c0] + CMake v1.2.0
+  [d5fb7624] + CMakeWrapper v0.2.3
+  [944b1d66] + CodecZlib v0.7.0
+  [6bdbf80b] + ConceptnetNumberbatch v0.1.5
+  [f67ccb44] + HDF5 v0.13.1
+  [0234f1f7] + HDF5_jll v1.10.5+5
+  [682c06a0] + JSON v0.21.0
+  [8ef0a80b] + Languages v0.4.2
+  [bac558e1] + OrderedCollections v1.1.0
+  [d96e819e] + Parameters v0.12.0
+  [69de0a69] + Parsers v1.0.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.0
+  [83775a58] + Zlib_jll v1.2.11+9
+  [2a0f44e3] + Base64 
+  [ade2ca70] + Dates 
+  [8ba89e20] + Distributed 
+  [b77e0a4c] + InteractiveUtils 
+  [76f85450] + LibGit2 
+  [8f399da3] + Libdl 
+  [56ddb016] + Logging 
+  [d6f4376e] + Markdown 
+  [a63ad114] + Mmap 
+  [44cfe95a] + Pkg 
+  [de0858da] + Printf 
+  [3fa0cd96] + REPL 
+  [9a3f8284] + Random 
+  [ea8e919c] + SHA 
+  [9e88b42a] + Serialization 
+  [6462fe0b] + Sockets 
+  [8dfed614] + Test 
+  [cf7118a7] + UUIDs 
+  [4ec0a83e] + Unicode 
+   Building CMake → `~/.julia/packages/CMake/ULbyn/deps/build.log`
+┌ Error: Error building `CMake`: 
+│   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+│                                  Dload  Upload   Total   Spent    Left  Speed
+│   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   620  100   620    0     0  10508      0 --:--:-- --:--:-- --:--:-- 10333
+│   0 37.1M    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0 37.1M    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0 37.1M    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0 37.1M    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0 37.1M    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0 37.1M    0 16360    0     0   2613      0  4:08:45  0:00:06  4:08:39  3812  0 37.1M    0 16956    0     0   2384      0  4:32:38  0:00:07  4:32:31  4095  0 37.1M    0 16956    0     0   2059      0  5:15:40  0:00:08  5:15:32  3978  0 37.1M    0 16956    0     0   1795      0  6:02:06  0:00:09  6:01:57  3789  0 37.1M    0 16956    0     0   1538      0  7:02:37  0:00:11  7:02:26  3360  0 37.1M    0 16956    0     0   1410      0  7:40:58  0:00:12  7:40:46   103  0 37.1M    0 33316    0     0   2593      0  4:10:40  0:00:12  4:10:28  2853  0 37.1M    0 33316    0     0   2406      0  4:30:09  0:00:13  4:29:56  2915  0 37.1M    0 33316    0     0   2243      0  4:49:47  0:00:14  4:49:33  3029  0 37.1M    0 33316    0     0   2102      0  5:09:13  0:00:15  5:08:58  3387  0 37.1M    0 33316    0     0   1977      0  5:28:46  0:00:16  5:28:30  3387  0 37.1M    0 33316    0     0   1866      0  5:48:19  0:00:17  5:48:02     0  0 37.1M    0 33316    0     0   1801      0  6:00:54  0:00:18  6:00:36     0  0 37.1M    0 34364    0     0   1724      0  6:17:01  0:00:19  6:16:42   206  0 37.1M    0 34364    0     0   1642      0  6:35:50  0:00:20  6:35:30   206  0 37.1M    0 34364    0     0   1567      0  6:54:47  0:00:21  6:54:26   206  0 37.1M    0 34364    0     0   1498      0  7:13:54  0:00:22  7:13:32   206  0 37.1M    0 34364    0     0   1436      0  7:32:38  0:00:23  7:32:15   192  0 37.1M    0 34364    0     0   1378      0  7:51:41  0:00:24  7:51:17     0  0 37.1M    0 34364    0     0   1325      0  8:10:33  0:00:25  8:10:08     0  0 37.1M    0 34364    0     0   1275      0  8:29:47  0:00:26  8:29:21     0  0 37.1M    0 34364    0     0   1230      0  8:48:26  0:00:27  8:47:59     0  0 37.1M    0 34364    0     0   1187      0  9:07:35  0:00:28  9:07:07     0  0 37.1M    0 34364    0     0   1147      0  9:26:40  0:00:29  9:26:11     0  0 37.1M    0 34364    0     0   1135      0  9:32:40  0:00:30  9:32:10     0  0 37.1M    0 50724    0     0   1630      0  6:38:45  0:00:31  6:38:14  3912  0 37.1M    0 51772    0     0   1612      0  6:43:13  0:00:32  6:42:41  4164  0 37.1M    0 51772    0     0   1563      0  6:55:51  0:00:33  6:55:18  4164  0 37.1M    0 51772    0     0   1514      0  7:09:19  0:00:34  7:08:45  4088  0 37.1M    0 51772    0     0   1438      0  7:32:00  0:00:36  7:31:24  3027  0 37.1M    0 51772    0     0   1421      0  7:37:24  0:00:36  7:36:48   197  0 37.1M    0 51772    0     0   1367      0  7:55:28  0:00:37  7:54:51     0  0 37.1M    0 51772    0     0   1326      0  8:10:11  0:00:39  8:09:32     0  0 37.1M    0 51772    0     0   1293      0  8:22:41  0:00:40  8:22:01     0  0 37.1M    0 51772    0     0   1261      0  8:35:27  0:00:41  8:34:46     0  0 37.1M    0 51772    0     0   1231      0  8:48:00  0:00:42  8:47:18     0  0 37.1M    0 51772    0     0   1202      0  9:00:45  0:00:43  9:00:02     0  0 37.1M    0 51772    0     0   1175      0  9:13:10  0:00:44  9:12:26     0  0 37.1M    0 51772    0     0   1149      0  9:25:41  0:00:45  9:24:56     0  0 37.1M    0 51772    0     0   1124      0  9:38:16  0:00:46  9:37:30     0  0 37.1M    0 51772    0     0   1100      0  9:50:53  0:00:47  9:50:06     0  0 37.1M    0 51772    0     0   1077      0 10:03:30  0:00:48 10:02:42     0  0 37.1M    0 51772    0     0   1055      0 10:16:06  0:00:49 10:15:17     0  0 37.1M    0 51772    0     0   1034      0 10:28:36  0:00:50 10:27:46     0  0 37.1M    0 51772    0     0   1014      0 10:41:00  0:00:51 10:40:09     0  0 37.1M    0 51772    0     0    994      0 10:53:54  0:00:52 10:53:02     0  0 37.1M    0 51772    0     0    975      0 11:06:39  0:00:53 11:05:46     0  0 37.1M    0 51772    0     0    957      0 11:19:11  0:00:54 11:18:17     0  0 37.1M    0 51772    0     0    935      0 11:35:10  0:00:55 11:34:15     0  0 37.1M    0 51772    0     0    918      0 11:48:02  0:00:56 11:47:06     0  0 37.1M    0 51772    0     0    902      0 12:00:36  0:00:57 11:59:39     0  0 37.1M    0 51772    0     0    887      0 12:12:47  0:00:58 12:11:49     0  0 37.1M    0 51772    0     0    872      0 12:25:23  0:00:59 12:24:24     0  0 37.1M    0 51772    0     0    857      0 12:38:26  0:01:00 12:37:26     0  0 37.1M    0 51772    0     0    843      0 12:51:02  0:01:01 12:50:01     0  0 37.1M    0 51772    0     0    831      0 13:02:10  0:01:02 13:01:08     0  0 37.1M    0 51772    0     0    816      0 13:16:33  0:01:03 13:15:30     0  0 37.1M    0 51772    0     0    801      0 13:31:28  0:01:04 13:30:24     0  0 37.1M    0 51772    0     0    795      0 13:37:35  0:01:05 13:36:30     0  0 37.1M    0 51772    0     0    778      0 13:55:27  0:01:06 13:54:21     0  0 37.1M    0 51772    0     0    766      0 14:08:32  0:01:07 14:07:25     0  0 37.1M    0 51772    0     0    755      0 14:20:54  0:01:08 14:19:46     0  0 37.1M    0 51772    0     0    744      0 14:33:38  0:01:09 14:32:29     0  0 37.1M    0 51772    0     0    734      0 14:45:32  0:01:10 14:44:22     0  0 37.1M    0 51772    0     0    724      0 14:57:46  0:01:11 14:56:35     0  0 37.1M    0 51772    0     0    712      0 15:12:54  0:01:12 15:11:42     0  0 37.1M    0 51772    0     0    701      0 15:27:13  0:01:13 15:26:00     0  0 37.1M    0 51772    0     0    698      0 15:31:12  0:01:14 15:29:58     0  0 37.1M    0 51772    0     0    689      0 15:43:22  0:01:15 15:42:07     0  0 37.1M    0 51772    0     0    680      0 15:55:51  0:01:16 15:54:35     0  0 37.1M    0 51772    0     0    665      0 16:17:25  0:01:17 16:16:08     0  0 37.1M    0 51772    0     0    657      0 16:29:19  0:01:18 16:28:01     0  0 37.1M    0 51772    0     0    648      0 16:43:03  0:01:19 16:41:44     0  0 37.1M    0 51772    0     0    640      0 16:55:36  0:01:20 16:54:16     0  0 37.1M    0 51772    0     0    631      0 17:10:05  0:01:21 17:08:44     0  0 37.1M    0 51772    0     0    623      0 17:23:18  0:01:22 17:21:56     0  0 37.1M    0 51772    0     0    616      0 17:35:10  0:01:23 17:33:47     0  0 37.1M    0 51772    0     0    609      0 17:47:17  0:01:24 17:45:53     0  0 37.1M    0 51772    0     0    602      0 17:59:42  0:01:25 17:58:17     0  0 37.1M    0 51772    0     0    595      0 18:12:24  0:01:26 18:10:58     0  0 37.1M    0 51772    0     0    588      0 18:25:25  0:01:27 18:23:58     0  0 37.1M    0 51772    0     0    581      0 18:38:44  0:01:28 18:37:16     0  0 37.1M    0 51772    0     0    575      0 18:50:24  0:01:29 18:48:55     0  0 37.1M    0 51772    0     0    569      0 19:02:19  0:01:30 19:00:49     0  0 37.1M    0 51772    0     0    562      0 19:16:33  0:01:31 19:15:02     0  0 37.1M    0 51772    0     0    556      0 19:29:02  0:01:32 19:27:30     0  0 37.1M    0 51772    0     0    550      0 19:41:47  0:01:33 19:40:14     0  0 37.1M    0 51772    0     0    545      0 19:52:38  0:01:34 19:51:04     0  0 37.1M    0 51772    0     0    539      0 20:05:54  0:01:35 20:04:19     0  0 37.1M    0 51772    0     0    533      0 20:19:29  0:01:36 20:17:53     0  0 37.1M    0 51772    0     0    528      0 20:31:01  0:01:37 20:29:24     0  0 37.1M    0 51772    0     0    523      0 20:42:48  0:01:38 20:41:10     0  0 37.1M    0 51772    0     0    517      0 20:57:13  0:01:39 20:55:34     0  0 37.1M    0 51772    0     0    512      0 21:09:30  0:01:40 21:07:50     0  0 37.1M    0 51772    0     0    507      0 21:22:01  0:01:41 21:20:20     0  0 37.1M    0 51772    0     0    502      0 21:34:47  0:01:42 21:33:05     0  0 37.1M    0 51772    0     0    497      0 21:47:49  0:01:43 21:46:06     0  0 37.1M    0 51772    0     0    493      0 21:58:25  0:01:44 21:56:41     0  0 37.1M    0 51772    0     0    488      0 22:11:56  0:01:45 22:10:11     0  0 37.1M    0 51772    0     0    483      0 22:25:43  0:01:46 22:23:57     0  0 37.1M    0 51772    0     0    479      0 22:36:57  0:01:47 22:35:10     0  0 37.1M    0 51772    0     0    474      0 22:51:16  0:01:49 22:49:27     0  0 37.1M    0 51772    0     0    470      0 23:02:56  0:01:50 23:01:06     0  0 37.1M    0 51772    0     0    466      0 23:14:49  0:01:51 23:12:58     0  0 37.1M    0 51772    0     0    462      0 23:26:53  0:01:52 23:25:01     0  0 37.1M    0 51772    0     0    458      0 23:39:10  0:01:53 23:37:17     0  0 37.1M    0 51772    0     0    454      0 23:51:41  0:01:54 23:49:47     0  0 37.1M    0 51772    0     0    450      0 24:04:24  0:01:55 24:02:29     0  0 37.1M    0 51772    0     0    446      0 24:17:22  0:01:56 24:15:26     0  0 37.1M    0 51772    0     0    442      0 24:30:33  0:01:57 24:28:36     0  0 37.1M    0 51772    0     0    438      0 24:43:59  0:01:58 24:42:01     0  0 37.1M    0 51772    0     0    435      0 24:54:13  0:01:59 24:52:14     0  0 37.1M    0 51772    0     0    431      0 25:08:05  0:02:00 25:06:05     0  0 37.1M    0 51772    0     0    427      0 25:22:12  0:02:01 25:20:11     0  0 37.1M    0 51772    0     0    424      0 25:32:59  0:02:02 25:30:57     0  0 37.1M    0 51772    0     0    420      0 25:47:35  0:02:03 25:45:32     0  0 37.1M    0 51772    0     0    417      0 25:58:43  0:02:04 25:56:39     0  0 37.1M    0 51772    0     0    414      0 26:10:00  0:02:05 26:07:55     0  0 37.1M    0 51772    0     0    410      0 26:25:19  0:02:06 26:23:13     0  0 37.1M    0 51772    0     0    407      0 26:37:00  0:02:07 26:34:53     0  0 37.1M    0 51772    0     0    404      0 26:48:52  0:02:08 26:46:44     0  0 37.1M    0 51772    0     0    401      0 27:00:54  0:02:09 26:58:45     0  0 37.1M    0 51772    0     0    398      0 27:13:07  0:02:10 27:10:57     0  0 37.1M    0 51772    0     0    395      0 27:25:31  0:02:11 27:23:20     0  0 37.1M    0 51772    0     0    392      0 27:38:07  0:02:12 27:35:55     0  0 37.1M    0 51772    0     0    389      0 27:50:54  0:02:13 27:48:41     0  0 37.1M    0 51772    0     0    386      0 28:03:54  0:02:14 28:01:40     0  0 37.1M    0 51772    0     0    383      0 28:17:05  0:02:15 28:14:50     0  0 37.1M    0 51772    0     0    380      0 28:30:29  0:02:16 28:28:13     0  0 37.1M    0 51772    0     0    377      0 28:44:05  0:02:17 28:41:48     0  0 37.1M    0 51772    0     0    375      0 28:53:17  0:02:18 28:50:59     0  0 37.1M    0 51772    0     0    372      0 29:07:16  0:02:19 29:04:57     0  0 37.1M    0 51772    0     0    369      0 29:21:28  0:02:20 29:19:08     0  0 37.1M    0 51772    0     0    367      0 29:31:04  0:02:21 29:28:43     0  0 37.1M    0 51772    0     0    364      0 29:45:40  0:02:22 29:43:18     0  0 37.1M    0 51772    0     0    361      0 30:00:30  0:02:23 29:58:07     0  0 37.1M    0 51772    0     0    359      0 30:10:32  0:02:24 30:08:08     0  0 37.1M    0 51772    0     0    356      0 30:25:48  0:02:25 30:23:23     0  0 37.1M    0 51772    0     0    354      0 30:36:07  0:02:26 30:33:41     0  0 37.1M    0 51772    0     0    352      0 30:46:32  0:02:27 30:44:05     0  0 37.1M    0 51772    0     0    349      0 31:02:25  0:02:28 30:59:57     0  0 37.1M    0 51772    0     0    347      0 31:13:09  0:02:29 31:10:40     0  0 37.1M    0 51772    0     0    345      0 31:24:00  0:02:30 31:21:30     0  0 37.1M    0 51772    0     0    342      0 31:40:32  0:02:31 31:38:01     0  0 37.1M    0 51772    0     0    340      0 31:51:43  0:02:32 31:49:11     0  0 37.1M    0 51772    0     0    338      0 32:03:02  0:02:33 32:00:29     0  0 37.1M    0 51772    0     0    336      0 32:14:28  0:02:34 32:11:54     0  0 37.1M    0 51772    0     0    333      0 32:31:54  0:02:35 32:29:19     0  0 37.1M    0 51772    0     0    331      0 32:43:42  0:02:36 32:41:06     0  0 37.1M    0 51772    0     0    329      0 32:55:38  0:02:37 32:53:01     0  0 37.1M    0 51772    0     0    327      0 33:07:43  0:02:38 33:05:05     0  0 37.1M    0 51772    0     0    325      0 33:19:57  0:02:39 33:17:18     0  0 37.1M    0 51772    0     0    323      0 33:32:20  0:02:40 33:29:40     0  0 37.1M    0 51772    0     0    321      0 33:44:52  0:02:41 33:42:11     0  0 37.1M    0 51772    0     0    319      0 33:57:34  0:02:42 33:54:52     0  0 37.1M    0 51772    0     0    317      0 34:10:25  0:02:43 34:07:42     0  0 37.1M    0 51772    0     0    315      0 34:23:26  0:02:44 34:20:42     0  0 37.1M    0 51772    0     0    313      0 34:36:37  0:02:45 34:33:52     0  0 37.1M    0 51772    0     0    311      0 34:49:59  0:02:46 34:47:13     0  0 37.1M    0 51772    0     0    309      0 35:03:30  0:02:47 35:00:43     0  0 37.1M    0 51772    0     0    308      0 35:10:20  0:02:48 35:07:32     0  0 37.1M    0 51772    0     0    306      0 35:24:08  0:02:49 35:21:19     0  0 37.1M    0 51772    0     0    304      0 35:38:06  0:02:50 35:35:16     0  0 37.1M    0 51772    0     0    302      0 35:52:16  0:02:51 35:49:25     0  0 37.1M    0 51772    0     0    300      0 36:06:37  0:02:52 36:03:45     0  0 37.1M    0 51772    0     0    299      0 36:13:51  0:02:53 36:10:58     0  0 37.1M    0 51772    0     0    297      0 36:28:30  0:02:54 36:25:36     0  0 37.1M    0 51772    0     0    295      0 36:43:20  0:02:55 36:40:25     0  0 37.1M    0 51772    0     0    294      0 36:50:50  0:02:56 36:47:54     0  0 37.1M    0 51772    0     0    292      0 37:05:58  0:02:57 37:03:01     0  0 37.1M    0 51772    0     0    290      0 37:21:19  0:02:58 37:18:21     0  0 37.1M    0 51772    0     0    289      0 37:29:05  0:02:59 37:26:06     0  0 37.1M    0 51772    0     0    287      0 37:44:45  0:03:00 37:41:45     0  0 37.1M    0 51772    0     0    285      0 38:00:39  0:03:01 37:57:38     0  0 37.1M    0 51772    0     0    284      0 38:08:40  0:03:02 38:05:38     0  0 37.1M    0 51772    0     0    282      0 38:24:54  0:03:03 38:21:51     0  0 37.1M    0 51772    0     0    281      0 38:33:06  0:03:04 38:30:02     0  0 37.1M    0 51772    0     0    279      0 38:49:41  0:03:05 38:46:36     0  0 37.1M    0 51772    0     0    278      0 38:58:04  0:03:06 38:54:58     0  0 37.1M    0 51772    0     0    276      0 39:15:01  0:03:07 39:11:54     0  0 37.1M    0 51772    0     0    275      0 39:23:35  0:03:08 39:20:27     0  0 37.1M    0 51772    0     0    273      0 39:40:53  0:03:09 39:37:44     0  0 37.1M    0 51772    0     0    272      0 39:49:39  0:03:10 39:46:29     0  0 37.1M    0 51772    0     0    270      0 40:07:21  0:03:11 40:04:10     0  0 37.1M    0 51772    0     0    269      0 40:16:18  0:03:12 40:13:06     0  0 37.1M    0 51772    0     0    268      0 40:25:19  0:03:13 40:22:06     0  0 37.1M    0 51772    0     0    266      0 40:43:33  0:03:14 40:40:19     0  0 37.1M    0 51772    0     0    265      0 40:52:46  0:03:15 40:49:31     0  0 37.1M    0 51772    0     0    264      0 41:02:03  0:03:16 40:58:47     0  0 37.1M    0 51772    0     0    262      0 41:20:51  0:03:17 41:17:34     0  0 37.1M    0 51772    0     0    261      0 41:30:21  0:03:18 41:27:03     0  0 37.1M    0 51772    0     0    260      0 41:39:56  0:03:19 41:36:37     0  0 37.1M    0 51772    0     0    258      0 41:59:19  0:03:20 41:55:59     0  0 37.1M    0 51772    0     0    257      0 42:09:07  0:03:21 42:05:46     0  0 37.1M    0 51772    0     0    256      0 42:19:00  0:03:22 42:15:38     0  0 37.1M    0 51772    0     0    254      0 42:38:59  0:03:23 42:35:36     0  0 37.1M    0 51772    0     0    253      0 42:49:06  0:03:24 42:45:42     0  0 37.1M    0 51772    0     0    252      0 42:59:18  0:03:25 42:55:53     0  0 37.1M    0 51772    0     0    251      0 43:09:35  0:03:26 43:06:09     0  0 37.1M    0 51772    0     0    249      0 43:30:23  0:03:27 43:26:56     0  0 37.1M    0 51772    0     0    248      0 43:40:54  0:03:28 43:37:26     0  0 37.1M    0 51772    0     0    247      0 43:51:31  0:03:29 43:48:02     0  0 37.1M    0 51772    0     0    246      0 44:02:13  0:03:30 43:58:43     0  0 37.1M    0 51772    0     0    245      0 44:13:00  0:03:31 44:09:29     0  0 37.1M    0 51772    0     0    244      0 44:23:52  0:03:32 44:20:20     0  0 37.1M    0 51772    0     0    242      0 44:45:53  0:03:33 44:42:20     0  0 37.1M    0 51772    0     0    241      0 44:57:02  0:03:34 44:53:28     0  0 37.1M    0 51772    0     0    240      0 45:08:16  0:03:35 45:04:41     0  0 37.1M    0 51772    0     0    239      0 45:19:36  0:03:36 45:16:00     0  0 37.1M    0 51772    0     0    238      0 45:31:01  0:03:37 45:27:24     0  0 37.1M    0 51772    0     0    237      0 45:42:33  0:03:38 45:38:55     0  0 37.1M    0 51772    0     0    236      0 45:54:10  0:03:39 45:50:31     0  0 37.1M    0 51772    0     0    235      0 46:05:53  0:03:40 46:02:13     0  0 37.1M    0 51772    0     0    234      0 46:17:42  0:03:41 46:14:01     0  0 37.1M    0 51772    0     0    233      0 46:29:38  0:03:42 46:25:56     0  0 37.1M    0 51772    0     0    232      0 46:41:39  0:03:43 46:37:56     0  0 37.1M    0 51772    0     0    230      0 47:06:01  0:03:44 47:02:17     0  0 37.1M    0 51772    0     0    229      0 47:18:21  0:03:45 47:14:36     0  0 37.1M    0 51772    0     0    228      0 47:30:48  0:03:46 47:27:02     0  0 37.1M    0 51772    0     0    227      0 47:43:22  0:03:47 47:39:35     0  0 37.1M    0 51772    0     0    226      0 47:56:02  0:03:48 47:52:14     0  0 37.1M    0 51772    0     0    225      0 48:08:49  0:03:49 48:05:00     0  0 37.1M    0 51772    0     0    224      0 48:21:43  0:03:50 48:17:53     0  0 37.1M    0 51772    0     0    223      0 48:34:44  0:03:51 48:30:53     0  0 37.1M    0 51772    0     0    223      0 48:34:44  0:03:52 48:30:52     0  0 37.1M    0 51772    0     0    222      0 48:47:51  0:03:53 48:43:58     0  0 37.1M    0 51772    0     0    221      0 49:01:06  0:03:54 48:57:12     0  0 37.1M    0 51772    0     0    220      0 49:14:28  0:03:55 49:10:33     0  0 37.1M    0 51772    0     0    219      0 49:27:58  0:03:56 49:24:02     0  0 37.1M    0 51772    0     0    218      0 49:41:35  0:03:57 49:37:38     0  0 37.1M    0 51772    0     0    217      0 49:55:19  0:03:58 49:51:21     0  0 37.1M    0 51772    0     0    216      0 50:09:11  0:03:59 50:05:12     0  0 37.1M    0 51772    0     0    215      0 50:23:11  0:04:00 50:19:11     0  0 37.1M    0 51772    0     0    214      0 50:37:18  0:04:01 50:33:17     0  0 37.1M    0 51772    0     0    213      0 50:51:34  0:04:02 50:47:32     0  0 37.1M    0 51772    0     0    212      0 51:05:58  0:04:03 51:01:55     0  0 37.1M    0 51772    0     0    212      0 51:05:58  0:04:04 51:01:54     0  0 37.1M    0 51772    0     0    211      0 51:20:30  0:04:05 51:16:25     0  0 37.1M    0 51772    0     0    210      0 51:35:10  0:04:06 51:31:04     0  0 37.1M    0 51772    0     0    209      0 51:49:58  0:04:07 51:45:51     0  0 37.1M    0 51772    0     0    208      0 52:04:55  0:04:08 52:00:47     0  0 37.1M    0 51772    0     0    207      0 52:20:01  0:04:09 52:15:52     0  0 37.1M    0 51772    0     0    206      0 52:35:16  0:04:10 52:31:06     0  0 37.1M    0 51772    0     0    206      0 52:35:16  0:04:11 52:31:05     0  0 37.1M    0 51772    0     0    205      0 52:50:39  0:04:12 52:46:27     0  0 37.1M    0 51772    0     0    204      0 53:06:12  0:04:13 53:01:59     0  0 37.1M    0 51772    0     0    203      0 53:21:53  0:04:14 53:17:39     0  0 37.1M    0 51772    0     0    202      0 53:37:45  0:04:15 53:33:30     0  0 37.1M    0 51772    0     0    202      0 53:37:45  0:04:16 53:33:29     0  0 37.1M    0 51772    0     0    201      0 53:53:45  0:04:17 53:49:28     0  0 37.1M    0 51772    0     0    200      0 54:09:55  0:04:18 54:05:37     0  0 37.1M    0 51772    0     0    199      0 54:26:15  0:04:19 54:21:56     0  0 37.1M    0 51772    0     0    198      0 54:42:45  0:04:20 54:38:25     0  0 37.1M    0 51772    0     0    198      0 54:42:45  0:04:21 54:38:24     0  0 37.1M    0 51772    0     0    197      0 54:59:25  0:04:22 54:55:03     0  0 37.1M    0 51772    0     0    196      0 55:16:15  0:04:23 55:11:52     0  0 37.1M    0 51772    0     0    195      0 55:33:15  0:04:24 55:28:51     0  0 37.1M    0 51772    0     0    195      0 55:33:15  0:04:25 55:28:50     0  0 37.1M    0 51772    0     0    194      0 55:50:26  0:04:26 55:46:00     0  0 37.1M    0 51772    0     0    193      0 56:07:48  0:04:27 56:03:21     0  0 37.1M    0 51772    0     0    193      0 56:07:48  0:04:28 56:03:20     0  0 37.1M    0 51772    0     0    192      0 56:25:20  0:04:29 56:20:51     0  0 37.1M    0 51772    0     0    191      0 56:43:03  0:04:30 56:38:33     0  0 37.1M    0 51772    0     0    190      0 57:00:58  0:04:31 56:56:27     0  0 37.1M    0 51772    0     0    190      0 57:00:58  0:04:32 56:56:26     0  0 37.1M    0 51772    0     0    189      0 57:19:04  0:04:33 57:14:31     0  0 37.1M    0 51772    0     0    188      0 57:37:22  0:04:34 57:32:48     0  0 37.1M    0 51772    0     0    188      0 57:37:22  0:04:35 57:32:47     0  0 37.1M    0 51772    0     0    187      0 57:55:51  0:04:36 57:51:15     0  0 37.1M    0 51772    0     0    186      0 58:14:32  0:04:37 58:09:55     0  0 37.1M    0 51772    0     0    186      0 58:14:32  0:04:38 58:09:54     0  0 37.1M    0 51772    0     0    185      0 58:33:26  0:04:39 58:28:47     0  0 37.1M    0 51772    0     0    184      0 58:52:31  0:04:40 58:47:51     0  0 37.1M    0 51772    0     0    184      0 58:52:31  0:04:41 58:47:50     0  0 37.1M    0 51772    0     0    183      0 59:11:50  0:04:42 59:07:08     0  0 37.1M    0 51772    0     0    182      0 59:31:20  0:04:43 59:26:37     0  0 37.1M    0 51772    0     0    182      0 59:31:20  0:04:44 59:26:36     0  0 37.1M    0 51772    0     0    181      0 59:51:04  0:04:45 59:46:19     0  0 37.1M    0 51772    0     0    180      0 60:11:01  0:04:46 60:06:15     0  0 37.1M    0 51772    0     0    180      0 60:11:01  0:04:47 60:06:14     0  0 37.1M    0 51772    0     0    179      0 60:31:12  0:04:48 60:26:24     0  0 37.1M    0 51772    0     0    179      0 60:31:12  0:04:49 60:26:23     0  0 37.1M    0 51772    0     0    178      0 60:51:36  0:04:50 60:46:46     0  0 37.1M    0 51772    0     0    177      0 61:12:14  0:04:51 61:07:23     0  0 37.1M    0 51772    0     0    177      0 61:12:14  0:04:52 61:07:22     0  0 37.1M    0 51772    0     0    176      0 61:33:05  0:04:53 61:28:12     0  0 37.1M    0 51772    0     0    175      0 61:54:12  0:04:54 61:49:18     0  0 37.1M    0 51772    0     0    175      0 61:54:12  0:04:55 61:49:17     0  0 37.1M    0 51772    0     0    174      0 62:15:32  0:04:56 62:10:36     0  0 37.1M    0 51772    0     0    174      0 62:15:32  0:04:57 62:10:35     0  0 37.1M    0 51772    0     0    173      0 62:37:08  0:04:58 62:32:10     0  0 37.1M    0 51772    0     0    173      0 62:37:08  0:04:59 62:32:09     0  0 37.1M    0 51772    0     0    172      0 62:58:59  0:05:00 62:53:59     0  0 37.1M    0 51772    0     0    171      0 63:21:05  0:05:01 63:16:04     0  0 37.1M    0 51772    0     0    171      0 63:21:05  0:05:02 63:16:03     0  0 37.1M    0 51772    0     0    170      0 63:43:26  0:05:03 63:38:23     0  0 37.1M    0 51772    0     0    170      0 63:43:26  0:05:04 63:38:22     0  0 37.1M    0 51772    0     0    169      0 64:06:04  0:05:05 64:00:59     0  0 37.1M    0 51772    0     0    169      0 64:06:04  0:05:06 64:00:58     0  0 37.1M    0 51772    0     0    168      0 64:28:57  0:05:07 64:23:50     0  0 37.1M    0 51772    0     0    167      0 64:52:07  0:05:08 64:46:59     0  0 37.1M    0 51772    0     0    167      0 64:52:07  0:05:09 64:46:58     0  0 37.1M    0 51772    0     0    166      0 65:15:34  0:05:10 65:10:24     0  0 37.1M    0 51772    0     0    166      0 65:15:34  0:05:11 65:10:23     0  0 37.1M    0 51772    0     0    165      0 65:39:18  0:05:12 65:34:06     0  0 37.1M    0 51772    0     0    165      0 65:39:18  0:05:13 65:34:05     0  0 37.1M    0 51772    0     0    164      0 66:03:19  0:05:14 65:58:05     0  0 37.1M    0 51772    0     0    164      0 66:03:19  0:05:15 65:58:04     0  0 37.1M    0 51772    0     0    163      0 66:27:38  0:05:16 66:22:22     0  0 37.1M    0 51772    0     0    163      0 66:27:38  0:05:17 66:22:21     0  0 37.1M    0 51772    0     0    162      0 66:52:15  0:05:18 66:46:57     0  0 37.1M    0 51772    0     0    162      0 66:52:15  0:05:19 66:46:56     0  0 37.1M    0 51772    0     0    161      0 67:17:10  0:05:20 67:11:50     0  0 37.1M    0 51772    0     0    161      0 67:17:10  0:05:21 67:11:49     0  0 37.1M    0 51772    0     0    160      0 67:42:24  0:05:22 67:37:02     0  0 37.1M    0 51772    0     0    160      0 67:42:24  0:05:23 67:37:01     0  0 37.1M    0 51772    0     0    159      0 68:07:57  0:05:24 68:02:33     0  0 37.1M    0 51772    0     0    159      0 68:07:57  0:05:25 68:02:32     0  0 37.1M    0 51772    0     0    158      0 68:33:49  0:05:26 68:28:23     0  0 37.1M    0 51772    0     0    158      0 68:33:49  0:05:27 68:28:22     0  0 37.1M    0 51772    0     0    157      0 69:00:02  0:05:28 68:54:34     0  0 37.1M    0 51772    0     0    157      0 69:00:02  0:05:29 68:54:33     0  0 37.1M    0 51772    0     0    156      0 69:26:34  0:05:30 69:21:04     0  0 37.1M    0 51772    0     0    156      0 69:26:34  0:05:31 69:21:03     0  0 37.1M    0 51772    0     0    155      0 69:53:27  0:05:32 69:47:55     0  0 37.1M    0 51772    0     0    155      0 69:53:27  0:05:33 69:47:54     0  0 37.1M    0 51772    0     0    154      0 70:20:41  0:05:34 70:15:07     0  0 37.1M    0 51772    0     0    154      0 70:20:41  0:05:35 70:15:06     0  0 37.1M    0 51772    0     0    153      0 70:48:16  0:05:36 70:42:40     0  0 37.1M    0 51772    0     0    153      0 70:48:16  0:05:37 70:42:39     0  0 37.1M    0 51772    0     0    153      0 70:48:16  0:05:37 70:42:39     0
+│ curl: (56) OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 104
+│ [ Info: Attempting to create directory /home/pkgeval/.julia/packages/CMake/ULbyn/deps/downloads
+│ [ Info: Downloading file https://github.com/Kitware/CMake/releases/download/v3.15.3/cmake-3.15.3-Linux-x86_64.tar.gz
+│ ERROR: LoadError: failed process: Process(`curl -f -o /home/pkgeval/.julia/packages/CMake/ULbyn/deps/downloads/cmake-3.15.3-Linux-x86_64.tar.gz -L https://github.com/Kitware/CMake/releases/download/v3.15.3/cmake-3.15.3-Linux-x86_64.tar.gz`, ProcessExited(56)) [56]
+│ 
+│ Stacktrace:
+│  [1] pipeline_error at ./process.jl:525 [inlined]
+│  [2] run(::Cmd; wait::Bool) at ./process.jl:440
+│  [3] run(::Cmd) at ./process.jl:438
+│  [4] run(::BinDeps.SynchronousStepCollection) at /home/pkgeval/.julia/packages/BinDeps/eiJeV/src/BinDeps.jl:524
+│  [5] run(::FileRule) at /home/pkgeval/.julia/packages/BinDeps/eiJeV/src/BinDeps.jl:486
+│  [6] run(::BinDeps.SynchronousStepCollection) at /home/pkgeval/.julia/packages/BinDeps/eiJeV/src/BinDeps.jl:524
+│  [7] run(::FileRule) at /home/pkgeval/.julia/packages/BinDeps/eiJeV/src/BinDeps.jl:486
+│  [8] run(::BinDeps.SynchronousStepCollection) at /home/pkgeval/.julia/packages/BinDeps/eiJeV/src/BinDeps.jl:524
+│  [9] top-level scope at /home/pkgeval/.julia/packages/CMake/ULbyn/deps/build.jl:158
+│  [10] include(::String) at ./client.jl:439
+│  [11] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/CMake/ULbyn/deps/build.jl:158
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:892
+   Building Blosc → `~/.julia/packages/Blosc/ZgcAM/deps/build.log`
+┌ Error: Error building `Blosc`: 
+│ ERROR: LoadError: CMake not properly installed. Please run
+│ Pkg.build("CMake")
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] top-level scope at /home/pkgeval/.julia/packages/CMake/ULbyn/src/CMake.jl:13
+│  [3] include(::Module, ::String) at ./Base.jl:377
+│  [4] top-level scope at none:2
+│  [5] eval at ./boot.jl:331 [inlined]
+│  [6] eval(::Expr) at ./client.jl:449
+│  [7] top-level scope at ./none:3
+│ in expression starting at /home/pkgeval/.julia/packages/CMake/ULbyn/src/CMake.jl:12
+│ ERROR: LoadError: Failed to precompile CMake [631607c0-34d2-5d66-819e-eb0f9aa2061a] to /home/pkgeval/.julia/compiled/v1.4/CMake/TDh52_biGCn.ji.
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+│  [3] _require(::Base.PkgId) at ./loading.jl:1029
+│  [4] require(::Base.PkgId) at ./loading.jl:927
+│  [5] require(::Module, ::Symbol) at ./loading.jl:922
+│  [6] include(::Module, ::String) at ./Base.jl:377
+│  [7] top-level scope at none:2
+│  [8] eval at ./boot.jl:331 [inlined]
+│  [9] eval(::Expr) at ./client.jl:449
+│  [10] top-level scope at ./none:3
+│ in expression starting at /home/pkgeval/.julia/packages/CMakeWrapper/Aj38O/src/CMakeWrapper.jl:21
+│ ERROR: LoadError: LoadError: Failed to precompile CMakeWrapper [d5fb7624-851a-54ee-a528-d3f3bac0b4a0] to /home/pkgeval/.julia/compiled/v1.4/CMakeWrapper/geahK_biGCn.ji.
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+│  [3] _require(::Base.PkgId) at ./loading.jl:1029
+│  [4] require(::Base.PkgId) at ./loading.jl:927
+│  [5] require(::Module, ::Symbol) at ./loading.jl:922
+│  [6] include(::String) at ./client.jl:439
+│  [7] top-level scope at /home/pkgeval/.julia/packages/Blosc/ZgcAM/deps/build.jl:2
+│  [8] include(::String) at ./client.jl:439
+│  [9] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/Blosc/ZgcAM/deps/compile.jl:2
+│ in expression starting at /home/pkgeval/.julia/packages/Blosc/ZgcAM/deps/build.jl:2
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:892
+   Building HDF5 ─→ `~/.julia/packages/HDF5/ECBXn/deps/build.log`
+    Testing ConceptnetNumberbatch
+Status `/tmp/jl_mwBc8H/Manifest.toml`
+  [9e28174c] BinDeps v1.0.0
+  [b99e7846] BinaryProvider v0.5.8
+  [a74b3585] Blosc v0.6.0
+  [631607c0] CMake v1.2.0
+  [d5fb7624] CMakeWrapper v0.2.3
+  [944b1d66] CodecZlib v0.7.0
+  [6bdbf80b] ConceptnetNumberbatch v0.1.5
+  [f67ccb44] HDF5 v0.13.1
+  [0234f1f7] HDF5_jll v1.10.5+5
+  [682c06a0] JSON v0.21.0
+  [8ef0a80b] Languages v0.4.2
+  [bac558e1] OrderedCollections v1.1.0
+  [d96e819e] Parameters v0.12.0
+  [69de0a69] Parsers v1.0.1
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [30578b45] URIParser v0.4.0
+  [83775a58] Zlib_jll v1.2.11+9
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [6462fe0b] Sockets 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+ERROR: LoadError: Blosc not installed properly, run Pkg.build("Blosc"), restart Julia and try again
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at /home/pkgeval/.julia/packages/Blosc/ZgcAM/src/Blosc.jl:10
+ [3] include(::Module, ::String) at ./Base.jl:377
+ [4] top-level scope at none:2
+ [5] eval at ./boot.jl:331 [inlined]
+ [6] eval(::Expr) at ./client.jl:449
+ [7] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/Blosc/ZgcAM/src/Blosc.jl:9
+ERROR: LoadError: LoadError: Failed to precompile Blosc [a74b3585-a348-5f62-a45c-50e91977d574] to /home/pkgeval/.julia/compiled/v1.4/Blosc/UZMg8_GhTBM.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+ [3] _require(::Base.PkgId) at ./loading.jl:1029
+ [4] require(::Base.PkgId) at ./loading.jl:927
+ [5] require(::Module, ::Symbol) at ./loading.jl:922
+ [6] include(::Module, ::String) at ./Base.jl:377
+ [7] include(::String) at /home/pkgeval/.julia/packages/HDF5/ECBXn/src/HDF5.jl:1
+ [8] top-level scope at /home/pkgeval/.julia/packages/HDF5/ECBXn/src/HDF5.jl:571
+ [9] include(::Module, ::String) at ./Base.jl:377
+ [10] top-level scope at none:2
+ [11] eval at ./boot.jl:331 [inlined]
+ [12] eval(::Expr) at ./client.jl:449
+ [13] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/HDF5/ECBXn/src/blosc_filter.jl:1
+in expression starting at /home/pkgeval/.julia/packages/HDF5/ECBXn/src/HDF5.jl:571
+ERROR: LoadError: Failed to precompile HDF5 [f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f] to /home/pkgeval/.julia/compiled/v1.4/HDF5/L7Dga_GhTBM.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+ [3] _require(::Base.PkgId) at ./loading.jl:1029
+ [4] require(::Base.PkgId) at ./loading.jl:927
+ [5] require(::Module, ::Symbol) at ./loading.jl:922
+ [6] include(::Module, ::String) at ./Base.jl:377
+ [7] top-level scope at none:2
+ [8] eval at ./boot.jl:331 [inlined]
+ [9] eval(::Expr) at ./client.jl:449
+ [10] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/ConceptnetNumberbatch/1dcLL/src/ConceptnetNumberbatch.jl:25
+ERROR: LoadError: Failed to precompile ConceptnetNumberbatch [6bdbf80b-0969-53f9-8443-f41591bd656e] to /home/pkgeval/.julia/compiled/v1.4/ConceptnetNumberbatch/kzKpW_GhTBM.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1272
+ [3] _require(::Base.PkgId) at ./loading.jl:1029
+ [4] require(::Base.PkgId) at ./loading.jl:927
+ [5] require(::Module, ::Symbol) at ./loading.jl:922
+ [6] include(::String) at ./client.jl:439
+ [7] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/ConceptnetNumberbatch/1dcLL/test/runtests.jl:3
+ERROR: Package ConceptnetNumberbatch errored during testing
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Types.jl:53
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/Operations.jl:1503
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:316
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:303
+ [5] #test#68 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:297 [inlined]
+ [7] #test#67 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:296 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Pkg/src/API.jl:295
+ [11] top-level scope at none:16
