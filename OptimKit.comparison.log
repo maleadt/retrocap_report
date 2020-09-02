@@ -1,0 +1,1349 @@
+Julia Version 1.5.1
+Commit 697e782ab8 (2020-08-25 20:08 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, skylake-avx512)
+Environment:
+  JULIA_DEPOT_PATH = ::/usr/local/share/julia
+  JULIA_NUM_THREADS = 2
+
+  Resolving package versions...
+  Installed OptimKit ─ v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [77e91f04] + OptimKit v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [77e91f04] + OptimKit v0.1.0
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+    Testing OptimKit
+Status `/tmp/jl_TwzQ88/Project.toml`
+  [77e91f04] OptimKit v0.1.0
+  [37e2e46d] LinearAlgebra
+  [de0858da] Printf
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_TwzQ88/Manifest.toml`
+  [77e91f04] OptimKit v0.1.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+Linesearch    | 1500   1500
+Test Summary: | Pass  Total
+Linesearch    | 1500   1500
+Test Summary: | Pass  Total
+Linesearch    | 1500   1500
+Test Summary: | Pass  Total
+Linesearch    | 1500   1500
+Test Summary: | Pass  Total
+Linesearch    | 1500   1500
+Test Summary: | Pass  Total
+Linesearch    | 1500   1500
+[ Info: GD: initializing with f = 23.878990560875, ‖∇f‖ = 1.7205e+01
+[ Info: GD: iter    1: f = 10.221687145309, ‖∇f‖ = 1.0539e+01, step size = 9.23e-02
+[ Info: GD: iter    2: f = 5.858930302707, ‖∇f‖ = 6.1525e+00, step size = 7.86e-02
+[ Info: GD: iter    3: f = 3.983971533017, ‖∇f‖ = 5.0749e+00, step size = 9.91e-02
+[ Info: GD: iter    4: f = 2.940575384487, ‖∇f‖ = 3.7801e+00, step size = 8.10e-02
+[ Info: GD: iter    5: f = 2.249704126149, ‖∇f‖ = 3.5678e+00, step size = 9.67e-02
+[ Info: GD: iter    6: f = 1.752121232522, ‖∇f‖ = 2.8050e+00, step size = 7.82e-02
+[ Info: GD: iter    7: f = 1.383255311455, ‖∇f‖ = 2.6927e+00, step size = 9.38e-02
+[ Info: GD: iter    8: f = 1.103326080618, ‖∇f‖ = 2.1426e+00, step size = 7.72e-02
+[ Info: GD: iter    9: f = 0.889349058684, ‖∇f‖ = 2.0662e+00, step size = 9.32e-02
+[ Info: GD: iter   10: f = 0.724706241140, ‖∇f‖ = 1.6518e+00, step size = 7.71e-02
+[ Info: GD: iter   11: f = 0.597439441223, ‖∇f‖ = 1.5996e+00, step size = 9.33e-02
+[ Info: GD: iter   12: f = 0.498621164289, ‖∇f‖ = 1.2846e+00, step size = 7.72e-02
+[ Info: GD: iter   13: f = 0.421451446434, ‖∇f‖ = 1.2510e+00, step size = 9.35e-02
+[ Info: GD: iter   14: f = 0.360850290559, ‖∇f‖ = 1.0108e+00, step size = 7.74e-02
+[ Info: GD: iter   15: f = 0.312886818396, ‖∇f‖ = 9.9199e-01, step size = 9.39e-02
+[ Info: GD: iter   16: f = 0.274642316299, ‖∇f‖ = 8.0814e-01, step size = 7.77e-02
+[ Info: GD: iter   17: f = 0.243832918716, ‖∇f‖ = 8.0107e-01, step size = 9.44e-02
+[ Info: GD: iter   18: f = 0.218778393183, ‖∇f‖ = 6.5932e-01, step size = 7.81e-02
+[ Info: GD: iter   19: f = 0.198146659931, ‖∇f‖ = 6.6153e-01, step size = 9.49e-02
+[ Info: GD: iter   20: f = 0.180969070452, ‖∇f‖ = 5.5094e-01, step size = 7.85e-02
+[ Info: GD: iter   21: f = 0.166465510200, ‖∇f‖ = 5.6024e-01, step size = 9.56e-02
+[ Info: GD: iter   22: f = 0.154076088511, ‖∇f‖ = 4.7238e-01, step size = 7.89e-02
+[ Info: GD: iter   23: f = 0.143341929121, ‖∇f‖ = 4.8680e-01, step size = 9.62e-02
+[ Info: GD: iter   24: f = 0.133937801727, ‖∇f‖ = 4.1525e-01, step size = 7.94e-02
+[ Info: GD: iter   25: f = 0.125592380009, ‖∇f‖ = 4.3308e-01, step size = 9.68e-02
+[ Info: GD: iter   26: f = 0.118115094799, ‖∇f‖ = 3.7310e-01, step size = 7.97e-02
+[ Info: GD: iter   27: f = 0.111344288311, ‖∇f‖ = 3.9294e-01, step size = 9.73e-02
+[ Info: GD: iter   28: f = 0.105166682480, ‖∇f‖ = 3.4115e-01, step size = 8.00e-02
+[ Info: GD: iter   29: f = 0.099484721382, ‖∇f‖ = 3.6195e-01, step size = 9.76e-02
+[ Info: GD: iter   30: f = 0.094229554982, ‖∇f‖ = 3.1601e-01, step size = 8.02e-02
+[ Info: GD: iter   31: f = 0.089341060112, ‖∇f‖ = 3.3704e-01, step size = 9.79e-02
+[ Info: GD: iter   32: f = 0.084776027518, ‖∇f‖ = 2.9541e-01, step size = 8.04e-02
+[ Info: GD: iter   33: f = 0.080496219122, ‖∇f‖ = 3.1620e-01, step size = 9.81e-02
+[ Info: GD: iter   34: f = 0.076473346954, ‖∇f‖ = 2.7787e-01, step size = 8.05e-02
+[ Info: GD: iter   35: f = 0.072682046256, ‖∇f‖ = 2.9813e-01, step size = 9.82e-02
+[ Info: GD: iter   36: f = 0.069102838872, ‖∇f‖ = 2.6245e-01, step size = 8.05e-02
+[ Info: GD: iter   37: f = 0.065718034173, ‖∇f‖ = 2.8202e-01, step size = 9.83e-02
+[ Info: GD: iter   38: f = 0.062513473954, ‖∇f‖ = 2.4855e-01, step size = 8.06e-02
+[ Info: GD: iter   39: f = 0.059476146163, ‖∇f‖ = 2.6736e-01, step size = 9.83e-02
+[ Info: GD: iter   40: f = 0.056595209545, ‖∇f‖ = 2.3580e-01, step size = 8.06e-02
+[ Info: GD: iter   41: f = 0.053860598994, ‖∇f‖ = 2.5381e-01, step size = 9.84e-02
+[ Info: GD: iter   42: f = 0.051263629352, ‖∇f‖ = 2.2396e-01, step size = 8.06e-02
+[ Info: GD: iter   43: f = 0.048796172378, ‖∇f‖ = 2.4117e-01, step size = 9.84e-02
+[ Info: GD: iter   44: f = 0.046451015585, ‖∇f‖ = 2.1288e-01, step size = 8.06e-02
+[ Info: GD: iter   45: f = 0.044221368968, ‖∇f‖ = 2.2931e-01, step size = 9.84e-02
+[ Info: GD: iter   46: f = 0.042101080930, ‖∇f‖ = 2.0245e-01, step size = 8.06e-02
+[ Info: GD: iter   47: f = 0.040084336283, ‖∇f‖ = 2.1812e-01, step size = 9.84e-02
+[ Info: GD: iter   48: f = 0.038165788200, ‖∇f‖ = 1.9260e-01, step size = 8.07e-02
+[ Info: GD: iter   49: f = 0.036340368264, ‖∇f‖ = 2.0754e-01, step size = 9.84e-02
+[ Info: GD: iter   50: f = 0.034603368493, ‖∇f‖ = 1.8327e-01, step size = 8.07e-02
+[ Info: GD: iter   51: f = 0.032950318012, ‖∇f‖ = 1.9751e-01, step size = 9.84e-02
+[ Info: GD: iter   52: f = 0.031377034919, ‖∇f‖ = 1.7443e-01, step size = 8.07e-02
+[ Info: GD: iter   53: f = 0.029879543348, ‖∇f‖ = 1.8800e-01, step size = 9.84e-02
+[ Info: GD: iter   54: f = 0.028454106783, ‖∇f‖ = 1.6604e-01, step size = 8.07e-02
+[ Info: GD: iter   55: f = 0.027097170220, ‖∇f‖ = 1.7896e-01, step size = 9.84e-02
+[ Info: GD: iter   56: f = 0.025805381799, ‖∇f‖ = 1.5807e-01, step size = 8.07e-02
+[ Info: GD: iter   57: f = 0.024575551044, ‖∇f‖ = 1.7038e-01, step size = 9.84e-02
+[ Info: GD: iter   58: f = 0.023404662966, ‖∇f‖ = 1.5050e-01, step size = 8.07e-02
+[ Info: GD: iter   59: f = 0.022289846935, ‖∇f‖ = 1.6222e-01, step size = 9.84e-02
+[ Info: GD: iter   60: f = 0.021228385824, ‖∇f‖ = 1.4330e-01, step size = 8.07e-02
+[ Info: GD: iter   61: f = 0.020217692157, ‖∇f‖ = 1.5447e-01, step size = 9.84e-02
+[ Info: GD: iter   62: f = 0.019255313915, ‖∇f‖ = 1.3645e-01, step size = 8.07e-02
+[ Info: GD: iter   63: f = 0.018338915834, ‖∇f‖ = 1.4709e-01, step size = 9.84e-02
+[ Info: GD: iter   64: f = 0.017466282930, ‖∇f‖ = 1.2993e-01, step size = 8.07e-02
+[ Info: GD: iter   65: f = 0.016635305548, ‖∇f‖ = 1.4007e-01, step size = 9.84e-02
+[ Info: GD: iter   66: f = 0.015843981315, ‖∇f‖ = 1.2373e-01, step size = 8.07e-02
+[ Info: GD: iter   67: f = 0.015090403002, ‖∇f‖ = 1.3339e-01, step size = 9.84e-02
+[ Info: GD: iter   68: f = 0.014372759375, ‖∇f‖ = 1.1783e-01, step size = 8.07e-02
+[ Info: GD: iter   69: f = 0.013689325224, ‖∇f‖ = 1.2703e-01, step size = 9.84e-02
+[ Info: GD: iter   70: f = 0.013038461447, ‖∇f‖ = 1.1222e-01, step size = 8.07e-02
+[ Info: GD: iter   71: f = 0.012418606766, ‖∇f‖ = 1.2098e-01, step size = 9.84e-02
+[ Info: GD: iter   72: f = 0.011828277289, ‖∇f‖ = 1.0687e-01, step size = 8.07e-02
+[ Info: GD: iter   73: f = 0.011266059569, ‖∇f‖ = 1.1522e-01, step size = 9.84e-02
+[ Info: GD: iter   74: f = 0.010730609802, ‖∇f‖ = 1.0178e-01, step size = 8.07e-02
+[ Info: GD: iter   75: f = 0.010220647978, ‖∇f‖ = 1.0973e-01, step size = 9.84e-02
+[ Info: GD: iter   76: f = 0.009734956838, ‖∇f‖ = 9.6941e-02, step size = 8.07e-02
+[ Info: GD: iter   77: f = 0.009272376908, ‖∇f‖ = 1.0451e-01, step size = 9.84e-02
+[ Info: GD: iter   78: f = 0.008831805314, ‖∇f‖ = 9.2329e-02, step size = 8.07e-02
+[ Info: GD: iter   79: f = 0.008412191534, ‖∇f‖ = 9.9539e-02, step size = 9.84e-02
+[ Info: GD: iter   80: f = 0.008012536139, ‖∇f‖ = 8.7938e-02, step size = 8.07e-02
+[ Info: GD: iter   81: f = 0.007631887143, ‖∇f‖ = 9.4806e-02, step size = 9.84e-02
+[ Info: GD: iter   82: f = 0.007269338713, ‖∇f‖ = 8.3756e-02, step size = 8.07e-02
+[ Info: GD: iter   83: f = 0.006924028016, ‖∇f‖ = 9.0298e-02, step size = 9.84e-02
+[ Info: GD: iter   84: f = 0.006595133935, ‖∇f‖ = 7.9774e-02, step size = 8.07e-02
+[ Info: GD: iter   85: f = 0.006281874329, ‖∇f‖ = 8.6006e-02, step size = 9.84e-02
+[ Info: GD: iter   86: f = 0.005983504785, ‖∇f‖ = 7.5983e-02, step size = 8.07e-02
+[ Info: GD: iter   87: f = 0.005699316225, ‖∇f‖ = 8.1918e-02, step size = 9.84e-02
+[ Info: GD: iter   88: f = 0.005428633702, ‖∇f‖ = 7.2372e-02, step size = 8.07e-02
+[ Info: GD: iter   89: f = 0.005170814308, ‖∇f‖ = 7.8025e-02, step size = 9.84e-02
+[ Info: GD: iter   90: f = 0.004925246026, ‖∇f‖ = 6.8933e-02, step size = 8.07e-02
+[ Info: GD: iter   91: f = 0.004691345889, ‖∇f‖ = 7.4318e-02, step size = 9.84e-02
+[ Info: GD: iter   92: f = 0.004468558898, ‖∇f‖ = 6.5658e-02, step size = 8.07e-02
+[ Info: GD: iter   93: f = 0.004256356399, ‖∇f‖ = 7.0787e-02, step size = 9.84e-02
+[ Info: GD: iter   94: f = 0.004054235065, ‖∇f‖ = 6.2538e-02, step size = 8.07e-02
+[ Info: GD: iter   95: f = 0.003861715459, ‖∇f‖ = 6.7424e-02, step size = 9.84e-02
+[ Info: GD: iter   96: f = 0.003678341090, ‖∇f‖ = 5.9568e-02, step size = 8.07e-02
+[ Info: GD: iter   97: f = 0.003503677132, ‖∇f‖ = 6.4222e-02, step size = 9.84e-02
+[ Info: GD: iter   98: f = 0.003337309548, ‖∇f‖ = 5.6738e-02, step size = 8.07e-02
+[ Info: GD: iter   99: f = 0.003178843952, ‖∇f‖ = 6.1171e-02, step size = 9.84e-02
+[ Info: GD: iter  100: f = 0.003027904796, ‖∇f‖ = 5.4043e-02, step size = 8.07e-02
+[ Info: GD: iter  101: f = 0.002884134359, ‖∇f‖ = 5.8266e-02, step size = 9.84e-02
+[ Info: GD: iter  102: f = 0.002747191990, ‖∇f‖ = 5.1477e-02, step size = 8.07e-02
+[ Info: GD: iter  103: f = 0.002616753208, ‖∇f‖ = 5.5499e-02, step size = 9.84e-02
+[ Info: GD: iter  104: f = 0.002492509010, ‖∇f‖ = 4.9032e-02, step size = 8.07e-02
+[ Info: GD: iter  105: f = 0.002374165057, ‖∇f‖ = 5.2863e-02, step size = 9.84e-02
+[ Info: GD: iter  106: f = 0.002261441042, ‖∇f‖ = 4.6704e-02, step size = 8.07e-02
+[ Info: GD: iter  107: f = 0.002154069963, ‖∇f‖ = 5.0353e-02, step size = 9.84e-02
+[ Info: GD: iter  108: f = 0.002051797536, ‖∇f‖ = 4.4486e-02, step size = 8.07e-02
+[ Info: GD: iter  109: f = 0.001954381551, ‖∇f‖ = 4.7962e-02, step size = 9.84e-02
+[ Info: GD: iter  110: f = 0.001861591329, ‖∇f‖ = 4.2374e-02, step size = 8.07e-02
+[ Info: GD: iter  111: f = 0.001773207141, ‖∇f‖ = 4.5685e-02, step size = 9.84e-02
+[ Info: GD: iter  112: f = 0.001689019719, ‖∇f‖ = 4.0362e-02, step size = 8.07e-02
+[ Info: GD: iter  113: f = 0.001608829726, ‖∇f‖ = 4.3516e-02, step size = 9.84e-02
+[ Info: GD: iter  114: f = 0.001532447312, ‖∇f‖ = 3.8445e-02, step size = 8.07e-02
+[ Info: GD: iter  115: f = 0.001459691639, ‖∇f‖ = 4.1449e-02, step size = 9.84e-02
+[ Info: GD: iter  116: f = 0.001390390471, ‖∇f‖ = 3.6620e-02, step size = 8.07e-02
+[ Info: GD: iter  117: f = 0.001324379748, ‖∇f‖ = 3.9481e-02, step size = 9.84e-02
+[ Info: GD: iter  118: f = 0.001261503211, ‖∇f‖ = 3.4881e-02, step size = 8.07e-02
+[ Info: GD: iter  119: f = 0.001201612021, ‖∇f‖ = 3.7607e-02, step size = 9.84e-02
+[ Info: GD: iter  120: f = 0.001144564414, ‖∇f‖ = 3.3225e-02, step size = 8.07e-02
+[ Info: GD: iter  121: f = 0.001090225356, ‖∇f‖ = 3.5821e-02, step size = 9.84e-02
+[ Info: GD: iter  122: f = 0.001038466232, ‖∇f‖ = 3.1647e-02, step size = 8.07e-02
+[ Info: GD: iter  123: f = 0.000989164532, ‖∇f‖ = 3.4121e-02, step size = 9.84e-02
+[ Info: GD: iter  124: f = 0.000942203571, ‖∇f‖ = 3.0145e-02, step size = 8.07e-02
+[ Info: GD: iter  125: f = 0.000897472201, ‖∇f‖ = 3.2501e-02, step size = 9.84e-02
+[ Info: GD: iter  126: f = 0.000854864555, ‖∇f‖ = 2.8714e-02, step size = 8.07e-02
+[ Info: GD: iter  127: f = 0.000814279794, ‖∇f‖ = 3.0958e-02, step size = 9.84e-02
+[ Info: GD: iter  128: f = 0.000775621869, ‖∇f‖ = 2.7350e-02, step size = 8.07e-02
+[ Info: GD: iter  129: f = 0.000738799292, ‖∇f‖ = 2.9488e-02, step size = 9.84e-02
+[ Info: GD: iter  130: f = 0.000703724920, ‖∇f‖ = 2.6052e-02, step size = 8.07e-02
+[ Info: GD: iter  131: f = 0.000670315747, ‖∇f‖ = 2.8088e-02, step size = 9.84e-02
+[ Info: GD: iter  132: f = 0.000638492711, ‖∇f‖ = 2.4815e-02, step size = 8.07e-02
+[ Info: GD: iter  133: f = 0.000608180503, ‖∇f‖ = 2.6754e-02, step size = 9.84e-02
+[ Info: GD: iter  134: f = 0.000579307391, ‖∇f‖ = 2.3637e-02, step size = 8.07e-02
+[ Info: GD: iter  135: f = 0.000551805048, ‖∇f‖ = 2.5484e-02, step size = 9.84e-02
+[ Info: GD: iter  136: f = 0.000525608394, ‖∇f‖ = 2.2515e-02, step size = 8.07e-02
+[ Info: GD: iter  137: f = 0.000500655436, ‖∇f‖ = 2.4274e-02, step size = 9.84e-02
+[ Info: GD: iter  138: f = 0.000476887128, ‖∇f‖ = 2.1446e-02, step size = 8.07e-02
+[ Info: GD: iter  139: f = 0.000454247224, ‖∇f‖ = 2.3122e-02, step size = 9.84e-02
+[ Info: GD: iter  140: f = 0.000432682152, ‖∇f‖ = 2.0428e-02, step size = 8.07e-02
+[ Info: GD: iter  141: f = 0.000412140882, ‖∇f‖ = 2.2024e-02, step size = 9.84e-02
+[ Info: GD: iter  142: f = 0.000392574808, ‖∇f‖ = 1.9458e-02, step size = 8.07e-02
+[ Info: GD: iter  143: f = 0.000373937629, ‖∇f‖ = 2.0979e-02, step size = 9.84e-02
+[ Info: GD: iter  144: f = 0.000356185247, ‖∇f‖ = 1.8534e-02, step size = 8.07e-02
+[ Info: GD: iter  145: f = 0.000339275653, ‖∇f‖ = 1.9983e-02, step size = 9.84e-02
+[ Info: GD: iter  146: f = 0.000323168837, ‖∇f‖ = 1.7654e-02, step size = 8.07e-02
+[ Info: GD: iter  147: f = 0.000307826685, ‖∇f‖ = 1.9034e-02, step size = 9.84e-02
+[ Info: GD: iter  148: f = 0.000293212895, ‖∇f‖ = 1.6816e-02, step size = 8.07e-02
+[ Info: GD: iter  149: f = 0.000279292887, ‖∇f‖ = 1.8130e-02, step size = 9.84e-02
+[ Info: GD: iter  150: f = 0.000266033723, ‖∇f‖ = 1.6018e-02, step size = 8.07e-02
+[ Info: GD: iter  151: f = 0.000253404031, ‖∇f‖ = 1.7270e-02, step size = 9.84e-02
+[ Info: GD: iter  152: f = 0.000241373924, ‖∇f‖ = 1.5257e-02, step size = 8.07e-02
+[ Info: GD: iter  153: f = 0.000229914939, ‖∇f‖ = 1.6450e-02, step size = 9.84e-02
+[ Info: GD: iter  154: f = 0.000218999961, ‖∇f‖ = 1.4533e-02, step size = 8.07e-02
+[ Info: GD: iter  155: f = 0.000208603163, ‖∇f‖ = 1.5669e-02, step size = 9.84e-02
+[ Info: GD: iter  156: f = 0.000198699945, ‖∇f‖ = 1.3843e-02, step size = 8.07e-02
+[ Info: GD: iter  157: f = 0.000189266874, ‖∇f‖ = 1.4925e-02, step size = 9.84e-02
+[ Info: GD: iter  158: f = 0.000180281630, ‖∇f‖ = 1.3186e-02, step size = 8.07e-02
+[ Info: GD: iter  159: f = 0.000171722953, ‖∇f‖ = 1.4216e-02, step size = 9.84e-02
+[ Info: GD: iter  160: f = 0.000163570592, ‖∇f‖ = 1.2560e-02, step size = 8.07e-02
+[ Info: GD: iter  161: f = 0.000155805256, ‖∇f‖ = 1.3541e-02, step size = 9.84e-02
+[ Info: GD: iter  162: f = 0.000148408573, ‖∇f‖ = 1.1964e-02, step size = 8.07e-02
+[ Info: GD: iter  163: f = 0.000141363040, ‖∇f‖ = 1.2899e-02, step size = 9.84e-02
+[ Info: GD: iter  164: f = 0.000134651987, ‖∇f‖ = 1.1396e-02, step size = 8.07e-02
+[ Info: GD: iter  165: f = 0.000128259534, ‖∇f‖ = 1.2286e-02, step size = 9.84e-02
+[ Info: GD: iter  166: f = 0.000122170557, ‖∇f‖ = 1.0855e-02, step size = 8.07e-02
+[ Info: GD: iter  167: f = 0.000116370648, ‖∇f‖ = 1.1703e-02, step size = 9.84e-02
+[ Info: GD: iter  168: f = 0.000110846084, ‖∇f‖ = 1.0339e-02, step size = 8.07e-02
+[ Info: GD: iter  169: f = 0.000105583792, ‖∇f‖ = 1.1147e-02, step size = 9.84e-02
+[ Info: GD: iter  170: f = 0.000100571323, ‖∇f‖ = 9.8485e-03, step size = 8.07e-02
+[ Info: GD: iter  171: f = 0.000095796815, ‖∇f‖ = 1.0618e-02, step size = 9.84e-02
+[ Info: GD: iter  172: f = 0.000091248972, ‖∇f‖ = 9.3810e-03, step size = 8.07e-02
+[ Info: GD: iter  173: f = 0.000086917032, ‖∇f‖ = 1.0114e-02, step size = 9.84e-02
+[ Info: GD: iter  174: f = 0.000082790747, ‖∇f‖ = 8.9356e-03, step size = 8.07e-02
+[ Info: GD: iter  175: f = 0.000078860353, ‖∇f‖ = 9.6339e-03, step size = 9.84e-02
+[ Info: GD: iter  176: f = 0.000075116549, ‖∇f‖ = 8.5114e-03, step size = 8.07e-02
+[ Info: GD: iter  177: f = 0.000071550479, ‖∇f‖ = 9.1766e-03, step size = 9.84e-02
+[ Info: GD: iter  178: f = 0.000068153704, ‖∇f‖ = 8.1074e-03, step size = 8.07e-02
+[ Info: GD: iter  179: f = 0.000064918187, ‖∇f‖ = 8.7409e-03, step size = 9.84e-02
+[ Info: GD: iter  180: f = 0.000061836272, ‖∇f‖ = 7.7225e-03, step size = 8.07e-02
+[ Info: GD: iter  181: f = 0.000058900668, ‖∇f‖ = 8.3260e-03, step size = 9.84e-02
+[ Info: GD: iter  182: f = 0.000056104428, ‖∇f‖ = 7.3559e-03, step size = 8.07e-02
+[ Info: GD: iter  183: f = 0.000053440937, ‖∇f‖ = 7.9307e-03, step size = 9.84e-02
+[ Info: GD: iter  184: f = 0.000050903892, ‖∇f‖ = 7.0066e-03, step size = 8.07e-02
+[ Info: GD: iter  185: f = 0.000048487290, ‖∇f‖ = 7.5542e-03, step size = 9.84e-02
+[ Info: GD: iter  186: f = 0.000046185413, ‖∇f‖ = 6.6740e-03, step size = 8.07e-02
+[ Info: GD: iter  187: f = 0.000043992816, ‖∇f‖ = 7.1956e-03, step size = 9.84e-02
+[ Info: GD: iter  188: f = 0.000041904309, ‖∇f‖ = 6.3572e-03, step size = 8.07e-02
+[ Info: GD: iter  189: f = 0.000039914952, ‖∇f‖ = 6.8540e-03, step size = 9.84e-02
+[ Info: GD: iter  190: f = 0.000038020037, ‖∇f‖ = 6.0554e-03, step size = 8.07e-02
+[ Info: GD: iter  191: f = 0.000036215081, ‖∇f‖ = 6.5286e-03, step size = 9.84e-02
+[ Info: GD: iter  192: f = 0.000034495814, ‖∇f‖ = 5.7679e-03, step size = 8.07e-02
+[ Info: GD: iter  193: f = 0.000032858166, ‖∇f‖ = 6.2186e-03, step size = 9.84e-02
+[ Info: GD: iter  194: f = 0.000031298264, ‖∇f‖ = 5.4941e-03, step size = 8.07e-02
+[ Info: GD: iter  195: f = 0.000029812416, ‖∇f‖ = 5.9234e-03, step size = 9.84e-02
+[ Info: GD: iter  196: f = 0.000028397107, ‖∇f‖ = 5.2332e-03, step size = 8.07e-02
+[ Info: GD: iter  197: f = 0.000027048989, ‖∇f‖ = 5.6422e-03, step size = 9.84e-02
+[ Info: GD: iter  198: f = 0.000025764870, ‖∇f‖ = 4.9848e-03, step size = 8.07e-02
+[ Info: GD: iter  199: f = 0.000024541714, ‖∇f‖ = 5.3744e-03, step size = 9.84e-02
+[ Info: GD: iter  200: f = 0.000023376626, ‖∇f‖ = 4.7482e-03, step size = 8.07e-02
+[ Info: GD: iter  201: f = 0.000022266848, ‖∇f‖ = 5.1192e-03, step size = 9.84e-02
+[ Info: GD: iter  202: f = 0.000021209757, ‖∇f‖ = 4.5227e-03, step size = 8.07e-02
+[ Info: GD: iter  203: f = 0.000020202849, ‖∇f‖ = 4.8762e-03, step size = 9.84e-02
+[ Info: GD: iter  204: f = 0.000019243743, ‖∇f‖ = 4.3080e-03, step size = 8.07e-02
+[ Info: GD: iter  205: f = 0.000018330169, ‖∇f‖ = 4.6447e-03, step size = 9.84e-02
+[ Info: GD: iter  206: f = 0.000017459967, ‖∇f‖ = 4.1035e-03, step size = 8.07e-02
+[ Info: GD: iter  207: f = 0.000016631076, ‖∇f‖ = 4.4242e-03, step size = 9.84e-02
+[ Info: GD: iter  208: f = 0.000015841535, ‖∇f‖ = 3.9087e-03, step size = 8.07e-02
+[ Info: GD: iter  209: f = 0.000015089477, ‖∇f‖ = 4.2142e-03, step size = 9.84e-02
+[ Info: GD: iter  210: f = 0.000014373123, ‖∇f‖ = 3.7231e-03, step size = 8.07e-02
+[ Info: GD: iter  211: f = 0.000013690776, ‖∇f‖ = 4.0141e-03, step size = 9.84e-02
+[ Info: GD: iter  212: f = 0.000013040823, ‖∇f‖ = 3.5464e-03, step size = 8.07e-02
+[ Info: GD: iter  213: f = 0.000012421726, ‖∇f‖ = 3.8235e-03, step size = 9.84e-02
+[ Info: GD: iter  214: f = 0.000011832019, ‖∇f‖ = 3.3780e-03, step size = 8.07e-02
+[ Info: GD: iter  215: f = 0.000011270308, ‖∇f‖ = 3.6420e-03, step size = 9.84e-02
+[ Info: GD: iter  216: f = 0.000010735264, ‖∇f‖ = 3.2177e-03, step size = 8.07e-02
+[ Info: GD: iter  217: f = 0.000010225620, ‖∇f‖ = 3.4691e-03, step size = 9.84e-02
+[ Info: GD: iter  218: f = 0.000009740171, ‖∇f‖ = 3.0649e-03, step size = 8.07e-02
+[ Info: GD: iter  219: f = 0.000009277768, ‖∇f‖ = 3.3044e-03, step size = 9.84e-02
+[ Info: GD: iter  220: f = 0.000008837317, ‖∇f‖ = 2.9194e-03, step size = 8.07e-02
+[ Info: GD: iter  221: f = 0.000008417776, ‖∇f‖ = 3.1476e-03, step size = 9.84e-02
+[ Info: GD: iter  222: f = 0.000008018153, ‖∇f‖ = 2.7808e-03, step size = 8.07e-02
+[ Info: GD: iter  223: f = 0.000007637501, ‖∇f‖ = 2.9981e-03, step size = 9.84e-02
+[ Info: GD: iter  224: f = 0.000007274919, ‖∇f‖ = 2.6488e-03, step size = 8.07e-02
+[ Info: GD: iter  225: f = 0.000006929551, ‖∇f‖ = 2.8558e-03, step size = 9.84e-02
+[ Info: GD: iter  226: f = 0.000006600579, ‖∇f‖ = 2.5230e-03, step size = 8.07e-02
+[ Info: GD: iter  227: f = 0.000006287225, ‖∇f‖ = 2.7202e-03, step size = 9.84e-02
+[ Info: GD: iter  228: f = 0.000005988746, ‖∇f‖ = 2.4033e-03, step size = 8.07e-02
+[ Info: GD: iter  229: f = 0.000005704438, ‖∇f‖ = 2.5911e-03, step size = 9.84e-02
+[ Info: GD: iter  230: f = 0.000005433626, ‖∇f‖ = 2.2892e-03, step size = 8.07e-02
+[ Info: GD: iter  231: f = 0.000005175672, ‖∇f‖ = 2.4681e-03, step size = 9.84e-02
+[ Info: GD: iter  232: f = 0.000004929963, ‖∇f‖ = 2.1805e-03, step size = 8.07e-02
+[ Info: GD: iter  233: f = 0.000004695919, ‖∇f‖ = 2.3509e-03, step size = 9.84e-02
+[ Info: GD: iter  234: f = 0.000004472986, ‖∇f‖ = 2.0770e-03, step size = 8.07e-02
+[ Info: GD: iter  235: f = 0.000004260636, ‖∇f‖ = 2.2393e-03, step size = 9.84e-02
+[ Info: GD: iter  236: f = 0.000004058368, ‖∇f‖ = 1.9784e-03, step size = 8.07e-02
+[ Info: GD: iter  237: f = 0.000003865701, ‖∇f‖ = 2.1330e-03, step size = 9.84e-02
+[ Info: GD: iter  238: f = 0.000003682182, ‖∇f‖ = 1.8845e-03, step size = 8.07e-02
+[ Info: GD: iter  239: f = 0.000003507375, ‖∇f‖ = 2.0317e-03, step size = 9.84e-02
+[ Info: GD: iter  240: f = 0.000003340866, ‖∇f‖ = 1.7950e-03, step size = 8.07e-02
+[ Info: GD: iter  241: f = 0.000003182263, ‖∇f‖ = 1.9353e-03, step size = 9.84e-02
+[ Info: GD: iter  242: f = 0.000003031189, ‖∇f‖ = 1.7098e-03, step size = 8.07e-02
+[ Info: GD: iter  243: f = 0.000002887287, ‖∇f‖ = 1.8434e-03, step size = 9.84e-02
+[ Info: GD: iter  244: f = 0.000002750216, ‖∇f‖ = 1.6286e-03, step size = 8.07e-02
+[ Info: GD: iter  245: f = 0.000002619653, ‖∇f‖ = 1.7559e-03, step size = 9.84e-02
+[ Info: GD: iter  246: f = 0.000002495288, ‖∇f‖ = 1.5513e-03, step size = 8.07e-02
+[ Info: GD: iter  247: f = 0.000002376827, ‖∇f‖ = 1.6725e-03, step size = 9.84e-02
+[ Info: GD: iter  248: f = 0.000002263990, ‖∇f‖ = 1.4777e-03, step size = 8.07e-02
+[ Info: GD: iter  249: f = 0.000002156510, ‖∇f‖ = 1.5931e-03, step size = 9.84e-02
+[ Info: GD: iter  250: f = 0.000002054132, ‖∇f‖ = 1.4075e-03, step size = 8.07e-02
+[ Info: GD: iter  251: f = 0.000001956615, ‖∇f‖ = 1.5175e-03, step size = 9.84e-02
+[ Info: GD: iter  252: f = 0.000001863727, ‖∇f‖ = 1.3407e-03, step size = 8.07e-02
+[ Info: GD: iter  253: f = 0.000001775249, ‖∇f‖ = 1.4455e-03, step size = 9.84e-02
+[ Info: GD: iter  254: f = 0.000001690971, ‖∇f‖ = 1.2770e-03, step size = 8.07e-02
+[ Info: GD: iter  255: f = 0.000001610694, ‖∇f‖ = 1.3768e-03, step size = 9.84e-02
+[ Info: GD: iter  256: f = 0.000001534228, ‖∇f‖ = 1.2164e-03, step size = 8.07e-02
+[ Info: GD: iter  257: f = 0.000001461393, ‖∇f‖ = 1.3115e-03, step size = 9.84e-02
+[ Info: GD: iter  258: f = 0.000001392015, ‖∇f‖ = 1.1587e-03, step size = 8.07e-02
+[ Info: GD: iter  259: f = 0.000001325931, ‖∇f‖ = 1.2492e-03, step size = 9.84e-02
+[ Info: GD: iter  260: f = 0.000001262984, ‖∇f‖ = 1.1037e-03, step size = 8.07e-02
+[ Info: GD: iter  261: f = 0.000001203025, ‖∇f‖ = 1.1899e-03, step size = 9.84e-02
+[ Info: GD: iter  262: f = 0.000001145913, ‖∇f‖ = 1.0513e-03, step size = 8.07e-02
+[ Info: GD: iter  263: f = 0.000001091512, ‖∇f‖ = 1.1334e-03, step size = 9.84e-02
+[ Info: GD: iter  264: f = 0.000001039694, ‖∇f‖ = 1.0014e-03, step size = 8.07e-02
+[ Info: GD: iter  265: f = 0.000000990336, ‖∇f‖ = 1.0796e-03, step size = 9.84e-02
+[ Info: GD: iter  266: f = 0.000000943321, ‖∇f‖ = 9.5381e-04, step size = 8.07e-02
+[ Info: GD: iter  267: f = 0.000000898538, ‖∇f‖ = 1.0284e-03, step size = 9.84e-02
+[ Info: GD: iter  268: f = 0.000000855881, ‖∇f‖ = 9.0853e-04, step size = 8.07e-02
+[ Info: GD: iter  269: f = 0.000000815249, ‖∇f‖ = 9.7953e-04, step size = 9.84e-02
+[ Info: GD: iter  270: f = 0.000000776546, ‖∇f‖ = 8.6540e-04, step size = 8.07e-02
+[ Info: GD: iter  271: f = 0.000000739680, ‖∇f‖ = 9.3303e-04, step size = 9.84e-02
+[ Info: GD: iter  272: f = 0.000000704565, ‖∇f‖ = 8.2432e-04, step size = 8.07e-02
+[ Info: GD: iter  273: f = 0.000000671116, ‖∇f‖ = 8.8874e-04, step size = 9.84e-02
+[ Info: GD: iter  274: f = 0.000000639256, ‖∇f‖ = 7.8518e-04, step size = 8.07e-02
+[ Info: GD: iter  275: f = 0.000000608908, ‖∇f‖ = 8.4654e-04, step size = 9.84e-02
+[ Info: GD: iter  276: f = 0.000000580001, ‖∇f‖ = 7.4791e-04, step size = 8.07e-02
+[ Info: GD: iter  277: f = 0.000000552466, ‖∇f‖ = 8.0636e-04, step size = 9.84e-02
+[ Info: GD: iter  278: f = 0.000000526238, ‖∇f‖ = 7.1240e-04, step size = 8.07e-02
+[ Info: GD: iter  279: f = 0.000000501256, ‖∇f‖ = 7.6808e-04, step size = 9.84e-02
+[ Info: GD: iter  280: f = 0.000000477459, ‖∇f‖ = 6.7858e-04, step size = 8.07e-02
+[ Info: GD: iter  281: f = 0.000000454793, ‖∇f‖ = 7.3161e-04, step size = 9.84e-02
+[ Info: GD: iter  282: f = 0.000000433202, ‖∇f‖ = 6.4637e-04, step size = 8.07e-02
+[ Info: GD: iter  283: f = 0.000000412636, ‖∇f‖ = 6.9688e-04, step size = 9.84e-02
+[ Info: GD: iter  284: f = 0.000000393047, ‖∇f‖ = 6.1568e-04, step size = 8.07e-02
+[ Info: GD: iter  285: f = 0.000000374387, ‖∇f‖ = 6.6380e-04, step size = 9.84e-02
+[ Info: GD: iter  286: f = 0.000000356614, ‖∇f‖ = 5.8645e-04, step size = 8.07e-02
+[ Info: GD: iter  287: f = 0.000000339684, ‖∇f‖ = 6.3228e-04, step size = 9.84e-02
+[ Info: GD: iter  288: f = 0.000000323558, ‖∇f‖ = 5.5861e-04, step size = 8.07e-02
+[ Info: GD: iter  289: f = 0.000000308197, ‖∇f‖ = 6.0227e-04, step size = 9.84e-02
+[ Info: GD: iter  290: f = 0.000000293566, ‖∇f‖ = 5.3209e-04, step size = 8.07e-02
+[ Info: GD: iter  291: f = 0.000000279629, ‖∇f‖ = 5.7367e-04, step size = 9.84e-02
+[ Info: GD: iter  292: f = 0.000000266354, ‖∇f‖ = 5.0683e-04, step size = 8.07e-02
+[ Info: GD: iter  293: f = 0.000000253709, ‖∇f‖ = 5.4644e-04, step size = 9.84e-02
+[ Info: GD: iter  294: f = 0.000000241665, ‖∇f‖ = 4.8277e-04, step size = 8.07e-02
+[ Info: GD: iter  295: f = 0.000000230192, ‖∇f‖ = 5.2050e-04, step size = 9.84e-02
+[ Info: GD: iter  296: f = 0.000000219264, ‖∇f‖ = 4.5985e-04, step size = 8.07e-02
+[ Info: GD: iter  297: f = 0.000000208855, ‖∇f‖ = 4.9579e-04, step size = 9.84e-02
+[ Info: GD: iter  298: f = 0.000000198940, ‖∇f‖ = 4.3802e-04, step size = 8.07e-02
+[ Info: GD: iter  299: f = 0.000000189495, ‖∇f‖ = 4.7225e-04, step size = 9.84e-02
+[ Info: GD: iter  300: f = 0.000000180499, ‖∇f‖ = 4.1723e-04, step size = 8.07e-02
+[ Info: GD: iter  301: f = 0.000000171930, ‖∇f‖ = 4.4983e-04, step size = 9.84e-02
+[ Info: GD: iter  302: f = 0.000000163768, ‖∇f‖ = 3.9742e-04, step size = 8.07e-02
+[ Info: GD: iter  303: f = 0.000000155993, ‖∇f‖ = 4.2848e-04, step size = 9.84e-02
+[ Info: GD: iter  304: f = 0.000000148588, ‖∇f‖ = 3.7855e-04, step size = 8.07e-02
+[ Info: GD: iter  305: f = 0.000000141534, ‖∇f‖ = 4.0814e-04, step size = 9.84e-02
+[ Info: GD: iter  306: f = 0.000000134815, ‖∇f‖ = 3.6058e-04, step size = 8.07e-02
+[ Info: GD: iter  307: f = 0.000000128414, ‖∇f‖ = 3.8876e-04, step size = 9.84e-02
+[ Info: GD: iter  308: f = 0.000000122318, ‖∇f‖ = 3.4346e-04, step size = 8.07e-02
+[ Info: GD: iter  309: f = 0.000000116511, ‖∇f‖ = 3.7030e-04, step size = 9.84e-02
+[ Info: GD: iter  310: f = 0.000000110980, ‖∇f‖ = 3.2716e-04, step size = 8.07e-02
+[ Info: GD: iter  311: f = 0.000000105711, ‖∇f‖ = 3.5272e-04, step size = 9.84e-02
+[ Info: GD: iter  312: f = 0.000000100693, ‖∇f‖ = 3.1163e-04, step size = 8.07e-02
+[ Info: GD: iter  313: f = 0.000000095913, ‖∇f‖ = 3.3598e-04, step size = 9.84e-02
+[ Info: GD: iter  314: f = 0.000000091359, ‖∇f‖ = 2.9683e-04, step size = 8.07e-02
+[ Info: GD: iter  315: f = 0.000000087022, ‖∇f‖ = 3.2003e-04, step size = 9.84e-02
+[ Info: GD: iter  316: f = 0.000000082891, ‖∇f‖ = 2.8274e-04, step size = 8.07e-02
+[ Info: GD: iter  317: f = 0.000000078956, ‖∇f‖ = 3.0484e-04, step size = 9.84e-02
+[ Info: GD: iter  318: f = 0.000000075207, ‖∇f‖ = 2.6932e-04, step size = 8.07e-02
+[ Info: GD: iter  319: f = 0.000000071637, ‖∇f‖ = 2.9036e-04, step size = 9.84e-02
+[ Info: GD: iter  320: f = 0.000000068236, ‖∇f‖ = 2.5653e-04, step size = 8.07e-02
+[ Info: GD: iter  321: f = 0.000000064997, ‖∇f‖ = 2.7658e-04, step size = 9.84e-02
+[ Info: GD: iter  322: f = 0.000000061911, ‖∇f‖ = 2.4435e-04, step size = 8.07e-02
+[ Info: GD: iter  323: f = 0.000000058972, ‖∇f‖ = 2.6345e-04, step size = 9.84e-02
+[ Info: GD: iter  324: f = 0.000000056172, ‖∇f‖ = 2.3275e-04, step size = 8.07e-02
+[ Info: GD: iter  325: f = 0.000000053506, ‖∇f‖ = 2.5094e-04, step size = 9.84e-02
+[ Info: GD: iter  326: f = 0.000000050965, ‖∇f‖ = 2.2170e-04, step size = 8.07e-02
+[ Info: GD: iter  327: f = 0.000000048546, ‖∇f‖ = 2.3903e-04, step size = 9.84e-02
+[ Info: GD: iter  328: f = 0.000000046241, ‖∇f‖ = 2.1118e-04, step size = 8.07e-02
+[ Info: GD: iter  329: f = 0.000000044046, ‖∇f‖ = 2.2768e-04, step size = 9.84e-02
+[ Info: GD: iter  330: f = 0.000000041955, ‖∇f‖ = 2.0115e-04, step size = 8.07e-02
+[ Info: GD: iter  331: f = 0.000000039963, ‖∇f‖ = 2.1687e-04, step size = 9.84e-02
+[ Info: GD: iter  332: f = 0.000000038066, ‖∇f‖ = 1.9160e-04, step size = 8.07e-02
+[ Info: GD: iter  333: f = 0.000000036259, ‖∇f‖ = 2.0658e-04, step size = 9.84e-02
+[ Info: GD: iter  334: f = 0.000000034537, ‖∇f‖ = 1.8251e-04, step size = 8.07e-02
+[ Info: GD: iter  335: f = 0.000000032898, ‖∇f‖ = 1.9677e-04, step size = 9.84e-02
+[ Info: GD: iter  336: f = 0.000000031336, ‖∇f‖ = 1.7384e-04, step size = 8.07e-02
+[ Info: GD: iter  337: f = 0.000000029848, ‖∇f‖ = 1.8743e-04, step size = 9.84e-02
+[ Info: GD: iter  338: f = 0.000000028431, ‖∇f‖ = 1.6559e-04, step size = 8.07e-02
+[ Info: GD: iter  339: f = 0.000000027082, ‖∇f‖ = 1.7853e-04, step size = 9.84e-02
+[ Info: GD: iter  340: f = 0.000000025796, ‖∇f‖ = 1.5773e-04, step size = 8.07e-02
+[ Info: GD: iter  341: f = 0.000000024571, ‖∇f‖ = 1.7005e-04, step size = 9.84e-02
+[ Info: GD: iter  342: f = 0.000000023405, ‖∇f‖ = 1.5024e-04, step size = 8.07e-02
+[ Info: GD: iter  343: f = 0.000000022294, ‖∇f‖ = 1.6198e-04, step size = 9.84e-02
+[ Info: GD: iter  344: f = 0.000000021235, ‖∇f‖ = 1.4311e-04, step size = 8.07e-02
+[ Info: GD: iter  345: f = 0.000000020227, ‖∇f‖ = 1.5429e-04, step size = 9.84e-02
+[ Info: GD: iter  346: f = 0.000000019267, ‖∇f‖ = 1.3631e-04, step size = 8.07e-02
+[ Info: GD: iter  347: f = 0.000000018352, ‖∇f‖ = 1.4697e-04, step size = 9.84e-02
+[ Info: GD: iter  348: f = 0.000000017481, ‖∇f‖ = 1.2984e-04, step size = 8.07e-02
+[ Info: GD: iter  349: f = 0.000000016651, ‖∇f‖ = 1.3999e-04, step size = 9.84e-02
+[ Info: GD: iter  350: f = 0.000000015861, ‖∇f‖ = 1.2368e-04, step size = 8.07e-02
+[ Info: GD: iter  351: f = 0.000000015108, ‖∇f‖ = 1.3334e-04, step size = 9.84e-02
+[ Info: GD: iter  352: f = 0.000000014390, ‖∇f‖ = 1.1781e-04, step size = 8.07e-02
+[ Info: GD: iter  353: f = 0.000000013707, ‖∇f‖ = 1.2701e-04, step size = 9.84e-02
+[ Info: GD: iter  354: f = 0.000000013057, ‖∇f‖ = 1.1221e-04, step size = 8.07e-02
+[ Info: GD: iter  355: f = 0.000000012437, ‖∇f‖ = 1.2098e-04, step size = 9.84e-02
+[ Info: GD: iter  356: f = 0.000000011846, ‖∇f‖ = 1.0689e-04, step size = 8.07e-02
+[ Info: GD: iter  357: f = 0.000000011284, ‖∇f‖ = 1.1524e-04, step size = 9.84e-02
+[ Info: GD: iter  358: f = 0.000000010748, ‖∇f‖ = 1.0181e-04, step size = 8.07e-02
+[ Info: GD: iter  359: f = 0.000000010238, ‖∇f‖ = 1.0977e-04, step size = 9.84e-02
+[ Info: GD: iter  360: f = 0.000000009752, ‖∇f‖ = 9.6979e-05, step size = 8.07e-02
+[ Info: GD: iter  361: f = 0.000000009289, ‖∇f‖ = 1.0456e-04, step size = 9.84e-02
+[ Info: GD: iter  362: f = 0.000000008848, ‖∇f‖ = 9.2375e-05, step size = 8.07e-02
+[ Info: GD: iter  363: f = 0.000000008428, ‖∇f‖ = 9.9594e-05, step size = 9.84e-02
+[ Info: GD: iter  364: f = 0.000000008028, ‖∇f‖ = 8.7990e-05, step size = 8.07e-02
+[ Info: GD: iter  365: f = 0.000000007647, ‖∇f‖ = 9.4866e-05, step size = 9.84e-02
+[ Info: GD: iter  366: f = 0.000000007284, ‖∇f‖ = 8.3813e-05, step size = 8.07e-02
+[ Info: GD: iter  367: f = 0.000000006938, ‖∇f‖ = 9.0363e-05, step size = 9.84e-02
+[ Info: GD: iter  368: f = 0.000000006609, ‖∇f‖ = 7.9834e-05, step size = 8.07e-02
+[ Info: GD: iter  369: f = 0.000000006295, ‖∇f‖ = 8.6073e-05, step size = 9.84e-02
+[ Info: GD: iter  370: f = 0.000000005996, ‖∇f‖ = 7.6044e-05, step size = 8.07e-02
+[ Info: GD: iter  371: f = 0.000000005711, ‖∇f‖ = 8.1987e-05, step size = 9.84e-02
+[ Info: GD: iter  372: f = 0.000000005440, ‖∇f‖ = 7.2434e-05, step size = 8.07e-02
+[ Info: GD: iter  373: f = 0.000000005182, ‖∇f‖ = 7.8094e-05, step size = 9.84e-02
+[ Info: GD: iter  374: f = 0.000000004936, ‖∇f‖ = 6.8995e-05, step size = 8.07e-02
+[ Info: GD: iter  375: f = 0.000000004702, ‖∇f‖ = 7.4387e-05, step size = 9.84e-02
+[ Info: GD: iter  376: f = 0.000000004478, ‖∇f‖ = 6.5720e-05, step size = 8.07e-02
+[ Info: GD: iter  377: f = 0.000000004266, ‖∇f‖ = 7.0855e-05, step size = 9.84e-02
+[ Info: GD: iter  378: f = 0.000000004063, ‖∇f‖ = 6.2600e-05, step size = 8.07e-02
+[ Info: GD: iter  379: f = 0.000000003870, ‖∇f‖ = 6.7492e-05, step size = 9.84e-02
+[ Info: GD: iter  380: f = 0.000000003687, ‖∇f‖ = 5.9628e-05, step size = 8.07e-02
+[ Info: GD: iter  381: f = 0.000000003512, ‖∇f‖ = 6.4288e-05, step size = 9.84e-02
+[ Info: GD: iter  382: f = 0.000000003345, ‖∇f‖ = 5.6797e-05, step size = 8.07e-02
+[ Info: GD: iter  383: f = 0.000000003186, ‖∇f‖ = 6.1236e-05, step size = 9.84e-02
+[ Info: GD: iter  384: f = 0.000000003035, ‖∇f‖ = 5.4101e-05, step size = 8.07e-02
+[ Info: GD: iter  385: f = 0.000000002891, ‖∇f‖ = 5.8329e-05, step size = 9.84e-02
+[ Info: GD: iter  386: f = 0.000000002754, ‖∇f‖ = 5.1532e-05, step size = 8.07e-02
+[ Info: GD: iter  387: f = 0.000000002623, ‖∇f‖ = 5.5559e-05, step size = 9.84e-02
+[ Info: GD: iter  388: f = 0.000000002498, ‖∇f‖ = 4.9086e-05, step size = 8.07e-02
+[ Info: GD: iter  389: f = 0.000000002380, ‖∇f‖ = 5.2922e-05, step size = 9.84e-02
+[ Info: GD: iter  390: f = 0.000000002267, ‖∇f‖ = 4.6756e-05, step size = 8.07e-02
+[ Info: GD: iter  391: f = 0.000000002159, ‖∇f‖ = 5.0409e-05, step size = 9.84e-02
+[ Info: GD: iter  392: f = 0.000000002057, ‖∇f‖ = 4.4536e-05, step size = 8.07e-02
+[ Info: GD: iter  393: f = 0.000000001959, ‖∇f‖ = 4.8016e-05, step size = 9.84e-02
+[ Info: GD: iter  394: f = 0.000000001866, ‖∇f‖ = 4.2422e-05, step size = 8.07e-02
+[ Info: GD: iter  395: f = 0.000000001777, ‖∇f‖ = 4.5737e-05, step size = 9.84e-02
+[ Info: GD: iter  396: f = 0.000000001693, ‖∇f‖ = 4.0408e-05, step size = 8.07e-02
+[ Info: GD: iter  397: f = 0.000000001613, ‖∇f‖ = 4.3566e-05, step size = 9.84e-02
+[ Info: GD: iter  398: f = 0.000000001536, ‖∇f‖ = 3.8489e-05, step size = 8.07e-02
+[ Info: GD: iter  399: f = 0.000000001463, ‖∇f‖ = 4.1497e-05, step size = 9.84e-02
+[ Info: GD: iter  400: f = 0.000000001394, ‖∇f‖ = 3.6662e-05, step size = 8.07e-02
+[ Info: GD: iter  401: f = 0.000000001328, ‖∇f‖ = 3.9527e-05, step size = 9.84e-02
+[ Info: GD: iter  402: f = 0.000000001265, ‖∇f‖ = 3.4922e-05, step size = 8.07e-02
+[ Info: GD: iter  403: f = 0.000000001204, ‖∇f‖ = 3.7651e-05, step size = 9.84e-02
+[ Info: GD: iter  404: f = 0.000000001147, ‖∇f‖ = 3.3264e-05, step size = 8.07e-02
+[ Info: GD: iter  405: f = 0.000000001093, ‖∇f‖ = 3.5863e-05, step size = 9.84e-02
+[ Info: GD: iter  406: f = 0.000000001041, ‖∇f‖ = 3.1685e-05, step size = 8.07e-02
+[ Info: GD: iter  407: f = 0.000000000992, ‖∇f‖ = 3.4161e-05, step size = 9.84e-02
+[ Info: GD: iter  408: f = 0.000000000944, ‖∇f‖ = 3.0180e-05, step size = 8.07e-02
+[ Info: GD: iter  409: f = 0.000000000900, ‖∇f‖ = 3.2539e-05, step size = 9.84e-02
+[ Info: GD: iter  410: f = 0.000000000857, ‖∇f‖ = 2.8748e-05, step size = 8.07e-02
+[ Info: GD: iter  411: f = 0.000000000816, ‖∇f‖ = 3.0994e-05, step size = 9.84e-02
+[ Info: GD: iter  412: f = 0.000000000777, ‖∇f‖ = 2.7383e-05, step size = 8.07e-02
+[ Info: GD: iter  413: f = 0.000000000741, ‖∇f‖ = 2.9523e-05, step size = 9.84e-02
+[ Info: GD: iter  414: f = 0.000000000705, ‖∇f‖ = 2.6083e-05, step size = 8.07e-02
+[ Info: GD: iter  415: f = 0.000000000672, ‖∇f‖ = 2.8121e-05, step size = 9.84e-02
+[ Info: GD: iter  416: f = 0.000000000640, ‖∇f‖ = 2.4845e-05, step size = 8.07e-02
+[ Info: GD: iter  417: f = 0.000000000610, ‖∇f‖ = 2.6786e-05, step size = 9.84e-02
+[ Info: GD: iter  418: f = 0.000000000581, ‖∇f‖ = 2.3665e-05, step size = 8.07e-02
+[ Info: GD: iter  419: f = 0.000000000553, ‖∇f‖ = 2.5515e-05, step size = 9.84e-02
+[ Info: GD: iter  420: f = 0.000000000527, ‖∇f‖ = 2.2542e-05, step size = 8.07e-02
+[ Info: GD: iter  421: f = 0.000000000502, ‖∇f‖ = 2.4303e-05, step size = 9.84e-02
+[ Info: GD: iter  422: f = 0.000000000478, ‖∇f‖ = 2.1472e-05, step size = 8.07e-02
+[ Info: GD: iter  423: f = 0.000000000455, ‖∇f‖ = 2.3150e-05, step size = 9.84e-02
+[ Info: GD: iter  424: f = 0.000000000434, ‖∇f‖ = 2.0452e-05, step size = 8.07e-02
+[ Info: GD: iter  425: f = 0.000000000413, ‖∇f‖ = 2.2051e-05, step size = 9.84e-02
+[ Info: GD: iter  426: f = 0.000000000394, ‖∇f‖ = 1.9481e-05, step size = 8.07e-02
+[ Info: GD: iter  427: f = 0.000000000375, ‖∇f‖ = 2.1004e-05, step size = 9.84e-02
+[ Info: GD: iter  428: f = 0.000000000357, ‖∇f‖ = 1.8556e-05, step size = 8.07e-02
+[ Info: GD: iter  429: f = 0.000000000340, ‖∇f‖ = 2.0007e-05, step size = 9.84e-02
+[ Info: GD: iter  430: f = 0.000000000324, ‖∇f‖ = 1.7676e-05, step size = 8.07e-02
+[ Info: GD: iter  431: f = 0.000000000309, ‖∇f‖ = 1.9057e-05, step size = 9.84e-02
+[ Info: GD: iter  432: f = 0.000000000294, ‖∇f‖ = 1.6836e-05, step size = 8.07e-02
+[ Info: GD: iter  433: f = 0.000000000280, ‖∇f‖ = 1.8152e-05, step size = 9.84e-02
+[ Info: GD: iter  434: f = 0.000000000267, ‖∇f‖ = 1.6037e-05, step size = 8.07e-02
+[ Info: GD: iter  435: f = 0.000000000254, ‖∇f‖ = 1.7290e-05, step size = 9.84e-02
+[ Info: GD: iter  436: f = 0.000000000242, ‖∇f‖ = 1.5276e-05, step size = 8.07e-02
+[ Info: GD: iter  437: f = 0.000000000230, ‖∇f‖ = 1.6470e-05, step size = 9.84e-02
+[ Info: GD: iter  438: f = 0.000000000220, ‖∇f‖ = 1.4551e-05, step size = 8.07e-02
+[ Info: GD: iter  439: f = 0.000000000209, ‖∇f‖ = 1.5688e-05, step size = 9.84e-02
+[ Info: GD: iter  440: f = 0.000000000199, ‖∇f‖ = 1.3860e-05, step size = 8.07e-02
+[ Info: GD: iter  441: f = 0.000000000190, ‖∇f‖ = 1.4943e-05, step size = 9.84e-02
+[ Info: GD: iter  442: f = 0.000000000181, ‖∇f‖ = 1.3202e-05, step size = 8.07e-02
+[ Info: GD: iter  443: f = 0.000000000172, ‖∇f‖ = 1.4234e-05, step size = 9.84e-02
+[ Info: GD: iter  444: f = 0.000000000164, ‖∇f‖ = 1.2575e-05, step size = 8.07e-02
+[ Info: GD: iter  445: f = 0.000000000156, ‖∇f‖ = 1.3558e-05, step size = 9.84e-02
+[ Info: GD: iter  446: f = 0.000000000149, ‖∇f‖ = 1.1978e-05, step size = 8.07e-02
+[ Info: GD: iter  447: f = 0.000000000142, ‖∇f‖ = 1.2914e-05, step size = 9.84e-02
+[ Info: GD: iter  448: f = 0.000000000135, ‖∇f‖ = 1.1409e-05, step size = 8.07e-02
+[ Info: GD: iter  449: f = 0.000000000129, ‖∇f‖ = 1.2301e-05, step size = 9.84e-02
+[ Info: GD: iter  450: f = 0.000000000122, ‖∇f‖ = 1.0868e-05, step size = 8.07e-02
+[ Info: GD: iter  451: f = 0.000000000117, ‖∇f‖ = 1.1717e-05, step size = 9.84e-02
+[ Info: GD: iter  452: f = 0.000000000111, ‖∇f‖ = 1.0352e-05, step size = 8.07e-02
+[ Info: GD: iter  453: f = 0.000000000106, ‖∇f‖ = 1.1161e-05, step size = 9.84e-02
+[ Info: GD: iter  454: f = 0.000000000101, ‖∇f‖ = 9.8604e-06, step size = 8.07e-02
+[ Info: GD: iter  455: f = 0.000000000096, ‖∇f‖ = 1.0631e-05, step size = 9.84e-02
+[ Info: GD: iter  456: f = 0.000000000091, ‖∇f‖ = 9.3923e-06, step size = 8.07e-02
+[ Info: GD: iter  457: f = 0.000000000087, ‖∇f‖ = 1.0126e-05, step size = 9.84e-02
+[ Info: GD: iter  458: f = 0.000000000083, ‖∇f‖ = 8.9464e-06, step size = 8.07e-02
+[ Info: GD: iter  459: f = 0.000000000079, ‖∇f‖ = 9.6456e-06, step size = 9.84e-02
+[ Info: GD: iter  460: f = 0.000000000075, ‖∇f‖ = 8.5217e-06, step size = 8.07e-02
+[ Info: GD: iter  461: f = 0.000000000072, ‖∇f‖ = 9.1877e-06, step size = 9.84e-02
+[ Info: GD: iter  462: f = 0.000000000068, ‖∇f‖ = 8.1171e-06, step size = 8.07e-02
+[ Info: GD: iter  463: f = 0.000000000065, ‖∇f‖ = 8.7515e-06, step size = 9.84e-02
+[ Info: GD: iter  464: f = 0.000000000062, ‖∇f‖ = 7.7318e-06, step size = 8.07e-02
+[ Info: GD: iter  465: f = 0.000000000059, ‖∇f‖ = 8.3360e-06, step size = 9.84e-02
+[ Info: GD: iter  466: f = 0.000000000056, ‖∇f‖ = 7.3647e-06, step size = 8.07e-02
+[ Info: GD: iter  467: f = 0.000000000054, ‖∇f‖ = 7.9403e-06, step size = 9.84e-02
+[ Info: GD: iter  468: f = 0.000000000051, ‖∇f‖ = 7.0151e-06, step size = 8.07e-02
+[ Info: GD: iter  469: f = 0.000000000049, ‖∇f‖ = 7.5633e-06, step size = 9.84e-02
+[ Info: GD: iter  470: f = 0.000000000046, ‖∇f‖ = 6.6821e-06, step size = 8.07e-02
+[ Info: GD: iter  471: f = 0.000000000044, ‖∇f‖ = 7.2043e-06, step size = 9.84e-02
+[ Info: GD: iter  472: f = 0.000000000042, ‖∇f‖ = 6.3648e-06, step size = 8.07e-02
+[ Info: GD: iter  473: f = 0.000000000040, ‖∇f‖ = 6.8622e-06, step size = 9.84e-02
+[ Info: GD: iter  474: f = 0.000000000038, ‖∇f‖ = 6.0627e-06, step size = 8.07e-02
+[ Info: GD: iter  475: f = 0.000000000036, ‖∇f‖ = 6.5365e-06, step size = 9.84e-02
+[ Info: GD: iter  476: f = 0.000000000035, ‖∇f‖ = 5.7749e-06, step size = 8.07e-02
+[ Info: GD: iter  477: f = 0.000000000033, ‖∇f‖ = 6.2262e-06, step size = 9.84e-02
+[ Info: GD: iter  478: f = 0.000000000031, ‖∇f‖ = 5.5007e-06, step size = 8.07e-02
+[ Info: GD: iter  479: f = 0.000000000030, ‖∇f‖ = 5.9306e-06, step size = 9.84e-02
+[ Info: GD: iter  480: f = 0.000000000028, ‖∇f‖ = 5.2396e-06, step size = 8.07e-02
+[ Info: GD: iter  481: f = 0.000000000027, ‖∇f‖ = 5.6490e-06, step size = 9.84e-02
+[ Info: GD: iter  482: f = 0.000000000026, ‖∇f‖ = 4.9908e-06, step size = 8.07e-02
+[ Info: GD: iter  483: f = 0.000000000025, ‖∇f‖ = 5.3809e-06, step size = 9.84e-02
+[ Info: GD: iter  484: f = 0.000000000023, ‖∇f‖ = 4.7539e-06, step size = 8.07e-02
+[ Info: GD: iter  485: f = 0.000000000022, ‖∇f‖ = 5.1254e-06, step size = 9.84e-02
+[ Info: GD: iter  486: f = 0.000000000021, ‖∇f‖ = 4.5282e-06, step size = 8.07e-02
+[ Info: GD: iter  487: f = 0.000000000020, ‖∇f‖ = 4.8821e-06, step size = 9.84e-02
+[ Info: GD: iter  488: f = 0.000000000019, ‖∇f‖ = 4.3132e-06, step size = 8.07e-02
+[ Info: GD: iter  489: f = 0.000000000018, ‖∇f‖ = 4.6503e-06, step size = 9.84e-02
+[ Info: GD: iter  490: f = 0.000000000018, ‖∇f‖ = 4.1085e-06, step size = 8.07e-02
+[ Info: GD: iter  491: f = 0.000000000017, ‖∇f‖ = 4.4295e-06, step size = 9.84e-02
+[ Info: GD: iter  492: f = 0.000000000016, ‖∇f‖ = 3.9134e-06, step size = 8.07e-02
+[ Info: GD: iter  493: f = 0.000000000015, ‖∇f‖ = 4.2193e-06, step size = 9.84e-02
+[ Info: GD: iter  494: f = 0.000000000014, ‖∇f‖ = 3.7276e-06, step size = 8.07e-02
+[ Info: GD: iter  495: f = 0.000000000014, ‖∇f‖ = 4.0189e-06, step size = 9.84e-02
+[ Info: GD: iter  496: f = 0.000000000013, ‖∇f‖ = 3.5507e-06, step size = 8.07e-02
+[ Info: GD: iter  497: f = 0.000000000012, ‖∇f‖ = 3.8282e-06, step size = 9.84e-02
+[ Info: GD: iter  498: f = 0.000000000012, ‖∇f‖ = 3.3821e-06, step size = 8.07e-02
+[ Info: GD: iter  499: f = 0.000000000011, ‖∇f‖ = 3.6464e-06, step size = 9.84e-02
+[ Info: GD: iter  500: f = 0.000000000011, ‖∇f‖ = 3.2216e-06, step size = 8.07e-02
+[ Info: GD: iter  501: f = 0.000000000010, ‖∇f‖ = 3.4733e-06, step size = 9.84e-02
+[ Info: GD: iter  502: f = 0.000000000010, ‖∇f‖ = 3.0686e-06, step size = 8.07e-02
+[ Info: GD: iter  503: f = 0.000000000009, ‖∇f‖ = 3.3084e-06, step size = 9.84e-02
+[ Info: GD: iter  504: f = 0.000000000009, ‖∇f‖ = 2.9229e-06, step size = 8.07e-02
+[ Info: GD: iter  505: f = 0.000000000008, ‖∇f‖ = 3.1514e-06, step size = 9.84e-02
+[ Info: GD: iter  506: f = 0.000000000008, ‖∇f‖ = 2.7842e-06, step size = 8.07e-02
+[ Info: GD: iter  507: f = 0.000000000008, ‖∇f‖ = 3.0017e-06, step size = 9.84e-02
+[ Info: GD: iter  508: f = 0.000000000007, ‖∇f‖ = 2.6520e-06, step size = 8.07e-02
+[ Info: GD: iter  509: f = 0.000000000007, ‖∇f‖ = 2.8592e-06, step size = 9.84e-02
+[ Info: GD: iter  510: f = 0.000000000007, ‖∇f‖ = 2.5261e-06, step size = 8.07e-02
+[ Info: GD: iter  511: f = 0.000000000006, ‖∇f‖ = 2.7235e-06, step size = 9.84e-02
+[ Info: GD: iter  512: f = 0.000000000006, ‖∇f‖ = 2.4062e-06, step size = 8.07e-02
+[ Info: GD: iter  513: f = 0.000000000006, ‖∇f‖ = 2.5942e-06, step size = 9.84e-02
+[ Info: GD: iter  514: f = 0.000000000005, ‖∇f‖ = 2.2919e-06, step size = 8.07e-02
+[ Info: GD: iter  515: f = 0.000000000005, ‖∇f‖ = 2.4711e-06, step size = 9.84e-02
+[ Info: GD: iter  516: f = 0.000000000005, ‖∇f‖ = 2.1831e-06, step size = 8.07e-02
+[ Info: GD: iter  517: f = 0.000000000005, ‖∇f‖ = 2.3537e-06, step size = 9.84e-02
+[ Info: GD: iter  518: f = 0.000000000004, ‖∇f‖ = 2.0795e-06, step size = 8.07e-02
+[ Info: GD: iter  519: f = 0.000000000004, ‖∇f‖ = 2.2420e-06, step size = 9.84e-02
+[ Info: GD: iter  520: f = 0.000000000004, ‖∇f‖ = 1.9808e-06, step size = 8.07e-02
+[ Info: GD: iter  521: f = 0.000000000004, ‖∇f‖ = 2.1356e-06, step size = 9.84e-02
+[ Info: GD: iter  522: f = 0.000000000004, ‖∇f‖ = 1.8867e-06, step size = 8.07e-02
+[ Info: GD: iter  523: f = 0.000000000004, ‖∇f‖ = 2.0342e-06, step size = 9.84e-02
+[ Info: GD: iter  524: f = 0.000000000003, ‖∇f‖ = 1.7972e-06, step size = 8.07e-02
+[ Info: GD: iter  525: f = 0.000000000003, ‖∇f‖ = 1.9376e-06, step size = 9.84e-02
+[ Info: GD: iter  526: f = 0.000000000003, ‖∇f‖ = 1.7118e-06, step size = 8.07e-02
+[ Info: GD: iter  527: f = 0.000000000003, ‖∇f‖ = 1.8456e-06, step size = 9.84e-02
+[ Info: GD: iter  528: f = 0.000000000003, ‖∇f‖ = 1.6306e-06, step size = 8.07e-02
+[ Info: GD: iter  529: f = 0.000000000003, ‖∇f‖ = 1.7580e-06, step size = 9.84e-02
+[ Info: GD: iter  530: f = 0.000000000003, ‖∇f‖ = 1.5532e-06, step size = 8.07e-02
+[ Info: GD: iter  531: f = 0.000000000002, ‖∇f‖ = 1.6745e-06, step size = 9.84e-02
+[ Info: GD: iter  532: f = 0.000000000002, ‖∇f‖ = 1.4794e-06, step size = 8.07e-02
+[ Info: GD: iter  533: f = 0.000000000002, ‖∇f‖ = 1.5950e-06, step size = 9.84e-02
+[ Info: GD: iter  534: f = 0.000000000002, ‖∇f‖ = 1.4092e-06, step size = 8.07e-02
+[ Info: GD: iter  535: f = 0.000000000002, ‖∇f‖ = 1.5193e-06, step size = 9.84e-02
+[ Info: GD: iter  536: f = 0.000000000002, ‖∇f‖ = 1.3423e-06, step size = 8.07e-02
+[ Info: GD: iter  537: f = 0.000000000002, ‖∇f‖ = 1.4472e-06, step size = 9.84e-02
+[ Info: GD: iter  538: f = 0.000000000002, ‖∇f‖ = 1.2786e-06, step size = 8.07e-02
+[ Info: GD: iter  539: f = 0.000000000002, ‖∇f‖ = 1.3785e-06, step size = 9.84e-02
+[ Info: GD: iter  540: f = 0.000000000002, ‖∇f‖ = 1.2179e-06, step size = 8.07e-02
+[ Info: GD: iter  541: f = 0.000000000001, ‖∇f‖ = 1.3131e-06, step size = 9.84e-02
+[ Info: GD: iter  542: f = 0.000000000001, ‖∇f‖ = 1.1601e-06, step size = 8.07e-02
+[ Info: GD: iter  543: f = 0.000000000001, ‖∇f‖ = 1.2507e-06, step size = 9.84e-02
+[ Info: GD: iter  544: f = 0.000000000001, ‖∇f‖ = 1.1050e-06, step size = 8.07e-02
+[ Info: GD: iter  545: f = 0.000000000001, ‖∇f‖ = 1.1913e-06, step size = 9.84e-02
+[ Info: GD: iter  546: f = 0.000000000001, ‖∇f‖ = 1.0525e-06, step size = 8.07e-02
+[ Info: GD: iter  547: f = 0.000000000001, ‖∇f‖ = 1.1348e-06, step size = 9.84e-02
+[ Info: GD: iter  548: f = 0.000000000001, ‖∇f‖ = 1.0026e-06, step size = 8.07e-02
+[ Info: GD: iter  549: f = 0.000000000001, ‖∇f‖ = 1.0809e-06, step size = 9.84e-02
+[ Info: GD: iter  550: f = 0.000000000001, ‖∇f‖ = 9.5497e-07, step size = 8.07e-02
+[ Info: GD: iter  551: f = 0.000000000001, ‖∇f‖ = 1.0296e-06, step size = 9.84e-02
+[ Info: GD: iter  552: f = 0.000000000001, ‖∇f‖ = 9.0963e-07, step size = 8.07e-02
+[ Info: GD: iter  553: f = 0.000000000001, ‖∇f‖ = 9.8072e-07, step size = 9.84e-02
+[ Info: GD: iter  554: f = 0.000000000001, ‖∇f‖ = 8.6645e-07, step size = 8.07e-02
+[ Info: GD: iter  555: f = 0.000000000001, ‖∇f‖ = 9.3416e-07, step size = 9.84e-02
+[ Info: GD: iter  556: f = 0.000000000001, ‖∇f‖ = 8.2531e-07, step size = 8.07e-02
+[ Info: GD: iter  557: f = 0.000000000001, ‖∇f‖ = 8.8981e-07, step size = 9.84e-02
+[ Info: GD: iter  558: f = 0.000000000001, ‖∇f‖ = 7.8613e-07, step size = 8.07e-02
+[ Info: GD: iter  559: f = 0.000000000001, ‖∇f‖ = 8.4757e-07, step size = 9.84e-02
+[ Info: GD: iter  560: f = 0.000000000001, ‖∇f‖ = 7.4881e-07, step size = 8.07e-02
+[ Info: GD: iter  561: f = 0.000000000001, ‖∇f‖ = 8.0733e-07, step size = 9.84e-02
+[ Info: GD: iter  562: f = 0.000000000001, ‖∇f‖ = 7.1326e-07, step size = 8.07e-02
+[ Info: GD: iter  563: f = 0.000000000001, ‖∇f‖ = 7.6900e-07, step size = 9.84e-02
+[ Info: GD: iter  564: f = 0.000000000000, ‖∇f‖ = 6.7940e-07, step size = 8.07e-02
+[ Info: GD: iter  565: f = 0.000000000000, ‖∇f‖ = 7.3250e-07, step size = 9.84e-02
+[ Info: GD: iter  566: f = 0.000000000000, ‖∇f‖ = 6.4715e-07, step size = 8.07e-02
+[ Info: GD: iter  567: f = 0.000000000000, ‖∇f‖ = 6.9772e-07, step size = 9.84e-02
+[ Info: GD: iter  568: f = 0.000000000000, ‖∇f‖ = 6.1643e-07, step size = 8.07e-02
+[ Info: GD: iter  569: f = 0.000000000000, ‖∇f‖ = 6.6460e-07, step size = 9.84e-02
+[ Info: GD: iter  570: f = 0.000000000000, ‖∇f‖ = 5.8716e-07, step size = 8.07e-02
+[ Info: GD: iter  571: f = 0.000000000000, ‖∇f‖ = 6.3305e-07, step size = 9.84e-02
+[ Info: GD: iter  572: f = 0.000000000000, ‖∇f‖ = 5.5929e-07, step size = 8.07e-02
+[ Info: GD: iter  573: f = 0.000000000000, ‖∇f‖ = 6.0299e-07, step size = 9.84e-02
+[ Info: GD: iter  574: f = 0.000000000000, ‖∇f‖ = 5.3274e-07, step size = 8.07e-02
+[ Info: GD: iter  575: f = 0.000000000000, ‖∇f‖ = 5.7437e-07, step size = 9.84e-02
+[ Info: GD: iter  576: f = 0.000000000000, ‖∇f‖ = 5.0744e-07, step size = 8.07e-02
+[ Info: GD: iter  577: f = 0.000000000000, ‖∇f‖ = 5.4710e-07, step size = 9.84e-02
+[ Info: GD: iter  578: f = 0.000000000000, ‖∇f‖ = 4.8335e-07, step size = 8.07e-02
+[ Info: GD: iter  579: f = 0.000000000000, ‖∇f‖ = 5.2113e-07, step size = 9.84e-02
+[ Info: GD: iter  580: f = 0.000000000000, ‖∇f‖ = 4.6041e-07, step size = 8.07e-02
+[ Info: GD: iter  581: f = 0.000000000000, ‖∇f‖ = 4.9639e-07, step size = 9.84e-02
+[ Info: GD: iter  582: f = 0.000000000000, ‖∇f‖ = 4.3855e-07, step size = 8.07e-02
+[ Info: GD: iter  583: f = 0.000000000000, ‖∇f‖ = 4.7282e-07, step size = 9.84e-02
+[ Info: GD: iter  584: f = 0.000000000000, ‖∇f‖ = 4.1773e-07, step size = 8.07e-02
+[ Info: GD: iter  585: f = 0.000000000000, ‖∇f‖ = 4.5038e-07, step size = 9.84e-02
+[ Info: GD: iter  586: f = 0.000000000000, ‖∇f‖ = 3.9790e-07, step size = 8.07e-02
+[ Info: GD: iter  587: f = 0.000000000000, ‖∇f‖ = 4.2899e-07, step size = 9.84e-02
+[ Info: GD: iter  588: f = 0.000000000000, ‖∇f‖ = 3.7901e-07, step size = 8.07e-02
+[ Info: GD: iter  589: f = 0.000000000000, ‖∇f‖ = 4.0863e-07, step size = 9.84e-02
+[ Info: GD: iter  590: f = 0.000000000000, ‖∇f‖ = 3.6102e-07, step size = 8.07e-02
+[ Info: GD: iter  591: f = 0.000000000000, ‖∇f‖ = 3.8923e-07, step size = 9.84e-02
+[ Info: GD: iter  592: f = 0.000000000000, ‖∇f‖ = 3.4388e-07, step size = 8.07e-02
+[ Info: GD: iter  593: f = 0.000000000000, ‖∇f‖ = 3.7075e-07, step size = 9.84e-02
+[ Info: GD: iter  594: f = 0.000000000000, ‖∇f‖ = 3.2755e-07, step size = 8.07e-02
+[ Info: GD: iter  595: f = 0.000000000000, ‖∇f‖ = 3.5315e-07, step size = 9.84e-02
+[ Info: GD: iter  596: f = 0.000000000000, ‖∇f‖ = 3.1200e-07, step size = 8.07e-02
+[ Info: GD: iter  597: f = 0.000000000000, ‖∇f‖ = 3.3638e-07, step size = 9.84e-02
+[ Info: GD: iter  598: f = 0.000000000000, ‖∇f‖ = 2.9719e-07, step size = 8.07e-02
+[ Info: GD: iter  599: f = 0.000000000000, ‖∇f‖ = 3.2042e-07, step size = 9.84e-02
+[ Info: GD: iter  600: f = 0.000000000000, ‖∇f‖ = 2.8308e-07, step size = 8.07e-02
+[ Info: GD: iter  601: f = 0.000000000000, ‖∇f‖ = 3.0520e-07, step size = 9.84e-02
+[ Info: GD: iter  602: f = 0.000000000000, ‖∇f‖ = 2.6964e-07, step size = 8.07e-02
+[ Info: GD: iter  603: f = 0.000000000000, ‖∇f‖ = 2.9071e-07, step size = 9.84e-02
+[ Info: GD: iter  604: f = 0.000000000000, ‖∇f‖ = 2.5684e-07, step size = 8.07e-02
+[ Info: GD: iter  605: f = 0.000000000000, ‖∇f‖ = 2.7691e-07, step size = 9.84e-02
+[ Info: GD: iter  606: f = 0.000000000000, ‖∇f‖ = 2.4465e-07, step size = 8.07e-02
+[ Info: GD: iter  607: f = 0.000000000000, ‖∇f‖ = 2.6377e-07, step size = 9.84e-02
+[ Info: GD: iter  608: f = 0.000000000000, ‖∇f‖ = 2.3303e-07, step size = 8.07e-02
+[ Info: GD: iter  609: f = 0.000000000000, ‖∇f‖ = 2.5125e-07, step size = 9.84e-02
+[ Info: GD: iter  610: f = 0.000000000000, ‖∇f‖ = 2.2197e-07, step size = 8.07e-02
+[ Info: GD: iter  611: f = 0.000000000000, ‖∇f‖ = 2.3932e-07, step size = 9.84e-02
+[ Info: GD: iter  612: f = 0.000000000000, ‖∇f‖ = 2.1143e-07, step size = 8.07e-02
+[ Info: GD: iter  613: f = 0.000000000000, ‖∇f‖ = 2.2796e-07, step size = 9.84e-02
+[ Info: GD: iter  614: f = 0.000000000000, ‖∇f‖ = 2.0140e-07, step size = 8.07e-02
+[ Info: GD: iter  615: f = 0.000000000000, ‖∇f‖ = 2.1713e-07, step size = 9.84e-02
+[ Info: GD: iter  616: f = 0.000000000000, ‖∇f‖ = 1.9183e-07, step size = 8.07e-02
+[ Info: GD: iter  617: f = 0.000000000000, ‖∇f‖ = 2.0683e-07, step size = 9.84e-02
+[ Info: GD: iter  618: f = 0.000000000000, ‖∇f‖ = 1.8273e-07, step size = 8.07e-02
+[ Info: GD: iter  619: f = 0.000000000000, ‖∇f‖ = 1.9701e-07, step size = 9.84e-02
+[ Info: GD: iter  620: f = 0.000000000000, ‖∇f‖ = 1.7405e-07, step size = 8.07e-02
+[ Info: GD: iter  621: f = 0.000000000000, ‖∇f‖ = 1.8765e-07, step size = 9.84e-02
+[ Info: GD: iter  622: f = 0.000000000000, ‖∇f‖ = 1.6579e-07, step size = 8.07e-02
+[ Info: GD: iter  623: f = 0.000000000000, ‖∇f‖ = 1.7875e-07, step size = 9.84e-02
+[ Info: GD: iter  624: f = 0.000000000000, ‖∇f‖ = 1.5792e-07, step size = 8.07e-02
+[ Info: GD: iter  625: f = 0.000000000000, ‖∇f‖ = 1.7026e-07, step size = 9.84e-02
+[ Info: GD: iter  626: f = 0.000000000000, ‖∇f‖ = 1.5042e-07, step size = 8.07e-02
+[ Info: GD: iter  627: f = 0.000000000000, ‖∇f‖ = 1.6218e-07, step size = 9.84e-02
+[ Info: GD: iter  628: f = 0.000000000000, ‖∇f‖ = 1.4328e-07, step size = 8.07e-02
+[ Info: GD: iter  629: f = 0.000000000000, ‖∇f‖ = 1.5448e-07, step size = 9.84e-02
+[ Info: GD: iter  630: f = 0.000000000000, ‖∇f‖ = 1.3648e-07, step size = 8.07e-02
+[ Info: GD: iter  631: f = 0.000000000000, ‖∇f‖ = 1.4714e-07, step size = 9.84e-02
+[ Info: GD: iter  632: f = 0.000000000000, ‖∇f‖ = 1.3000e-07, step size = 8.07e-02
+[ Info: GD: iter  633: f = 0.000000000000, ‖∇f‖ = 1.4016e-07, step size = 9.84e-02
+[ Info: GD: iter  634: f = 0.000000000000, ‖∇f‖ = 1.2383e-07, step size = 8.07e-02
+[ Info: GD: iter  635: f = 0.000000000000, ‖∇f‖ = 1.3351e-07, step size = 9.84e-02
+[ Info: GD: iter  636: f = 0.000000000000, ‖∇f‖ = 1.1795e-07, step size = 8.07e-02
+[ Info: GD: iter  637: f = 0.000000000000, ‖∇f‖ = 1.2717e-07, step size = 9.84e-02
+[ Info: GD: iter  638: f = 0.000000000000, ‖∇f‖ = 1.1235e-07, step size = 8.07e-02
+[ Info: GD: iter  639: f = 0.000000000000, ‖∇f‖ = 1.2113e-07, step size = 9.84e-02
+[ Info: GD: iter  640: f = 0.000000000000, ‖∇f‖ = 1.0702e-07, step size = 8.07e-02
+[ Info: GD: iter  641: f = 0.000000000000, ‖∇f‖ = 1.1538e-07, step size = 9.84e-02
+[ Info: GD: iter  642: f = 0.000000000000, ‖∇f‖ = 1.0194e-07, step size = 8.07e-02
+[ Info: GD: iter  643: f = 0.000000000000, ‖∇f‖ = 1.0990e-07, step size = 9.84e-02
+[ Info: GD: iter  644: f = 0.000000000000, ‖∇f‖ = 9.7097e-08, step size = 8.07e-02
+[ Info: GD: iter  645: f = 0.000000000000, ‖∇f‖ = 1.0468e-07, step size = 9.84e-02
+[ Info: GD: iter  646: f = 0.000000000000, ‖∇f‖ = 9.2487e-08, step size = 8.07e-02
+[ Info: GD: iter  647: f = 0.000000000000, ‖∇f‖ = 9.9715e-08, step size = 9.84e-02
+[ Info: GD: iter  648: f = 0.000000000000, ‖∇f‖ = 8.8096e-08, step size = 8.07e-02
+[ Info: GD: iter  649: f = 0.000000000000, ‖∇f‖ = 9.4981e-08, step size = 9.84e-02
+[ Info: GD: iter  650: f = 0.000000000000, ‖∇f‖ = 8.3914e-08, step size = 8.07e-02
+[ Info: GD: iter  651: f = 0.000000000000, ‖∇f‖ = 9.0472e-08, step size = 9.84e-02
+[ Info: GD: iter  652: f = 0.000000000000, ‖∇f‖ = 7.9930e-08, step size = 8.07e-02
+[ Info: GD: iter  653: f = 0.000000000000, ‖∇f‖ = 8.6177e-08, step size = 9.84e-02
+[ Info: GD: iter  654: f = 0.000000000000, ‖∇f‖ = 7.6136e-08, step size = 8.07e-02
+[ Info: GD: iter  655: f = 0.000000000000, ‖∇f‖ = 8.2086e-08, step size = 9.84e-02
+[ Info: GD: iter  656: f = 0.000000000000, ‖∇f‖ = 7.2521e-08, step size = 8.07e-02
+[ Info: GD: iter  657: f = 0.000000000000, ‖∇f‖ = 7.8189e-08, step size = 9.84e-02
+[ Info: GD: iter  658: f = 0.000000000000, ‖∇f‖ = 6.9079e-08, step size = 8.07e-02
+[ Info: GD: iter  659: f = 0.000000000000, ‖∇f‖ = 7.4477e-08, step size = 9.84e-02
+[ Info: GD: iter  660: f = 0.000000000000, ‖∇f‖ = 6.5799e-08, step size = 8.07e-02
+[ Info: GD: iter  661: f = 0.000000000000, ‖∇f‖ = 7.0941e-08, step size = 9.84e-02
+[ Info: GD: iter  662: f = 0.000000000000, ‖∇f‖ = 6.2675e-08, step size = 8.07e-02
+[ Info: GD: iter  663: f = 0.000000000000, ‖∇f‖ = 6.7573e-08, step size = 9.84e-02
+[ Info: GD: iter  664: f = 0.000000000000, ‖∇f‖ = 5.9700e-08, step size = 8.07e-02
+[ Info: GD: iter  665: f = 0.000000000000, ‖∇f‖ = 6.4365e-08, step size = 9.84e-02
+[ Info: GD: iter  666: f = 0.000000000000, ‖∇f‖ = 5.6866e-08, step size = 8.07e-02
+[ Info: GD: iter  667: f = 0.000000000000, ‖∇f‖ = 6.1310e-08, step size = 9.84e-02
+[ Info: GD: iter  668: f = 0.000000000000, ‖∇f‖ = 5.4166e-08, step size = 8.07e-02
+[ Info: GD: iter  669: f = 0.000000000000, ‖∇f‖ = 5.8399e-08, step size = 9.84e-02
+[ Info: GD: iter  670: f = 0.000000000000, ‖∇f‖ = 5.1595e-08, step size = 8.07e-02
+[ Info: GD: iter  671: f = 0.000000000000, ‖∇f‖ = 5.5627e-08, step size = 9.84e-02
+[ Info: GD: iter  672: f = 0.000000000000, ‖∇f‖ = 4.9145e-08, step size = 8.07e-02
+[ Info: GD: iter  673: f = 0.000000000000, ‖∇f‖ = 5.2986e-08, step size = 9.84e-02
+[ Info: GD: iter  674: f = 0.000000000000, ‖∇f‖ = 4.6812e-08, step size = 8.07e-02
+[ Info: GD: iter  675: f = 0.000000000000, ‖∇f‖ = 5.0470e-08, step size = 9.84e-02
+[ Info: GD: iter  676: f = 0.000000000000, ‖∇f‖ = 4.4590e-08, step size = 8.07e-02
+[ Info: GD: iter  677: f = 0.000000000000, ‖∇f‖ = 4.8074e-08, step size = 9.84e-02
+[ Info: GD: iter  678: f = 0.000000000000, ‖∇f‖ = 4.2473e-08, step size = 8.07e-02
+[ Info: GD: iter  679: f = 0.000000000000, ‖∇f‖ = 4.5792e-08, step size = 9.84e-02
+[ Info: GD: iter  680: f = 0.000000000000, ‖∇f‖ = 4.0457e-08, step size = 8.07e-02
+[ Info: GD: iter  681: f = 0.000000000000, ‖∇f‖ = 4.3618e-08, step size = 9.84e-02
+[ Info: GD: iter  682: f = 0.000000000000, ‖∇f‖ = 3.8536e-08, step size = 8.07e-02
+[ Info: GD: iter  683: f = 0.000000000000, ‖∇f‖ = 4.1547e-08, step size = 9.84e-02
+[ Info: GD: iter  684: f = 0.000000000000, ‖∇f‖ = 3.6707e-08, step size = 8.07e-02
+[ Info: GD: iter  685: f = 0.000000000000, ‖∇f‖ = 3.9575e-08, step size = 9.84e-02
+[ Info: GD: iter  686: f = 0.000000000000, ‖∇f‖ = 3.4964e-08, step size = 8.07e-02
+[ Info: GD: iter  687: f = 0.000000000000, ‖∇f‖ = 3.7696e-08, step size = 9.84e-02
+[ Info: GD: iter  688: f = 0.000000000000, ‖∇f‖ = 3.3304e-08, step size = 8.07e-02
+[ Info: GD: iter  689: f = 0.000000000000, ‖∇f‖ = 3.5907e-08, step size = 9.84e-02
+[ Info: GD: iter  690: f = 0.000000000000, ‖∇f‖ = 3.1723e-08, step size = 8.07e-02
+[ Info: GD: iter  691: f = 0.000000000000, ‖∇f‖ = 3.4202e-08, step size = 9.84e-02
+[ Info: GD: iter  692: f = 0.000000000000, ‖∇f‖ = 3.0217e-08, step size = 8.07e-02
+[ Info: GD: iter  693: f = 0.000000000000, ‖∇f‖ = 3.2578e-08, step size = 9.84e-02
+[ Info: GD: iter  694: f = 0.000000000000, ‖∇f‖ = 2.8782e-08, step size = 8.07e-02
+[ Info: GD: iter  695: f = 0.000000000000, ‖∇f‖ = 3.1032e-08, step size = 9.84e-02
+[ Info: GD: iter  696: f = 0.000000000000, ‖∇f‖ = 2.7416e-08, step size = 8.07e-02
+[ Info: GD: iter  697: f = 0.000000000000, ‖∇f‖ = 2.9559e-08, step size = 9.84e-02
+[ Info: GD: iter  698: f = 0.000000000000, ‖∇f‖ = 2.6114e-08, step size = 8.07e-02
+[ Info: GD: iter  699: f = 0.000000000000, ‖∇f‖ = 2.8155e-08, step size = 9.84e-02
+[ Info: GD: iter  700: f = 0.000000000000, ‖∇f‖ = 2.4875e-08, step size = 8.07e-02
+[ Info: GD: iter  701: f = 0.000000000000, ‖∇f‖ = 2.6819e-08, step size = 9.84e-02
+[ Info: GD: iter  702: f = 0.000000000000, ‖∇f‖ = 2.3694e-08, step size = 8.07e-02
+[ Info: GD: iter  703: f = 0.000000000000, ‖∇f‖ = 2.5545e-08, step size = 9.84e-02
+[ Info: GD: iter  704: f = 0.000000000000, ‖∇f‖ = 2.2569e-08, step size = 8.07e-02
+[ Info: GD: iter  705: f = 0.000000000000, ‖∇f‖ = 2.4333e-08, step size = 9.84e-02
+[ Info: GD: iter  706: f = 0.000000000000, ‖∇f‖ = 2.1498e-08, step size = 8.07e-02
+[ Info: GD: iter  707: f = 0.000000000000, ‖∇f‖ = 2.3178e-08, step size = 9.84e-02
+[ Info: GD: iter  708: f = 0.000000000000, ‖∇f‖ = 2.0477e-08, step size = 8.07e-02
+[ Info: GD: iter  709: f = 0.000000000000, ‖∇f‖ = 2.2077e-08, step size = 9.84e-02
+[ Info: GD: iter  710: f = 0.000000000000, ‖∇f‖ = 1.9505e-08, step size = 8.07e-02
+[ Info: GD: iter  711: f = 0.000000000000, ‖∇f‖ = 2.1029e-08, step size = 9.84e-02
+[ Info: GD: iter  712: f = 0.000000000000, ‖∇f‖ = 1.8579e-08, step size = 8.07e-02
+[ Info: GD: iter  713: f = 0.000000000000, ‖∇f‖ = 2.0031e-08, step size = 9.84e-02
+[ Info: GD: iter  714: f = 0.000000000000, ‖∇f‖ = 1.7697e-08, step size = 8.07e-02
+[ Info: GD: iter  715: f = 0.000000000000, ‖∇f‖ = 1.9080e-08, step size = 9.84e-02
+[ Info: GD: iter  716: f = 0.000000000000, ‖∇f‖ = 1.6857e-08, step size = 8.07e-02
+[ Info: GD: iter  717: f = 0.000000000000, ‖∇f‖ = 1.8174e-08, step size = 9.84e-02
+[ Info: GD: iter  718: f = 0.000000000000, ‖∇f‖ = 1.6056e-08, step size = 8.07e-02
+[ Info: GD: iter  719: f = 0.000000000000, ‖∇f‖ = 1.7311e-08, step size = 9.84e-02
+[ Info: GD: iter  720: f = 0.000000000000, ‖∇f‖ = 1.5294e-08, step size = 8.07e-02
+[ Info: GD: iter  721: f = 0.000000000000, ‖∇f‖ = 1.6489e-08, step size = 9.84e-02
+[ Info: GD: iter  722: f = 0.000000000000, ‖∇f‖ = 1.4568e-08, step size = 8.07e-02
+[ Info: GD: iter  723: f = 0.000000000000, ‖∇f‖ = 1.5707e-08, step size = 9.84e-02
+[ Info: GD: iter  724: f = 0.000000000000, ‖∇f‖ = 1.3877e-08, step size = 8.07e-02
+[ Info: GD: iter  725: f = 0.000000000000, ‖∇f‖ = 1.4961e-08, step size = 9.84e-02
+[ Info: GD: iter  726: f = 0.000000000000, ‖∇f‖ = 1.3218e-08, step size = 8.07e-02
+[ Info: GD: iter  727: f = 0.000000000000, ‖∇f‖ = 1.4251e-08, step size = 9.84e-02
+[ Info: GD: iter  728: f = 0.000000000000, ‖∇f‖ = 1.2590e-08, step size = 8.07e-02
+[ Info: GD: iter  729: f = 0.000000000000, ‖∇f‖ = 1.3574e-08, step size = 9.84e-02
+[ Info: GD: iter  730: f = 0.000000000000, ‖∇f‖ = 1.1993e-08, step size = 8.07e-02
+[ Info: GD: iter  731: f = 0.000000000000, ‖∇f‖ = 1.2930e-08, step size = 9.85e-02
+[ Info: GD: iter  732: f = 0.000000000000, ‖∇f‖ = 1.1423e-08, step size = 8.07e-02
+[ Info: GD: iter  733: f = 0.000000000000, ‖∇f‖ = 1.2316e-08, step size = 9.84e-02
+[ Info: GD: iter  734: f = 0.000000000000, ‖∇f‖ = 1.0881e-08, step size = 8.07e-02
+[ Info: GD: iter  735: f = 0.000000000000, ‖∇f‖ = 1.1731e-08, step size = 9.84e-02
+[ Info: GD: iter  736: f = 0.000000000000, ‖∇f‖ = 1.0364e-08, step size = 8.07e-02
+[ Info: GD: iter  737: f = 0.000000000000, ‖∇f‖ = 1.1174e-08, step size = 9.84e-02
+[ Info: GD: iter  738: f = 0.000000000000, ‖∇f‖ = 9.8723e-09, step size = 8.07e-02
+[ Info: GD: iter  739: f = 0.000000000000, ‖∇f‖ = 1.0644e-08, step size = 9.85e-02
+[ Info: GD: iter  740: f = 0.000000000000, ‖∇f‖ = 9.4037e-09, step size = 8.07e-02
+[ Info: GD: iter  741: f = 0.000000000000, ‖∇f‖ = 1.0139e-08, step size = 9.85e-02
+[ Info: GD: iter  742: f = 0.000000000000, ‖∇f‖ = 8.9572e-09, step size = 8.07e-02
+[ Info: GD: iter  743: f = 0.000000000000, ‖∇f‖ = 9.6572e-09, step size = 9.85e-02
+[ Info: GD: iter  744: f = 0.000000000000, ‖∇f‖ = 8.5320e-09, step size = 8.07e-02
+[ Info: GD: iter  745: f = 0.000000000000, ‖∇f‖ = 9.1988e-09, step size = 9.85e-02
+[ Info: GD: iter  746: f = 0.000000000000, ‖∇f‖ = 8.1270e-09, step size = 8.07e-02
+[ Info: GD: iter  747: f = 0.000000000000, ‖∇f‖ = 8.7621e-09, step size = 9.85e-02
+[ Info: GD: iter  748: f = 0.000000000000, ‖∇f‖ = 7.7411e-09, step size = 8.07e-02
+[ Info: GD: iter  749: f = 0.000000000000, ‖∇f‖ = 8.3461e-09, step size = 9.85e-02
+[ Info: GD: iter  750: f = 0.000000000000, ‖∇f‖ = 7.3736e-09, step size = 8.07e-02
+[ Info: GD: iter  751: f = 0.000000000000, ‖∇f‖ = 7.9499e-09, step size = 9.85e-02
+[ Info: GD: iter  752: f = 0.000000000000, ‖∇f‖ = 7.0236e-09, step size = 8.07e-02
+[ Info: GD: iter  753: f = 0.000000000000, ‖∇f‖ = 7.5725e-09, step size = 9.85e-02
+[ Info: GD: iter  754: f = 0.000000000000, ‖∇f‖ = 6.6901e-09, step size = 8.07e-02
+[ Info: GD: iter  755: f = 0.000000000000, ‖∇f‖ = 7.2130e-09, step size = 9.85e-02
+[ Info: GD: iter  756: f = 0.000000000000, ‖∇f‖ = 6.3725e-09, step size = 8.07e-02
+[ Info: GD: iter  757: f = 0.000000000000, ‖∇f‖ = 6.8705e-09, step size = 9.85e-02
+[ Info: GD: iter  758: f = 0.000000000000, ‖∇f‖ = 6.0700e-09, step size = 8.07e-02
+[ Info: GD: iter  759: f = 0.000000000000, ‖∇f‖ = 6.5444e-09, step size = 9.85e-02
+[ Info: GD: iter  760: f = 0.000000000000, ‖∇f‖ = 5.7818e-09, step size = 8.07e-02
+[ Info: GD: iter  761: f = 0.000000000000, ‖∇f‖ = 6.2337e-09, step size = 9.85e-02
+[ Info: GD: iter  762: f = 0.000000000000, ‖∇f‖ = 5.5074e-09, step size = 8.07e-02
+[ Info: GD: iter  763: f = 0.000000000000, ‖∇f‖ = 5.9377e-09, step size = 9.85e-02
+[ Info: GD: iter  764: f = 0.000000000000, ‖∇f‖ = 5.2459e-09, step size = 8.07e-02
+[ Info: GD: iter  765: f = 0.000000000000, ‖∇f‖ = 5.6559e-09, step size = 9.85e-02
+[ Info: GD: iter  766: f = 0.000000000000, ‖∇f‖ = 4.9969e-09, step size = 8.07e-02
+[ Info: GD: iter  767: f = 0.000000000000, ‖∇f‖ = 5.3874e-09, step size = 9.85e-02
+[ Info: GD: iter  768: f = 0.000000000000, ‖∇f‖ = 4.7596e-09, step size = 8.07e-02
+[ Info: GD: iter  769: f = 0.000000000000, ‖∇f‖ = 5.1316e-09, step size = 9.85e-02
+[ Info: GD: iter  770: f = 0.000000000000, ‖∇f‖ = 4.5337e-09, step size = 8.07e-02
+[ Info: GD: iter  771: f = 0.000000000000, ‖∇f‖ = 4.8880e-09, step size = 9.85e-02
+[ Info: GD: iter  772: f = 0.000000000000, ‖∇f‖ = 4.3184e-09, step size = 8.07e-02
+[ Info: GD: iter  773: f = 0.000000000000, ‖∇f‖ = 4.6559e-09, step size = 9.85e-02
+[ Info: GD: iter  774: f = 0.000000000000, ‖∇f‖ = 4.1134e-09, step size = 8.07e-02
+[ Info: GD: iter  775: f = 0.000000000000, ‖∇f‖ = 4.4349e-09, step size = 9.85e-02
+[ Info: GD: iter  776: f = 0.000000000000, ‖∇f‖ = 3.9181e-09, step size = 8.07e-02
+[ Info: GD: iter  777: f = 0.000000000000, ‖∇f‖ = 4.2244e-09, step size = 9.85e-02
+[ Info: GD: iter  778: f = 0.000000000000, ‖∇f‖ = 3.7321e-09, step size = 8.07e-02
+[ Info: GD: iter  779: f = 0.000000000000, ‖∇f‖ = 4.0238e-09, step size = 9.85e-02
+[ Info: GD: iter  780: f = 0.000000000000, ‖∇f‖ = 3.5550e-09, step size = 8.07e-02
+[ Info: GD: iter  781: f = 0.000000000000, ‖∇f‖ = 3.8328e-09, step size = 9.85e-02
+[ Info: GD: iter  782: f = 0.000000000000, ‖∇f‖ = 3.3862e-09, step size = 8.07e-02
+[ Info: GD: iter  783: f = 0.000000000000, ‖∇f‖ = 3.6508e-09, step size = 9.85e-02
+[ Info: GD: iter  784: f = 0.000000000000, ‖∇f‖ = 3.2254e-09, step size = 8.07e-02
+[ Info: GD: iter  785: f = 0.000000000000, ‖∇f‖ = 3.4775e-09, step size = 9.85e-02
+[ Info: GD: iter  786: f = 0.000000000000, ‖∇f‖ = 3.0723e-09, step size = 8.07e-02
+[ Info: GD: iter  787: f = 0.000000000000, ‖∇f‖ = 3.3124e-09, step size = 9.85e-02
+[ Info: GD: iter  788: f = 0.000000000000, ‖∇f‖ = 2.9265e-09, step size = 8.07e-02
+[ Info: GD: iter  789: f = 0.000000000000, ‖∇f‖ = 3.1552e-09, step size = 9.85e-02
+[ Info: GD: iter  790: f = 0.000000000000, ‖∇f‖ = 2.7875e-09, step size = 8.07e-02
+[ Info: GD: iter  791: f = 0.000000000000, ‖∇f‖ = 3.0054e-09, step size = 9.85e-02
+[ Info: GD: iter  792: f = 0.000000000000, ‖∇f‖ = 2.6552e-09, step size = 8.07e-02
+[ Info: GD: iter  793: f = 0.000000000000, ‖∇f‖ = 2.8627e-09, step size = 9.85e-02
+[ Info: GD: iter  794: f = 0.000000000000, ‖∇f‖ = 2.5291e-09, step size = 8.07e-02
+[ Info: GD: iter  795: f = 0.000000000000, ‖∇f‖ = 2.7268e-09, step size = 9.85e-02
+[ Info: GD: iter  796: f = 0.000000000000, ‖∇f‖ = 2.4091e-09, step size = 8.07e-02
+[ Info: GD: iter  797: f = 0.000000000000, ‖∇f‖ = 2.5973e-09, step size = 9.85e-02
+[ Info: GD: iter  798: f = 0.000000000000, ‖∇f‖ = 2.2947e-09, step size = 8.07e-02
+[ Info: GD: iter  799: f = 0.000000000000, ‖∇f‖ = 2.4740e-09, step size = 9.85e-02
+[ Info: GD: iter  800: f = 0.000000000000, ‖∇f‖ = 2.1858e-09, step size = 8.07e-02
+[ Info: GD: iter  801: f = 0.000000000000, ‖∇f‖ = 2.3566e-09, step size = 9.85e-02
+[ Info: GD: iter  802: f = 0.000000000000, ‖∇f‖ = 2.0820e-09, step size = 8.07e-02
+[ Info: GD: iter  803: f = 0.000000000000, ‖∇f‖ = 2.2447e-09, step size = 9.85e-02
+[ Info: GD: iter  804: f = 0.000000000000, ‖∇f‖ = 1.9832e-09, step size = 8.07e-02
+[ Info: GD: iter  805: f = 0.000000000000, ‖∇f‖ = 2.1381e-09, step size = 9.85e-02
+[ Info: GD: iter  806: f = 0.000000000000, ‖∇f‖ = 1.8890e-09, step size = 8.07e-02
+[ Info: GD: iter  807: f = 0.000000000000, ‖∇f‖ = 2.0366e-09, step size = 9.85e-02
+[ Info: GD: iter  808: f = 0.000000000000, ‖∇f‖ = 1.7993e-09, step size = 8.07e-02
+[ Info: GD: iter  809: f = 0.000000000000, ‖∇f‖ = 1.9400e-09, step size = 9.85e-02
+[ Info: GD: iter  810: f = 0.000000000000, ‖∇f‖ = 1.7139e-09, step size = 8.07e-02
+[ Info: GD: iter  811: f = 0.000000000000, ‖∇f‖ = 1.8479e-09, step size = 9.85e-02
+[ Info: GD: iter  812: f = 0.000000000000, ‖∇f‖ = 1.6325e-09, step size = 8.07e-02
+[ Info: GD: iter  813: f = 0.000000000000, ‖∇f‖ = 1.7601e-09, step size = 9.85e-02
+[ Info: GD: iter  814: f = 0.000000000000, ‖∇f‖ = 1.5550e-09, step size = 8.07e-02
+[ Info: GD: iter  815: f = 0.000000000000, ‖∇f‖ = 1.6766e-09, step size = 9.85e-02
+[ Info: GD: iter  816: f = 0.000000000000, ‖∇f‖ = 1.4812e-09, step size = 8.07e-02
+[ Info: GD: iter  817: f = 0.000000000000, ‖∇f‖ = 1.5970e-09, step size = 9.85e-02
+[ Info: GD: iter  818: f = 0.000000000000, ‖∇f‖ = 1.4109e-09, step size = 8.07e-02
+[ Info: GD: iter  819: f = 0.000000000000, ‖∇f‖ = 1.5212e-09, step size = 9.85e-02
+[ Info: GD: iter  820: f = 0.000000000000, ‖∇f‖ = 1.3439e-09, step size = 8.07e-02
+[ Info: GD: iter  821: f = 0.000000000000, ‖∇f‖ = 1.4490e-09, step size = 9.85e-02
+[ Info: GD: iter  822: f = 0.000000000000, ‖∇f‖ = 1.2801e-09, step size = 8.07e-02
+[ Info: GD: iter  823: f = 0.000000000000, ‖∇f‖ = 1.3802e-09, step size = 9.85e-02
+[ Info: GD: iter  824: f = 0.000000000000, ‖∇f‖ = 1.2193e-09, step size = 8.07e-02
+[ Info: GD: iter  825: f = 0.000000000000, ‖∇f‖ = 1.3146e-09, step size = 9.85e-02
+[ Info: GD: iter  826: f = 0.000000000000, ‖∇f‖ = 1.1615e-09, step size = 8.07e-02
+[ Info: GD: iter  827: f = 0.000000000000, ‖∇f‖ = 1.2522e-09, step size = 9.85e-02
+[ Info: GD: iter  828: f = 0.000000000000, ‖∇f‖ = 1.1063e-09, step size = 8.07e-02
+[ Info: GD: iter  829: f = 0.000000000000, ‖∇f‖ = 1.1928e-09, step size = 9.85e-02
+[ Info: GD: iter  830: f = 0.000000000000, ‖∇f‖ = 1.0538e-09, step size = 8.07e-02
+[ Info: GD: iter  831: f = 0.000000000000, ‖∇f‖ = 1.1362e-09, step size = 9.85e-02
+[ Info: GD: iter  832: f = 0.000000000000, ‖∇f‖ = 1.0038e-09, step size = 8.07e-02
+[ Info: GD: iter  833: f = 0.000000000000, ‖∇f‖ = 1.0822e-09, step size = 9.85e-02
+[ Info: GD: iter  834: f = 0.000000000000, ‖∇f‖ = 9.5612e-10, step size = 8.07e-02
+[ Info: GD: iter  835: f = 0.000000000000, ‖∇f‖ = 1.0308e-09, step size = 9.85e-02
+[ Info: GD: iter  836: f = 0.000000000000, ‖∇f‖ = 9.1072e-10, step size = 8.07e-02
+[ Info: GD: iter  837: f = 0.000000000000, ‖∇f‖ = 9.8190e-10, step size = 9.85e-02
+[ Info: GD: iter  838: f = 0.000000000000, ‖∇f‖ = 8.6749e-10, step size = 8.07e-02
+[ Info: GD: iter  839: f = 0.000000000000, ‖∇f‖ = 9.3529e-10, step size = 9.85e-02
+[ Info: GD: iter  840: f = 0.000000000000, ‖∇f‖ = 8.2630e-10, step size = 8.07e-02
+[ Info: GD: iter  841: f = 0.000000000000, ‖∇f‖ = 8.9089e-10, step size = 9.85e-02
+[ Info: GD: iter  842: f = 0.000000000000, ‖∇f‖ = 7.8708e-10, step size = 8.07e-02
+[ Info: GD: iter  843: f = 0.000000000000, ‖∇f‖ = 8.4859e-10, step size = 9.85e-02
+[ Info: GD: iter  844: f = 0.000000000000, ‖∇f‖ = 7.4971e-10, step size = 8.07e-02
+[ Info: GD: iter  845: f = 0.000000000000, ‖∇f‖ = 8.0831e-10, step size = 9.85e-02
+[ Info: GD: iter  846: f = 0.000000000000, ‖∇f‖ = 7.1412e-10, step size = 8.07e-02
+[ Info: GD: iter  847: f = 0.000000000000, ‖∇f‖ = 7.6993e-10, step size = 9.85e-02
+[ Info: GD: iter  848: f = 0.000000000000, ‖∇f‖ = 6.8022e-10, step size = 8.07e-02
+[ Info: GD: iter  849: f = 0.000000000000, ‖∇f‖ = 7.3338e-10, step size = 9.85e-02
+[ Info: GD: iter  850: f = 0.000000000000, ‖∇f‖ = 6.4792e-10, step size = 8.07e-02
+[ Info: GD: iter  851: f = 0.000000000000, ‖∇f‖ = 6.9857e-10, step size = 9.85e-02
+[ Info: GD: iter  852: f = 0.000000000000, ‖∇f‖ = 6.1717e-10, step size = 8.07e-02
+[ Info: GD: iter  853: f = 0.000000000000, ‖∇f‖ = 6.6541e-10, step size = 9.85e-02
+[ Info: GD: iter  854: f = 0.000000000000, ‖∇f‖ = 5.8787e-10, step size = 8.07e-02
+[ Info: GD: iter  855: f = 0.000000000000, ‖∇f‖ = 6.3382e-10, step size = 9.85e-02
+[ Info: GD: iter  856: f = 0.000000000000, ‖∇f‖ = 5.5996e-10, step size = 8.07e-02
+[ Info: GD: iter  857: f = 0.000000000000, ‖∇f‖ = 6.0372e-10, step size = 9.85e-02
+[ Info: GD: iter  858: f = 0.000000000000, ‖∇f‖ = 5.3338e-10, step size = 8.07e-02
+[ Info: GD: iter  859: f = 0.000000000000, ‖∇f‖ = 5.7506e-10, step size = 9.85e-02
+[ Info: GD: iter  860: f = 0.000000000000, ‖∇f‖ = 5.0805e-10, step size = 8.07e-02
+[ Info: GD: iter  861: f = 0.000000000000, ‖∇f‖ = 5.4776e-10, step size = 9.85e-02
+[ Info: GD: iter  862: f = 0.000000000000, ‖∇f‖ = 4.8393e-10, step size = 8.07e-02
+[ Info: GD: iter  863: f = 0.000000000000, ‖∇f‖ = 5.2176e-10, step size = 9.85e-02
+[ Info: GD: iter  864: f = 0.000000000000, ‖∇f‖ = 4.6096e-10, step size = 8.07e-02
+[ Info: GD: iter  865: f = 0.000000000000, ‖∇f‖ = 4.9699e-10, step size = 9.85e-02
+[ Info: GD: iter  866: f = 0.000000000000, ‖∇f‖ = 4.3908e-10, step size = 8.07e-02
+[ Info: GD: iter  867: f = 0.000000000000, ‖∇f‖ = 4.7339e-10, step size = 9.85e-02
+[ Info: GD: iter  868: f = 0.000000000000, ‖∇f‖ = 4.1823e-10, step size = 8.07e-02
+[ Info: GD: iter  869: f = 0.000000000000, ‖∇f‖ = 4.5092e-10, step size = 9.85e-02
+[ Info: GD: iter  870: f = 0.000000000000, ‖∇f‖ = 3.9838e-10, step size = 8.07e-02
+[ Info: GD: iter  871: f = 0.000000000000, ‖∇f‖ = 4.2951e-10, step size = 9.85e-02
+[ Info: GD: iter  872: f = 0.000000000000, ‖∇f‖ = 3.7946e-10, step size = 8.07e-02
+[ Info: GD: iter  873: f = 0.000000000000, ‖∇f‖ = 4.0913e-10, step size = 9.85e-02
+[ Info: GD: iter  874: f = 0.000000000000, ‖∇f‖ = 3.6145e-10, step size = 8.07e-02
+[ Info: GD: iter  875: f = 0.000000000000, ‖∇f‖ = 3.8970e-10, step size = 9.85e-02
+[ Info: GD: iter  876: f = 0.000000000000, ‖∇f‖ = 3.4429e-10, step size = 8.07e-02
+[ Info: GD: iter  877: f = 0.000000000000, ‖∇f‖ = 3.7120e-10, step size = 9.85e-02
+[ Info: GD: iter  878: f = 0.000000000000, ‖∇f‖ = 3.2794e-10, step size = 8.07e-02
+[ Info: GD: iter  879: f = 0.000000000000, ‖∇f‖ = 3.5358e-10, step size = 9.85e-02
+[ Info: GD: iter  880: f = 0.000000000000, ‖∇f‖ = 3.1238e-10, step size = 8.07e-02
+[ Info: GD: iter  881: f = 0.000000000000, ‖∇f‖ = 3.3679e-10, step size = 9.85e-02
+[ Info: GD: iter  882: f = 0.000000000000, ‖∇f‖ = 2.9755e-10, step size = 8.07e-02
+[ Info: GD: iter  883: f = 0.000000000000, ‖∇f‖ = 3.2080e-10, step size = 9.85e-02
+[ Info: GD: iter  884: f = 0.000000000000, ‖∇f‖ = 2.8342e-10, step size = 8.07e-02
+[ Info: GD: iter  885: f = 0.000000000000, ‖∇f‖ = 3.0557e-10, step size = 9.85e-02
+[ Info: GD: iter  886: f = 0.000000000000, ‖∇f‖ = 2.6997e-10, step size = 8.07e-02
+[ Info: GD: iter  887: f = 0.000000000000, ‖∇f‖ = 2.9107e-10, step size = 9.85e-02
+[ Info: GD: iter  888: f = 0.000000000000, ‖∇f‖ = 2.5715e-10, step size = 8.07e-02
+[ Info: GD: iter  889: f = 0.000000000000, ‖∇f‖ = 2.7725e-10, step size = 9.85e-02
+[ Info: GD: iter  890: f = 0.000000000000, ‖∇f‖ = 2.4494e-10, step size = 8.07e-02
+[ Info: GD: iter  891: f = 0.000000000000, ‖∇f‖ = 2.6408e-10, step size = 9.85e-02
+[ Info: GD: iter  892: f = 0.000000000000, ‖∇f‖ = 2.3331e-10, step size = 8.07e-02
+[ Info: GD: iter  893: f = 0.000000000000, ‖∇f‖ = 2.5155e-10, step size = 9.85e-02
+[ Info: GD: iter  894: f = 0.000000000000, ‖∇f‖ = 2.2224e-10, step size = 8.07e-02
+[ Info: GD: iter  895: f = 0.000000000000, ‖∇f‖ = 2.3961e-10, step size = 9.85e-02
+[ Info: GD: iter  896: f = 0.000000000000, ‖∇f‖ = 2.1169e-10, step size = 8.07e-02
+[ Info: GD: iter  897: f = 0.000000000000, ‖∇f‖ = 2.2823e-10, step size = 9.85e-02
+[ Info: GD: iter  898: f = 0.000000000000, ‖∇f‖ = 2.0164e-10, step size = 8.07e-02
+[ Info: GD: iter  899: f = 0.000000000000, ‖∇f‖ = 2.1740e-10, step size = 9.85e-02
+[ Info: GD: iter  900: f = 0.000000000000, ‖∇f‖ = 1.9206e-10, step size = 8.07e-02
+[ Info: GD: iter  901: f = 0.000000000000, ‖∇f‖ = 2.0708e-10, step size = 9.85e-02
+[ Info: GD: iter  902: f = 0.000000000000, ‖∇f‖ = 1.8295e-10, step size = 8.07e-02
+[ Info: GD: iter  903: f = 0.000000000000, ‖∇f‖ = 1.9725e-10, step size = 9.85e-02
+[ Info: GD: iter  904: f = 0.000000000000, ‖∇f‖ = 1.7426e-10, step size = 8.07e-02
+[ Info: GD: iter  905: f = 0.000000000000, ‖∇f‖ = 1.8788e-10, step size = 9.84e-02
+[ Info: GD: iter  906: f = 0.000000000000, ‖∇f‖ = 1.6599e-10, step size = 8.07e-02
+[ Info: GD: iter  907: f = 0.000000000000, ‖∇f‖ = 1.7896e-10, step size = 9.84e-02
+[ Info: GD: iter  908: f = 0.000000000000, ‖∇f‖ = 1.5811e-10, step size = 8.07e-02
+[ Info: GD: iter  909: f = 0.000000000000, ‖∇f‖ = 1.7046e-10, step size = 9.84e-02
+[ Info: GD: iter  910: f = 0.000000000000, ‖∇f‖ = 1.5060e-10, step size = 8.07e-02
+[ Info: GD: iter  911: f = 0.000000000000, ‖∇f‖ = 1.6238e-10, step size = 9.85e-02
+[ Info: GD: iter  912: f = 0.000000000000, ‖∇f‖ = 1.4345e-10, step size = 8.07e-02
+[ Info: GD: iter  913: f = 0.000000000000, ‖∇f‖ = 1.5467e-10, step size = 9.85e-02
+[ Info: GD: iter  914: f = 0.000000000000, ‖∇f‖ = 1.3664e-10, step size = 8.07e-02
+[ Info: GD: iter  915: f = 0.000000000000, ‖∇f‖ = 1.4733e-10, step size = 9.85e-02
+[ Info: GD: iter  916: f = 0.000000000000, ‖∇f‖ = 1.3015e-10, step size = 8.07e-02
+[ Info: GD: iter  917: f = 0.000000000000, ‖∇f‖ = 1.4034e-10, step size = 9.85e-02
+[ Info: GD: iter  918: f = 0.000000000000, ‖∇f‖ = 1.2397e-10, step size = 8.07e-02
+[ Info: GD: iter  919: f = 0.000000000000, ‖∇f‖ = 1.3367e-10, step size = 9.85e-02
+[ Info: GD: iter  920: f = 0.000000000000, ‖∇f‖ = 1.1808e-10, step size = 8.07e-02
+[ Info: GD: iter  921: f = 0.000000000000, ‖∇f‖ = 1.2733e-10, step size = 9.85e-02
+[ Info: GD: iter  922: f = 0.000000000000, ‖∇f‖ = 1.1248e-10, step size = 8.07e-02
+[ Info: GD: iter  923: f = 0.000000000000, ‖∇f‖ = 1.2128e-10, step size = 9.85e-02
+[ Info: GD: iter  924: f = 0.000000000000, ‖∇f‖ = 1.0714e-10, step size = 8.07e-02
+[ Info: GD: iter  925: f = 0.000000000000, ‖∇f‖ = 1.1553e-10, step size = 9.85e-02
+[ Info: GD: iter  926: f = 0.000000000000, ‖∇f‖ = 1.0205e-10, step size = 8.07e-02
+[ Info: GD: iter  927: f = 0.000000000000, ‖∇f‖ = 1.1004e-10, step size = 9.85e-02
+[ Info: GD: iter  928: f = 0.000000000000, ‖∇f‖ = 9.7208e-11, step size = 8.07e-02
+[ Info: GD: iter  929: f = 0.000000000000, ‖∇f‖ = 1.0482e-10, step size = 9.85e-02
+[ Info: GD: iter  930: f = 0.000000000000, ‖∇f‖ = 9.2592e-11, step size = 8.07e-02
+[ Info: GD: iter  931: f = 0.000000000000, ‖∇f‖ = 9.9843e-11, step size = 9.85e-02
+[ Info: GD: iter  932: f = 0.000000000000, ‖∇f‖ = 8.8194e-11, step size = 8.07e-02
+[ Info: GD: iter  933: f = 0.000000000000, ‖∇f‖ = 9.5104e-11, step size = 9.85e-02
+[ Info: GD: iter  934: f = 0.000000000000, ‖∇f‖ = 8.4006e-11, step size = 8.07e-02
+[ Info: GD: iter  935: f = 0.000000000000, ‖∇f‖ = 9.0588e-11, step size = 9.85e-02
+[ Info: GD: iter  936: f = 0.000000000000, ‖∇f‖ = 8.0021e-11, step size = 8.07e-02
+[ Info: GD: iter  937: f = 0.000000000000, ‖∇f‖ = 8.6287e-11, step size = 9.85e-02
+[ Info: GD: iter  938: f = 0.000000000000, ‖∇f‖ = 7.6220e-11, step size = 8.07e-02
+[ Info: GD: iter  939: f = 0.000000000000, ‖∇f‖ = 8.2194e-11, step size = 9.85e-02
+[ Info: GD: iter  940: f = 0.000000000000, ‖∇f‖ = 7.2598e-11, step size = 8.07e-02
+[ Info: GD: iter  941: f = 0.000000000000, ‖∇f‖ = 7.8292e-11, step size = 9.85e-02
+[ Info: GD: iter  942: f = 0.000000000000, ‖∇f‖ = 6.9151e-11, step size = 8.07e-02
+[ Info: GD: iter  943: f = 0.000000000000, ‖∇f‖ = 7.4576e-11, step size = 9.85e-02
+[ Info: GD: iter  944: f = 0.000000000000, ‖∇f‖ = 6.5871e-11, step size = 8.07e-02
+[ Info: GD: iter  945: f = 0.000000000000, ‖∇f‖ = 7.1033e-11, step size = 9.85e-02
+[ Info: GD: iter  946: f = 0.000000000000, ‖∇f‖ = 6.2745e-11, step size = 8.07e-02
+[ Info: GD: iter  947: f = 0.000000000000, ‖∇f‖ = 6.7660e-11, step size = 9.85e-02
+[ Info: GD: iter  948: f = 0.000000000000, ‖∇f‖ = 5.9765e-11, step size = 8.07e-02
+[ Info: GD: iter  949: f = 0.000000000000, ‖∇f‖ = 6.4447e-11, step size = 9.85e-02
+[ Info: GD: iter  950: f = 0.000000000000, ‖∇f‖ = 5.6931e-11, step size = 8.07e-02
+[ Info: GD: iter  951: f = 0.000000000000, ‖∇f‖ = 6.1382e-11, step size = 9.85e-02
+[ Info: GD: iter  952: f = 0.000000000000, ‖∇f‖ = 5.4229e-11, step size = 8.07e-02
+[ Info: GD: iter  953: f = 0.000000000000, ‖∇f‖ = 5.8471e-11, step size = 9.85e-02
+[ Info: GD: iter  954: f = 0.000000000000, ‖∇f‖ = 5.1653e-11, step size = 8.07e-02
+[ Info: GD: iter  955: f = 0.000000000000, ‖∇f‖ = 5.5694e-11, step size = 9.85e-02
+[ Info: GD: iter  956: f = 0.000000000000, ‖∇f‖ = 4.9202e-11, step size = 8.07e-02
+[ Info: GD: iter  957: f = 0.000000000000, ‖∇f‖ = 5.3051e-11, step size = 9.85e-02
+[ Info: GD: iter  958: f = 0.000000000000, ‖∇f‖ = 4.6866e-11, step size = 8.07e-02
+[ Info: GD: iter  959: f = 0.000000000000, ‖∇f‖ = 5.0531e-11, step size = 9.85e-02
+[ Info: GD: iter  960: f = 0.000000000000, ‖∇f‖ = 4.4642e-11, step size = 8.07e-02
+[ Info: GD: iter  961: f = 0.000000000000, ‖∇f‖ = 4.8129e-11, step size = 9.85e-02
+[ Info: GD: iter  962: f = 0.000000000000, ‖∇f‖ = 4.2523e-11, step size = 8.07e-02
+[ Info: GD: iter  963: f = 0.000000000000, ‖∇f‖ = 4.5846e-11, step size = 9.84e-02
+[ Info: GD: iter  964: f = 0.000000000000, ‖∇f‖ = 4.0504e-11, step size = 8.07e-02
+[ Info: GD: iter  965: f = 0.000000000000, ‖∇f‖ = 4.3669e-11, step size = 9.84e-02
+[ Info: GD: iter  966: f = 0.000000000000, ‖∇f‖ = 3.8579e-11, step size = 8.07e-02
+[ Info: GD: iter  967: f = 0.000000000000, ‖∇f‖ = 4.1599e-11, step size = 9.85e-02
+[ Info: GD: iter  968: f = 0.000000000000, ‖∇f‖ = 3.6749e-11, step size = 8.07e-02
+[ Info: GD: iter  969: f = 0.000000000000, ‖∇f‖ = 3.9620e-11, step size = 9.85e-02
+[ Info: GD: iter  970: f = 0.000000000000, ‖∇f‖ = 3.5006e-11, step size = 8.07e-02
+[ Info: GD: iter  971: f = 0.000000000000, ‖∇f‖ = 3.7738e-11, step size = 9.84e-02
+[ Info: GD: iter  972: f = 0.000000000000, ‖∇f‖ = 3.3343e-11, step size = 8.07e-02
+[ Info: GD: iter  973: f = 0.000000000000, ‖∇f‖ = 3.5949e-11, step size = 9.85e-02
+[ Info: GD: iter  974: f = 0.000000000000, ‖∇f‖ = 3.1759e-11, step size = 8.07e-02
+[ Info: GD: iter  975: f = 0.000000000000, ‖∇f‖ = 3.4245e-11, step size = 9.85e-02
+[ Info: GD: iter  976: f = 0.000000000000, ‖∇f‖ = 3.0249e-11, step size = 8.07e-02
+[ Info: GD: iter  977: f = 0.000000000000, ‖∇f‖ = 3.2619e-11, step size = 9.85e-02
+[ Info: GD: iter  978: f = 0.000000000000, ‖∇f‖ = 2.8814e-11, step size = 8.07e-02
+[ Info: GD: iter  979: f = 0.000000000000, ‖∇f‖ = 3.1070e-11, step size = 9.85e-02
+[ Info: GD: iter  980: f = 0.000000000000, ‖∇f‖ = 2.7445e-11, step size = 8.07e-02
+[ Info: GD: iter  981: f = 0.000000000000, ‖∇f‖ = 2.9598e-11, step size = 9.85e-02
+[ Info: GD: iter  982: f = 0.000000000000, ‖∇f‖ = 2.6141e-11, step size = 8.07e-02
+[ Info: GD: iter  983: f = 0.000000000000, ‖∇f‖ = 2.8196e-11, step size = 9.85e-02
+[ Info: GD: iter  984: f = 0.000000000000, ‖∇f‖ = 2.4899e-11, step size = 8.06e-02
+[ Info: GD: iter  985: f = 0.000000000000, ‖∇f‖ = 2.6855e-11, step size = 9.85e-02
+[ Info: GD: iter  986: f = 0.000000000000, ‖∇f‖ = 2.3716e-11, step size = 8.07e-02
+[ Info: GD: iter  987: f = 0.000000000000, ‖∇f‖ = 2.5581e-11, step size = 9.85e-02
+[ Info: GD: iter  988: f = 0.000000000000, ‖∇f‖ = 2.2591e-11, step size = 8.06e-02
+[ Info: GD: iter  989: f = 0.000000000000, ‖∇f‖ = 2.4367e-11, step size = 9.85e-02
+[ Info: GD: iter  990: f = 0.000000000000, ‖∇f‖ = 2.1516e-11, step size = 8.06e-02
+[ Info: GD: iter  991: f = 0.000000000000, ‖∇f‖ = 2.3214e-11, step size = 9.85e-02
+[ Info: GD: iter  992: f = 0.000000000000, ‖∇f‖ = 2.0492e-11, step size = 8.06e-02
+[ Info: GD: iter  993: f = 0.000000000000, ‖∇f‖ = 2.2115e-11, step size = 9.85e-02
+[ Info: GD: iter  994: f = 0.000000000000, ‖∇f‖ = 1.9518e-11, step size = 8.06e-02
+[ Info: GD: iter  995: f = 0.000000000000, ‖∇f‖ = 2.1067e-11, step size = 9.86e-02
+[ Info: GD: iter  996: f = 0.000000000000, ‖∇f‖ = 1.8591e-11, step size = 8.06e-02
+[ Info: GD: iter  997: f = 0.000000000000, ‖∇f‖ = 2.0064e-11, step size = 9.86e-02
+[ Info: GD: iter  998: f = 0.000000000000, ‖∇f‖ = 1.7711e-11, step size = 8.06e-02
+[ Info: GD: iter  999: f = 0.000000000000, ‖∇f‖ = 1.9108e-11, step size = 9.85e-02
+[ Info: GD: iter 1000: f = 0.000000000000, ‖∇f‖ = 1.6871e-11, step size = 8.06e-02
+[ Info: GD: iter 1001: f = 0.000000000000, ‖∇f‖ = 1.8202e-11, step size = 9.85e-02
+[ Info: GD: iter 1002: f = 0.000000000000, ‖∇f‖ = 1.6068e-11, step size = 8.06e-02
+[ Info: GD: iter 1003: f = 0.000000000000, ‖∇f‖ = 1.7339e-11, step size = 9.85e-02
+[ Info: GD: iter 1004: f = 0.000000000000, ‖∇f‖ = 1.5305e-11, step size = 8.06e-02
+[ Info: GD: iter 1005: f = 0.000000000000, ‖∇f‖ = 1.6517e-11, step size = 9.85e-02
+[ Info: GD: iter 1006: f = 0.000000000000, ‖∇f‖ = 1.4577e-11, step size = 8.06e-02
+[ Info: GD: iter 1007: f = 0.000000000000, ‖∇f‖ = 1.5734e-11, step size = 9.86e-02
+[ Info: GD: iter 1008: f = 0.000000000000, ‖∇f‖ = 1.3884e-11, step size = 8.06e-02
+[ Info: GD: iter 1009: f = 0.000000000000, ‖∇f‖ = 1.4988e-11, step size = 9.86e-02
+[ Info: GD: iter 1010: f = 0.000000000000, ‖∇f‖ = 1.3225e-11, step size = 8.06e-02
+[ Info: GD: iter 1011: f = 0.000000000000, ‖∇f‖ = 1.4273e-11, step size = 9.86e-02
+[ Info: GD: iter 1012: f = 0.000000000000, ‖∇f‖ = 1.2597e-11, step size = 8.06e-02
+[ Info: GD: iter 1013: f = 0.000000000000, ‖∇f‖ = 1.3595e-11, step size = 9.86e-02
+[ Info: GD: iter 1014: f = 0.000000000000, ‖∇f‖ = 1.2000e-11, step size = 8.06e-02
+[ Info: GD: iter 1015: f = 0.000000000000, ‖∇f‖ = 1.2951e-11, step size = 9.86e-02
+[ Info: GD: iter 1016: f = 0.000000000000, ‖∇f‖ = 1.1430e-11, step size = 8.06e-02
+[ Info: GD: iter 1017: f = 0.000000000000, ‖∇f‖ = 1.2334e-11, step size = 9.86e-02
+[ Info: GD: iter 1018: f = 0.000000000000, ‖∇f‖ = 1.0890e-11, step size = 8.06e-02
+[ Info: GD: iter 1019: f = 0.000000000000, ‖∇f‖ = 1.1747e-11, step size = 9.85e-02
+[ Info: GD: iter 1020: f = 0.000000000000, ‖∇f‖ = 1.0371e-11, step size = 8.06e-02
+[ Info: GD: iter 1021: f = 0.000000000000, ‖∇f‖ = 1.1190e-11, step size = 9.85e-02
+[ Info: GD: iter 1022: f = 0.000000000000, ‖∇f‖ = 9.8790e-12, step size = 8.06e-02
+[ Info: GD: iter 1023: f = 0.000000000000, ‖∇f‖ = 1.0662e-11, step size = 9.85e-02
+[ Info: GD: iter 1024: f = 0.000000000000, ‖∇f‖ = 9.4083e-12, step size = 8.06e-02
+[ Info: GD: iter 1025: f = 0.000000000000, ‖∇f‖ = 1.0155e-11, step size = 9.86e-02
+[ Info: GD: iter 1026: f = 0.000000000000, ‖∇f‖ = 8.9605e-12, step size = 8.06e-02
+[ Info: GD: iter 1027: f = 0.000000000000, ‖∇f‖ = 9.6747e-12, step size = 9.86e-02
+[ Info: GD: iter 1028: f = 0.000000000000, ‖∇f‖ = 8.5329e-12, step size = 8.06e-02
+[ Info: GD: iter 1029: f = 0.000000000000, ‖∇f‖ = 9.2175e-12, step size = 9.87e-02
+[ Info: GD: iter 1030: f = 0.000000000000, ‖∇f‖ = 8.1266e-12, step size = 8.05e-02
+[ Info: GD: iter 1031: f = 0.000000000000, ‖∇f‖ = 8.7782e-12, step size = 9.87e-02
+[ Info: GD: iter 1032: f = 0.000000000000, ‖∇f‖ = 7.7432e-12, step size = 8.06e-02
+[ Info: GD: iter 1033: f = 0.000000000000, ‖∇f‖ = 8.3598e-12, step size = 9.86e-02
+[ Info: GD: iter 1034: f = 0.000000000000, ‖∇f‖ = 7.3766e-12, step size = 8.06e-02
+[ Info: GD: iter 1035: f = 0.000000000000, ‖∇f‖ = 7.9629e-12, step size = 9.86e-02
+[ Info: GD: iter 1036: f = 0.000000000000, ‖∇f‖ = 7.0252e-12, step size = 8.06e-02
+[ Info: GD: iter 1037: f = 0.000000000000, ‖∇f‖ = 7.5838e-12, step size = 9.86e-02
+[ Info: GD: iter 1038: f = 0.000000000000, ‖∇f‖ = 6.6919e-12, step size = 8.06e-02
+[ Info: GD: iter 1039: f = 0.000000000000, ‖∇f‖ = 7.2240e-12, step size = 9.86e-02
+[ Info: GD: iter 1040: f = 0.000000000000, ‖∇f‖ = 6.3723e-12, step size = 8.06e-02
+[ Info: GD: iter 1041: f = 0.000000000000, ‖∇f‖ = 6.8844e-12, step size = 9.87e-02
+[ Info: GD: iter 1042: f = 0.000000000000, ‖∇f‖ = 6.0683e-12, step size = 8.05e-02
+[ Info: GD: iter 1043: f = 0.000000000000, ‖∇f‖ = 6.5570e-12, step size = 9.87e-02
+[ Info: GD: iter 1044: f = 0.000000000000, ‖∇f‖ = 5.7807e-12, step size = 8.05e-02
+[ Info: GD: iter 1045: f = 0.000000000000, ‖∇f‖ = 6.2476e-12, step size = 9.87e-02
+[ Info: GD: iter 1046: f = 0.000000000000, ‖∇f‖ = 5.5074e-12, step size = 8.05e-02
+[ Info: GD: iter 1047: f = 0.000000000000, ‖∇f‖ = 5.9452e-12, step size = 9.86e-02
+[ Info: GD: iter 1048: f = 0.000000000000, ‖∇f‖ = 5.2489e-12, step size = 8.06e-02
+[ Info: GD: iter 1049: f = 0.000000000000, ‖∇f‖ = 5.6621e-12, step size = 9.85e-02
+[ Info: GD: iter 1050: f = 0.000000000000, ‖∇f‖ = 4.9980e-12, step size = 8.06e-02
+[ Info: GD: iter 1051: f = 0.000000000000, ‖∇f‖ = 5.3937e-12, step size = 9.86e-02
+[ Info: GD: iter 1052: f = 0.000000000000, ‖∇f‖ = 4.7617e-12, step size = 8.06e-02
+[ Info: GD: iter 1053: f = 0.000000000000, ‖∇f‖ = 5.1352e-12, step size = 9.85e-02
+[ Info: GD: iter 1054: f = 0.000000000000, ‖∇f‖ = 4.5393e-12, step size = 8.07e-02
+[ Info: GD: iter 1055: f = 0.000000000000, ‖∇f‖ = 4.8903e-12, step size = 9.83e-02
+[ Info: GD: iter 1056: f = 0.000000000000, ‖∇f‖ = 4.3205e-12, step size = 8.07e-02
+[ Info: GD: iter 1057: f = 0.000000000000, ‖∇f‖ = 4.6609e-12, step size = 9.85e-02
+[ Info: GD: iter 1058: f = 0.000000000000, ‖∇f‖ = 4.1161e-12, step size = 8.06e-02
+[ Info: GD: iter 1059: f = 0.000000000000, ‖∇f‖ = 4.4398e-12, step size = 9.85e-02
+[ Info: GD: iter 1060: f = 0.000000000000, ‖∇f‖ = 3.9200e-12, step size = 8.06e-02
+[ Info: GD: iter 1061: f = 0.000000000000, ‖∇f‖ = 4.2286e-12, step size = 9.85e-02
+[ Info: GD: iter 1062: f = 0.000000000000, ‖∇f‖ = 3.7331e-12, step size = 8.06e-02
+[ Info: GD: iter 1063: f = 0.000000000000, ‖∇f‖ = 4.0294e-12, step size = 9.86e-02
+[ Info: GD: iter 1064: f = 0.000000000000, ‖∇f‖ = 3.5544e-12, step size = 8.06e-02
+[ Info: GD: iter 1065: f = 0.000000000000, ‖∇f‖ = 3.8375e-12, step size = 9.87e-02
+[ Info: GD: iter 1066: f = 0.000000000000, ‖∇f‖ = 3.3844e-12, step size = 8.06e-02
+[ Info: GD: iter 1067: f = 0.000000000000, ‖∇f‖ = 3.6586e-12, step size = 9.87e-02
+[ Info: GD: iter 1068: f = 0.000000000000, ‖∇f‖ = 3.2253e-12, step size = 8.05e-02
+[ Info: GD: iter 1069: f = 0.000000000000, ‖∇f‖ = 3.4822e-12, step size = 9.86e-02
+[ Info: GD: iter 1070: f = 0.000000000000, ‖∇f‖ = 3.0715e-12, step size = 8.06e-02
+[ Info: GD: iter 1071: f = 0.000000000000, ‖∇f‖ = 3.3210e-12, step size = 9.87e-02
+[ Info: GD: iter 1072: f = 0.000000000000, ‖∇f‖ = 2.9264e-12, step size = 8.04e-02
+[ Info: GD: iter 1073: f = 0.000000000000, ‖∇f‖ = 3.1609e-12, step size = 9.86e-02
+[ Info: GD: iter 1074: f = 0.000000000000, ‖∇f‖ = 2.7854e-12, step size = 8.05e-02
+[ Info: GD: iter 1075: f = 0.000000000000, ‖∇f‖ = 3.0088e-12, step size = 9.88e-02
+[ Info: GD: iter 1076: f = 0.000000000000, ‖∇f‖ = 2.6554e-12, step size = 8.06e-02
+[ Info: GD: iter 1077: f = 0.000000000000, ‖∇f‖ = 2.8665e-12, step size = 9.86e-02
+[ Info: GD: iter 1078: f = 0.000000000000, ‖∇f‖ = 2.5270e-12, step size = 8.06e-02
+[ Info: GD: iter 1079: f = 0.000000000000, ‖∇f‖ = 2.7314e-12, step size = 9.87e-02
+[ Info: GD: iter 1080: f = 0.000000000000, ‖∇f‖ = 2.4088e-12, step size = 8.05e-02
+[ Info: GD: iter 1081: f = 0.000000000000, ‖∇f‖ = 2.6016e-12, step size = 9.86e-02
+[ Info: GD: iter 1082: f = 0.000000000000, ‖∇f‖ = 2.2925e-12, step size = 8.05e-02
+[ Info: GD: iter 1083: f = 0.000000000000, ‖∇f‖ = 2.4796e-12, step size = 9.88e-02
+[ Info: GD: iter 1084: f = 0.000000000000, ‖∇f‖ = 2.1852e-12, step size = 8.04e-02
+[ Info: GD: iter 1085: f = 0.000000000000, ‖∇f‖ = 2.3582e-12, step size = 9.86e-02
+[ Info: GD: iter 1086: f = 0.000000000000, ‖∇f‖ = 2.0840e-12, step size = 8.06e-02
+[ Info: GD: iter 1087: f = 0.000000000000, ‖∇f‖ = 2.2430e-12, step size = 9.83e-02
+[ Info: GD: iter 1088: f = 0.000000000000, ‖∇f‖ = 1.9870e-12, step size = 8.08e-02
+[ Info: GD: iter 1089: f = 0.000000000000, ‖∇f‖ = 2.1340e-12, step size = 9.81e-02
+[ Info: GD: iter 1090: f = 0.000000000000, ‖∇f‖ = 1.8923e-12, step size = 8.10e-02
+[ Info: GD: iter 1091: f = 0.000000000000, ‖∇f‖ = 2.0330e-12, step size = 9.82e-02
+[ Info: GD: iter 1092: f = 0.000000000000, ‖∇f‖ = 1.8038e-12, step size = 8.10e-02
+[ Info: GD: iter 1093: f = 0.000000000000, ‖∇f‖ = 1.9352e-12, step size = 9.79e-02
+[ Info: GD: iter 1094: f = 0.000000000000, ‖∇f‖ = 1.7207e-12, step size = 8.11e-02
+[ Info: GD: iter 1095: f = 0.000000000000, ‖∇f‖ = 1.8428e-12, step size = 9.77e-02
+[ Info: GD: iter 1096: f = 0.000000000000, ‖∇f‖ = 1.6399e-12, step size = 8.12e-02
+[ Info: GD: iter 1097: f = 0.000000000000, ‖∇f‖ = 1.7553e-12, step size = 9.75e-02
+[ Info: GD: iter 1098: f = 0.000000000000, ‖∇f‖ = 1.5597e-12, step size = 8.12e-02
+[ Info: GD: iter 1099: f = 0.000000000000, ‖∇f‖ = 1.6717e-12, step size = 9.78e-02
+[ Info: GD: iter 1100: f = 0.000000000000, ‖∇f‖ = 1.4860e-12, step size = 8.12e-02
+[ Info: GD: iter 1101: f = 0.000000000000, ‖∇f‖ = 1.5953e-12, step size = 9.79e-02
+[ Info: GD: iter 1102: f = 0.000000000000, ‖∇f‖ = 1.4150e-12, step size = 8.09e-02
+[ Info: GD: iter 1103: f = 0.000000000000, ‖∇f‖ = 1.5187e-12, step size = 9.80e-02
+[ Info: GD: iter 1104: f = 0.000000000000, ‖∇f‖ = 1.3500e-12, step size = 8.10e-02
+[ Info: GD: iter 1105: f = 0.000000000000, ‖∇f‖ = 1.4455e-12, step size = 9.76e-02
+[ Info: GD: iter 1106: f = 0.000000000000, ‖∇f‖ = 1.2854e-12, step size = 8.11e-02
+[ Info: GD: iter 1107: f = 0.000000000000, ‖∇f‖ = 1.3761e-12, step size = 9.78e-02
+[ Info: GD: iter 1108: f = 0.000000000000, ‖∇f‖ = 1.2252e-12, step size = 8.12e-02
+[ Info: GD: iter 1109: f = 0.000000000000, ‖∇f‖ = 1.3113e-12, step size = 9.77e-02
+[ Info: GD: iter 1110: f = 0.000000000000, ‖∇f‖ = 1.1675e-12, step size = 8.12e-02
+[ Info: GD: iter 1111: f = 0.000000000000, ‖∇f‖ = 1.2481e-12, step size = 9.76e-02
+[ Info: GD: iter 1112: f = 0.000000000000, ‖∇f‖ = 1.1118e-12, step size = 8.13e-02
+[ Info: GD: iter 1113: f = 0.000000000000, ‖∇f‖ = 1.1890e-12, step size = 9.76e-02
+[ Info: GD: iter 1114: f = 0.000000000000, ‖∇f‖ = 1.0586e-12, step size = 8.13e-02
+[ Info: GD: iter 1115: f = 0.000000000000, ‖∇f‖ = 1.1325e-12, step size = 9.78e-02
+[ Info: GD: iter 1116: f = 0.000000000000, ‖∇f‖ = 1.0098e-12, step size = 8.12e-02
+[ Info: GD: iter 1117: f = 0.000000000000, ‖∇f‖ = 1.0793e-12, step size = 9.73e-02
+[ Info: GD: converged after 1118 iterations: f = 0.000000000000, ‖∇f‖ = 9.5934e-13
+[ Info: GD: initializing with f = 1877.122390929786, ‖∇f‖ = 9.5310e+01
+[ Info: GD: iter    1: f = 184.422067743021, ‖∇f‖ = 2.7270e+01, step size = 3.73e-01
+[ Info: GD: iter    2: f = 35.604062846754, ‖∇f‖ = 1.1812e+01, step size = 4.00e-01
+[ Info: GD: iter    3: f = 8.577635800643, ‖∇f‖ = 5.5639e+00, step size = 3.87e-01
+[ Info: GD: iter    4: f = 2.281897070742, ‖∇f‖ = 2.8988e+00, step size = 4.07e-01
+[ Info: GD: iter    5: f = 0.643196935245, ‖∇f‖ = 1.4932e+00, step size = 3.90e-01
+[ Info: GD: iter    6: f = 0.188222298219, ‖∇f‖ = 8.2085e-01, step size = 4.08e-01
+[ Info: GD: iter    7: f = 0.056597968855, ‖∇f‖ = 4.3819e-01, step size = 3.91e-01
+[ Info: GD: iter    8: f = 0.017373194626, ‖∇f‖ = 2.4725e-01, step size = 4.09e-01
+[ Info: GD: iter    9: f = 0.005421354140, ‖∇f‖ = 1.3466e-01, step size = 3.91e-01
+[ Info: GD: iter   10: f = 0.001714552936, ‖∇f‖ = 7.7209e-02, step size = 4.09e-01
+[ Info: GD: iter   11: f = 0.000548370417, ‖∇f‖ = 4.2606e-02, step size = 3.91e-01
+[ Info: GD: iter   12: f = 0.000177057514, ‖∇f‖ = 2.4700e-02, step size = 4.09e-01
+[ Info: GD: iter   13: f = 0.000057638547, ‖∇f‖ = 1.3759e-02, step size = 3.91e-01
+[ Info: GD: iter   14: f = 0.000018896478, ‖∇f‖ = 8.0413e-03, step size = 4.09e-01
+[ Info: GD: iter   15: f = 0.000006233826, ‖∇f‖ = 4.5107e-03, step size = 3.92e-01
+[ Info: GD: iter   16: f = 0.000002067751, ‖∇f‖ = 2.6527e-03, step size = 4.10e-01
+[ Info: GD: iter   17: f = 0.000000689228, ‖∇f‖ = 1.4961e-03, step size = 3.92e-01
+[ Info: GD: iter   18: f = 0.000000230731, ‖∇f‖ = 8.8411e-04, step size = 4.10e-01
+[ Info: GD: iter   19: f = 0.000000077545, ‖∇f‖ = 5.0080e-04, step size = 3.92e-01
+[ Info: GD: iter   20: f = 0.000000026153, ‖∇f‖ = 2.9711e-04, step size = 4.10e-01
+[ Info: GD: iter   21: f = 0.000000008849, ‖∇f‖ = 1.6889e-04, step size = 3.92e-01
+[ Info: GD: iter   22: f = 0.000000003003, ‖∇f‖ = 1.0052e-04, step size = 4.10e-01
+[ Info: GD: iter   23: f = 0.000000001022, ‖∇f‖ = 5.7304e-05, step size = 3.92e-01
+[ Info: GD: iter   24: f = 0.000000000348, ‖∇f‖ = 3.4197e-05, step size = 4.10e-01
+[ Info: GD: iter   25: f = 0.000000000119, ‖∇f‖ = 1.9544e-05, step size = 3.92e-01
+[ Info: GD: iter   26: f = 0.000000000041, ‖∇f‖ = 1.1690e-05, step size = 4.10e-01
+[ Info: GD: iter   27: f = 0.000000000014, ‖∇f‖ = 6.6947e-06, step size = 3.92e-01
+[ Info: GD: iter   28: f = 0.000000000005, ‖∇f‖ = 4.0121e-06, step size = 4.10e-01
+[ Info: GD: iter   29: f = 0.000000000002, ‖∇f‖ = 2.3020e-06, step size = 3.92e-01
+[ Info: GD: iter   30: f = 0.000000000001, ‖∇f‖ = 1.3820e-06, step size = 4.10e-01
+[ Info: GD: iter   31: f = 0.000000000000, ‖∇f‖ = 7.9419e-07, step size = 3.92e-01
+[ Info: GD: iter   32: f = 0.000000000000, ‖∇f‖ = 4.7750e-07, step size = 4.10e-01
+[ Info: GD: iter   33: f = 0.000000000000, ‖∇f‖ = 2.7481e-07, step size = 3.92e-01
+[ Info: GD: iter   34: f = 0.000000000000, ‖∇f‖ = 1.6545e-07, step size = 4.10e-01
+[ Info: GD: iter   35: f = 0.000000000000, ‖∇f‖ = 9.5344e-08, step size = 3.92e-01
+[ Info: GD: iter   36: f = 0.000000000000, ‖∇f‖ = 5.7474e-08, step size = 4.10e-01
+[ Info: GD: iter   37: f = 0.000000000000, ‖∇f‖ = 3.3159e-08, step size = 3.92e-01
+[ Info: GD: iter   38: f = 0.000000000000, ‖∇f‖ = 2.0011e-08, step size = 4.10e-01
+[ Info: GD: iter   39: f = 0.000000000000, ‖∇f‖ = 1.1558e-08, step size = 3.92e-01
+[ Info: GD: converged after 40 iterations: f = 0.000000000000, ‖∇f‖ = 6.9820e-09
+Test Summary:                          | Pass  Total
+Optimization Algorithm GradientDescent |    4      4
+[ Info: CG: initializing with f = 23.878990560875, ‖∇f‖ = 1.7205e+01
+[ Info: CG: iter    1: f = 10.221687145309, ‖∇f‖ = 1.0539e+01, α = 9.23e-02, β = 0.00e+00, nfg = 3
+[ Info: CG: iter    2: f = 3.811100737462, ‖∇f‖ = 4.0632e+00, α = 1.15e-01, β = 3.75e-01, nfg = 2
+[ Info: CG: iter    3: f = 2.405482795224, ‖∇f‖ = 5.3160e+00, α = 1.70e-01, β = 1.49e-01, nfg = 2
+[ Info: CG: iter    4: f = 0.435223665870, ‖∇f‖ = 1.9620e+00, α = 1.39e-01, β = 1.71e+00, nfg = 2
+[ Info: CG: iter    5: f = 0.220881546576, ‖∇f‖ = 4.3484e-01, α = 1.11e-01, β = 1.36e-01, nfg = 2
+[ Info: CG: iter    6: f = 0.172457269079, ‖∇f‖ = 6.1064e-01, α = 5.12e-01, β = 4.91e-02, nfg = 3
+[ Info: CG: iter    7: f = 0.110473101168, ‖∇f‖ = 8.1115e-01, α = 3.32e-01, β = 1.97e+00, nfg = 2
+[ Info: CG: iter    8: f = 0.047483002124, ‖∇f‖ = 5.5254e-01, α = 1.91e-01, β = 1.76e+00, nfg = 2
+[ Info: CG: iter    9: f = 0.008713780144, ‖∇f‖ = 1.0233e-01, α = 2.54e-01, β = 4.64e-01, nfg = 2
+[ Info: CG: iter   10: f = 0.000000000000, ‖∇f‖ = 4.2818e-11, α = 1.66e+00, β = 3.43e-02, nfg = 3
+[ Info: CG: iter   11: f = 0.000000000000, ‖∇f‖ = 1.1466e-12, α = 4.51e-02, β = -2.23e-16, nfg = 2
+[ Info: CG: converged after 12 iterations: f = 0.000000000000, ‖∇f‖ = 2.4723e-14
+[ Info: CG: initializing with f = 1877.122390929786, ‖∇f‖ = 9.5310e+01
+[ Info: CG: iter    1: f = 184.422067743021, ‖∇f‖ = 2.7270e+01, α = 3.73e-01, β = 0.00e+00, nfg = 5
+[ Info: CG: iter    2: f = 21.259188034127, ‖∇f‖ = 9.1277e+00, α = 4.39e-01, β = 8.19e-02, nfg = 2
+[ Info: CG: iter    3: f = 2.516233094414, ‖∇f‖ = 3.1727e+00, α = 4.50e-01, β = 1.12e-01, nfg = 2
+[ Info: CG: iter    4: f = 0.263416238983, ‖∇f‖ = 1.0283e+00, α = 4.48e-01, β = 1.21e-01, nfg = 2
+[ Info: CG: iter    5: f = 0.029747369961, ‖∇f‖ = 3.4524e-01, α = 4.42e-01, β = 1.05e-01, nfg = 2
+[ Info: CG: iter    6: f = 0.003399651219, ‖∇f‖ = 1.1552e-01, α = 4.42e-01, β = 1.13e-01, nfg = 2
+[ Info: CG: iter    7: f = 0.000377109214, ‖∇f‖ = 3.8811e-02, α = 4.53e-01, β = 1.12e-01, nfg = 2
+[ Info: CG: iter    8: f = 0.000042590506, ‖∇f‖ = 1.2976e-02, α = 4.44e-01, β = 1.13e-01, nfg = 2
+[ Info: CG: iter    9: f = 0.000004697109, ‖∇f‖ = 4.3253e-03, α = 4.50e-01, β = 1.12e-01, nfg = 2
+[ Info: CG: iter   10: f = 0.000000527372, ‖∇f‖ = 1.4472e-03, α = 4.46e-01, β = 1.11e-01, nfg = 2
+[ Info: CG: iter   11: f = 0.000000056679, ‖∇f‖ = 4.7513e-04, α = 4.49e-01, β = 1.12e-01, nfg = 2
+[ Info: CG: iter   12: f = 0.000000006618, ‖∇f‖ = 1.6493e-04, α = 4.44e-01, β = 1.08e-01, nfg = 2
+[ Info: CG: iter   13: f = 0.000000000762, ‖∇f‖ = 5.5411e-05, α = 4.31e-01, β = 1.20e-01, nfg = 2
+[ Info: CG: iter   14: f = 0.000000000085, ‖∇f‖ = 1.8300e-05, α = 4.41e-01, β = 1.13e-01, nfg = 2
+[ Info: CG: iter   15: f = 0.000000000009, ‖∇f‖ = 6.1527e-06, α = 4.50e-01, β = 1.09e-01, nfg = 2
+[ Info: CG: iter   16: f = 0.000000000001, ‖∇f‖ = 2.0888e-06, α = 4.43e-01, β = 1.13e-01, nfg = 2
+[ Info: CG: iter   17: f = 0.000000000000, ‖∇f‖ = 6.9207e-07, α = 4.51e-01, β = 1.15e-01, nfg = 2
+[ Info: CG: iter   18: f = 0.000000000000, ‖∇f‖ = 2.2368e-07, α = 4.46e-01, β = 1.10e-01, nfg = 2
+[ Info: CG: iter   19: f = 0.000000000000, ‖∇f‖ = 7.3440e-08, α = 4.45e-01, β = 1.04e-01, nfg = 2
+[ Info: CG: iter   20: f = 0.000000000000, ‖∇f‖ = 2.4278e-08, α = 4.40e-01, β = 1.08e-01, nfg = 2
+[ Info: CG: converged after 21 iterations: f = 0.000000000000, ‖∇f‖ = 8.0813e-09
+Test Summary:                            | Pass  Total
+Optimization Algorithm ConjugateGradient |    4      4
+[ Info: LBFGS: initializing with f = 23.878990560875, ‖∇f‖ = 1.7205e+01
+[ Info: LBFGS: iter    1: f = 12.092584888084, ‖∇f‖ = 9.1988e+00, α = 1.00e+00, m = 0, nfg = 1
+[ Info: LBFGS: iter    2: f = 4.935025177597, ‖∇f‖ = 5.0052e+00, α = 1.00e+00, m = 1, nfg = 1
+[ Info: LBFGS: iter    3: f = 2.519999392017, ‖∇f‖ = 4.1771e+00, α = 1.00e+00, m = 2, nfg = 1
+[ Info: LBFGS: iter    4: f = 1.391678048816, ‖∇f‖ = 4.3288e+00, α = 1.00e+00, m = 3, nfg = 1
+[ Info: LBFGS: iter    5: f = 0.585999190616, ‖∇f‖ = 2.0733e+00, α = 1.00e+00, m = 4, nfg = 1
+[ Info: LBFGS: iter    6: f = 0.213857517567, ‖∇f‖ = 4.7313e-01, α = 1.00e+00, m = 5, nfg = 1
+[ Info: LBFGS: iter    7: f = 0.189268152760, ‖∇f‖ = 3.4508e-01, α = 1.00e+00, m = 6, nfg = 1
+[ Info: LBFGS: iter    8: f = 0.134338236087, ‖∇f‖ = 5.2184e-01, α = 1.00e+00, m = 7, nfg = 1
+[ Info: LBFGS: iter    9: f = 0.080578524879, ‖∇f‖ = 6.2486e-01, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   10: f = 0.045358872570, ‖∇f‖ = 8.1691e-01, α = 5.34e-01, m = 8, nfg = 2
+[ Info: LBFGS: iter   11: f = 0.014364540767, ‖∇f‖ = 4.2024e-01, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   12: f = 0.005416518351, ‖∇f‖ = 1.4587e-01, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   13: f = 0.004046497457, ‖∇f‖ = 7.7791e-02, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   14: f = 0.003265773875, ‖∇f‖ = 8.7087e-02, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   15: f = 0.001774400500, ‖∇f‖ = 1.1960e-01, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   16: f = 0.000926459932, ‖∇f‖ = 1.7370e-01, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   17: f = 0.000192749449, ‖∇f‖ = 5.1362e-02, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   18: f = 0.000044873422, ‖∇f‖ = 1.7018e-02, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   19: f = 0.000019432050, ‖∇f‖ = 9.3542e-03, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   20: f = 0.000006845257, ‖∇f‖ = 7.0766e-03, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   21: f = 0.000001352123, ‖∇f‖ = 4.9184e-03, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   22: f = 0.000000371073, ‖∇f‖ = 2.3383e-03, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   23: f = 0.000000007480, ‖∇f‖ = 2.1390e-04, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   24: f = 0.000000003496, ‖∇f‖ = 1.6669e-04, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   25: f = 0.000000001867, ‖∇f‖ = 6.2206e-05, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   26: f = 0.000000001489, ‖∇f‖ = 4.8711e-05, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   27: f = 0.000000001032, ‖∇f‖ = 5.3395e-05, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   28: f = 0.000000000703, ‖∇f‖ = 1.3568e-04, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   29: f = 0.000000000200, ‖∇f‖ = 4.2264e-05, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   30: f = 0.000000000062, ‖∇f‖ = 1.8561e-05, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   31: f = 0.000000000023, ‖∇f‖ = 9.7012e-06, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   32: f = 0.000000000010, ‖∇f‖ = 7.0911e-06, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   33: f = 0.000000000002, ‖∇f‖ = 3.9752e-06, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   34: f = 0.000000000001, ‖∇f‖ = 3.7100e-06, α = 3.20e-01, m = 8, nfg = 2
+[ Info: LBFGS: iter   35: f = 0.000000000000, ‖∇f‖ = 9.6502e-07, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   36: f = 0.000000000000, ‖∇f‖ = 5.8162e-07, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   37: f = 0.000000000000, ‖∇f‖ = 2.7454e-07, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   38: f = 0.000000000000, ‖∇f‖ = 1.5869e-07, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   39: f = 0.000000000000, ‖∇f‖ = 1.0987e-07, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   40: f = 0.000000000000, ‖∇f‖ = 6.9725e-08, α = 3.62e-01, m = 8, nfg = 2
+[ Info: LBFGS: iter   41: f = 0.000000000000, ‖∇f‖ = 3.3542e-08, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   42: f = 0.000000000000, ‖∇f‖ = 3.0346e-08, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   43: f = 0.000000000000, ‖∇f‖ = 4.5100e-08, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   44: f = 0.000000000000, ‖∇f‖ = 5.3419e-08, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   45: f = 0.000000000000, ‖∇f‖ = 6.0353e-08, α = 3.96e-01, m = 8, nfg = 2
+[ Info: LBFGS: iter   46: f = 0.000000000000, ‖∇f‖ = 2.7541e-08, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   47: f = 0.000000000000, ‖∇f‖ = 1.0318e-08, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   48: f = 0.000000000000, ‖∇f‖ = 6.2510e-09, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   49: f = 0.000000000000, ‖∇f‖ = 5.0202e-09, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   50: f = 0.000000000000, ‖∇f‖ = 4.8644e-09, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   51: f = 0.000000000000, ‖∇f‖ = 1.0648e-09, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   52: f = 0.000000000000, ‖∇f‖ = 7.3162e-10, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   53: f = 0.000000000000, ‖∇f‖ = 3.4762e-10, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   54: f = 0.000000000000, ‖∇f‖ = 3.2487e-10, α = 4.90e-01, m = 8, nfg = 2
+[ Info: LBFGS: iter   55: f = 0.000000000000, ‖∇f‖ = 1.2672e-10, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   56: f = 0.000000000000, ‖∇f‖ = 1.1417e-10, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   57: f = 0.000000000000, ‖∇f‖ = 1.3355e-10, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   58: f = 0.000000000000, ‖∇f‖ = 2.3774e-10, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   59: f = 0.000000000000, ‖∇f‖ = 3.7823e-11, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   60: f = 0.000000000000, ‖∇f‖ = 1.4360e-11, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   61: f = 0.000000000000, ‖∇f‖ = 1.7722e-11, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   62: f = 0.000000000000, ‖∇f‖ = 2.1553e-11, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   63: f = 0.000000000000, ‖∇f‖ = 3.1974e-11, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   64: f = 0.000000000000, ‖∇f‖ = 6.1242e-12, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   65: f = 0.000000000000, ‖∇f‖ = 3.6688e-12, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   66: f = 0.000000000000, ‖∇f‖ = 1.6717e-12, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: converged after 67 iterations: f = 0.000000000000, ‖∇f‖ = 2.9881e-13
+[ Info: LBFGS: initializing with f = 1877.122390929786, ‖∇f‖ = 9.5310e+01
+[ Info: LBFGS: iter    1: f = 184.422067743021, ‖∇f‖ = 2.7270e+01, α = 3.55e+01, m = 0, nfg = 5
+[ Info: LBFGS: iter    2: f = 28.798834540009, ‖∇f‖ = 9.2580e+00, α = 1.00e+00, m = 1, nfg = 1
+[ Info: LBFGS: iter    3: f = 2.799742435676, ‖∇f‖ = 3.0004e+00, α = 1.00e+00, m = 2, nfg = 1
+[ Info: LBFGS: iter    4: f = 0.463711589977, ‖∇f‖ = 1.6776e+00, α = 1.00e+00, m = 3, nfg = 1
+[ Info: LBFGS: iter    5: f = 0.033804031152, ‖∇f‖ = 3.9139e-01, α = 1.00e+00, m = 4, nfg = 1
+[ Info: LBFGS: iter    6: f = 0.007106096731, ‖∇f‖ = 1.4146e-01, α = 1.00e+00, m = 5, nfg = 1
+[ Info: LBFGS: iter    7: f = 0.000899593309, ‖∇f‖ = 4.8733e-02, α = 1.00e+00, m = 6, nfg = 1
+[ Info: LBFGS: iter    8: f = 0.000070395747, ‖∇f‖ = 1.9977e-02, α = 1.00e+00, m = 7, nfg = 1
+[ Info: LBFGS: iter    9: f = 0.000007839353, ‖∇f‖ = 5.3081e-03, α = 5.46e-01, m = 8, nfg = 2
+[ Info: LBFGS: iter   10: f = 0.000001734191, ‖∇f‖ = 2.2104e-03, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   11: f = 0.000000119824, ‖∇f‖ = 6.5518e-04, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   12: f = 0.000000032474, ‖∇f‖ = 4.7852e-04, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   13: f = 0.000000001406, ‖∇f‖ = 7.1387e-05, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   14: f = 0.000000000379, ‖∇f‖ = 3.1011e-05, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   15: f = 0.000000000031, ‖∇f‖ = 9.4550e-06, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   16: f = 0.000000000006, ‖∇f‖ = 6.6087e-06, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   17: f = 0.000000000001, ‖∇f‖ = 2.1576e-06, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   18: f = 0.000000000000, ‖∇f‖ = 3.7021e-07, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   19: f = 0.000000000000, ‖∇f‖ = 1.9834e-07, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   20: f = 0.000000000000, ‖∇f‖ = 5.8172e-08, α = 1.00e+00, m = 8, nfg = 1
+[ Info: LBFGS: iter   21: f = 0.000000000000, ‖∇f‖ = 1.3063e-08, α = 3.97e-01, m = 8, nfg = 2
+[ Info: LBFGS: converged after 22 iterations: f = 0.000000000000, ‖∇f‖ = 5.7664e-09
+Test Summary:                | Pass  Total
+Optimization Algorithm LBFGS |    4      4
+    Testing OptimKit tests passed 

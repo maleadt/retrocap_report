@@ -1,0 +1,31 @@
+ERROR: Unsatisfiable requirements detected for package GraphPlot [a2cc645c]:
+ GraphPlot [a2cc645c] log:
+ ├─possible versions are: [0.3.0-0.3.1, 0.4.1-0.4.2] or uninstalled
+ ├─restricted by compatibility requirements with Seleroute [d2f42c57] to versions: 0.3.0-0.3.1
+ │ └─Seleroute [d2f42c57] log:
+ │   ├─possible versions are: 0.1.0 or uninstalled
+ │   └─restricted to versions * by an explicit requirement, leaving only versions 0.1.0
+ └─restricted by compatibility requirements with Compose [a81c6b42] to versions: uninstalled — no versions left
+   └─Compose [a81c6b42] log:
+     ├─possible versions are: [0.6.1, 0.7.0-0.7.4, 0.8.0-0.8.2, 0.9.0] or uninstalled
+     └─restricted by compatibility requirements with Seleroute [d2f42c57] to versions: 0.9.0
+       └─Seleroute [d2f42c57] log: see above
+Stacktrace:
+ [1] propagate_constraints!(::Pkg.Resolve.Graph, ::Set{Int64}; log_events::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1005
+ [2] propagate_constraints! at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:946 [inlined] (repeats 2 times)
+ [3] simplify_graph!(::Pkg.Resolve.Graph, ::Set{Int64}; clean_graph::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460
+ [4] simplify_graph! at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460 [inlined] (repeats 2 times)
+ [5] resolve_versions!(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:375
+ [6] targeted_resolve at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1114 [inlined]
+ [7] tiered_resolve(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1100
+ [8] _resolve at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1120 [inlined]
+ [9] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1135
+ [10] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:189
+ [11] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:140
+ [12] #add#21 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [13] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [14] #add#20 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [15] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [16] add(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [17] add(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [18] top-level scope at none:18

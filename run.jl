@@ -1,6 +1,6 @@
 using RetroCap, NewPkgEval, DataFrames, Serialization
 
-julia = v"1.4.0"
+julia = v"1.5.1"
 julia_reference = VersionNumber("$(julia)-reference")
 julia_comparison = VersionNumber("$(julia)-comparison")
 
